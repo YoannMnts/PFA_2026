@@ -1,0 +1,16 @@
+{
+    "name": "Naussilus.Gameplay",
+    "rootNamespace": "Naussilus.Gameplay",
+    "references": [
+        "GUID:717ea3a14ee0f474689d06c2a39d85cc"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,8 +1,8 @@
+#if UNITY_EDITOR
 using UnityEditor;
 using static System.IO.Directory;
 using static System.IO.Path;
 using static UnityEngine.Application;
-
 
 public static class Setup
 {
@@ -27,3 +27,4 @@ public static class Setup
       }
    }
 }
+#endif

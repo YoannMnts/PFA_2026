@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "com.helteix.channeled-properties": "2.0.11",
+    "com.helteix.tools": "1.6.0",
     "com.singularitygroup.hotreload": "git+https://gitlab.hotreload.net/root/hot-reload-releases.git#1.13.17",
     "com.unity.2d.animation": "13.0.4",
     "com.unity.2d.aseprite": "3.0.1",
@@ -53,5 +55,14 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  }
+  },
+  "scopedRegistries": [
+    {
+      "name": "Helteix",
+      "url": "https://upm.pckgs.io",
+      "scopes": [
+        "com.helteix"
+      ]
+    }
+  ]
 }
