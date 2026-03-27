@@ -1,4 +1,4 @@
-﻿namespace Naussilus.Gameplay._Project.Scripts
+﻿namespace Naussilus.Gameplay.Scripts
 {
     public class Decision
     {
