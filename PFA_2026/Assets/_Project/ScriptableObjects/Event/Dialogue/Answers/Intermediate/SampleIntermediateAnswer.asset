@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: SampleIntermediateAnswer
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Scripts.IntermediateAnswer
   <Text>k__BackingField: 
-  <NextDialogue>k__BackingField: {fileID: 0}
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8c98d19213809754fb7453a2075a08a6, type: 2}

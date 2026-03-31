@@ -1,6 +1,8 @@
-﻿namespace Naussilus.Gameplay.Scripts
+﻿using Helteix.Tools.Phases;
+
+namespace Naussilus.Gameplay.Scripts
 {
-    public class Decision
+    public class Decision : PhaseCompletionSource<bool>
     {
         
     }

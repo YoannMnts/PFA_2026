@@ -12,12 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25e6ee364b9d4c9592864282e4493194, type: 3}
   m_Name: SampleEvent
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Scripts.EventData
-  <Npcs>k__BackingField: []
   <Priority>k__BackingField: 0
+  <Npcs>k__BackingField: []
   <Dependencies>k__BackingField:
-    <Gauge>k__BackingField: 0
+    <Gauge>k__BackingField:
+      <Happiness>k__BackingField: 0
+      <Confidence>k__BackingField: 0
+      <Integration>k__BackingField: 0
+      <Relaxation>k__BackingField: 0
+      <Health>k__BackingField: 0
     <Day>k__BackingField: 0
     <Relationship>k__BackingField:
       <Amount>k__BackingField: 0
-      <Npc>k__BackingField: {fileID: 0}
+      <Npc1>k__BackingField: {fileID: 0}
+      <Npc2>k__BackingField: {fileID: 0}
   <FirstDialogue>k__BackingField: {fileID: 0}

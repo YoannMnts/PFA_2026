@@ -26,7 +26,8 @@ MonoBehaviour:
     <Integration>k__BackingField: 0
     <Relaxation>k__BackingField: 0
     <Health>k__BackingField: 0
-  <Relationship>k__BackingField:
-    <Amount>k__BackingField: 0
-    <Npc>k__BackingField: {fileID: 0}
+  <Relationships>k__BackingField:
+  - <Amount>k__BackingField: 0
+    <Npc1>k__BackingField: {fileID: 0}
+    <Npc2>k__BackingField: {fileID: 0}
   <CurrentThinking>k__BackingField: 

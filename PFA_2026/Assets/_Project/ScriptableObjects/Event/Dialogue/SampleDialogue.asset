@@ -16,7 +16,8 @@ MonoBehaviour:
     <Text>k__BackingField: 
     <Npc>k__BackingField: {fileID: 0}
     <Sprite>k__BackingField: {fileID: 0}
-  <Answers>k__BackingField: []
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: f6a17a65f4bd98f4fb2082fc0c6bea6a, type: 2}
   <Dependencies>k__BackingField:
     <Gauge>k__BackingField:
       <Happiness>k__BackingField: 0
@@ -27,4 +28,5 @@ MonoBehaviour:
     <Day>k__BackingField: 0
     <Relationship>k__BackingField:
       <Amount>k__BackingField: 0
-      <Npc>k__BackingField: {fileID: 0}
+      <Npc1>k__BackingField: {fileID: 0}
+      <Npc2>k__BackingField: {fileID: 0}
