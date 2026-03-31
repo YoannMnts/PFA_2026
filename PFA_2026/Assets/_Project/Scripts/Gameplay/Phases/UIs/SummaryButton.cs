@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Naussilus.Gameplay.Scripts.UIs
 {
-    public class SummaryButton : PhaseButton
+    public class SummaryButton : PhaseButton<Summary>
     {
         
     }

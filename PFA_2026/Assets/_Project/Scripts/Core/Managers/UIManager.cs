@@ -9,6 +9,7 @@ namespace Naussilus.Core.Scripts.Managers
             canvasGroup.alpha = 1;
             canvasGroup.blocksRaycasts = true;
             canvasGroup.interactable = true;
+            Debug.Log("AAAAAAAAA");
         }
 
         public static void Hide(this CanvasGroup canvasGroup)
@@ -16,6 +17,7 @@ namespace Naussilus.Core.Scripts.Managers
             canvasGroup.alpha = 0;
             canvasGroup.blocksRaycasts = false;
             canvasGroup.interactable = false;
+            Debug.Log("BBBBBBB");
         }
     }
 }

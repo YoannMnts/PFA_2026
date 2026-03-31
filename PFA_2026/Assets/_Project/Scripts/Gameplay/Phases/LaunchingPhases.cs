@@ -10,14 +10,21 @@ namespace Naussilus.Gameplay.Scripts
         public int MaxDay { get; private set; }
         private void Start()
         {
+            Lifetime();
+        }
+
+        private async void Lifetime()
+        {
             for (int i = 0; i < MaxDay; i++)
             {
+                var switchDay = new SwitchDay();
+                await switchDay.Run();
                 var dialogue = new Dialogue();
-                dialogue.Run();
+                await dialogue.Run();
                 var decision = new Decision();
-                decision.Run();
+                await decision.Run();
                 var summary = new Summary();
-                summary.Run();
+                await summary.Run();
             }
         }
     }

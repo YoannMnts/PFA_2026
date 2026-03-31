@@ -1,27 +1,59 @@
-﻿using Helteix.Tools.Phases;
+﻿using System;
+using Helteix.Tools.Phases;
+using Naussilus.Core.Scripts.Managers;
 using UnityEngine;
 
 namespace Naussilus.Gameplay.Scripts.UIs
 {
-    public abstract class PhaseButton : MonoBehaviour, IPhaseListener<PhaseCompletionSource<bool>>
+    public abstract class PhaseButton<T> : MonoBehaviour, IPhaseListener<T> where T : PhaseCompletionSource<bool>
     {
-        private PhaseCompletionSource<bool> currentPhase;
+        [SerializeField]
+        private CanvasGroup canvasGroup;
         
-        public virtual void OnPhaseBegin(PhaseCompletionSource<bool> phase)
+        private T currentPhase;
+
+        private void Start()
         {
-            this.Register();
-            currentPhase = phase;
+            canvasGroup.Hide();
         }
 
-        public virtual void OnPhaseEnd(PhaseCompletionSource<bool> phase)
+        private void OnEnable()
+        {
+            this.Register();
+        }
+
+        private void OnDisable()
         {
             this.Unregister();
+        }
+
+        public virtual void OnPhaseBegin(T phase)
+        {
+            currentPhase = phase;
+            canvasGroup.Show();
+            StartDebugMethod();
+        }
+
+        public virtual void OnPhaseEnd(T phase)
+        {
             currentPhase = null;
+            canvasGroup.Hide();
+            EndDebugMethod();
         }
         
         public virtual void OnButtonClick()
         {
             currentPhase?.SetResult(true);
+        }
+
+        private void StartDebugMethod()
+        {
+            Debug.Log($"Starting {currentPhase} phase");
+        }
+
+        private void EndDebugMethod()
+        {
+            Debug.Log($"Ending {currentPhase} phase");
         }
     }
 }

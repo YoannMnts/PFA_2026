@@ -1,6 +1,6 @@
 ﻿namespace Naussilus.Gameplay.Scripts.UIs
 {
-    public class DecisionButton : PhaseButton
+    public class DecisionButton : PhaseButton<Decision>
     {
         
     }
