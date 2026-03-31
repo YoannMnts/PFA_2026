@@ -7,9 +7,15 @@ namespace Naussilus.Gameplay.Scripts
 {
     public class SwitchDay : IPhase<bool>
     {
+        private readonly int second;
+
+        public SwitchDay(int timer)
+        {
+            second = timer;
+        }
         async Awaitable<bool> IPhase<bool>.Execute(CancellationToken token)
         {
-            await Awaitable.WaitForSecondsAsync(1f);
+            await Awaitable.WaitForSecondsAsync(second);
             return true;
         }
 
