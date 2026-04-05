@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using Naussilus.Core.Datas.NpcDatas;
+using UnityEngine;
 
-namespace Naussilus.Core.Scripts.Conditions
+namespace Naussilus.Core.Datas.Conditions
 {
     public struct ActionTarget
     {

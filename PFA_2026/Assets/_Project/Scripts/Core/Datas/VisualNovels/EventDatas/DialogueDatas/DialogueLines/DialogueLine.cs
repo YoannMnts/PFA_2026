@@ -1,7 +1,8 @@
-﻿using UnityEngine;
+﻿using Naussilus.Core.Datas.NpcDatas;
+using UnityEngine;
 using UnityEngine.UI;
 
-namespace Naussilus.Core.Scripts.VisualNovels.EventDatas.DialogueDatas.DialogueLines
+namespace Naussilus.Core.Datas.VisualNovels
 {
     public struct DialogueLine
     {

@@ -1,0 +1,17 @@
+{
+    "name": "Naussilus.Core.DatasOperators",
+    "rootNamespace": "Naussilus.Core.DatasOperators",
+    "references": [
+        "GUID:bbbfe5764b42f6744b4d7924482ffe06",
+        "GUID:feacde55ca55e4b428fa74535c935f1c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

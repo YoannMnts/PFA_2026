@@ -1,7 +1,7 @@
-﻿using Naussilus.Core.Scripts.Operators;
+﻿using Naussilus.Core.DatasOperators;
 using UnityEngine;
 
-namespace Naussilus.Core.Scripts.VisualNovels.EventDatas.DialogueDatas.Answers.EventConsequences
+namespace Naussilus.Core.Datas.VisualNovels
 {
     public struct EventConsequence
     {

@@ -1,4 +1,4 @@
-﻿namespace Naussilus.Core.Scripts.Operators
+﻿namespace Naussilus.Core.DatasOperators
 {
     public enum EComparator
     {

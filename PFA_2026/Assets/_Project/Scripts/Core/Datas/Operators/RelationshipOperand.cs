@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using Naussilus.Core.Datas.NpcDatas;
+using UnityEngine;
 
-namespace Naussilus.Core.Scripts.Operators
+namespace Naussilus.Core.DatasOperators
 {
     public struct RelationshipOperand
     {

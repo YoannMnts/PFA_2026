@@ -1,4 +1,4 @@
-﻿namespace Naussilus.Core.Scripts.Effects.ActionEffects
+﻿namespace Naussilus.Core.Datas.Managements
 {
     public interface IActionsEffect
     {

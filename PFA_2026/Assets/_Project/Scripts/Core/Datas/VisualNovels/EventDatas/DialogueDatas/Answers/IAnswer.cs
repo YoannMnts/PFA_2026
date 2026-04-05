@@ -1,4 +1,4 @@
-﻿namespace Naussilus.Core.Scripts.VisualNovels.EventDatas.DialogueDatas.Answers
+﻿namespace Naussilus.Core.Datas.VisualNovels
 {
     public interface IAnswer
     {

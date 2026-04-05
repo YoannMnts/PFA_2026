@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Naussilus.Core.Scripts.EStats
+namespace Naussilus.Core.Datas.EStats
 {
     public struct Stat
     {

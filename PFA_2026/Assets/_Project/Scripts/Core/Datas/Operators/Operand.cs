@@ -1,7 +1,7 @@
-﻿using Naussilus.Core.Scripts.EStats;
+﻿using Naussilus.Core.Datas.EStats;
 using UnityEngine;
 
-namespace Naussilus.Core.Scripts.Operators
+namespace Naussilus.Core.DatasOperators
 {
     public struct Operand
     {

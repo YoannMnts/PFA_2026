@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Naussilus.Core.Scripts
+namespace Naussilus.Core.Datas.NpcDatas
 {
     [Serializable]
     public struct NpcStats

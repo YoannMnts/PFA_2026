@@ -1,8 +1,7 @@
-﻿using Naussilus.Core.Scripts.Conditions;
-using Naussilus.Core.Scripts.VisualNovels.EventDatas.DialogueDatas.Answers.EventConsequences;
+﻿using Naussilus.Core.Datas.Conditions;
 using UnityEngine;
 
-namespace Naussilus.Core.Scripts.VisualNovels.EventDatas.DialogueDatas.Answers
+namespace Naussilus.Core.Datas.VisualNovels
 {
     [CreateAssetMenu(fileName = "FILENAME", menuName = "MENUNAME", order = 0)]
     public class FinalAnswerData : ScriptableObject

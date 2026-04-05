@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Naussilus.Core.Scripts.VisualNovels.EventDatas.DialogueDatas.Answers
+namespace Naussilus.Core.Datas.VisualNovels
 {
     [CreateAssetMenu(fileName = "FILENAME", menuName = "MENUNAME", order = 0)]
     public class BasicAnswerData : ScriptableObject, IAnswer

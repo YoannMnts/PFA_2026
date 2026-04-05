@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using Naussilus.Core.Datas.NpcDatas;
+using UnityEngine;
 
-namespace Naussilus.Core.Scripts.Effects.NpcConditions
+namespace Naussilus.Core.Datas.Managements
 {
     public struct NpcCondition
     {

@@ -1,7 +1,7 @@
-﻿using Naussilus.Core.Scripts.Operators;
+﻿using Naussilus.Core.DatasOperators;
 using UnityEngine;
 
-namespace Naussilus.Core.Scripts.Conditions
+namespace Naussilus.Core.Datas.Conditions
 {
     public struct ComplexCondition
     {

@@ -1,0 +1,14 @@
+{
+    "name": "Naussilus.Core.Datas.NpcDatas",
+    "rootNamespace": "Naussilus.Core.Datas.NpcDatas",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Naussilus.Core.Scripts.Management
+namespace Naussilus.Core.Datas.Managements
 {
     [CreateAssetMenu(fileName = "FILENAME", menuName = "MENUNAME", order = 0)]
     public class RoomData : ScriptableObject

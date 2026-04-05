@@ -1,8 +1,6 @@
-﻿using Naussilus.Core.Scripts.Categorys;
-using Naussilus.Core.Scripts.Effects;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Naussilus.Core.Scripts
+namespace Naussilus.Core.Datas.Managements
 {
     [CreateAssetMenu(fileName = "ActionData", menuName = "ActionData", order = 0)]
     public class ActionData : ScriptableObject

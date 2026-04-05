@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using Naussilus.Core.Datas.NpcDatas;
+using UnityEngine;
 
-namespace Naussilus.Core.Scripts.Categorys
+namespace Naussilus.Core.Datas.Managements
 {
     public struct Category
     {

@@ -1,8 +1,6 @@
-﻿using Naussilus.Core.Scripts.Effects.ActionEffects;
-using Naussilus.Core.Scripts.Effects.NpcConditions;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Naussilus.Core.Scripts.Effects
+namespace Naussilus.Core.Datas.Managements
 {
     public struct Effect
     {

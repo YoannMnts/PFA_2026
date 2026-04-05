@@ -1,7 +1,7 @@
-﻿using Naussilus.Core.Scripts.Conditions;
+﻿using Naussilus.Core.Datas.Conditions;
 using UnityEngine;
 
-namespace Naussilus.Core.Scripts.Effects.ActionEffects
+namespace Naussilus.Core.Datas.Managements
 {
     [CreateAssetMenu(fileName = "FILENAME", menuName = "MENUNAME", order = 0)]
     public class ComplexEffectData : ScriptableObject, IActionsEffect

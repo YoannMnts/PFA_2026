@@ -1,4 +1,4 @@
-﻿namespace Naussilus.Core.Scripts.EStats
+﻿namespace Naussilus.Core.Datas.EStats
 {
     public enum EStat
     {

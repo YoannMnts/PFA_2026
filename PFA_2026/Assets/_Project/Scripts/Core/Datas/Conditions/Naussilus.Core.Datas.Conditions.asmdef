@@ -1,0 +1,17 @@
+{
+    "name": "Naussilus.Core.Datas.Conditions",
+    "rootNamespace": "Naussilus.Core.Datas.Conditions",
+    "references": [
+        "GUID:c6b784aa3953bef4db7e71ae68c8fc6a",
+        "GUID:feacde55ca55e4b428fa74535c935f1c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

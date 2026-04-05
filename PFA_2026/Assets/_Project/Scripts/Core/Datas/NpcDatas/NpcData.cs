@@ -1,8 +1,6 @@
-﻿using System;
-using Unity.Plastic.Newtonsoft.Json;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Naussilus.Core.Scripts
+namespace Naussilus.Core.Datas.NpcDatas
 {
     [CreateAssetMenu(fileName = "NpcData", menuName = "NpcData", order = 0)]
     public class NpcData : ScriptableObject
