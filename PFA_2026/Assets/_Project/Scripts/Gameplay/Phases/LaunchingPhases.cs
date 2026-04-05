@@ -41,7 +41,7 @@ namespace Naussilus.Gameplay.Scripts
 
         private static async Awaitable SideViewPhases()
         {
-            var sideView = new SideView();
+            var sideView = new Management();
             await sideView.Run();
         }
     }

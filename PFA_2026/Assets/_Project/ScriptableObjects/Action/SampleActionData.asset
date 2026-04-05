@@ -15,5 +15,26 @@ MonoBehaviour:
   <ActionName>k__BackingField: 
   <Cost>k__BackingField: 0
   <Coontdown>k__BackingField: 0
-  <Categories>k__BackingField: []
-  <Effects>k__BackingField: []
+  <Room>k__BackingField: 
+  <Categories>k__BackingField:
+  - <NpcQuantity>k__BackingField: 0
+    <NeededNpc>k__BackingField: []
+    <ProhibitedNpc>k__BackingField: []
+  <Effects>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <CategoryIndex>k__BackingField: 0
+    <Conditions>k__BackingField:
+    - <Stat1>k__BackingField: 0
+      <Operator>k__BackingField: 0
+      <Number>k__BackingField: 0
+      <Effect>k__BackingField:
+        <NpcStat>k__BackingField: 0
+        <Operator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+    <RelationshipsConditions>k__BackingField:
+    - <Stat1>k__BackingField: 0
+      <Operator>k__BackingField: 0
+      <Stat2>k__BackingField:
+        <Npc>k__BackingField: {fileID: 0}
+        <NpcStats>k__BackingField: 0
+      <AdditionalCondition>k__BackingField: []
