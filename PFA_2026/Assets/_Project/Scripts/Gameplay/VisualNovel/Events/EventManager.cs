@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using Naussilus.Core.Datas.VisualNovels;
 using UnityEngine;
 
-namespace Naussilus.Gameplay.VisualNovel.EventManager
+namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
 {
     public static class EventManager
     {

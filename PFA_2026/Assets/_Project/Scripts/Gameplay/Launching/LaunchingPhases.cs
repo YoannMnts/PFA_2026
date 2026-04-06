@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Threading.Tasks;
+using _Project.Scripts;
 using Helteix.Tools.Phases;
 using Naussilus.Core.Datas.VisualNovels;
-using Naussilus.Gameplay.Management._Project.Scripts;
 using Naussilus.Gameplay.VisualNovel._Project.Scripts;
-using Naussilus.Gameplay.VisualNovel.EventManager;
 using UnityEngine;
 
-namespace Naussilus.Gameplay
+namespace Naussilus.Gameplay.Launcher._Project.Scripts.Gameplay
 {
     public class LaunchingPhases : MonoBehaviour
     {

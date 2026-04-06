@@ -2,9 +2,8 @@
 using Naussilus.Core.Scripts.Managers;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
+namespace Naussilus.Gameplay
 {
     public class SwitchDayUI : MonoBehaviour, IPhaseListener<SwitchDay>
     {

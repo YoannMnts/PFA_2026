@@ -1,4 +1,6 @@
-﻿namespace Naussilus.Gameplay.Management._Project.Scripts
+﻿using Naussilus.Gameplay;
+
+namespace _Project.Scripts
 {
     public class EndDayButton : PhaseButton<ManagementPhase>
     {

@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Helteix.Tools.Phases;
 using UnityEngine;
 
-namespace Naussilus.Gameplay.Management._Project.Scripts
+namespace _Project.Scripts
 {
     public class ManagementPhase : IPhase<bool>
     {
