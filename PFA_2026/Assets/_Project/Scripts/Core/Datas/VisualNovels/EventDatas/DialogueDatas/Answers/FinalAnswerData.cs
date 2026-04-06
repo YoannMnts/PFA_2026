@@ -18,7 +18,7 @@ namespace Naussilus.Core.Datas.VisualNovels
     public class FinalAnswerData : Answer
     {
         [field : SerializeField]
-        public FinalAnswers[] Answers { get; private set; }
+        public FinalAnswers[] FinalAnswers { get; private set; }
         
         [field: SerializeField, HideInInspector]
         public string GUID { get; private set; }

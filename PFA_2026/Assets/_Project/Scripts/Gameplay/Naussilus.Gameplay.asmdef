@@ -3,7 +3,9 @@
     "rootNamespace": "Naussilus.Gameplay",
     "references": [
         "GUID:717ea3a14ee0f474689d06c2a39d85cc",
-        "GUID:218d83f778a79c74791573f907cb34c7"
+        "GUID:218d83f778a79c74791573f907cb34c7",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:2d5d05801bd13514a9e943161c23939d"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
