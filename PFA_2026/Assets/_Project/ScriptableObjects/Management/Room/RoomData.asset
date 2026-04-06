@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538464531f843609cc1775d421b72c4, type: 3}
+  m_Name: RoomData
+  m_EditorClassIdentifier: Naussilus.Core.Datas.Managements::Naussilus.Core.Datas.Managements.RoomData
+  <Name>k__BackingField: AAAAA
+  <Description>k__BackingField: AAAAA
+  <Actions>k__BackingField:
+  - {fileID: 11400000, guid: b95cc96e0c06b9e4ca63e7ccbc933782, type: 2}
+  <GUID>k__BackingField: 7fff7c4f-00c3-451e-a18a-d1f1b1087c03

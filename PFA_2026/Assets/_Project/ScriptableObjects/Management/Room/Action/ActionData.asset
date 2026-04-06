@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7981673afb42479da49ee3efe9a052af, type: 3}
+  m_Name: ActionData
+  m_EditorClassIdentifier: Naussilus.Core.Datas.Managements::Naussilus.Core.Datas.Managements.ActionData
+  <Name>k__BackingField: AAAAA
+  <Cost>k__BackingField: 0
+  <Categories>k__BackingField:
+  - <Name>k__BackingField: AAAAA
+    <Quantity>k__BackingField: 1
+    <ProhibitedNpc>k__BackingField: []
+    <ObligateNpc>k__BackingField:
+    - {fileID: 11400000, guid: 4c5237b2ea5cb26419c3e8d2d834f0d9, type: 2}
+  <Effects>k__BackingField:
+    <NpcCondition>k__BackingField:
+      <Npc>k__BackingField: {fileID: 0}
+      <CategoryIndex>k__BackingField: 0
+    <ActionsEffects>k__BackingField:
+    - {fileID: 11400000, guid: 58ec390287802ce4faceec9b5b45bf06, type: 2}
+  <GUID>k__BackingField: 36c3b009-7e9f-46ad-b901-c0b75f9807db

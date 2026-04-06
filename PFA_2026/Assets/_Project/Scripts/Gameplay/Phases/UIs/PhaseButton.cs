@@ -8,13 +8,13 @@ using UnityEngine.UI;
 namespace Naussilus.Gameplay.Scripts.UIs
 {
     [RequireComponent(typeof(Button))]
-    public abstract class PhaseButton<T> : MonoBehaviour, IPhaseListener<T> where T : IPhaseCompletionSource<bool>
+    public abstract class PhaseButton<T> : MonoBehaviour, IPhaseListener<T> where T : IBasePhase
     {
         [SerializeField]
-        private CanvasGroup canvasGroup;
+        protected CanvasGroup canvasGroup;
         
-        private Button button;
-        private T currentPhase;
+        protected Button button;
+        protected T currentPhase;
 
         private void Start()
         {
@@ -47,11 +47,8 @@ namespace Naussilus.Gameplay.Scripts.UIs
             EndDebugMethod();
             currentPhase = default;
         }
-        
-        protected virtual void OnButtonClicked()
-        {
-            currentPhase?.SetResult(true);
-        }
+
+        protected abstract void OnButtonClicked();
 
         private void StartDebugMethod()
         {

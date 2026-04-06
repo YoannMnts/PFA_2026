@@ -1,9 +1,11 @@
-﻿using Naussilus.Core.Datas.Conditions;
+﻿using System;
+using Naussilus.Core.Datas.Conditions;
+using UnityEditor;
 using UnityEngine;
 
 namespace Naussilus.Core.Datas.VisualNovels
 {
-    [CreateAssetMenu(fileName = "FILENAME", menuName = "MENUNAME", order = 0)]
+    [CreateAssetMenu(fileName = "DialogueData", menuName = "VisualNovel/DialogueData", order = 0)]
     public class DialogueData : ScriptableObject
     {
         [field : SerializeField]
@@ -13,6 +15,33 @@ namespace Naussilus.Core.Datas.VisualNovels
         public DialogueLine Lines { get; private set; }
         
         [field : SerializeField]
-        public IAnswer[] Answers { get; private set; }
+        public Answer[] Answers { get; private set; }
+        
+        [field: SerializeField, HideInInspector]
+        public string GUID { get; private set; }
+
+        private void OnValidate()
+        {
+            if (string.IsNullOrEmpty(GUID))
+            {
+                GenerateNewGuid();
+            }
+            
+#if UNITY_EDITOR
+            string[] existings = AssetDatabase.FindAssets($"t:{nameof(DialogueData)}");
+            for (int i = 0; i < existings.Length; i++)
+            {
+                var path = AssetDatabase.GUIDToAssetPath(existings[i]);
+                var asset = AssetDatabase.LoadAssetAtPath<DialogueData>(path);
+                if(asset != this && asset.GUID == GUID)
+                    GenerateNewGuid();
+            }
+#endif
+        }
+
+        private void GenerateNewGuid()
+        {
+            GUID = Guid.NewGuid().ToString();
+        }
     }
 }

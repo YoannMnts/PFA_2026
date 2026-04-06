@@ -2,6 +2,9 @@
 {
     public class DecisionButton : PhaseButton<Decision>
     {
-        
+        protected override void OnButtonClicked()
+        {
+            currentPhase.EndPhase(true);
+        }
     }
 }

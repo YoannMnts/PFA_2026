@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Naussilus.Core.Datas.EStats
 {
+    [Serializable]
     public struct Stat
     {
         [field: SerializeField]

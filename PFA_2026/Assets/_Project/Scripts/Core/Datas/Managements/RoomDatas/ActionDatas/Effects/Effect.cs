@@ -1,13 +1,15 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Naussilus.Core.Datas.Managements
 {
+    [Serializable]
     public struct Effect
     {
         [field: SerializeField]
         public NpcCondition NpcCondition { get; private set; }
         
         [field: SerializeField]
-        public IActionsEffect[] ActionsEffects { get; private set; }
+        public ActionsEffect[] ActionsEffects { get; private set; }
     }
 }

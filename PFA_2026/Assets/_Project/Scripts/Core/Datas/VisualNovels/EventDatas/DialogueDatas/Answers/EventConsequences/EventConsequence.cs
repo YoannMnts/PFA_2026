@@ -1,8 +1,11 @@
-﻿using Naussilus.Core.DatasOperators;
+﻿using System;
+using Naussilus.Core.Datas.Conditions;
+using Naussilus.Core.DatasOperators;
 using UnityEngine;
 
 namespace Naussilus.Core.Datas.VisualNovels
 {
+    [Serializable]
     public struct EventConsequence
     {
         [field : SerializeField]
@@ -13,5 +16,8 @@ namespace Naussilus.Core.Datas.VisualNovels
         
         [field : SerializeField]
         public int RightOperand { get; private set; }
+        
+        [field : SerializeField]
+        public ActionTarget[] Target { get; private set; }
     }
 }

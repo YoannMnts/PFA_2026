@@ -1,8 +1,10 @@
-﻿using Naussilus.Core.DatasOperators;
+﻿using System;
+using Naussilus.Core.DatasOperators;
 using UnityEngine;
 
 namespace Naussilus.Core.Datas.Conditions
 {
+    [Serializable]
     public struct ComplexCondition
     {
         [field: SerializeField]

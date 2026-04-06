@@ -13,6 +13,7 @@ namespace Naussilus.Gameplay.Scripts
         [field: SerializeField] 
         private int switchDayWaitSeconds;
         
+
         private void Start()
         {
             PhaseLifetime();
@@ -41,7 +42,7 @@ namespace Naussilus.Gameplay.Scripts
 
         private static async Awaitable SideViewPhases()
         {
-            var sideView = new Management();
+            var sideView = new ManagementPhase();
             await sideView.Run();
         }
     }

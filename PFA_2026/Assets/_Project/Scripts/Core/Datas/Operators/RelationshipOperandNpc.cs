@@ -1,9 +1,11 @@
-﻿using Naussilus.Core.Datas.NpcDatas;
+﻿using System;
+using Naussilus.Core.Datas.NpcDatas;
 using UnityEngine;
 
 namespace Naussilus.Core.DatasOperators
 {
-    public struct RelationshipOperand
+    [Serializable]
+    public struct RelationshipOperandNpc
     {
         [field : SerializeField]
         public NpcData Npc1 { get; private set; }

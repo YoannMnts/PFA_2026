@@ -1,8 +1,10 @@
-﻿using Naussilus.Core.Datas.NpcDatas;
+﻿using System;
+using Naussilus.Core.Datas.NpcDatas;
 using UnityEngine;
 
 namespace Naussilus.Core.Datas.Managements
 {
+    [Serializable]
     public struct Category
     {
         [field: SerializeField]
