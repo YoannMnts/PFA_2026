@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using _Project.Scripts;
 using Helteix.Tools.Phases;
 using Naussilus.Core.Datas.VisualNovels;
+using Naussilus.Core.Scripts.Managers;
 using Naussilus.Gameplay.VisualNovel._Project.Scripts;
 using UnityEngine;
 
@@ -10,12 +11,17 @@ namespace Naussilus.Gameplay.Launcher._Project.Scripts.Gameplay
 {
     public class LaunchingPhases : MonoBehaviour
     {
-        [field: SerializeField] 
+        [SerializeField] 
         private int maxDay;
         
-        [field: SerializeField] 
+        [SerializeField] 
         private int switchDayWaitSeconds;
-        
+
+        [SerializeField] 
+        private CanvasGroup visualNovelCanvas;
+
+        [SerializeField] 
+        private CanvasGroup managementCanvas;
 
         private void Start()
         {
@@ -40,14 +46,15 @@ namespace Naussilus.Gameplay.Launcher._Project.Scripts.Gameplay
             }
         }
 
-        private static async Awaitable VisualNovel()
+        private async Awaitable VisualNovel()
         {
             EventData visualNovelEvent = EventManager.GetValidEvent();
+            
             var visualNovelPhase = new VisualNovelPhase(visualNovelEvent);
             await visualNovelPhase.Run();
         }
 
-        private static async Awaitable Management()
+        private async Awaitable Management()
         {
             var sideView = new ManagementPhase();
             await sideView.Run();

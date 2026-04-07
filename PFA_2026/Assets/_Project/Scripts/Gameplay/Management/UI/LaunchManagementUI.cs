@@ -1,17 +1,13 @@
 ﻿using Helteix.Tools.Phases;
 using Naussilus.Core.Scripts.Managers;
-using TMPro;
 using UnityEngine;
 
-namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
+namespace _Project.Scripts
 {
-    public class DialogueUI : MonoBehaviour, IPhaseListener<Dialogue>
+    public class LaunchManagementUI : MonoBehaviour, IPhaseListener<ManagementPhase>
     {
         [SerializeField]
         private CanvasGroup canvasGroup;
-        
-        [SerializeField]
-        private TextMeshProUGUI textMesh;
         
         private void Start()
         {
@@ -27,15 +23,13 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
         {
             this.Unregister();
         }
-        
-        public void OnPhaseBegin(Dialogue phase)
+
+        public void OnPhaseBegin(ManagementPhase phase)
         {
-            Debug.Log($"current text: {phase.CurrentDialogue.Lines.Text}");
-            textMesh.text = phase.CurrentDialogue.Lines.Text;
             canvasGroup.Show();
         }
 
-        public void OnPhaseEnd(Dialogue phase)
+        public void OnPhaseEnd(ManagementPhase phase)
         {
             canvasGroup.Hide();
         }
