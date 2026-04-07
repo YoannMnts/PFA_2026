@@ -40,7 +40,7 @@ namespace Naussilus.Gameplay.Launcher._Project.Scripts.Gameplay
             }
         }
 
-        private static async Task VisualNovel()
+        private static async Awaitable VisualNovel()
         {
             EventData visualNovelEvent = EventManager.GetValidEvent();
             var visualNovelPhase = new VisualNovelPhase(visualNovelEvent);

@@ -5,17 +5,13 @@ using UnityEngine;
 
 namespace _Project.Scripts
 {
-    public class RoomMainMenu : IActionPhase
+    public class NpcCheckMenu : IActionPhase
     {
         async Awaitable<bool> IPhase<bool>.Execute(CancellationToken token)
         {
-            var waitAction = new WaitRoomAction();
-            await waitAction.Run();
-            
-            var choosingAction = waitAction.CurrentResult;
-            await choosingAction;
-            
-            return true;
+            var waitInMenu = new WaitInMenu();
+            await waitInMenu.Run();
+            return waitInMenu.CurrentResult;
         }
 
         async Awaitable IPhase<bool>.Initialize(CancellationToken token)

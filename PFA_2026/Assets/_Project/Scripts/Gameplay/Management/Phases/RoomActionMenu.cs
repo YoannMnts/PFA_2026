@@ -5,25 +5,11 @@ using UnityEngine;
 
 namespace _Project.Scripts
 {
-    public class ManagementPhase : IPhase<bool>
+    public class RoomActionMenu : IPhase<bool>
     {
-        private bool endPhase;
-        public ManagementPhase()
-        {
-            
-        }
-        
         async Awaitable<bool> IPhase<bool>.Execute(CancellationToken token)
         {
-            /*
-            var waitAction = new WaitAction();
-            await waitAction.Run();
-            await waitAction.CurrentResult.Run();
-            */
-            while (!endPhase)
-            {
-                await Awaitable.NextFrameAsync(token);
-            }
+            await Task.CompletedTask;
             return true;
         }
 
@@ -35,11 +21,6 @@ namespace _Project.Scripts
         async Awaitable IPhase<bool>.Dispose(CancellationToken token)
         {
             await Task.CompletedTask;
-        }
-
-        public void EndPhase(bool result)
-        {
-            endPhase = result;
         }
     }
 }
