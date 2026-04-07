@@ -9,14 +9,14 @@ namespace Naussilus.Core.Datas.Managements
     [CreateAssetMenu(fileName = "BaseEffectData", menuName = "Management/ActionEffect/BaseEffectData", order = 0)]
     public class BaseEffectData : ActionsEffect
     {
-        [field: SerializeField]
-        public Operand LeftOperand { get; private set; } 
+        [field: SerializeReference]
+        public IOperand LeftOperand { get; private set; } 
         
         [field: SerializeField]
         public EMathOperator Operator { get; private set; }
         
-        [field: SerializeField]
-        public Operand RightOperand { get; private set; }
+        [field: SerializeReference]
+        public IOperand RightOperand { get; private set; }
         
         [field: SerializeField]
         public ActionTarget StatTarget { get; private set; }

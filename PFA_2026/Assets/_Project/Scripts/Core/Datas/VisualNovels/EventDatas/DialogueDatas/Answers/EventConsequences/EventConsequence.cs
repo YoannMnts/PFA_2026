@@ -8,8 +8,8 @@ namespace Naussilus.Core.Datas.VisualNovels
     [Serializable]
     public struct EventConsequence
     {
-        [field : SerializeField]
-        public Operand LeftOperand { get; private set; }
+        [field : SerializeReference]
+        public IOperand LeftOperand { get; private set; }
         
         [field : SerializeField]
         public EMathOperator Operator { get; private set; }

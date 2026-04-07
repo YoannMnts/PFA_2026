@@ -7,16 +7,16 @@ namespace Naussilus.Core.Datas.Conditions
     [Serializable]
     public struct ComplexCondition
     {
-        [field: SerializeField]
-        public Operand LeftOperand { get; private set; }
+        [field: SerializeReference]
+        public IOperand LeftOperand { get; private set; }
         
         [field: SerializeField]
         public EComparator Comparator { get; private set; }
         
         [field: SerializeField]
-        public Operand RightOperand { get; private set; }
+        public IOperand RightOperand { get; private set; }
         
-        [field: SerializeField]
+        [field: SerializeReference]
         public ActionTarget StatTarget { get; private set; }
     }
 }

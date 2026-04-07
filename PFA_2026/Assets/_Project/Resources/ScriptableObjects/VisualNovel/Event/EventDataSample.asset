@@ -22,7 +22,9 @@ MonoBehaviour:
       <Stats>k__BackingField:
       - <Stats>k__BackingField: 
         <Gauges>k__BackingField: 01000000
-      <NpcRelationship>k__BackingField: []
+      <NpcRelationship>k__BackingField:
+      - <Npc1>k__BackingField: {fileID: 0}
+        <Npc2>k__BackingField: {fileID: 0}
     <Comparator>k__BackingField: 2
     <RightOperand>k__BackingField:
       <Amount>k__BackingField: 0a000000

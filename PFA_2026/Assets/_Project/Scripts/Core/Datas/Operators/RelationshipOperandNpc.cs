@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Naussilus.Core.DatasOperators
 {
     [Serializable]
-    public struct RelationshipOperandNpc
+    public struct RelationshipOperandNpc : IOperand
     {
         [field : SerializeField]
         public NpcData Npc1 { get; private set; }
