@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 using _Project.Scripts;
 using Helteix.Tools.Phases;
 using Naussilus.Core.Datas.VisualNovels;
-using Naussilus.Core.Scripts.Managers;
 using Naussilus.Gameplay.VisualNovel._Project.Scripts;
 using UnityEngine;
 
@@ -17,12 +16,6 @@ namespace Naussilus.Gameplay.Launcher._Project.Scripts.Gameplay
         [SerializeField] 
         private int switchDayWaitSeconds;
 
-        [SerializeField] 
-        private CanvasGroup visualNovelCanvas;
-
-        [SerializeField] 
-        private CanvasGroup managementCanvas;
-
         private void Start()
         {
             PhaseLifetime();
@@ -34,8 +27,7 @@ namespace Naussilus.Gameplay.Launcher._Project.Scripts.Gameplay
             {
                 for (int i = 0; i < maxDay; i++)
                 {
-                    var switchDay = new SwitchDay(switchDayWaitSeconds, i);
-                    await switchDay.Run();
+                    await SwitchDay(i);
                     await VisualNovel();
                     await Management();
                 }
@@ -44,6 +36,12 @@ namespace Naussilus.Gameplay.Launcher._Project.Scripts.Gameplay
             {
                 Debug.LogException(e);
             }
+        }
+
+        private async Awaitable SwitchDay(int i)
+        {
+            var switchDay = new SwitchDay(switchDayWaitSeconds, i);
+            await switchDay.Run();
         }
 
         private async Awaitable VisualNovel()

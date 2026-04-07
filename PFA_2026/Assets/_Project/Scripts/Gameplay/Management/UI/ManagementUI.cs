@@ -4,15 +4,10 @@ using UnityEngine;
 
 namespace _Project.Scripts
 {
-    public class LaunchManagementUI : MonoBehaviour, IPhaseListener<ManagementPhase>
+    public class ManagementUI : MonoBehaviour, IPhaseListener<ManagementPhase>
     {
         [SerializeField]
         private CanvasGroup canvasGroup;
-        
-        private void Start()
-        {
-            canvasGroup.Hide();
-        }
         
         private void OnEnable()
         {
