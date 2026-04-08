@@ -1,9 +1,8 @@
 ﻿using System;
-using Naussilus.Core.Datas.Conditions;
-using Naussilus.Core.DatasOperators;
+using Naussilus.Core.Conditions;
 using UnityEngine;
 
-namespace Naussilus.Core.Datas.EStats
+namespace Naussilus.Core.Operators
 {
     [Serializable]
     public struct Stat : IOperand

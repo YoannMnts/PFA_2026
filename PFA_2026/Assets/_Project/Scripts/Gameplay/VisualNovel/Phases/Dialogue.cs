@@ -1,6 +1,7 @@
 using System.Threading;
 using Helteix.Tools.Phases;
-using Naussilus.Core.Datas.VisualNovels;
+using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas;
+using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers;
 using UnityEngine;
 using Task = System.Threading.Tasks.Task;
 

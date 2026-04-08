@@ -1,10 +1,8 @@
 ﻿using System;
-using Naussilus.Core.Datas.Conditions;
-using Naussilus.Core.Datas.EStats;
-using Naussilus.Core.Datas.NpcDatas;
+using Naussilus.Core.Conditions;
 using UnityEngine;
 
-namespace Naussilus.Core.DatasOperators
+namespace Naussilus.Core.Operators
 {
     [Serializable]
     public struct RelationshipOperand : IOperand

@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Naussilus.Core.Datas.VisualNovels
+namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers
 {
     [CreateAssetMenu(fileName = "BasicAnswerData", menuName = "VisualNovel/Answer/BasicAnswerData", order = 0)]
     public class BasicAnswerData : Answer

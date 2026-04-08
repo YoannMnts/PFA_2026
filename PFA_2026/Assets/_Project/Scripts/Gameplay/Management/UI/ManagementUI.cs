@@ -1,6 +1,6 @@
 ﻿using System;
 using Helteix.Tools.Phases;
-using Naussilus.Core.Scripts.Managers;
+using Naussilus.Core.Managers;
 using UnityEngine;
 
 namespace _Project.Scripts

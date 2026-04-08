@@ -1,8 +1,8 @@
 ﻿using System;
-using Naussilus.Core.Datas.NpcDatas;
+using Naussilus.Core.NpcDatas;
 using UnityEngine;
 
-namespace Naussilus.Core.Datas.Managements
+namespace Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys
 {
     [Serializable]
     public struct Category

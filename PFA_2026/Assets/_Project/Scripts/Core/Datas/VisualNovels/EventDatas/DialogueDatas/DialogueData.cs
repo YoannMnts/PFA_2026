@@ -1,9 +1,11 @@
 ﻿using System;
-using Naussilus.Core.Datas.Conditions;
+using Naussilus.Core.Conditions;
+using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers;
+using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueLines;
 using UnityEditor;
 using UnityEngine;
 
-namespace Naussilus.Core.Datas.VisualNovels
+namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas
 {
     [CreateAssetMenu(fileName = "DialogueData", menuName = "VisualNovel/DialogueData", order = 0)]
     public class DialogueData : ScriptableObject

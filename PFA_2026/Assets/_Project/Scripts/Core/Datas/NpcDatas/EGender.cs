@@ -1,8 +1,8 @@
 ﻿using System;
-using Naussilus.Core.Datas.Conditions;
+using Naussilus.Core.Conditions;
 using UnityEngine;
 
-namespace Naussilus.Core.Datas.NpcDatas
+namespace Naussilus.Core.NpcDatas
 {
     [Serializable]
     public struct Gender : ITarget

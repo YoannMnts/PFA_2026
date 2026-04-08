@@ -1,9 +1,9 @@
 ﻿using System;
-using Naussilus.Core.Datas.NpcDatas;
+using Naussilus.Core.NpcDatas;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Naussilus.Core.Datas.VisualNovels
+namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueLines
 {
     [Serializable]
     public struct DialogueLine

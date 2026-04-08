@@ -1,8 +1,8 @@
 ﻿using System;
-using Naussilus.Core.DatasOperators;
+using Naussilus.Core.Operators;
 using UnityEngine;
 
-namespace Naussilus.Core.Datas.Conditions
+namespace Naussilus.Core.Conditions
 {
     [Serializable]
     public struct ComplexCondition
@@ -15,8 +15,5 @@ namespace Naussilus.Core.Datas.Conditions
         
         [field: SerializeReference, SubclassSelector]
         public IOperand RightOperand { get; private set; }
-        
-        [field: SerializeReference, SubclassSelector]
-        public ITarget StatTarget { get; private set; }
     }
 }

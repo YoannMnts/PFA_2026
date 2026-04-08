@@ -15,8 +15,13 @@ MonoBehaviour:
   <Conditions>k__BackingField: []
   <Lines>k__BackingField:
     <Npc>k__BackingField: {fileID: 11400000, guid: 4c5237b2ea5cb26419c3e8d2d834f0d9, type: 2}
-    <Text>k__BackingField: AAAAAAAAAAAAA
+    <Text>k__BackingField: "On me parle tout le temps de \u201Cpoulpe\u201D et de
+      \u201Cpieuvre\u201D et de \u201Ccontr\xF4le mental\u201D mais je comprends
+      pas, je suis Jennie je suis une vraie fille !"
     <Expression>k__BackingField: {fileID: 0}
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 012a47e424d497c46aa6afd15dd73ef8, type: 2}
   <GUID>k__BackingField: f1a473e8-1996-407c-a29d-bf28b06332b0
+  references:
+    version: 2
+    RefIds: []

@@ -1,5 +1,5 @@
 ﻿using Helteix.Tools.Phases;
-using Naussilus.Core.Scripts.Managers;
+using Naussilus.Core.Managers;
 using TMPro;
 using UnityEngine;
 

@@ -1,10 +1,11 @@
 ﻿using System;
-using Naussilus.Core.Datas.Conditions;
-using Naussilus.Core.Datas.NpcDatas;
+using Naussilus.Core.Conditions;
+using Naussilus.Core.NpcDatas;
+using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas;
 using UnityEditor;
 using UnityEngine;
 
-namespace Naussilus.Core.Datas.VisualNovels
+namespace Naussilus.Core.VisualNovels.EventDatas
 {
     [CreateAssetMenu(fileName = "EventData", menuName = "VisualNovel/EventData", order = 0)]
     public class EventData : ScriptableObject

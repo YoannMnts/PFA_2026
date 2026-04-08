@@ -18,42 +18,43 @@ MonoBehaviour:
   <Priority>k__BackingField: 0
   <Conditions>k__BackingField:
   - <LeftOperand>k__BackingField:
-      rid: 2832589531384905936
+      rid: 2832589543077314710
     <Comparator>k__BackingField: 2
     <RightOperand>k__BackingField:
-      rid: 2832589531384905937
-    <StatTarget>k__BackingField:
-      <Npc>k__BackingField: []
-      <CategoryIndex>k__BackingField: 
-      <Gender>k__BackingField: 
+      rid: 2832589543077314711
   - <LeftOperand>k__BackingField:
-      rid: 2832589531384905938
+      rid: 2832589543077314716
     <Comparator>k__BackingField: 2
     <RightOperand>k__BackingField:
-      rid: 2832589531384905940
-    <StatTarget>k__BackingField:
-      <Npc>k__BackingField: []
-      <CategoryIndex>k__BackingField: 
-      <Gender>k__BackingField: 
+      rid: 2832589543077314713
   <FirstDialogue>k__BackingField: {fileID: 11400000, guid: f67f2007a67a6d747afb3f09114e9a66, type: 2}
   <GUID>k__BackingField: 7e411dc7-dd37-46cf-8f90-7540760ac499
   references:
     version: 2
     RefIds:
-    - rid: 2832589531384905936
-      type: {class: Gauge, ns: Naussilus.Core.Datas.EStats, asm: Naussilus.Core}
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2832589543077314710
+      type: {class: Gauge, ns: Naussilus.Core.Operators, asm: Naussilus.Core}
       data:
-        <EGauge>k__BackingField: 3
-    - rid: 2832589531384905937
-      type: {class: IntOperand, ns: Naussilus.Core.DatasOperators, asm: Naussilus.Core}
+        <EGauge>k__BackingField: 1
+        <Target>k__BackingField:
+          rid: -2
+    - rid: 2832589543077314711
+      type: {class: IntOperand, ns: Naussilus.Core.Operators, asm: Naussilus.Core}
       data:
-        <Amount>k__BackingField: 17
-    - rid: 2832589531384905938
-      type: {class: RelationshipOperand, ns: Naussilus.Core.DatasOperators, asm: Naussilus.Core}
+        <Amount>k__BackingField: 10
+        <Target>k__BackingField:
+          rid: -2
+    - rid: 2832589543077314713
+      type: {class: IntOperand, ns: Naussilus.Core.Operators, asm: Naussilus.Core}
       data:
-        <Npc1>k__BackingField: {fileID: 11400000, guid: 4c5237b2ea5cb26419c3e8d2d834f0d9, type: 2}
-        <Npc2>k__BackingField: {fileID: 11400000, guid: 9f30a5cdef3d527428e1cb8a59089753, type: 2}
-    - rid: 2832589531384905940
-      type: {class: IntOperand, ns: Naussilus.Core.DatasOperators, asm: Naussilus.Core}
+        <Amount>k__BackingField: 15
+        <Target>k__BackingField:
+          rid: -2
+    - rid: 2832589543077314716
+      type: {class: Gauge, ns: Naussilus.Core.Operators, asm: Naussilus.Core}
       data:
-        <Amount>k__BackingField: 12
+        <EGauge>k__BackingField: 2
+        <Target>k__BackingField:
+          rid: -2

@@ -1,9 +1,9 @@
 ﻿using System;
-using Naussilus.Core.Datas.Conditions;
+using Naussilus.Core.Conditions;
 using UnityEditor;
 using UnityEngine;
 
-namespace Naussilus.Core.Datas.NpcDatas
+namespace Naussilus.Core.NpcDatas
 {
     [Serializable]
     public struct Npc : ITarget

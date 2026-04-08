@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Naussilus.Core.Scripts.Managers
+namespace Naussilus.Core.Managers
 {
     public static class UIManager
     {

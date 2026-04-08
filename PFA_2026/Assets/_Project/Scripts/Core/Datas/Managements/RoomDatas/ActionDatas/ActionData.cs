@@ -1,8 +1,10 @@
 ﻿using System;
+using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
+using Naussilus.Core.Managements.RoomDatas.ActionDatas.Effects;
 using UnityEditor;
 using UnityEngine;
 
-namespace Naussilus.Core.Datas.Managements
+namespace Naussilus.Core.Managements.RoomDatas.ActionDatas
 {
     [CreateAssetMenu(fileName = "ActionData", menuName = "Management/ActionData", order = 0)]
     public class ActionData : ScriptableObject
@@ -17,7 +19,7 @@ namespace Naussilus.Core.Datas.Managements
         public Category[] Categories { get; private set; }
         
         [field: SerializeField]
-        public Effect Effects { get; private set; }
+        public Effect[] Effects { get; private set; }
         
         [field: SerializeField, HideInInspector]
         public string GUID { get; private set; }

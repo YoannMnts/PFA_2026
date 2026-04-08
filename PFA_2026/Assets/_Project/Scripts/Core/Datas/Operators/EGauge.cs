@@ -1,4 +1,4 @@
-﻿namespace Naussilus.Core.Datas.EStats
+﻿namespace Naussilus.Core.Operators
 {
     public enum EGauge
     {

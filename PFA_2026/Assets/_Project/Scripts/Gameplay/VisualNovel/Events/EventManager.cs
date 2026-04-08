@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Naussilus.Core.Datas.VisualNovels;
+using Naussilus.Core.VisualNovels.EventDatas;
 using UnityEngine;
 
 namespace Naussilus.Gameplay.VisualNovel._Project.Scripts

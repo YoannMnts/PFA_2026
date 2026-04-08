@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: BasicAnswerData
   m_EditorClassIdentifier: Naussilus.Core.Datas.VisualNovels::Naussilus.Core.Datas.VisualNovels.BasicAnswerData
+  <PlayerText>k__BackingField: 
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 57a8d6b9ead8b6f4891a58f381456825, type: 2}
   <GUID>k__BackingField: f5bf29c8-c05f-4192-ab14-8240a0bde433

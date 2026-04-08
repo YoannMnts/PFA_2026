@@ -1,7 +1,8 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using Helteix.Tools.Phases;
-using Naussilus.Core.Datas.VisualNovels;
+using Naussilus.Core.VisualNovels.EventDatas;
+using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas;
 using UnityEngine;
 
 namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
