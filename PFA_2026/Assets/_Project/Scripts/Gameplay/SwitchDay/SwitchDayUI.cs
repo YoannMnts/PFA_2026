@@ -15,11 +15,6 @@ namespace Naussilus.Gameplay
         
         private SwitchDay currentSwitchDay;
 
-        private void Start()
-        {
-            canvasGroup.Hide();
-        }
-
         private void OnEnable()
         {
             this.Register();
@@ -34,6 +29,7 @@ namespace Naussilus.Gameplay
         {
             currentSwitchDay = phase;
             textArea.text = $"Jours {phase.CurrentDay}";
+            Debug.Log(textArea.text);
             canvasGroup.Show();
         }
 

@@ -14,6 +14,7 @@ namespace Naussilus.Core.Datas.VisualNovels
         [field : SerializeField]
         public EventConsequence[] Consequence { get; private set; }
     }
+    
     [CreateAssetMenu(fileName = "FinalAnswerData", menuName = "VisualNovel/Answer/FinalAnswerData", order = 0)]
     public class FinalAnswerData : Answer
     {

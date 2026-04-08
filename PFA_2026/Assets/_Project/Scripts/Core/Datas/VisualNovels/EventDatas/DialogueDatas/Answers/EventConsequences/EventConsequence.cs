@@ -17,7 +17,7 @@ namespace Naussilus.Core.Datas.VisualNovels
         [field : SerializeField]
         public int RightOperand { get; private set; }
         
-        [field : SerializeField]
-        public ActionTarget[] Target { get; private set; }
+        [field : SerializeReference, SubclassSelector]
+        public ITarget[] Target { get; private set; }
     }
 }

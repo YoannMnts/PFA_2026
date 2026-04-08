@@ -1,4 +1,5 @@
-﻿using Helteix.Tools.Phases;
+﻿using System;
+using Helteix.Tools.Phases;
 using Naussilus.Core.Scripts.Managers;
 using UnityEngine;
 
@@ -8,7 +9,12 @@ namespace _Project.Scripts
     {
         [SerializeField]
         private CanvasGroup canvasGroup;
-        
+
+        private void Start()
+        {
+            canvasGroup.Hide();
+        }
+
         private void OnEnable()
         {
             this.Register();

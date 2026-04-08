@@ -1,55 +1,57 @@
 ﻿using System;
+using Naussilus.Core.Datas.Conditions;
 using UnityEditor;
 using UnityEngine;
 
 namespace Naussilus.Core.Datas.NpcDatas
 {
+    [Serializable]
+    public struct Npc : ITarget
+    {
+        [field: SerializeField]
+        public NpcData NpcData { get; private set; }
+    }
+    
     [CreateAssetMenu(fileName = "NpcData", menuName = "NpcData", order = 0)]
     public class NpcData : ScriptableObject
     {
-        [field : SerializeField]
-        public string Name { get; private set; }
-        
-        [field : SerializeField]
-        public NpcStats NpcStats { get; private set; }
-        
-        [field : SerializeField]
-        public NpcGauge NpcGauge { get; private set; }
-        
-        [field : SerializeField]
-        public NpcRelationship[] Relationships { get; private set; }
-        
-        [field : SerializeField]
-        public EGender Gender { get; private set; }
-        
-        [field : SerializeField, TextArea]
-        public string CurrentThinking { get; private set; }
-        
-        [field: SerializeField, HideInInspector]
-        public string GUID { get; private set; }
+    [field: SerializeField] public string Name { get; private set; }
 
-        private void OnValidate()
+    [field: SerializeField] public NpcStats NpcStats { get; private set; }
+
+    [field: SerializeField] public NpcGauge NpcGauge { get; private set; }
+
+    [field: SerializeField] public NpcRelationship[] Relationships { get; private set; }
+
+    [field: SerializeField] public EGender Gender { get; private set; }
+
+    [field: SerializeField, TextArea] public string CurrentThinking { get; private set; }
+
+    [field: SerializeField, HideInInspector]
+    public string GUID { get; private set; }
+
+    private void OnValidate()
+    {
+        if (string.IsNullOrEmpty(GUID))
         {
-            if (string.IsNullOrEmpty(GUID))
-            {
-                GenerateNewGuid();
-            }
-            
+            GenerateNewGuid();
+        }
+
 #if UNITY_EDITOR
-            string[] existings = AssetDatabase.FindAssets($"t:{nameof(NpcData)}");
-            for (int i = 0; i < existings.Length; i++)
-            {
-                var path = AssetDatabase.GUIDToAssetPath(existings[i]);
-                var asset = AssetDatabase.LoadAssetAtPath<NpcData>(path);
-                if(asset != this && asset.GUID == GUID)
-                    GenerateNewGuid();
-            }
-#endif
-        }
-
-        private void GenerateNewGuid()
+        string[] existings = AssetDatabase.FindAssets($"t:{nameof(NpcData)}");
+        for (int i = 0; i < existings.Length; i++)
         {
-            GUID = Guid.NewGuid().ToString();
+            var path = AssetDatabase.GUIDToAssetPath(existings[i]);
+            var asset = AssetDatabase.LoadAssetAtPath<NpcData>(path);
+            if (asset != this && asset.GUID == GUID)
+                GenerateNewGuid();
         }
+#endif
+    }
+
+    private void GenerateNewGuid()
+    {
+        GUID = Guid.NewGuid().ToString();
+    }
     }
 }

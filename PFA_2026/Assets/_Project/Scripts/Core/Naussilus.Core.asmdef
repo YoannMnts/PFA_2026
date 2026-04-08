@@ -1,7 +1,9 @@
 {
     "name": "Naussilus.Core",
     "rootNamespace": "Naussilus.Core",
-    "references": [],
+    "references": [
+        "MackySoft.SerializeReferenceExtensions"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
