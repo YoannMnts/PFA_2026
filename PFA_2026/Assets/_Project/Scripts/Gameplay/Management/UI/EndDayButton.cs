@@ -6,7 +6,7 @@ namespace _Project.Scripts
     {
         protected override void OnButtonClicked()
         {
-            currentPhase.EndPhase(true);
+            currentPhase.SetResult(true);
         }
     }
 }

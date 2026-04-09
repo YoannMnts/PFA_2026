@@ -29,13 +29,23 @@ namespace Naussilus.Gameplay.Launcher._Project.Scripts.Gameplay
                 {
                     await SwitchDay(i);
                     await VisualNovel();
-                    await Management();
+                    bool result = await Management();
+                    if (!result)
+                    {
+                        GameOver();
+                        break;
+                    }
                 }
             }
             catch (Exception e)
             {
                 Debug.LogException(e);
             }
+        }
+
+        private void GameOver()
+        {
+            throw new NotImplementedException();
         }
 
         private async Awaitable SwitchDay(int i)
@@ -52,10 +62,12 @@ namespace Naussilus.Gameplay.Launcher._Project.Scripts.Gameplay
             await visualNovelPhase.Run();
         }
 
-        private async Awaitable Management()
+        private async Awaitable<bool> Management()
         {
             var sideView = new ManagementPhase();
-            await sideView.Run();
+            PhaseResult<bool> result = await sideView.Run();
+            
+            return result;
         }
     }
 }

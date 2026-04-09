@@ -20,7 +20,7 @@ MonoBehaviour:
   - <Conditions>k__BackingField: []
     <Consequence>k__BackingField:
     - <LeftOperand>k__BackingField:
-        rid: 2832589543077314722
+        rid: 2832589555071451253
       <Operator>k__BackingField: 1
       <RightOperand>k__BackingField: 4
     - <LeftOperand>k__BackingField:
@@ -83,5 +83,14 @@ MonoBehaviour:
           <ERelationship>k__BackingField: 0
         <Npc2>k__BackingField:
           <ERelationship>k__BackingField: 8
+        <Target>k__BackingField:
+          rid: -2
+    - rid: 2832589555071451253
+      type: {class: RelationshipOperand, ns: Naussilus.Core.Operators, asm: Naussilus.Core}
+      data:
+        <Npc1>k__BackingField:
+          <ERelationship>k__BackingField: -85
+        <Npc2>k__BackingField:
+          <ERelationship>k__BackingField: 0
         <Target>k__BackingField:
           rid: -2

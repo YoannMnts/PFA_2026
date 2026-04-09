@@ -5,41 +5,8 @@ using UnityEngine;
 
 namespace _Project.Scripts
 {
-    public class ManagementPhase : IPhase<bool>
+    public class ManagementPhase : PhaseCompletionSource<bool>
     {
-        private bool endPhase;
-        public ManagementPhase()
-        {
-            
-        }
         
-        async Awaitable<bool> IPhase<bool>.Execute(CancellationToken token)
-        {
-            /*
-            var waitAction = new WaitAction();
-            await waitAction.Run();
-            await waitAction.CurrentResult.Run();
-            */
-            while (!endPhase)
-            {
-                await Awaitable.NextFrameAsync(token);
-            }
-            return true;
-        }
-
-        async Awaitable IPhase<bool>.Initialize(CancellationToken token)
-        {
-            await Task.CompletedTask;
-        }
-
-        async Awaitable IPhase<bool>.Dispose(CancellationToken token)
-        {
-            await Task.CompletedTask;
-        }
-
-        public void EndPhase(bool result)
-        {
-            endPhase = result;
-        }
     }
 }

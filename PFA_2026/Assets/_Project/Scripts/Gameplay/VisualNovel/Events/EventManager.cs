@@ -6,30 +6,31 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
 {
     public static class EventManager
     {
-        private static Dictionary<string, EventData> eventDatas;
+        private static readonly Dictionary<string, EventData> EventDatas;
 
         static EventManager()
         {
-            eventDatas = new ();
+            EventDatas = new ();
             var entries = Resources.LoadAll<EventData>("ScriptableObjects/VisualNovel/Event");
             for (int i = 0; i < entries.Length; i++)
             {
                 EventData entry = entries[i];
-                eventDatas.Add(entry.GUID, entry);
+                EventDatas.Add(entry.GUID, entry);
             }
         }
 
         public static EventData GetValidEvent()
         {
-            foreach ((string key, EventData value) in eventDatas)
-                return value;
+            //change to random valid event
+            foreach ((string key, EventData value) in EventDatas)
+                return value; 
             return null;
         }
         
 
         public static EventData TryGetEvent(string guid)
         {
-            eventDatas.TryGetValue(guid, out EventData value);
+            EventDatas.TryGetValue(guid, out EventData value);
             return value;
         }
     }
