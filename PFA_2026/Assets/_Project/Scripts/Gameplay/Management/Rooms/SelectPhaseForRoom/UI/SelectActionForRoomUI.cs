@@ -1,6 +1,8 @@
-﻿using Helteix.Tools.Phases;
+﻿using System;
+using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas;
+using Naussilus.Core.Managers;
 using UnityEngine;
 
 namespace _Project.Scripts
@@ -11,14 +13,19 @@ namespace _Project.Scripts
 
         [SerializeField] private CanvasGroup group;
         [SerializeField] private RoomActionUIList roomActionUIList;
-        
-        
+
+        private void Start()
+        {
+            group.Hide();
+        }
+
         protected override void OnPhaseBegin(SelectActionForRoom phase)
         {
             if(current != null)
                 return;
             
             current = phase;
+            group.Show();
             roomActionUIList.Connect(phase.Choices);
             
             base.OnPhaseBegin(phase);
@@ -31,6 +38,7 @@ namespace _Project.Scripts
             
             current = null;
             roomActionUIList.Disconnect();
+            group.Hide();
             
             base.OnPhaseEnd(phase);
         }

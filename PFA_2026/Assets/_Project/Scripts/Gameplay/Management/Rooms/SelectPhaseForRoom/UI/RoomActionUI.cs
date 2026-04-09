@@ -30,7 +30,7 @@ namespace _Project.Scripts
             descriptionText.text = string.Empty;
         }
 
-        public void OnClicked(PointerEventData eventData)
+        public void OnClicked()
         {
             selectActionForRoomUI.ChooseAction(Current);
         }

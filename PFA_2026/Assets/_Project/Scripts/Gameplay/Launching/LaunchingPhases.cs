@@ -64,8 +64,8 @@ namespace Naussilus.Gameplay.Launcher._Project.Scripts.Gameplay
 
         private async Awaitable<bool> Management()
         {
-            var sideView = new ManagementPhase();
-            PhaseResult<bool> result = await sideView.Run();
+            var managementPhase = new ManagementPhase();
+            PhaseResult<bool> result = await managementPhase.Run();
             
             return result;
         }
