@@ -1,8 +1,5 @@
-﻿using System.Collections.Generic;
-using Helteix.Tools.Phases;
-using Helteix.Tools.UI;
+﻿using Helteix.Tools.Phases;
 using Naussilus.Core.Managements.RoomDatas;
-using Naussilus.Core.Managements.RoomDatas.ActionDatas;
 using UnityEngine;
 using UnityEngine.EventSystems;
 

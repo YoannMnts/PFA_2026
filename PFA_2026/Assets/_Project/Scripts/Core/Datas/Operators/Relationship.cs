@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace Naussilus.Core.Operators
 {
+    // faire un dropdown pour choisir entre Npc, Category, Genre
     [Serializable]
     public struct Relationship
     {
