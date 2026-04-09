@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers
 {
     [Serializable]
-    public struct FinalAnswers
+    public struct Effect
     {
         [field : SerializeField]
         public ComplexCondition[] Conditions { get; private set; }
@@ -22,7 +22,7 @@ namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers
         public string NpcText { get; private set; }
         
         [field : SerializeField]
-        public FinalAnswers[] FinalAnswers { get; private set; }
+        public Effect[] FinalAnswers { get; private set; }
         
         [field: SerializeField, HideInInspector]
         public string GUID { get; private set; }

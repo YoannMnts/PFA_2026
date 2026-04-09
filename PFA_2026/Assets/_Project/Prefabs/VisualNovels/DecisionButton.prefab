@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89f4357db902476b836e20302a82fed1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay::Naussilus.Gameplay.Scripts.UIs.DecisionButton
-  canvasGroup: {fileID: 0}
+  textMesh: {fileID: 8577244169685298731}
 --- !u!1 &7245949741272709072
 GameObject:
   m_ObjectHideFlags: 0

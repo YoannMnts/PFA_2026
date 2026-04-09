@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6551f63f2e464eb39de211b4f9603e78, type: 3}
   m_Name: FinalAnswerData
   m_EditorClassIdentifier: Naussilus.Core.Datas.VisualNovels::Naussilus.Core.Datas.VisualNovels.FinalAnswerData
-  <PlayerText>k__BackingField: 
-  <NpcText>k__BackingField: 
+  <ButtonText>k__BackingField: "Je dois \xEAtre honn\xEAte : Tu as un poulpe sur
+    la t\xEAte"
+  <NpcText>k__BackingField: "Quoi ! Alors vous aussi maintenant vous dites \xE7a\u2026Je
+    ne sais pas \xE0 quoi je m\u2019attendais"
   <FinalAnswers>k__BackingField:
   - <Conditions>k__BackingField: []
     <Consequence>k__BackingField:
