@@ -30,18 +30,5 @@ namespace _Project.Scripts
             Choices = null;
             return base.Dispose(token);
         }
-        
-        /*
-        async Awaitable<bool> IPhase<bool>.Execute(CancellationToken token)
-        {
-            var roomActionMenu = new WaitAction();
-            await roomActionMenu;
-
-            var actionData = roomActionMenu.CurrentResult;
-            var chooseAction = new RoomActionMenu(actionData);
-            await chooseAction.Run();
-            
-            return true;
-        }*/
     }
 }

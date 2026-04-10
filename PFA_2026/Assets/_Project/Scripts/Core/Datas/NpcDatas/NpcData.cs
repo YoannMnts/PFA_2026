@@ -1,12 +1,13 @@
 ﻿using System;
 using Naussilus.Core.Conditions;
+using Naussilus.Core.Operators;
 using UnityEditor;
 using UnityEngine;
 
 namespace Naussilus.Core.NpcDatas
 {
     [Serializable]
-    public struct Npc : ITarget
+    public struct Npc : ITarget, IRelationshipOperand
     {
         [field: SerializeField]
         public NpcData NpcData { get; private set; }
