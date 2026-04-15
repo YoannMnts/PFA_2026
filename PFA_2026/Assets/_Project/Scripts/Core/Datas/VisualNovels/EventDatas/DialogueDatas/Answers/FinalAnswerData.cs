@@ -1,28 +1,14 @@
 ﻿using System;
-using Naussilus.Core.Conditions;
 using UnityEditor;
 using UnityEngine;
 
 namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers
 {
-    [Serializable]
-    public struct Effect
-    {
-        [field : SerializeField]
-        public ComplexCondition[] Conditions { get; private set; }
-        
-        [field : SerializeField]
-        public EventConsequence[] Consequence { get; private set; }
-    }
-    
     [CreateAssetMenu(fileName = "FinalAnswerData", menuName = "VisualNovel/Answer/FinalAnswerData", order = 0)]
     public class FinalAnswerData : Answer
     {
         [field : SerializeField, TextArea]
         public string NpcText { get; private set; }
-        
-        [field : SerializeField]
-        public Effect[] FinalAnswers { get; private set; }
         
         [field: SerializeField, HideInInspector]
         public string GUID { get; private set; }

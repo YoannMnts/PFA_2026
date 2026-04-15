@@ -1,5 +1,4 @@
 ﻿using System;
-using Naussilus.Core.Conditions;
 using Naussilus.Core.NpcDatas;
 using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas;
 using UnityEditor;
@@ -18,9 +17,6 @@ namespace Naussilus.Core.VisualNovels.EventDatas
         
         [field : SerializeField]
         public int Priority { get; private set; }
-        
-        [field : SerializeField]
-        public ComplexCondition[] Conditions { get; private set; }
         
         [field : SerializeField]
         public DialogueData FirstDialogue { get; private set; }

@@ -1,18 +1,9 @@
 ﻿using System;
-using Naussilus.Core.Conditions;
-using Naussilus.Core.Operators;
 using UnityEditor;
 using UnityEngine;
 
 namespace Naussilus.Core.NpcDatas
 {
-    [Serializable]
-    public class Npc : ITarget, IRelationshipOperand
-    {
-        [field: SerializeField]
-        public NpcData NpcData { get; private set; }
-    }
-
     [CreateAssetMenu(fileName = "NpcData", menuName = "NpcData", order = 0)]
     public class NpcData : ScriptableObject
     {
@@ -29,7 +20,7 @@ namespace Naussilus.Core.NpcDatas
         public NpcRelationship[] Relationships { get; private set; }
 
         [field: SerializeField] 
-        public EGender Gender { get; private set; }
+        public Gender Gender { get; private set; }
 
         [field: SerializeField, TextArea] 
         public string CurrentThinking { get; private set; }

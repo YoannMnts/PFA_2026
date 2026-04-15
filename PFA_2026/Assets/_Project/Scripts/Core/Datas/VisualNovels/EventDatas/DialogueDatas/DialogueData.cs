@@ -1,5 +1,4 @@
 ﻿using System;
-using Naussilus.Core.Conditions;
 using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers;
 using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueLines;
 using UnityEditor;
@@ -10,9 +9,6 @@ namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas
     [CreateAssetMenu(fileName = "DialogueData", menuName = "VisualNovel/DialogueData", order = 0)]
     public class DialogueData : ScriptableObject
     {
-        [field : SerializeField]
-        public ComplexCondition[] Conditions { get; private set; }
-        
         [field : SerializeField]
         public DialogueLine Lines { get; private set; }
         

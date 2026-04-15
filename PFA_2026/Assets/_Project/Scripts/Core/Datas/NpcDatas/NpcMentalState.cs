@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Naussilus.Core.NpcDatas
 {
     [Serializable]
-    public class NpcMentalState : INpcIntOperand
+    public class NpcMentalState : IConditionValue
     {
         [field: SerializeField, Range(0,20)]
         public int Amount { get; private set; }
