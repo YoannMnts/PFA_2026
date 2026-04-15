@@ -5,12 +5,12 @@ using UnityEngine;
 namespace Naussilus.Core.Operators
 {
     [Serializable]
-    public struct IntOperand : IOperand
+    public class IntOperand : IOperand
     {
-        [field: SerializeField]
+        [field: SerializeField, Range(0, 20)]
         public int Amount { get; private set; }
 
-        [field: SerializeReference, SubclassSelector, HideInInspector]
+        [field: SerializeReference, HideInInspector]
         public ITarget Target { get; private set; }
     }
 }

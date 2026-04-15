@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Naussilus.Core.NpcDatas
 {
     [Serializable]
-    public struct Npc : ITarget, IRelationshipOperand
+    public class Npc : ITarget, IRelationshipOperand
     {
         [field: SerializeField]
         public NpcData NpcData { get; private set; }
@@ -16,17 +16,23 @@ namespace Naussilus.Core.NpcDatas
     [CreateAssetMenu(fileName = "NpcData", menuName = "NpcData", order = 0)]
     public class NpcData : ScriptableObject
     {
-        [field: SerializeField] public string Name { get; private set; }
+        [field: SerializeField] 
+        public string Name { get; private set; }
 
-        [field: SerializeField] public NpcStats NpcStats { get; private set; }
+        [field: SerializeField] 
+        public NpcBehavior[] NpcStats { get; private set; }
 
-        [field: SerializeField] public NpcGauge NpcGauge { get; private set; }
+        [field: SerializeField] 
+        public NpcMentalState[] NpcGauge { get; private set; }
 
-        [field: SerializeField] public NpcRelationship[] Relationships { get; private set; }
+        [field: SerializeField] 
+        public NpcRelationship[] Relationships { get; private set; }
 
-        [field: SerializeField] public EGender Gender { get; private set; }
+        [field: SerializeField] 
+        public EGender Gender { get; private set; }
 
-        [field: SerializeField, TextArea] public string CurrentThinking { get; private set; }
+        [field: SerializeField, TextArea] 
+        public string CurrentThinking { get; private set; }
 
         [field: SerializeField, HideInInspector]
         public string GUID { get; private set; }

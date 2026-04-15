@@ -1,19 +1,27 @@
 ﻿using System;
-using Naussilus.Core.Conditions;
+using Naussilus.Core.NpcDatas;
 using UnityEngine;
 
 namespace Naussilus.Core.Operators
 {
-    [Serializable]
-    public struct RelationshipOperand : IOperand
-    {
-        [field: SerializeReference, SubclassSelector]
-        public IRelationshipOperand Npc1 { get; private set; }
-        
-        [field: SerializeReference, SubclassSelector]
-        public IRelationshipOperand Npc2 { get; private set; }
+    public interface IRelationshipOperand {}
 
-        [field: SerializeReference, SubclassSelector,HideInInspector]
-        public ITarget Target { get; private set; }
+    [Serializable]
+    public class CategoryOperand : IRelationshipOperand
+    {
+        [field: SerializeField]
+        public int CategoryIndex { get; private set; }
+    }
+    
+    [Serializable]
+    public class GenderOperand :IRelationshipOperand
+    {
+        [field: SerializeField]
+        public EGender Gender { get; private set; }
+    }
+    
+    [Serializable]
+    public class AllNpcOperand :IRelationshipOperand
+    {
     }
 }
