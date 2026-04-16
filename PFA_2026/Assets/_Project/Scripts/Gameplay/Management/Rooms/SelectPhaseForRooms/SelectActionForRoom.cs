@@ -1,11 +1,10 @@
 ﻿using System.Threading;
-using System.Threading.Tasks;
 using Helteix.Tools.Phases;
 using Naussilus.Core.Managements.RoomDatas;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas;
 using UnityEngine;
 
-namespace _Project.Scripts
+namespace _Project.Scripts.Rooms
 {
     public class SelectActionForRoom : PhaseCompletionSource<int>
     {

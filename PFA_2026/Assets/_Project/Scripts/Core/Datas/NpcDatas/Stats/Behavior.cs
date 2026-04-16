@@ -1,4 +1,4 @@
-﻿namespace Naussilus.Core.Operators
+﻿namespace Naussilus.Core.NpcDatas
 {
     public enum Behavior
     {

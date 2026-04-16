@@ -10,7 +10,7 @@ namespace _Project.Scripts
         [SerializeField]
         private CanvasGroup canvasGroup;
 
-        private void Start()
+        private void Awake()
         {
             canvasGroup.Hide();
         }

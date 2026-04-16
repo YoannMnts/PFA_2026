@@ -13,20 +13,41 @@ MonoBehaviour:
   m_Name: JennieSample
   m_EditorClassIdentifier: Naussilus.Core.Datas.NpcDatas::Naussilus.Core.Datas.NpcDatas.NpcData
   <Name>k__BackingField: Jennie
-  <NpcStats>k__BackingField:
-    <Aggressiveness>k__BackingField: 0
-    <Compassion>k__BackingField: 0
-    <Sensitivity>k__BackingField: 0
-    <Expressiveness>k__BackingField: 0
-    <Tact>k__BackingField: 0
-    <Malleability>k__BackingField: 0
-  <NpcGauge>k__BackingField:
-    <Happiness>k__BackingField: 0
-    <Confidence>k__BackingField: 0
-    <Integration>k__BackingField: 0
-    <Relaxation>k__BackingField: 0
-    <Health>k__BackingField: 0
-  <Relationships>k__BackingField: []
-  <Gender>k__BackingField: 1
+  <Behavior>k__BackingField:
+  - <Amount>k__BackingField: 0
+    <Stat>k__BackingField: 0
+  - <Amount>k__BackingField: 0
+    <Stat>k__BackingField: 0
+  - <Amount>k__BackingField: 0
+    <Stat>k__BackingField: 0
+  - <Amount>k__BackingField: 0
+    <Stat>k__BackingField: 0
+  - <Amount>k__BackingField: 0
+    <Stat>k__BackingField: 0
+  - <Amount>k__BackingField: 0
+    <Stat>k__BackingField: 0
+  <MentalState>k__BackingField:
+  - <Amount>k__BackingField: 0
+    <Gauge>k__BackingField: 0
+  - <Amount>k__BackingField: 0
+    <Gauge>k__BackingField: 0
+  - <Amount>k__BackingField: 0
+    <Gauge>k__BackingField: 0
+  - <Amount>k__BackingField: 0
+    <Gauge>k__BackingField: 0
+  - <Amount>k__BackingField: 0
+    <Gauge>k__BackingField: 0
+  <Relationships>k__BackingField:
+  - <Amount>k__BackingField: 0
+    <Npc>k__BackingField:
+      rid: 2832589721856901197
+  <Gender>k__BackingField: 0
   <CurrentThinking>k__BackingField: 
   <GUID>k__BackingField: 1dcb3bdf-ea35-4bf7-a2e7-1fc12e7cd17c
+  references:
+    version: 2
+    RefIds:
+    - rid: 2832589721856901197
+      type: {class: CategoryIndex, ns: Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys, asm: Naussilus.Core}
+      data:
+        <Index>k__BackingField: 0

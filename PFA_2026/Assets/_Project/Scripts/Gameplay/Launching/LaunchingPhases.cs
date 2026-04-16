@@ -27,8 +27,8 @@ namespace Naussilus.Gameplay.Launcher._Project.Scripts.Gameplay
             {
                 for (int i = 0; i < maxDay; i++)
                 {
-                    await SwitchDay(i);
-                    await VisualNovel();
+                    //await SwitchDay(i);
+                    //await VisualNovel();
                     bool result = await Management();
                     if (!result)
                     {

@@ -19,4 +19,11 @@ namespace Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys
         [field: SerializeField]
         public NpcData[] ObligateNpc { get; private set; }
     }
+    
+    [Serializable]
+    public class CategoryIndex : IRelationshipValue
+    {
+        [field: SerializeField, Range(1, 10)]
+        public int Index { get; private set; }
+    }
 }

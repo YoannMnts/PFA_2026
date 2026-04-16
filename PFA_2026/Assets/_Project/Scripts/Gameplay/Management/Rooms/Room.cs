@@ -3,7 +3,7 @@ using Naussilus.Core.Managements.RoomDatas;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace _Project.Scripts
+namespace _Project.Scripts.Rooms
 {
     public class Room : MonoBehaviour, IPointerClickHandler
     {

@@ -1,8 +1,10 @@
-﻿using Naussilus.Core.Operators;
+﻿using System;
+using Naussilus.Core.Operators;
 using UnityEngine;
 
 namespace Naussilus.Core
 {
+    [Serializable]
     public class Consequence
     {
         [field: SerializeReference]

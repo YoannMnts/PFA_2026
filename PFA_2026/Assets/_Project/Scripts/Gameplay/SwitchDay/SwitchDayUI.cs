@@ -15,6 +15,11 @@ namespace Naussilus.Gameplay
         
         private SwitchDay currentSwitchDay;
 
+        private void Awake()
+        {
+            canvasGroup.Hide();
+        }
+        
         private void OnEnable()
         {
             this.Register();

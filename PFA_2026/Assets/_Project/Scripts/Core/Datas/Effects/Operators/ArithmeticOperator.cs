@@ -2,6 +2,8 @@
 {
     public enum ArithmeticOperator
     {
-        
+        Add,
+        Subtract,
+        Multiply,
     }
 }

@@ -19,6 +19,9 @@ namespace Naussilus.Core.VisualNovels.EventDatas
         public int Priority { get; private set; }
         
         [field : SerializeField]
+        public Condition[] Conditions { get; private set; }
+        
+        [field : SerializeField]
         public DialogueData FirstDialogue { get; private set; }
         
         [field: SerializeField, HideInInspector]

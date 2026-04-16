@@ -16,46 +16,4 @@ MonoBehaviour:
     la t\xEAte"
   <NpcText>k__BackingField: "Quoi ! Alors vous aussi maintenant vous dites \xE7a\u2026Je
     ne sais pas \xE0 quoi je m\u2019attendais"
-  <FinalAnswers>k__BackingField:
-  - <Conditions>k__BackingField: []
-    <Consequence>k__BackingField:
-    - <Operand>k__BackingField:
-        rid: -2
-      <Operator>k__BackingField: 1
-    - <Operand>k__BackingField:
-        rid: -2
-      <Operator>k__BackingField: 1
-    - <Operand>k__BackingField:
-        rid: -2
-      <Operator>k__BackingField: 1
-    - <Operand>k__BackingField:
-        rid: -2
-      <Operator>k__BackingField: 1
-  - <Conditions>k__BackingField:
-    - <LeftOperand>k__BackingField:
-        rid: 2832589543077314723
-      <Comparator>k__BackingField: 2
-      <RightOperand>k__BackingField:
-        rid: 2832589543077314724
-    <Consequence>k__BackingField:
-    - <Operand>k__BackingField:
-        rid: -2
-      <Operator>k__BackingField: 1
   <GUID>k__BackingField: c1ae6b25-6c26-4797-abb0-cb2eb637becb
-  references:
-    version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
-    - rid: 2832589543077314723
-      type: {class: Stat, ns: Naussilus.Core.Operators, asm: Naussilus.Core}
-      data:
-        <EStat>k__BackingField: 3
-        <Target>k__BackingField:
-          rid: -2
-    - rid: 2832589543077314724
-      type: {class: IntOperand, ns: Naussilus.Core.Operators, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 10
-        <Target>k__BackingField:
-          rid: -2

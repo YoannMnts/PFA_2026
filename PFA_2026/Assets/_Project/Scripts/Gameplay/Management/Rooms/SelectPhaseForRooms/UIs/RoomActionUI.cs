@@ -1,12 +1,9 @@
-﻿using System;
-using System.Linq;
-using Helteix.Tools.UI;
+﻿using Helteix.Tools.UI;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas;
 using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-namespace _Project.Scripts
+namespace _Project.Scripts.Rooms
 {
     public class RoomActionUI : UIItem<ActionData>
     {
