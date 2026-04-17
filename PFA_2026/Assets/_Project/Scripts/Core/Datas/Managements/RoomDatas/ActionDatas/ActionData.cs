@@ -1,6 +1,6 @@
 ﻿using System;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
-using Naussilus.Core.Managements.RoomDatas.ActionDatas.Effects;
+using Naussilus.Core.Managements.RoomDatas.ActionDatas.Effects.ActionsEffects;
 using UnityEditor;
 using UnityEngine;
 
@@ -19,7 +19,7 @@ namespace Naussilus.Core.Managements.RoomDatas.ActionDatas
         public Category[] Categories { get; private set; }
         
         [field: SerializeField]
-        public Effect[] Effects { get; private set; }
+        public ActionEffect[] ActionEffects { get; private set; }
         
         [field: SerializeField, HideInInspector]
         public string GUID { get; private set; }

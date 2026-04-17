@@ -7,15 +7,15 @@ namespace _Project.Scripts
 {
     public class CheckNpcState : PhaseCompletionSource<bool>
     {
-        public Npc CurrentNpc { get; private set; }
-        public NpcData CurrentNpcData => CurrentNpc.NpcData;
+        public ManagementNpc CurrentManagementNpc { get; private set; }
+        public NpcData CurrentNpcData => CurrentManagementNpc.NpcData;
         
         public NpcBehavior[] NpcBehaviors { get; private set; }
         public NpcMentalState[] NpcMentalStates { get; private set; }
         
-        public CheckNpcState(Npc npc)
+        public CheckNpcState(ManagementNpc managementNpc)
         {
-            CurrentNpc = npc;
+            CurrentManagementNpc = managementNpc;
         }
         
         protected override Awaitable Initialize(CancellationToken token)

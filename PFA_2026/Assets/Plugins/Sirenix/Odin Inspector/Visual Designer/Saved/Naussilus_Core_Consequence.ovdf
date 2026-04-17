@@ -1,0 +1,7 @@
+OVDF v1.1
+Naussilus.Core.Consequence, Naussilus.Core
+
+# <Subject>k__BackingField
+Position: $root:1
++ [Sirenix.OdinInspector.HideIfAttribute]
+	Condition = "IsCurrentNpc"

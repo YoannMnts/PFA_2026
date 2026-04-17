@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 namespace _Project.Scripts
 {
-    public class Npc : MonoBehaviour, IPointerClickHandler
+    public class ManagementNpc : MonoBehaviour, IPointerClickHandler
     {
         [field: SerializeField] 
         public NpcData NpcData { get; private set; }

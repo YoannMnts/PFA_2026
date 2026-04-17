@@ -54,7 +54,7 @@ namespace Naussilus.Core.NpcDatas
     }
 
     [Serializable]
-    public class Npc : IRelationshipValue
+    public class NpcValue : IRelationshipValue, INpcSelector
     {
         [field: SerializeField]
         public NpcData NpcData { get; private set; }

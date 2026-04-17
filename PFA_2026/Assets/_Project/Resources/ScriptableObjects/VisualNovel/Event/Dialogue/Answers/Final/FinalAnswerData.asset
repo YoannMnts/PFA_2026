@@ -16,4 +16,19 @@ MonoBehaviour:
     la t\xEAte"
   <NpcText>k__BackingField: "Quoi ! Alors vous aussi maintenant vous dites \xE7a\u2026Je
     ne sais pas \xE0 quoi je m\u2019attendais"
+  <Effects>k__BackingField:
+  - <Conditions>k__BackingField: []
+    <Consequences>k__BackingField:
+    - <IsCurrentNpc>k__BackingField: 1
+      <Subject>k__BackingField:
+        rid: -2
+      <IntTarget>k__BackingField:
+        rid: -2
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 0
   <GUID>k__BackingField: c1ae6b25-6c26-4797-abb0-cb2eb637becb
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }

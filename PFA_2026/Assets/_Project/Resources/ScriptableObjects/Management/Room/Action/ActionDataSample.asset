@@ -24,114 +24,22 @@ MonoBehaviour:
     <Quantity>k__BackingField: 5
     <ProhibitedNpc>k__BackingField: []
     <ObligateNpc>k__BackingField: []
-  <Effects>k__BackingField:
-  - <NpcCondition>k__BackingField:
-      <Npc>k__BackingField: {fileID: 11400000, guid: 4c5237b2ea5cb26419c3e8d2d834f0d9, type: 2}
-      <CategoryIndex>k__BackingField: 2
-    <ActionsEffects>k__BackingField:
+  <ActionEffects>k__BackingField:
+  - <CategoryIndex>k__BackingField: 0
+    <NpcData>k__BackingField: {fileID: 11400000, guid: 4c5237b2ea5cb26419c3e8d2d834f0d9, type: 2}
+    <Effects>k__BackingField:
     - <Conditions>k__BackingField: []
       <Consequences>k__BackingField:
-      - <LeftOperand>k__BackingField:
-          rid: 2832589543077314684
-        <Operator>k__BackingField: 0
-        <RightOperand>k__BackingField: 1
-      - <LeftOperand>k__BackingField:
-          rid: 2832589543077314686
-        <Operator>k__BackingField: 0
-        <RightOperand>k__BackingField: 1
-      - <LeftOperand>k__BackingField:
-          rid: 2832589543077314688
-        <Operator>k__BackingField: 0
-        <RightOperand>k__BackingField: 2
-      - <LeftOperand>k__BackingField:
-          rid: 2832589543077314689
-        <Operator>k__BackingField: 0
-        <RightOperand>k__BackingField: 2
-      - <LeftOperand>k__BackingField:
-          rid: 2832589543077314690
-        <Operator>k__BackingField: 0
-        <RightOperand>k__BackingField: 1
-    - <Conditions>k__BackingField:
-      - <LeftOperand>k__BackingField:
-          rid: 2832589543077314691
-        <Comparator>k__BackingField: 1
-        <RightOperand>k__BackingField:
-          rid: 2832589543077314692
-      <Consequences>k__BackingField:
-      - <LeftOperand>k__BackingField:
-          rid: 2832589543077314693
-        <Operator>k__BackingField: 0
-        <RightOperand>k__BackingField: 1
-      - <LeftOperand>k__BackingField:
-          rid: 2832589543077314694
-        <Operator>k__BackingField: 0
-        <RightOperand>k__BackingField: 1
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: -2
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
   <GUID>k__BackingField: 36c3b009-7e9f-46ad-b901-c0b75f9807db
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 2832589543077314684
-      type: {class: Gauge, ns: Naussilus.Core.Operators, asm: Naussilus.Core}
-      data:
-        <EGauge>k__BackingField: 3
-        <Target>k__BackingField:
-          rid: -2
-    - rid: 2832589543077314686
-      type: {class: Gauge, ns: Naussilus.Core.Operators, asm: Naussilus.Core}
-      data:
-        <EGauge>k__BackingField: 0
-        <Target>k__BackingField:
-          rid: -2
-    - rid: 2832589543077314688
-      type: {class: Gauge, ns: Naussilus.Core.Operators, asm: Naussilus.Core}
-      data:
-        <EGauge>k__BackingField: 2
-        <Target>k__BackingField:
-          rid: -2
-    - rid: 2832589543077314689
-      type: {class: RelationshipOperand, ns: Naussilus.Core.Operators, asm: Naussilus.Core}
-      data:
-        <Npc1>k__BackingField:
-          <ERelationship>k__BackingField: 0
-        <Npc2>k__BackingField:
-          <ERelationship>k__BackingField: 10
-        <Target>k__BackingField:
-          rid: -2
-    - rid: 2832589543077314690
-      type: {class: RelationshipOperand, ns: Naussilus.Core.Operators, asm: Naussilus.Core}
-      data:
-        <Npc1>k__BackingField:
-          <ERelationship>k__BackingField: 0
-        <Npc2>k__BackingField:
-          <ERelationship>k__BackingField: 2
-        <Target>k__BackingField:
-          rid: -2
-    - rid: 2832589543077314691
-      type: {class: Stat, ns: Naussilus.Core.Operators, asm: Naussilus.Core}
-      data:
-        <EStat>k__BackingField: 3
-        <Target>k__BackingField:
-          rid: -2
-    - rid: 2832589543077314692
-      type: {class: IntOperand, ns: Naussilus.Core.Operators, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 16
-        <Target>k__BackingField:
-          rid: -2
-    - rid: 2832589543077314693
-      type: {class: RelationshipOperand, ns: Naussilus.Core.Operators, asm: Naussilus.Core}
-      data:
-        <Npc1>k__BackingField:
-          <ERelationship>k__BackingField: 10
-        <Npc2>k__BackingField:
-          <ERelationship>k__BackingField: 0
-        <Target>k__BackingField:
-          rid: -2
-    - rid: 2832589543077314694
-      type: {class: Gauge, ns: Naussilus.Core.Operators, asm: Naussilus.Core}
-      data:
-        <EGauge>k__BackingField: 1
-        <Target>k__BackingField:
-          rid: -2

@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Naussilus.Core.NpcDatas
 {
     [Serializable]
-    public class Gender : IRelationshipValue
+    public class Gender : IRelationshipValue, INpcSelector
     {
         [field: SerializeField]
         public EGender EGender { get; private set; }

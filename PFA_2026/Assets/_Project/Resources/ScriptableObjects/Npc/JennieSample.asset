@@ -40,14 +40,14 @@ MonoBehaviour:
   <Relationships>k__BackingField:
   - <Amount>k__BackingField: 0
     <Npc>k__BackingField:
-      rid: 2832589721856901197
+      rid: 2832589736050425943
   <Gender>k__BackingField: 0
   <CurrentThinking>k__BackingField: 
   <GUID>k__BackingField: 1dcb3bdf-ea35-4bf7-a2e7-1fc12e7cd17c
   references:
     version: 2
     RefIds:
-    - rid: 2832589721856901197
-      type: {class: CategoryIndex, ns: Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys, asm: Naussilus.Core}
+    - rid: 2832589736050425943
+      type: {class: Npc, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <Index>k__BackingField: 0
+        <NpcData>k__BackingField: {fileID: 0}

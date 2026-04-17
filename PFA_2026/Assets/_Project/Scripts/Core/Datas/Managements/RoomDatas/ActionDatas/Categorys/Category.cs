@@ -21,9 +21,9 @@ namespace Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys
     }
     
     [Serializable]
-    public class CategoryIndex : IRelationshipValue
+    public class CategoryIndex : IRelationshipValue, INpcSelector
     {
-        [field: SerializeField, Range(1, 10)]
+        [field: SerializeField, Range(0, 10)]
         public int Index { get; private set; }
     }
 }

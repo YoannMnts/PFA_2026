@@ -7,13 +7,19 @@ namespace Naussilus.Core
     [Serializable]
     public class Consequence
     {
+        [field : SerializeField]
+        public bool IsCurrentNpc { get; private set; }
+        
         [field: SerializeReference]
-        public IConsequenceValue Target { get; private set; }
+        public INpcSelector Subject { get; private set; }
+        
+        [field: SerializeReference]
+        public IConsequenceValue IntTarget { get; private set; }
         
         [field: SerializeField]
         public ArithmeticOperator ArithmeticOperator { get; private set; }
         
-        [field: SerializeField]
+        [field: SerializeField, Range(0,20)]
         public int Amount { get; private set; }
     }
 }

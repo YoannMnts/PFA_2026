@@ -9,8 +9,13 @@ namespace Naussilus.Core.NpcDatas
     {
         [field: SerializeField, Range(0,20)]
         public int Amount { get; private set; }
-        
+
         [field: SerializeField]
         public Behavior Stat { get; private set; }
+        
+        public void SetNewAmount(int amount)
+        {
+            Amount = amount;
+        }
     }
 }

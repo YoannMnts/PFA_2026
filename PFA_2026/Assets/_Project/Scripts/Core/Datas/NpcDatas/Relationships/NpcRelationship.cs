@@ -5,12 +5,17 @@ using UnityEngine;
 namespace Naussilus.Core.NpcDatas
 {
     [Serializable]
-    public class NpcRelationship : IConditionValue, IConsequenceValue
+    public class NpcRelationship : IConditionValue, IConsequenceValue, INpcSelector
     {
         [field: SerializeField, Range(0,20)]
         public int Amount { get; private set; }
         
         [field: SerializeReference]
         public IRelationshipValue Npc { get; private set; }
+
+        public void SetNewAmount(int amount)
+        {
+            Amount = amount;
+        }
     }
 }
