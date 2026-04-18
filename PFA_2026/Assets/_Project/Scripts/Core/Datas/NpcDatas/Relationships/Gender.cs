@@ -1,5 +1,6 @@
 ﻿
 using System;
+using Naussilus.Core.Consequences;
 using UnityEngine;
 
 namespace Naussilus.Core.NpcDatas

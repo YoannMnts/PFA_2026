@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Linq;
+using Naussilus.Core.Conditions;
+using Naussilus.Core.Consequences;
 using Naussilus.Core.Managers;
+using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
-using Naussilus.Gameplay.Npcs;
 using UnityEngine;
 
 namespace Naussilus.Core

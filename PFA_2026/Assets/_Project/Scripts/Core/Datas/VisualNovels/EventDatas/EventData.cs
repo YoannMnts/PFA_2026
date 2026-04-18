@@ -1,4 +1,5 @@
 ﻿using System;
+using Naussilus.Core.Conditions;
 using Naussilus.Core.NpcDatas;
 using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas;
 using UnityEditor;

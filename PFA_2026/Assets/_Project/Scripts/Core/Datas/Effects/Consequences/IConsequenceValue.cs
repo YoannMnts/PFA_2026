@@ -1,4 +1,4 @@
-﻿namespace Naussilus.Core
+﻿namespace Naussilus.Core.Consequences
 {
     public interface IConsequenceValue
     {

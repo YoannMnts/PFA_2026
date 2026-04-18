@@ -1,4 +1,6 @@
 ﻿using System;
+using Naussilus.Core.Consequences;
+using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
 using UnityEngine;
 
@@ -18,6 +20,8 @@ namespace Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys
         
         [field: SerializeField]
         public NpcData[] ObligateNpc { get; private set; }
+        
+        public Npc[] CurrentNpcs { get; private set; }
     }
     
     [Serializable]

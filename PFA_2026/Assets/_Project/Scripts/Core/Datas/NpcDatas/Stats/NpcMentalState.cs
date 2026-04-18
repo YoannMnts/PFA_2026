@@ -1,4 +1,6 @@
 ﻿using System;
+using Naussilus.Core.Conditions;
+using Naussilus.Core.Consequences;
 using Naussilus.Core.Operators;
 using UnityEngine;
 

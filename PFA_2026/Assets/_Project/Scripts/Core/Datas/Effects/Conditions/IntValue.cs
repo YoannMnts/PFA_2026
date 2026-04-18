@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Naussilus.Core
+namespace Naussilus.Core.Conditions
 {
     [Serializable]
     public class IntValue : IConditionValue

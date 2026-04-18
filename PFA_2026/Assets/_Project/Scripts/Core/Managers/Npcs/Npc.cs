@@ -1,7 +1,6 @@
 ﻿using Naussilus.Core.NpcDatas;
-using UnityEngine;
 
-namespace Naussilus.Gameplay.Npcs
+namespace Naussilus.Core.Managers.Npcs
 {
     public class Npc
     {

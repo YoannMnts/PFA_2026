@@ -2,7 +2,7 @@
 using Naussilus.Core.Operators;
 using UnityEngine;
 
-namespace Naussilus.Core
+namespace Naussilus.Core.Consequences
 {
     [Serializable]
     public class Consequence
