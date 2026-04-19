@@ -1,6 +1,10 @@
-﻿namespace Naussilus.Core.Consequences
+﻿using System;
+using Naussilus.Core.NpcDatas;
+
+namespace Naussilus.Core.Consequences
 {
-    public class AllNpc : INpcSelector
+    [Serializable]
+    public class AllNpc : INpcSelector, IRelationshipValue
     {
     }
 }
