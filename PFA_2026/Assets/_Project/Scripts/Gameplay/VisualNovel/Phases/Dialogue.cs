@@ -1,5 +1,6 @@
 using System.Threading;
 using Helteix.Tools.Phases;
+using Naussilus.Core.NpcDatas;
 using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas;
 using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers;
 using UnityEngine;
@@ -9,11 +10,14 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
 {
     public class Dialogue : IPhase<bool>
     {
+        private readonly NpcData currentNpcData;
+        
         public DialogueData CurrentDialogue { get; private set; }
-
-        public Dialogue(DialogueData dialogue)
+        
+        public Dialogue(NpcData npcData ,DialogueData dialogue)
         {
             CurrentDialogue = dialogue;
+            currentNpcData = npcData;
         }
         
         async Awaitable<bool> IPhase<bool>.Execute(CancellationToken token)
@@ -21,7 +25,7 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
             await Awaitable.WaitForSecondsAsync(3f, token);
             
             Answer[] answers = CurrentDialogue.Answers;
-            Decision decision = new Decision(answers);
+            Decision decision = new Decision(currentNpcData ,answers);
             await decision.Run();
             
             return true;

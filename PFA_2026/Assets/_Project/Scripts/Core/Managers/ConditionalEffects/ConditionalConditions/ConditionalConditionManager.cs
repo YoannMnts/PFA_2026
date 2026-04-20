@@ -17,7 +17,7 @@ namespace Naussilus.Core.Managers
             {
                 for (int i = 0; i < currentConditions.Length; i++)
                 {
-                    if (currentConditions[i].IsCurrentNpc && currentConditions[i].ComputeCondition(defaultNpc))
+                    if (currentConditions[i].IsCurrentNpc)
                         isAllConditionValidate.Add(currentConditions[i].ComputeCondition(defaultNpc));
                     
                     switch (currentConditions[i].Subject)
@@ -51,10 +51,6 @@ namespace Naussilus.Core.Managers
                             continue;
                     }
                 }
-
-                if (isAllConditionValidate.Count == 0 || isAllConditionValidate == null)
-                    return false;
-                
                 return isAllConditionValidate.All(t => t);
             }
         }

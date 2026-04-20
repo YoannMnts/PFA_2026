@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
-  m_Name: BasicAnswerData
+  m_Name: BasicAnswerDataSample
   m_EditorClassIdentifier: Naussilus.Core.Datas.VisualNovels::Naussilus.Core.Datas.VisualNovels.BasicAnswerData
   <ButtonText>k__BackingField: Pourquoi te disent ils cela ?
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 57a8d6b9ead8b6f4891a58f381456825, type: 2}

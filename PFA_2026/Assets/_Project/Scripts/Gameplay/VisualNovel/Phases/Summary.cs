@@ -8,11 +8,9 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
 {
     public class Summary : IPhase<bool>
     {
-        public FinalAnswerData CurrentFinalAnswerData { get; private set; }
-        
-        public Summary(FinalAnswerData finalAnswerData)
+        public Summary()
         {
-            CurrentFinalAnswerData = finalAnswerData;
+            
         }
         
         async Awaitable<bool> IPhase<bool>.Execute(CancellationToken token)

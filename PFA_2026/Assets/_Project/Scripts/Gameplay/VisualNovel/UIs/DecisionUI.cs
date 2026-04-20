@@ -53,7 +53,6 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
             canvasGroup.Hide();
             foreach (Transform button in root)
             {
-                Debug.Log(button.name);
                 Destroy(button.gameObject);
             }
         }

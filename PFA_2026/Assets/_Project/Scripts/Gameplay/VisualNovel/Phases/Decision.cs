@@ -1,6 +1,10 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using Helteix.Tools.Phases;
+using Naussilus.Core;
+using Naussilus.Core.Managers;
+using Naussilus.Core.NpcDatas;
+using Naussilus.Core.VisualNovels.EventDatas;
 using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers;
 using UnityEngine;
 
@@ -8,10 +12,13 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
 {
     public class Decision : IPhase<bool>
     {
+        private readonly NpcData currentNpcData;
+        
         public Answer[] CurrentAnswers { get; private set; }
-        public Decision(Answer[] answers)
+        public Decision(NpcData npcData ,Answer[] answers)
         {
             CurrentAnswers = answers;
+            currentNpcData = npcData;
         }
         
         async Awaitable<bool> IPhase<bool>.Execute(CancellationToken token)
@@ -25,13 +32,16 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
                 case BasicAnswerData basicAnswerData:
                 {
                     var nextDialogue = basicAnswerData.NextDialogue;
-                    Dialogue dialogue = new Dialogue(nextDialogue);
+                    Dialogue dialogue = new Dialogue(currentNpcData ,nextDialogue);
                     await dialogue.Run();
                     break;
                 }
+                
                 case FinalAnswerData finalAnswerData:
-                    Summary summary = new Summary(finalAnswerData);
-                    await summary.Run();
+                    NpcData data = currentNpcData;
+                    ConditionalEffect[] effects = finalAnswerData.Effects;
+                    foreach (var effect in effects)
+                        effect.ComputeConditionalEffect(data);
                     break;
             }
             return true;

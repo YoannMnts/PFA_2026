@@ -36,6 +36,7 @@ namespace Naussilus.Core.Managers
                             currentConsequence[i].ComputeConsequence(allNpc);
                         }
                         continue;
+                    
                     case Gender gender:
                         var npcDatas = NpcManager.GetAllNpcs();
                         for (int j = 0; j < npcDatas.Length; j++)
@@ -120,7 +121,7 @@ namespace Naussilus.Core.Managers
             };
 
             currentNpc.SetValue(stat, newAmount);
-            Debug.Log(consequence.Text);
+            Debug.Log(stat.GetValue(currentNpc).ToString());
         }
         
         private static void SetValue(this Npc currentNpc, IConsequenceValue consequenceValue, int amount)

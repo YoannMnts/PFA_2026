@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
   m_Name: DialogueDataSample 1
   m_EditorClassIdentifier: Naussilus.Core.Datas.VisualNovels::Naussilus.Core.Datas.VisualNovels.DialogueData
-  <Conditions>k__BackingField: []
   <Lines>k__BackingField:
     <Npc>k__BackingField: {fileID: 11400000, guid: 4c5237b2ea5cb26419c3e8d2d834f0d9, type: 2}
     <Text>k__BackingField: "On me parle tout le temps de \u201Cpoulpe\u201D et de
@@ -20,8 +19,5 @@ MonoBehaviour:
       pas, je suis Jennie je suis une vraie fille !"
     <Expression>k__BackingField: {fileID: 0}
   <Answers>k__BackingField:
-  - {fileID: 11400000, guid: 012a47e424d497c46aa6afd15dd73ef8, type: 2}
+  - {fileID: 11400000, guid: 8510d272bccec094b9afa31cebdeef74, type: 2}
   <GUID>k__BackingField: f1a473e8-1996-407c-a29d-bf28b06332b0
-  references:
-    version: 2
-    RefIds: []

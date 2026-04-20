@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core.Datas.NpcDatas::Naussilus.Core.Datas.NpcDatas.NpcData
   <Name>k__BackingField: Jennie
   <Behavior>k__BackingField:
-  - <Amount>k__BackingField: 12
+  - <Amount>k__BackingField: 11
     <Behavior>k__BackingField: 0
   <MentalState>k__BackingField: []
   <Relationships>k__BackingField: []
