@@ -3,18 +3,19 @@ using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
 using Naussilus.Core.Operators;
+using UnityEngine;
 
 namespace Naussilus.Core.Managers
 {
     public static class ConditionalConsequenceManager
     {
-        public static void ComputeAllConsequence(this Consequence[] currentConsequence, Npc currentNpc ,Category[] currentCategories)
+        public static void ComputeAllConsequence(this Consequence[] currentConsequence, Npc defaultNpc)
         {
             for (int i = 0; i < currentConsequence.Length; i++)
             {
                 if (currentConsequence[i].IsCurrentNpc)
                 {
-                    currentConsequence[i].ComputeConsequence(currentNpc);
+                    currentConsequence[i].ComputeConsequence(defaultNpc);
                     continue;
                 }
 
@@ -30,7 +31,48 @@ namespace Naussilus.Core.Managers
                         for (int j = 0; j < allNpcs.Length; j++)
                         {
                             NpcManager.TryGetNpc(allNpcs[j].GUID, out Npc allNpc);
-                            if (allNpc == currentNpc)
+                            if (allNpc == defaultNpc)
+                                continue;
+                            currentConsequence[i].ComputeConsequence(allNpc);
+                        }
+                        continue;
+                    case Gender gender:
+                        var npcDatas = NpcManager.GetAllNpcs();
+                        for (int j = 0; j < npcDatas.Length; j++)
+                        {
+                            if (npcDatas[j].Gender == gender.EGender)
+                            {
+                                NpcManager.TryGetNpc(npcDatas[j].GUID, out Npc npcGender);
+                                currentConsequence[i].ComputeConsequence(npcGender);
+                            }
+                        }
+                        continue;
+                }
+            }
+        }
+        public static void ComputeAllConsequence(this Consequence[] currentConsequence, Npc defaultNpc ,Category[] currentCategories)
+        {
+            for (int i = 0; i < currentConsequence.Length; i++)
+            {
+                if (currentConsequence[i].IsCurrentNpc)
+                {
+                    currentConsequence[i].ComputeConsequence(defaultNpc);
+                    continue;
+                }
+
+                switch (currentConsequence[i].Subject)
+                {
+                    case NpcValue npcValue:
+                        NpcManager.TryGetNpc(npcValue.NpcData.GUID, out Npc npc);
+                        currentConsequence[i].ComputeConsequence(npc);
+                        continue;
+                        
+                    case AllNpc :
+                        var allNpcs = NpcManager.GetAllNpcs();
+                        for (int j = 0; j < allNpcs.Length; j++)
+                        {
+                            NpcManager.TryGetNpc(allNpcs[j].GUID, out Npc allNpc);
+                            if (allNpc == defaultNpc)
                                 continue;
                             currentConsequence[i].ComputeConsequence(allNpc);
                         }
@@ -57,8 +99,8 @@ namespace Naussilus.Core.Managers
                 }
             }
         }
-        
-        public static void ComputeConsequence(this Consequence consequence, Npc currentNpc)
+
+        private static void ComputeConsequence(this Consequence consequence, Npc currentNpc)
         {
             ComputeValue(consequence, currentNpc);
         }
@@ -78,6 +120,7 @@ namespace Naussilus.Core.Managers
             };
 
             currentNpc.SetValue(stat, newAmount);
+            Debug.Log(consequence.Text);
         }
         
         private static void SetValue(this Npc currentNpc, IConsequenceValue consequenceValue, int amount)

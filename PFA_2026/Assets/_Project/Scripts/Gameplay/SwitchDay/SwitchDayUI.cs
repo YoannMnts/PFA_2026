@@ -17,7 +17,7 @@ namespace Naussilus.Gameplay
 
         private void Awake()
         {
-            canvasGroup.Hide();
+            //canvasGroup.Hide();
         }
         
         private void OnEnable()

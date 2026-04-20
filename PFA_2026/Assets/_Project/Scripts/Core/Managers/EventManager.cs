@@ -31,14 +31,14 @@ namespace Naussilus.Core.Managers
                 {
                     Condition[] conditions = value.Conditions;
                     NpcManager.TryGetNpc(value.Npcs[0].GUID, out Npc currentNpc);
-                    bool isValidate = conditions.All(c => c.ComputeCondition(currentNpc));
+                    var isValidate = conditions.ComputeAllCondition(currentNpc);
                     if (!isValidate) continue;
                     validEventDatas.Add(value);
                 }
 
                 if (validEventDatas.Count == 0)
                 {
-                    Debug.LogError("[Phase Manager] No valid events found");
+                    Debug.LogError("[Event Manager] No valid events found");
                     return null;
                 }
                 

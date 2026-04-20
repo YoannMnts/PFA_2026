@@ -14,32 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core.Datas.Managements::Naussilus.Core.Datas.Managements.ActionData
   <Name>k__BackingField: Organiser un repas
   <Cost>k__BackingField: 10
-  <Categories>k__BackingField:
-  - <Name>k__BackingField: Cuisine
-    <Quantity>k__BackingField: 1
-    <ProhibitedNpc>k__BackingField: []
-    <ObligateNpc>k__BackingField:
-    - {fileID: 11400000, guid: 9f30a5cdef3d527428e1cb8a59089753, type: 2}
-  - <Name>k__BackingField: "Tabl\xE9e"
-    <Quantity>k__BackingField: 5
-    <ProhibitedNpc>k__BackingField: []
-    <ObligateNpc>k__BackingField: []
-  <ActionEffects>k__BackingField:
-  - <CategoryIndex>k__BackingField: 2
-    <NpcData>k__BackingField: {fileID: 11400000, guid: 4c5237b2ea5cb26419c3e8d2d834f0d9, type: 2}
-    <Effects>k__BackingField:
-    - <Conditions>k__BackingField: []
-      <Consequences>k__BackingField:
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: -2
-        <ArithmeticOperator>k__BackingField: 0
-        <Amount>k__BackingField: 0
+  <Categories>k__BackingField: []
+  <ActionEffects>k__BackingField: []
   <GUID>k__BackingField: 36c3b009-7e9f-46ad-b901-c0b75f9807db
   references:
     version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+    RefIds: []

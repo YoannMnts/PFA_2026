@@ -14,42 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core.Datas.NpcDatas::Naussilus.Core.Datas.NpcDatas.NpcData
   <Name>k__BackingField: Jennie
   <Behavior>k__BackingField:
-  - <Amount>k__BackingField: 0
-    <Stat>k__BackingField: 0
-  - <Amount>k__BackingField: 0
-    <Stat>k__BackingField: 0
-  - <Amount>k__BackingField: 0
-    <Stat>k__BackingField: 0
-  - <Amount>k__BackingField: 0
-    <Stat>k__BackingField: 0
-  - <Amount>k__BackingField: 0
-    <Stat>k__BackingField: 0
-  - <Amount>k__BackingField: 0
-    <Stat>k__BackingField: 0
-  <MentalState>k__BackingField:
-  - <Amount>k__BackingField: 0
-    <Gauge>k__BackingField: 0
-  - <Amount>k__BackingField: 0
-    <Gauge>k__BackingField: 0
-  - <Amount>k__BackingField: 0
-    <Gauge>k__BackingField: 0
-  - <Amount>k__BackingField: 0
-    <Gauge>k__BackingField: 0
-  - <Amount>k__BackingField: 0
-    <Gauge>k__BackingField: 0
-  <Relationships>k__BackingField:
-  - <Amount>k__BackingField: 0
-    <Npc>k__BackingField:
-      rid: 2832589736050425943
+  - <Amount>k__BackingField: 12
+    <Behavior>k__BackingField: 0
+  <MentalState>k__BackingField: []
+  <Relationships>k__BackingField: []
   <Gender>k__BackingField: 0
   <CurrentThinking>k__BackingField: 
   <GUID>k__BackingField: 1dcb3bdf-ea35-4bf7-a2e7-1fc12e7cd17c
   references:
     version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
-    - rid: 2832589736050425943
-      type: {class: Npc, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 0}
+    RefIds: []

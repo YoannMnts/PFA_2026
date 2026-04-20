@@ -17,36 +17,27 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4c5237b2ea5cb26419c3e8d2d834f0d9, type: 2}
   <Priority>k__BackingField: 0
   <Conditions>k__BackingField:
-  - <Left>k__BackingField:
-      rid: 2832589790564319311
+  - <IsCurrentNpc>k__BackingField: 1
+    <Subject>k__BackingField:
+      rid: -2
+    <Left>k__BackingField:
+      rid: 2832589804832030809
     <ComparisonOperator>k__BackingField: 1
     <Right>k__BackingField:
-      rid: 2832589790564319316
-  - <Left>k__BackingField:
-      rid: 2832589790564319317
-    <ComparisonOperator>k__BackingField: 0
-    <Right>k__BackingField:
-      rid: 2832589790564319318
+      rid: 2832589804832030810
   <FirstDialogue>k__BackingField: {fileID: 11400000, guid: f67f2007a67a6d747afb3f09114e9a66, type: 2}
   <GUID>k__BackingField: 7e411dc7-dd37-46cf-8f90-7540760ac499
   references:
     version: 2
     RefIds:
-    - rid: 2832589790564319311
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2832589804832030809
+      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 0
-        <Gauge>k__BackingField: 1
-    - rid: 2832589790564319316
-      type: {class: IntValue, ns: Naussilus.Core.Conditions, asm: Naussilus.Core}
+        <Behavior>k__BackingField: 0
+    - rid: 2832589804832030810
+      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 10
-    - rid: 2832589790564319317
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 0
-        <Gauge>k__BackingField: 2
-    - rid: 2832589790564319318
-      type: {class: IntValue, ns: Naussilus.Core.Conditions, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 15

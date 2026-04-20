@@ -3,73 +3,29 @@ using Naussilus.Core.Consequences;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
-using UnityEngine.Pool;
 
 namespace Naussilus.Core.Managers
 {
     public static class ConditionalEffectManager
     {
-        private static Npc currentNpc;
-        private static Condition[] currentConditions;
-        private static Consequence[] currentConsequences;
         public static void ComputeConditionalEffect(this ConditionalEffect conditionalEffect, NpcData currentNpcData, Category[] currentCategories)
         {
-            currentConditions = conditionalEffect.Conditions;
-            currentConsequences = conditionalEffect.Consequences;
-            currentNpc = NpcManager.TryGetNpc(currentNpcData.GUID);
+            Condition[] currentConditions = conditionalEffect.Conditions;
+            Consequence[] currentConsequences = conditionalEffect.Consequences;
+            Npc currentNpc = NpcManager.TryGetNpc(currentNpcData.GUID);
 
-            ComputeAllCondtion(currentCategories);
+            if (currentConditions.ComputeAllCondition(currentNpc, currentCategories))
+                currentConsequences.ComputeAllConsequence(currentNpc, currentCategories);
         }
-
-        public static void ComputeAllCondtion(Category[] currentCategories)
+        
+        public static void ComputeConditionalEffect(this ConditionalEffect conditionalEffect, NpcData currentNpcData)
         {
-            using (ListPool<bool>.Get(out var isAllConditionValidate))
-            {
-                for (int i = 0; i < currentConditions.Length; i++)
-                {
-                    if (currentConditions[i].IsCurrentNpc && currentConditions[i].ComputeCondition(currentNpc))
-                        currentConsequences.ComputeAllConsequence(currentNpc, currentCategories);
-                    
-                    switch (currentConditions[i].Subject)
-                    {
-                        case NpcValue npcValue:
-                            NpcManager.TryGetNpc(npcValue.NpcData.GUID, out Npc npc);
-                            isAllConditionValidate.Add(currentConditions[i].ComputeCondition(npc)); 
-                            continue;
-                            
-                        case AllNpc :
-                            var allNpcs = NpcManager.GetAllNpcs();
-                            for (int j = 0; j < allNpcs.Length; j++)
-                            {
-                                NpcManager.TryGetNpc(allNpcs[j].GUID, out Npc allNpc);
-                                if (allNpc == currentNpc)
-                                    continue;
-                                isAllConditionValidate.Add(currentConditions[i].ComputeCondition(allNpc));
-                            }
-                            continue;
-                        
-                        case Gender gender:
-                            var npcDatas = NpcManager.GetAllNpcs();
-                            for (int j = 0; j < npcDatas.Length; j++)
-                            {
-                                if (npcDatas[j].Gender == gender.EGender)
-                                {
-                                    NpcManager.TryGetNpc(npcDatas[j].GUID, out Npc npcGender);
-                                    isAllConditionValidate.Add(currentConditions[i].ComputeCondition(npcGender));
-                                }
-                            }
-                            continue;
-                        case CategoryIndex categoryIndex:
-                            var targetCategory =  currentCategories[categoryIndex.Index];
-                            for (int j = 0; j < targetCategory.CurrentNpcs.Length; j++)
-                            {
-                                Npc categoryNpc =  targetCategory.CurrentNpcs[j];
-                                isAllConditionValidate.Add(currentConditions[i].ComputeCondition(categoryNpc));
-                            }
-                            continue;
-                    }
-                }
-            }
+            Condition[] currentConditions = conditionalEffect.Conditions;
+            Consequence[] currentConsequences = conditionalEffect.Consequences;
+            Npc currentNpc = NpcManager.TryGetNpc(currentNpcData.GUID);
+
+            if (currentConditions.ComputeAllCondition(currentNpc))
+                currentConsequences.ComputeAllConsequence(currentNpc);
         }
 
         public static int GetValue(this IConditionalEffect conditionValue, Npc npc)
