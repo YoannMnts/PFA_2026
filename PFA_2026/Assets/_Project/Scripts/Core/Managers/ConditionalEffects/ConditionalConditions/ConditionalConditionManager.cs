@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Naussilus.Core.Managers
 {
-    public static class ConditionalCondition
+    public static class ConditionalConditionManager
     {
         public static bool ComputeCondition(this Condition condition, Npc currentNpc)
         {
