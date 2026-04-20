@@ -47,6 +47,8 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
     - rid: 2832589736050425943
       type: {class: Npc, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:

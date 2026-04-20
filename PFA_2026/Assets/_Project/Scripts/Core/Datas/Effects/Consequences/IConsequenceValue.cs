@@ -1,9 +1,7 @@
 ﻿namespace Naussilus.Core.Consequences
 {
-    public interface IConsequenceValue
+    public interface IConsequenceValue : IConditionalEffect
     {
-        public int Amount { get; }
-
         public abstract void SetNewAmount(int amount);
     }
 }

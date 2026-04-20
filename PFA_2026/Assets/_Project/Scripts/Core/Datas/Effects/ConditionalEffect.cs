@@ -18,6 +18,6 @@ namespace Naussilus.Core
         [field: SerializeField]
         public Consequence[] Consequences { get; private set; }
         
-        public bool AreConditionsMet(Npc currentNpc) => Conditions.All(c => c.ComputeCondition(currentNpc));
+        //public bool AreConditionsMet(Npc currentNpc) => Conditions.All(c => c.ComputeCondition(currentNpc));
     }
 }

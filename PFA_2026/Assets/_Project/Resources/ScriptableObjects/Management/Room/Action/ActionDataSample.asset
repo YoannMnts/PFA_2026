@@ -19,13 +19,13 @@ MonoBehaviour:
     <Quantity>k__BackingField: 1
     <ProhibitedNpc>k__BackingField: []
     <ObligateNpc>k__BackingField:
-    - {fileID: 11400000, guid: 4c5237b2ea5cb26419c3e8d2d834f0d9, type: 2}
+    - {fileID: 11400000, guid: 9f30a5cdef3d527428e1cb8a59089753, type: 2}
   - <Name>k__BackingField: "Tabl\xE9e"
     <Quantity>k__BackingField: 5
     <ProhibitedNpc>k__BackingField: []
     <ObligateNpc>k__BackingField: []
   <ActionEffects>k__BackingField:
-  - <CategoryIndex>k__BackingField: 0
+  - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: 4c5237b2ea5cb26419c3e8d2d834f0d9, type: 2}
     <Effects>k__BackingField:
     - <Conditions>k__BackingField: []

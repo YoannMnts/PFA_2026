@@ -1,0 +1,57 @@
+﻿using System.Collections.Generic;
+using System.Linq;
+using Naussilus.Core.Conditions;
+using Naussilus.Core.Managers.Npcs;
+using Naussilus.Core.VisualNovels.EventDatas;
+using UnityEngine;
+using UnityEngine.Pool;
+
+namespace Naussilus.Core.Managers
+{
+    public static class EventManager
+    {
+        private static readonly Dictionary<string, EventData> EventDatas;
+
+        static EventManager()
+        {
+            EventDatas = new ();
+            var entries = Resources.LoadAll<EventData>("ScriptableObjects/VisualNovel/Event");
+            for (int i = 0; i < entries.Length; i++)
+            {
+                EventData entry = entries[i];
+                EventDatas.Add(entry.GUID, entry);
+            }
+        }
+
+        public static EventData GetValidEvent()
+        {
+            using (ListPool<EventData>.Get(out var validEventDatas) )
+            {
+                foreach ((string key, EventData value) in EventDatas)
+                {
+                    Condition[] conditions = value.Conditions;
+                    NpcManager.TryGetNpc(value.Npcs[0].GUID, out Npc currentNpc);
+                    bool isValidate = conditions.All(c => c.ComputeCondition(currentNpc));
+                    if (!isValidate) continue;
+                    validEventDatas.Add(value);
+                }
+
+                if (validEventDatas.Count == 0)
+                {
+                    Debug.LogError("[Phase Manager] No valid events found");
+                    return null;
+                }
+                
+                var randomIndex = Random.Range(0, validEventDatas.Count);
+                return validEventDatas[randomIndex];
+            }
+        }
+        
+
+        public static EventData TryGetEvent(string guid)
+        {
+            EventDatas.TryGetValue(guid, out EventData value);
+            return value;
+        }
+    }
+}

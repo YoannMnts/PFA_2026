@@ -1,7 +1,7 @@
 ﻿using System;
 using Naussilus.Core.NpcDatas;
 
-namespace Naussilus.Core.Consequences
+namespace Naussilus.Core
 {
     [Serializable]
     public class AllNpc : INpcSelector, IRelationshipValue

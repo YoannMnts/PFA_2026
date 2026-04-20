@@ -1,7 +1,7 @@
 ﻿namespace Naussilus.Core.Conditions
 {
-    public interface IConditionValue
+    public interface IConditionValue : IConditionalEffect
     {
-        public int Amount { get; }
+        
     }
 }

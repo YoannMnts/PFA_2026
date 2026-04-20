@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
 using UnityEngine;
 
-namespace Naussilus.Core.Managers
+namespace Naussilus.Core.Managers.Npcs
 {
     public static class NpcManager
     {

@@ -23,12 +23,88 @@ MonoBehaviour:
       <Subject>k__BackingField:
         rid: -2
       <IntTarget>k__BackingField:
+        rid: 2832589790564319319
+      <ArithmeticOperator>k__BackingField: 1
+      <Amount>k__BackingField: 4
+    - <IsCurrentNpc>k__BackingField: 1
+      <Subject>k__BackingField:
         rid: -2
-      <ArithmeticOperator>k__BackingField: 0
-      <Amount>k__BackingField: 0
+      <IntTarget>k__BackingField:
+        rid: 2832589790564319321
+      <ArithmeticOperator>k__BackingField: 1
+      <Amount>k__BackingField: 2
+    - <IsCurrentNpc>k__BackingField: 1
+      <Subject>k__BackingField:
+        rid: -2
+      <IntTarget>k__BackingField:
+        rid: 2832589790564319323
+      <ArithmeticOperator>k__BackingField: 1
+      <Amount>k__BackingField: 2
+    - <IsCurrentNpc>k__BackingField: 1
+      <Subject>k__BackingField:
+        rid: 2832589790564319324
+      <IntTarget>k__BackingField:
+        rid: 2832589790564319326
+      <ArithmeticOperator>k__BackingField: 1
+      <Amount>k__BackingField: 2
+  - <Conditions>k__BackingField:
+    - <Left>k__BackingField:
+        rid: 2832589790564319330
+      <ComparisonOperator>k__BackingField: 2
+      <Right>k__BackingField:
+        rid: 2832589790564319331
+    <Consequences>k__BackingField:
+    - <IsCurrentNpc>k__BackingField: 1
+      <Subject>k__BackingField:
+        rid: -2
+      <IntTarget>k__BackingField:
+        rid: 2832589790564319332
+      <ArithmeticOperator>k__BackingField: 1
+      <Amount>k__BackingField: 2
   <GUID>k__BackingField: c1ae6b25-6c26-4797-abb0-cb2eb637becb
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+    - rid: 2832589790564319319
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Gauge>k__BackingField: 1
+    - rid: 2832589790564319321
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Gauge>k__BackingField: 2
+    - rid: 2832589790564319323
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Gauge>k__BackingField: 0
+    - rid: 2832589790564319324
+      type: {class: AllNpc, ns: Naussilus.Core.Consequences, asm: Naussilus.Core}
+      data: 
+    - rid: 2832589790564319326
+      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Npc>k__BackingField:
+          rid: 2832589790564319328
+    - rid: 2832589790564319328
+      type: {class: AllNpc, ns: Naussilus.Core.Consequences, asm: Naussilus.Core}
+      data: 
+    - rid: 2832589790564319330
+      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Stat>k__BackingField: 3
+    - rid: 2832589790564319331
+      type: {class: IntValue, ns: Naussilus.Core.Conditions, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 10
+    - rid: 2832589790564319332
+      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Stat>k__BackingField: 3

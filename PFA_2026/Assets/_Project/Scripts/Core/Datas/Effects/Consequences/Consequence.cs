@@ -1,5 +1,6 @@
 ﻿using System;
 using Naussilus.Core.Operators;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Naussilus.Core.Consequences
@@ -19,7 +20,7 @@ namespace Naussilus.Core.Consequences
         [field: SerializeField]
         public ArithmeticOperator ArithmeticOperator { get; private set; }
         
-        [field: SerializeField, Range(0,20)]
-        public int Amount { get; private set; }
+        [field: SerializeField, TextArea]
+        public string Text { get; private set; }
     }
 }

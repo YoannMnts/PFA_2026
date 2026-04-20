@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using _Project.Scripts;
 using Helteix.Tools.Phases;
+using Naussilus.Core.Managers;
 using Naussilus.Core.VisualNovels.EventDatas;
 using Naussilus.Gameplay.VisualNovel._Project.Scripts;
 using UnityEngine;

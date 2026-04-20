@@ -14,7 +14,7 @@ namespace _Project.Scripts
         private TMP_Text valueText;
         protected override void SyncUI(NpcBehavior current)
         {
-            behaviorText.text = current.Stat.ToString();
+            behaviorText.text = current.Behavior.ToString();
             valueText.text = current.Amount.ToString();
         }
 

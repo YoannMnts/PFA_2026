@@ -13,7 +13,7 @@ namespace Naussilus.Core.NpcDatas
         public int Amount { get; private set; }
 
         [field: SerializeField]
-        public MentalState Gauge { get; private set; }
+        public MentalState MentalState { get; private set; }
         
         public void SetNewAmount(int amount)
         {

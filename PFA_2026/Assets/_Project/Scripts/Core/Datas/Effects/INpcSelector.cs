@@ -1,4 +1,4 @@
-﻿namespace Naussilus.Core.Consequences
+﻿namespace Naussilus.Core
 {
     public interface INpcSelector
     {

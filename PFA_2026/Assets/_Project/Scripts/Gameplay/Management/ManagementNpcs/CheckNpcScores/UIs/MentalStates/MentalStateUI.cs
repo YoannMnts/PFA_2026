@@ -15,7 +15,7 @@ namespace _Project.Scripts
         
         protected override void SyncUI(NpcMentalState current)
         {
-            mentalStateText.text = current.Gauge.ToString();
+            mentalStateText.text = current.MentalState.ToString();
             valueText.text = current.Amount.ToString();
         }
 

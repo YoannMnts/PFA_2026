@@ -1,4 +1,5 @@
 ﻿using System;
+using Naussilus.Core.Consequences;
 using Naussilus.Core.Operators;
 using UnityEngine;
 
@@ -7,6 +8,12 @@ namespace Naussilus.Core.Conditions
     [Serializable]
     public class Condition
     {
+        [field : SerializeField]
+        public bool IsCurrentNpc { get; private set; }
+        
+        [field: SerializeReference]
+        public INpcSelector Subject { get; private set; }
+        
         [field: SerializeReference]
         public IConditionValue Left { get; private set; }
         
