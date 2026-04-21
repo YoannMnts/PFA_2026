@@ -14,10 +14,15 @@ namespace Naussilus.Core.NpcDatas
 
         [field: SerializeField]
         public MentalState MentalState { get; private set; }
-        
-        public void SetNewAmount(int amount)
+    
+        public void SetNewAmount(int amount) => Amount = amount;
+    
+        public NpcMentalState Clone() => new NpcMentalState(Amount, MentalState);
+    
+        public NpcMentalState(int amount, MentalState mentalState)
         {
             Amount = amount;
+            MentalState = mentalState;
         }
     }
 }

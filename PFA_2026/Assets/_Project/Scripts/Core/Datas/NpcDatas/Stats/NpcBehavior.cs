@@ -14,10 +14,15 @@ namespace Naussilus.Core.NpcDatas
 
         [field: SerializeField]
         public Behavior Behavior { get; private set; }
-        
-        public void SetNewAmount(int amount)
+    
+        public void SetNewAmount(int amount) => Amount = amount;
+    
+        public NpcBehavior Clone() => new NpcBehavior(Amount, Behavior);
+    
+        public NpcBehavior(int amount, Behavior behavior)
         {
             Amount = amount;
+            Behavior = behavior;
         }
     }
 }
