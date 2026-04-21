@@ -11,36 +11,27 @@ namespace Naussilus.Core.Managers
     {
         public static void ComputeAllConsequence(this Consequence[] currentConsequence, NpcData currentNpcData)
         {
-            for (int i = 0; i < currentConsequence.Length; i++)
+            foreach (var consequence in currentConsequence)
             {
-                if (currentConsequence[i].IsCurrentNpc)
-                {
-                    currentConsequence[i].ComputeConsequence(currentNpcData);
-                    continue;
-                }
+                NpcData[] subjects = consequence.IsCurrentNpc
+                    ? new[] { currentNpcData }
+                    : NpcManager.GetSubjectNpcs(consequence.Subject, currentNpcData);
 
-                var npcSubjects = NpcManager.GetSubjectNpcs(currentConsequence[i].Subject, currentNpcData);
-                for (int j = 0; j < npcSubjects.Length; j++)
-                {
-                    currentConsequence[i].ComputeConsequence(npcSubjects[j]);
-                }
+                foreach (var subject in subjects)
+                    consequence.ComputeConsequence(subject);
             }
         }
+        
         public static void ComputeAllConsequence(this Consequence[] currentConsequence, NpcData currentNpcData ,Category[] currentCategories)
         {
-            for (int i = 0; i < currentConsequence.Length; i++)
+            foreach (var consequence in currentConsequence)
             {
-                if (currentConsequence[i].IsCurrentNpc)
-                {
-                    currentConsequence[i].ComputeConsequence(currentNpcData);
-                    continue;
-                }
+                NpcData[] subjects = consequence.IsCurrentNpc
+                    ? new[] { currentNpcData }
+                    : NpcManager.GetSubjectNpcs(consequence.Subject, currentNpcData, currentCategories);
 
-                var npcSubjects = NpcManager.GetSubjectNpcs(currentConsequence[i].Subject, currentNpcData, currentCategories);
-                for (int j = 0; j < npcSubjects.Length; j++)
-                {
-                    currentConsequence[i].ComputeConsequence(npcSubjects[j]);
-                }
+                foreach (var subject in subjects)
+                    consequence.ComputeConsequence(subject);
             }
         }
 

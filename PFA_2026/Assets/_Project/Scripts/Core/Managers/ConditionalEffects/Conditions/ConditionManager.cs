@@ -17,14 +17,19 @@ namespace Naussilus.Core.Managers
             {
                 for (int i = 0; i < currentConditions.Length; i++)
                 {
-                    if (currentConditions[i].IsCurrentNpc)
-                        isAllConditionValidate.Add(currentConditions[i].ComputeCondition(currentNpcData));
+                    var condition = currentConditions[i];
                     
-                    var npcSubjects = NpcManager.GetSubjectNpcs(currentConditions[i].LeftSubject, currentNpcData);
-                    for (int j = 0; j < npcSubjects.Length; j++)
-                    {
-                        isAllConditionValidate.Add(currentConditions[i].ComputeCondition(currentNpcData));
-                    }
+                    NpcData[] leftNpcs = condition.IsLeftCurrentNpc 
+                        ? new[] { currentNpcData } 
+                        : NpcManager.GetSubjectNpcs(condition.LeftSubject, currentNpcData);
+
+                    NpcData[] rightNpcs = condition.IsRightCurrentNpc 
+                        ? new[] { currentNpcData } 
+                        : NpcManager.GetSubjectNpcs(condition.RightSubject, currentNpcData);
+
+                    foreach (var left in leftNpcs)
+                        foreach (var right in rightNpcs)
+                            isAllConditionValidate.Add(condition.ComputeCondition(left, right));
                 }
                 return isAllConditionValidate.All(t => t);
             }
@@ -35,23 +40,27 @@ namespace Naussilus.Core.Managers
                     {
                         for (int i = 0; i < currentConditions.Length; i++)
                         {
-                            if (currentConditions[i].IsCurrentNpc)
-                                isAllConditionValidate.Add(currentConditions[i].ComputeCondition(currentNpcData));
-                            
-                            var leftNpcSubjects = NpcManager.GetSubjectNpcs(currentConditions[i].LeftSubject, currentNpcData, currentCategories);
-                            for (int j = 0; j < leftNpcSubjects.Length; j++)
-                            {
-                                isAllConditionValidate.Add(currentConditions[i].ComputeCondition(currentNpcData));
-                            }
+                            var condition = currentConditions[i];
+                    
+                            NpcData[] leftNpcs = condition.IsLeftCurrentNpc 
+                                ? new[] { currentNpcData } 
+                                : NpcManager.GetSubjectNpcs(condition.LeftSubject, currentNpcData, currentCategories);
+
+                            NpcData[] rightNpcs = condition.IsRightCurrentNpc 
+                                ? new[] { currentNpcData } 
+                                : NpcManager.GetSubjectNpcs(condition.RightSubject, currentNpcData, currentCategories);
+
+                            foreach (var left in leftNpcs)
+                            foreach (var right in rightNpcs)
+                                isAllConditionValidate.Add(condition.ComputeCondition(left, right));
                         }
                         
                         return isAllConditionValidate.All(t => t);
                     }
                 }
 
-        private static bool ComputeCondition(this Condition condition, NpcData leftNpcData/*, NpcData rightNpcData*/)
+        private static bool ComputeCondition(this Condition condition, NpcData leftNpcData, NpcData rightNpcData)
         {
-            /*
             NpcManager.TryGetNpc(leftNpcData.GUID, out Npc leftNpc);
             NpcManager.TryGetNpc(rightNpcData.GUID, out Npc rightNpc);
             int leftSide = leftNpc.GetValue(condition.Left);
@@ -75,8 +84,6 @@ namespace Naussilus.Core.Managers
             };
             Debug.Log($"Condition {condition}: left: {leftSide}, right: {rightSide} return : {isValid}");
             return isValid;
-            */
-            return false;
         }
     }
 }

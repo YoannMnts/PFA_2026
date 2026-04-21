@@ -9,7 +9,7 @@ namespace Naussilus.Core.Conditions
     public class Condition
     {
         [field : SerializeField]
-        public bool IsCurrentNpc { get; private set; }
+        public bool IsLeftCurrentNpc { get; private set; }
         
         [field: SerializeReference]
         public INpcSelector LeftSubject { get; private set; }
@@ -20,6 +20,8 @@ namespace Naussilus.Core.Conditions
         [field: SerializeField]
         public ComparisonOperator ComparisonOperator { get; private set; }
         
+        [field : SerializeField]
+        public bool IsRightCurrentNpc { get; private set; }
         
         [field: SerializeReference]
         public INpcSelector RightSubject { get; private set; }

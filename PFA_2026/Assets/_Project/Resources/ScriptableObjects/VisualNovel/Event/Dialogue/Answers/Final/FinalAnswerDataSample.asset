@@ -16,7 +16,18 @@ MonoBehaviour:
     la t\xEAte"
   <NpcText>k__BackingField: 
   <Effects>k__BackingField:
-  - <Conditions>k__BackingField: []
+  - <Conditions>k__BackingField:
+    - <IsLeftCurrentNpc>k__BackingField: 1
+      <LeftSubject>k__BackingField:
+        rid: -2
+      <Left>k__BackingField:
+        rid: 2832589825879572587
+      <ComparisonOperator>k__BackingField: 1
+      <IsRightCurrentNpc>k__BackingField: 1
+      <RightSubject>k__BackingField:
+        rid: -2
+      <Right>k__BackingField:
+        rid: 2832589825879572589
     <Consequences>k__BackingField:
     - <IsCurrentNpc>k__BackingField: 1
       <Subject>k__BackingField:
@@ -36,3 +47,12 @@ MonoBehaviour:
       data:
         <Amount>k__BackingField: 2
         <Behavior>k__BackingField: 0
+    - rid: 2832589825879572587
+      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Behavior>k__BackingField: 0
+    - rid: 2832589825879572589
+      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 20
