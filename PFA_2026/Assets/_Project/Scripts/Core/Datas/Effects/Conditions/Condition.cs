@@ -12,13 +12,17 @@ namespace Naussilus.Core.Conditions
         public bool IsCurrentNpc { get; private set; }
         
         [field: SerializeReference]
-        public INpcSelector Subject { get; private set; }
+        public INpcSelector LeftSubject { get; private set; }
         
         [field: SerializeReference]
         public IConditionValue Left { get; private set; }
         
         [field: SerializeField]
         public ComparisonOperator ComparisonOperator { get; private set; }
+        
+        
+        [field: SerializeReference]
+        public INpcSelector RightSubject { get; private set; }
         
         [field: SerializeReference]
         public IConditionValue Right { get; private set; }

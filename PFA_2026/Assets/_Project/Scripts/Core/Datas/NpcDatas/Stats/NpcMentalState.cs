@@ -19,6 +19,7 @@ namespace Naussilus.Core.NpcDatas
     
         public NpcMentalState Clone() => new NpcMentalState(Amount, MentalState);
     
+        public NpcMentalState() { }
         public NpcMentalState(int amount, MentalState mentalState)
         {
             Amount = amount;

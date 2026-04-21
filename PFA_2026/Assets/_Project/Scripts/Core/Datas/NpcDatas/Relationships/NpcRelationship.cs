@@ -15,13 +15,14 @@ namespace Naussilus.Core.NpcDatas
         [field: SerializeReference]
         public IRelationshipValue Npc { get; private set; }
 
+        public NpcRelationship() { }
         public NpcRelationship(int amount, IRelationshipValue npc)
         {
             Amount = amount;
             Npc = npc;
         }
         public NpcRelationship Clone() => new NpcRelationship(Amount, Npc);
-    
+        
         public void SetNewAmount(int amount) => Amount = amount;
     
     }

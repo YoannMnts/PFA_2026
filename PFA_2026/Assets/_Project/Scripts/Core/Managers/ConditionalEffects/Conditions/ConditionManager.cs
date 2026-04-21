@@ -20,7 +20,7 @@ namespace Naussilus.Core.Managers
                     if (currentConditions[i].IsCurrentNpc)
                         isAllConditionValidate.Add(currentConditions[i].ComputeCondition(currentNpcData));
                     
-                    var npcSubjects = NpcManager.GetSubjectNpcs(currentConditions[i].Subject, currentNpcData);
+                    var npcSubjects = NpcManager.GetSubjectNpcs(currentConditions[i].LeftSubject, currentNpcData);
                     for (int j = 0; j < npcSubjects.Length; j++)
                     {
                         isAllConditionValidate.Add(currentConditions[i].ComputeCondition(currentNpcData));
@@ -38,8 +38,8 @@ namespace Naussilus.Core.Managers
                             if (currentConditions[i].IsCurrentNpc)
                                 isAllConditionValidate.Add(currentConditions[i].ComputeCondition(currentNpcData));
                             
-                            var npcSubjects = NpcManager.GetSubjectNpcs(currentConditions[i].Subject, currentNpcData, currentCategories);
-                            for (int j = 0; j < npcSubjects.Length; j++)
+                            var leftNpcSubjects = NpcManager.GetSubjectNpcs(currentConditions[i].LeftSubject, currentNpcData, currentCategories);
+                            for (int j = 0; j < leftNpcSubjects.Length; j++)
                             {
                                 isAllConditionValidate.Add(currentConditions[i].ComputeCondition(currentNpcData));
                             }
@@ -49,11 +49,13 @@ namespace Naussilus.Core.Managers
                     }
                 }
 
-        private static bool ComputeCondition(this Condition condition, NpcData currentNpcData)
+        private static bool ComputeCondition(this Condition condition, NpcData leftNpcData/*, NpcData rightNpcData*/)
         {
-            NpcManager.TryGetNpc(currentNpcData.GUID, out Npc npc);
-            int leftSide = npc.GetValue(condition.Left);
-            int rightSide = npc.GetValue(condition.Right);
+            /*
+            NpcManager.TryGetNpc(leftNpcData.GUID, out Npc leftNpc);
+            NpcManager.TryGetNpc(rightNpcData.GUID, out Npc rightNpc);
+            int leftSide = leftNpc.GetValue(condition.Left);
+            int rightSide = rightNpc.GetValue(condition.Right);
 
             if (leftSide < 0 || rightSide < 0)
             {
@@ -73,6 +75,8 @@ namespace Naussilus.Core.Managers
             };
             Debug.Log($"Condition {condition}: left: {leftSide}, right: {rightSide} return : {isValid}");
             return isValid;
+            */
+            return false;
         }
     }
 }

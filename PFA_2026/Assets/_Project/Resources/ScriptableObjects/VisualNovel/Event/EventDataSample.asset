@@ -18,11 +18,13 @@ MonoBehaviour:
   <Priority>k__BackingField: 0
   <Conditions>k__BackingField:
   - <IsCurrentNpc>k__BackingField: 1
-    <Subject>k__BackingField:
+    <LeftSubject>k__BackingField:
       rid: -2
     <Left>k__BackingField:
       rid: 2832589804832030809
     <ComparisonOperator>k__BackingField: 1
+    <RightSubject>k__BackingField:
+      rid: -2
     <Right>k__BackingField:
       rid: 2832589804832030810
   <FirstDialogue>k__BackingField: {fileID: 11400000, guid: f67f2007a67a6d747afb3f09114e9a66, type: 2}

@@ -1,7 +1,48 @@
 OVDF v1.1
 Naussilus.Core.Conditions.Condition, Naussilus.Core
 
+# $QfsfuUgHgKN1apSwqLfFwe
+Position: $root
++ [Sirenix.OdinInspector.TabGroupAttribute]
+	GroupName = "Condition"
+	TabLayouting = MultiRow
+	Paddingless = False
+
+# $UtVNYLT1cCAhGMZoNWqSZm
+Position: $QfsfuUgHgKN1apSwqLfFwe:2
++ [Sirenix.OdinInspector.TabGroupAttribute+TabSubGroupAttribute]
+	GroupName = "RightSide"
+
+# $EAD6VkZbMrsnW27Mr69BVS
+Position: $QfsfuUgHgKN1apSwqLfFwe:1
++ [Sirenix.OdinInspector.TabGroupAttribute+TabSubGroupAttribute]
+	GroupName = "Comaprator"
+
+# $RT2wVWJhZ2mcDDYLS7EoE3
+Position: $QfsfuUgHgKN1apSwqLfFwe:0
++ [Sirenix.OdinInspector.TabGroupAttribute+TabSubGroupAttribute]
+	GroupName = "LeftSide"
+
 # <Subject>k__BackingField
 + [Sirenix.OdinInspector.HideIfAttribute]
 	Condition = "IsCurrentNpc"
 	Animate = True
+
+# <LeftSubject>k__BackingField
+Position: $RT2wVWJhZ2mcDDYLS7EoE3:0
++ [Sirenix.OdinInspector.HideIfAttribute]
+	Condition = "IsCurrentNpc"
+
+# <Left>k__BackingField
+Position: $RT2wVWJhZ2mcDDYLS7EoE3:1
+
+# <ComparisonOperator>k__BackingField
+Position: $EAD6VkZbMrsnW27Mr69BVS:0
+
+# <RightSubject>k__BackingField
+Position: $UtVNYLT1cCAhGMZoNWqSZm:0
++ [Sirenix.OdinInspector.HideIfAttribute]
+	Condition = "IsCurrentNpc"
+
+# <Right>k__BackingField
+Position: $UtVNYLT1cCAhGMZoNWqSZm:1

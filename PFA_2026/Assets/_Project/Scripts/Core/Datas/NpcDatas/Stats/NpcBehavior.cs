@@ -18,7 +18,8 @@ namespace Naussilus.Core.NpcDatas
         public void SetNewAmount(int amount) => Amount = amount;
     
         public NpcBehavior Clone() => new NpcBehavior(Amount, Behavior);
-    
+        
+        public NpcBehavior() { }
         public NpcBehavior(int amount, Behavior behavior)
         {
             Amount = amount;
