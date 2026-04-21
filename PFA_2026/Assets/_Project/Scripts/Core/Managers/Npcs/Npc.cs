@@ -1,4 +1,5 @@
-﻿using Naussilus.Core.NpcDatas;
+﻿using System.Linq;
+using Naussilus.Core.NpcDatas;
 
 namespace Naussilus.Core.Managers.Npcs
 {
@@ -14,10 +15,10 @@ namespace Naussilus.Core.Managers.Npcs
         public Npc(NpcData npcData)
         {
             Name = npcData.Name;
-            Behaviors = npcData.Behavior;
-            MentalStates = npcData.MentalState;
+            Behaviors = npcData.Behavior.ToArray();
+            MentalStates = npcData.MentalState.ToArray();
             Gender = npcData.Gender;
-            Relationships = npcData.Relationships;
+            Relationships = npcData.Relationships.ToArray();
             CurrentThinking = npcData.CurrentThinking;
         }
     }

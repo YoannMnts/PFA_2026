@@ -30,8 +30,7 @@ namespace Naussilus.Core.Managers
                 foreach ((string key, EventData value) in EventDatas)
                 {
                     Condition[] conditions = value.Conditions;
-                    NpcManager.TryGetNpc(value.Npcs[0].GUID, out Npc currentNpc);
-                    var isValidate = conditions.ComputeAllCondition(currentNpc);
+                    var isValidate = conditions.ComputeAllCondition(value.Npcs[0]);
                     if (!isValidate) continue;
                     validEventDatas.Add(value);
                 }

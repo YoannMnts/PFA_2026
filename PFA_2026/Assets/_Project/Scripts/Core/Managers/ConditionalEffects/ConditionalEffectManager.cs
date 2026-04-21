@@ -12,48 +12,18 @@ namespace Naussilus.Core.Managers
         {
             Condition[] currentConditions = conditionalEffect.Conditions;
             Consequence[] currentConsequences = conditionalEffect.Consequences;
-            Npc currentNpc = NpcManager.TryGetNpc(currentNpcData.GUID);
 
-            if (currentConditions.ComputeAllCondition(currentNpc, currentCategories))
-                currentConsequences.ComputeAllConsequence(currentNpc, currentCategories);
+            if (currentConditions.ComputeAllCondition(currentNpcData, currentCategories))
+                currentConsequences.ComputeAllConsequence(currentNpcData, currentCategories);
         }
         
         public static void ComputeConditionalEffect(this ConditionalEffect conditionalEffect, NpcData currentNpcData)
         {
             Condition[] currentConditions = conditionalEffect.Conditions;
             Consequence[] currentConsequences = conditionalEffect.Consequences;
-            Npc currentNpc = NpcManager.TryGetNpc(currentNpcData.GUID);
 
-            if (currentConditions.ComputeAllCondition(currentNpc))
-                currentConsequences.ComputeAllConsequence(currentNpc);
-        }
-
-        public static int GetValue(this IConditionalEffect conditionValue, Npc npc)
-        {
-            switch (conditionValue)
-            {
-                case IntValue intValue:
-                    return intValue.Amount;
-                
-                case NpcBehavior value:
-                    foreach (var behavior in npc.Behaviors)
-                        if (behavior.Behavior == value.Behavior)
-                            return behavior.Amount;
-                    break;
-                
-                case NpcMentalState value:
-                    foreach (var mentalState in npc.MentalStates)
-                        if (mentalState.MentalState == value.MentalState)
-                            return mentalState.Amount;
-                    break;
-                
-                case NpcRelationship value:
-                    foreach (var relationship in npc.Relationships)
-                        if (relationship.Npc == value.Npc)
-                            return relationship.Amount;
-                    break;
-            }
-            return -1;
+            if (currentConditions.ComputeAllCondition(currentNpcData))
+                currentConsequences.ComputeAllConsequence(currentNpcData);
         }
     }
 }

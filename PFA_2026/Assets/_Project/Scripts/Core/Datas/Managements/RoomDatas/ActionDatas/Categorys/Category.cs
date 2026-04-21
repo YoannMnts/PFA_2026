@@ -21,7 +21,7 @@ namespace Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys
         [field: SerializeField]
         public NpcData[] ObligateNpc { get; private set; }
         
-        public Npc[] CurrentNpcs { get; private set; }
+        public NpcData[] CurrentNpcs { get; private set; }
     }
     
     [Serializable]
