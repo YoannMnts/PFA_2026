@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 0_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+    <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Text>k__BackingField: "Parfait alors ! Je compte sur vous pour maintenir la
+      bonne entente g\xE9n\xE9rale dans l\u2019\xE9quipage, il ne faudra pas interrompre
+      notre exp\xE9dition \xE0 cause de tensions\u2026Mais je suis s\xFBre que \xE7a
+      n'arrivera pas !"
+    <Expression>k__BackingField: {fileID: 0}
+  <Answers>k__BackingField: []
+  <GUID>k__BackingField: e1c0277b-9ff5-41ef-b4e9-b280e0c4778b

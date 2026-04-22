@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4426d2e37cb0480e88589e1b21471988, type: 3}
+  m_Name: 0_TutorialData
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.EventData
+  <Name>k__BackingField: Premier Jour
+  <Npcs>k__BackingField: []
+  <Priority>k__BackingField: 2
+  <Conditions>k__BackingField: []
+  <FirstDialogue>k__BackingField: {fileID: 11400000, guid: e214380c6494e4a4997a15c136820ca6, type: 2}
+  <GUID>k__BackingField: f4784013-f666-43d9-9c99-df4f839847c9
+  references:
+    version: 2
+    RefIds: []
