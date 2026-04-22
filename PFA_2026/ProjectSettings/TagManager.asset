@@ -41,32 +41,53 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: DinningKitchen
-    uniqueID: 502614931
+  - name: Bathroom
+    uniqueID: 1492386479
+    locked: 0
+  - name: Bow
+    uniqueID: 574486197
+    locked: 0
+  - name: CaptainOffice
+    uniqueID: 695054903
     locked: 0
   - name: SleepingRoom
     uniqueID: 3491262753
     locked: 0
-  - name: PilotCabin
-    uniqueID: 2092014299
-    locked: 0
-  - name: LoungeBar
-    uniqueID: 2658370091
-    locked: 0
-  - name: Infirmary
-    uniqueID: 688285973
-    locked: 0
-  - name: Storage
-    uniqueID: 2663465711
+  - name: DinningKitchen
+    uniqueID: 502614931
     locked: 0
   - name: EngineRoom
     uniqueID: 2945829387
     locked: 0
+  - name: FlightDeck
+    uniqueID: 4038686001
+    locked: 0
+  - name: Infirmary
+    uniqueID: 688285973
+    locked: 0
   - name: IsolationRoom
     uniqueID: 1536220147
     locked: 0
+  - name: LoungeBar
+    uniqueID: 2658370091
+    locked: 0
+  - name: MeetingRoom
+    uniqueID: 1539702765
+    locked: 0
+  - name: Storage
+    uniqueID: 2663465711
+    locked: 0
   - name: Viggie
     uniqueID: 4035339261
+    locked: 0
+  - name: PilotCabin
+    uniqueID: 2092014299
+    locked: 0
+  - name: Sky
+    uniqueID: 3647900883
+    locked: 0
+  - name: Npc
+    uniqueID: 3758452483
     locked: 0
   m_RenderingLayers:
   - Default

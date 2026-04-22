@@ -444,7 +444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b118e543e8704b80a2cb184a1311bfed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay.Management::_Project.Scripts.RoomActionUIList
-  prefab: {fileID: 0}
+  prefab: {fileID: 6549034927881377289, guid: f73b5e3aaaadeb14f888ae01be1b3c5d, type: 3}
   dividerPrefab: {fileID: 0}
   root: {fileID: 461811319346750090}
 --- !u!1 &6367571598197222217
