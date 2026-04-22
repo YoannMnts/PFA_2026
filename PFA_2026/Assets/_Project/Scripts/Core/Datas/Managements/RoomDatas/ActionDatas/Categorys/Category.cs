@@ -1,6 +1,4 @@
 ﻿using System;
-using Naussilus.Core.Consequences;
-using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
 using UnityEngine;
 
@@ -22,12 +20,5 @@ namespace Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys
         public NpcData[] ObligateNpc { get; private set; }
         
         public NpcData[] CurrentNpcs { get; private set; }
-    }
-    
-    [Serializable]
-    public class CategoryIndex : IRelationshipValue, INpcSelector
-    {
-        [field: SerializeField, Range(0, 10)]
-        public int Index { get; private set; }
     }
 }
