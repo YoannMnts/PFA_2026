@@ -34,6 +34,7 @@ namespace Naussilus.Core.Managers
                 return isAllConditionValidate.All(t => t);
             }
         }
+        
         public static bool ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData ,Category[] currentCategories)
                 {
                     using (ListPool<bool>.Get(out var isAllConditionValidate))
