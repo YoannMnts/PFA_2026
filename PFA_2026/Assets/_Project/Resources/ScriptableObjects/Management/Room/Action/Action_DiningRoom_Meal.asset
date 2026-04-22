@@ -18,6 +18,12 @@ MonoBehaviour:
   - <Name>k__BackingField: Cuisine
     <Quantity>k__BackingField: 1
     <ProhibitedNpc>k__BackingField: []
+    <ObligateNpc>k__BackingField:
+    - {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+  - <Name>k__BackingField: "Tabl\xE9e"
+    <Quantity>k__BackingField: 2
+    <ProhibitedNpc>k__BackingField:
+    - {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
     <ObligateNpc>k__BackingField: []
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 2
