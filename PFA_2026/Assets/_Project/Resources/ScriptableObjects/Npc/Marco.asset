@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a51f94ebcc2449479fc3acad06fca3bc, type: 3}
+  m_Name: Marco
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.NpcDatas.NpcData
+  <Name>k__BackingField: Marco
+  <Behavior>k__BackingField:
+  - <Amount>k__BackingField: 8
+    <Behavior>k__BackingField: 0
+  - <Amount>k__BackingField: 12
+    <Behavior>k__BackingField: 1
+  - <Amount>k__BackingField: 8
+    <Behavior>k__BackingField: 2
+  - <Amount>k__BackingField: 18
+    <Behavior>k__BackingField: 3
+  - <Amount>k__BackingField: 15
+    <Behavior>k__BackingField: 4
+  - <Amount>k__BackingField: 16
+    <Behavior>k__BackingField: 5
+  <MentalState>k__BackingField:
+  - <Amount>k__BackingField: 10
+    <MentalState>k__BackingField: 0
+  - <Amount>k__BackingField: 15
+    <MentalState>k__BackingField: 1
+  - <Amount>k__BackingField: 15
+    <MentalState>k__BackingField: 2
+  - <Amount>k__BackingField: 17
+    <MentalState>k__BackingField: 3
+  - <Amount>k__BackingField: 18
+    <MentalState>k__BackingField: 4
+  <Relationships>k__BackingField: []
+  <Gender>k__BackingField: 2
+  <CurrentThinking>k__BackingField: 
+  <GUID>k__BackingField: da26c3f5-a834-4f1d-aab1-a20d160b803b
+  references:
+    version: 2
+    RefIds: []
