@@ -166,9 +166,8 @@ namespace Naussilus.Core.Managers.Npcs
                     break;
                 
                 case NpcRelationship value:
-                    //marche pas, le NpcData reste le meme pas la relationship
                     foreach (var relationship in npc.Relationships)
-                        if (relationship == value)
+                        if (relationship.Npc == value.Npc)
                             return relationship.Amount;
                     break;
             }
@@ -192,9 +191,8 @@ namespace Naussilus.Core.Managers.Npcs
                     break;
                 
                 case NpcRelationship value:
-                    //marche pas, le NpcData reste le meme pas la relationship
                     foreach (var relationship in npc.Relationships)
-                        if (relationship == value)
+                        if (relationship.Npc == value.Npc)
                             relationship.SetNewAmount(amount);
                     break;
             }

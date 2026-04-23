@@ -27,9 +27,15 @@ namespace Naussilus.Core.Managers
                         ? new[] { currentNpcData } 
                         : NpcManager.GetSubjectNpcs(condition.RightSubject, currentNpcData);
 
-                    foreach (var left in leftNpcs)
-                        foreach (var right in rightNpcs)
+                    for (var j = 0; j < leftNpcs.Length; j++)
+                    {
+                        var left = leftNpcs[j];
+                        for (var k = 0; k < rightNpcs.Length; k++)
+                        {
+                            var right = rightNpcs[k];
                             isAllConditionValidate.Add(condition.ComputeCondition(left, right));
+                        }
+                    }
                 }
                 return isAllConditionValidate.All(t => t);
             }
@@ -51,9 +57,15 @@ namespace Naussilus.Core.Managers
                                 ? new[] { currentNpcData } 
                                 : NpcManager.GetSubjectNpcs(condition.RightSubject, currentNpcData, currentCategories);
 
-                            foreach (var left in leftNpcs)
-                            foreach (var right in rightNpcs)
-                                isAllConditionValidate.Add(condition.ComputeCondition(left, right));
+                            for (var j = 0; j < leftNpcs.Length; j++)
+                            {
+                                var left = leftNpcs[j];
+                                for (var k = 0; k < rightNpcs.Length; k++)
+                                {
+                                    var right = rightNpcs[k];
+                                    isAllConditionValidate.Add(condition.ComputeCondition(left, right));
+                                }
+                            }
                         }
                         
                         return isAllConditionValidate.All(t => t);
