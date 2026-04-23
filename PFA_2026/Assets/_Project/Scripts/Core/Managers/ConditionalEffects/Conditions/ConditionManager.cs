@@ -1,9 +1,11 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Naussilus.Core.Conditions;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
 using Naussilus.Core.Operators;
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -11,9 +13,9 @@ namespace Naussilus.Core.Managers
 {
     public static class ConditionManager
     {
-        public static bool ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData)
+        public static void ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData, out List<NpcData> validNpcs)
         {
-            using (ListPool<bool>.Get(out var isAllConditionValidate))
+            using (ListPool<NpcData>.Get(out var list))
             {
                 for (int i = 0; i < currentConditions.Length; i++)
                 {
@@ -33,17 +35,20 @@ namespace Naussilus.Core.Managers
                         for (var k = 0; k < rightNpcs.Length; k++)
                         {
                             var right = rightNpcs[k];
-                            isAllConditionValidate.Add(condition.ComputeCondition(left, right));
+                            condition.ComputeCondition(left, right, out var validNpc);
+                            if (validNpc == null)
+                                continue;
+                            list.Add(validNpc);
                         }
                     }
                 }
-                return isAllConditionValidate.All(t => t);
+                validNpcs = list;
             }
         }
         
-        public static bool ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData ,Category[] currentCategories)
+        public static void ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData ,Category[] currentCategories, out List<NpcData> validNpcs)
                 {
-                    using (ListPool<bool>.Get(out var isAllConditionValidate))
+                    using (ListPool<NpcData>.Get(out var list))
                     {
                         for (int i = 0; i < currentConditions.Length; i++)
                         {
@@ -63,16 +68,25 @@ namespace Naussilus.Core.Managers
                                 for (var k = 0; k < rightNpcs.Length; k++)
                                 {
                                     var right = rightNpcs[k];
-                                    isAllConditionValidate.Add(condition.ComputeCondition(left, right));
+                                    condition.ComputeCondition(left, right, out var validNpc);
+                                    //NEED TO REWORK !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                                    if (validNpc == null)
+                                    {
+                                        if (list.Contains(left))
+                                        {
+                                            list.Remove(left);
+                                        }
+                                        continue;
+                                    }
+                                    list.Add(validNpc);
                                 }
                             }
                         }
-                        
-                        return isAllConditionValidate.All(t => t);
+                        validNpcs = list;
                     }
                 }
 
-        private static bool ComputeCondition(this Condition condition, NpcData leftNpcData, NpcData rightNpcData)
+        private static void ComputeCondition(this Condition condition, NpcData leftNpcData, NpcData rightNpcData, out NpcData npcResult)
         {
             NpcManager.TryGetNpc(leftNpcData.GUID, out Npc leftNpc);
             NpcManager.TryGetNpc(rightNpcData.GUID, out Npc rightNpc);
@@ -81,8 +95,9 @@ namespace Naussilus.Core.Managers
 
             if (leftSide < 0 || rightSide < 0)
             {
-                Debug.LogError($"Negative value for condition {condition}");   
-                return false;
+                Debug.LogError($"Negative value for condition {condition}");
+                npcResult = null;
+                return;
             }
 
             bool isValid = condition.ComparisonOperator switch
@@ -96,7 +111,12 @@ namespace Naussilus.Core.Managers
                 _ => false
             };
             Debug.Log($"Condition {condition}: left: {leftSide}, right: {rightSide} return : {isValid}");
-            return isValid;
+            if (!isValid)
+            {
+                npcResult = null;
+                return;
+            }
+            npcResult = leftNpcData;
         }
     }
 }

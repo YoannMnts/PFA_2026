@@ -30,8 +30,8 @@ namespace Naussilus.Core.Managers
                 foreach ((string key, EventData value) in EventDatas)
                 {
                     Condition[] conditions = value.Conditions;
-                    var isValidate = conditions.ComputeAllCondition(value.Npcs[0]);
-                    if (!isValidate) continue;
+                    //var isValidate = conditions.ComputeAllCondition(value.Npcs[0]);
+                    //if (!isValidate) continue;
                     validEventDatas.Add(value);
                 }
 
