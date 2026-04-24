@@ -20,6 +20,9 @@ namespace Naussilus.Core.Consequences
         [field: SerializeField]
         public ArithmeticOperator ArithmeticOperator { get; private set; }
         
+        [field: SerializeField]
+        public int Amount { get; private set; }
+        
         [field: SerializeField, TextArea]
         public string Text { get; private set; }
     }

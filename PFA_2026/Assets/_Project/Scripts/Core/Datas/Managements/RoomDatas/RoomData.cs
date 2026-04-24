@@ -1,7 +1,9 @@
 ﻿using System;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas;
-using UnityEditor;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace Naussilus.Core.Managements.RoomDatas
 {

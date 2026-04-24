@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace _Project.Scripts
 {
-    public class MentalStateUI : UIItem<NpcMentalState>
+    public class MentalStateUI : UIItem<MentalState>
     {
         [SerializeField]
         private TMP_Text mentalStateText;
@@ -13,9 +13,9 @@ namespace _Project.Scripts
         [SerializeField]
         private TMP_Text valueText;
         
-        protected override void SyncUI(NpcMentalState current)
+        protected override void SyncUI(MentalState current)
         {
-            mentalStateText.text = current.MentalState.ToString();
+            mentalStateText.text = current.Name;
             valueText.text = current.Amount.ToString();
         }
 

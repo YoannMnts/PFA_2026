@@ -4,16 +4,16 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers
+namespace Naussilus.Core.NpcDatas
 {
-    [CreateAssetMenu(fileName = "FinalAnswerData", menuName = "VisualNovel/Answer/FinalAnswerData", order = 0)]
-    public class FinalAnswerData : Answer
+    [CreateAssetMenu(fileName = "MentalState", menuName = "NpcData/MentalState", order = 0)]
+    public class MentalStateData : ScriptableObject
     {
-        [field : SerializeField, TextArea]
-        public string NpcText { get; private set; }
-        
-        [field : SerializeField]
-        public ConditionalEffect[] Effects { get; private set; }
+        [field: SerializeField, Range(0,20)]
+        public int Amount { get; private set; }
+
+        [field: SerializeField]
+        public string Name { get; private set; }
         
         [field: SerializeField, HideInInspector]
         public string GUID { get; private set; }
@@ -24,14 +24,14 @@ namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers
             {
                 GenerateNewGuid();
             }
-            
+
 #if UNITY_EDITOR
-            string[] existings = AssetDatabase.FindAssets($"t:{nameof(FinalAnswerData)}");
+            string[] existings = AssetDatabase.FindAssets($"t:{nameof(NpcData)}");
             for (int i = 0; i < existings.Length; i++)
             {
                 var path = AssetDatabase.GUIDToAssetPath(existings[i]);
-                var asset = AssetDatabase.LoadAssetAtPath<FinalAnswerData>(path);
-                if(asset != this && asset.GUID == GUID)
+                var asset = AssetDatabase.LoadAssetAtPath<NpcData>(path);
+                if (asset != this && asset.GUID == GUID)
                     GenerateNewGuid();
             }
 #endif

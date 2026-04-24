@@ -41,7 +41,7 @@ namespace Naussilus.Core.Managers
             NpcManager.TryGetNpc(currentNpcData.GUID, out Npc currentNpc);
             IConsequenceValue stat = consequence.IntTarget;
             int[] leftSide = currentNpc.GetValue(stat);
-            int rightSide = stat.Amount;
+            int rightSide = consequence.Amount;
 
             if (leftSide.Contains(-1) || rightSide < 0)
             {

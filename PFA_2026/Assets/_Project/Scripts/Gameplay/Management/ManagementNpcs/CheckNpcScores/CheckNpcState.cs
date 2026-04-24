@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using Helteix.Tools.Phases;
+using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
 using UnityEngine;
 
@@ -8,10 +9,10 @@ namespace _Project.Scripts
     public class CheckNpcState : PhaseCompletionSource<bool>
     {
         public ManagementNpc CurrentManagementNpc { get; private set; }
-        public NpcData CurrentNpcData => CurrentManagementNpc.NpcData;
+        public Npc CurrentNpc => NpcManager.TryGetNpc(CurrentManagementNpc.NpcData.GUID);
         
-        public NpcBehavior[] NpcBehaviors { get; private set; }
-        public NpcMentalState[] NpcMentalStates { get; private set; }
+        public Behavior[] NpcBehaviors { get; private set; }
+        public MentalState[] NpcMentalStates { get; private set; }
         
         public CheckNpcState(ManagementNpc managementNpc)
         {
@@ -20,8 +21,8 @@ namespace _Project.Scripts
         
         protected override Awaitable Initialize(CancellationToken token)
         {
-            NpcBehaviors = CurrentNpcData.Behavior;
-            NpcMentalStates = CurrentNpcData.MentalState;
+            NpcBehaviors = CurrentNpc.Behaviors;
+            NpcMentalStates = CurrentNpc.MentalStates;
             return base.Initialize(token);
         }
 

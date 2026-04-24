@@ -5,16 +5,16 @@ using UnityEngine;
 
 namespace _Project.Scripts
 {
-    public class BehaviorUI : UIItem<NpcBehavior>
+    public class BehaviorUI : UIItem<Behavior>
     {
         [SerializeField]
         private TMP_Text behaviorText;
         
         [SerializeField]
         private TMP_Text valueText;
-        protected override void SyncUI(NpcBehavior current)
+        protected override void SyncUI(Behavior current)
         {
-            behaviorText.text = current.Behavior.ToString();
+            behaviorText.text = current.Name;
             valueText.text = current.Amount.ToString();
         }
 

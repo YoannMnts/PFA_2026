@@ -1,7 +1,8 @@
 ﻿using System;
-using Naussilus.Core.Consequences;
-using UnityEditor;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace Naussilus.Core.NpcDatas
 {
@@ -12,10 +13,10 @@ namespace Naussilus.Core.NpcDatas
         public string Name { get; private set; }
 
         [field: SerializeField] 
-        public NpcBehavior[] Behavior { get; private set; }
+        public BehaviorData[] Behavior { get; private set; }
 
         [field: SerializeField] 
-        public NpcMentalState[] MentalState { get; private set; }
+        public MentalStateData[] MentalState { get; private set; }
 
         [field: SerializeField] 
         public NpcRelationshipData[] Relationships { get; private set; }

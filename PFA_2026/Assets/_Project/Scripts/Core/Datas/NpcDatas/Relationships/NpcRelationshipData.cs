@@ -1,7 +1,6 @@
 ﻿using System;
 using Naussilus.Core.Conditions;
 using Naussilus.Core.Consequences;
-using Naussilus.Core.Operators;
 using UnityEngine;
 
 namespace Naussilus.Core.NpcDatas
@@ -14,13 +13,6 @@ namespace Naussilus.Core.NpcDatas
     
         [field: SerializeReference]
         public INpcSelector Npc { get; private set; }
-
-        public NpcRelationshipData() { }
-        public NpcRelationshipData(int amount, INpcSelector npc)
-        {
-            Amount = amount;
-            Npc = npc;
-        }
         
         public void SetNewAmount(int amount) => Amount = amount;
     

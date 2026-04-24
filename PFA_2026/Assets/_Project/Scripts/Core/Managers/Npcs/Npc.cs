@@ -8,8 +8,8 @@ namespace Naussilus.Core.Managers.Npcs
     public class Npc
     {
         public string Name { get; private set; }
-        public NpcBehavior[] Behaviors { get; private set; }
-        public NpcMentalState[] MentalStates { get; private set; }
+        public Behavior[] Behaviors { get; private set; }
+        public MentalState[] MentalStates { get; private set; }
         public EGender Gender { get; private set; }
         public NpcRelationship[] Relationships { get; private set; }
         public string CurrentThinking { get; private set; }
@@ -17,14 +17,14 @@ namespace Naussilus.Core.Managers.Npcs
         public Npc(NpcData npcData)
         {
             Name = npcData.Name;
-            Behaviors = npcData.Behavior.Select(b => b.Clone()).ToArray();
-            MentalStates = npcData.MentalState.Select(m => m.Clone()).ToArray();
+            Behaviors = npcData.Behavior.Select(b => new Behavior(b)).ToArray();
+            MentalStates = npcData.MentalState.Select(m => new MentalState(m)).ToArray();
             Gender = npcData.Gender;
             Relationships = npcData.Relationships.Select(r => new NpcRelationship(r)).ToArray();
             CurrentThinking = npcData.CurrentThinking;
         }
 
-        public int GetRelationshipWith(Npc npc)
+        private int GetRelationshipWith(Npc npc)
         {
             for (int i = 0; i < Relationships.Length; i++)
             {
@@ -35,8 +35,8 @@ namespace Naussilus.Core.Managers.Npcs
             }
             return -1;
         }
-        
-        public void SetRelationshipWith(Npc npc, int amount)
+
+        private void SetRelationshipWith(Npc npc, int amount)
         {
             for (int i = 0; i < Relationships.Length; i++)
             {
@@ -54,21 +54,21 @@ namespace Naussilus.Core.Managers.Npcs
                 case IntValue intValue:
                     return new []{intValue.Amount};
                 
-                case NpcBehavior value:
+                case BehaviorValue value:
                     for (var i = 0; i < Behaviors.Length; i++)
                     {
                         var behavior = Behaviors[i];
-                        if (behavior.Behavior == value.Behavior)
+                        if (behavior.Data == value.Stat)
                             return new[] { behavior.Amount };
                     }
 
                     break;
                 
-                case NpcMentalState value:
+                case MentalStateValue value:
                     for (var i = 0; i < MentalStates.Length; i++)
                     {
                         var mentalState = MentalStates[i];
-                        if (mentalState.MentalState == value.MentalState)
+                        if (mentalState.Data == value.Stat)
                             return new[] { mentalState.Amount };
                     }
 
@@ -92,21 +92,21 @@ namespace Naussilus.Core.Managers.Npcs
         {
             switch (consequenceValue)
             {
-                case NpcBehavior value:
+                case BehaviorValue value:
                     for (var i = 0; i < Behaviors.Length; i++)
                     {
                         var behavior = Behaviors[i];
-                        if (behavior.Behavior == value.Behavior)
+                        if (behavior.Data == value.Stat)
                             behavior.SetNewAmount(amount);
                     }
 
                     break;
                 
-                case NpcMentalState value:
+                case MentalStateValue value:
                     for (var i = 0; i < MentalStates.Length; i++)
                     {
                         var mentalState = MentalStates[i];
-                        if (mentalState.MentalState == value.MentalState)
+                        if (mentalState.Data == value.Stat)
                             mentalState.SetNewAmount(amount);
                     }
 

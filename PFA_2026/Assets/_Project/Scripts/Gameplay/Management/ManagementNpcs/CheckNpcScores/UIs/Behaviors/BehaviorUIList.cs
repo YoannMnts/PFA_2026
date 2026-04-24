@@ -3,7 +3,7 @@ using Naussilus.Core.NpcDatas;
 
 namespace _Project.Scripts
 {
-    public class BehaviorUIList : UIList<NpcBehavior, BehaviorUI>
+    public class BehaviorUIList : UIList<Behavior, BehaviorUI>
     {
         
     }
