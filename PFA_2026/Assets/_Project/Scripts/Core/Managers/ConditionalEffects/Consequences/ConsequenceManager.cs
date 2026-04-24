@@ -40,7 +40,7 @@ namespace Naussilus.Core.Managers
         {
             NpcManager.TryGetNpc(currentNpcData.GUID, out Npc currentNpc);
             IConsequenceValue stat = consequence.IntTarget;
-            int[] leftSide = currentNpc.GetValues(stat);
+            int[] leftSide = currentNpc.GetValue(stat);
             int rightSide = stat.Amount;
 
             if (leftSide.Contains(-1) || rightSide < 0)
@@ -53,7 +53,7 @@ namespace Naussilus.Core.Managers
             {
                 consequence.ModifyValue(leftSide[i], rightSide, out var newAmount);
                 currentNpc.SetValue(stat, newAmount);
-                Debug.Log(currentNpc.GetValues(stat).ToString());
+                Debug.Log($"Condition {consequence}: left: {leftSide}, right: {rightSide} return : {newAmount}");
             }
         }
 

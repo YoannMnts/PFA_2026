@@ -14,7 +14,8 @@ namespace Naussilus.Core.Managers
             Consequence[] currentConsequences = conditionalEffect.Consequences;
 
             currentConditions.ComputeAllCondition(currentNpcData, currentCategories, out var validNpcs);
-            currentConsequences.ComputeAllConsequence(currentNpcData, currentCategories);
+            for (int i = 0; i < validNpcs.Count; i++)
+                currentConsequences.ComputeAllConsequence(validNpcs[i], currentCategories);
         }
         
         public static void ComputeConditionalEffect(this ConditionalEffect conditionalEffect, NpcData currentNpcData)
@@ -23,7 +24,8 @@ namespace Naussilus.Core.Managers
             Consequence[] currentConsequences = conditionalEffect.Consequences;
 
             currentConditions.ComputeAllCondition(currentNpcData, out var validNpcs);
-            currentConsequences.ComputeAllConsequence(currentNpcData);
+            for (int i = 0; i < validNpcs.Count; i++)
+                currentConsequences.ComputeAllConsequence(validNpcs[i]);
         }
     }
 }

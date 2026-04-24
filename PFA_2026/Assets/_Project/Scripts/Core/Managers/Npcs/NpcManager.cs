@@ -146,7 +146,7 @@ namespace Naussilus.Core.Managers.Npcs
             }
         }
 
-        public static Npc[] GetSelectedNpcs(INpcSelector npcSelector, Npc currentNpc)
+        public static void GetSelectedNpcs(INpcSelector npcSelector, Npc currentNpc, out Npc[] npcs)
         {
             using (ListPool<Npc>.Get(out var list))
             {
@@ -155,7 +155,8 @@ namespace Naussilus.Core.Managers.Npcs
                 {
                     case NpcValue npcValue:
                         TryGetNpc(npcValue.NpcData.GUID, out Npc npc);
-                        return new[] { npc };
+                        npcs = new[] { npc };
+                        break;
 
                     case AllNpc:
                         var allNpcs = GetAllNpcs();
@@ -169,7 +170,8 @@ namespace Naussilus.Core.Managers.Npcs
                         }
 
                         result.AddRange(list);
-                        return result;
+                        npcs = result;
+                        break;
 
                     case Gender gender:
                         var npcDatas = GetAllNpcs();
@@ -183,10 +185,10 @@ namespace Naussilus.Core.Managers.Npcs
                         }
 
                         result.AddRange(list);
-                        return result;
+                        npcs = result;
+                        break;
                 }
-
-                return result;
+                npcs = result;
             }
         }
     }

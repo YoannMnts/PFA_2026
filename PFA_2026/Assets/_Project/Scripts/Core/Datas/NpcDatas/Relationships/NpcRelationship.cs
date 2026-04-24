@@ -1,27 +1,24 @@
-﻿using System;
-using Naussilus.Core.Conditions;
-using Naussilus.Core.Consequences;
-using Naussilus.Core.Operators;
-using UnityEngine;
+﻿using Naussilus.Core.Managers.Npcs;
 
 namespace Naussilus.Core.NpcDatas
 {
-    [Serializable]
-    public class NpcRelationship : IConditionValue, IConsequenceValue
+    public struct NpcRelationship
     {
-        [field: SerializeField, Range(0,20)]
         public int Amount { get; private set; }
-    
-        [field: SerializeReference]
-        public IRelationshipValue Npc { get; private set; }
-
-        public NpcRelationship() { }
-        public NpcRelationship(int amount, IRelationshipValue npc)
+        
+        public Npc Npc { get; private set; }
+        
+        public NpcRelationship(NpcRelationshipData data)
         {
-            Amount = amount;
-            Npc = npc;
+            Amount = data.Amount;
+            
+            if (data.Npc is NpcValue npcValue)
+            {
+                NpcManager.TryGetNpc(npcValue.NpcData.GUID, out Npc npc);
+                Npc = npc;
+            }
+            Npc = null;
         }
-        public NpcRelationship Clone() => new NpcRelationship(Amount, Npc);
         
         public void SetNewAmount(int amount) => Amount = amount;
     

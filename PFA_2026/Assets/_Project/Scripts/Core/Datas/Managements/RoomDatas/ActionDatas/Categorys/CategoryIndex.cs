@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys
 {
     [Serializable]
-    public class CategoryIndex : IRelationshipValue, INpcSelector
+    public class CategoryIndex : INpcSelector
     {
         [field: SerializeField, Range(0, 10)]
         public int Index { get; private set; }

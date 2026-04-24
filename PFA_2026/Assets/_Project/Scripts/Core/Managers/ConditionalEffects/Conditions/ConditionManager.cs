@@ -5,7 +5,6 @@ using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
 using Naussilus.Core.Operators;
-using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -82,8 +81,8 @@ namespace Naussilus.Core.Managers
             NpcManager.TryGetNpc(leftNpcData.GUID, out Npc currentLeftNpc);
             NpcManager.TryGetNpc(rightNpcData.GUID, out Npc currentRightNpc);
             
-            int[] leftSide = currentLeftNpc.GetValues(condition.Left);
-            int[] rightSide = currentRightNpc.GetValues(condition.Right);
+            int[] leftSide = currentLeftNpc.GetValue(condition.Left);
+            int[] rightSide = currentRightNpc.GetValue(condition.Right);
             
             if (leftSide.Contains(-1) || rightSide.Contains(-1))
             {

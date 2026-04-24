@@ -18,7 +18,7 @@ namespace Naussilus.Core.NpcDatas
         public NpcMentalState[] MentalState { get; private set; }
 
         [field: SerializeField] 
-        public NpcRelationship[] Relationships { get; private set; }
+        public NpcRelationshipData[] Relationships { get; private set; }
 
         [field: SerializeField] 
         public EGender Gender { get; private set; }
@@ -52,12 +52,5 @@ namespace Naussilus.Core.NpcDatas
         {
             GUID = Guid.NewGuid().ToString();
         }
-    }
-
-    [Serializable]
-    public class NpcValue : IRelationshipValue, INpcSelector
-    {
-        [field: SerializeField]
-        public NpcData NpcData { get; private set; }
     }
 }

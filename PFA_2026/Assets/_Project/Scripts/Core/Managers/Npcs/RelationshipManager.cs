@@ -8,9 +8,9 @@ namespace Naussilus.Core.Managers.Npcs
         {
             return null;
         }
-        public static void GetRelationshipAmount(this Npc npc,NpcValue relationship, out NpcRelationship npcRelationship)
+        public static void GetRelationshipAmount(this Npc npc,NpcValue relationship, out NpcRelationshipData npcRelationshipData)
         {
-            npcRelationship = null;
+            npcRelationshipData = null;
         }
     }
 }
