@@ -46,7 +46,6 @@ namespace Naussilus.Core.Managers
             }
         }
         
-
         public static EventData TryGetEvent(string guid)
         {
             EventDatas.TryGetValue(guid, out EventData value);

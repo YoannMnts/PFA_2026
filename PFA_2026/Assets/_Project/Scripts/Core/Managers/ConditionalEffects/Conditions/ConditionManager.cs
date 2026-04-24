@@ -23,22 +23,21 @@ namespace Naussilus.Core.Managers
                     
                     NpcData[] leftNpcs = condition.IsLeftCurrentNpc 
                         ? new[] { currentNpcData } 
-                        : NpcManager.GetSubjectNpcs(condition.LeftSubject, currentNpcData);
+                        : NpcManager.GetSelectedNpcs(condition.LeftSubject, currentNpcData);
 
                     NpcData[] rightNpcs = condition.IsRightCurrentNpc 
                         ? new[] { currentNpcData } 
-                        : NpcManager.GetSubjectNpcs(condition.RightSubject, currentNpcData);
+                        : NpcManager.GetSelectedNpcs(condition.RightSubject, currentNpcData);
 
                     for (var j = 0; j < leftNpcs.Length; j++)
                     {
                         var left = leftNpcs[j];
                         for (var k = 0; k < rightNpcs.Length; k++)
                         {
-                            var right = rightNpcs[k];
-                            condition.ComputeCondition(left, right, out var validNpc);
-                            if (validNpc == null)
-                                continue;
-                            list.Add(validNpc);
+                            var right = rightNpcs[k]; 
+                            if (!condition.ComputeCondition(left, right))
+                                break;
+                            list.Add(left);
                         }
                     }
                 }
@@ -56,29 +55,21 @@ namespace Naussilus.Core.Managers
                     
                             NpcData[] leftNpcs = condition.IsLeftCurrentNpc 
                                 ? new[] { currentNpcData } 
-                                : NpcManager.GetSubjectNpcs(condition.LeftSubject, currentNpcData, currentCategories);
+                                : NpcManager.GetSelectedNpcs(condition.LeftSubject, currentNpcData, currentCategories);
 
                             NpcData[] rightNpcs = condition.IsRightCurrentNpc 
                                 ? new[] { currentNpcData } 
-                                : NpcManager.GetSubjectNpcs(condition.RightSubject, currentNpcData, currentCategories);
+                                : NpcManager.GetSelectedNpcs(condition.RightSubject, currentNpcData, currentCategories);
 
                             for (var j = 0; j < leftNpcs.Length; j++)
                             {
                                 var left = leftNpcs[j];
                                 for (var k = 0; k < rightNpcs.Length; k++)
                                 {
-                                    var right = rightNpcs[k];
-                                    condition.ComputeCondition(left, right, out var validNpc);
-                                    //NEED TO REWORK !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                                    if (validNpc == null)
-                                    {
-                                        if (list.Contains(left))
-                                        {
-                                            list.Remove(left);
-                                        }
-                                        continue;
-                                    }
-                                    list.Add(validNpc);
+                                    var right = rightNpcs[k]; 
+                                    if (!condition.ComputeCondition(left, right))
+                                        break;
+                                    list.Add(left);
                                 }
                             }
                         }
@@ -86,20 +77,36 @@ namespace Naussilus.Core.Managers
                     }
                 }
 
-        private static void ComputeCondition(this Condition condition, NpcData leftNpcData, NpcData rightNpcData, out NpcData npcResult)
+        private static bool ComputeCondition(this Condition condition, NpcData leftNpcData, NpcData rightNpcData)
         {
-            NpcManager.TryGetNpc(leftNpcData.GUID, out Npc leftNpc);
-            NpcManager.TryGetNpc(rightNpcData.GUID, out Npc rightNpc);
-            int leftSide = leftNpc.GetValue(condition.Left);
-            int rightSide = rightNpc.GetValue(condition.Right);
-
-            if (leftSide < 0 || rightSide < 0)
+            NpcManager.TryGetNpc(leftNpcData.GUID, out Npc currentLeftNpc);
+            NpcManager.TryGetNpc(rightNpcData.GUID, out Npc currentRightNpc);
+            
+            int[] leftSide = currentLeftNpc.GetValues(condition.Left);
+            int[] rightSide = currentRightNpc.GetValues(condition.Right);
+            
+            if (leftSide.Contains(-1) || rightSide.Contains(-1))
             {
                 Debug.LogError($"Negative value for condition {condition}");
-                npcResult = null;
-                return;
+                return false;
             }
 
+            using (ListPool<bool>.Get(out var isAllValid))
+            {
+                for (int i = 0; i < leftSide.Length; i++)
+                {
+                    for (int j = 0; j < rightSide.Length; j++)
+                    {
+                        condition.IsValid(leftSide[i], rightSide[j], out bool isValid);
+                        Debug.Log($"Condition {condition}: left: {leftSide}, right: {rightSide} return : {isValid}");
+                    }
+                }
+                return isAllValid.All(valid => valid);
+            }
+        }
+
+        private static bool IsValid(this Condition condition, int leftSide, int rightSide)
+        {
             bool isValid = condition.ComparisonOperator switch
             {
                 ComparisonOperator.Equal => leftSide == rightSide,
@@ -110,13 +117,22 @@ namespace Naussilus.Core.Managers
                 ComparisonOperator.LessThanOrEqual => leftSide <= rightSide,
                 _ => false
             };
-            Debug.Log($"Condition {condition}: left: {leftSide}, right: {rightSide} return : {isValid}");
-            if (!isValid)
+            return isValid;
+        }
+        
+        private static void IsValid(this Condition condition, int leftSide, int rightSide, out bool isValid)
+        {
+            bool isValidate = condition.ComparisonOperator switch
             {
-                npcResult = null;
-                return;
-            }
-            npcResult = leftNpcData;
+                ComparisonOperator.Equal => leftSide == rightSide,
+                ComparisonOperator.GreaterThan => leftSide > rightSide,
+                ComparisonOperator.LessThan => leftSide < rightSide,
+                ComparisonOperator.NotEqual => leftSide != rightSide,
+                ComparisonOperator.GreaterThanOrEqual => leftSide >= rightSide,
+                ComparisonOperator.LessThanOrEqual => leftSide <= rightSide,
+                _ => false
+            };
+            isValid = isValidate;
         }
     }
 }

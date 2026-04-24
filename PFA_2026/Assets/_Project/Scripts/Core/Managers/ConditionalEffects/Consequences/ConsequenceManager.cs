@@ -1,4 +1,5 @@
-﻿using Naussilus.Core.Consequences;
+﻿using System.Linq;
+using Naussilus.Core.Consequences;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
@@ -15,7 +16,7 @@ namespace Naussilus.Core.Managers
             {
                 NpcData[] subjects = consequence.IsCurrentNpc
                     ? new[] { currentNpcData }
-                    : NpcManager.GetSubjectNpcs(consequence.Subject, currentNpcData);
+                    : NpcManager.GetSelectedNpcs(consequence.Subject, currentNpcData);
 
                 foreach (var subject in subjects)
                     consequence.ComputeConsequence(subject);
@@ -28,7 +29,7 @@ namespace Naussilus.Core.Managers
             {
                 NpcData[] subjects = consequence.IsCurrentNpc
                     ? new[] { currentNpcData }
-                    : NpcManager.GetSubjectNpcs(consequence.Subject, currentNpcData, currentCategories);
+                    : NpcManager.GetSelectedNpcs(consequence.Subject, currentNpcData, currentCategories);
 
                 foreach (var subject in subjects)
                     consequence.ComputeConsequence(subject);
@@ -39,15 +40,25 @@ namespace Naussilus.Core.Managers
         {
             NpcManager.TryGetNpc(currentNpcData.GUID, out Npc currentNpc);
             IConsequenceValue stat = consequence.IntTarget;
-            int leftSide = currentNpc.GetValue(stat);
+            int[] leftSide = currentNpc.GetValues(stat);
             int rightSide = stat.Amount;
 
-            if (leftSide < 0 || rightSide < 0)
+            if (leftSide.Contains(-1) || rightSide < 0)
             {
                 Debug.LogError($"Negative value for consequence {consequence}");   
                 return;
             }
-            
+
+            for (int i = 0; i < leftSide.Length; i++)
+            {
+                consequence.ModifyValue(leftSide[i], rightSide, out var newAmount);
+                currentNpc.SetValue(stat, newAmount);
+                Debug.Log(currentNpc.GetValues(stat).ToString());
+            }
+        }
+
+        private static void ModifyValue(this Consequence consequence, int leftSide, int rightSide, out int newValue)
+        {
             int newAmount = consequence.ArithmeticOperator switch
             {
                 ArithmeticOperator.Add => leftSide + rightSide,
@@ -55,9 +66,7 @@ namespace Naussilus.Core.Managers
                 ArithmeticOperator.Multiply => leftSide * rightSide,
                 _ => leftSide
             };
-
-            currentNpc.SetValue(stat, newAmount);
-            Debug.Log(currentNpc.GetValue(stat).ToString());
+            newValue = newAmount;
         }
     }
 }

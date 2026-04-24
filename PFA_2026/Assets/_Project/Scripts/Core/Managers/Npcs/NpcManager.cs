@@ -59,7 +59,7 @@ namespace Naussilus.Core.Managers.Npcs
             return Entries;
         }
 
-        public static NpcData[] GetSubjectNpcs(INpcSelector npcSelector , NpcData currentNpc ,Category[] currentCategories)
+        public static NpcData[] GetSelectedNpcs(INpcSelector npcSelector , NpcData currentNpc ,Category[] currentCategories)
         {
             using (ListPool<NpcData>.Get(out var list))
             {
@@ -106,7 +106,7 @@ namespace Naussilus.Core.Managers.Npcs
                 return result;
             }
         }
-        public static NpcData[] GetSubjectNpcs(INpcSelector npcSelector , NpcData currentNpc)
+        public static NpcData[] GetSelectedNpcs(INpcSelector npcSelector , NpcData currentNpc)
         {
             using (ListPool<NpcData>.Get(out var list))
             {
@@ -145,56 +145,48 @@ namespace Naussilus.Core.Managers.Npcs
                 return result;
             }
         }
-        
-        public static int GetValue(this Npc npc ,IConditionalEffect conditionValue)
+
+        public static Npc[] GetSelectedNpcs(INpcSelector npcSelector, Npc currentNpc)
         {
-            switch (conditionValue)
+            using (ListPool<Npc>.Get(out var list))
             {
-                case IntValue intValue:
-                    return intValue.Amount;
-                
-                case NpcBehavior value:
-                    foreach (var behavior in npc.Behaviors)
-                        if (behavior.Behavior == value.Behavior)
-                            return behavior.Amount;
-                    break;
-                
-                case NpcMentalState value:
-                    foreach (var mentalState in npc.MentalStates)
-                        if (mentalState.MentalState == value.MentalState)
-                            return mentalState.Amount;
-                    break;
-                
-                case NpcRelationship value:
-                    foreach (var relationship in npc.Relationships)
-                        if (relationship.Npc == value.Npc)
-                            return relationship.Amount;
-                    break;
-            }
-            return -1;
-        }
-        
-        public static void SetValue(this Npc npc, IConsequenceValue consequenceValue, int amount)
-        {
-            switch (consequenceValue)
-            {
-                case NpcBehavior value:
-                    foreach (var behavior in npc.Behaviors)
-                        if (behavior.Behavior == value.Behavior)
-                            behavior.SetNewAmount(amount);
-                    break;
-                
-                case NpcMentalState value:
-                    foreach (var mentalState in npc.MentalStates)
-                        if (mentalState.MentalState == value.MentalState)
-                            mentalState.SetNewAmount(amount);
-                    break;
-                
-                case NpcRelationship value:
-                    foreach (var relationship in npc.Relationships)
-                        if (relationship.Npc == value.Npc)
-                            relationship.SetNewAmount(amount);
-                    break;
+                Npc[] result = new Npc[] { };
+                switch (npcSelector)
+                {
+                    case NpcValue npcValue:
+                        TryGetNpc(npcValue.NpcData.GUID, out Npc npc);
+                        return new[] { npc };
+
+                    case AllNpc:
+                        var allNpcs = GetAllNpcs();
+                        for (int j = 0; j < allNpcs.Length; j++)
+                        {
+                            TryGetNpc(allNpcs[j].GUID, out Npc allNpc);
+                            if (allNpc == currentNpc)
+                                continue;
+
+                            list.Add(allNpc);
+                        }
+
+                        result.AddRange(list);
+                        return result;
+
+                    case Gender gender:
+                        var npcDatas = GetAllNpcs();
+                        for (int j = 0; j < npcDatas.Length; j++)
+                        {
+                            TryGetNpc(npcDatas[j].GUID, out Npc genderNpc);
+                            if (genderNpc.Gender == gender.EGender)
+                            {
+                                list.Add(genderNpc);
+                            }
+                        }
+
+                        result.AddRange(list);
+                        return result;
+                }
+
+                return result;
             }
         }
     }

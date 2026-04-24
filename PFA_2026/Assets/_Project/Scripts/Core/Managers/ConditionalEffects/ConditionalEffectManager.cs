@@ -1,6 +1,7 @@
 ﻿using Naussilus.Core.Conditions;
 using Naussilus.Core.Consequences;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
+using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
 
 namespace Naussilus.Core.Managers

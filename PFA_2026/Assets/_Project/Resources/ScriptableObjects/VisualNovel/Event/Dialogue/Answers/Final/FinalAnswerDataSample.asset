@@ -17,17 +17,17 @@ MonoBehaviour:
   <NpcText>k__BackingField: 
   <Effects>k__BackingField:
   - <Conditions>k__BackingField:
-    - <IsLeftCurrentNpc>k__BackingField: 1
+    - <IsLeftCurrentNpc>k__BackingField: 0
       <LeftSubject>k__BackingField:
-        rid: -2
+        rid: 2832589872589176917
       <Left>k__BackingField:
-        rid: 2832589825879572587
-      <ComparisonOperator>k__BackingField: 1
-      <IsRightCurrentNpc>k__BackingField: 1
+        rid: 2832589872589176915
+      <ComparisonOperator>k__BackingField: 2
+      <IsRightCurrentNpc>k__BackingField: 0
       <RightSubject>k__BackingField:
-        rid: -2
+        rid: 2832589872589176916
       <Right>k__BackingField:
-        rid: 2832589825879572589
+        rid: 2832589872589176912
     <Consequences>k__BackingField:
     - <IsCurrentNpc>k__BackingField: 1
       <Subject>k__BackingField:
@@ -47,12 +47,25 @@ MonoBehaviour:
       data:
         <Amount>k__BackingField: 2
         <Behavior>k__BackingField: 0
-    - rid: 2832589825879572587
+    - rid: 2832589872589176912
+      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Npc>k__BackingField:
+          rid: 2832589872589176913
+    - rid: 2832589872589176913
+      type: {class: AllNpc, ns: Naussilus.Core, asm: Naussilus.Core}
+      data: 
+    - rid: 2832589872589176915
       type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 0
         <Behavior>k__BackingField: 0
-    - rid: 2832589825879572589
-      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
+    - rid: 2832589872589176916
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <Amount>k__BackingField: 20
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 9f30a5cdef3d527428e1cb8a59089753, type: 2}
+    - rid: 2832589872589176917
+      type: {class: CategoryIndex, ns: Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys, asm: Naussilus.Core}
+      data:
+        <Index>k__BackingField: 1
