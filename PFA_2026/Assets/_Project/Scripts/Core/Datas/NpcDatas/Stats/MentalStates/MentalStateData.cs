@@ -6,14 +6,11 @@ using UnityEditor;
 
 namespace Naussilus.Core.NpcDatas
 {
-    [CreateAssetMenu(fileName = "behavior", menuName = "NpcData/Behavior", order = 0)]
-    public class BehaviorData : ScriptableObject
+    [CreateAssetMenu(fileName = "MentalState", menuName = "NpcData/MentalState", order = 0)]
+    public class MentalStateData : Stat
     {
-        [field: SerializeField, Range(0,20)]
-        public int Amount { get; private set; }
-
         [field: SerializeField]
-        public string Name { get; private set; }
+        public new string Name { get; private set; }
         
         [field: SerializeField, HideInInspector]
         public string GUID { get; private set; }

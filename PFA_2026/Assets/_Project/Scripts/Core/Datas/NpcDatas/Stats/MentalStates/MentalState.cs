@@ -1,19 +1,19 @@
 ﻿namespace Naussilus.Core.NpcDatas
 {
-    public struct Behavior
+    public struct MentalState
     {
-        public Behavior(BehaviorData data)
+        public MentalState(MentalStateValue data)
         {
             Amount = data.Amount;
-            Name = data.Name;
-            Data = data;
+            Name = data.Stat.name;
+            Stat = data.Stat as MentalStateData;
         }
-        
+
         public int Amount { get; private set; }
         
         public string Name { get; private set; }
         
-        public BehaviorData Data { get; private set; }
+        public MentalStateData Stat { get; private set; }
         public void SetNewAmount(int amount) => Amount = amount;
     }
 }

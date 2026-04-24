@@ -31,7 +31,7 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
         public void OnPhaseBegin(Dialogue phase)
         {
             Debug.Log($"current text: {phase.CurrentDialogue.Lines.Text}");
-            textMesh.text = phase.CurrentDialogue.Lines.Text;
+            textMesh.text = phase.CurrentDialogue.Lines.Text[0]; //NEED TO MODIFY WITH LOOP
             canvasGroup.Show();
         }
 

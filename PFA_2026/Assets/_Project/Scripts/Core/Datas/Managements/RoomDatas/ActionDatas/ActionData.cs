@@ -18,6 +18,9 @@ namespace Naussilus.Core.Managements.RoomDatas.ActionDatas
         public int Cost { get; private set; }
         
         [field: SerializeField]
+        public int Countdown { get; private set; }
+        
+        [field: SerializeField]
         public Category[] Categories { get; private set; }
         
         [field: SerializeField]

@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: 
   <NpcText>k__BackingField: 
-  <Effects>k__BackingField: []
-  <GUID>k__BackingField: 
+  <Effects>k__BackingField:
+  - <Conditions>k__BackingField: []
+    <Consequences>k__BackingField: []
+  <GUID>k__BackingField: 76b98758-68c8-44d3-8f45-046d3e81f64b
   references:
     version: 2
     RefIds: []

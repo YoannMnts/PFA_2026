@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc08f50009fb40608eec162aae53b71f, type: 3}
-  m_Name: behavior
+  m_Name: Compassion
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.NpcDatas.BehaviorData
   <Amount>k__BackingField: 0
-  <Name>k__BackingField: 
+  <Name>k__BackingField: Compassion
+  <GUID>k__BackingField: 10046942-23b7-4ff8-a28f-f6c4f1663f18

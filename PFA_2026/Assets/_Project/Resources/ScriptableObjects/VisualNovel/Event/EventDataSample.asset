@@ -21,7 +21,7 @@ MonoBehaviour:
     <LeftSubject>k__BackingField:
       rid: 2832589825879572570
     <Left>k__BackingField:
-      rid: 2832589825879572579
+      rid: 2832589899039244384
     <ComparisonOperator>k__BackingField: 2
     <IsRightCurrentNpc>k__BackingField: 1
     <RightSubject>k__BackingField:
@@ -33,6 +33,8 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
     - rid: 2832589825879572570
       type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
@@ -41,12 +43,13 @@ MonoBehaviour:
       type: {class: CategoryIndex, ns: Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys, asm: Naussilus.Core}
       data:
         <Index>k__BackingField: 1
-    - rid: 2832589825879572579
-      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 0
-        <Behavior>k__BackingField: 0
     - rid: 2832589825879572580
       type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 15
+    - rid: 2832589899039244384
+      type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Npc>k__BackingField:
+          rid: -2

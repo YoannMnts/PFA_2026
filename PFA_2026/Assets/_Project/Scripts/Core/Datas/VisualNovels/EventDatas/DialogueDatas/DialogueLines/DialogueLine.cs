@@ -11,10 +11,10 @@ namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueLines
         [field : SerializeField]
         public NpcData Npc { get; private set; }
         
-        [field : SerializeField, TextArea]
-        public string Text { get; private set; }
+        [field : SerializeField]
+        public Sprite Expression { get; private set; }
         
-        [field : SerializeField, HideInInspector]
-        public Image Expression { get; private set; }
+        [field : SerializeField, TextArea]
+        public string[] Text { get; private set; }
     }
 }

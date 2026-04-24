@@ -19,9 +19,30 @@ MonoBehaviour:
   - <CategoryIndex>k__BackingField: 0
     <NpcData>k__BackingField: {fileID: 0}
     <Effects>k__BackingField:
-    - <Conditions>k__BackingField: []
-      <Consequences>k__BackingField: []
+    - <Conditions>k__BackingField:
+      - <IsLeftCurrentNpc>k__BackingField: 0
+        <LeftSubject>k__BackingField:
+          rid: -2
+        <Left>k__BackingField:
+          rid: -2
+        <ComparisonOperator>k__BackingField: 0
+        <IsRightCurrentNpc>k__BackingField: 0
+        <RightSubject>k__BackingField:
+          rid: -2
+        <Right>k__BackingField:
+          rid: -2
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 0
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: -2
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: 
   <GUID>k__BackingField: 36c3b009-7e9f-46ad-b901-c0b75f9807db
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }

@@ -68,7 +68,7 @@ namespace Naussilus.Core.Managers.Npcs
                     for (var i = 0; i < MentalStates.Length; i++)
                     {
                         var mentalState = MentalStates[i];
-                        if (mentalState.Data == value.Stat)
+                        if (mentalState.Stat == value.Stat)
                             return new[] { mentalState.Amount };
                     }
 
@@ -106,7 +106,7 @@ namespace Naussilus.Core.Managers.Npcs
                     for (var i = 0; i < MentalStates.Length; i++)
                     {
                         var mentalState = MentalStates[i];
-                        if (mentalState.Data == value.Stat)
+                        if (mentalState.Stat == value.Stat)
                             mentalState.SetNewAmount(amount);
                     }
 
