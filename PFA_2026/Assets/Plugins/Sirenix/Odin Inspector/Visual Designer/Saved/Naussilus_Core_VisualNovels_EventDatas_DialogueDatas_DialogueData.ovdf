@@ -5,10 +5,12 @@ MetaGuid:e43728cd226c41bb8c185c61a35f60f4
 # $KtbvAka6scx2BPfukWv9uQ
 Position: $root
 + [Sirenix.OdinInspector.TitleGroupAttribute]
+	HorizontalLine = False
 
 # $NAQk43k9tByPssBGSpSen6
 Position: $root
 + [Sirenix.OdinInspector.TitleGroupAttribute]
+	HorizontalLine = False
 
 # <Answers>k__BackingField
 Position: $NAQk43k9tByPssBGSpSen6:0

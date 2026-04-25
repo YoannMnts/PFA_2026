@@ -6,14 +6,17 @@ MetaGuid:4426d2e37cb0480e88589e1b21471988
 Position: $root:0
 + [Sirenix.OdinInspector.TitleGroupAttribute]
 	Alignment = Left
+	HorizontalLine = False
 
 # $5Mrai6XWzjk8Y5izQ7HnJB
 Position: $root:2
 + [Sirenix.OdinInspector.TitleGroupAttribute]
+	HorizontalLine = False
 
 # $4wxxHRwEVWRtfhHH4mi9m9
 Position: $root:1
 + [Sirenix.OdinInspector.TitleGroupAttribute]
+	HorizontalLine = False
 
 # <Name>k__BackingField
 Position: $JBodoDDnS4CizCHLP7XVNU:0
@@ -28,6 +31,9 @@ Position: $4wxxHRwEVWRtfhHH4mi9m9:1
 
 # <Conditions>k__BackingField
 Position: $5Mrai6XWzjk8Y5izQ7HnJB:0
++ [Sirenix.OdinInspector.ListDrawerSettingsAttribute]
+	numberOfItemsPerPage = 1
+	numberOfItemsPerPageHasValue = True
 
 # <FirstDialogue>k__BackingField
 Position: $4wxxHRwEVWRtfhHH4mi9m9:2

@@ -5,10 +5,12 @@ MetaGuid:7538464531f843609cc1775d421b72c4
 # $PYpQVQTA2s7t3MMSct2dra
 Position: $root:15
 + [Sirenix.OdinInspector.TitleGroupAttribute]
+	HorizontalLine = False
 
 # $6xjtL5WutKtHDUFxEpfEEt
 Position: $root:16
 + [Sirenix.OdinInspector.TitleGroupAttribute]
+	HorizontalLine = False
 
 # <Name>k__BackingField
 Position: $PYpQVQTA2s7t3MMSct2dra:0

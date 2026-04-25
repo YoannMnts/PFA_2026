@@ -1,0 +1,28 @@
+OVDF v1.1
+Naussilus.Core.ConditionalEffect, Naussilus.Core
+
+# $RdPpBddD4e8CDKq4tJBV6k
+Position: $root:13
++ [Sirenix.OdinInspector.TabGroupAttribute]
+
+# $21u9cZsPNCH9WxrZPhosT8
+Position: $RdPpBddD4e8CDKq4tJBV6k:1
++ [Sirenix.OdinInspector.TabGroupAttribute+TabSubGroupAttribute]
+	GroupName = "Consequences"
+
+# $QF2DyoEoQYbgQyD31h4GTD
+Position: $RdPpBddD4e8CDKq4tJBV6k:0
++ [Sirenix.OdinInspector.TabGroupAttribute+TabSubGroupAttribute]
+	GroupName = "Conditions"
+
+# <Consequences>k__BackingField
+Position: $21u9cZsPNCH9WxrZPhosT8:0
++ [Sirenix.OdinInspector.ListDrawerSettingsAttribute]
+	numberOfItemsPerPage = 1
+	numberOfItemsPerPageHasValue = True
+
+# <Conditions>k__BackingField
+Position: $QF2DyoEoQYbgQyD31h4GTD:0
++ [Sirenix.OdinInspector.ListDrawerSettingsAttribute]
+	numberOfItemsPerPage = 1
+	numberOfItemsPerPageHasValue = True

@@ -2,7 +2,6 @@
 using Naussilus.Core.Consequences;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
 using Naussilus.Core.NpcDatas;
-using Sirenix.Utilities;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -78,7 +77,7 @@ namespace Naussilus.Core.Managers.Npcs
                             
                             list.Add(allNpcs[j]);
                         }
-                        result.AddRange(list);
+                        result = list.ToArray();
                         return result;
                     
                     case Gender gender:
@@ -90,7 +89,7 @@ namespace Naussilus.Core.Managers.Npcs
                                 list.Add(npcDatas[j]);
                             }
                         }
-                        result.AddRange(list);
+                        result = list.ToArray();
                         return result;
                     
                     case CategoryIndex categoryIndex:
@@ -101,7 +100,7 @@ namespace Naussilus.Core.Managers.Npcs
                             NpcData categoryNpc = targetCategory.CurrentNpcs[j];
                             list.Add(categoryNpc);
                         }
-                        result.AddRange(list);
+                        result = list.ToArray();
                         return result;
                 }
                 return result;
@@ -127,7 +126,7 @@ namespace Naussilus.Core.Managers.Npcs
                             list.Add(allNpcs[j]);
                         }
 
-                        result.AddRange(list);
+                        result = list.ToArray();
                         return result;
 
                     case Gender gender:
@@ -140,7 +139,7 @@ namespace Naussilus.Core.Managers.Npcs
                             }
                         }
 
-                        result.AddRange(list);
+                        result = list.ToArray();
                         return result;
                 }
                 return result;
@@ -170,7 +169,7 @@ namespace Naussilus.Core.Managers.Npcs
                             list.Add(allNpc);
                         }
 
-                        result.AddRange(list);
+                        result = list.ToArray();
                         npcs = result;
                         break;
 
@@ -185,7 +184,7 @@ namespace Naussilus.Core.Managers.Npcs
                             }
                         }
 
-                        result.AddRange(list);
+                        result = list.ToArray();
                         npcs = result;
                         break;
                 }

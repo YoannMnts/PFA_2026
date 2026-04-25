@@ -9,7 +9,7 @@ namespace Naussilus.Core.NpcDatas
     public class BehaviorValue: IConditionValue, IConsequenceValue
     {
         [field: SerializeField]
-        public ScriptableObject Stat { get; private set; }
+        public BehaviorData Stat { get; private set; }
         
         [field: SerializeField, Range(0,20)]
         public int Amount { get; private set; }

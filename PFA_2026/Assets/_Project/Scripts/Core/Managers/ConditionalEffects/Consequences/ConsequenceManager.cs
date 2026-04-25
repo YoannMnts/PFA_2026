@@ -53,7 +53,7 @@ namespace Naussilus.Core.Managers
             {
                 consequence.ModifyValue(leftSide[i], rightSide, out var newAmount);
                 currentNpc.SetValue(stat, newAmount);
-                Debug.Log($"Consequence {consequence}: left: {leftSide}, right: {rightSide} return : {newAmount} for npc {currentNpc.Name}");
+                Debug.Log($"[ConsequenceManager] Consequence {consequence}: left: {leftSide[i]}, right: {rightSide} return : {newAmount} for npc {currentNpc.Name}");
             }
         }
 
@@ -66,7 +66,7 @@ namespace Naussilus.Core.Managers
                 ArithmeticOperator.Multiply => leftSide * rightSide,
                 _ => leftSide
             };
-            newValue = newAmount;
+            newValue = Mathf.Clamp(newAmount, 0, 20);
         }
     }
 }

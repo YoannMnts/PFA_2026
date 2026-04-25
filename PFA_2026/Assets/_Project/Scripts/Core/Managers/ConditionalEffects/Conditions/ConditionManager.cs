@@ -14,6 +14,12 @@ namespace Naussilus.Core.Managers
     {
         public static void ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData, out List<NpcData> validNpcs)
         {
+            if(currentConditions.Length == 0)
+            {
+                validNpcs = null;
+                validNpcs?.Add(currentNpcData);
+            }
+            
             using (ListPool<NpcData>.Get(out var list))
             {
                 for (int i = 0; i < currentConditions.Length; i++)
@@ -46,6 +52,12 @@ namespace Naussilus.Core.Managers
         
         public static void ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData ,Category[] currentCategories, out List<NpcData> validNpcs)
                 {
+                    if(currentConditions.Length == 0)
+                    {
+                        validNpcs = null;
+                        validNpcs?.Add(currentNpcData);
+                    }
+
                     using (ListPool<NpcData>.Get(out var list))
                     {
                         for (int i = 0; i < currentConditions.Length; i++)
@@ -97,7 +109,7 @@ namespace Naussilus.Core.Managers
                     for (int j = 0; j < rightSide.Length; j++)
                     {
                         condition.IsValid(leftSide[i], rightSide[j], out bool isValid);
-                        Debug.Log($"Condition {condition}: left: {leftSide}, right: {rightSide} return : {isValid}");
+                        Debug.Log($"[ConditionManager] Condition {condition}: left: {leftSide[i]}, comparator: {condition.ComparisonOperator}, right: {rightSide[j]} return : {isValid}");
                     }
                 }
                 return isAllValid.All(valid => valid);

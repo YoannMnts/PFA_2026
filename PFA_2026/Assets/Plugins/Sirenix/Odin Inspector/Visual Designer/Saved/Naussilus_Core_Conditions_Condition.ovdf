@@ -1,27 +1,35 @@
 OVDF v1.1
 Naussilus.Core.Conditions.Condition, Naussilus.Core
 
-# $QfsfuUgHgKN1apSwqLfFwe
+# $811zM7aZpjmp5kbuEeZcFi
 Position: $root:21
-+ [Sirenix.OdinInspector.TabGroupAttribute]
-	GroupName = "Condition"
-	TabLayouting = MultiRow
-	Paddingless = False
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	GroupName = "Left"
+	Subtitle = ""
+	BoldTitle = True
+	Indent = True
 
-# $UtVNYLT1cCAhGMZoNWqSZm
-Position: $QfsfuUgHgKN1apSwqLfFwe:2
-+ [Sirenix.OdinInspector.TabGroupAttribute+TabSubGroupAttribute]
-	GroupName = "RightSide"
+# $88rUZoF9qLhUgrih2P9nK4
+Position: $root:22
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	Indent = True
+	GroupName = "Comparator"
 
-# $EAD6VkZbMrsnW27Mr69BVS
-Position: $QfsfuUgHgKN1apSwqLfFwe:1
-+ [Sirenix.OdinInspector.TabGroupAttribute+TabSubGroupAttribute]
-	GroupName = "Comaprator"
+# $HrDL97N4NCU22qbAGd22gi
+Position: $root:23
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	GroupName = "Right"
+	Indent = True
 
-# $RT2wVWJhZ2mcDDYLS7EoE3
-Position: $QfsfuUgHgKN1apSwqLfFwe:0
-+ [Sirenix.OdinInspector.TabGroupAttribute+TabSubGroupAttribute]
-	GroupName = "LeftSide"
+# $YTbEXVzFbJtPLuR2mnzyvx
+Position: $811zM7aZpjmp5kbuEeZcFi:0
++ [Sirenix.OdinInspector.BoxGroupAttribute]
+	ShowLabel = False
+	CenterLabel = False
+
+# $WkyRAq2C5VCJ6wVUVV4QRv
+Position: $HrDL97N4NCU22qbAGd22gi:0
++ [Sirenix.OdinInspector.BoxGroupAttribute]
 
 # <Subject>k__BackingField
 + [Sirenix.OdinInspector.HideIfAttribute]
@@ -29,32 +37,35 @@ Position: $QfsfuUgHgKN1apSwqLfFwe:0
 	Animate = True
 
 # <LeftSubject>k__BackingField
-Position: $RT2wVWJhZ2mcDDYLS7EoE3:1
+Position: $YTbEXVzFbJtPLuR2mnzyvx:1
 + [Sirenix.OdinInspector.HideIfAttribute]
 	Condition = "IsLeftCurrentNpc"
++ [Sirenix.OdinInspector.InlinePropertyAttribute]
 
 # <Left>k__BackingField
-Position: $RT2wVWJhZ2mcDDYLS7EoE3:2
+Position: $YTbEXVzFbJtPLuR2mnzyvx:2
 + [Sirenix.OdinInspector.InlinePropertyAttribute]
 	LabelWidth = 50
 + [Sirenix.OdinInspector.HideLabelAttribute]
 
 # <ComparisonOperator>k__BackingField
-Position: $EAD6VkZbMrsnW27Mr69BVS:0
+Position: $88rUZoF9qLhUgrih2P9nK4:0
++ [Sirenix.OdinInspector.EnumToggleButtonsAttribute]
++ [Sirenix.OdinInspector.HideLabelAttribute]
 
 # <RightSubject>k__BackingField
-Position: $UtVNYLT1cCAhGMZoNWqSZm:1
+Position: $WkyRAq2C5VCJ6wVUVV4QRv:1
 + [Sirenix.OdinInspector.HideIfAttribute]
 	Condition = "IsRightCurrentNpc"
 
 # <Right>k__BackingField
-Position: $UtVNYLT1cCAhGMZoNWqSZm:2
+Position: $WkyRAq2C5VCJ6wVUVV4QRv:2
 + [Sirenix.OdinInspector.InlinePropertyAttribute]
 	LabelWidth = 50
 + [Sirenix.OdinInspector.HideLabelAttribute]
 
 # <IsLeftCurrentNpc>k__BackingField
-Position: $RT2wVWJhZ2mcDDYLS7EoE3:0
+Position: $YTbEXVzFbJtPLuR2mnzyvx:0
 
 # <IsRightCurrentNpc>k__BackingField
-Position: $UtVNYLT1cCAhGMZoNWqSZm:0
+Position: $WkyRAq2C5VCJ6wVUVV4QRv:0

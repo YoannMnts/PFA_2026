@@ -1,18 +1,41 @@
 OVDF v1.1
 Naussilus.Core.Consequences.Consequence, Naussilus.Core
 
+# $QB3kv7dB7hXYK248DQH54P
+Position: $root:18
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	GroupName = "Effect"
+
+# $WjoGVTQHP3bWVZE1ZsGTeM
+Position: $root:21
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	GroupName = "Npc Answer"
+
+# $PTZyC49hUidHDmtjLETvK4
+Position: $QB3kv7dB7hXYK248DQH54P:0
++ [Sirenix.OdinInspector.BoxGroupAttribute]
+
 # <Subject>k__BackingField
+Position: $PTZyC49hUidHDmtjLETvK4:1
 + [Sirenix.OdinInspector.HideIfAttribute]
 	Condition = "IsCurrentNpc"
-+ [Sirenix.OdinInspector.InlinePropertyAttribute]
-	LabelWidth = 100
-+ [Sirenix.OdinInspector.HideLabelAttribute]
 
 # <IntTarget>k__BackingField
+Position: $PTZyC49hUidHDmtjLETvK4:2
 + [Sirenix.OdinInspector.InlinePropertyAttribute]
 	LabelWidth = 50
 + [Sirenix.OdinInspector.HideLabelAttribute]
 
 # <ArithmeticOperator>k__BackingField
+Position: $root:19
 + [Sirenix.OdinInspector.EnumToggleButtonsAttribute]
 + [Sirenix.OdinInspector.HideLabelAttribute]
+
+# <IsCurrentNpc>k__BackingField
+Position: $PTZyC49hUidHDmtjLETvK4:0
+
+# <Amount>k__BackingField
+Position: $root:20
+
+# <Text>k__BackingField
+Position: $WjoGVTQHP3bWVZE1ZsGTeM:0

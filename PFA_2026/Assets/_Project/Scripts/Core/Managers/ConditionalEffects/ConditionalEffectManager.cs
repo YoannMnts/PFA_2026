@@ -13,6 +13,7 @@ namespace Naussilus.Core.Managers
             Consequence[] currentConsequences = conditionalEffect.Consequences;
 
             currentConditions.ComputeAllCondition(currentNpcData, currentCategories, out var validNpcs);
+            
             for (int i = 0; i < validNpcs.Count; i++)
                 currentConsequences.ComputeAllConsequence(validNpcs[i], currentCategories);
         }
@@ -23,6 +24,7 @@ namespace Naussilus.Core.Managers
             Consequence[] currentConsequences = conditionalEffect.Consequences;
 
             currentConditions.ComputeAllCondition(currentNpcData, out var validNpcs);
+            
             for (int i = 0; i < validNpcs.Count; i++)
                 currentConsequences.ComputeAllConsequence(validNpcs[i]);
         }

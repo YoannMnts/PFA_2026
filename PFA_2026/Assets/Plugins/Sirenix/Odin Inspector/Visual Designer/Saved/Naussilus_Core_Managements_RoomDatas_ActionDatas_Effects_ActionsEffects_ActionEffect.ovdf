@@ -1,0 +1,37 @@
+OVDF v1.1
+Naussilus.Core.Managements.RoomDatas.ActionDatas.Effects.ActionsEffects.ActionEffect, Naussilus.Core
+
+# $U1kgt8jiL2btg7rbjgRu5f
+Position: $root:22
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	HorizontalLine = False
+
+# $LT6KLpdLCAJimV991RPqh
+Position: $root:23
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	HorizontalLine = False
+
+# $32gdpEQR2g1a8Bo6tvSNeF
+Position: $root:24
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	HideWhenChildrenAreInvisible = True
+	HorizontalLine = False
+
+# <CategoryIndex>k__BackingField
+Position: $U1kgt8jiL2btg7rbjgRu5f:0
+
+# <NpcData>k__BackingField
+Position: $U1kgt8jiL2btg7rbjgRu5f:1
+
+# <Effects>k__BackingField
+Position: $LT6KLpdLCAJimV991RPqh:0
++ [Sirenix.OdinInspector.ListDrawerSettingsAttribute]
+	ShowFoldout = False
+	numberOfItemsPerPage = 1
+	numberOfItemsPerPageHasValue = True
+
+# <Position>k__BackingField
+Position: $32gdpEQR2g1a8Bo6tvSNeF:0
+
+# <ActionSprite>k__BackingField
+Position: $32gdpEQR2g1a8Bo6tvSNeF:1

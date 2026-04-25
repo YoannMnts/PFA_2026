@@ -1,0 +1,24 @@
+OVDF v1.1
+Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys.Category, Naussilus.Core
+
+# $YaizhpLdJfYBFmhoTDSsT
+Position: $root:0
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	HorizontalLine = False
+
+# $EiSB5BXuQswr2m1fQRatwQ
+Position: $root:24
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	HorizontalLine = False
+
+# <Name>k__BackingField
+Position: $YaizhpLdJfYBFmhoTDSsT:0
+
+# <Quantity>k__BackingField
+Position: $YaizhpLdJfYBFmhoTDSsT:1
+
+# <ProhibitedNpc>k__BackingField
+Position: $EiSB5BXuQswr2m1fQRatwQ:0
+
+# <ObligateNpc>k__BackingField
+Position: $EiSB5BXuQswr2m1fQRatwQ:1

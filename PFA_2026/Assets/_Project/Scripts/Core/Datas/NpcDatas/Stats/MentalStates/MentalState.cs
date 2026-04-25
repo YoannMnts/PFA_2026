@@ -6,7 +6,7 @@
         {
             Amount = data.Amount;
             Name = data.Stat.name;
-            Stat = data.Stat as MentalStateData;
+            Stat = data.Stat;
         }
 
         public int Amount { get; private set; }

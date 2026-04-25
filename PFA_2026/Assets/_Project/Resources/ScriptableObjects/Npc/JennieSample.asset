@@ -15,7 +15,7 @@ MonoBehaviour:
   <Name>k__BackingField: Jennie
   <Behavior>k__BackingField:
   - <Stat>k__BackingField: {fileID: 11400000, guid: 04ea502225da3b44ba583a05d6180394, type: 2}
-    <Amount>k__BackingField: 2
+    <Amount>k__BackingField: 0
   - <Stat>k__BackingField: {fileID: 11400000, guid: be977a50b8a9d5b4ba2645d7a82c7315, type: 2}
     <Amount>k__BackingField: 0
   - <Stat>k__BackingField: {fileID: 11400000, guid: f2b55b5c9291b9b448a304246130c6d4, type: 2}

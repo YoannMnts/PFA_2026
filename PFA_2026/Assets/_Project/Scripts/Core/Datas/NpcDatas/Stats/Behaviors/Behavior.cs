@@ -6,7 +6,7 @@
         {
             Amount = data.Amount;
             Name = data.Stat.name;
-            Data = data.Stat as BehaviorData;
+            Data = data.Stat;
         }
         
         public int Amount { get; private set; }

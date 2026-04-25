@@ -5,10 +5,13 @@ MetaGuid:6551f63f2e464eb39de211b4f9603e78
 # $4iXjZtv3tEHBQiiyEMp9CE
 Position: $root:0
 + [Sirenix.OdinInspector.TitleGroupAttribute]
+	HorizontalLine = False
 
 # $BWVTvkCcS32NDqUXaCVAiD
 Position: $root
 + [Sirenix.OdinInspector.TitleGroupAttribute]
+	HideWhenChildrenAreInvisible = True
+	HorizontalLine = False
 
 # <ButtonText>k__BackingField
 Position: $4iXjZtv3tEHBQiiyEMp9CE:0
@@ -18,3 +21,6 @@ Position: $4iXjZtv3tEHBQiiyEMp9CE:1
 
 # <Effects>k__BackingField
 Position: $BWVTvkCcS32NDqUXaCVAiD:0
++ [Sirenix.OdinInspector.ListDrawerSettingsAttribute]
+	numberOfItemsPerPage = 1
+	numberOfItemsPerPageHasValue = True

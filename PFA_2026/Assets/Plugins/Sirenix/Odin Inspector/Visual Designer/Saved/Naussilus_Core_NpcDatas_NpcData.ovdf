@@ -25,21 +25,24 @@ Position: $root:0
 + [Sirenix.OdinInspector.TitleGroupAttribute]
 	GroupName = ""
 	Alignment = Left
-	HorizontalLine = True
+	HorizontalLine = False
 	BoldTitle = True
 	Indent = False
 
 # $3npbehvNRUh78ZUq7UzPuK
 Position: $root:1
 + [Sirenix.OdinInspector.TitleGroupAttribute]
+	HorizontalLine = False
 
 # $AZLim4Pg3BTAv9o4zfkdkq
 Position: $root:4
 + [Sirenix.OdinInspector.TitleGroupAttribute]
+	HorizontalLine = False
 
 # $ChYpYcSwErUe2bf7SFiX1V
 Position: $root:28
 + [Sirenix.OdinInspector.TitleGroupAttribute]
+	HorizontalLine = False
 
 # <Name>k__BackingField
 Position: $8kvRrmPfbmSLCWnHKKEWAC:0
