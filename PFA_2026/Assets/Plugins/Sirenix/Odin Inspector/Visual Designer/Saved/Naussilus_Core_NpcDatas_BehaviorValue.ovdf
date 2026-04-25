@@ -1,0 +1,15 @@
+OVDF v1.1
+Naussilus.Core.NpcDatas.BehaviorValue, Naussilus.Core
+
+# $7PYPp5JMsFdFLc5PHYfbJC
+Position: $root:6
++ [Sirenix.OdinInspector.HorizontalGroupAttribute]
+	DisableAutomaticLabelWidth = False
+	LabelWidth = 50
+	Gap = 20
+
+# <Stat>k__BackingField
+Position: $7PYPp5JMsFdFLc5PHYfbJC:0
+
+# <Amount>k__BackingField
+Position: $7PYPp5JMsFdFLc5PHYfbJC:1

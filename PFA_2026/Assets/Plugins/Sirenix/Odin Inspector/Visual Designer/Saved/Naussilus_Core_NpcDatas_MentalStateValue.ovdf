@@ -1,0 +1,14 @@
+OVDF v1.1
+Naussilus.Core.NpcDatas.MentalStateValue, Naussilus.Core
+
+# $WfQc4a6rqeA3aHXMJoM8ep
+Position: $root:6
++ [Sirenix.OdinInspector.HorizontalGroupAttribute]
+	LabelWidth = 50
+	Gap = 20
+
+# <Stat>k__BackingField
+Position: $WfQc4a6rqeA3aHXMJoM8ep:0
+
+# <Amount>k__BackingField
+Position: $WfQc4a6rqeA3aHXMJoM8ep:1

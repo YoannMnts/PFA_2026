@@ -1,6 +1,17 @@
 OVDF v1.1
 Naussilus.Core.NpcDatas.NpcRelationshipData, Naussilus.Core
 
+# $NN76B76i4Z55hziDT2EuXi
+Position: $root:7
++ [Sirenix.OdinInspector.HorizontalGroupAttribute]
+	LabelWidth = 50
+	Gap = 20
+	Title = ""
+
 # <Npc>k__BackingField
+Position: $NN76B76i4Z55hziDT2EuXi:0
 + [Sirenix.OdinInspector.InlinePropertyAttribute]
 	LabelWidth = 65
+
+# <Amount>k__BackingField
+Position: $NN76B76i4Z55hziDT2EuXi:1
