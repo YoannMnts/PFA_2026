@@ -14,7 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core.Datas.Managements::Naussilus.Core.Datas.Managements.ActionData
   <Name>k__BackingField: Organiser un repas
   <Cost>k__BackingField: 10
-  <Categories>k__BackingField: []
+  <Countdown>k__BackingField: 0
+  <Categories>k__BackingField:
+  - <Name>k__BackingField: 
+    <Quantity>k__BackingField: 0
+    <ProhibitedNpc>k__BackingField: []
+    <ObligateNpc>k__BackingField:
+    - {fileID: 0}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 0
     <NpcData>k__BackingField: {fileID: 0}
@@ -40,6 +46,8 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: 
+    <Position>k__BackingField: {x: 0, y: 0, z: 0}
+    <ActionSprite>k__BackingField: {fileID: 0}
   <GUID>k__BackingField: 36c3b009-7e9f-46ad-b901-c0b75f9807db
   references:
     version: 2

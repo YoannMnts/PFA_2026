@@ -1,0 +1,30 @@
+OVDF v1.1
+Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData, Naussilus.Core
+MetaGuid:7981673afb42479da49ee3efe9a052af
+
+# $BzHc8uqgwffdXnspZerG5m
+Position: $root:0
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+
+# $7oZqWmdhKWdMP3sSBQgM2a
+Position: $root:1
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+
+# $VaknMeagFj4qY1TiDmMhzH
+Position: $root
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+
+# <Name>k__BackingField
+Position: $BzHc8uqgwffdXnspZerG5m:0
+
+# <Cost>k__BackingField
+Position: $BzHc8uqgwffdXnspZerG5m:1
+
+# <Countdown>k__BackingField
+Position: $BzHc8uqgwffdXnspZerG5m:2
+
+# <Categories>k__BackingField
+Position: $7oZqWmdhKWdMP3sSBQgM2a:0
+
+# <ActionEffects>k__BackingField
+Position: $VaknMeagFj4qY1TiDmMhzH:0

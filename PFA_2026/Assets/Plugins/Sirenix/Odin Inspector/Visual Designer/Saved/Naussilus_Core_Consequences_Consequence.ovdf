@@ -4,3 +4,15 @@ Naussilus.Core.Consequences.Consequence, Naussilus.Core
 # <Subject>k__BackingField
 + [Sirenix.OdinInspector.HideIfAttribute]
 	Condition = "IsCurrentNpc"
++ [Sirenix.OdinInspector.InlinePropertyAttribute]
+	LabelWidth = 100
++ [Sirenix.OdinInspector.HideLabelAttribute]
+
+# <IntTarget>k__BackingField
++ [Sirenix.OdinInspector.InlinePropertyAttribute]
+	LabelWidth = 50
++ [Sirenix.OdinInspector.HideLabelAttribute]
+
+# <ArithmeticOperator>k__BackingField
++ [Sirenix.OdinInspector.EnumToggleButtonsAttribute]
++ [Sirenix.OdinInspector.HideLabelAttribute]

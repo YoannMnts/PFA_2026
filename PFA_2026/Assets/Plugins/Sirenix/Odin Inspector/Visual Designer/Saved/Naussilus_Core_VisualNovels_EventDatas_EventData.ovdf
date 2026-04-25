@@ -1,0 +1,33 @@
+OVDF v1.1
+Naussilus.Core.VisualNovels.EventDatas.EventData, Naussilus.Core
+MetaGuid:4426d2e37cb0480e88589e1b21471988
+
+# $JBodoDDnS4CizCHLP7XVNU
+Position: $root:0
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	Alignment = Left
+
+# $5Mrai6XWzjk8Y5izQ7HnJB
+Position: $root:2
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+
+# $4wxxHRwEVWRtfhHH4mi9m9
+Position: $root:1
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+
+# <Name>k__BackingField
+Position: $JBodoDDnS4CizCHLP7XVNU:0
+
+# <Npcs>k__BackingField
+Position: $4wxxHRwEVWRtfhHH4mi9m9:0
++ [Sirenix.OdinInspector.ListDrawerSettingsAttribute]
+	ShowFoldout = False
+
+# <Priority>k__BackingField
+Position: $4wxxHRwEVWRtfhHH4mi9m9:1
+
+# <Conditions>k__BackingField
+Position: $5Mrai6XWzjk8Y5izQ7HnJB:0
+
+# <FirstDialogue>k__BackingField
+Position: $4wxxHRwEVWRtfhHH4mi9m9:2

@@ -35,6 +35,9 @@ Position: $RT2wVWJhZ2mcDDYLS7EoE3:1
 
 # <Left>k__BackingField
 Position: $RT2wVWJhZ2mcDDYLS7EoE3:2
++ [Sirenix.OdinInspector.InlinePropertyAttribute]
+	LabelWidth = 50
++ [Sirenix.OdinInspector.HideLabelAttribute]
 
 # <ComparisonOperator>k__BackingField
 Position: $EAD6VkZbMrsnW27Mr69BVS:0
@@ -46,6 +49,9 @@ Position: $UtVNYLT1cCAhGMZoNWqSZm:1
 
 # <Right>k__BackingField
 Position: $UtVNYLT1cCAhGMZoNWqSZm:2
++ [Sirenix.OdinInspector.InlinePropertyAttribute]
+	LabelWidth = 50
++ [Sirenix.OdinInspector.HideLabelAttribute]
 
 # <IsLeftCurrentNpc>k__BackingField
 Position: $RT2wVWJhZ2mcDDYLS7EoE3:0

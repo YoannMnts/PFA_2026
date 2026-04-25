@@ -53,7 +53,7 @@ namespace Naussilus.Core.Managers
             {
                 consequence.ModifyValue(leftSide[i], rightSide, out var newAmount);
                 currentNpc.SetValue(stat, newAmount);
-                Debug.Log($"Condition {consequence}: left: {leftSide}, right: {rightSide} return : {newAmount}");
+                Debug.Log($"Consequence {consequence}: left: {leftSide}, right: {rightSide} return : {newAmount} for npc {currentNpc.Name}");
             }
         }
 

@@ -1,0 +1,22 @@
+OVDF v1.1
+Naussilus.Core.Managements.RoomDatas.RoomData, Naussilus.Core
+MetaGuid:7538464531f843609cc1775d421b72c4
+
+# $PYpQVQTA2s7t3MMSct2dra
+Position: $root:15
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+
+# $6xjtL5WutKtHDUFxEpfEEt
+Position: $root:16
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+
+# <Name>k__BackingField
+Position: $PYpQVQTA2s7t3MMSct2dra:0
+
+# <Description>k__BackingField
+Position: $PYpQVQTA2s7t3MMSct2dra:1
+
+# <Actions>k__BackingField
+Position: $6xjtL5WutKtHDUFxEpfEEt:0
++ [Sirenix.OdinInspector.ListDrawerSettingsAttribute]
+	ShowFoldout = False

@@ -1,0 +1,17 @@
+OVDF v1.1
+Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData, Naussilus.Core
+MetaGuid:40fc62d3728248e4bb9426163a14d8fc
+
+# $26bqp8qVm16YvRUEYmjGJz
+Position: $root
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+
+# $97eomPByuARU632eP2K4hH
+Position: $root
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+
+# <ButtonText>k__BackingField
+Position: $26bqp8qVm16YvRUEYmjGJz:0
+
+# <NextDialogue>k__BackingField
+Position: $97eomPByuARU632eP2K4hH:0

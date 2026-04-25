@@ -21,13 +21,24 @@ MonoBehaviour:
     <LeftSubject>k__BackingField:
       rid: 2832589825879572570
     <Left>k__BackingField:
-      rid: 2832589899039244384
+      rid: -2
     <ComparisonOperator>k__BackingField: 2
     <IsRightCurrentNpc>k__BackingField: 1
     <RightSubject>k__BackingField:
       rid: 2832589825879572572
     <Right>k__BackingField:
-      rid: 2832589825879572580
+      rid: 2832589920833634396
+  - <IsLeftCurrentNpc>k__BackingField: 1
+    <LeftSubject>k__BackingField:
+      rid: -2
+    <Left>k__BackingField:
+      rid: -2
+    <ComparisonOperator>k__BackingField: 0
+    <IsRightCurrentNpc>k__BackingField: 0
+    <RightSubject>k__BackingField:
+      rid: -2
+    <Right>k__BackingField:
+      rid: -2
   <FirstDialogue>k__BackingField: {fileID: 11400000, guid: f67f2007a67a6d747afb3f09114e9a66, type: 2}
   <GUID>k__BackingField: 7e411dc7-dd37-46cf-8f90-7540760ac499
   references:
@@ -43,13 +54,8 @@ MonoBehaviour:
       type: {class: CategoryIndex, ns: Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys, asm: Naussilus.Core}
       data:
         <Index>k__BackingField: 1
-    - rid: 2832589825879572580
-      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
+    - rid: 2832589920833634396
+      type: {class: BehaviorValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <Amount>k__BackingField: 15
-    - rid: 2832589899039244384
-      type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
+        <Stat>k__BackingField: {fileID: 0}
         <Amount>k__BackingField: 0
-        <Npc>k__BackingField:
-          rid: -2

@@ -1,0 +1,101 @@
+OVDF v1.1
+Naussilus.Core.NpcDatas.NpcData, Naussilus.Core
+MetaGuid:a51f94ebcc2449479fc3acad06fca3bc
+
+# $6xztB8Ar69gbaVGV6DcUzW
+Position: $3npbehvNRUh78ZUq7UzPuK:0
++ [Sirenix.OdinInspector.TabGroupAttribute]
+	GroupName = "Stat"
+	UseFixedHeight = False
+	Paddingless = False
+	TabLayouting = MultiRow
+
+# $LJKAq5KkQyg2KxemW6Q2S5
+Position: $6xztB8Ar69gbaVGV6DcUzW:0
++ [Sirenix.OdinInspector.TabGroupAttribute+TabSubGroupAttribute]
+	GroupName = "Behavior"
+
+# $9ovLuUz9F1jxPMmVtiCSGm
+Position: $6xztB8Ar69gbaVGV6DcUzW:1
++ [Sirenix.OdinInspector.TabGroupAttribute+TabSubGroupAttribute]
+	GroupName = "Mental State"
+
+# $8kvRrmPfbmSLCWnHKKEWAC
+Position: $root:0
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	GroupName = ""
+	Alignment = Left
+	HorizontalLine = True
+	BoldTitle = True
+	Indent = False
+
+# $3npbehvNRUh78ZUq7UzPuK
+Position: $root:1
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+
+# $AZLim4Pg3BTAv9o4zfkdkq
+Position: $root:4
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+
+# $ChYpYcSwErUe2bf7SFiX1V
+Position: $root:28
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+
+# <Name>k__BackingField
+Position: $8kvRrmPfbmSLCWnHKKEWAC:0
+
+# OnValidate()
+Visibility: Hidden
+
+# GUID
+Visibility: Hidden
+
+# CurrentThinking
+Visibility: Hidden
+
+# <CurrentThinking>k__BackingField
+Position: $ChYpYcSwErUe2bf7SFiX1V:0
+Visibility: Shown
+
+# <GUID>k__BackingField
+Visibility: Hidden
+
+# Name
+Visibility: Hidden
+
+# <Behavior>k__BackingField
+Position: $LJKAq5KkQyg2KxemW6Q2S5:0
++ [Sirenix.OdinInspector.ListDrawerSettingsAttribute]
+	paging = True
+	pagingHasValue = True
+	showItemCount = True
+	showItemCountHasValue = True
+	defaultExpandedState = True
+	defaultExpandedStateHasValue = True
+	ShowFoldout = False
+
+# <MentalState>k__BackingField
+Position: $9ovLuUz9F1jxPMmVtiCSGm:0
++ [Sirenix.OdinInspector.ListDrawerSettingsAttribute]
+	showItemCount = True
+	showItemCountHasValue = True
+	defaultExpandedState = True
+	defaultExpandedStateHasValue = True
+	paging = True
+	pagingHasValue = True
+	ShowFoldout = False
+
+# <Gender>k__BackingField
+Position: $8kvRrmPfbmSLCWnHKKEWAC:1
++ [Sirenix.OdinInspector.EnumToggleButtonsAttribute]
+
+# <Relationships>k__BackingField
+Position: $AZLim4Pg3BTAv9o4zfkdkq:0
++ [Sirenix.OdinInspector.ListDrawerSettingsAttribute]
+	showItemCount = True
+	showItemCountHasValue = True
+	defaultExpandedState = True
+	defaultExpandedStateHasValue = True
+	ShowFoldout = False
+	paging = False
+	pagingHasValue = True

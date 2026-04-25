@@ -15,9 +15,30 @@ MonoBehaviour:
   <ButtonText>k__BackingField: 
   <NpcText>k__BackingField: 
   <Effects>k__BackingField:
-  - <Conditions>k__BackingField: []
-    <Consequences>k__BackingField: []
+  - <Conditions>k__BackingField:
+    - <IsLeftCurrentNpc>k__BackingField: 1
+      <LeftSubject>k__BackingField:
+        rid: -2
+      <Left>k__BackingField:
+        rid: -2
+      <ComparisonOperator>k__BackingField: 0
+      <IsRightCurrentNpc>k__BackingField: 0
+      <RightSubject>k__BackingField:
+        rid: -2
+      <Right>k__BackingField:
+        rid: -2
+    <Consequences>k__BackingField:
+    - <IsCurrentNpc>k__BackingField: 1
+      <Subject>k__BackingField:
+        rid: -2
+      <IntTarget>k__BackingField:
+        rid: -2
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 0
+      <Text>k__BackingField: 
   <GUID>k__BackingField: 76b98758-68c8-44d3-8f45-046d3e81f64b
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }

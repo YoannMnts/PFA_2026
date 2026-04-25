@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core.Datas.Managements::Naussilus.Core.Datas.Managements.RoomData
   <Name>k__BackingField: Cuisine
   <Description>k__BackingField: Blablabla
-  <Actions>k__BackingField: []
+  <Actions>k__BackingField:
+  - {fileID: 11400000, guid: b95cc96e0c06b9e4ca63e7ccbc933782, type: 2}
   <GUID>k__BackingField: 7fff7c4f-00c3-451e-a18a-d1f1b1087c03
