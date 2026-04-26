@@ -2,6 +2,7 @@
 using Naussilus.Core.Managements.RoomDatas.ActionDatas;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace _Project.Scripts.Rooms
 {
@@ -12,7 +13,7 @@ namespace _Project.Scripts.Rooms
         [SerializeField]
         private TMP_Text titleText;
         [SerializeField]
-        private TMP_Text descriptionText;
+        private TMP_Text costText;
 
         private void Start()
         {
@@ -22,13 +23,13 @@ namespace _Project.Scripts.Rooms
         protected override void SyncUI(ActionData current)
         {
             titleText.text = current.Name;
-            descriptionText.text = "Ya rien encore";
+            costText.text = current.Cost.ToString();
         }
 
         protected override void ClearUI()
         {
             titleText.text = string.Empty;
-            descriptionText.text = string.Empty;
+            costText.text = string.Empty;
         }
 
         public void OnClicked()

@@ -13,12 +13,10 @@ MonoBehaviour:
   m_Name: DialogueDataSample 1
   m_EditorClassIdentifier: Naussilus.Core.Datas.VisualNovels::Naussilus.Core.Datas.VisualNovels.DialogueData
   <Lines>k__BackingField:
-    <Npc>k__BackingField: {fileID: 11400000, guid: 4c5237b2ea5cb26419c3e8d2d834f0d9, type: 2}
+  - <Npc>k__BackingField: {fileID: 0}
     <Expression>k__BackingField: {fileID: 0}
     <Text>k__BackingField:
-    - "On me parle tout le temps de \u201Cpoulpe\u201D et de \u201Cpieuvre\u201D
-      et de \u201Ccontr\xF4le mental\u201D... mais je comprends pas, je suis Jennie
-      je suis une vraie fille !"
+    - 
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: ace1fd38439c7f442b280c3d67d910d8, type: 2}
   <GUID>k__BackingField: f1a473e8-1996-407c-a29d-bf28b06332b0

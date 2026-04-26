@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: DialogueDataSample
   m_EditorClassIdentifier: Naussilus.Core.Datas.VisualNovels::Naussilus.Core.Datas.VisualNovels.DialogueData
   <Lines>k__BackingField:
-    <Npc>k__BackingField: {fileID: 11400000, guid: 4c5237b2ea5cb26419c3e8d2d834f0d9, type: 2}
+  - <Npc>k__BackingField: {fileID: 0}
     <Expression>k__BackingField: {fileID: 0}
     <Text>k__BackingField:
-    - "Bonjour Capitaine. En fait, ces derniers temps, tout le monde me dit que je
-      ne suis pas humaine, \xE7a me fait douter de la r\xE9alit\xE9\u2026"
+    - 
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 69c622eae175fc74aa7ac96e557584c9, type: 2}
   <GUID>k__BackingField: b20a73c7-13af-4ee2-a5c2-ff19d2771b70

@@ -26,6 +26,12 @@ namespace _Project.Scripts.Rooms
 
         protected override Awaitable Dispose(CancellationToken token)
         {
+            if (CurrentResult > 0)
+            {
+                var selectNpc = new SelectCategoryForAction(Choices[CurrentResult]);
+                selectNpc.RunAndForget();
+            }
+            
             Choices = null;
             return base.Dispose(token);
         }

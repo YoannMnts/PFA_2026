@@ -1,17 +1,22 @@
 ﻿using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas;
 using Naussilus.Core.Managers;
+using TMPro;
 using UnityEngine;
 
 namespace _Project.Scripts.Rooms
 {
     public class SelectActionForRoomUI : MonoPhaseListener<SelectActionForRoom>
     {
-        private SelectActionForRoom current;
-
         [SerializeField] private CanvasGroup group;
+        [SerializeField] private TMP_Text roomName;
+        [SerializeField] private TMP_Text roomDescription;
         [SerializeField] private RoomActionUIList roomActionUIList;
 
+        public string Name => current.CurrentRoomData.Name;
+        public string Description => current.CurrentRoomData.Description;
+
+        private SelectActionForRoom current;
         private void Start()
         {
             group.Hide();
@@ -24,6 +29,8 @@ namespace _Project.Scripts.Rooms
             
             current = phase;
             group.Show();
+            roomName.text = Name;
+            roomDescription.text = Description;
             roomActionUIList.Connect(phase.Choices);
             
             base.OnPhaseBegin(phase);
