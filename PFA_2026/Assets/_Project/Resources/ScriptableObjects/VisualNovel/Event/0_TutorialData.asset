@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: 0_TutorialData
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.EventData
   <Name>k__BackingField: Premier Jour
-  <Npcs>k__BackingField: []
+  <Npcs>k__BackingField:
+  - {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
   <Priority>k__BackingField: 2
   <Conditions>k__BackingField: []
   <FirstDialogue>k__BackingField: {fileID: 11400000, guid: e214380c6494e4a4997a15c136820ca6, type: 2}
