@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538464531f843609cc1775d421b72c4, type: 3}
+  m_Name: MeetingRoomData
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
+  <Name>k__BackingField: "Salle de r\xE9union"
+  <Description>k__BackingField: "C'est i\xE7i que vous pourrez r\xE9unir tout l'\xE9quipage
+    pour parler des sujets importants. Cette pi\xE8ce sert aussi de bureau pour l'\xE9quipage"
+  <Actions>k__BackingField:
+  - {fileID: 11400000, guid: a8d6d15cef8e33b4d8bb79b7fdb07025, type: 2}
+  - {fileID: 11400000, guid: dfb1cfcbaec9de441b7a52073835447f, type: 2}
+  - {fileID: 11400000, guid: fc51d85de193f214fa5a2af8d4704f8c, type: 2}
+  <GUID>k__BackingField: 2dd048d9-fb7e-47a9-9d29-bf49439c9f0a

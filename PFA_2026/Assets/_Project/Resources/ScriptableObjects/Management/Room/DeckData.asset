@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538464531f843609cc1775d421b72c4, type: 3}
+  m_Name: DeckData
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
+  <Name>k__BackingField: Pont
+  <Description>k__BackingField: "Le pont est le lieu id\xE9al pour r\xE9unir tout
+    l'\xE9quipage et profiter de l'air frais"
+  <Actions>k__BackingField:
+  - {fileID: 11400000, guid: 187940acfe97ad6419c976ad29608383, type: 2}
+  - {fileID: 11400000, guid: f0be2f29a33f9484ba719fad47353836, type: 2}
+  - {fileID: 11400000, guid: d2d521aa8661ac94aabb0dd4e9e3efd9, type: 2}
+  <GUID>k__BackingField: 2e06ffdc-7ecc-4665-bce1-9fa81a9c9ff8

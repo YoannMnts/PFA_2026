@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
     <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
-    <Text>k__BackingField: "Parfait alors ! Je compte sur vous pour maintenir la
-      bonne entente g\xE9n\xE9rale dans l\u2019\xE9quipage, il ne faudra pas interrompre
-      notre exp\xE9dition \xE0 cause de tensions\u2026Mais je suis s\xFBre que \xE7a
-      n'arrivera pas !"
     <Expression>k__BackingField: {fileID: 0}
+    <Text>k__BackingField:
+    - " Parfait alors ! Je compte sur vous pour maintenir la bonne entente g\xE9n\xE9rale
+      dans l\u2019\xE9quipage, il ne faudra pas interrompre notre exp\xE9dition \xE0
+      cause de tensions\u2026"
+    - "Mais je suis s\xFBre que \xE7a n'arrivera pas !"
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 3256ca06d8de8c14b94a19168745f387, type: 2}
   - {fileID: 11400000, guid: 3303e046b976c634a8e4d74ed1f8c7bf, type: 2}
