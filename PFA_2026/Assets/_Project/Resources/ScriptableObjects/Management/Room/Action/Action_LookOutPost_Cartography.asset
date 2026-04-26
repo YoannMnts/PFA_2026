@@ -309,7 +309,16 @@ MonoBehaviour:
         <Text>k__BackingField: Camil renforce sa relation avec Herlock
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
-    <Effects>k__BackingField: []
+    <Effects>k__BackingField:
+    - <Conditions>k__BackingField: []
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458179826941952
+        <ArithmeticOperator>k__BackingField: 0
+        <Text>k__BackingField: Herlock repose son corps en prenant l'air
   <GUID>k__BackingField: df9071ce-d073-4b6c-965e-31e574c3333a
   references:
     version: 2
@@ -594,3 +603,8 @@ MonoBehaviour:
       type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    - rid: 2120458179826941952
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 2
+        <MentalState>k__BackingField: 3
