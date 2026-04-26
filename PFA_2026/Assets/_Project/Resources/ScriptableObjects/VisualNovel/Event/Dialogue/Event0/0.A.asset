@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: 0.A
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
-    <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+  - <Npc>k__BackingField: {fileID: 0}
     <Expression>k__BackingField: {fileID: 0}
-    <Text>k__BackingField:
-    - "Bonjour Capitaine ! C\u2019est un plaisir de me retrouver avec vous \xE0 bord
-      du Naussilus !"
-    - "Vous vous sentez pr\xEAt \xE0 remplir votre r\xF4le ? "
+    <Text>k__BackingField: []
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 0}
+    <Text>k__BackingField: []
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 0}
+    <Text>k__BackingField: []
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: b9be07d56a4df0849ae932252ffa1fbc, type: 2}
   - {fileID: 11400000, guid: 61c207ffe548bb94e8e08e5cc8820cf1, type: 2}
