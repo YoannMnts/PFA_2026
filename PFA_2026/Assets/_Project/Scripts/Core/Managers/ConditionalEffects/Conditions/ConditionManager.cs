@@ -14,39 +14,36 @@ namespace Naussilus.Core.Managers
     {
         public static void ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData, out List<NpcData> validNpcs)
         {
+            validNpcs = new List<NpcData>();
             if(currentConditions.Length == 0)
             {
-                validNpcs = null;
                 validNpcs?.Add(currentNpcData);
             }
             
-            using (ListPool<NpcData>.Get(out var list))
+            for (int i = 0; i < currentConditions.Length; i++)
             {
-                for (int i = 0; i < currentConditions.Length; i++)
+                var condition = currentConditions[i];
+                
+                NpcData[] leftNpcs = condition.IsLeftCurrentNpc 
+                    ? new[] { currentNpcData } 
+                    : NpcManager.GetSelectedNpcs(condition.LeftSubject, currentNpcData);
+
+                NpcData[] rightNpcs = condition.IsRightCurrentNpc 
+                    ? new[] { currentNpcData } 
+                    : NpcManager.GetSelectedNpcs(condition.RightSubject, currentNpcData);
+
+                for (var j = 0; j < leftNpcs.Length; j++)
                 {
-                    var condition = currentConditions[i];
-                    
-                    NpcData[] leftNpcs = condition.IsLeftCurrentNpc 
-                        ? new[] { currentNpcData } 
-                        : NpcManager.GetSelectedNpcs(condition.LeftSubject, currentNpcData);
-
-                    NpcData[] rightNpcs = condition.IsRightCurrentNpc 
-                        ? new[] { currentNpcData } 
-                        : NpcManager.GetSelectedNpcs(condition.RightSubject, currentNpcData);
-
-                    for (var j = 0; j < leftNpcs.Length; j++)
+                    var left = leftNpcs[j];
+                    for (var k = 0; k < rightNpcs.Length; k++)
                     {
-                        var left = leftNpcs[j];
-                        for (var k = 0; k < rightNpcs.Length; k++)
-                        {
-                            var right = rightNpcs[k]; 
-                            if (!condition.ComputeCondition(left, right))
-                                break;
-                            list.Add(left);
-                        }
+                        var right = rightNpcs[k]; 
+                        if (!condition.ComputeCondition(left, right))
+                            break;
+                        validNpcs?.Add(left);
                     }
                 }
-                validNpcs = list;
+                
             }
         }
         
@@ -79,7 +76,7 @@ namespace Naussilus.Core.Managers
                                 {
                                     var right = rightNpcs[k]; 
                                     if (!condition.ComputeCondition(left, right))
-                                        break;
+                                        continue;
                                     list.Add(left);
                                 }
                             }
@@ -109,6 +106,7 @@ namespace Naussilus.Core.Managers
                     for (int j = 0; j < rightSide.Length; j++)
                     {
                         condition.IsValid(leftSide[i], rightSide[j], out bool isValid);
+                        isAllValid.Add(isValid);
                         Debug.Log($"[ConditionManager] Condition {condition}: left: {leftSide[i]}, comparator: {condition.ComparisonOperator}, right: {rightSide[j]} return : {isValid}");
                     }
                 }

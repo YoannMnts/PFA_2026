@@ -20,10 +20,14 @@ namespace Naussilus.Core.Managers.Npcs
             Behaviors = npcData.Behavior.Select(b => new Behavior(b)).ToArray();
             MentalStates = npcData.MentalState.Select(m => new MentalState(m)).ToArray();
             Gender = npcData.Gender;
-            Relationships = npcData.Relationships.Select(r => new NpcRelationship(r)).ToArray();
             CurrentThinking = npcData.CurrentThinking;
         }
 
+        public void InitRelationships(NpcData npcData)
+        {
+            Relationships = npcData.Relationships.Select(r => new NpcRelationship(r)).ToArray();
+        }
+        
         private int GetRelationshipWith(Npc npc)
         {
             for (int i = 0; i < Relationships.Length; i++)

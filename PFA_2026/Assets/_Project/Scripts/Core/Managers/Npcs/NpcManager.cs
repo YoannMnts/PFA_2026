@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Naussilus.Core.Consequences;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
 using Naussilus.Core.NpcDatas;
 using UnityEngine;
@@ -22,10 +21,20 @@ namespace Naussilus.Core.Managers.Npcs
             {
                 NpcData entry = entries[i];
                 NpcDatas.Add(entry.GUID, entry);
-
-                var npc = new Npc(entry);
-                Npcs.Add(entry.GUID, npc);
             }
+            
+            foreach ((string key, NpcData value) in NpcDatas)
+            {
+                var npc = new Npc(value);
+                Npcs.Add(value.GUID, npc);
+            }
+
+            foreach ((string key, NpcData value) in NpcDatas)
+            {
+                TryGetNpc(value.GUID, out Npc npc);
+                npc.InitRelationships(value);
+            }
+
             Entries = entries;
         }
         

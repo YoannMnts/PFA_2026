@@ -1,4 +1,5 @@
 ﻿using Naussilus.Core.Managers.Npcs;
+using UnityEngine;
 
 namespace Naussilus.Core.NpcDatas
 {
@@ -15,9 +16,14 @@ namespace Naussilus.Core.NpcDatas
             if (data.Npc is NpcValue npcValue)
             {
                 NpcManager.TryGetNpc(npcValue.NpcData.GUID, out Npc npc);
+                Debug.Log($"TryGetNpc: GUID: {npcValue.NpcData.GUID}, Npc: {npc.Name}");
                 Npc = npc;
             }
-            Npc = null;
+            else
+            {
+                Debug.Log($"Npc is not a NpcValue");
+                Npc = null;
+            }
         }
         
         public void SetNewAmount(int amount) => Amount = amount;

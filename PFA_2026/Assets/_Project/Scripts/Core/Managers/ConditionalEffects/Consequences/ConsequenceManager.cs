@@ -45,7 +45,9 @@ namespace Naussilus.Core.Managers
 
             if (leftSide.Contains(-1) || rightSide < 0)
             {
-                Debug.LogError($"Negative value for consequence {consequence}");   
+                for (int i = 0; i < leftSide.Length; i++)
+                    Debug.LogError($"[ConsequenceManager] Negative value for consequence left side {leftSide[i]}, right: {rightSide}");
+                
                 return;
             }
 
@@ -53,7 +55,7 @@ namespace Naussilus.Core.Managers
             {
                 consequence.ModifyValue(leftSide[i], rightSide, out var newAmount);
                 currentNpc.SetValue(stat, newAmount);
-                Debug.Log($"[ConsequenceManager] Consequence {consequence}: left: {leftSide[i]}, right: {rightSide} return : {newAmount} for npc {currentNpc.Name}");
+                Debug.Log($"[ConsequenceManager] Compute : left: {leftSide[i]}, right: {rightSide} return : {newAmount} for npc {currentNpc.Name}");
             }
         }
 

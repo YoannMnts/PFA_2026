@@ -10,7 +10,7 @@ namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers
     public class FinalAnswerData : Answer
     {
         [field : SerializeField, TextArea]
-        public string NpcText { get; private set; }
+        public string[] NpcText { get; private set; }
         
         [field : SerializeField]
         public ConditionalEffect[] Effects { get; private set; }
