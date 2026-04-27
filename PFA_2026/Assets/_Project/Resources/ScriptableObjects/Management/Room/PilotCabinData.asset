@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538464531f843609cc1775d421b72c4, type: 3}
+  m_Name: PilotCabinData
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
+  <Name>k__BackingField: Cabine de pilotage
+  <Description>k__BackingField: "C'est i\xE7i que le pilote du navire \xE0 acc\xE8s
+    \xE0 tout les contr\xF4les du Naussilus"
+  <Actions>k__BackingField:
+  - {fileID: 11400000, guid: 71af22d713d5a8c4c8475611c7f52258, type: 2}
+  - {fileID: 11400000, guid: 84ee14e2c16d3774b9a3a6d6acd1c137, type: 2}
+  <GUID>k__BackingField: ac45e991-6a9e-4b49-9e7d-3c1bf3e8ad74

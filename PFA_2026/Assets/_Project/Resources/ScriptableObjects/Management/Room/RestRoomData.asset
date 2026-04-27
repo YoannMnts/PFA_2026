@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538464531f843609cc1775d421b72c4, type: 3}
+  m_Name: RestRoomData
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
+  <Name>k__BackingField: "Salle de d\xE9tente"
+  <Description>k__BackingField: "L'endroit id\xE9al pour que les membres de l'\xE9quipage
+    puissent s'occuper pendant leur temps libre"
+  <Actions>k__BackingField:
+  - {fileID: 11400000, guid: 56ab99c42724be841af69cc548fa308a, type: 2}
+  - {fileID: 11400000, guid: 87fb0e3f245f4de4596d26e7d1b1955d, type: 2}
+  <GUID>k__BackingField: 84c5c9fb-9e42-4114-9b01-a3db224c594e

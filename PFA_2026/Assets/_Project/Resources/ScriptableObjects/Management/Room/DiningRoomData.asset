@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538464531f843609cc1775d421b72c4, type: 3}
+  m_Name: DiningRoomData
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
+  <Name>k__BackingField: "Salle \xE0 manger"
+  <Description>k__BackingField: "C'est i\xE7i que l'\xE9quipage prend ses repas et
+    que le cuistot pr\xE9pare la nourriture"
+  <Actions>k__BackingField:
+  - {fileID: 11400000, guid: a6cde8c9252d9384ab07dcd8a762cf2a, type: 2}
+  - {fileID: 11400000, guid: 42d9256a63eb0ec44a44c16e226471c0, type: 2}
+  - {fileID: 11400000, guid: 9355debfb0333ef428980857e269a712, type: 2}
+  <GUID>k__BackingField: 598786f2-e1c7-4b4a-b0bf-5fcb5c36d44a

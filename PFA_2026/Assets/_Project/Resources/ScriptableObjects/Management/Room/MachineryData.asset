@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538464531f843609cc1775d421b72c4, type: 3}
+  m_Name: MachineryData
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
+  <Name>k__BackingField: Machinerie
+  <Description>k__BackingField: "C'est depuis cette pi\xE8ce que tout le navire est
+    aliment\xE9, que ce soit les voiles, le ballon, l'\xE9lectricit\xE9 ou l'eau"
+  <Actions>k__BackingField:
+  - {fileID: 11400000, guid: 27860af8ae94c29438c3c6b51da2d9ed, type: 2}
+  - {fileID: 11400000, guid: dd2f6a5ba2617a04791e44971bdd3db8, type: 2}
+  <GUID>k__BackingField: ad015a2f-0ea7-47aa-8d09-f3e6ac0a5c45

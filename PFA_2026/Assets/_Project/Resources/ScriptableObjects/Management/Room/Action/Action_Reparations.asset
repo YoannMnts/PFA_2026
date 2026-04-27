@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7981673afb42479da49ee3efe9a052af, type: 3}
+  m_Name: Action_Reparations
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
+  <Name>k__BackingField: "Effectuer des r\xE9parations"
+  <Cost>k__BackingField: 8
+  <Countdown>k__BackingField: 4
+  <Categories>k__BackingField:
+  - <Name>k__BackingField: Superviseur
+    <Quantity>k__BackingField: 1
+    <ProhibitedNpc>k__BackingField: []
+    <ObligateNpc>k__BackingField:
+    - {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+  - <Name>k__BackingField: "R\xE9parateurs"
+    <Quantity>k__BackingField: 3
+    <ProhibitedNpc>k__BackingField:
+    - {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <ObligateNpc>k__BackingField: []
+  <ActionEffects>k__BackingField: []
+  <GUID>k__BackingField: 0cf2d091-ead7-4109-a26c-3445edd92e0a
+  references:
+    version: 2
+    RefIds: []

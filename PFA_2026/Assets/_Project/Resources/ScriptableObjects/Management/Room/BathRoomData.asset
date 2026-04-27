@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538464531f843609cc1775d421b72c4, type: 3}
+  m_Name: BathRoomData
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
+  <Name>k__BackingField: Salle d'eau
+  <Description>k__BackingField: "Cette pi\xE8ce est tout \xE9quip\xE9e pour offrir
+    aux pirates l'hygi\xE8ne dont ils ont besoin, tantq u'elle est entretenur r\xE9guli\xE8rement"
+  <Actions>k__BackingField:
+  - {fileID: 11400000, guid: 3fea2d9cc465c7c4b887506f7a1ca397, type: 2}
+  - {fileID: 11400000, guid: 19477164b72d448499373bf376db27e4, type: 2}
+  - {fileID: 11400000, guid: ad3c23bb89c54b240891b3cb74033786, type: 2}
+  <GUID>k__BackingField: 8521cf01-8df4-4289-a7c9-2ca57dce6fb4

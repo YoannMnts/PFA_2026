@@ -1,0 +1,1184 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7981673afb42479da49ee3efe9a052af, type: 3}
+  m_Name: Action_View
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
+  <Name>k__BackingField: Observer le paysage
+  <Cost>k__BackingField: 2
+  <Countdown>k__BackingField: 2
+  <Categories>k__BackingField:
+  - <Name>k__BackingField: Observeur
+    <Quantity>k__BackingField: 1
+    <ProhibitedNpc>k__BackingField: []
+    <ObligateNpc>k__BackingField: []
+  <ActionEffects>k__BackingField:
+  - <CategoryIndex>k__BackingField: 1
+    <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Effects>k__BackingField:
+    - <Conditions>k__BackingField: []
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462124
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "T\xE9a se d\xE9tend devant le paysage"
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462125
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Cette pause fait du bien \xE0 T\xE9a"
+    - <Conditions>k__BackingField:
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: -2
+        <Left>k__BackingField:
+          rid: 2120458159525462126
+        <ComparisonOperator>k__BackingField: 2
+        <IsRightCurrentNpc>k__BackingField: 1
+        <RightSubject>k__BackingField:
+          rid: -2
+        <Right>k__BackingField:
+          rid: 2120458159525462127
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462128
+        <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Le vent irrite T\xE9a"
+    - <Conditions>k__BackingField:
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: -2
+        <Left>k__BackingField:
+          rid: 2120458159525462129
+        <ComparisonOperator>k__BackingField: 2
+        <IsRightCurrentNpc>k__BackingField: 0
+        <RightSubject>k__BackingField:
+          rid: 2120458159525462130
+        <Right>k__BackingField:
+          rid: 2120458159525462131
+      - <IsLeftCurrentNpc>k__BackingField: 0
+        <LeftSubject>k__BackingField:
+          rid: 2120458159525462132
+        <Left>k__BackingField:
+          rid: 2120458159525462133
+        <ComparisonOperator>k__BackingField: 1
+        <IsRightCurrentNpc>k__BackingField: 0
+        <RightSubject>k__BackingField:
+          rid: 2120458159525462134
+        <Right>k__BackingField:
+          rid: 2120458159525462135
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462137
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: 
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462138
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Pam vient aupr\xE8s d'elle, et T\xE9a est contente
+          de lui parler"
+    <Position>k__BackingField: {x: 0, y: 0, z: 0}
+    <ActionSprite>k__BackingField: {fileID: 0}
+  - <CategoryIndex>k__BackingField: 1
+    <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Effects>k__BackingField:
+    - <Conditions>k__BackingField: []
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462104
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Jennie se d\xE9tend en observant l'horizon"
+    - <Conditions>k__BackingField:
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: -2
+        <Left>k__BackingField:
+          rid: 2120458159525462106
+        <ComparisonOperator>k__BackingField: 1
+        <IsRightCurrentNpc>k__BackingField: 1
+        <RightSubject>k__BackingField:
+          rid: -2
+        <Right>k__BackingField:
+          rid: 2120458159525462107
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462108
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Jennie pleure des larmes d'emotions, ce qui la d\xE9tend"
+    - <Conditions>k__BackingField:
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: -2
+        <Left>k__BackingField:
+          rid: 2120458159525462109
+        <ComparisonOperator>k__BackingField: 2
+        <IsRightCurrentNpc>k__BackingField: 1
+        <RightSubject>k__BackingField:
+          rid: -2
+        <Right>k__BackingField:
+          rid: 2120458159525462110
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462111
+        <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: Jennie se sent seule
+    - <Conditions>k__BackingField:
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: -2
+        <Left>k__BackingField:
+          rid: 2120458159525462112
+        <ComparisonOperator>k__BackingField: 2
+        <IsRightCurrentNpc>k__BackingField: 0
+        <RightSubject>k__BackingField:
+          rid: 2120458159525462113
+        <Right>k__BackingField:
+          rid: 2120458159525462114
+      - <IsLeftCurrentNpc>k__BackingField: 0
+        <LeftSubject>k__BackingField:
+          rid: 2120458159525462116
+        <Left>k__BackingField:
+          rid: 2120458159525462117
+        <ComparisonOperator>k__BackingField: 1
+        <IsRightCurrentNpc>k__BackingField: 0
+        <RightSubject>k__BackingField:
+          rid: 2120458159525462118
+        <Right>k__BackingField:
+          rid: 2120458159525462119
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462120
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: 
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462121
+        <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: 
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462122
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Pam vient aupr\xE8s d'elle pour la r\xE9conforter.
+          Jennie se sent mieux apr\xE8s ce qu'elle lui dit mais perd un peu confiance
+          en elle "
+    <Position>k__BackingField: {x: 0, y: 0, z: 0}
+    <ActionSprite>k__BackingField: {fileID: 0}
+  - <CategoryIndex>k__BackingField: 1
+    <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Effects>k__BackingField:
+    - <Conditions>k__BackingField: []
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462140
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: Marco prend une pause devant le paysage pour se detendre
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462141
+        <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: Sa petite amie lui manque, ce qui rend Marco triste
+    - <Conditions>k__BackingField:
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: -2
+        <Left>k__BackingField:
+          rid: 2120458159525462143
+        <ComparisonOperator>k__BackingField: 1
+        <IsRightCurrentNpc>k__BackingField: 1
+        <RightSubject>k__BackingField:
+          rid: -2
+        <Right>k__BackingField:
+          rid: 2120458159525462144
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462145
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: Marco joue quelques airs de guitare pour se remonter
+          le moral
+    - <Conditions>k__BackingField:
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: -2
+        <Left>k__BackingField:
+          rid: 2120458159525462146
+        <ComparisonOperator>k__BackingField: 2
+        <IsRightCurrentNpc>k__BackingField: 0
+        <RightSubject>k__BackingField:
+          rid: 2120458159525462147
+        <Right>k__BackingField:
+          rid: 2120458159525462148
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: 2120458159525462149
+        <Left>k__BackingField:
+          rid: 2120458159525462150
+        <ComparisonOperator>k__BackingField: 1
+        <IsRightCurrentNpc>k__BackingField: 0
+        <RightSubject>k__BackingField:
+          rid: 2120458159525462151
+        <Right>k__BackingField:
+          rid: 2120458159525462152
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462154
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: 
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462155
+        <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Pam vient aupr\xE8s de Marco, ce qui lui fait plaisir,
+          mais ses mots blessent son ego "
+    <Position>k__BackingField: {x: 0, y: 0, z: 0}
+    <ActionSprite>k__BackingField: {fileID: 0}
+  - <CategoryIndex>k__BackingField: 1
+    <NpcData>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
+    <Effects>k__BackingField:
+    - <Conditions>k__BackingField: []
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462156
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: Camil est heureux de voir le paysage
+    - <Conditions>k__BackingField:
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: -2
+        <Left>k__BackingField:
+          rid: 2120458159525462158
+        <ComparisonOperator>k__BackingField: 1
+        <IsRightCurrentNpc>k__BackingField: 1
+        <RightSubject>k__BackingField:
+          rid: -2
+        <Right>k__BackingField:
+          rid: 2120458159525462159
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462160
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Camil se rappelle des bons souvenirs avec son p\xE8re"
+    - <Conditions>k__BackingField:
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: -2
+        <Left>k__BackingField:
+          rid: 2120458159525462161
+        <ComparisonOperator>k__BackingField: 2
+        <IsRightCurrentNpc>k__BackingField: 0
+        <RightSubject>k__BackingField:
+          rid: 2120458159525462162
+        <Right>k__BackingField:
+          rid: 2120458159525462163
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: 2120458159525462164
+        <Left>k__BackingField:
+          rid: 2120458159525462165
+        <ComparisonOperator>k__BackingField: 1
+        <IsRightCurrentNpc>k__BackingField: 0
+        <RightSubject>k__BackingField:
+          rid: 2120458159525462166
+        <Right>k__BackingField:
+          rid: 2120458159525462167
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462169
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: 
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462170
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Pam vient aupr\xE8s de Camil, et il appr\xE9cie cette
+          compagnie"
+    <Position>k__BackingField: {x: 0, y: 0, z: 0}
+    <ActionSprite>k__BackingField: {fileID: 0}
+  - <CategoryIndex>k__BackingField: 1
+    <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Effects>k__BackingField:
+    - <Conditions>k__BackingField: []
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462172
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: Herlock repose son corps en prenant l'air
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462173
+        <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: Herlock reste longtemps sur la proue, se dissociant
+          du groupe
+    - <Conditions>k__BackingField:
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: -2
+        <Left>k__BackingField:
+          rid: 2120458159525462174
+        <ComparisonOperator>k__BackingField: 1
+        <IsRightCurrentNpc>k__BackingField: 1
+        <RightSubject>k__BackingField:
+          rid: -2
+        <Right>k__BackingField:
+          rid: 2120458159525462175
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462176
+        <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: 
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462177
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Herlock fait remonter des souvenirs \xE0 la surface,
+          ce qui le fait pleurer pour son bien"
+    - <Conditions>k__BackingField:
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: -2
+        <Left>k__BackingField:
+          rid: 2120458159525462178
+        <ComparisonOperator>k__BackingField: 2
+        <IsRightCurrentNpc>k__BackingField: 0
+        <RightSubject>k__BackingField:
+          rid: 2120458159525462179
+        <Right>k__BackingField:
+          rid: 2120458159525462180
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: 2120458159525462181
+        <Left>k__BackingField:
+          rid: 2120458159525462182
+        <ComparisonOperator>k__BackingField: 1
+        <IsRightCurrentNpc>k__BackingField: 0
+        <RightSubject>k__BackingField:
+          rid: 2120458159525462183
+        <Right>k__BackingField:
+          rid: 2120458159525462184
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462186
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: 
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462187
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Pam vient aupr\xE8s de Herlock, et celui \xE7i appr\xE9cie
+          beaucoup ce soutient"
+    <Position>k__BackingField: {x: 0, y: 0, z: 0}
+    <ActionSprite>k__BackingField: {fileID: 0}
+  - <CategoryIndex>k__BackingField: 1
+    <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Effects>k__BackingField:
+    - <Conditions>k__BackingField: []
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462189
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Ynna arrive \xE0 se d\xE9tendre un peu"
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462190
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: Ynna est heureuse de voir ce paysage
+    - <Conditions>k__BackingField:
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: -2
+        <Left>k__BackingField:
+          rid: 2120458159525462191
+        <ComparisonOperator>k__BackingField: 2
+        <IsRightCurrentNpc>k__BackingField: 0
+        <RightSubject>k__BackingField:
+          rid: 2120458159525462192
+        <Right>k__BackingField:
+          rid: 2120458159525462193
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: 2120458159525462194
+        <Left>k__BackingField:
+          rid: 2120458159525462195
+        <ComparisonOperator>k__BackingField: 1
+        <IsRightCurrentNpc>k__BackingField: 0
+        <RightSubject>k__BackingField:
+          rid: 2120458159525462196
+        <Right>k__BackingField:
+          rid: 2120458159525462197
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 0
+        <Subject>k__BackingField:
+          rid: 2120458159525462199
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462200
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: 
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462202
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: 
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462204
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Pam vient aupr\xE8s de Ynna, et les deux discutent
+          entre amies"
+    <Position>k__BackingField: {x: 0, y: 0, z: 0}
+    <ActionSprite>k__BackingField: {fileID: 0}
+  - <CategoryIndex>k__BackingField: 1
+    <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Effects>k__BackingField:
+    - <Conditions>k__BackingField: []
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462205
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Liski profites de cette vue pour enfin se d\xE9tendre"
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462206
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: Liski est heureux de pouvoir voyager si haut dans
+          le ciel
+    - <Conditions>k__BackingField:
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: -2
+        <Left>k__BackingField:
+          rid: 2120458159525462207
+        <ComparisonOperator>k__BackingField: 1
+        <IsRightCurrentNpc>k__BackingField: 1
+        <RightSubject>k__BackingField:
+          rid: -2
+        <Right>k__BackingField:
+          rid: 2120458159525462208
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462209
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Liski est heureux d'\xEAtre enfin pirate"
+    - <Conditions>k__BackingField:
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: -2
+        <Left>k__BackingField:
+          rid: 2120458159525462210
+        <ComparisonOperator>k__BackingField: 2
+        <IsRightCurrentNpc>k__BackingField: 0
+        <RightSubject>k__BackingField:
+          rid: 2120458159525462211
+        <Right>k__BackingField:
+          rid: 2120458159525462212
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: 2120458159525462213
+        <Left>k__BackingField:
+          rid: 2120458159525462214
+        <ComparisonOperator>k__BackingField: 1
+        <IsRightCurrentNpc>k__BackingField: 0
+        <RightSubject>k__BackingField:
+          rid: 2120458159525462215
+        <Right>k__BackingField:
+          rid: 2120458159525462216
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462218
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: 
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462220
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: 
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462221
+        <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Pam vient aupr\xE8s de Liski, ce qui lui remonte
+          le moral m\xEAme si les mots durs de Pam baissent sa confiance en lui"
+    <Position>k__BackingField: {x: 0, y: 0, z: 0}
+    <ActionSprite>k__BackingField: {fileID: 0}
+  - <CategoryIndex>k__BackingField: 1
+    <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Effects>k__BackingField:
+    - <Conditions>k__BackingField: []
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462222
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Pam se d\xE9tend en regardant le paysage"
+    - <Conditions>k__BackingField:
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: -2
+        <Left>k__BackingField:
+          rid: 2120458159525462223
+        <ComparisonOperator>k__BackingField: 2
+        <IsRightCurrentNpc>k__BackingField: 1
+        <RightSubject>k__BackingField:
+          rid: -2
+        <Right>k__BackingField:
+          rid: 2120458159525462224
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462225
+        <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Pam r\xE9alise sa solitude"
+    - <Conditions>k__BackingField:
+      - <IsLeftCurrentNpc>k__BackingField: 1
+        <LeftSubject>k__BackingField:
+          rid: -2
+        <Left>k__BackingField:
+          rid: 2120458159525462226
+        <ComparisonOperator>k__BackingField: 1
+        <IsRightCurrentNpc>k__BackingField: 1
+        <RightSubject>k__BackingField:
+          rid: -2
+        <Right>k__BackingField:
+          rid: 2120458159525462227
+      <Consequences>k__BackingField:
+      - <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458159525462229
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Text>k__BackingField: "Pam \xE9crit un po\xE8me pour sa petite amie, ce
+          qui la rend heureuse"
+    <Position>k__BackingField: {x: 0, y: 0, z: 0}
+    <ActionSprite>k__BackingField: {fileID: 0}
+  <GUID>k__BackingField: c092f0c7-0639-431d-9dd5-2771470e568a
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2120458159525462104
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 3
+        <MentalState>k__BackingField: 3
+    - rid: 2120458159525462106
+      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Behavior>k__BackingField: 2
+    - rid: 2120458159525462107
+      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 13
+    - rid: 2120458159525462108
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 3
+    - rid: 2120458159525462109
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <MentalState>k__BackingField: 2
+    - rid: 2120458159525462110
+      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 10
+    - rid: 2120458159525462111
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462112
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462113
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2120458159525462114
+      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data: 
+    - rid: 2120458159525462116
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2120458159525462117
+      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Behavior>k__BackingField: 1
+    - rid: 2120458159525462118
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    - rid: 2120458159525462119
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462120
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 2
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462121
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 1
+    - rid: 2120458159525462122
+      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data: 
+    - rid: 2120458159525462124
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 3
+    - rid: 2120458159525462125
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 4
+    - rid: 2120458159525462126
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 6
+        <MentalState>k__BackingField: 3
+    - rid: 2120458159525462127
+      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 6
+    - rid: 2120458159525462128
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462129
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462130
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2120458159525462131
+      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data: 
+    - rid: 2120458159525462132
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2120458159525462133
+      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Behavior>k__BackingField: 1
+    - rid: 2120458159525462134
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    - rid: 2120458159525462135
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462137
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 2
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462138
+      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data: 
+    - rid: 2120458159525462140
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 2
+        <MentalState>k__BackingField: 3
+    - rid: 2120458159525462141
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462143
+      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Behavior>k__BackingField: 3
+    - rid: 2120458159525462144
+      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 16
+    - rid: 2120458159525462145
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 2
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462146
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462147
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2120458159525462148
+      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data: 
+    - rid: 2120458159525462149
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2120458159525462150
+      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Behavior>k__BackingField: 1
+    - rid: 2120458159525462151
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    - rid: 2120458159525462152
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462154
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462155
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 2
+        <MentalState>k__BackingField: 1
+    - rid: 2120458159525462156
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462158
+      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Behavior>k__BackingField: 2
+    - rid: 2120458159525462159
+      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 15
+    - rid: 2120458159525462160
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462161
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462162
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2120458159525462163
+      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data: 
+    - rid: 2120458159525462164
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2120458159525462165
+      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Behavior>k__BackingField: 1
+    - rid: 2120458159525462166
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
+    - rid: 2120458159525462167
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462169
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462170
+      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data: 
+    - rid: 2120458159525462172
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 2
+        <MentalState>k__BackingField: 3
+    - rid: 2120458159525462173
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 2
+    - rid: 2120458159525462174
+      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Behavior>k__BackingField: 3
+    - rid: 2120458159525462175
+      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 18
+    - rid: 2120458159525462176
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462177
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 2
+        <MentalState>k__BackingField: 4
+    - rid: 2120458159525462178
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462179
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2120458159525462180
+      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data: 
+    - rid: 2120458159525462181
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2120458159525462182
+      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Behavior>k__BackingField: 1
+    - rid: 2120458159525462183
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    - rid: 2120458159525462184
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462186
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 2
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462187
+      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data: 
+    - rid: 2120458159525462189
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 3
+    - rid: 2120458159525462190
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462191
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462192
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2120458159525462193
+      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data: 
+    - rid: 2120458159525462194
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2120458159525462195
+      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Behavior>k__BackingField: 1
+    - rid: 2120458159525462196
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    - rid: 2120458159525462197
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462199
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2120458159525462200
+      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data: 
+    - rid: 2120458159525462202
+      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data: 
+    - rid: 2120458159525462204
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 1
+    - rid: 2120458159525462205
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 3
+        <MentalState>k__BackingField: 3
+    - rid: 2120458159525462206
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 2
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462207
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <MentalState>k__BackingField: 2
+    - rid: 2120458159525462208
+      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 15
+    - rid: 2120458159525462209
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462210
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462211
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2120458159525462212
+      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data: 
+    - rid: 2120458159525462213
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2120458159525462214
+      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Behavior>k__BackingField: 1
+    - rid: 2120458159525462215
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    - rid: 2120458159525462216
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462218
+      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data: 
+    - rid: 2120458159525462220
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 1
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462221
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 2
+        <MentalState>k__BackingField: 1
+    - rid: 2120458159525462222
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 2
+        <MentalState>k__BackingField: 3
+    - rid: 2120458159525462223
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <MentalState>k__BackingField: 2
+    - rid: 2120458159525462224
+      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 5
+    - rid: 2120458159525462225
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 3
+        <MentalState>k__BackingField: 0
+    - rid: 2120458159525462226
+      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Behavior>k__BackingField: 3
+    - rid: 2120458159525462227
+      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 13
+    - rid: 2120458159525462229
+      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 2
+        <MentalState>k__BackingField: 0

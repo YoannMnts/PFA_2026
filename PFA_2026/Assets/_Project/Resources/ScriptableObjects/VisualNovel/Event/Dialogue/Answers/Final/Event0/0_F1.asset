@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6551f63f2e464eb39de211b4f9603e78, type: 3}
+  m_Name: 0_F1
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
+  <ButtonText>k__BackingField: "C\u2019est tr\xE8s clair !"
+  <NpcText>k__BackingField: "Merveilleux ! Je suis toute excit\xE9e de cette travers\xE9e,
+    c\u2019est ma premi\xE8re exp\xE9dition en tant que pirate vous savez ! J\u2019esp\xE8re
+    que tout se passera sans accrocs. Bonne chance !"
+  <Effects>k__BackingField: []
+  <GUID>k__BackingField: 608530bb-cb34-4390-b085-21f1045068fa
+  references:
+    version: 2
+    RefIds: []

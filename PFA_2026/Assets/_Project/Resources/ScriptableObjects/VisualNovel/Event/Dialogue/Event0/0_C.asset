@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 0_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+    <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 0}
+    <Text>k__BackingField:
+    - "C\u2019est tr\xE8s simple, il \xE0 \xE9t\xE9 convenu que votre cabine sera
+      ouverte tous les matins, si les membres de l\u2019\xE9quipage ont des probl\xE8mes,
+      il auront qu'\xE0 venir vous en parler directement !"
+    - "Je suis s\xFBr que vous les aviserez \xE0 merveille"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 6f9b601f233703f408dd069e47d48d86, type: 2}
+  - {fileID: 11400000, guid: a7bfa7c992868fb45b56e47cbed2ea23, type: 2}
+  <GUID>k__BackingField: 46e585cd-43bf-45f5-94bc-e76f9a3977eb

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 0_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+    <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 0}
+    <Text>k__BackingField:
+    - "Et bien si les tensions sont trop grandes, on sera oblig\xE9 de s\u2019arr\xEAter
+      dans l'a\xE9roport le plus proche et d\u2019annuler la livraison de la cargaison,
+      sans parler des s\xE9quelles sur les personnes concern\xE9es\u2026"
+    - "Mais \xE7a n'arrivera pas j\u2019en suis s\xFBre !"
+  <Answers>k__BackingField:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 88654655f1014864e8dd2e897d91abee, type: 2}
+  <GUID>k__BackingField: 25ae5289-2fdb-41a8-8ff6-06508d124061

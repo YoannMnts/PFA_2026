@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7981673afb42479da49ee3efe9a052af, type: 3}
+  m_Name: Action_Isolation
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
+  <Name>k__BackingField: 'Isoler un membre '
+  <Cost>k__BackingField: 6
+  <Countdown>k__BackingField: 15
+  <Categories>k__BackingField:
+  - <Name>k__BackingField: "Isol\xE9"
+    <Quantity>k__BackingField: 1
+    <ProhibitedNpc>k__BackingField: []
+    <ObligateNpc>k__BackingField: []
+  <ActionEffects>k__BackingField: []
+  <GUID>k__BackingField: 6ed596bb-fe96-475b-9538-83af746f8c88
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538464531f843609cc1775d421b72c4, type: 3}
+  m_Name: LookoutPostData
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
+  <Name>k__BackingField: Vigie
+  <Description>k__BackingField: "La vue est d\xE9gag\xE9e depuis cette pi\xE8ce,
+    permettant de surveiller l'horizon et de communiquer avec l'exterieur par radio"
+  <Actions>k__BackingField:
+  - {fileID: 11400000, guid: c685cbb8c23ce2e4b82cc524e2c3c0bd, type: 2}
+  <GUID>k__BackingField: 89369184-c552-4c63-a634-ff26fce00a02
