@@ -283,9 +283,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f35611615142cb94a7f2722d5af7ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay.Management::_Project.Scripts.Rooms.ActionCategoryUIList
-  prefab: {fileID: 0}
+  prefab: {fileID: 5765387689494327099, guid: 8bff67d1b864995448d83a7db580b0a0, type: 3}
   dividerPrefab: {fileID: 0}
-  root: {fileID: 0}
+  root: {fileID: 2068905270625582696}
 --- !u!1 &4354325475090148831
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
   m_HorizontalFit: 0
-  m_VerticalFit: 1
+  m_VerticalFit: 2
 --- !u!1 &7730603046219449952
 GameObject:
   m_ObjectHideFlags: 0

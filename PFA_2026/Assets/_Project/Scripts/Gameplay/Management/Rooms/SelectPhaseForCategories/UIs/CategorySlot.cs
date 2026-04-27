@@ -9,7 +9,7 @@ namespace _Project.Scripts.Rooms
     {
         public Button Button { get; private set; }
         
-        private void Start()
+        private void OnEnable()
         {
             Button = GetComponent<Button>();
         }

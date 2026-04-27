@@ -2,14 +2,13 @@
 using Naussilus.Core.Managers;
 using Naussilus.Core.NpcDatas;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace _Project.Scripts.Rooms
 {
     public class SelectNpcForCategoryUI : MonoPhaseListener<SelectNpcForCategory>
     {
         [SerializeField] private CanvasGroup group;
-        [FormerlySerializedAs("categorySlotUIList")] [SerializeField] private CategoryNpcUIList categoryNpcUIList;
+        [SerializeField] private SlotNpcUIList slotNpcUIList;
         
         private SelectNpcForCategory current;
 
@@ -25,7 +24,7 @@ namespace _Project.Scripts.Rooms
             
             current = phase;
             group.Show();
-            categoryNpcUIList.Connect(phase.Npcs);
+            slotNpcUIList.Connect(phase.Npcs);
             
             base.OnPhaseBegin(phase);
         }
@@ -36,10 +35,16 @@ namespace _Project.Scripts.Rooms
                 return;
             
             current = null;
-            categoryNpcUIList.Disconnect();
+            slotNpcUIList.Disconnect();
             group.Hide();
             
             base.OnPhaseEnd(phase);
+        }
+
+        public void Cancel()
+        {
+            if (current != null)
+                current.SetResult(null);
         }
 
         public void ChooseNpc(NpcData npcData)

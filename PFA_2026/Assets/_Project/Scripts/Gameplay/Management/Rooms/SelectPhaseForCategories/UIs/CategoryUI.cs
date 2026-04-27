@@ -1,15 +1,13 @@
-﻿using System;
-using Helteix.Tools.UI;
+﻿using Helteix.Tools.UI;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace _Project.Scripts.Rooms
 {
-    public class ActionCategoryUI : UIItem<Category>
+    public class CategoryUI : UIItem<Category>
     {
-        private SelectCategoryForActionUI selectCategoryForActionUI;
+        private SelectNpcsForActionUI selectNpcsForActionUI;
         
         [SerializeField] private TMP_Text categoryName;
         [SerializeField] private Transform slotRoot;
@@ -17,7 +15,7 @@ namespace _Project.Scripts.Rooms
         
         private void Start()
         {
-            selectCategoryForActionUI = GetComponentInParent<SelectCategoryForActionUI>();
+            selectNpcsForActionUI = GetComponentInParent<SelectNpcsForActionUI>();
         }
 
         protected override void SyncUI(Category current)
@@ -41,7 +39,7 @@ namespace _Project.Scripts.Rooms
 
         private void OnClicked()
         {
-            selectCategoryForActionUI.ChooseCategory(Current);
+            selectNpcsForActionUI.ChooseCategory(Current);
         }
     }
 }

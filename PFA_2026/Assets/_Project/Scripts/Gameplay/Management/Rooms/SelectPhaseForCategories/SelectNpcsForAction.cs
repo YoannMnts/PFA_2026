@@ -6,13 +6,13 @@ using UnityEngine;
 
 namespace _Project.Scripts.Rooms
 {
-    public class SelectCategoryForAction : PhaseCompletionSource<int>
+    public class SelectNpcsForAction : PhaseCompletionSource<bool>
     {
         public ActionData CurrentAction { get; private set; }
         
         public Category[] Categories { get; private set; }
         
-        public SelectCategoryForAction(ActionData action)
+        public SelectNpcsForAction(ActionData action)
         {
             CurrentAction = action;
         }
@@ -25,12 +25,6 @@ namespace _Project.Scripts.Rooms
 
         protected override Awaitable Dispose(CancellationToken token)
         {
-            if (CurrentResult > 0)
-            {
-                var selectedSlot = new SelectNpcForCategory(Categories[CurrentResult]);
-                selectedSlot.RunAndForget();
-            }
-            
             Categories = null;
             return base.Dispose(token);
         }

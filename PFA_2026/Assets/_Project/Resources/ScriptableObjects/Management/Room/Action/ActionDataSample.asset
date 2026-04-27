@@ -16,11 +16,11 @@ MonoBehaviour:
   <Cost>k__BackingField: 10
   <Countdown>k__BackingField: 0
   <Categories>k__BackingField:
-  - <Name>k__BackingField: 
-    <Quantity>k__BackingField: 0
+  - <Name>k__BackingField: Cuisine
+    <Quantity>k__BackingField: 1
     <ProhibitedNpc>k__BackingField: []
     <ObligateNpc>k__BackingField:
-    - {fileID: 0}
+    - {fileID: 11400000, guid: 4c5237b2ea5cb26419c3e8d2d834f0d9, type: 2}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 0
     <NpcData>k__BackingField: {fileID: 0}

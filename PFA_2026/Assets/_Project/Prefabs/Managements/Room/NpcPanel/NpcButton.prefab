@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77b7e6156464274a92493de09738f27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay.Management::_Project.Scripts.Rooms.SelectPhaseForNpc.UIs.CategorySlotUI
+  title: {fileID: 6547828156553255309}
   image: {fileID: 8212929731661802571}
 --- !u!1 &8598995771794141133
 GameObject:

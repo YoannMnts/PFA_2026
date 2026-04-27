@@ -1,4 +1,5 @@
-﻿using Helteix.Tools.Phases.Listeners;
+﻿using Helteix.Tools.Phases;
+using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas;
 using Naussilus.Core.Managers;
 using TMPro;
@@ -58,12 +59,17 @@ namespace _Project.Scripts.Rooms
         {
             if(current == null)
                 return;
-            
+
+            var index = 0;
             for (int i = 0; i < current.Choices.Length; i++)
             {
                 if(current.Choices[i] == actionData)
-                    current.SetResult(i);
+                    index = i;
             }
+
+            var selectNpcsForAction = new SelectNpcsForAction(current.Choices[index]);
+            selectNpcsForAction.RunAndForget();
+            current.SetResult(index);
         }
     }
 }

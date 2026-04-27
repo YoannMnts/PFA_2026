@@ -1,13 +1,16 @@
 ﻿using Helteix.Tools.UI;
 using Naussilus.Core.NpcDatas;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace _Project.Scripts.Rooms
 {
-    public class CategoryNpcUI : UIItem<NpcData>
+    public class SlotNpcUI : UIItem<NpcData>
     {
         private SelectNpcForCategoryUI selectNpcForCategoryUI;
+
+        [SerializeField] private TMP_Text title;
         
         [SerializeField] private Image image;
 
@@ -19,6 +22,7 @@ namespace _Project.Scripts.Rooms
         protected override void SyncUI(NpcData current)
         {
             //image.sprite = current.ActionSprite;
+            title.text = current.Name;
         }
 
         protected override void ClearUI()

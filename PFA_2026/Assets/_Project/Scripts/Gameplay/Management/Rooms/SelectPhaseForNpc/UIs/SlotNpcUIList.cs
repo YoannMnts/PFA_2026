@@ -3,7 +3,7 @@ using Naussilus.Core.NpcDatas;
 
 namespace _Project.Scripts.Rooms
 {
-    public class CategoryNpcUIList : UIList<NpcData, CategoryNpcUI>
+    public class SlotNpcUIList : UIList<NpcData, SlotNpcUI>
     {
         
     }

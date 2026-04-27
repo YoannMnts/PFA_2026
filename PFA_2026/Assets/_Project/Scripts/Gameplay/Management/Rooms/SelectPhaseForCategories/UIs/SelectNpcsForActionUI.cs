@@ -1,41 +1,43 @@
-﻿using Helteix.Tools.Phases.Listeners;
+﻿using Helteix.Tools.Phases;
+using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
 using Naussilus.Core.Managers;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace _Project.Scripts.Rooms
 {
-    public class SelectCategoryForActionUI : MonoPhaseListener<SelectCategoryForAction>
+    public class SelectNpcsForActionUI : MonoPhaseListener<SelectNpcsForAction>
     {
-        private SelectCategoryForAction current;
+        private SelectNpcsForAction current;
 
         [SerializeField] private CanvasGroup group;
-        [SerializeField] private ActionCategoryUIList actionCategoryUIList;
+        [SerializeField] private CategoryUIList categoryUIList;
 
         private void Start()
         {
             group.Hide();
         }
 
-        protected override void OnPhaseBegin(SelectCategoryForAction phase)
+        protected override void OnPhaseBegin(SelectNpcsForAction phase)
         {
             if(current != null)
                 return;
             
             current = phase;
             group.Show();
-            actionCategoryUIList.Connect(phase.CurrentAction.Categories);
+            categoryUIList.Connect(phase.CurrentAction.Categories);
             
             base.OnPhaseBegin(phase);
         }
 
-        protected override void OnPhaseEnd(SelectCategoryForAction phase)
+        protected override void OnPhaseEnd(SelectNpcsForAction phase)
         {
             if (current != phase) 
                 return;
             
             current = null;
-            actionCategoryUIList.Disconnect();
+            categoryUIList.Disconnect();
             group.Hide();
             
             base.OnPhaseEnd(phase);
@@ -44,19 +46,30 @@ namespace _Project.Scripts.Rooms
         public void Cancel()
         {
             if (current != null)
-                current.SetResult(-1);
+                current.SetResult(false);
         }
 
         public void ChooseCategory(Category category)
         {
             if(current == null)
                 return;
-            
+
+            var index = 0;
             for (int i = 0; i < current.Categories.Length; i++)
             {
                 if(current.Categories[i].Name == category.Name)
-                    current.SetResult(i);
+                    index = i;
             }
+
+            var selectNpc = new SelectNpcForCategory(current.Categories[index]);
+            
+            selectNpc.RunAndForget();
+        }
+
+        public void Apply()
+        {
+            if (current != null)
+                current.SetResult(false);
         }
     }
 }
