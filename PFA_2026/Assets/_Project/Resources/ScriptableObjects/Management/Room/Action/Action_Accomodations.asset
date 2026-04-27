@@ -15,7 +15,11 @@ MonoBehaviour:
   <Name>k__BackingField: Ranger les couchages
   <Cost>k__BackingField: 5
   <Countdown>k__BackingField: 7
-  <Categories>k__BackingField: []
+  <Categories>k__BackingField:
+  - <Name>k__BackingField: Rangement
+    <Quantity>k__BackingField: 1
+    <ProhibitedNpc>k__BackingField: []
+    <ObligateNpc>k__BackingField: []
   <ActionEffects>k__BackingField: []
   <GUID>k__BackingField: 455eaf03-deeb-4a79-8e37-3ed635110b49
   references:

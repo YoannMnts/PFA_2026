@@ -12,12 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7981673afb42479da49ee3efe9a052af, type: 3}
   m_Name: Action_Speed
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
-  <Name>k__BackingField: 
-  <Cost>k__BackingField: 0
-  <Countdown>k__BackingField: 0
-  <Categories>k__BackingField: []
+  <Name>k__BackingField: "G\xE9rer l'allure du  navire"
+  <Cost>k__BackingField: 4
+  <Countdown>k__BackingField: 2
+  <Categories>k__BackingField:
+  - <Name>k__BackingField: Pilote
+    <Quantity>k__BackingField: 1
+    <ProhibitedNpc>k__BackingField: []
+    <ObligateNpc>k__BackingField:
+    - {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
   <ActionEffects>k__BackingField: []
-  <GUID>k__BackingField: 6b162727-cf68-4f4e-b3a5-0af82835cd49
+  <GUID>k__BackingField: 86a4a78b-cefd-4a99-8198-0f540c5944f2
   references:
     version: 2
     RefIds: []

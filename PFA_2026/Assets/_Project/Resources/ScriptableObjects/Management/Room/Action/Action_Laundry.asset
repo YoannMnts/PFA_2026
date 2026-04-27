@@ -12,12 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7981673afb42479da49ee3efe9a052af, type: 3}
   m_Name: Action_Laundry
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
-  <Name>k__BackingField: 
-  <Cost>k__BackingField: 0
-  <Countdown>k__BackingField: 0
-  <Categories>k__BackingField: []
+  <Name>k__BackingField: Faire la lessive
+  <Cost>k__BackingField: 5
+  <Countdown>k__BackingField: 5
+  <Categories>k__BackingField:
+  - <Name>k__BackingField: "Charg\xE9 de lessive"
+    <Quantity>k__BackingField: 1
+    <ProhibitedNpc>k__BackingField: []
+    <ObligateNpc>k__BackingField: []
   <ActionEffects>k__BackingField: []
-  <GUID>k__BackingField: 6b162727-cf68-4f4e-b3a5-0af82835cd49
+  <GUID>k__BackingField: e7546f6f-d749-41d3-a4dc-be1c66829657
   references:
     version: 2
     RefIds: []

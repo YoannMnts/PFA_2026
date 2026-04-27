@@ -14,15 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: Cartographier
   <Cost>k__BackingField: 4
+  <Countdown>k__BackingField: 0
   <Categories>k__BackingField:
   - <Name>k__BackingField: Prise de mesures
     <Quantity>k__BackingField: 1
-    <ProhibitedNpc>k__BackingField: []
+    <ProhibitedNpc>k__BackingField:
+    - {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <ObligateNpc>k__BackingField: []
   - <Name>k__BackingField: Compte rendu
     <Quantity>k__BackingField: 1
     <ProhibitedNpc>k__BackingField: []
-    <ObligateNpc>k__BackingField: []
+    <ObligateNpc>k__BackingField:
+    - {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
@@ -35,6 +38,7 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462230
         <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: "Jennie se sent plus int\xE9gree en participant aux
           t\xE2ches du navire"
     - <Conditions>k__BackingField:
@@ -56,6 +60,7 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462234
         <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: 
       - <IsCurrentNpc>k__BackingField: 1
         <Subject>k__BackingField:
@@ -63,6 +68,7 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462235
         <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: "Jennie n'appr\xE9cie pas les reflexions que fait
           Herlock sur elle"
     - <Conditions>k__BackingField:
@@ -84,7 +90,10 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462240
         <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: Jennie renforce sa relation avec Herlock
+    <Position>k__BackingField: {x: 0, y: 0, z: 0}
+    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Effects>k__BackingField:
@@ -96,6 +105,7 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462242
         <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: "T\xE9a n'a pas l'habitude de faire ce genre de t\xE2ches
           et doit fournir beaucoup d'efforts"
       - <IsCurrentNpc>k__BackingField: 1
@@ -104,6 +114,7 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462244
         <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: "T\xE9a n'appr\xE9cie pas cette t\xE2che"
     - <Conditions>k__BackingField:
       - <IsLeftCurrentNpc>k__BackingField: 0
@@ -135,6 +146,7 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462250
         <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: 
       - <IsCurrentNpc>k__BackingField: 1
         <Subject>k__BackingField:
@@ -142,6 +154,7 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462251
         <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: 
       - <IsCurrentNpc>k__BackingField: 0
         <Subject>k__BackingField:
@@ -149,6 +162,7 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462254
         <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: "T\xE9a et Herlock se disputent \xE0 cause des commentaires
           d'Herlock"
     - <Conditions>k__BackingField:
@@ -170,7 +184,10 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462259
         <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: "T\xE9a renforce sa relation avec Herlock"
+    <Position>k__BackingField: {x: 0, y: 0, z: 0}
+    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
     <Effects>k__BackingField:
@@ -182,6 +199,7 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462261
         <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: "Marco n'a pas l'habitude de faire ce genre de t\xE2ches
           et doit fournir beaucoup d'efforts"
       - <IsCurrentNpc>k__BackingField: 1
@@ -190,6 +208,7 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462263
         <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: "Marco se sent utile et int\xE9gr\xE9"
     - <Conditions>k__BackingField:
       - <IsLeftCurrentNpc>k__BackingField: 0
@@ -210,6 +229,7 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462268
         <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: 
       - <IsCurrentNpc>k__BackingField: 0
         <Subject>k__BackingField:
@@ -217,6 +237,7 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462271
         <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: "Herlock est tendu par le manque de comp\xE9tences
           de Marco"
     - <Conditions>k__BackingField:
@@ -238,7 +259,10 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462275
         <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: Marco renforce sa relation avec Herlock
+    <Position>k__BackingField: {x: 0, y: 0, z: 0}
+    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <Effects>k__BackingField:
@@ -250,6 +274,7 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462278
         <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: "Camil se sent plus int\xE9gr\xE9 en participant aux
           t\xE2ches du navire"
       - <IsCurrentNpc>k__BackingField: 1
@@ -258,6 +283,7 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462279
         <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: Camil est heureux de pouvoir aider
     - <Conditions>k__BackingField:
       - <IsLeftCurrentNpc>k__BackingField: 1
@@ -278,6 +304,7 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462283
         <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: 
       - <IsCurrentNpc>k__BackingField: 0
         <Subject>k__BackingField:
@@ -285,6 +312,7 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462285
         <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: "Camil \xE0 des probl\xE8mes avec son armure, ce qui
           tend Herlock qui bl\xE2me T\xE9a"
     - <Conditions>k__BackingField:
@@ -306,7 +334,10 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458159525462289
         <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: Camil renforce sa relation avec Herlock
+    <Position>k__BackingField: {x: 0, y: 0, z: 0}
+    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <Effects>k__BackingField:
@@ -318,7 +349,10 @@ MonoBehaviour:
         <IntTarget>k__BackingField:
           rid: 2120458179826941952
         <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 0
         <Text>k__BackingField: Herlock repose son corps en prenant l'air
+    <Position>k__BackingField: {x: 0, y: 0, z: 0}
+    <ActionSprite>k__BackingField: {fileID: 0}
   <GUID>k__BackingField: df9071ce-d073-4b6c-965e-31e574c3333a
   references:
     version: 2
@@ -350,38 +384,17 @@ MonoBehaviour:
         <MentalState>k__BackingField: 1
     - rid: 2120458159525462235
       type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 0
-        <Npc>k__BackingField:
-          rid: 2120458159525462236
-    - rid: 2120458159525462236
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+      data: 
     - rid: 2120458159525462237
       type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 0
-        <Npc>k__BackingField:
-          rid: 2120458159525462238
-    - rid: 2120458159525462238
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+      data: 
     - rid: 2120458159525462239
       type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 12
     - rid: 2120458159525462240
       type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 1
-        <Npc>k__BackingField:
-          rid: 2120458159525462241
-    - rid: 2120458159525462241
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+      data: 
     - rid: 2120458159525462242
       type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
@@ -421,52 +434,24 @@ MonoBehaviour:
         <MentalState>k__BackingField: 3
     - rid: 2120458159525462251
       type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 2
-        <Npc>k__BackingField:
-          rid: 2120458159525462252
-    - rid: 2120458159525462252
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+      data: 
     - rid: 2120458159525462253
       type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     - rid: 2120458159525462254
       type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 1
-        <Npc>k__BackingField:
-          rid: 2120458159525462255
-    - rid: 2120458159525462255
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+      data: 
     - rid: 2120458159525462256
       type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 0
-        <Npc>k__BackingField:
-          rid: 2120458159525462257
-    - rid: 2120458159525462257
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+      data: 
     - rid: 2120458159525462258
       type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 14
     - rid: 2120458159525462259
       type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 1
-        <Npc>k__BackingField:
-          rid: 2120458159525462260
-    - rid: 2120458159525462260
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+      data: 
     - rid: 2120458159525462261
       type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
@@ -496,14 +481,7 @@ MonoBehaviour:
         <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     - rid: 2120458159525462268
       type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 1
-        <Npc>k__BackingField:
-          rid: 2120458159525462269
-    - rid: 2120458159525462269
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+      data: 
     - rid: 2120458159525462270
       type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
@@ -515,28 +493,14 @@ MonoBehaviour:
         <MentalState>k__BackingField: 3
     - rid: 2120458159525462272
       type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 0
-        <Npc>k__BackingField:
-          rid: 2120458159525462273
-    - rid: 2120458159525462273
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+      data: 
     - rid: 2120458159525462274
       type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 5
     - rid: 2120458159525462275
       type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 1
-        <Npc>k__BackingField:
-          rid: 2120458159525462277
-    - rid: 2120458159525462277
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+      data: 
     - rid: 2120458159525462278
       type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
@@ -571,38 +535,17 @@ MonoBehaviour:
         <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     - rid: 2120458159525462285
       type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 1
-        <Npc>k__BackingField:
-          rid: 2120458159525462286
-    - rid: 2120458159525462286
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+      data: 
     - rid: 2120458159525462287
       type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 0
-        <Npc>k__BackingField:
-          rid: 2120458159525462290
+      data: 
     - rid: 2120458159525462288
       type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 5
     - rid: 2120458159525462289
       type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 1
-        <Npc>k__BackingField:
-          rid: 2120458159525462291
-    - rid: 2120458159525462290
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
-    - rid: 2120458159525462291
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+      data: 
     - rid: 2120458179826941952
       type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:

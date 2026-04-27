@@ -12,12 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7981673afb42479da49ee3efe9a052af, type: 3}
   m_Name: Action_Heal
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
-  <Name>k__BackingField: 
-  <Cost>k__BackingField: 0
-  <Countdown>k__BackingField: 0
-  <Categories>k__BackingField: []
+  <Name>k__BackingField: "Soigner un membre de l\u2019\xE9quipage "
+  <Cost>k__BackingField: 5
+  <Countdown>k__BackingField: 4
+  <Categories>k__BackingField:
+  - <Name>k__BackingField: "M\xE9decin"
+    <Quantity>k__BackingField: 1
+    <ProhibitedNpc>k__BackingField: []
+    <ObligateNpc>k__BackingField:
+    - {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+  - <Name>k__BackingField: Patient
+    <Quantity>k__BackingField: 1
+    <ProhibitedNpc>k__BackingField:
+    - {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
+    <ObligateNpc>k__BackingField: []
   <ActionEffects>k__BackingField: []
-  <GUID>k__BackingField: 6b162727-cf68-4f4e-b3a5-0af82835cd49
+  <GUID>k__BackingField: 7947233f-f4f0-4273-a86b-3db2b73ee96f
   references:
     version: 2
     RefIds: []

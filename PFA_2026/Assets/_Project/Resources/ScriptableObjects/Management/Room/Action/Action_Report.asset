@@ -12,12 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7981673afb42479da49ee3efe9a052af, type: 3}
   m_Name: Action_Report
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
-  <Name>k__BackingField: 
-  <Cost>k__BackingField: 0
-  <Countdown>k__BackingField: 0
-  <Categories>k__BackingField: []
+  <Name>k__BackingField: 'Faire un compte rendu au client '
+  <Cost>k__BackingField: 4
+  <Countdown>k__BackingField: 7
+  <Categories>k__BackingField:
+  - <Name>k__BackingField: Greffier
+    <Quantity>k__BackingField: 1
+    <ProhibitedNpc>k__BackingField: []
+    <ObligateNpc>k__BackingField:
+    - {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
   <ActionEffects>k__BackingField: []
-  <GUID>k__BackingField: 6b162727-cf68-4f4e-b3a5-0af82835cd49
+  <GUID>k__BackingField: 4ba1ebd1-8484-49bc-b749-e1eba20821af
   references:
     version: 2
     RefIds: []

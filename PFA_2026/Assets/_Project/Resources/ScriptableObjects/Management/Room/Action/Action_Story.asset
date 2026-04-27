@@ -12,12 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7981673afb42479da49ee3efe9a052af, type: 3}
   m_Name: Action_Story
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
-  <Name>k__BackingField: 
-  <Cost>k__BackingField: 0
-  <Countdown>k__BackingField: 0
-  <Categories>k__BackingField: []
+  <Name>k__BackingField: Raconter une histoire
+  <Cost>k__BackingField: 6
+  <Countdown>k__BackingField: 10
+  <Categories>k__BackingField:
+  - <Name>k__BackingField: Conteur
+    <Quantity>k__BackingField: 1
+    <ProhibitedNpc>k__BackingField: []
+    <ObligateNpc>k__BackingField: []
+  - <Name>k__BackingField: Auditeurs
+    <Quantity>k__BackingField: 4
+    <ProhibitedNpc>k__BackingField: []
+    <ObligateNpc>k__BackingField: []
   <ActionEffects>k__BackingField: []
-  <GUID>k__BackingField: 6b162727-cf68-4f4e-b3a5-0af82835cd49
+  <GUID>k__BackingField: 067a2c62-0bd3-416f-bfe6-f16dee5cdb5c
   references:
     version: 2
     RefIds: []

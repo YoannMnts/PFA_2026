@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7981673afb42479da49ee3efe9a052af, type: 3}
   m_Name: Action_Bath
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
-  <Name>k__BackingField: 
-  <Cost>k__BackingField: 0
-  <Countdown>k__BackingField: 0
-  <Categories>k__BackingField: []
+  <Name>k__BackingField: ' Prendre un bain moussant'
+  <Cost>k__BackingField: 3
+  <Countdown>k__BackingField: 6
+  <Categories>k__BackingField:
+  - <Name>k__BackingField: Bain
+    <Quantity>k__BackingField: 1
+    <ProhibitedNpc>k__BackingField:
+    - {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
+    <ObligateNpc>k__BackingField: []
   <ActionEffects>k__BackingField: []
   <GUID>k__BackingField: 6b162727-cf68-4f4e-b3a5-0af82835cd49
   references:
