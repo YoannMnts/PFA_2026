@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 8521034910681301107}
   - component: {fileID: 6875139983272570660}
   - component: {fileID: 8420539034374834771}
+  - component: {fileID: -2290775208831815160}
   m_Layer: 5
   m_Name: SlotButton
   m_TagString: Untagged
@@ -258,3 +259,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-2290775208831815160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8829128170662388032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 914b21e091684d3d98ca700aaf809981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Naussilus.Gameplay.Management::_Project.Scripts.Rooms.CategorySlot

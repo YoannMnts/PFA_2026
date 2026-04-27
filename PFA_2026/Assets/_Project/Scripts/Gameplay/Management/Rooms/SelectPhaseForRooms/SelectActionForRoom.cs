@@ -28,8 +28,8 @@ namespace _Project.Scripts.Rooms
         {
             if (CurrentResult > 0)
             {
-                var selectNpc = new SelectCategoryForAction(Choices[CurrentResult]);
-                selectNpc.RunAndForget();
+                var selectCategory = new SelectCategoryForAction(Choices[CurrentResult]);
+                selectCategory.RunAndForget();
             }
             
             Choices = null;

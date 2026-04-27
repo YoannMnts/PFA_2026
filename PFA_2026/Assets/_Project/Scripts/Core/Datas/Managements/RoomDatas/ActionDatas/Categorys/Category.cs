@@ -1,4 +1,5 @@
 ﻿using System;
+using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
 using UnityEngine;
 
@@ -20,5 +21,6 @@ namespace Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys
         public NpcData[] ObligateNpc { get; private set; }
         
         public NpcData[] CurrentNpcs { get; private set; }
+        
     }
 }

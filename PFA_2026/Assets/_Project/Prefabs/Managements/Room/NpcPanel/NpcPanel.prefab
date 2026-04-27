@@ -68,6 +68,8 @@ MonoBehaviour:
   <OnPhaseEndUnityEvent>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
+  group: {fileID: 2239286107377087062}
+  categorySlotUIList: {fileID: 8085360738489644705, guid: 222d06abf6da1e04a8f62b83559d35d0, type: 3}
 --- !u!1001 &3574307221230499353
 PrefabInstance:
   m_ObjectHideFlags: 0

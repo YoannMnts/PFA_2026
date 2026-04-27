@@ -66,6 +66,11 @@ namespace Naussilus.Core.Managers.Npcs
         {
             return Entries;
         }
+        
+        public static void GetAllNpcs(out NpcData[] allNpcs)
+        {
+            allNpcs = Entries;
+        }
 
         public static NpcData[] GetSelectedNpcs(INpcSelector npcSelector , NpcData currentNpc ,Category[] currentCategories)
         {

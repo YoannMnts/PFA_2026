@@ -54,8 +54,8 @@ namespace _Project.Scripts.Rooms
             
             for (int i = 0; i < current.Categories.Length; i++)
             {
-                //if(current.Categories[i] == category)
-                //    current.SetResult(i);
+                if(current.Categories[i].Name == category.Name)
+                    current.SetResult(i);
             }
         }
     }

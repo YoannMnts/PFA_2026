@@ -149,8 +149,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ae40b5ce9c34e098dae43a560796455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay.Management::_Project.Scripts.Rooms.ActionCategoryUI
-  categoryName: 
-  slotPrefab: {fileID: 0}
+  categoryName: {fileID: 2926105604042446005}
+  slotRoot: {fileID: 7797655707310608806}
+  slotPrefab: {fileID: -2290775208831815160, guid: f06431d67f183304e80a49a0c03e9d40, type: 3}
 --- !u!1 &6985577542037782689
 GameObject:
   m_ObjectHideFlags: 0

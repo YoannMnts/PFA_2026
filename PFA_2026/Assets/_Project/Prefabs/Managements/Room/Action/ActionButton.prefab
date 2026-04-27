@@ -421,6 +421,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef5703fb18cb40028a35e776b6b29790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay.Management::_Project.Scripts.RoomActionUI
-  selectActionForRoomUI: {fileID: 0}
   titleText: {fileID: 5152408025711255698}
-  descriptionText: {fileID: 4646529732583588167}
+  costText: {fileID: 4646529732583588167}
