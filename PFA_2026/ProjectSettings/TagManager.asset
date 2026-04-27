@@ -47,8 +47,17 @@ TagManager:
   - name: RoomBackground
     uniqueID: 1869494747
     locked: 0
+  - name: NpcBackground
+    uniqueID: 3756348395
+    locked: 0
+  - name: NpcMidground
+    uniqueID: 3323704017
+    locked: 0
   - name: RoomMidground
     uniqueID: 1643020689
+    locked: 0
+  - name: NpcForeground
+    uniqueID: 3673974053
     locked: 0
   - name: RoomForeground
     uniqueID: 2412820467
