@@ -26,3 +26,11 @@ Position: $QF2DyoEoQYbgQyD31h4GTD:0
 + [Sirenix.OdinInspector.ListDrawerSettingsAttribute]
 	numberOfItemsPerPage = 1
 	numberOfItemsPerPageHasValue = True
+
+# isCurrentNpcTarget
++ [Sirenix.OdinInspector.ShowIfAttribute]
+	Condition = "isEnumeration"
+
+# currentNpcTarget
++ [Sirenix.OdinInspector.ShowIfAttribute]
+	Condition = "isEnumeration"

@@ -14,10 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Je dois \xEAtre honn\xEAte : Tu as un poulpe sur
     la t\xEAte"
-  <NpcText>k__BackingField: "Quoi ! Alors vous aussi maintenant vous dites \xE7a\u2026Je
-    ne sais pas \xE0 quoi je m\u2019attendais"
+  <NpcText>k__BackingField: []
   <Effects>k__BackingField:
-  - <Conditions>k__BackingField: []
+  - isEnumeration: 0
+    currentNpcTarget:
+      rid: -2
+    <Conditions>k__BackingField:
+    - <IsLeftCurrentNpc>k__BackingField: 0
+      <LeftSubject>k__BackingField:
+        rid: -2
+      <Left>k__BackingField:
+        rid: 2832589995210965067
+      <ComparisonOperator>k__BackingField: 0
+      <IsRightCurrentNpc>k__BackingField: 0
+      <RightSubject>k__BackingField:
+        rid: -2
+      <Right>k__BackingField:
+        rid: -2
     <Consequences>k__BackingField:
     - <IsCurrentNpc>k__BackingField: 1
       <Subject>k__BackingField:
@@ -52,7 +65,10 @@ MonoBehaviour:
       <Amount>k__BackingField: 2
       <Text>k__BackingField: "Jennie s\u2019isole des autres car elle ne se sent
         soutenue par personne"
-  - <Conditions>k__BackingField:
+  - isEnumeration: 0
+    currentNpcTarget:
+      rid: -2
+    <Conditions>k__BackingField:
     - <IsLeftCurrentNpc>k__BackingField: 1
       <LeftSubject>k__BackingField:
         rid: -2
@@ -73,7 +89,10 @@ MonoBehaviour:
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 2
       <Text>k__BackingField: "Jennie se renferme encore d\u2019avantage"
-  - <Conditions>k__BackingField:
+  - isEnumeration: 0
+    currentNpcTarget:
+      rid: -2
+    <Conditions>k__BackingField:
     - <IsLeftCurrentNpc>k__BackingField: 0
       <LeftSubject>k__BackingField:
         rid: 2832589920833634422
@@ -132,6 +151,7 @@ MonoBehaviour:
     - rid: 2832589920833634420
       type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
+        <UseCurrentNpc>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Npc>k__BackingField:
           rid: 2832589920833634421
@@ -144,6 +164,7 @@ MonoBehaviour:
     - rid: 2832589920833634424
       type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
+        <UseCurrentNpc>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Npc>k__BackingField:
           rid: 2832589920833634425
@@ -160,3 +181,10 @@ MonoBehaviour:
       data:
         <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
         <Amount>k__BackingField: 0
+    - rid: 2832589995210965067
+      type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <UseCurrentNpc>k__BackingField: 0
+        <Amount>k__BackingField: 0
+        <Npc>k__BackingField:
+          rid: -2
