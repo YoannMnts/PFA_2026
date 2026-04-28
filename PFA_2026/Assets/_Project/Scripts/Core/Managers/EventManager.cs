@@ -2,6 +2,7 @@
 using System.Linq;
 using Naussilus.Core.Conditions;
 using Naussilus.Core.Managers.Npcs;
+using Naussilus.Core.NpcDatas;
 using Naussilus.Core.VisualNovels.EventDatas;
 using UnityEngine;
 using UnityEngine.Pool;
@@ -29,11 +30,13 @@ namespace Naussilus.Core.Managers
             {
                 foreach ((string key, EventData value) in EventDatas)
                 {
-                    Condition[] conditions = value.Conditions;
-                    conditions.ComputeAllCondition(value.Npcs[0], out var validNpcs);
-                    var isValidate = validNpcs.Count > 0;
-                    if (!isValidate) continue;
-                    validEventDatas.Add(value);
+                    ConditionalEffect[] conditionalEffects = value.Conditions;
+                    for (int i = 0; i < conditionalEffects.Length; i++)
+                    {
+                        var isValid = conditionalEffects[i].Conditions.ComputeAllCondition(value.Npcs[0]);
+                        if (!isValid) break;
+                    }
+                    validEventDatas.Add(value); 
                 }
 
                 if (validEventDatas.Count == 0)

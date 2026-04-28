@@ -6,8 +6,14 @@ using UnityEngine;
 namespace Naussilus.Core
 {
     [Serializable]
-    public struct ConditionalEffect
+    public class ConditionalEffect
     {
+        [field: SerializeField] 
+        public bool IsEnumeration { get; private set; }
+        
+        [field: SerializeReference] 
+        public INpcSelector CurrentNpcTarget { get; private set; }
+        
         [field: SerializeField]
         public Condition[] Conditions { get; private set; }
         

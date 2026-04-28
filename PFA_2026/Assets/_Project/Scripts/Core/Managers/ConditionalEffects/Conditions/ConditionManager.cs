@@ -12,7 +12,7 @@ namespace Naussilus.Core.Managers
 {
     public static class ConditionManager
     {
-        public static void ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData, out List<NpcData> validNpcs)
+        public static bool ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData, out List<NpcData> validNpcs)
         {
             validNpcs = new List<NpcData>();
             if(currentConditions.Length == 0)
@@ -43,8 +43,39 @@ namespace Naussilus.Core.Managers
                         validNpcs?.Add(left);
                     }
                 }
-                
             }
+            return validNpcs != null && validNpcs.Count > 0;
+        }
+        public static bool ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData)
+        {
+            var validNpcs = new List<NpcData>();
+            if(currentConditions.Length == 0)
+                return true;
+            
+            for (int i = 0; i < currentConditions.Length; i++)
+            {
+                var condition = currentConditions[i];
+                
+                NpcData[] leftNpcs = condition.IsLeftCurrentNpc 
+                    ? new[] { currentNpcData } 
+                    : NpcManager.GetSelectedNpcs(condition.LeftSubject, currentNpcData);
+
+                NpcData[] rightNpcs = condition.IsRightCurrentNpc 
+                    ? new[] { currentNpcData } 
+                    : NpcManager.GetSelectedNpcs(condition.RightSubject, currentNpcData);
+
+                for (var j = 0; j < leftNpcs.Length; j++)
+                {
+                    var left = leftNpcs[j];
+                    for (var k = 0; k < rightNpcs.Length; k++)
+                    {
+                        var right = rightNpcs[k]; 
+                        if (!condition.ComputeCondition(left, right))
+                            return false;
+                    }
+                }
+            }
+            return true;
         }
         
         public static void ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData ,Category[] currentCategories, out List<NpcData> validNpcs)

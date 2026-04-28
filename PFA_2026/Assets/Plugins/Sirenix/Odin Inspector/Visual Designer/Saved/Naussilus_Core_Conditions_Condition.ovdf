@@ -44,9 +44,8 @@ Position: $YTbEXVzFbJtPLuR2mnzyvx:1
 
 # <Left>k__BackingField
 Position: $YTbEXVzFbJtPLuR2mnzyvx:2
-+ [Sirenix.OdinInspector.InlinePropertyAttribute]
-	LabelWidth = 50
 + [Sirenix.OdinInspector.HideLabelAttribute]
++ [Sirenix.OdinInspector.InlinePropertyAttribute]
 
 # <ComparisonOperator>k__BackingField
 Position: $88rUZoF9qLhUgrih2P9nK4:0

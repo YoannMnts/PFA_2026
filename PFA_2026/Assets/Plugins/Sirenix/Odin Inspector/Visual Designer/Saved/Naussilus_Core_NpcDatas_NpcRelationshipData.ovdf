@@ -12,6 +12,10 @@ Position: $root:7
 Position: $NN76B76i4Z55hziDT2EuXi:0
 + [Sirenix.OdinInspector.InlinePropertyAttribute]
 	LabelWidth = 65
++ [Sirenix.OdinInspector.HideIfAttribute]
+	Condition = "UseCurrentNpc"
 
 # <Amount>k__BackingField
 Position: $NN76B76i4Z55hziDT2EuXi:1
++ [Sirenix.OdinInspector.HideIfAttribute]
+	Condition = "UseCurrentNpc"
