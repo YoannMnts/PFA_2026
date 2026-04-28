@@ -18,24 +18,34 @@ Position: $QB3kv7dB7hXYK248DQH54P:0
 # <Subject>k__BackingField
 Position: $PTZyC49hUidHDmtjLETvK4:1
 + [Sirenix.OdinInspector.HideIfAttribute]
-	Condition = "IsCurrentNpc"
+	Condition = "@IsCurrentNpc || IsGameLost"
 
 # <IntTarget>k__BackingField
 Position: $PTZyC49hUidHDmtjLETvK4:2
 + [Sirenix.OdinInspector.InlinePropertyAttribute]
 	LabelWidth = 50
++ [Sirenix.OdinInspector.HideIfAttribute]
+	Condition = "IsGameLost"
 + [Sirenix.OdinInspector.HideLabelAttribute]
 
 # <ArithmeticOperator>k__BackingField
 Position: $root:19
 + [Sirenix.OdinInspector.EnumToggleButtonsAttribute]
 + [Sirenix.OdinInspector.HideLabelAttribute]
++ [Sirenix.OdinInspector.HideIfAttribute]
+	Condition = "IsGameLost"
 
 # <IsCurrentNpc>k__BackingField
 Position: $PTZyC49hUidHDmtjLETvK4:0
++ [Sirenix.OdinInspector.HideIfAttribute]
+	Condition = "IsGameLost"
 
 # <Amount>k__BackingField
 Position: $root:20
++ [Sirenix.OdinInspector.HideIfAttribute]
+	Condition = "IsGameLost"
 
 # <Text>k__BackingField
 Position: $WjoGVTQHP3bWVZE1ZsGTeM:0
++ [Sirenix.OdinInspector.HideIfAttribute]
+	Condition = "IsGameLost"
