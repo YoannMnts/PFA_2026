@@ -8,19 +8,18 @@ namespace _Project.Scripts.Rooms
 {
     public class SelectActionForRoom : PhaseCompletionSource<int>
     {
-        public Room CurrentRoom { get; private set; }
-        public RoomData CurrentRoomData => CurrentRoom.RoomData;
+        public RoomData CurrentRoom { get; private set; }
         
         public ActionData[] Choices { get; private set; }
         
-        public SelectActionForRoom(Room room)
+        public SelectActionForRoom(RoomData room)
         {
             CurrentRoom = room;
         }
 
         protected override Awaitable Initialize(CancellationToken token)
         {
-            Choices = CurrentRoomData.Actions;
+            Choices = CurrentRoom.Actions;
             return base.Initialize(token);
         }
 

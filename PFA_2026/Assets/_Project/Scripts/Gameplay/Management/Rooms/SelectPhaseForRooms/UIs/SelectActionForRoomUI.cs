@@ -14,8 +14,8 @@ namespace _Project.Scripts.Rooms
         [SerializeField] private TMP_Text roomDescription;
         [SerializeField] private RoomActionUIList roomActionUIList;
 
-        public string Name => current.CurrentRoomData.Name;
-        public string Description => current.CurrentRoomData.Description;
+        public string Name => current.CurrentRoom.Name;
+        public string Description => current.CurrentRoom.Description;
 
         private SelectActionForRoom current;
         private void Start()

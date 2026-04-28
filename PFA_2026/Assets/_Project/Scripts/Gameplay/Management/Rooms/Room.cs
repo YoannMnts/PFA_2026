@@ -12,7 +12,7 @@ namespace _Project.Scripts.Rooms
         
         public void OnPointerClick(PointerEventData eventData)
         {
-            SelectActionForRoom selectActionForRoom = new SelectActionForRoom(this);
+            SelectActionForRoom selectActionForRoom = new SelectActionForRoom(RoomData);
             selectActionForRoom.RunAndForget();
         }
     }
