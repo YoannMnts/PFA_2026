@@ -26,7 +26,7 @@ namespace _Project.Scripts.Rooms
         protected override void OnPhaseBegin(SelectActionForRoom phase)
         {
             if(current != null)
-                return;
+                current.Cancel();
             
             current = phase;
             group.Show();
