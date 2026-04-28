@@ -9,6 +9,9 @@ namespace Naussilus.Core.Consequences
     public class Consequence
     {
         [field : SerializeField]
+        public bool IsGameLost { get; private set; }
+        
+        [field : SerializeField]
         public bool IsCurrentNpc { get; private set; }
         
         [field: SerializeReference]
