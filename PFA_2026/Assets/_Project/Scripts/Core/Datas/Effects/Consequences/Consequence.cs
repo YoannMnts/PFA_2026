@@ -18,7 +18,7 @@ namespace Naussilus.Core.Consequences
         public INpcSelector Subject { get; private set; }
         
         [field: SerializeReference]
-        public IConsequenceValue IntTarget { get; private set; }
+        public IConsequenceEffectValue IntTarget { get; private set; }
         
         [field: SerializeField]
         public ArithmeticOperator ArithmeticOperator { get; private set; }

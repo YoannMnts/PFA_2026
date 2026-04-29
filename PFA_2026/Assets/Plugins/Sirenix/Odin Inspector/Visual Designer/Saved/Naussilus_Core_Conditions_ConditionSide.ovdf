@@ -1,0 +1,29 @@
+OVDF v1.1
+Naussilus.Core.Conditions.ConditionSide, Naussilus.Core
+
+# $VZeVMyrXvdtTjoqoXHsADw
+Position: $root:15
++ [Sirenix.OdinInspector.BoxGroupAttribute]
+
+# <Subject>k__BackingField
+Position: $VZeVMyrXvdtTjoqoXHsADw:1
++ [Sirenix.OdinInspector.HideIfAttribute]
+	Condition = "IsCurrentNpc"
+
+# <UseCurrentNpc>k__BackingField
+Position: $VZeVMyrXvdtTjoqoXHsADw:3
++ [Sirenix.OdinInspector.ShowIfAttribute]
+	Condition = "@Stat is NpcRelationshipData"
+
+# <UseThisNpcToReturn>k__BackingField
+Position: $VZeVMyrXvdtTjoqoXHsADw:4
++ [Sirenix.OdinInspector.ShowIfAttribute]
+	Condition = "@Stat is NpcRelationshipData"
+
+# <IsCurrentNpc>k__BackingField
+Position: $VZeVMyrXvdtTjoqoXHsADw:0
+
+# <Stat>k__BackingField
+Position: $VZeVMyrXvdtTjoqoXHsADw:2
++ [Sirenix.OdinInspector.InlinePropertyAttribute]
++ [Sirenix.OdinInspector.HideLabelAttribute]

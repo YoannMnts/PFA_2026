@@ -1,6 +1,6 @@
 ﻿namespace Naussilus.Core.NpcDatas
 {
-    public struct Behavior
+    public struct Behavior : INpcStat
     {
         public Behavior(BehaviorValue data)
         {

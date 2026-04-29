@@ -39,24 +39,19 @@ namespace Naussilus.Core.Managers
         private static void ComputeConsequence(this Consequence consequence, NpcData currentNpcData)
         {
             NpcManager.TryGetNpc(currentNpcData.GUID, out Npc currentNpc);
-            IConsequenceValue stat = consequence.IntTarget;
-            int[] leftSide = currentNpc.GetValue(stat);
+            IConsequenceEffectValue stat = consequence.IntTarget;
+            var type =currentNpc.GetValue(stat, out var amount);
             int rightSide = consequence.Amount;
 
-            if (leftSide.Contains(-1) || rightSide < 0)
+            if (amount > 0 || rightSide < 0)
             {
-                for (int i = 0; i < leftSide.Length; i++)
-                    Debug.LogError($"[ConsequenceManager] Negative value for consequence left side {leftSide[i]}, right: {rightSide}");
-                
+                Debug.LogError($"[ConsequenceManager] Negative value for consequence left side : left: {amount}, right: {rightSide}");
                 return;
             }
 
-            for (int i = 0; i < leftSide.Length; i++)
-            {
-                consequence.ModifyValue(leftSide[i], rightSide, out var newAmount);
-                currentNpc.SetValue(stat, newAmount);
-                Debug.Log($"[ConsequenceManager] Compute : left: {leftSide[i]}, right: {rightSide} return : {newAmount} for npc {currentNpc.Name}");
-            }
+            consequence.ModifyValue(amount, rightSide, out var newAmount);
+            type.SetNewAmount(newAmount);
+            Debug.Log($"[ConsequenceManager] Compute : left: {amount}, right: {rightSide} return : {newAmount} for npc {currentNpc.Name}");
         }
 
         private static void ModifyValue(this Consequence consequence, int leftSide, int rightSide, out int newValue)

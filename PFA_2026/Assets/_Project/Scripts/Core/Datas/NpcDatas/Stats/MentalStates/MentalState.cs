@@ -1,6 +1,6 @@
 ﻿namespace Naussilus.Core.NpcDatas
 {
-    public struct MentalState
+    public struct MentalState : INpcStat
     {
         public string Name => Data.Name;
         

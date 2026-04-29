@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Naussilus.Core.NpcDatas
 {
     [Serializable]
-    public class BehaviorValue: IConditionValue, IConsequenceValue
+    public class BehaviorValue: IConditionEffectValue, IConsequenceEffectValue
     {
         [field: SerializeField]
         public BehaviorData Stat { get; private set; }

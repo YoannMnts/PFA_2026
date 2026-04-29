@@ -3,14 +3,17 @@ using UnityEngine;
 
 namespace Naussilus.Core.NpcDatas
 {
-    public struct NpcRelationship
+    public struct NpcRelationship : INpcStat
     {
         public int Amount { get; private set; }
         
         public Npc Npc { get; private set; }
         
+        public NpcRelationshipData Data { get; private set; }
+        
         public NpcRelationship(NpcRelationshipData data)
         {
+            Data = data;
             Amount = data.Amount;
             
             if (data.Npc is NpcValue npcValue)

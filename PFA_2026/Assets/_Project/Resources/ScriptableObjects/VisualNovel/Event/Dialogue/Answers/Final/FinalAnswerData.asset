@@ -24,7 +24,7 @@ MonoBehaviour:
       <LeftSubject>k__BackingField:
         rid: -2
       <Left>k__BackingField:
-        rid: 2832590006906781785
+        rid: 2832590006906781792
       <UseCurrentNpc>k__BackingField: 0
       <UseThisNpcToReturn>k__BackingField: 0
       <ComparisonOperator>k__BackingField: 2
@@ -198,8 +198,9 @@ MonoBehaviour:
       data:
         <Stat>k__BackingField: {fileID: 0}
         <Amount>k__BackingField: 0
-    - rid: 2832590006906781785
-      type: {class: BehaviorValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+    - rid: 2832590006906781792
+      type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <Stat>k__BackingField: {fileID: 0}
         <Amount>k__BackingField: 0
+        <Npc>k__BackingField:
+          rid: -2
