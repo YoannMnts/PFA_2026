@@ -16,28 +16,30 @@ MonoBehaviour:
     la t\xEAte"
   <NpcText>k__BackingField: []
   <Effects>k__BackingField:
-  - <IsEnumeration>k__BackingField: 0
+  - <IsEnumeration>k__BackingField: 1
     <CurrentNpcTarget>k__BackingField:
-      rid: -2
+      rid: 2832590006906781697
     <Conditions>k__BackingField:
-    - <IsLeftCurrentNpc>k__BackingField: 0
+    - <IsLeftCurrentNpc>k__BackingField: 1
       <LeftSubject>k__BackingField:
         rid: -2
       <Left>k__BackingField:
-        rid: 2832589995210965067
-      <ComparisonOperator>k__BackingField: 0
-      <IsRightCurrentNpc>k__BackingField: 0
+        rid: 2832590006906781785
+      <UseCurrentNpc>k__BackingField: 0
+      <UseThisNpcToReturn>k__BackingField: 0
+      <ComparisonOperator>k__BackingField: 2
+      <IsRightCurrentNpc>k__BackingField: 1
       <RightSubject>k__BackingField:
         rid: -2
       <Right>k__BackingField:
-        rid: -2
+        rid: 2832590006906781699
     <Consequences>k__BackingField:
     - <IsGameLost>k__BackingField: 0
       <IsCurrentNpc>k__BackingField: 1
       <Subject>k__BackingField:
         rid: -2
       <IntTarget>k__BackingField:
-        rid: 2832589920833634412
+        rid: 2832590006906781701
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 4
       <Text>k__BackingField: Jennie perd confiance en vous et en elle
@@ -78,6 +80,8 @@ MonoBehaviour:
         rid: -2
       <Left>k__BackingField:
         rid: 2832589920833634416
+      <UseCurrentNpc>k__BackingField: 0
+      <UseThisNpcToReturn>k__BackingField: 0
       <ComparisonOperator>k__BackingField: 2
       <IsRightCurrentNpc>k__BackingField: 1
       <RightSubject>k__BackingField:
@@ -103,6 +107,8 @@ MonoBehaviour:
         rid: 2832589920833634422
       <Left>k__BackingField:
         rid: 2832589920833634424
+      <UseCurrentNpc>k__BackingField: 0
+      <UseThisNpcToReturn>k__BackingField: 0
       <ComparisonOperator>k__BackingField: 1
       <IsRightCurrentNpc>k__BackingField: 1
       <RightSubject>k__BackingField:
@@ -125,11 +131,6 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 2832589920833634412
-      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Stat>k__BackingField: {fileID: 11400000, guid: 0873e3af56f61554284c45b21149e18e, type: 2}
-        <Amount>k__BackingField: 0
     - rid: 2832589920833634413
       type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
@@ -157,7 +158,6 @@ MonoBehaviour:
     - rid: 2832589920833634420
       type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <UseCurrentNpc>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Npc>k__BackingField:
           rid: 2832589920833634421
@@ -170,7 +170,6 @@ MonoBehaviour:
     - rid: 2832589920833634424
       type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <UseCurrentNpc>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Npc>k__BackingField:
           rid: 2832589920833634425
@@ -187,10 +186,20 @@ MonoBehaviour:
       data:
         <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
         <Amount>k__BackingField: 0
-    - rid: 2832589995210965067
-      type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+    - rid: 2832590006906781697
+      type: {class: AllNpc, ns: Naussilus.Core, asm: Naussilus.Core}
+      data: 
+    - rid: 2832590006906781699
+      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
       data:
-        <UseCurrentNpc>k__BackingField: 0
+        <Amount>k__BackingField: 10
+    - rid: 2832590006906781701
+      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 0}
         <Amount>k__BackingField: 0
-        <Npc>k__BackingField:
-          rid: -2
+    - rid: 2832590006906781785
+      type: {class: BehaviorValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 0}
+        <Amount>k__BackingField: 0
