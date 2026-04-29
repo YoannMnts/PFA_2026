@@ -1,7 +1,6 @@
 ﻿using System;
 using Naussilus.Core.NpcDatas;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueLines
 {

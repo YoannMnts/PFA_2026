@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Naussilus.Core.Consequences;
 using Naussilus.Core.NpcDatas;
 using UnityEngine.Pool;
@@ -8,29 +9,29 @@ namespace Naussilus.Core.Managers.Npcs
     public class Npc
     {
         public string Name { get; private set; }
-        public Behavior[] Behaviors { get; private set; }
-        public MentalState[] MentalStates { get; private set; }
+        public List<Behavior> Behaviors { get; private set; }
+        public List<MentalState> MentalStates { get; private set; }
         public EGender Gender { get; private set; }
-        public NpcRelationship[] Relationships { get; private set; }
+        public List<NpcRelationship> Relationships { get; private set; }
         public string CurrentThinking { get; private set; }
         
         public Npc(NpcData npcData)
         {
             Name = npcData.Name;
-            Behaviors = npcData.Behavior.Select(b => new Behavior(b)).ToArray();
-            MentalStates = npcData.MentalState.Select(m => new MentalState(m)).ToArray();
+            Behaviors = npcData.Behavior.Select(b => new Behavior(b)).ToList();
+            MentalStates = npcData.MentalState.Select(m => new MentalState(m)).ToList();
             Gender = npcData.Gender;
             CurrentThinking = npcData.CurrentThinking;
         }
 
         public void InitRelationships(NpcData npcData)
         {
-            Relationships = npcData.Relationships.Select(r => new NpcRelationship(r)).ToArray();
+            Relationships = npcData.Relationships.Select(r => new NpcRelationship(r)).ToList();
         }
         
         private int GetRelationshipWith(Npc npc)
         {
-            for (int i = 0; i < Relationships.Length; i++)
+            for (int i = 0; i < Relationships.Count; i++)
             {
                 if (Relationships[i].Npc == npc)
                 {
@@ -42,85 +43,12 @@ namespace Naussilus.Core.Managers.Npcs
 
         private void SetRelationshipWith(Npc npc, int amount)
         {
-            for (int i = 0; i < Relationships.Length; i++)
+            for (int i = 0; i < Relationships.Count; i++)
             {
                 if (Relationships[i].Npc == npc)
                 {
                     Relationships[i].SetNewAmount(amount);;
                 }
-            }
-        }
-        
-        public int[] GetValue(IConditionalEffect conditionalEffect)
-        {
-            switch (conditionalEffect)
-            {
-                case IntValue intValue:
-                    return new []{intValue.Amount};
-                
-                case BehaviorValue value:
-                    for (var i = 0; i < Behaviors.Length; i++)
-                    {
-                        var behavior = Behaviors[i];
-                        if (behavior.Data == value.Stat)
-                            return new[] { behavior.Amount };
-                    }
-
-                    break;
-                
-                case MentalStateValue value:
-                    for (var i = 0; i < MentalStates.Length; i++)
-                    {
-                        var mentalState = MentalStates[i];
-                        if (mentalState.Data == value.Stat)
-                            return new[] { mentalState.Amount };
-                    }
-
-                    break;
-                
-                case NpcRelationshipData value:
-                    using (ListPool<int>.Get(out var list))
-                    {
-                        NpcManager.GetSelectedNpcs(value.Npc, this, out Npc[] selectedNpcs);
-                        for (int i = 0; i < selectedNpcs.Length; i++)
-                        {
-                            list.Add(GetRelationshipWith(selectedNpcs[i]));   
-                        }
-                        return list.ToArray();
-                    }
-            }
-            return null;
-        }
-        
-        public void SetValue(IConsequenceValue consequenceValue, int amount)
-        {
-            switch (consequenceValue)
-            {
-                case BehaviorValue value:
-                    for (var i = 0; i < Behaviors.Length; i++)
-                    {
-                        var behavior = Behaviors[i];
-                        if (behavior.Data == value.Stat)
-                            behavior.SetNewAmount(amount);
-                    }
-
-                    break;
-                
-                case MentalStateValue value:
-                    for (var i = 0; i < MentalStates.Length; i++)
-                    {
-                        var mentalState = MentalStates[i];
-                        if (mentalState.Data == value.Stat)
-                            mentalState.SetNewAmount(amount);
-                    }
-
-                    break;
-                
-                case NpcRelationshipData value:
-                    NpcManager.GetSelectedNpcs(value.Npc, this, out Npc[] selectedNpcs);
-                    for (int i = 0; i < selectedNpcs.Length; i++)
-                        SetRelationshipWith(selectedNpcs[i], amount);   
-                    break;
             }
         }
     }

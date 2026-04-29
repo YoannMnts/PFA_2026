@@ -21,8 +21,8 @@ namespace _Project.Scripts
         
         protected override Awaitable Initialize(CancellationToken token)
         {
-            NpcBehaviors = CurrentNpc.Behaviors;
-            NpcMentalStates = CurrentNpc.MentalStates;
+            NpcBehaviors = CurrentNpc.Behaviors.ToArray();
+            NpcMentalStates = CurrentNpc.MentalStates.ToArray();
             return base.Initialize(token);
         }
 

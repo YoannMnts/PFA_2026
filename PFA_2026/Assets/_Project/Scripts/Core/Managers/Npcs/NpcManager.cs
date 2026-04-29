@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Naussilus.Core.Conditions;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
 using Naussilus.Core.NpcDatas;
 using UnityEngine;
@@ -204,6 +205,36 @@ namespace Naussilus.Core.Managers.Npcs
                 }
                 npcs = result;
             }
+        }
+        
+        public static INpcStat GetValue<T>(this Npc npc, T side, out int amount) where T : IConditionalEffectValue
+        {
+            switch (side)
+            {
+                case IntEffectValue intValue:
+                    amount = intValue.Amount;
+                    return intValue;
+                
+                case BehaviorValue value:
+                    bool BehaviorPredicate(Behavior x) => x.Data == value.Stat;
+                    var behavior = npc.Behaviors.Find(BehaviorPredicate);
+                    amount = behavior.Amount;
+                    return behavior;
+                
+                case MentalStateValue value:
+                    bool MentalStatePredicate(MentalState x) => x.Data == value.Stat;
+                    var mentalState = npc.MentalStates.Find(MentalStatePredicate);
+                    amount = mentalState.Amount;
+                    return mentalState;
+                
+                case NpcRelationshipData value:
+                    bool RelationshipPredicate(NpcRelationship x) => x.Data == value;
+                    var relationship = npc.Relationships.Find(RelationshipPredicate);
+                    amount = relationship.Amount;
+                    return relationship;
+            }
+            amount = -1;
+            return null;
         }
     }
 }

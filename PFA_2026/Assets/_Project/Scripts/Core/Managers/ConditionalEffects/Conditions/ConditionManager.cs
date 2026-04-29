@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Naussilus.Core.Conditions;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
@@ -14,6 +15,7 @@ namespace Naussilus.Core.Managers
     {
         public static bool ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData, out List<NpcData> validNpcs)
         {
+            
             validNpcs = new List<NpcData>();
             if(currentConditions.Length == 0)
             {
@@ -25,13 +27,13 @@ namespace Naussilus.Core.Managers
             {
                 var condition = currentConditions[i];
                 
-                NpcData[] leftNpcs = condition.IsLeftCurrentNpc 
+                NpcData[] leftNpcs = condition.LeftSide.IsCurrentNpc 
                     ? new[] { currentNpcData } 
-                    : NpcManager.GetSelectedNpcs(condition.LeftSubject, currentNpcData);
+                    : NpcManager.GetSelectedNpcs(condition.LeftSide.Subject, currentNpcData);
 
-                NpcData[] rightNpcs = condition.IsRightCurrentNpc 
+                NpcData[] rightNpcs = condition.RightSide.IsCurrentNpc 
                     ? new[] { currentNpcData } 
-                    : NpcManager.GetSelectedNpcs(condition.RightSubject, currentNpcData);
+                    : NpcManager.GetSelectedNpcs(condition.RightSide.Subject, currentNpcData);
 
                 for (var j = 0; j < leftNpcs.Length; j++)
                 {
@@ -39,9 +41,11 @@ namespace Naussilus.Core.Managers
                     for (var k = 0; k < rightNpcs.Length; k++)
                     {
                         var currentRightNpc = rightNpcs[k];
+                        /*
                         if (!condition.ComputeCondition(currentLeftNpc, currentRightNpc, out var npcs))
                             continue;
                         validNpcs.AddRange(npcs);
+                        */
                     }
                 }
             }
@@ -57,13 +61,13 @@ namespace Naussilus.Core.Managers
             {
                 var condition = currentConditions[i];
                 
-                NpcData[] leftNpcs = condition.IsLeftCurrentNpc 
+                NpcData[] leftNpcs = condition.LeftSide.IsCurrentNpc 
                     ? new[] { currentNpcData } 
-                    : NpcManager.GetSelectedNpcs(condition.LeftSubject, currentNpcData);
+                    : NpcManager.GetSelectedNpcs(condition.LeftSide.Subject, currentNpcData);
 
-                NpcData[] rightNpcs = condition.IsRightCurrentNpc 
+                NpcData[] rightNpcs = condition.RightSide.IsCurrentNpc 
                     ? new[] { currentNpcData } 
-                    : NpcManager.GetSelectedNpcs(condition.RightSubject, currentNpcData);
+                    : NpcManager.GetSelectedNpcs(condition.RightSide.Subject, currentNpcData);
 
                 for (var j = 0; j < leftNpcs.Length; j++)
                 {
@@ -78,7 +82,6 @@ namespace Naussilus.Core.Managers
             }
             return true;
         }
-        
         public static bool ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData ,Category[] currentCategories, out List<NpcData> validNpcs)
                 {
                     validNpcs = new List<NpcData>();
@@ -92,13 +95,13 @@ namespace Naussilus.Core.Managers
                     {
                         var condition = currentConditions[i];
                 
-                        NpcData[] leftNpcs = condition.IsLeftCurrentNpc 
+                        NpcData[] leftNpcs = condition.LeftSide.IsCurrentNpc 
                             ? new[] { currentNpcData } 
-                            : NpcManager.GetSelectedNpcs(condition.LeftSubject, currentNpcData, currentCategories);
+                            : NpcManager.GetSelectedNpcs(condition.LeftSide.Subject, currentNpcData, currentCategories);
 
-                        NpcData[] rightNpcs = condition.IsRightCurrentNpc 
+                        NpcData[] rightNpcs = condition.RightSide.IsCurrentNpc 
                             ? new[] { currentNpcData } 
-                            : NpcManager.GetSelectedNpcs(condition.RightSubject, currentNpcData, currentCategories);
+                            : NpcManager.GetSelectedNpcs(condition.RightSide.Subject, currentNpcData, currentCategories);
 
                         for (var j = 0; j < leftNpcs.Length; j++)
                         {
@@ -106,7 +109,7 @@ namespace Naussilus.Core.Managers
                             for (var k = 0; k < rightNpcs.Length; k++)
                             {
                                 var currentRightNpc = rightNpcs[k];
-                                if (!condition.ComputeCondition(currentLeftNpc, currentRightNpc, out var npcs))
+                                if (!condition.ComputeCondition(currentNpcData, currentLeftNpc, currentRightNpc, out var npcs))
                                     continue;
                                 validNpcs.AddRange(npcs);
                             }
@@ -119,10 +122,21 @@ namespace Naussilus.Core.Managers
         {
             return false;
         }
-        private static bool ComputeCondition(this Condition condition, NpcData leftNpcData, NpcData rightNpcData, out List<NpcData> returnNpc)
+        private static bool ComputeCondition(this Condition condition,NpcData currentNpcData, NpcData leftNpcData, NpcData rightNpcData, out List<NpcData> returnNpc)
         {
+            NpcManager.TryGetNpc(leftNpcData.GUID, out var leftNpc);
+            NpcManager.TryGetNpc(rightNpcData.GUID, out var rightNpc);
+            
+            ConditionSide leftSide = condition.LeftSide;
+            ConditionSide rightSide = condition.RightSide;
+            
+            var leftType = leftNpc.GetValue(leftSide.Stat, out var leftValue);
+            var rightType = rightNpc.GetValue(rightSide.Stat, out var rightValue);
+            
+            condition.IsValid(leftValue, rightValue, out var valid);
+            
             returnNpc = null;
-            return false;
+            return valid;
         }
 
         private static bool IsValid(this Condition condition, int leftSide, int rightSide)

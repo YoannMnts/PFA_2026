@@ -1,4 +1,5 @@
 ﻿using System;
+using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueLines;
 using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
@@ -9,8 +10,8 @@ namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers
     [CreateAssetMenu(fileName = "FinalAnswerData", menuName = "VisualNovel/Answer/FinalAnswerData", order = 0)]
     public class FinalAnswerData : Answer
     {
-        [field : SerializeField, TextArea]
-        public string[] NpcText { get; private set; }
+        [field : SerializeField]
+        public DialogueLine[] NpcText { get; private set; }
         
         [field : SerializeField]
         public ConditionalEffect[] Effects { get; private set; }

@@ -22,7 +22,10 @@ namespace Naussilus.Core.VisualNovels.EventDatas
         public int Priority { get; private set; }
         
         [field : SerializeField]
-        public ConditionalEffect[] Conditions { get; private set; }
+        public int DayCheck { get; private set; }
+        
+        [field : SerializeField]
+        public ConditionalEffect[] Dependencies { get; private set; }
         
         [field : SerializeField]
         public DialogueData FirstDialogue { get; private set; }

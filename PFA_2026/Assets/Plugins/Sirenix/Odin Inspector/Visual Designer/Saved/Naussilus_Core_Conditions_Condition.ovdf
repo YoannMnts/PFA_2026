@@ -2,7 +2,7 @@ OVDF v1.1
 Naussilus.Core.Conditions.Condition, Naussilus.Core
 
 # $811zM7aZpjmp5kbuEeZcFi
-Position: $root:19
+Position: $root:9
 + [Sirenix.OdinInspector.TitleGroupAttribute]
 	GroupName = "Left"
 	Subtitle = ""
@@ -10,26 +10,16 @@ Position: $root:19
 	Indent = True
 
 # $88rUZoF9qLhUgrih2P9nK4
-Position: $root:20
+Position: $root:10
 + [Sirenix.OdinInspector.TitleGroupAttribute]
 	Indent = True
 	GroupName = "Comparator"
 
 # $HrDL97N4NCU22qbAGd22gi
-Position: $root:21
+Position: $root:11
 + [Sirenix.OdinInspector.TitleGroupAttribute]
 	GroupName = "Right"
 	Indent = True
-
-# $YTbEXVzFbJtPLuR2mnzyvx
-Position: $811zM7aZpjmp5kbuEeZcFi:0
-+ [Sirenix.OdinInspector.BoxGroupAttribute]
-	ShowLabel = False
-	CenterLabel = False
-
-# $WkyRAq2C5VCJ6wVUVV4QRv
-Position: $HrDL97N4NCU22qbAGd22gi:0
-+ [Sirenix.OdinInspector.BoxGroupAttribute]
 
 # <Subject>k__BackingField
 + [Sirenix.OdinInspector.HideIfAttribute]
@@ -78,3 +68,13 @@ Position: $YTbEXVzFbJtPLuR2mnzyvx:3
 Position: $YTbEXVzFbJtPLuR2mnzyvx:4
 + [Sirenix.OdinInspector.ShowIfAttribute]
 	Condition = "@Left is NpcRelationshipData"
+
+# <LeftSide>k__BackingField
+Position: $811zM7aZpjmp5kbuEeZcFi:0
++ [Sirenix.OdinInspector.InlinePropertyAttribute]
++ [Sirenix.OdinInspector.HideLabelAttribute]
+
+# <RightSide>k__BackingField
+Position: $HrDL97N4NCU22qbAGd22gi:0
++ [Sirenix.OdinInspector.HideLabelAttribute]
++ [Sirenix.OdinInspector.InlinePropertyAttribute]
