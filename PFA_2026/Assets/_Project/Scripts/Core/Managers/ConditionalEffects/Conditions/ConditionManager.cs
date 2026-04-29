@@ -18,6 +18,7 @@ namespace Naussilus.Core.Managers
             if(currentConditions.Length == 0)
             {
                 validNpcs?.Add(currentNpcData);
+                return true;
             }
             
             for (int i = 0; i < currentConditions.Length; i++)
@@ -34,13 +35,13 @@ namespace Naussilus.Core.Managers
 
                 for (var j = 0; j < leftNpcs.Length; j++)
                 {
-                    var left = leftNpcs[j];
+                    var currentLeftNpc = leftNpcs[j];
                     for (var k = 0; k < rightNpcs.Length; k++)
                     {
-                        var right = rightNpcs[k]; 
-                        if (!condition.ComputeCondition(left, right))
-                            break;
-                        validNpcs?.Add(left);
+                        var currentRightNpc = rightNpcs[k];
+                        if (!condition.ComputeCondition(currentLeftNpc, currentRightNpc, out var npcs))
+                            continue;
+                        validNpcs.AddRange(npcs);
                     }
                 }
             }
@@ -78,71 +79,50 @@ namespace Naussilus.Core.Managers
             return true;
         }
         
-        public static void ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData ,Category[] currentCategories, out List<NpcData> validNpcs)
+        public static bool ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData ,Category[] currentCategories, out List<NpcData> validNpcs)
                 {
+                    validNpcs = new List<NpcData>();
                     if(currentConditions.Length == 0)
                     {
-                        validNpcs = null;
                         validNpcs?.Add(currentNpcData);
+                        return true;
                     }
-
-                    using (ListPool<NpcData>.Get(out var list))
+            
+                    for (int i = 0; i < currentConditions.Length; i++)
                     {
-                        for (int i = 0; i < currentConditions.Length; i++)
+                        var condition = currentConditions[i];
+                
+                        NpcData[] leftNpcs = condition.IsLeftCurrentNpc 
+                            ? new[] { currentNpcData } 
+                            : NpcManager.GetSelectedNpcs(condition.LeftSubject, currentNpcData, currentCategories);
+
+                        NpcData[] rightNpcs = condition.IsRightCurrentNpc 
+                            ? new[] { currentNpcData } 
+                            : NpcManager.GetSelectedNpcs(condition.RightSubject, currentNpcData, currentCategories);
+
+                        for (var j = 0; j < leftNpcs.Length; j++)
                         {
-                            var condition = currentConditions[i];
-                    
-                            NpcData[] leftNpcs = condition.IsLeftCurrentNpc 
-                                ? new[] { currentNpcData } 
-                                : NpcManager.GetSelectedNpcs(condition.LeftSubject, currentNpcData, currentCategories);
-
-                            NpcData[] rightNpcs = condition.IsRightCurrentNpc 
-                                ? new[] { currentNpcData } 
-                                : NpcManager.GetSelectedNpcs(condition.RightSubject, currentNpcData, currentCategories);
-
-                            for (var j = 0; j < leftNpcs.Length; j++)
+                            var currentLeftNpc = leftNpcs[j];
+                            for (var k = 0; k < rightNpcs.Length; k++)
                             {
-                                var left = leftNpcs[j];
-                                for (var k = 0; k < rightNpcs.Length; k++)
-                                {
-                                    var right = rightNpcs[k]; 
-                                    if (!condition.ComputeCondition(left, right))
-                                        continue;
-                                    list.Add(left);
-                                }
+                                var currentRightNpc = rightNpcs[k];
+                                if (!condition.ComputeCondition(currentLeftNpc, currentRightNpc, out var npcs))
+                                    continue;
+                                validNpcs.AddRange(npcs);
                             }
                         }
-                        validNpcs = list;
                     }
+                    return validNpcs != null && validNpcs.Count > 0;
                 }
 
         private static bool ComputeCondition(this Condition condition, NpcData leftNpcData, NpcData rightNpcData)
         {
-            NpcManager.TryGetNpc(leftNpcData.GUID, out Npc currentLeftNpc);
-            NpcManager.TryGetNpc(rightNpcData.GUID, out Npc currentRightNpc);
-            
-            int[] leftSide = currentLeftNpc.GetValue(condition.Left);
-            int[] rightSide = currentRightNpc.GetValue(condition.Right);
-            
-            if (leftSide.Contains(-1) || rightSide.Contains(-1))
-            {
-                Debug.LogError($"Negative value for condition {condition}");
-                return false;
-            }
-
-            using (ListPool<bool>.Get(out var isAllValid))
-            {
-                for (int i = 0; i < leftSide.Length; i++)
-                {
-                    for (int j = 0; j < rightSide.Length; j++)
-                    {
-                        condition.IsValid(leftSide[i], rightSide[j], out bool isValid);
-                        isAllValid.Add(isValid);
-                        Debug.Log($"[ConditionManager] Condition {condition}: left: {leftSide[i]}, comparator: {condition.ComparisonOperator}, right: {rightSide[j]} return : {isValid}");
-                    }
-                }
-                return isAllValid.All(valid => valid);
-            }
+            return false;
+        }
+        private static bool ComputeCondition(this Condition condition, NpcData leftNpcData, NpcData rightNpcData, out List<NpcData> returnNpc)
+        {
+            returnNpc = null;
+            return false;
         }
 
         private static bool IsValid(this Condition condition, int leftSide, int rightSide)

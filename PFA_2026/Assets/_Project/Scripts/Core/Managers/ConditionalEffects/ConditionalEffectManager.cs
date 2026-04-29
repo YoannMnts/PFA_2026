@@ -3,7 +3,6 @@ using Naussilus.Core.Consequences;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
-using UnityEngine;
 
 namespace Naussilus.Core.Managers
 {
