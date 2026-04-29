@@ -34,3 +34,7 @@ Position: $QF2DyoEoQYbgQyD31h4GTD:0
 # currentNpcTarget
 + [Sirenix.OdinInspector.ShowIfAttribute]
 	Condition = "isEnumeration"
+
+# <CurrentNpcTarget>k__BackingField
++ [Sirenix.OdinInspector.ShowIfAttribute]
+	Condition = "IsEnumeration"

@@ -2,7 +2,7 @@ OVDF v1.1
 Naussilus.Core.Conditions.Condition, Naussilus.Core
 
 # $811zM7aZpjmp5kbuEeZcFi
-Position: $root:21
+Position: $root:19
 + [Sirenix.OdinInspector.TitleGroupAttribute]
 	GroupName = "Left"
 	Subtitle = ""
@@ -10,13 +10,13 @@ Position: $root:21
 	Indent = True
 
 # $88rUZoF9qLhUgrih2P9nK4
-Position: $root:22
+Position: $root:20
 + [Sirenix.OdinInspector.TitleGroupAttribute]
 	Indent = True
 	GroupName = "Comparator"
 
 # $HrDL97N4NCU22qbAGd22gi
-Position: $root:23
+Position: $root:21
 + [Sirenix.OdinInspector.TitleGroupAttribute]
 	GroupName = "Right"
 	Indent = True
@@ -68,3 +68,13 @@ Position: $YTbEXVzFbJtPLuR2mnzyvx:0
 
 # <IsRightCurrentNpc>k__BackingField
 Position: $WkyRAq2C5VCJ6wVUVV4QRv:0
+
+# <UseCurrentNpc>k__BackingField
+Position: $YTbEXVzFbJtPLuR2mnzyvx:3
++ [Sirenix.OdinInspector.ShowIfAttribute]
+	Condition = "@Left is NpcRelationshipData"
+
+# <UseThisNpcToReturn>k__BackingField
+Position: $YTbEXVzFbJtPLuR2mnzyvx:4
++ [Sirenix.OdinInspector.ShowIfAttribute]
+	Condition = "@Left is NpcRelationshipData"

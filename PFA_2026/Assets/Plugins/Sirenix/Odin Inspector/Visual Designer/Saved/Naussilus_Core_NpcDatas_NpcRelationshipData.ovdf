@@ -2,7 +2,7 @@ OVDF v1.1
 Naussilus.Core.NpcDatas.NpcRelationshipData, Naussilus.Core
 
 # $NN76B76i4Z55hziDT2EuXi
-Position: $root:7
+Position: $root:8
 + [Sirenix.OdinInspector.HorizontalGroupAttribute]
 	LabelWidth = 50
 	Gap = 20
@@ -12,10 +12,15 @@ Position: $root:7
 Position: $NN76B76i4Z55hziDT2EuXi:0
 + [Sirenix.OdinInspector.InlinePropertyAttribute]
 	LabelWidth = 65
-+ [Sirenix.OdinInspector.HideIfAttribute]
-	Condition = "UseCurrentNpc"
 
 # <Amount>k__BackingField
 Position: $NN76B76i4Z55hziDT2EuXi:1
-+ [Sirenix.OdinInspector.HideIfAttribute]
-	Condition = "UseCurrentNpc"
+
+# <UseCurrentNpc>k__BackingField
+Position: $QY9GMKFzdskND877jfHv9G:0
+
+# <UseNpcToReturn>k__BackingField
+Position: $QY9GMKFzdskND877jfHv9G:1
+
+# <UseThisNpcToReturn>k__BackingField
+Position: $QY9GMKFzdskND877jfHv9G:1

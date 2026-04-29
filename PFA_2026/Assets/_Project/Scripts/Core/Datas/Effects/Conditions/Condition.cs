@@ -17,6 +17,12 @@ namespace Naussilus.Core.Conditions
         [field: SerializeReference]
         public IConditionValue Left { get; private set; }
         
+        [field : SerializeField]
+        public bool UseCurrentNpc { get; private set; }
+        
+        [field : SerializeField]
+        public bool UseThisNpcToReturn { get; private set; }
+        
         [field: SerializeField]
         public ComparisonOperator ComparisonOperator { get; private set; }
         
