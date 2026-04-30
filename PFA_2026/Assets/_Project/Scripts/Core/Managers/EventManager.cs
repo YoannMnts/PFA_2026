@@ -34,7 +34,7 @@ namespace Naussilus.Core.Managers
                     ConditionalEffect[] conditionalEffects = value.Dependencies;
                     for (int i = 0; i < conditionalEffects.Length; i++)
                     {
-                        isConditionValid = conditionalEffects[i].Conditions.ComputeAllCondition(value.Npcs[0]);
+                        isConditionValid = conditionalEffects[i].ComputeOnlyConditions(value.Npcs[0]);
                         if (!isConditionValid) 
                             break;
                     }
