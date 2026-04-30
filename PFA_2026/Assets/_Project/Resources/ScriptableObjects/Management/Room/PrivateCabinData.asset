@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
   <Name>k__BackingField: "Cabine priv\xE9e"
   <Description>k__BackingField: "Une chambre isol\xE9e du reste, qui peut servir
-    \xE0 la fois de reconfort et de punition"
+    pour siolder des membres probl\xE9matiques"
   <Actions>k__BackingField:
   - {fileID: 11400000, guid: 8c244cdf78d1155469540d365e2884e3, type: 2}
   <GUID>k__BackingField: 0e239348-b6be-45a2-bd51-dedba8a821f3
