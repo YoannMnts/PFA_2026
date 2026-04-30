@@ -12,13 +12,85 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6551f63f2e464eb39de211b4f9603e78, type: 3}
   m_Name: 1_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
-  <ButtonText>k__BackingField: "Je dois \xEAtre honn\xEAte : Tu as un poulpe sur
-    la t\xEAte"
+  <ButtonText>k__BackingField: "Tu es la seule personne qui \xE0 le pouvoir de dire
+    qui tu es "
   <NpcText>k__BackingField:
-  - "Quoi ! Alors vous aussi maintenant vous dites \xE7a\u2026"
-  - "Je ne sais pas \xE0 quoi je m\u2019attendais "
-  <Effects>k__BackingField: []
-  <GUID>k__BackingField: 1147cde7-d79b-4988-8111-8c0be5b28a40
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: c68724178ba4187428d21b9cce342e9f, type: 2}
+    <Text>k__BackingField:
+    - "Peut-\xEAtre oui, j\u2019essaierais de me dire \xE7a\u2026"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 9e8b83d3e3aee8543a3f25c969319a9c, type: 2}
+    <Text>k__BackingField:
+    - "C\u2019est dur de se rappeler de \xE7a quand tout le monde te dit l\u2019inverse,
+      mais \xE7a me fait plaisir d\u2019entendre \xE7a"
+  <Effects>k__BackingField:
+  - <IsEnumeration>k__BackingField: 0
+    <CurrentNpcTarget>k__BackingField:
+      rid: -2
+    <Conditions>k__BackingField: []
+    <Consequences>k__BackingField:
+    - <IsGameLost>k__BackingField: 0
+      <IsCurrentNpc>k__BackingField: 1
+      <Subject>k__BackingField:
+        rid: -2
+      <IntTarget>k__BackingField:
+        rid: 2120458342273122311
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 4
+      <Text>k__BackingField: 
+    - <IsGameLost>k__BackingField: 0
+      <IsCurrentNpc>k__BackingField: 1
+      <Subject>k__BackingField:
+        rid: -2
+      <IntTarget>k__BackingField:
+        rid: 2120458342273122312
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 3
+      <Text>k__BackingField: 
+    - <IsGameLost>k__BackingField: 0
+      <IsCurrentNpc>k__BackingField: 1
+      <Subject>k__BackingField:
+        rid: -2
+      <IntTarget>k__BackingField:
+        rid: 2120458342273122314
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 2
+      <Text>k__BackingField: 
+    - <IsGameLost>k__BackingField: 0
+      <IsCurrentNpc>k__BackingField: 1
+      <Subject>k__BackingField:
+        rid: -2
+      <IntTarget>k__BackingField:
+        rid: 2120458342273122315
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 3
+      <Text>k__BackingField: "Cet entretien \xE0 fait du bien \xE0 Jennie, je vois
+        qu'elle ignore plus facilement les remarques \xE0 propos du poulpe, et qu'elle
+        est plus confiante dans le fait que ce soit une fille"
+  <GUID>k__BackingField: 7d6605e9-a6e4-4fe0-8ecc-c4d12e3822fe
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2120458342273122311
+      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: 0873e3af56f61554284c45b21149e18e, type: 2}
+        <Amount>k__BackingField: 4
+    - rid: 2120458342273122312
+      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: da645db61372a354fb4e466633a3a304, type: 2}
+        <Amount>k__BackingField: 3
+    - rid: 2120458342273122314
+      type: {class: BehaviorValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: f2b55b5c9291b9b448a304246130c6d4, type: 2}
+        <Amount>k__BackingField: 2
+    - rid: 2120458342273122315
+      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
+        <Amount>k__BackingField: 3
