@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 1_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 0}
+    <Text>k__BackingField:
+    - 'Bonjour Capitaine. '
+    - "En fait, ces derniers temps, tout le monde me dit que je ne suis pas humaine,
+      \xE7a me fait douter de la r\xE9alit\xE9\u2026"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 43c312097499a3040a42b0f070a69c42, type: 2}
+  - {fileID: 11400000, guid: df409f89604a5454ea794879cb5ee57c, type: 2}
+  - {fileID: 11400000, guid: 98ef963f7c6243e408dd7b9e8a8b24e6, type: 2}
+  <GUID>k__BackingField: 5d71c1f7-a77a-4108-a2f7-bd3970893bf8

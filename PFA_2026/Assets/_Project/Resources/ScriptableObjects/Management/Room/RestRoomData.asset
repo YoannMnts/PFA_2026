@@ -18,4 +18,6 @@ MonoBehaviour:
   <Actions>k__BackingField:
   - {fileID: 11400000, guid: 56ab99c42724be841af69cc548fa308a, type: 2}
   - {fileID: 11400000, guid: 87fb0e3f245f4de4596d26e7d1b1955d, type: 2}
+  - {fileID: 11400000, guid: 92b622ddc997b3840b8ff35ffda59528, type: 2}
+  - {fileID: 11400000, guid: 6440d02809c84064f885bca7834a223d, type: 2}
   <GUID>k__BackingField: 84c5c9fb-9e42-4114-9b01-a3db224c594e

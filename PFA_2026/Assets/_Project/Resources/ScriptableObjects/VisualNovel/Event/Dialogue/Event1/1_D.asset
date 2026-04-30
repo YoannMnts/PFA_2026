@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 1_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 0}
+    <Text>k__BackingField:
+    - "Et bien\u2026 Un beau jour ma vie \xE0 chang\xE9, les gens et m\xEAme mes
+      proches ont commenc\xE9 \xE0 me regarder diff\xE9remment. "
+    - "J'esp\xE9rais seulement qu\u2019ici ce ne serait pas la m\xEAme chose\u2026"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 7f5b540a4e1a02d4c8f3b4455641ae04, type: 2}
+  - {fileID: 11400000, guid: 59e6a8018a57bea4bb9b3e556b7b7ea5, type: 2}
+  - {fileID: 11400000, guid: 2d9e23ee5dc221e459bc3a9866f02fc7, type: 2}
+  <GUID>k__BackingField: 3fff03a8-7733-43e8-986a-38e389dbd99b
