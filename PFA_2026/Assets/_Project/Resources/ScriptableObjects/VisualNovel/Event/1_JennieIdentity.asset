@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4426d2e37cb0480e88589e1b21471988, type: 3}
+  m_Name: 1_JennieIdentity
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.EventData
+  <Name>k__BackingField: "Jennie doute de son identit\xE9"
+  <Npcs>k__BackingField:
+  - {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+  <Priority>k__BackingField: 1
+  <Conditions>k__BackingField:
+  - <IsEnumeration>k__BackingField: 0
+    <CurrentNpcTarget>k__BackingField:
+      rid: -2
+    <Conditions>k__BackingField:
+    - <IsLeftCurrentNpc>k__BackingField: 1
+      <LeftSubject>k__BackingField:
+        rid: -2
+      <Left>k__BackingField:
+        rid: 2120458322414927873
+      <UseCurrentNpc>k__BackingField: 0
+      <UseThisNpcToReturn>k__BackingField: 0
+      <ComparisonOperator>k__BackingField: 2
+      <IsRightCurrentNpc>k__BackingField: 1
+      <RightSubject>k__BackingField:
+        rid: -2
+      <Right>k__BackingField:
+        rid: 2120458322414927874
+    - <IsLeftCurrentNpc>k__BackingField: 1
+      <LeftSubject>k__BackingField:
+        rid: -2
+      <Left>k__BackingField:
+        rid: 2120458322414927875
+      <UseCurrentNpc>k__BackingField: 0
+      <UseThisNpcToReturn>k__BackingField: 0
+      <ComparisonOperator>k__BackingField: 2
+      <IsRightCurrentNpc>k__BackingField: 1
+      <RightSubject>k__BackingField:
+        rid: -2
+      <Right>k__BackingField:
+        rid: 2120458322414927876
+    <Consequences>k__BackingField: []
+  <FirstDialogue>k__BackingField: {fileID: 11400000, guid: e214380c6494e4a4997a15c136820ca6, type: 2}
+  <GUID>k__BackingField: a3c13fb2-abfb-447e-a00a-8b7b14e742ed
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2120458322414927873
+      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: 0873e3af56f61554284c45b21149e18e, type: 2}
+        <Amount>k__BackingField: 10
+    - rid: 2120458322414927874
+      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 10
+    - rid: 2120458322414927875
+      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: da645db61372a354fb4e466633a3a304, type: 2}
+        <Amount>k__BackingField: 15
+    - rid: 2120458322414927876
+      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 15

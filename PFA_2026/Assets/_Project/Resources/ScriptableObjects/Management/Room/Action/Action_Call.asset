@@ -21,8 +21,48 @@ MonoBehaviour:
     <ProhibitedNpc>k__BackingField:
     - {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <ObligateNpc>k__BackingField: []
-  <ActionEffects>k__BackingField: []
+  <ActionEffects>k__BackingField:
+  - <CategoryIndex>k__BackingField: 1
+    <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Effects>k__BackingField:
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField: []
+      <Consequences>k__BackingField:
+      - <IsGameLost>k__BackingField: 0
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458322414927877
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 2
+        <Text>k__BackingField: "Jennie est heureuse de parler \xE0 sa m\xE8re"
+      - <IsGameLost>k__BackingField: 0
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <IntTarget>k__BackingField:
+          rid: 2120458322414927878
+        <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 1
+        <Text>k__BackingField: "Cet appel lui fait aussi douter d'elle m\xEAme"
+    <Position>k__BackingField: {x: 0, y: 0, z: 0}
+    <ActionSprite>k__BackingField: {fileID: 0}
   <GUID>k__BackingField: 42905f73-614a-4891-87cb-244d49f7ab4d
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2120458322414927877
+      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
+        <Amount>k__BackingField: 2
+    - rid: 2120458322414927878
+      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: 0873e3af56f61554284c45b21149e18e, type: 2}
+        <Amount>k__BackingField: 1
