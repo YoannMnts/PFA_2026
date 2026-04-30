@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Naussilus.Core
 {
     [Serializable]
-    public class IntEffectValue : IConditionEffectValue, INpcStat
+    public class IntValue : IConditionEffectValue, INpcStat
     {
         [field: SerializeField, Range(0, 20)]
         public int Amount { get; private set; }

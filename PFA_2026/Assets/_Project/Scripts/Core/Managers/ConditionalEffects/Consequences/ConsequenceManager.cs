@@ -40,17 +40,18 @@ namespace Naussilus.Core.Managers
         {
             NpcManager.TryGetNpc(currentNpcData.GUID, out Npc currentNpc);
             IConsequenceEffectValue stat = consequence.IntTarget;
-            var type =currentNpc.GetValue(stat, out var amount);
+            var type = currentNpc.GetValue(stat, out var amount);
             int rightSide = consequence.Amount;
 
             if (amount > 0 || rightSide < 0)
             {
-                Debug.LogError($"[ConsequenceManager] Negative value for consequence left side : left: {amount}, right: {rightSide}");
+                Debug.LogError(
+                    $"[ConsequenceManager] Negative value for consequence left side : left: {amount}, right: {rightSide}");
                 return;
             }
 
             consequence.ModifyValue(amount, rightSide, out var newAmount);
-            type.SetNewAmount(newAmount);
+            type[0].SetNewAmount(newAmount);
             Debug.Log($"[ConsequenceManager] Compute : left: {amount}, right: {rightSide} return : {newAmount} for npc {currentNpc.Name}");
         }
 

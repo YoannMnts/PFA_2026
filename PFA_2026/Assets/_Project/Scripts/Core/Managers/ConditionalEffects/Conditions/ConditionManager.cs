@@ -41,21 +41,20 @@ namespace Naussilus.Core.Managers
                     for (var k = 0; k < rightNpcs.Length; k++)
                     {
                         var currentRightNpc = rightNpcs[k];
-                        /*
                         if (!condition.ComputeCondition(currentLeftNpc, currentRightNpc, out var npcs))
                             continue;
                         validNpcs.AddRange(npcs);
-                        */
                     }
                 }
             }
-            return validNpcs != null && validNpcs.Count > 0;
+            return validNpcs?.Count > 0;
         }
         public static bool ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData)
         {
-            var validNpcs = new List<NpcData>();
             if(currentConditions.Length == 0)
+            {
                 return true;
+            }
             
             for (int i = 0; i < currentConditions.Length; i++)
             {
@@ -71,17 +70,18 @@ namespace Naussilus.Core.Managers
 
                 for (var j = 0; j < leftNpcs.Length; j++)
                 {
-                    var left = leftNpcs[j];
+                    var currentLeftNpc = leftNpcs[j];
                     for (var k = 0; k < rightNpcs.Length; k++)
                     {
-                        var right = rightNpcs[k]; 
-                        if (!condition.ComputeCondition(left, right))
-                            return false;
+                        var currentRightNpc = rightNpcs[k];
+                        if (!condition.ComputeCondition(currentLeftNpc, currentRightNpc, out var npcs))
+                            return npcs?.Count > 0;
                     }
                 }
             }
-            return true;
+            return false;
         }
+        
         public static bool ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData ,Category[] currentCategories, out List<NpcData> validNpcs)
                 {
                     validNpcs = new List<NpcData>();
@@ -109,34 +109,46 @@ namespace Naussilus.Core.Managers
                             for (var k = 0; k < rightNpcs.Length; k++)
                             {
                                 var currentRightNpc = rightNpcs[k];
-                                if (!condition.ComputeCondition(currentNpcData, currentLeftNpc, currentRightNpc, out var npcs))
+                                if (!condition.ComputeCondition(currentLeftNpc, currentRightNpc, out var npcs))
                                     continue;
                                 validNpcs.AddRange(npcs);
                             }
                         }
                     }
-                    return validNpcs != null && validNpcs.Count > 0;
+                    return validNpcs?.Count > 0;
                 }
-
-        private static bool ComputeCondition(this Condition condition, NpcData leftNpcData, NpcData rightNpcData)
+        
+        private static bool ComputeCondition(this Condition condition, NpcData leftNpcData, NpcData rightNpcData, out List<NpcData> consequenceUsedNpc)
         {
-            return false;
-        }
-        private static bool ComputeCondition(this Condition condition,NpcData currentNpcData, NpcData leftNpcData, NpcData rightNpcData, out List<NpcData> returnNpc)
-        {
+            consequenceUsedNpc = new List<NpcData>();
             NpcManager.TryGetNpc(leftNpcData.GUID, out var leftNpc);
             NpcManager.TryGetNpc(rightNpcData.GUID, out var rightNpc);
             
             ConditionSide leftSide = condition.LeftSide;
             ConditionSide rightSide = condition.RightSide;
             
-            var leftType = leftNpc.GetValue(leftSide.Stat, out var leftValue);
-            var rightType = rightNpc.GetValue(rightSide.Stat, out var rightValue);
-            
-            condition.IsValid(leftValue, rightValue, out var valid);
-            
-            returnNpc = null;
-            return valid;
+            var leftTypes = leftNpc.GetValue(leftSide.Stat);
+            var rightTypes = rightNpc.GetValue(rightSide.Stat);
+
+            for (int i = 0; i < leftTypes.Length; i++)
+            {
+                var leftType = leftTypes[i];
+                for (int j = 0; j < rightTypes.Length; j++)
+                {
+                    var rightType = rightTypes[j];
+                    condition.IsValid(leftType, rightType, out var valid);
+                    if (!valid)
+                        continue;
+                    if (leftSide.UseRelationshipNpcToReturn)
+                    {
+                        var relationType = (NpcRelationship)leftType; 
+                        consequenceUsedNpc = null; //returnNpc.Add(relationType.Npc);
+                        continue;
+                    }
+                    consequenceUsedNpc?.Add(leftNpcData);
+                }
+            }
+            return consequenceUsedNpc?.Count > 0;
         }
 
         private static bool IsValid(this Condition condition, int leftSide, int rightSide)
@@ -154,8 +166,11 @@ namespace Naussilus.Core.Managers
             return isValid;
         }
         
-        private static void IsValid(this Condition condition, int leftSide, int rightSide, out bool isValid)
+        private static void IsValid(this Condition condition, INpcStat leftType, INpcStat rightType, out bool isValid)
         {
+            var leftSide = leftType.Amount;
+            var rightSide = rightType.Amount;
+            
             bool isValidate = condition.ComparisonOperator switch
             {
                 ComparisonOperator.Equal => leftSide == rightSide,
