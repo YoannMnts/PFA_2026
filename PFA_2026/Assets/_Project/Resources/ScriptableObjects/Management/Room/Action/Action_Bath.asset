@@ -31,20 +31,26 @@ MonoBehaviour:
       <Conditions>k__BackingField: []
       <Consequences>k__BackingField:
       - <IsGameLost>k__BackingField: 0
-        <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458342273122326
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2120458343661437151
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 3
         <Text>k__BackingField: 
       - <IsGameLost>k__BackingField: 0
-        <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458342273122327
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2120458343661437152
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField: 
@@ -56,13 +62,13 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 2120458342273122326
+    - rid: 2120458343661437151
       type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Stat>k__BackingField: {fileID: 11400000, guid: efa87449a5f31f3428fd0d3f9c939891, type: 2}
-        <Amount>k__BackingField: 3
-    - rid: 2120458342273122327
+        <Amount>k__BackingField: 0
+    - rid: 2120458343661437152
       type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Stat>k__BackingField: {fileID: 11400000, guid: d1fd9c2734ce3c2448f583fbbc1287f6, type: 2}
-        <Amount>k__BackingField: 1
+        <Amount>k__BackingField: 0

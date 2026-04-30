@@ -31,20 +31,26 @@ MonoBehaviour:
       <Conditions>k__BackingField: []
       <Consequences>k__BackingField:
       - <IsGameLost>k__BackingField: 0
-        <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458322414927877
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2120458343661437153
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
         <Text>k__BackingField: "Jennie est heureuse de parler \xE0 sa m\xE8re"
       - <IsGameLost>k__BackingField: 0
-        <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458322414927878
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2120458343661437154
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
         <Text>k__BackingField: "Cet appel lui fait aussi douter d'elle m\xEAme"
@@ -56,13 +62,13 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 2120458322414927877
+    - rid: 2120458343661437153
       type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
-        <Amount>k__BackingField: 2
-    - rid: 2120458322414927878
+        <Amount>k__BackingField: 0
+    - rid: 2120458343661437154
       type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Stat>k__BackingField: {fileID: 11400000, guid: 0873e3af56f61554284c45b21149e18e, type: 2}
-        <Amount>k__BackingField: 1
+        <Amount>k__BackingField: 0
