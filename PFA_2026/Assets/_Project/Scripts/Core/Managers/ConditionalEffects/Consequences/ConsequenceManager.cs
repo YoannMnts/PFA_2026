@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Naussilus.Core.Consequences;
+﻿using Naussilus.Core.Consequences;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
@@ -12,27 +11,35 @@ namespace Naussilus.Core.Managers
     {
         public static void ComputeAllConsequence(this Consequence[] currentConsequence, NpcData currentNpcData)
         {
-            foreach (var consequence in currentConsequence)
+            for (var i = 0; i < currentConsequence.Length; i++)
             {
+                var consequence = currentConsequence[i];
                 NpcData[] subjects = consequence.IsCurrentNpc
                     ? new[] { currentNpcData }
                     : NpcManager.GetSelectedNpcs(consequence.Subject, currentNpcData);
 
-                foreach (var subject in subjects)
+                for (var j = 0; j < subjects.Length; j++)
+                {
+                    var subject = subjects[j];
                     consequence.ComputeConsequence(subject);
+                }
             }
         }
         
         public static void ComputeAllConsequence(this Consequence[] currentConsequence, NpcData currentNpcData ,Category[] currentCategories)
         {
-            foreach (var consequence in currentConsequence)
+            for (var i = 0; i < currentConsequence.Length; i++)
             {
+                var consequence = currentConsequence[i];
                 NpcData[] subjects = consequence.IsCurrentNpc
                     ? new[] { currentNpcData }
                     : NpcManager.GetSelectedNpcs(consequence.Subject, currentNpcData, currentCategories);
 
-                foreach (var subject in subjects)
+                for (var j = 0; j < subjects.Length; j++)
+                {
+                    var subject = subjects[j];
                     consequence.ComputeConsequence(subject);
+                }
             }
         }
 
@@ -40,19 +47,20 @@ namespace Naussilus.Core.Managers
         {
             NpcManager.TryGetNpc(currentNpcData.GUID, out Npc currentNpc);
             IConsequenceEffectValue stat = consequence.IntTarget;
-            var type = currentNpc.GetValue(stat, out var amount);
+            var types = currentNpc.GetValue(stat);
             int rightSide = consequence.Amount;
 
-            if (amount > 0 || rightSide < 0)
+            if (types is null || rightSide < 0)
             {
-                Debug.LogError(
-                    $"[ConsequenceManager] Negative value for consequence left side : left: {amount}, right: {rightSide}");
+                Debug.LogError($"[ConsequenceManager] Negative value for consequence left side : left: type is null, right: {rightSide}");
                 return;
             }
-
-            consequence.ModifyValue(amount, rightSide, out var newAmount);
-            type[0].SetNewAmount(newAmount);
-            Debug.Log($"[ConsequenceManager] Compute : left: {amount}, right: {rightSide} return : {newAmount} for npc {currentNpc.Name}");
+            for (int i = 0; i < types.Length; i++)
+            {
+                consequence.ModifyValue(types[i].Amount, rightSide, out var newAmount);
+                types[i].SetNewAmount(newAmount);
+                Debug.Log($"[ConsequenceManager] Compute : left: {types[i].Amount}, right: {rightSide} return : {newAmount} for npc {currentNpc.Name}");
+            }
         }
 
         private static void ModifyValue(this Consequence consequence, int leftSide, int rightSide, out int newValue)
