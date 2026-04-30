@@ -2,7 +2,7 @@ OVDF v1.1
 Naussilus.Core.Conditions.ConditionSide, Naussilus.Core
 
 # $VZeVMyrXvdtTjoqoXHsADw
-Position: $root:15
+Position: $root:13
 + [Sirenix.OdinInspector.BoxGroupAttribute]
 
 # <Subject>k__BackingField
@@ -27,3 +27,13 @@ Position: $VZeVMyrXvdtTjoqoXHsADw:0
 Position: $VZeVMyrXvdtTjoqoXHsADw:2
 + [Sirenix.OdinInspector.InlinePropertyAttribute]
 + [Sirenix.OdinInspector.HideLabelAttribute]
+
+# <UseRelationshipNpcToReturn>k__BackingField
+Position: $VZeVMyrXvdtTjoqoXHsADw:4
++ [Sirenix.OdinInspector.ShowIfAttribute]
+	Condition = "@Stat is NpcRelationshipData"
+
+# <UseEnumerationNpc>k__BackingField
+Position: $VZeVMyrXvdtTjoqoXHsADw:3
++ [Sirenix.OdinInspector.ShowIfAttribute]
+	Condition = "@Stat is NpcRelationshipData"

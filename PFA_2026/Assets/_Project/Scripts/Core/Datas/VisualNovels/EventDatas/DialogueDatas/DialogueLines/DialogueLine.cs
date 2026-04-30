@@ -11,7 +11,7 @@ namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueLines
         public NpcData Npc { get; private set; }
         
         [field : SerializeField]
-        public Sprite Expression { get; private set; }
+        public ExpressionData Expression { get; private set; }
         
         [field : SerializeField, TextArea]
         public string[] Text { get; private set; }

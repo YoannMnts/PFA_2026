@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using JetBrains.Annotations;
 using Naussilus.Core.Conditions;
 using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
 using Naussilus.Core.NpcDatas;
@@ -207,31 +208,107 @@ namespace Naussilus.Core.Managers.Npcs
             }
         }
         
-        public static INpcStat GetValue<T>(this Npc npc, T side, out int amount) where T : IConditionalEffectValue
+        public static INpcStat[] GetValue<T>(this Npc npc, T side) where T : IConditionalEffectValue
         {
             switch (side)
             {
-                case IntEffectValue intValue:
-                    amount = intValue.Amount;
-                    return intValue;
+                case IntValue intValue:
+                    return new INpcStat[]{intValue};
                 
                 case BehaviorValue value:
-                    bool BehaviorPredicate(Behavior x) => x.Data == value.Stat;
-                    var behavior = npc.Behaviors.Find(BehaviorPredicate);
-                    amount = behavior.Amount;
-                    return behavior;
+                    for (int i = 0; i < npc.Behaviors.Length; i++)
+                    {
+                        if (npc.Behaviors[i].Data != value.Stat) 
+                            continue;
+                        
+                        var behavior = npc.Behaviors[i];
+                        return new INpcStat[]{behavior};
+                    }
+                    break;
                 
                 case MentalStateValue value:
-                    bool MentalStatePredicate(MentalState x) => x.Data == value.Stat;
-                    var mentalState = npc.MentalStates.Find(MentalStatePredicate);
-                    amount = mentalState.Amount;
-                    return mentalState;
+                    for (int i = 0; i < npc.MentalStates.Length; i++)
+                    {
+                        if (npc.MentalStates[i].Data != value.Stat) 
+                            continue;
+                        
+                        var mentalState = npc.MentalStates[i];
+                        return new INpcStat[]{mentalState};
+                    }
+                    break;
                 
                 case NpcRelationshipData value:
-                    bool RelationshipPredicate(NpcRelationship x) => x.Data == value;
-                    var relationship = npc.Relationships.Find(RelationshipPredicate);
-                    amount = relationship.Amount;
-                    return relationship;
+                    GetSelectedNpcs(value.Npc, npc, out Npc[] npcs);
+                    using (ListPool<INpcStat>.Get(out var list))
+                    {
+                        for (int i = 0; i < npc.Relationships.Length; i++)
+                        {
+                            for (int j = 0; j < npcs.Length; j++)
+                            {
+                                if (npc.Relationships[i].Npc != npcs[j])
+                                    continue;
+                                
+                                list.Add(npc.Relationships[i]);
+                            }
+                        }
+
+                        return list.ToArray();
+                    }
+                    
+            }
+            return null;
+        }
+        public static INpcStat[] GetValue<T>(this Npc npc, T side, out int amount) where T : IConditionalEffectValue
+        {
+            switch (side)
+            {
+                case IntValue intValue:
+                    amount = intValue.Amount;
+                    return new INpcStat[]{intValue};
+                
+                case BehaviorValue value:
+                    for (int i = 0; i < npc.Behaviors.Length; i++)
+                    {
+                        if (npc.Behaviors[i].Data != value.Stat) 
+                            continue;
+                        
+                        var behavior = npc.Behaviors[i];
+                        amount = behavior.Amount;
+                        return new INpcStat[]{behavior};
+                    }
+                    break;
+                
+                case MentalStateValue value:
+                    for (int i = 0; i < npc.MentalStates.Length; i++)
+                    {
+                        if (npc.MentalStates[i].Data != value.Stat) 
+                            continue;
+                        
+                        var mentalState = npc.MentalStates[i];
+                        amount = mentalState.Amount;
+                        return new INpcStat[]{mentalState};
+                    }
+                    break;
+                
+                case NpcRelationshipData value:
+                    GetSelectedNpcs(value.Npc, npc, out Npc[] npcs);
+                    using (ListPool<INpcStat>.Get(out var list))
+                    {
+                        for (int i = 0; i < npc.Relationships.Length; i++)
+                        {
+                            for (int j = 0; j < npcs.Length; j++)
+                            {
+                                if (npc.Relationships[i].Npc != npcs[j])
+                                    continue;
+                                
+                                list.Add(npc.Relationships[i]);
+                            }
+                        }
+
+                        amount = -1;
+                        return list.ToArray();
+                    }
+                    
             }
             amount = -1;
             return null;

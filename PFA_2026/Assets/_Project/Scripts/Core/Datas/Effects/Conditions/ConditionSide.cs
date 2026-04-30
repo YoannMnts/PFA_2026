@@ -16,9 +16,9 @@ namespace Naussilus.Core.Conditions
         public IConditionEffectValue Stat { get; private set; }
         
         [field : SerializeField]
-        public bool UseCurrentNpc { get; private set; }
+        public bool UseEnumerationNpc { get; private set; }
         
         [field : SerializeField]
-        public bool UseThisNpcToReturn { get; private set; }
+        public bool UseRelationshipNpcToReturn { get; private set; }
     }
 }
