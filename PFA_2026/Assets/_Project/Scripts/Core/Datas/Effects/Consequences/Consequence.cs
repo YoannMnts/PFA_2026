@@ -12,13 +12,7 @@ namespace Naussilus.Core.Consequences
         public bool IsGameLost { get; private set; }
         
         [field : SerializeField]
-        public bool IsCurrentNpc { get; private set; }
-        
-        [field: SerializeReference]
-        public INpcSelector Subject { get; private set; }
-        
-        [field: SerializeReference]
-        public IConsequenceEffectValue IntTarget { get; private set; }
+        public ConsequenceSide ConsequenceSide { get; private set; }
         
         [field: SerializeField]
         public ArithmeticOperator ArithmeticOperator { get; private set; }
