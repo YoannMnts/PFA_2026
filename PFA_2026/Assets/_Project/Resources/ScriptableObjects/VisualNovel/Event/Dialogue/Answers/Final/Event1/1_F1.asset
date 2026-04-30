@@ -15,10 +15,35 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Je dois \xEAtre honn\xEAte : Tu as un poulpe sur
     la t\xEAte"
   <NpcText>k__BackingField:
-  - "Quoi ! Alors vous aussi maintenant vous dites \xE7a\u2026"
-  - "Je ne sais pas \xE0 quoi je m\u2019attendais "
-  <Effects>k__BackingField: []
-  <GUID>k__BackingField: 1147cde7-d79b-4988-8111-8c0be5b28a40
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 085407dd610890a478100f5f01c6f7ea, type: 2}
+    <Text>k__BackingField:
+    - "Quoi ! Alors vous aussi maintenant vous dites \xE7a\u2026"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: c68724178ba4187428d21b9cce342e9f, type: 2}
+    <Text>k__BackingField:
+    - "Je ne sais pas \xE0 quoi je m\u2019attendais \r\n"
+  <Effects>k__BackingField:
+  - <IsEnumeration>k__BackingField: 0
+    <CurrentNpcTarget>k__BackingField:
+      rid: -2
+    <Conditions>k__BackingField: []
+    <Consequences>k__BackingField:
+    - <IsGameLost>k__BackingField: 1
+      <IsCurrentNpc>k__BackingField: 0
+      <Subject>k__BackingField:
+        rid: -2
+      <IntTarget>k__BackingField:
+        rid: -2
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 0
+      <Text>k__BackingField: "Jennie \xE0 \xE9t\xE9 tellement bl\xE9ss\xE9e d'\xEAtre
+        rejet\xE9e par son capitaine qu'elle \xE0 d\xE9cider de quitter le navire,
+        entrainant la fin de la travers\xE9e. Elle voulait seulement \xEAtre consid\xE9r\xE9e
+        par une fille, mais tout le monde lui r\xE9petais que c'etait un poulpe"
+  <GUID>k__BackingField: b30f2f7b-102d-4e23-b6b3-672fe8f62f6f
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }

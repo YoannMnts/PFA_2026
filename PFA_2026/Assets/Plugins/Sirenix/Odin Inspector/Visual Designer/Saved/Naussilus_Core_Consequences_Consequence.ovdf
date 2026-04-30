@@ -47,5 +47,3 @@ Position: $root:20
 
 # <Text>k__BackingField
 Position: $WjoGVTQHP3bWVZE1ZsGTeM:0
-+ [Sirenix.OdinInspector.HideIfAttribute]
-	Condition = "IsGameLost"

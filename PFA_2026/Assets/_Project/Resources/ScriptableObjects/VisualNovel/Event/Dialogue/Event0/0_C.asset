@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: 0_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
-    <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
-    <Expression>k__BackingField: {fileID: 0}
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: eb209584d88ce37449f0c335ad8ba289, type: 2}
     <Text>k__BackingField:
     - "C\u2019est tr\xE8s simple, il \xE0 \xE9t\xE9 convenu que votre cabine sera
-      ouverte tous les matins, si les membres de l\u2019\xE9quipage ont des probl\xE8mes,
-      il auront qu'\xE0 venir vous en parler directement !"
+      ouverte tous les matins."
+    - "Si les membres de l\u2019\xE9quipage ont des probl\xE8mes, il auront qu'\xE0
+      venir vous en parler directement !"
     - "Je suis s\xFBr que vous les aviserez \xE0 merveille"
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 6f9b601f233703f408dd069e47d48d86, type: 2}

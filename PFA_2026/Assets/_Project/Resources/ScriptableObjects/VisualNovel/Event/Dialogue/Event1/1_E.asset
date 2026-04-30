@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
-    <Expression>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 1cc169d0bce8ddc459694c57b1bc26f5, type: 2}
     <Text>k__BackingField:
     - "Remarqu\xE9 quoi ? Vous aussi vous me trouvez diff\xE9rente\u2026"
     - "Je ne sais plus quoi faire\u2026"

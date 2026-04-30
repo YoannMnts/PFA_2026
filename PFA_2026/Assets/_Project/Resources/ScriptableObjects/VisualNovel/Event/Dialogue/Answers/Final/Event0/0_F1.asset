@@ -13,9 +13,14 @@ MonoBehaviour:
   m_Name: 0_F1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "C\u2019est tr\xE8s clair !"
-  <NpcText>k__BackingField: "Merveilleux ! Je suis toute excit\xE9e de cette travers\xE9e,
-    c\u2019est ma premi\xE8re exp\xE9dition en tant que pirate vous savez ! J\u2019esp\xE8re
-    que tout se passera sans accrocs. Bonne chance !"
+  <NpcText>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: eb209584d88ce37449f0c335ad8ba289, type: 2}
+    <Text>k__BackingField:
+    - Merveilleux !
+    - "Je suis toute excit\xE9e de cette travers\xE9e, c\u2019est ma premi\xE8re
+      exp\xE9dition en tant que pirate vous savez !"
+    - "J\u2019esp\xE8re que tout se passera sans accrocs. Bonne chance !"
   <Effects>k__BackingField: []
   <GUID>k__BackingField: 608530bb-cb34-4390-b085-21f1045068fa
   references:
