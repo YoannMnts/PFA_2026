@@ -51,11 +51,6 @@ namespace Naussilus.Core.Managers
         }
         public static bool ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData)
         {
-            if(currentConditions.Length == 0)
-            {
-                return true;
-            }
-            
             for (int i = 0; i < currentConditions.Length; i++)
             {
                 var condition = currentConditions[i];
@@ -75,13 +70,12 @@ namespace Naussilus.Core.Managers
                     {
                         var currentRightNpc = rightNpcs[k];
                         if (!condition.ComputeCondition(currentLeftNpc, currentRightNpc, out var npcs))
-                            return npcs?.Count > 0;
+                            return false;
                     }
                 }
             }
-            return false;
+            return true;
         }
-        
         public static bool ComputeAllCondition(this Condition[] currentConditions, NpcData currentNpcData ,Category[] currentCategories, out List<NpcData> validNpcs)
                 {
                     validNpcs = new List<NpcData>();
@@ -142,7 +136,7 @@ namespace Naussilus.Core.Managers
                     if (leftSide.UseRelationshipNpcToReturn)
                     {
                         var relationType = (NpcRelationship)leftType; 
-                        consequenceUsedNpc = null; //returnNpc.Add(relationType.Npc);
+                        consequenceUsedNpc = null; //consequenceUsedNpc.Add(relationType.Npc);
                         continue;
                     }
                     consequenceUsedNpc?.Add(leftNpcData);

@@ -8,7 +8,7 @@ namespace Naussilus.Core.Managers
 {
     public static class ConditionalEffectManager
     {
-        public static NpcData[] CurrentNpcsData { get; private set; }
+        private static NpcData[] CurrentNpcsData { get; set; }
         public static void ComputeConditionalEffect(this ConditionalEffect conditionalEffect, NpcData currentNpcData, Category[] currentCategories)
         {
             CurrentNpcsData = conditionalEffect.IsEnumeration
@@ -25,8 +25,25 @@ namespace Naussilus.Core.Managers
                     currentConsequences.ComputeAllConsequence(validNpcs[i], currentCategories);
             }
         }
-        
         public static void ComputeConditionalEffect(this ConditionalEffect conditionalEffect, NpcData currentNpcData)
+        {
+            CurrentNpcsData = conditionalEffect.IsEnumeration
+                ? NpcManager.GetSelectedNpcs(conditionalEffect.CurrentNpcTarget, currentNpcData)
+                : new[] { currentNpcData };
+            
+            Condition[] currentConditions = conditionalEffect.Conditions;
+            Consequence[] currentConsequences = conditionalEffect.Consequences;
+            
+            for (int i = 0; i < CurrentNpcsData.Length; i++)
+            {
+                currentConditions.ComputeAllCondition(currentNpcData, out var validNpcs);
+                for (int j = 0; j < validNpcs.Count; j++)
+                    currentConsequences.ComputeAllConsequence(validNpcs[i]);
+            }
+        }
+        
+        
+        public static bool ComputeOnlyConditions(this ConditionalEffect conditionalEffect, NpcData currentNpcData)
         {
             CurrentNpcsData = conditionalEffect.IsEnumeration
                 ? NpcManager.GetSelectedNpcs(conditionalEffect.CurrentNpcTarget, currentNpcData)
@@ -37,10 +54,11 @@ namespace Naussilus.Core.Managers
 
             for (int i = 0; i < CurrentNpcsData.Length; i++)
             {
-                currentConditions.ComputeAllCondition(currentNpcData, out var validNpcs);
-                for (int j = 0; j < validNpcs.Count; j++)
-                    currentConsequences.ComputeAllConsequence(validNpcs[i]);
+                var isValid = currentConditions.ComputeAllCondition(currentNpcData);
+                if (!isValid)
+                    return false;
             }
+            return true;
         }
     }
 }

@@ -19,12 +19,10 @@ namespace Naussilus.Core.NpcDatas
             if (data.Npc is NpcValue npcValue)
             {
                 NpcManager.TryGetNpc(npcValue.NpcData.GUID, out Npc npc);
-                Debug.Log($"TryGetNpc: GUID: {npcValue.NpcData.GUID}, Npc: {npc.Name}");
                 Npc = npc;
             }
             else
             {
-                Debug.Log($"Npc is not a NpcValue");
                 Npc = null;
             }
         }
