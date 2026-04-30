@@ -31,38 +31,50 @@ MonoBehaviour:
     <Conditions>k__BackingField: []
     <Consequences>k__BackingField:
     - <IsGameLost>k__BackingField: 0
-      <IsCurrentNpc>k__BackingField: 1
-      <Subject>k__BackingField:
-        rid: -2
-      <IntTarget>k__BackingField:
-        rid: 2120458342273122311
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <Stat>k__BackingField:
+          rid: 2120458343661437136
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 4
       <Text>k__BackingField: 
     - <IsGameLost>k__BackingField: 0
-      <IsCurrentNpc>k__BackingField: 1
-      <Subject>k__BackingField:
-        rid: -2
-      <IntTarget>k__BackingField:
-        rid: 2120458342273122312
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <Stat>k__BackingField:
+          rid: 2120458343661437137
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 3
       <Text>k__BackingField: 
     - <IsGameLost>k__BackingField: 0
-      <IsCurrentNpc>k__BackingField: 1
-      <Subject>k__BackingField:
-        rid: -2
-      <IntTarget>k__BackingField:
-        rid: 2120458342273122314
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <Stat>k__BackingField:
+          rid: 2120458343661437138
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
       <Text>k__BackingField: 
     - <IsGameLost>k__BackingField: 0
-      <IsCurrentNpc>k__BackingField: 1
-      <Subject>k__BackingField:
-        rid: -2
-      <IntTarget>k__BackingField:
-        rid: 2120458342273122315
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <Stat>k__BackingField:
+          rid: 2120458343661437139
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 3
       <Text>k__BackingField: "Cet entretien \xE0 fait du bien \xE0 Jennie, je vois
@@ -74,23 +86,23 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 2120458342273122311
+    - rid: 2120458343661437136
       type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Stat>k__BackingField: {fileID: 11400000, guid: 0873e3af56f61554284c45b21149e18e, type: 2}
-        <Amount>k__BackingField: 4
-    - rid: 2120458342273122312
+        <Amount>k__BackingField: 0
+    - rid: 2120458343661437137
       type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Stat>k__BackingField: {fileID: 11400000, guid: da645db61372a354fb4e466633a3a304, type: 2}
-        <Amount>k__BackingField: 3
-    - rid: 2120458342273122314
+        <Amount>k__BackingField: 0
+    - rid: 2120458343661437138
       type: {class: BehaviorValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Stat>k__BackingField: {fileID: 11400000, guid: f2b55b5c9291b9b448a304246130c6d4, type: 2}
-        <Amount>k__BackingField: 2
-    - rid: 2120458342273122315
+        <Amount>k__BackingField: 0
+    - rid: 2120458343661437139
       type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
-        <Amount>k__BackingField: 3
+        <Amount>k__BackingField: 0
