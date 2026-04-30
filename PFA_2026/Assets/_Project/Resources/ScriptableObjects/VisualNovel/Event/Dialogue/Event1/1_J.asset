@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
-    <Expression>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: c68724178ba4187428d21b9cce342e9f, type: 2}
     <Text>k__BackingField:
     - "Oui enfin surtout mon p\xE8re\u2026Je n\u2019ai pas forc\xE9ment envie d\u2019en
       parler"
