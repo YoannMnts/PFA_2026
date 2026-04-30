@@ -28,15 +28,20 @@ namespace Naussilus.Core.Managers
         {
             using (ListPool<EventData>.Get(out var validEventDatas) )
             {
+                var isConditionValid = false;
                 foreach ((string key, EventData value) in EventDatas)
                 {
                     ConditionalEffect[] conditionalEffects = value.Dependencies;
                     for (int i = 0; i < conditionalEffects.Length; i++)
                     {
-                        var isValid = conditionalEffects[i].Conditions.ComputeAllCondition(value.Npcs[0]);
-                        if (!isValid) break;
+                        isConditionValid = conditionalEffects[i].Conditions.ComputeAllCondition(value.Npcs[0]);
+                        if (!isConditionValid) 
+                            break;
                     }
-                    validEventDatas.Add(value); 
+                    if (!isConditionValid)
+                        continue;
+                    
+                    validEventDatas.Add(value);
                 }
 
                 if (validEventDatas.Count == 0)
