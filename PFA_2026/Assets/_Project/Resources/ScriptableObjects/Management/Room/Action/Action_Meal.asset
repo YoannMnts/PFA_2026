@@ -30,93 +30,184 @@ MonoBehaviour:
   - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
     <Effects>k__BackingField:
-    - <Conditions>k__BackingField: []
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField: []
       <Consequences>k__BackingField:
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462025
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2120458347037589598
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 1
+        <Text>k__BackingField: 
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2120458347037589599
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
-        <Text>k__BackingField: "Jennie se d\xE9tend durant le repas"
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462026
+        <Text>k__BackingField: 
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: 2120458347037589600
+          <Stat>k__BackingField:
+            rid: 2120458347037589601
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
-        <Amount>k__BackingField: 0
-        <Text>k__BackingField: Jennie est heureuse partager ce moment
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462027
+        <Amount>k__BackingField: 2
+        <Text>k__BackingField: 
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2120458347037589602
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
-        <Amount>k__BackingField: 0
-        <Text>k__BackingField: "Jennie se sent plus int\xE9gr\xE9e"
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462031
+        <Amount>k__BackingField: 1
+        <Text>k__BackingField: 
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2120458347037589604
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
-        <Amount>k__BackingField: 0
-        <Text>k__BackingField: "Jennie se rapproche de tout les membres de la tabl\xE9e"
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462033
+        <Amount>k__BackingField: 1
+        <Text>k__BackingField: 
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField:
+      - <LeftSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2120458347037589606
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+        <ComparisonOperator>k__BackingField: 1
+        <RightSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2120458347037589607
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+      <Consequences>k__BackingField:
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2120458347037589608
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
-        <Amount>k__BackingField: 0
-        <Text>k__BackingField: "Jennie appr\xE9cie que Marco ait pr\xE9par\xE9 le
-          repas"
+        <Amount>k__BackingField: 1
+        <Text>k__BackingField: 
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: 2120458347037589609
+          <Stat>k__BackingField:
+            rid: 2120458347037589610
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 1
+        <Text>k__BackingField: 
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Effects>k__BackingField:
-    - <Conditions>k__BackingField: []
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField: []
       <Consequences>k__BackingField:
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462035
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "T\xE9a est heureuse de vivre ce moment"
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462036
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "T\xE9a se sent plus int\xE9gr\xE9e"
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462037
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "T\xE9a se sent plus en confiance parmi ses camarades"
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462038
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "T\xE9a appr\xE9cie le repas pr\xE9par\xE9 par Marco"
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462040
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "T\xE9a appr\xE9cie ses camarades"
@@ -125,51 +216,79 @@ MonoBehaviour:
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
     <Effects>k__BackingField:
-    - <Conditions>k__BackingField: []
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField: []
       <Consequences>k__BackingField:
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462043
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Marco est str\xE9ss\xE9 de devoir pr\xE9parer le
           repas"
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462044
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 0
         <Text>k__BackingField: Marco se blesse en cuisine
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462049
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: Marco est heureux de voir ses amis manger
-    - <Conditions>k__BackingField:
-      - <IsLeftCurrentNpc>k__BackingField: 1
-        <LeftSubject>k__BackingField:
-          rid: -2
-        <Left>k__BackingField:
-          rid: 2120458159525462045
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField:
+      - <LeftSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ComparisonOperator>k__BackingField: 2
-        <IsRightCurrentNpc>k__BackingField: 1
-        <RightSubject>k__BackingField:
-          rid: -2
-        <Right>k__BackingField:
-          rid: 2120458159525462046
+        <RightSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
       <Consequences>k__BackingField:
-      - <IsCurrentNpc>k__BackingField: 0
-        <Subject>k__BackingField:
-          rid: 2120458159525462047
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462048
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Marco rate ses pr\xE9parations \xE0 cause de son
@@ -179,37 +298,56 @@ MonoBehaviour:
   - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <Effects>k__BackingField:
-    - <Conditions>k__BackingField: []
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField: []
       <Consequences>k__BackingField:
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462050
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: Camil est heureux de manger
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462051
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Camil se sent int\xE9gr\xE9 parmi les autres"
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462052
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Camil appr\xE9cie les croquette que lui donne Marco"
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462054
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Camil appr\xE9cie les autres"
@@ -218,91 +356,142 @@ MonoBehaviour:
   - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <Effects>k__BackingField:
-    - <Conditions>k__BackingField: []
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField: []
       <Consequences>k__BackingField:
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462056
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Herlock se sent int\xE9gr\xE9 dans le groupe"
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462057
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Herlock appr\xE9cie la cuisine de Marco"
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462070
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Herlock appr\xE9cie chaque membre du groupe"
-    - <Conditions>k__BackingField:
-      - <IsLeftCurrentNpc>k__BackingField: 1
-        <LeftSubject>k__BackingField:
-          rid: -2
-        <Left>k__BackingField:
-          rid: 2120458159525462061
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField:
+      - <LeftSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ComparisonOperator>k__BackingField: 2
-        <IsRightCurrentNpc>k__BackingField: 1
-        <RightSubject>k__BackingField:
-          rid: -2
-        <Right>k__BackingField:
-          rid: 2120458159525462062
-      - <IsLeftCurrentNpc>k__BackingField: 1
-        <LeftSubject>k__BackingField:
-          rid: -2
-        <Left>k__BackingField:
-          rid: 2120458159525462063
+        <RightSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+      - <LeftSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ComparisonOperator>k__BackingField: 2
-        <IsRightCurrentNpc>k__BackingField: 1
-        <RightSubject>k__BackingField:
-          rid: -2
-        <Right>k__BackingField:
-          rid: 2120458159525462064
+        <RightSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
       <Consequences>k__BackingField:
-      - <IsCurrentNpc>k__BackingField: 0
-        <Subject>k__BackingField:
-          rid: 2120458159525462065
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462066
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 0
         <Text>k__BackingField: 
-      - <IsCurrentNpc>k__BackingField: 0
-        <Subject>k__BackingField:
-          rid: 2120458159525462068
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462069
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Herlock se permet quelques r\xE9flexions d\xE9plac\xE9es
           sur les filles, et celles \xE7i n'appr\xE9cient pas"
-    - <Conditions>k__BackingField:
-      - <IsLeftCurrentNpc>k__BackingField: 1
-        <LeftSubject>k__BackingField:
-          rid: -2
-        <Left>k__BackingField:
-          rid: 2120458159525462072
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField:
+      - <LeftSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ComparisonOperator>k__BackingField: 1
-        <IsRightCurrentNpc>k__BackingField: 1
-        <RightSubject>k__BackingField:
-          rid: -2
-        <Right>k__BackingField:
-          rid: 2120458159525462073
+        <RightSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
       <Consequences>k__BackingField:
-      - <IsCurrentNpc>k__BackingField: 0
-        <Subject>k__BackingField:
-          rid: 2120458159525462074
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462075
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Herlock raconte au groupe des anecdotes de son pass\xE9"
@@ -311,21 +500,32 @@ MonoBehaviour:
   - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
     <Effects>k__BackingField:
-    - <Conditions>k__BackingField: []
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField: []
       <Consequences>k__BackingField:
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462077
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: Ynna est heureuse de partager un repas
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462078
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Ynna profite de ce moment pour se d\xE9tendre"
@@ -334,142 +534,219 @@ MonoBehaviour:
   - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
     <Effects>k__BackingField:
-    - <Conditions>k__BackingField: []
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField: []
       <Consequences>k__BackingField:
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462079
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: Liski est ravi d'avoir un vrai repas de pirates
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462080
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Liski se sent plus int\xE9gr\xE9 \xE0 l'\xE9quipage"
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462081
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Liski appr\xE9cie le repas pr\xE9par\xE9 par Marco"
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462083
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: Liski se rapproche de toutes les personnes autour
           de la table
-    - <Conditions>k__BackingField:
-      - <IsLeftCurrentNpc>k__BackingField: 1
-        <LeftSubject>k__BackingField:
-          rid: -2
-        <Left>k__BackingField:
-          rid: 2120458159525462086
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField:
+      - <LeftSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ComparisonOperator>k__BackingField: 2
-        <IsRightCurrentNpc>k__BackingField: 1
-        <RightSubject>k__BackingField:
-          rid: -2
-        <Right>k__BackingField:
-          rid: 2120458159525462088
+        <RightSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
       <Consequences>k__BackingField:
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462089
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Liski s'inqui\xE8te de prendre du poids, ce qui affecte
           sa confiance en lui"
-    - <Conditions>k__BackingField:
-      - <IsLeftCurrentNpc>k__BackingField: 0
-        <LeftSubject>k__BackingField:
-          rid: -2
-        <Left>k__BackingField:
-          rid: 2120458159525462101
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField:
+      - <LeftSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ComparisonOperator>k__BackingField: 0
-        <IsRightCurrentNpc>k__BackingField: 0
-        <RightSubject>k__BackingField:
-          rid: -2
-        <Right>k__BackingField:
-          rid: -2
+        <RightSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
       <Consequences>k__BackingField: []
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
     <Effects>k__BackingField:
-    - <Conditions>k__BackingField: []
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField: []
       <Consequences>k__BackingField:
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462103
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: Pam est heureuse de ce repas
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: -2
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Pam profites de ce moment pour se d\xE9tendre"
-      - <IsCurrentNpc>k__BackingField: 0
-        <Subject>k__BackingField:
-          rid: 2120458159525462092
-        <IntTarget>k__BackingField:
-          rid: -2
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Pam conseille Marco pour un repas \xE9quilibr\xE9,
           ce qui fait du bien \xE0 toute la tabl\xE9e"
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462094
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Pam appr\xE9cie les efforts de Marco"
-      - <IsCurrentNpc>k__BackingField: 0
-        <Subject>k__BackingField:
-          rid: 2120458159525462098
-        <IntTarget>k__BackingField:
-          rid: 2120458159525462099
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: 
-    - <Conditions>k__BackingField:
-      - <IsLeftCurrentNpc>k__BackingField: 1
-        <LeftSubject>k__BackingField:
-          rid: -2
-        <Left>k__BackingField:
-          rid: -2
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField:
+      - <LeftSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ComparisonOperator>k__BackingField: 1
-        <IsRightCurrentNpc>k__BackingField: 1
-        <RightSubject>k__BackingField:
-          rid: -2
-        <Right>k__BackingField:
-          rid: 2120458159525462102
+        <RightSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
       <Consequences>k__BackingField:
-      - <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <IntTarget>k__BackingField:
-          rid: -2
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: -2
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 0
         <Text>k__BackingField: "Pam participe aux discussions g\xE9n\xE9rales"
@@ -481,223 +758,70 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 2120458159525462025
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+    - rid: 2120458347037589598
+      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <Amount>k__BackingField: 1
-        <MentalState>k__BackingField: 3
-    - rid: 2120458159525462026
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+        <Stat>k__BackingField: {fileID: 11400000, guid: efa87449a5f31f3428fd0d3f9c939891, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2120458347037589599
+      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <Amount>k__BackingField: 1
-        <MentalState>k__BackingField: 0
-    - rid: 2120458159525462027
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+        <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2120458347037589600
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <Amount>k__BackingField: 2
-        <MentalState>k__BackingField: 2
-    - rid: 2120458159525462031
-      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data: 
-    - rid: 2120458159525462033
-      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data: 
-    - rid: 2120458159525462035
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    - rid: 2120458347037589601
+      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <Amount>k__BackingField: 2
-        <MentalState>k__BackingField: 0
-    - rid: 2120458159525462036
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 2
-        <MentalState>k__BackingField: 2
-    - rid: 2120458159525462037
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 1
-        <MentalState>k__BackingField: 1
-    - rid: 2120458159525462038
-      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data: 
-    - rid: 2120458159525462040
-      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data: 
-    - rid: 2120458159525462043
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 2
-        <MentalState>k__BackingField: 3
-    - rid: 2120458159525462044
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 2
-        <MentalState>k__BackingField: 4
-    - rid: 2120458159525462045
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 10
-        <MentalState>k__BackingField: 4
-    - rid: 2120458159525462046
-      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 10
-    - rid: 2120458159525462047
-      type: {class: CategoryIndex, ns: Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys, asm: Naussilus.Core}
-      data:
-        <Index>k__BackingField: 2
-    - rid: 2120458159525462048
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 1
-        <MentalState>k__BackingField: 4
-    - rid: 2120458159525462049
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 1
-        <MentalState>k__BackingField: 0
-    - rid: 2120458159525462050
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 1
-        <MentalState>k__BackingField: 0
-    - rid: 2120458159525462051
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 2
-        <MentalState>k__BackingField: 2
-    - rid: 2120458159525462052
-      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data: 
-    - rid: 2120458159525462054
-      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data: 
-    - rid: 2120458159525462056
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 3
-        <MentalState>k__BackingField: 2
-    - rid: 2120458159525462057
-      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data: 
-    - rid: 2120458159525462061
-      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+        <Stat>k__BackingField: {fileID: 11400000, guid: da645db61372a354fb4e466633a3a304, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2120458347037589602
+      type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 0
-        <Behavior>k__BackingField: 4
-    - rid: 2120458159525462062
-      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
+        <Npc>k__BackingField:
+          rid: 2120458347037589603
+    - rid: 2120458347037589603
+      type: {class: CategoryIndex, ns: Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys, asm: Naussilus.Core}
       data:
-        <Amount>k__BackingField: 11
-    - rid: 2120458159525462063
-      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+        <Index>k__BackingField: 2
+    - rid: 2120458347037589604
+      type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 0
-        <Behavior>k__BackingField: 1
-    - rid: 2120458159525462064
-      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 13
-    - rid: 2120458159525462065
-      type: {class: Gender, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <EGender>k__BackingField: 1
-    - rid: 2120458159525462066
-      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data: 
-    - rid: 2120458159525462068
-      type: {class: Gender, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <EGender>k__BackingField: 1
-    - rid: 2120458159525462069
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 1
-        <MentalState>k__BackingField: 1
-    - rid: 2120458159525462070
-      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data: 
-    - rid: 2120458159525462072
-      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 15
-        <Behavior>k__BackingField: 3
-    - rid: 2120458159525462073
-      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 15
-    - rid: 2120458159525462074
-      type: {class: CategoryIndex, ns: Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys, asm: Naussilus.Core}
-      data:
-        <Index>k__BackingField: 2
-    - rid: 2120458159525462075
-      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data: 
-    - rid: 2120458159525462077
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 1
-        <MentalState>k__BackingField: 0
-    - rid: 2120458159525462078
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 2
-        <MentalState>k__BackingField: 3
-    - rid: 2120458159525462079
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 2
-        <MentalState>k__BackingField: 0
-    - rid: 2120458159525462080
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 2
-        <MentalState>k__BackingField: 2
-    - rid: 2120458159525462081
-      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data: 
-    - rid: 2120458159525462083
-      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data: 
-    - rid: 2120458159525462086
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 15
-        <MentalState>k__BackingField: 1
-    - rid: 2120458159525462088
-      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 15
-    - rid: 2120458159525462089
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 1
-        <MentalState>k__BackingField: 1
-    - rid: 2120458159525462092
-      type: {class: CategoryIndex, ns: Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys, asm: Naussilus.Core}
-      data:
-        <Index>k__BackingField: 2
-    - rid: 2120458159525462094
-      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data: 
-    - rid: 2120458159525462098
+        <Npc>k__BackingField:
+          rid: 2120458347037589605
+    - rid: 2120458347037589605
       type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
-    - rid: 2120458159525462099
-      type: {class: NpcRelationship, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data: 
-    - rid: 2120458159525462101
-      type: {class: NpcBehavior, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+    - rid: 2120458347037589606
+      type: {class: BehaviorValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <Amount>k__BackingField: 15
-        <Behavior>k__BackingField: 3
-    - rid: 2120458159525462102
+        <Stat>k__BackingField: {fileID: 11400000, guid: f2b55b5c9291b9b448a304246130c6d4, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2120458347037589607
       type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
       data:
-        <Amount>k__BackingField: 15
-    - rid: 2120458159525462103
-      type: {class: NpcMentalState, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+        <Amount>k__BackingField: 16
+    - rid: 2120458347037589608
+      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <Amount>k__BackingField: 1
-        <MentalState>k__BackingField: 2
+        <Stat>k__BackingField: {fileID: 11400000, guid: 0873e3af56f61554284c45b21149e18e, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2120458347037589609
+      type: {class: CategoryIndex, ns: Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys, asm: Naussilus.Core}
+      data:
+        <Index>k__BackingField: 2
+    - rid: 2120458347037589610
+      type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Npc>k__BackingField:
+          rid: 2120458347037589611
+    - rid: 2120458347037589611
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
