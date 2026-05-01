@@ -1,6 +1,6 @@
 ﻿using System;
 using Helteix.Tools.UI;
-using Naussilus.Core.Managements.RoomDatas;
+using Naussilus.Core.Managements;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

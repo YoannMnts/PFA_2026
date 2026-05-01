@@ -1,5 +1,5 @@
 ﻿using Naussilus.Core.Consequences;
-using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
+using Naussilus.Core.Managements.ActionDatas;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
 using Naussilus.Core.Operators;
@@ -9,7 +9,7 @@ namespace Naussilus.Core.Managers
 {
     public static class ConsequenceManager
     {
-        public static void ComputeAllConsequence(this Consequence[] currentConsequence, NpcData currentNpcData)
+        public static void ComputeAllConsequence(this ConsequenceData[] currentConsequence, NpcData currentNpcData)
         {
             for (var i = 0; i < currentConsequence.Length; i++)
             {
@@ -26,7 +26,7 @@ namespace Naussilus.Core.Managers
             }
         }
         
-        public static void ComputeAllConsequence(this Consequence[] currentConsequence, NpcData currentNpcData ,Category[] currentCategories)
+        public static void ComputeAllConsequence(this ConsequenceData[] currentConsequence, NpcData currentNpcData ,CategoryData[] currentCategories)
         {
             for (var i = 0; i < currentConsequence.Length; i++)
             {
@@ -43,10 +43,10 @@ namespace Naussilus.Core.Managers
             }
         }
 
-        private static void ComputeConsequence(this Consequence consequence, NpcData currentNpcData)
+        private static void ComputeConsequence(this ConsequenceData consequence, NpcData currentNpcData)
         {
             NpcManager.TryGetNpc(currentNpcData.GUID, out Npc currentNpc);
-            IConsequenceEffectValue stat = consequence.ConsequenceSide.Stat;
+            IConsequenceEffectValueData stat = consequence.ConsequenceSide.Stat;
             var types = currentNpc.GetValue(stat);
             int rightSide = consequence.Amount;
 
@@ -63,7 +63,7 @@ namespace Naussilus.Core.Managers
             }
         }
 
-        private static void ModifyValue(this Consequence consequence, int leftSide, int rightSide, out int newValue)
+        private static void ModifyValue(this ConsequenceData consequence, int leftSide, int rightSide, out int newValue)
         {
             int newAmount = consequence.ArithmeticOperator switch
             {

@@ -1,12 +1,8 @@
 ﻿using System;
-using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
-using Naussilus.Core.Managements.RoomDatas.ActionDatas.Effects.ActionsEffects;
-using UnityEngine;
-#if UNITY_EDITOR
 using UnityEditor;
-#endif
+using UnityEngine;
 
-namespace Naussilus.Core.Managements.RoomDatas.ActionDatas
+namespace Naussilus.Core.Managements.ActionDatas
 {
     [CreateAssetMenu(fileName = "ActionData", menuName = "Management/ActionData", order = 0)]
     public class ActionData : ScriptableObject
@@ -21,10 +17,10 @@ namespace Naussilus.Core.Managements.RoomDatas.ActionDatas
         public int Countdown { get; private set; }
         
         [field: SerializeField]
-        public Category[] Categories { get; private set; }
+        public CategoryData[] Categories { get; private set; }
         
         [field: SerializeField]
-        public ActionEffect[] ActionEffects { get; private set; }
+        public ActionEffectData[] ActionEffects { get; private set; }
         
         [field: SerializeField, HideInInspector]
         public string GUID { get; private set; }

@@ -1,11 +1,11 @@
 ﻿using Helteix.Tools.UI;
-using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
+using Naussilus.Core.Managements.ActionDatas;
 using TMPro;
 using UnityEngine;
 
 namespace _Project.Scripts.Rooms
 {
-    public class CategoryUI : UIItem<Category>
+    public class CategoryUI : UIItem<CategoryData>
     {
         private SelectNpcsForActionUI selectNpcsForActionUI;
         
@@ -18,7 +18,7 @@ namespace _Project.Scripts.Rooms
             selectNpcsForActionUI = GetComponentInParent<SelectNpcsForActionUI>();
         }
 
-        protected override void SyncUI(Category current)
+        protected override void SyncUI(CategoryData current)
         {
             categoryName.text = current.Name;
             for (int i = 0; i < current.Quantity; i++)

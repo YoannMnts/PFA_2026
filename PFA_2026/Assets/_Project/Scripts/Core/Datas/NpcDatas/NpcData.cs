@@ -13,10 +13,10 @@ namespace Naussilus.Core.NpcDatas
         public string Name { get; private set; }
 
         [field: SerializeField] 
-        public BehaviorValue[] Behavior { get; private set; }
+        public BehaviorValueData[] Behavior { get; private set; }
 
         [field: SerializeField] 
-        public MentalStateValue[] MentalState { get; private set; }
+        public MentalStateValueData[] MentalState { get; private set; }
 
         [field: SerializeField] 
         public NpcRelationshipData[] Relationships { get; private set; }

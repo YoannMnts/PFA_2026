@@ -31,7 +31,7 @@ namespace Naussilus.Core.Managers
                 var isConditionValid = false;
                 foreach ((string key, EventData value) in EventDatas)
                 {
-                    ConditionalEffect[] conditionalEffects = value.Dependencies;
+                    ConditionalEffectData[] conditionalEffects = value.Dependencies;
                     for (int i = 0; i < conditionalEffects.Length; i++)
                     {
                         isConditionValid = conditionalEffects[i].ComputeOnlyConditions(value.Npcs[0]);

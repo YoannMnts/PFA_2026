@@ -1,4 +1,5 @@
 ﻿using Helteix.Tools.UI;
+using Naussilus.Core;
 using Naussilus.Core.NpcDatas;
 using TMPro;
 using UnityEngine;

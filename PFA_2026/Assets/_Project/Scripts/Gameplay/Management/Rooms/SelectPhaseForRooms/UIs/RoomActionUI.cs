@@ -1,5 +1,5 @@
 ﻿using Helteix.Tools.UI;
-using Naussilus.Core.Managements.RoomDatas.ActionDatas;
+using Naussilus.Core.Managements.ActionDatas;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;

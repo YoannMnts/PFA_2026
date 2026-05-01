@@ -1,6 +1,6 @@
 ﻿using Naussilus.Core.Conditions;
 using Naussilus.Core.Consequences;
-using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
+using Naussilus.Core.Managements.ActionDatas;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
 
@@ -9,14 +9,14 @@ namespace Naussilus.Core.Managers
     public static class ConditionalEffectManager
     {
         private static NpcData[] CurrentNpcsData { get; set; }
-        public static void ComputeConditionalEffect(this ConditionalEffect conditionalEffect, NpcData currentNpcData, Category[] currentCategories)
+        public static void ComputeConditionalEffect(this ConditionalEffectData conditionalEffect, NpcData currentNpcData, CategoryData[] currentCategories)
         {
             CurrentNpcsData = conditionalEffect.IsEnumeration
                 ? NpcManager.GetSelectedNpcs(conditionalEffect.CurrentNpcTarget, currentNpcData)
                 : new[] { currentNpcData };
             
-            Condition[] currentConditions = conditionalEffect.Conditions;
-            Consequence[] currentConsequences = conditionalEffect.Consequences;
+            ConditionData[] currentConditions = conditionalEffect.Conditions;
+            ConsequenceData[] currentConsequences = conditionalEffect.Consequences;
             
             for (int i = 0; i < CurrentNpcsData.Length; i++)
             {
@@ -25,14 +25,14 @@ namespace Naussilus.Core.Managers
                     currentConsequences.ComputeAllConsequence(validNpcs[i], currentCategories);
             }
         }
-        public static void ComputeConditionalEffect(this ConditionalEffect conditionalEffect, NpcData currentNpcData)
+        public static void ComputeConditionalEffect(this ConditionalEffectData conditionalEffect, NpcData currentNpcData)
         {
             CurrentNpcsData = conditionalEffect.IsEnumeration
                 ? NpcManager.GetSelectedNpcs(conditionalEffect.CurrentNpcTarget, currentNpcData)
                 : new[] { currentNpcData };
             
-            Condition[] currentConditions = conditionalEffect.Conditions;
-            Consequence[] currentConsequences = conditionalEffect.Consequences;
+            ConditionData[] currentConditions = conditionalEffect.Conditions;
+            ConsequenceData[] currentConsequences = conditionalEffect.Consequences;
             
             for (int i = 0; i < CurrentNpcsData.Length; i++)
             {
@@ -43,14 +43,14 @@ namespace Naussilus.Core.Managers
         }
         
         
-        public static bool ComputeOnlyConditions(this ConditionalEffect conditionalEffect, NpcData currentNpcData)
+        public static bool ComputeOnlyConditions(this ConditionalEffectData conditionalEffect, NpcData currentNpcData)
         {
             CurrentNpcsData = conditionalEffect.IsEnumeration
                 ? NpcManager.GetSelectedNpcs(conditionalEffect.CurrentNpcTarget, currentNpcData)
                 : new[] { currentNpcData };
             
-            Condition[] currentConditions = conditionalEffect.Conditions;
-            Consequence[] currentConsequences = conditionalEffect.Consequences;
+            ConditionData[] currentConditions = conditionalEffect.Conditions;
+            ConsequenceData[] currentConsequences = conditionalEffect.Consequences;
 
             for (int i = 0; i < CurrentNpcsData.Length; i++)
             {

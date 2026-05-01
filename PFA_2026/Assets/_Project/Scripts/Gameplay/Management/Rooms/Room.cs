@@ -1,5 +1,5 @@
 ﻿using Helteix.Tools.Phases;
-using Naussilus.Core.Managements.RoomDatas;
+using Naussilus.Core.Managements;
 using UnityEngine;
 using UnityEngine.EventSystems;
 

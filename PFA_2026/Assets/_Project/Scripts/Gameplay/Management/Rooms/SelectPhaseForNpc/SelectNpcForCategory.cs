@@ -1,6 +1,6 @@
 ﻿using System.Threading;
 using Helteix.Tools.Phases;
-using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
+using Naussilus.Core.Managements.ActionDatas;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
 using UnityEngine;
@@ -10,12 +10,12 @@ namespace _Project.Scripts.Rooms
 {
     public class SelectNpcForCategory : PhaseCompletionSource<NpcData>
     {
-        public Category CurrentCategory { get; private set; }
+        public CategoryData CurrentCategory { get; private set; }
         public NpcData[] ObligateNpc => CurrentCategory.ObligateNpc;
         public NpcData[] ProhibitedNpc => CurrentCategory.ProhibitedNpc;
         
         public NpcData[] Npcs { get; private set; }
-        public SelectNpcForCategory(Category category)
+        public SelectNpcForCategory(CategoryData category)
         {
             CurrentCategory = category;
         }
