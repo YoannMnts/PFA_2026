@@ -1,6 +1,6 @@
 ﻿using System.Threading;
 using Helteix.Tools.Phases;
-using Naussilus.Core.Managements.RoomDatas;
+using Naussilus.Core.Managements;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.Managers.Rooms;
 using UnityEngine;

@@ -1,5 +1,5 @@
 ﻿using Helteix.Tools.UI;
-using Naussilus.Core.Managements.RoomDatas;
+using Naussilus.Core.Managements;
 
 namespace _Project.Scripts
 {

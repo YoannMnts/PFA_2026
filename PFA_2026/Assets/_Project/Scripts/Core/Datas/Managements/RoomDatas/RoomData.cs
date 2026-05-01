@@ -1,11 +1,9 @@
 ﻿using System;
-using Naussilus.Core.Managements.RoomDatas.ActionDatas;
-using UnityEngine;
-#if UNITY_EDITOR
+using Naussilus.Core.Managements.ActionDatas;
 using UnityEditor;
-#endif
+using UnityEngine;
 
-namespace Naussilus.Core.Managements.RoomDatas
+namespace Naussilus.Core.Managements
 {
     [CreateAssetMenu(fileName = "RoomData", menuName = "Management/RoomData", order = 0)]
     public class RoomData : ScriptableObject

@@ -1,7 +1,6 @@
 ﻿using System.Threading;
 using Helteix.Tools.Phases;
-using Naussilus.Core.Managements.RoomDatas.ActionDatas;
-using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
+using Naussilus.Core.Managements.ActionDatas;
 using UnityEngine;
 
 namespace _Project.Scripts.Rooms
@@ -10,7 +9,7 @@ namespace _Project.Scripts.Rooms
     {
         public ActionData CurrentAction { get; private set; }
         
-        public Category[] Categories { get; private set; }
+        public CategoryData[] Categories { get; private set; }
         
         public SelectNpcsForAction(ActionData action)
         {

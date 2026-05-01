@@ -24,7 +24,7 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
         {
             await Awaitable.WaitForSecondsAsync(3f, token);
             
-            Answer[] answers = CurrentDialogue.Answers;
+            AnswerData[] answers = CurrentDialogue.Answers;
             Decision decision = new Decision(currentNpcData ,answers);
             await decision.Run();
             

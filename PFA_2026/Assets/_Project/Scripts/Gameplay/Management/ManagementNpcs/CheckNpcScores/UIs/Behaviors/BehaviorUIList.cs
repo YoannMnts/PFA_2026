@@ -1,5 +1,5 @@
 ﻿using Helteix.Tools.UI;
-using Naussilus.Core.NpcDatas;
+using Naussilus.Core;
 
 namespace _Project.Scripts
 {

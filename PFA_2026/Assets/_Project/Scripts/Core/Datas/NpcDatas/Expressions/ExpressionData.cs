@@ -6,6 +6,6 @@ namespace Naussilus.Core.NpcDatas
     public class ExpressionData : ScriptableObject
     {
         [field: SerializeField]
-        public Expression[] Expressions { get; private set; }
+        public ExpressionValueData[] Expressions { get; private set; }
     }
 }

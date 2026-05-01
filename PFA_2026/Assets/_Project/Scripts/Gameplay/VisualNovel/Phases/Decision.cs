@@ -14,8 +14,8 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
     {
         private readonly NpcData currentNpcData;
         
-        public Answer[] CurrentAnswers { get; private set; }
-        public Decision(NpcData npcData ,Answer[] answers)
+        public AnswerData[] CurrentAnswers { get; private set; }
+        public Decision(NpcData npcData ,AnswerData[] answers)
         {
             CurrentAnswers = answers;
             currentNpcData = npcData;
@@ -39,7 +39,7 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
                 
                 case FinalAnswerData finalAnswerData:
                     NpcData data = currentNpcData;
-                    ConditionalEffect[] effects = finalAnswerData.Effects;
+                    ConditionalEffectData[] effects = finalAnswerData.Effects;
                     foreach (var effect in effects)
                         effect.ComputeConditionalEffect(data);
                     break;

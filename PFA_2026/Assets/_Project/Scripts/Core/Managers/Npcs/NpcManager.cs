@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using JetBrains.Annotations;
 using Naussilus.Core.Conditions;
-using Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys;
+using Naussilus.Core.Managements.ActionDatas;
 using Naussilus.Core.NpcDatas;
 using UnityEngine;
 using UnityEngine.Pool;
@@ -74,7 +74,7 @@ namespace Naussilus.Core.Managers.Npcs
             allNpcs = Entries;
         }
 
-        public static NpcData[] GetSelectedNpcs(INpcSelector npcSelector , NpcData currentNpc ,Category[] currentCategories)
+        public static NpcData[] GetSelectedNpcs(INpcSelectorData npcSelector , NpcData currentNpc ,CategoryData[] currentCategories)
         {
             using (ListPool<NpcData>.Get(out var list))
             {
@@ -84,7 +84,7 @@ namespace Naussilus.Core.Managers.Npcs
                     case NpcValue npcValue:
                         return new[] { npcValue.NpcData };
                         
-                    case AllNpc :
+                    case AllNpcData :
                         var allNpcs = GetAllNpcs();
                         for (int j = 0; j < allNpcs.Length; j++)
                         {
@@ -96,7 +96,7 @@ namespace Naussilus.Core.Managers.Npcs
                         result = list.ToArray();
                         return result;
                     
-                    case Gender gender:
+                    case GenderData gender:
                         var npcDatas = GetAllNpcs();
                         for (int j = 0; j < npcDatas.Length; j++)
                         {
@@ -108,9 +108,9 @@ namespace Naussilus.Core.Managers.Npcs
                         result = list.ToArray();
                         return result;
                     
-                    case CategoryIndex categoryIndex:
+                    case CategoryIndexData categoryIndex:
                         int ind = Mathf.Max(0, categoryIndex.Index - 1);
-                        Category targetCategory = currentCategories[ind]; 
+                        CategoryData targetCategory = currentCategories[ind]; 
                         for (int j = 0; j < targetCategory.CurrentNpcs.Length; j++)
                         {
                             NpcData categoryNpc = targetCategory.CurrentNpcs[j];
@@ -122,7 +122,7 @@ namespace Naussilus.Core.Managers.Npcs
                 return result;
             }
         }
-        public static NpcData[] GetSelectedNpcs(INpcSelector npcSelector , NpcData currentNpc)
+        public static NpcData[] GetSelectedNpcs(INpcSelectorData npcSelector , NpcData currentNpc)
         {
             using (ListPool<NpcData>.Get(out var list))
             {
@@ -132,7 +132,7 @@ namespace Naussilus.Core.Managers.Npcs
                     case NpcValue npcValue:
                         return new[] { npcValue.NpcData };
 
-                    case AllNpc:
+                    case AllNpcData:
                         var allNpcs = GetAllNpcs();
                         for (int j = 0; j < allNpcs.Length; j++)
                         {
@@ -145,7 +145,7 @@ namespace Naussilus.Core.Managers.Npcs
                         result = list.ToArray();
                         return result;
 
-                    case Gender gender:
+                    case GenderData gender:
                         var npcDatas = GetAllNpcs();
                         for (int j = 0; j < npcDatas.Length; j++)
                         {
@@ -162,7 +162,7 @@ namespace Naussilus.Core.Managers.Npcs
             }
         }
 
-        public static void GetSelectedNpcs(INpcSelector npcSelector, Npc currentNpc, out Npc[] npcs)
+        public static void GetSelectedNpcs(INpcSelectorData npcSelector, Npc currentNpc, out Npc[] npcs)
         {
             using (ListPool<Npc>.Get(out var list))
             {
@@ -174,7 +174,7 @@ namespace Naussilus.Core.Managers.Npcs
                         npcs = new[] { npc };
                         break;
 
-                    case AllNpc:
+                    case AllNpcData:
                         var allNpcs = GetAllNpcs();
                         for (int j = 0; j < allNpcs.Length; j++)
                         {
@@ -189,7 +189,7 @@ namespace Naussilus.Core.Managers.Npcs
                         npcs = result;
                         break;
 
-                    case Gender gender:
+                    case GenderData gender:
                         var npcDatas = GetAllNpcs();
                         for (int j = 0; j < npcDatas.Length; j++)
                         {
@@ -208,14 +208,14 @@ namespace Naussilus.Core.Managers.Npcs
             }
         }
         
-        public static INpcStat[] GetValue<T>(this Npc npc, T side) where T : IConditionalEffectValue
+        public static INpcStat[] GetValue<T>(this Npc npc, T side) where T : IConditionalEffectValueData
         {
             switch (side)
             {
-                case IntValue intValue:
+                case IntValueData intValue:
                     return new INpcStat[]{intValue};
                 
-                case BehaviorValue value:
+                case BehaviorValueData value:
                     for (int i = 0; i < npc.Behaviors.Length; i++)
                     {
                         if (npc.Behaviors[i].Data != value.Stat) 
@@ -226,7 +226,7 @@ namespace Naussilus.Core.Managers.Npcs
                     }
                     break;
                 
-                case MentalStateValue value:
+                case MentalStateValueData value:
                     for (int i = 0; i < npc.MentalStates.Length; i++)
                     {
                         if (npc.MentalStates[i].Data != value.Stat) 
@@ -258,15 +258,15 @@ namespace Naussilus.Core.Managers.Npcs
             }
             return null;
         }
-        public static INpcStat[] GetValue<T>(this Npc npc, T side, out int amount) where T : IConditionalEffectValue
+        public static INpcStat[] GetValue<T>(this Npc npc, T side, out int amount) where T : IConditionalEffectValueData
         {
             switch (side)
             {
-                case IntValue intValue:
+                case IntValueData intValue:
                     amount = intValue.Amount;
                     return new INpcStat[]{intValue};
                 
-                case BehaviorValue value:
+                case BehaviorValueData value:
                     for (int i = 0; i < npc.Behaviors.Length; i++)
                     {
                         if (npc.Behaviors[i].Data != value.Stat) 
@@ -278,7 +278,7 @@ namespace Naussilus.Core.Managers.Npcs
                     }
                     break;
                 
-                case MentalStateValue value:
+                case MentalStateValueData value:
                     for (int i = 0; i < npc.MentalStates.Length; i++)
                     {
                         if (npc.MentalStates[i].Data != value.Stat) 

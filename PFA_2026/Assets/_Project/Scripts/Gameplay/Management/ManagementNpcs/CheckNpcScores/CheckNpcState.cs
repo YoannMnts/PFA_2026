@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using Helteix.Tools.Phases;
+using Naussilus.Core;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
 using UnityEngine;

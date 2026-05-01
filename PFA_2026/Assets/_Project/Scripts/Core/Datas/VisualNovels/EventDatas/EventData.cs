@@ -25,7 +25,7 @@ namespace Naussilus.Core.VisualNovels.EventDatas
         public int DayCheck { get; private set; }
         
         [field : SerializeField]
-        public ConditionalEffect[] Dependencies { get; private set; }
+        public ConditionalEffectData[] Dependencies { get; private set; }
         
         [field : SerializeField]
         public DialogueData FirstDialogue { get; private set; }

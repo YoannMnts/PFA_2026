@@ -12,10 +12,10 @@ namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas
     public class DialogueData : ScriptableObject
     {
         [field : SerializeField]
-        public DialogueLine[] Lines { get; private set; }
+        public DialogueLineData[] Lines { get; private set; }
         
         [field : SerializeField]
-        public Answer[] Answers { get; private set; }
+        public AnswerData[] Answers { get; private set; }
         
         [field: SerializeField, HideInInspector]
         public string GUID { get; private set; }

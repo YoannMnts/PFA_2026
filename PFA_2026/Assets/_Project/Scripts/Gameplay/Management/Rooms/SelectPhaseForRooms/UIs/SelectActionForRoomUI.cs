@@ -1,6 +1,6 @@
 ﻿using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
-using Naussilus.Core.Managements.RoomDatas.ActionDatas;
+using Naussilus.Core.Managements.ActionDatas;
 using Naussilus.Core.Managers;
 using TMPro;
 using UnityEngine;

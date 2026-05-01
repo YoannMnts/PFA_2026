@@ -8,13 +8,13 @@ using UnityEditor;
 namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers
 {
     [CreateAssetMenu(fileName = "FinalAnswerData", menuName = "VisualNovel/Answer/FinalAnswerData", order = 0)]
-    public class FinalAnswerData : Answer
+    public class FinalAnswerData : AnswerData
     {
         [field : SerializeField]
-        public DialogueLine[] NpcText { get; private set; }
+        public DialogueLineData[] NpcText { get; private set; }
         
         [field : SerializeField]
-        public ConditionalEffect[] Effects { get; private set; }
+        public ConditionalEffectData[] Effects { get; private set; }
         
         [field: SerializeField, HideInInspector]
         public string GUID { get; private set; }

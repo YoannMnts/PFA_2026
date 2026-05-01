@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
-using Naussilus.Core.Managements.RoomDatas;
-using Naussilus.Core.Managers.Npcs;
-using Naussilus.Core.NpcDatas;
+using Naussilus.Core.Managements;
 using UnityEngine;
 
 namespace Naussilus.Core.Managers.Rooms

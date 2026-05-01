@@ -2,7 +2,7 @@
 using _Project.Scripts.Rooms;
 using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
-using Naussilus.Core.Managements.RoomDatas;
+using Naussilus.Core.Managements;
 using Naussilus.Core.Managers;
 using UnityEngine;
 
