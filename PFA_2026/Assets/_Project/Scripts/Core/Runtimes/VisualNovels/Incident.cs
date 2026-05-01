@@ -21,10 +21,10 @@ namespace Naussilus.Core
         public Incident(EventData data)
         {
             Name = data.Name;
-            Npcs = data.Npcs.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
+            Npcs = data.Npcs?.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
             Priority = data.Priority;
             DayCheck = data.DayCheck;
-            Dependencies = data.Dependencies.Select(d => new ConditionalEffect(d)).ToArray();
+            Dependencies = data.Dependencies?.Select(d => new ConditionalEffect(d)).ToArray();
             FirstDialogue = new Dialogue(data.FirstDialogue);
         }
     }

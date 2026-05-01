@@ -11,8 +11,8 @@ namespace Naussilus.Core
 
         public FinalAnswer(FinalAnswerData data)
         {
-            NpcText = data.NpcText.Select(t => new DialogueLine(t)).ToArray();
-            Effects = data.Effects.Select(e => new ConditionalEffect(e)).ToArray();
+            NpcText = data.NpcText?.Select(t => new DialogueLine(t)).ToArray();
+            Effects = data.Effects?.Select(e => new ConditionalEffect(e)).ToArray();
         }
     }
 }

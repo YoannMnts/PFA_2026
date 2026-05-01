@@ -20,8 +20,8 @@ namespace Naussilus.Core
         {
             Name = data.Name;
             Quantity = data.Quantity;
-            ProhibitedNpcs = data.ProhibitedNpc.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
-            ObligateNpcs = data.ObligateNpc.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
+            ProhibitedNpcs = data.ProhibitedNpc?.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
+            ObligateNpcs = data.ObligateNpc?.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
             CurrentNpcs = new Npc[]{};
         }
     }

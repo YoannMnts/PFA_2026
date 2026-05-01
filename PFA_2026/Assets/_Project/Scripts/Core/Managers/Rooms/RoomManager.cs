@@ -13,6 +13,7 @@ namespace Naussilus.Core.Managers.Rooms
         static RoomManager()
         {
             RoomDatas = new ();
+            Rooms = new Dictionary<string, Room>();
             var entries = Resources.LoadAll<RoomData>("ScriptableObjects/Management/Room");
             for (int i = 0; i < entries.Length; i++)
             {

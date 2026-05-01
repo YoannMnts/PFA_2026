@@ -13,7 +13,7 @@ namespace Naussilus.Core
         public ExpressionValue(ExpressionValueData data)
         {
             Sprite = data.Sprite;
-            Npc = NpcManager.TryGetNpc(data.Npc.GUID);
+            Npc = NpcManager.TryGetNpc(data.Npc?.GUID);
         }
     }
 }

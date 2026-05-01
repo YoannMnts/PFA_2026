@@ -12,11 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
   m_Name: DialogueDataSample 1
   m_EditorClassIdentifier: Naussilus.Core.Datas.VisualNovels::Naussilus.Core.Datas.VisualNovels.DialogueData
-  <Lines>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 0}
-    <Text>k__BackingField:
-    - 
+  <Lines>k__BackingField: []
   <Answers>k__BackingField:
-  - {fileID: 11400000, guid: ace1fd38439c7f442b280c3d67d910d8, type: 2}
+  - {fileID: 11400000, guid: 9088d665efbdae848b3bbf4799ba9ca5, type: 2}
   <GUID>k__BackingField: f1a473e8-1996-407c-a29d-bf28b06332b0

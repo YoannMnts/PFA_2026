@@ -13,62 +13,9 @@ MonoBehaviour:
   m_Name: FinalAnswerDataSample
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: 
-  <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 0}
-    <Text>k__BackingField: []
-  <Effects>k__BackingField:
-  - <IsEnumeration>k__BackingField: 0
-    <CurrentNpcTarget>k__BackingField:
-      rid: -2
-    <Conditions>k__BackingField:
-    - <LeftSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 0
-        <Subject>k__BackingField:
-          rid: -2
-        <Stat>k__BackingField:
-          rid: 3949848220197978215
-        <UseEnumerationNpc>k__BackingField: 0
-        <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ComparisonOperator>k__BackingField: 0
-      <RightSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <Stat>k__BackingField:
-          rid: 3949848220197978213
-        <UseEnumerationNpc>k__BackingField: 0
-        <UseRelationshipNpcToReturn>k__BackingField: 0
-    <Consequences>k__BackingField:
-    - <IsGameLost>k__BackingField: 0
-      <ConsequenceSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <Stat>k__BackingField:
-          rid: 3949848220197978214
-        <UseEnumerationNpc>k__BackingField: 0
-        <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ArithmeticOperator>k__BackingField: 0
-      <Amount>k__BackingField: 0
-      <Text>k__BackingField: 
+  <NpcText>k__BackingField: []
+  <Effects>k__BackingField: []
   <GUID>k__BackingField: 8e8dbfbd-9d4d-41c1-abc5-bcff6ea17898
   references:
     version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
-    - rid: 3949848220197978213
-      type: {class: IntValueData, ns: Naussilus.Core, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 0
-    - rid: 3949848220197978214
-      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Stat>k__BackingField: {fileID: 0}
-        <Amount>k__BackingField: 0
-    - rid: 3949848220197978215
-      type: {class: BehaviorValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Stat>k__BackingField: {fileID: 0}
-        <Amount>k__BackingField: 0
+    RefIds: []

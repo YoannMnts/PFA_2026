@@ -17,7 +17,7 @@ namespace Naussilus.Core
 
         public Consequence(ConsequenceData data)
         {
-            IsGameLost = false;
+            IsGameLost = data.IsGameLost;
             ConsequenceSide = new ConsequenceSide(data.ConsequenceSide);
             ArithmeticOperator = data.ArithmeticOperator;
             Amount = data.Amount;

@@ -18,8 +18,8 @@ namespace Naussilus.Core
         public ConditionSide(ConditionSideData data)
         {
             IsCurrentNpc = data.IsCurrentNpc;
-            Subject = IsCurrentNpc ? data.Subject.GetNpcSelector() : null;
-            Stat = data.Stat.GetStat();
+            Subject = IsCurrentNpc ? data.Subject?.GetNpcSelector() : null;
+            Stat = data.Stat?.GetStat();
             UseEnumerationNpc = Stat is NpcRelationship && data.UseEnumerationNpc;
             UseRelationshipNpcToReturn = Stat is NpcRelationship && data.UseRelationshipNpcToReturn;
         }
