@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Naussilus.Core.Managements
 {
-    [CreateAssetMenu(fileName = "RoomData", menuName = "Management/RoomData", order = 0)]
+    [CreateAssetMenu(fileName = "RoomData", menuName = "Naussilus/Management/RoomData", order = 0)]
     public class RoomData : ScriptableObject
     {
         [field: SerializeField]

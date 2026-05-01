@@ -6,7 +6,7 @@ using UnityEditor;
 
 namespace Naussilus.Core.NpcDatas
 {
-    [CreateAssetMenu(fileName = "NpcData", menuName = "NpcData", order = 0)]
+    [CreateAssetMenu(fileName = "NpcData", menuName = "Naussilus/NpcData/Npc", order = 0)]
     public class NpcData : ScriptableObject
     {
         [field: SerializeField] 

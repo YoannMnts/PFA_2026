@@ -6,7 +6,7 @@ using UnityEditor;
 
 namespace Naussilus.Core.NpcDatas
 {
-    [CreateAssetMenu(fileName = "MentalState", menuName = "NpcData/MentalState", order = 0)]
+    [CreateAssetMenu(fileName = "MentalState", menuName = "Naussilus/NpcData/Stat/MentalState", order = 0)]
     public class MentalStateData : Stat
     {
         [field: SerializeField]

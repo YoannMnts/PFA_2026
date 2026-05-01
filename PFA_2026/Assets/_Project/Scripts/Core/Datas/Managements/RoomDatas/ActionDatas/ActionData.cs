@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Naussilus.Core.Managements.ActionDatas
 {
-    [CreateAssetMenu(fileName = "ActionData", menuName = "Management/ActionData", order = 0)]
+    [CreateAssetMenu(fileName = "ActionData", menuName = "Naussilus/Management/ActionData", order = 0)]
     public class ActionData : ScriptableObject
     {
         [field: SerializeField]

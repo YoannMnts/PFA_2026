@@ -1,0 +1,12 @@
+OVDF v1.1
+Naussilus.Core.NpcDatas.MentalStateValueData, Naussilus.Core
+
+# $UXRmPf2o8xhnijZHVDHpVe
+Position: $root:6
++ [Sirenix.OdinInspector.HorizontalGroupAttribute]
+
+# <Stat>k__BackingField
+Position: $UXRmPf2o8xhnijZHVDHpVe:0
+
+# <Amount>k__BackingField
+Position: $UXRmPf2o8xhnijZHVDHpVe:1

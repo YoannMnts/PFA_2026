@@ -1,0 +1,19 @@
+OVDF v1.1
+Naussilus.Core.Conditions.ConditionSideData, Naussilus.Core
+
+# <UseEnumerationNpc>k__BackingField
++ [Sirenix.OdinInspector.ShowIfAttribute]
+	Condition = "@Stat is NpcRelationshipData"
+
+# <UseRelationshipNpcToReturn>k__BackingField
++ [Sirenix.OdinInspector.ShowIfAttribute]
+	Condition = "@Stat is NpcRelationshipData"
+
+# <Subject>k__BackingField
++ [Sirenix.OdinInspector.HideIfAttribute]
+	Condition = "IsCurrentNpc"
++ [Sirenix.OdinInspector.InlinePropertyAttribute]
+
+# <Stat>k__BackingField
++ [Sirenix.OdinInspector.InlinePropertyAttribute]
++ [Sirenix.OdinInspector.HideLabelAttribute]

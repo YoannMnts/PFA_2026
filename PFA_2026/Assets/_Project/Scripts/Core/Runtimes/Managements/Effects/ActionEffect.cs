@@ -15,7 +15,7 @@ namespace Naussilus.Core
         
         public Vector3 Position { get; private set; }
         
-        public Sprite ActionSprite { get; private set; }
+        public Expression ActionSprite { get; private set; }
 
         public ActionEffect(ActionEffectData data)
         {
@@ -23,7 +23,7 @@ namespace Naussilus.Core
             NpcData = NpcManager.TryGetNpc(data.NpcData.GUID);
             Effects = data.Effects.Select(e => new ConditionalEffect(e)).ToArray();
             Position = data.Position;
-            ActionSprite = data.ActionSprite;
+            ActionSprite = new Expression(data.ActionSprite);
         }
     }
 }

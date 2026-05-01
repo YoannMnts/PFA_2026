@@ -9,7 +9,7 @@ using UnityEditor;
 
 namespace Naussilus.Core.VisualNovels.EventDatas
 {
-    [CreateAssetMenu(fileName = "EventData", menuName = "VisualNovel/EventData", order = 0)]
+    [CreateAssetMenu(fileName = "EventData", menuName = "Naussilus/VisualNovel/EventData", order = 0)]
     public class EventData : ScriptableObject
     {
         [field : SerializeField]

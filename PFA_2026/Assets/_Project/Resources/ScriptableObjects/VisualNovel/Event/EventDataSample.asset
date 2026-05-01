@@ -11,70 +11,38 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4426d2e37cb0480e88589e1b21471988, type: 3}
   m_Name: EventDataSample
-  m_EditorClassIdentifier: Naussilus.Core.Datas.VisualNovels::Naussilus.Core.Datas.VisualNovels.EventData
-  <Name>k__BackingField: "Jennie \xE0 une crise identitaire"
-  <Npcs>k__BackingField:
-  - {fileID: 11400000, guid: 4c5237b2ea5cb26419c3e8d2d834f0d9, type: 2}
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.EventData
+  <Name>k__BackingField: 
+  <Npcs>k__BackingField: []
   <Priority>k__BackingField: 0
   <DayCheck>k__BackingField: 0
   <Dependencies>k__BackingField:
-  - <IsEnumeration>k__BackingField: 1
+  - <IsEnumeration>k__BackingField: 0
     <CurrentNpcTarget>k__BackingField:
-      rid: 2832590013416079446
+      rid: -2
     <Conditions>k__BackingField:
     - <LeftSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 1
+        <IsCurrentNpc>k__BackingField: 0
         <Subject>k__BackingField:
           rid: -2
         <Stat>k__BackingField:
-          rid: 2832590030342455373
+          rid: -2
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ComparisonOperator>k__BackingField: 0
       <RightSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
         <Subject>k__BackingField:
-          rid: 2832590030342455375
+          rid: -2
         <Stat>k__BackingField:
-          rid: 2832590030342455374
+          rid: -2
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
-    <Consequences>k__BackingField:
-    - <IsGameLost>k__BackingField: 0
-      <IsCurrentNpc>k__BackingField: 1
-      <Subject>k__BackingField:
-        rid: -2
-      <IntTarget>k__BackingField:
-        rid: -2
-      <ArithmeticOperator>k__BackingField: 0
-      <Amount>k__BackingField: 0
-      <Text>k__BackingField: 
+    <Consequences>k__BackingField: []
   <FirstDialogue>k__BackingField: {fileID: 11400000, guid: f67f2007a67a6d747afb3f09114e9a66, type: 2}
-  <GUID>k__BackingField: 7e411dc7-dd37-46cf-8f90-7540760ac499
+  <GUID>k__BackingField: 38a04ee9-0718-4cb0-9de6-bfbb56cc2513
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 2832590013416079446
-      type: {class: AllNpc, ns: Naussilus.Core, asm: Naussilus.Core}
-      data: 
-    - rid: 2832590030342455373
-      type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 0
-        <Npc>k__BackingField:
-          rid: 2832590030342455377
-    - rid: 2832590030342455374
-      type: {class: BehaviorValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Stat>k__BackingField: {fileID: 11400000, guid: 04ea502225da3b44ba583a05d6180394, type: 2}
-        <Amount>k__BackingField: 0
-    - rid: 2832590030342455375
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
-    - rid: 2832590030342455377
-      type: {class: CategoryIndex, ns: Naussilus.Core.Managements.RoomDatas.ActionDatas.Categorys, asm: Naussilus.Core}
-      data:
-        <Index>k__BackingField: 1
