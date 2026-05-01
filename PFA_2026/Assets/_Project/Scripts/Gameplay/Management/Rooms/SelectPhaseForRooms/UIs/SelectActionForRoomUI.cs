@@ -1,5 +1,6 @@
 ﻿using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
+using Naussilus.Core;
 using Naussilus.Core.Managements.ActionDatas;
 using Naussilus.Core.Managers;
 using TMPro;
@@ -55,7 +56,7 @@ namespace _Project.Scripts.Rooms
                 current.SetResult(-1);
         }
 
-        public void ChooseAction(ActionData actionData)
+        public void ChooseAction(Action actionData)
         {
             if(current == null)
                 return;
@@ -63,7 +64,7 @@ namespace _Project.Scripts.Rooms
             var index = 0;
             for (int i = 0; i < current.Choices.Length; i++)
             {
-                if(current.Choices[i] == actionData)
+                if(current.Choices[i].Name == actionData.Name)
                     index = i;
             }
 

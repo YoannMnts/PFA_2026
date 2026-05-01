@@ -1,4 +1,5 @@
 ﻿using Helteix.Tools.UI;
+using Naussilus.Core;
 using Naussilus.Core.NpcDatas;
 using TMPro;
 using UnityEngine;
@@ -6,7 +7,7 @@ using UnityEngine.UI;
 
 namespace _Project.Scripts.Rooms
 {
-    public class SlotNpcUI : UIItem<NpcData>
+    public class SlotNpcUI : UIItem<Npc>
     {
         private SelectNpcForCategoryUI selectNpcForCategoryUI;
 
@@ -19,7 +20,7 @@ namespace _Project.Scripts.Rooms
             selectNpcForCategoryUI = GetComponentInParent<SelectNpcForCategoryUI>();
         }
 
-        protected override void SyncUI(NpcData current)
+        protected override void SyncUI(Npc current)
         {
             //image.sprite = current.ActionSprite;
             title.text = current.Name;

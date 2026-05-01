@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using Helteix.Tools.Phases;
+using Naussilus.Core;
 using Naussilus.Core.Managements.ActionDatas;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
@@ -8,14 +9,14 @@ using UnityEngine.Pool;
 
 namespace _Project.Scripts.Rooms
 {
-    public class SelectNpcForCategory : PhaseCompletionSource<NpcData>
+    public class SelectNpcForCategory : PhaseCompletionSource<Npc>
     {
-        public CategoryData CurrentCategory { get; private set; }
-        public NpcData[] ObligateNpc => CurrentCategory.ObligateNpc;
-        public NpcData[] ProhibitedNpc => CurrentCategory.ProhibitedNpc;
+        public Category CurrentCategory { get; private set; }
+        public Npc[] ObligateNpc => CurrentCategory.ObligateNpcs;
+        public Npc[] ProhibitedNpc => CurrentCategory.ProhibitedNpcs;
         
-        public NpcData[] Npcs { get; private set; }
-        public SelectNpcForCategory(CategoryData category)
+        public Npc[] Npcs { get; private set; }
+        public SelectNpcForCategory(Category category)
         {
             CurrentCategory = category;
         }
@@ -28,7 +29,7 @@ namespace _Project.Scripts.Rooms
             }
             else
             {
-                using (ListPool<NpcData>.Get(out var list))
+                using (ListPool<Npc>.Get(out var list))
                 {
                     NpcManager.GetAllNpcs(out var allNpcs);
                     list.AddRange(allNpcs);

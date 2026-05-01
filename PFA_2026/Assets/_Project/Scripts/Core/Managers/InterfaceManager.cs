@@ -16,7 +16,7 @@ namespace Naussilus.Core.Managers
                 AllNpcData => new AllNpc(),
                 CategoryIndexData categoryIndexData => new CategoryIndex(categoryIndexData),
                 GenderData genderData => new Gender(genderData),
-                NpcValue npcValue => NpcManager.TryGetNpc(npcValue.NpcData.GUID),
+                NpcValueData npcValue => NpcManager.TryGetNpc(npcValue.NpcData.GUID),
                 _ => null
             };
         }
@@ -46,7 +46,7 @@ namespace Naussilus.Core.Managers
         {
             return data switch
             {
-                IntValueData valueData => new InValue(valueData),
+                IntValueData valueData => new IntValue(valueData),
                 BehaviorValueData valueData => new Behavior(valueData),
                 MentalStateValueData valueData => new MentalState(valueData),
                 NpcRelationshipData relationshipData => new NpcRelationship(relationshipData),

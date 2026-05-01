@@ -13,10 +13,10 @@ namespace Naussilus.Core.Managers
 {
     public static class ConditionManager
     {
-        public static bool ComputeAllCondition(this ConditionData[] currentConditions, NpcData currentNpcData, out List<NpcData> validNpcs)
+        public static bool ComputeAllCondition(this Condition[] currentConditions, Npc currentNpcData, out List<Npc> validNpcs)
         {
             
-            validNpcs = new List<NpcData>();
+            validNpcs = new List<Npc>();
             if(currentConditions.Length == 0)
             {
                 validNpcs?.Add(currentNpcData);
@@ -27,11 +27,11 @@ namespace Naussilus.Core.Managers
             {
                 var condition = currentConditions[i];
                 
-                NpcData[] leftNpcs = condition.LeftSide.IsCurrentNpc 
+                Npc[] leftNpcs = condition.LeftSide.IsCurrentNpc 
                     ? new[] { currentNpcData } 
                     : NpcManager.GetSelectedNpcs(condition.LeftSide.Subject, currentNpcData);
 
-                NpcData[] rightNpcs = condition.RightSide.IsCurrentNpc 
+                Npc[] rightNpcs = condition.RightSide.IsCurrentNpc 
                     ? new[] { currentNpcData } 
                     : NpcManager.GetSelectedNpcs(condition.RightSide.Subject, currentNpcData);
 
@@ -49,17 +49,17 @@ namespace Naussilus.Core.Managers
             }
             return validNpcs?.Count > 0;
         }
-        public static bool ComputeAllCondition(this ConditionData[] currentConditions, NpcData currentNpcData)
+        public static bool ComputeAllCondition(this Condition[] currentConditions, Npc currentNpcData)
         {
             for (int i = 0; i < currentConditions.Length; i++)
             {
                 var condition = currentConditions[i];
                 
-                NpcData[] leftNpcs = condition.LeftSide.IsCurrentNpc 
+                Npc[] leftNpcs = condition.LeftSide.IsCurrentNpc 
                     ? new[] { currentNpcData } 
                     : NpcManager.GetSelectedNpcs(condition.LeftSide.Subject, currentNpcData);
 
-                NpcData[] rightNpcs = condition.RightSide.IsCurrentNpc 
+                Npc[] rightNpcs = condition.RightSide.IsCurrentNpc 
                     ? new[] { currentNpcData } 
                     : NpcManager.GetSelectedNpcs(condition.RightSide.Subject, currentNpcData);
 
@@ -76,9 +76,9 @@ namespace Naussilus.Core.Managers
             }
             return true;
         }
-        public static bool ComputeAllCondition(this ConditionData[] currentConditions, NpcData currentNpcData ,CategoryData[] currentCategories, out List<NpcData> validNpcs)
+        public static bool ComputeAllCondition(this Condition[] currentConditions, Npc currentNpcData ,Category[] currentCategories, out List<Npc> validNpcs)
                 {
-                    validNpcs = new List<NpcData>();
+                    validNpcs = new List<Npc>();
                     if(currentConditions.Length == 0)
                     {
                         validNpcs?.Add(currentNpcData);
@@ -89,11 +89,11 @@ namespace Naussilus.Core.Managers
                     {
                         var condition = currentConditions[i];
                 
-                        NpcData[] leftNpcs = condition.LeftSide.IsCurrentNpc 
+                        Npc[] leftNpcs = condition.LeftSide.IsCurrentNpc 
                             ? new[] { currentNpcData } 
                             : NpcManager.GetSelectedNpcs(condition.LeftSide.Subject, currentNpcData, currentCategories);
 
-                        NpcData[] rightNpcs = condition.RightSide.IsCurrentNpc 
+                        Npc[] rightNpcs = condition.RightSide.IsCurrentNpc 
                             ? new[] { currentNpcData } 
                             : NpcManager.GetSelectedNpcs(condition.RightSide.Subject, currentNpcData, currentCategories);
 
@@ -112,17 +112,15 @@ namespace Naussilus.Core.Managers
                     return validNpcs?.Count > 0;
                 }
         
-        private static bool ComputeCondition(this ConditionData condition, NpcData leftNpcData, NpcData rightNpcData, out List<NpcData> consequenceUsedNpc)
+        private static bool ComputeCondition(this Condition condition, Npc leftNpcData, Npc rightNpcData, out List<Npc> consequenceUsedNpc)
         {
-            consequenceUsedNpc = new List<NpcData>();
-            NpcManager.TryGetNpc(leftNpcData.GUID, out var leftNpc);
-            NpcManager.TryGetNpc(rightNpcData.GUID, out var rightNpc);
+            consequenceUsedNpc = new List<Npc>();
             
-            ConditionSideData leftSide = condition.LeftSide;
-            ConditionSideData rightSide = condition.RightSide;
+            ConditionSide leftSide = condition.LeftSide;
+            ConditionSide rightSide = condition.RightSide;
             
-            var leftTypes = leftNpc.GetValue(leftSide.Stat);
-            var rightTypes = rightNpc.GetValue(rightSide.Stat);
+            var leftTypes = leftNpcData.GetValue(leftSide.Stat);
+            var rightTypes = rightNpcData.GetValue(rightSide.Stat);
 
             for (int i = 0; i < leftTypes.Length; i++)
             {
@@ -145,7 +143,7 @@ namespace Naussilus.Core.Managers
             return consequenceUsedNpc?.Count > 0;
         }
 
-        private static bool IsValid(this ConditionData condition, int leftSide, int rightSide)
+        private static bool IsValid(this Condition condition, int leftSide, int rightSide)
         {
             bool isValid = condition.ComparisonOperator switch
             {
@@ -160,7 +158,7 @@ namespace Naussilus.Core.Managers
             return isValid;
         }
         
-        private static void IsValid(this ConditionData condition, INpcStat leftType, INpcStat rightType, out bool isValid)
+        private static void IsValid(this Condition condition, INpcStat leftType, INpcStat rightType, out bool isValid)
         {
             var leftSide = leftType.Amount;
             var rightSide = rightType.Amount;

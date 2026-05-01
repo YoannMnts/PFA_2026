@@ -1,5 +1,6 @@
 ﻿using System;
 using Helteix.Tools.UI;
+using Naussilus.Core;
 using Naussilus.Core.Managements;
 using TMPro;
 using UnityEngine;
@@ -7,10 +8,10 @@ using UnityEngine.UI;
 
 namespace _Project.Scripts
 {
-    public class ShipRoomUI : UIItem<RoomData>
+    public class ShipRoomUI : UIItem<Room>
     {
         private SelectRoomForShipUI selectRoomForShipUI;
-        private RoomData currentRoomData;
+        private Room currentRoom;
         
         [SerializeField] private Button button;
         [SerializeField] private Image sprite;
@@ -21,9 +22,9 @@ namespace _Project.Scripts
             selectRoomForShipUI = GetComponentInParent<SelectRoomForShipUI>();
         }
 
-        protected override void SyncUI(RoomData current)
+        protected override void SyncUI(Room current)
         {
-            currentRoomData = current;
+            currentRoom = current;
             text.text = current.Name;
             //sprite.sprite = current.Sprite;
             button.onClick.AddListener(OnClicked);
@@ -37,7 +38,7 @@ namespace _Project.Scripts
 
         public void OnClicked()
         {
-            selectRoomForShipUI.ChooseRoom(currentRoomData);
+            selectRoomForShipUI.ChooseRoom(currentRoom);
         }
     }
 }
