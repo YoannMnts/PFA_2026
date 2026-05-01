@@ -1,0 +1,35 @@
+OVDF v1.1
+Naussilus.Core.Conditions.ConditionData, Naussilus.Core
+
+# $A3y6fwoddLnjRPbQm2HZzy
+Position: $root
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	GroupName = "LeftSide"
+	Indent = True
+
+# $kQtxUaqryyQXG6KibMSkt
+Position: $root
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	GroupName = "Comparator"
+	Indent = False
+
+# $F7XoiHVEQy2ybxEEUXcrA9
+Position: $root
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	GroupName = "RightSide"
+	Indent = True
+
+# <LeftSide>k__BackingField
+Position: $A3y6fwoddLnjRPbQm2HZzy:0
++ [Sirenix.OdinInspector.InlinePropertyAttribute]
++ [Sirenix.OdinInspector.HideLabelAttribute]
+
+# <RightSide>k__BackingField
+Position: $F7XoiHVEQy2ybxEEUXcrA9:0
++ [Sirenix.OdinInspector.InlinePropertyAttribute]
++ [Sirenix.OdinInspector.HideLabelAttribute]
+
+# <ComparisonOperator>k__BackingField
+Position: $kQtxUaqryyQXG6KibMSkt:0
++ [Sirenix.OdinInspector.EnumToggleButtonsAttribute]
++ [Sirenix.OdinInspector.HideLabelAttribute]

@@ -2,7 +2,7 @@
 
 namespace Naussilus.Core.NpcDatas
 {
-    [CreateAssetMenu(menuName = "Naussilus/NpcDatas/Expression")]
+    [CreateAssetMenu(menuName = "Naussilus/NpcData/Expression")]
     public class ExpressionData : ScriptableObject
     {
         [field: SerializeField]

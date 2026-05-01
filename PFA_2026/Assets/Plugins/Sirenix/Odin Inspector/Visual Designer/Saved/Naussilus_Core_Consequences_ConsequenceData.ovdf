@@ -1,0 +1,40 @@
+OVDF v1.1
+Naussilus.Core.Consequences.ConsequenceData, Naussilus.Core
+
+# $HL15viitFNPBgkdFu522Sd
+Position: $BiqYKnDacYsKoRbChuA7A9:0
++ [Sirenix.OdinInspector.BoxGroupAttribute]
+
+# $Rsx6rY2awqoc9AwxtxSTnJ
+Position: $root:3
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	HorizontalLine = False
+
+# $BiqYKnDacYsKoRbChuA7A9
+Position: $root:1
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	HorizontalLine = False
+
+# <ConsequenceSide>k__BackingField
+Position: $HL15viitFNPBgkdFu522Sd:0
++ [Sirenix.OdinInspector.InlinePropertyAttribute]
++ [Sirenix.OdinInspector.HideLabelAttribute]
++ [Sirenix.OdinInspector.HideIfAttribute]
+	Condition = "IsGameLost"
+
+# <ArithmeticOperator>k__BackingField
+Position: $HL15viitFNPBgkdFu522Sd:1
++ [Sirenix.OdinInspector.EnumToggleButtonsAttribute]
++ [Sirenix.OdinInspector.HideLabelAttribute]
++ [Sirenix.OdinInspector.HideIfAttribute]
+	Condition = "IsGameLost"
+
+# <Amount>k__BackingField
+Position: $HL15viitFNPBgkdFu522Sd:2
++ [Sirenix.OdinInspector.PropertyRangeAttribute]
+	Max = 20
++ [Sirenix.OdinInspector.HideIfAttribute]
+	Condition = "IsGameLost"
+
+# <Text>k__BackingField
+Position: $Rsx6rY2awqoc9AwxtxSTnJ:0

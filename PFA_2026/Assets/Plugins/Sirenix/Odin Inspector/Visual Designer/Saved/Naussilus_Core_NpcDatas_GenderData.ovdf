@@ -1,0 +1,6 @@
+OVDF v1.1
+Naussilus.Core.NpcDatas.GenderData, Naussilus.Core
+
+# <EGender>k__BackingField
++ [Sirenix.OdinInspector.EnumToggleButtonsAttribute]
++ [Sirenix.OdinInspector.HideLabelAttribute]

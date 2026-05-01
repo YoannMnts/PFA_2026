@@ -8,7 +8,7 @@ using UnityEditor;
 
 namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas
 {
-    [CreateAssetMenu(fileName = "DialogueData", menuName = "VisualNovel/DialogueData", order = 0)]
+    [CreateAssetMenu(fileName = "DialogueData", menuName = "Naussilus/VisualNovel/DialogueData", order = 0)]
     public class DialogueData : ScriptableObject
     {
         [field : SerializeField]

@@ -20,6 +20,6 @@ namespace Naussilus.Core.Managements.ActionDatas
         public Vector3 Position { get; private set; }
         
         [field : SerializeField]
-        public Sprite ActionSprite { get; private set; } 
+        public ExpressionData ActionSprite { get; private set; } 
     }
 }

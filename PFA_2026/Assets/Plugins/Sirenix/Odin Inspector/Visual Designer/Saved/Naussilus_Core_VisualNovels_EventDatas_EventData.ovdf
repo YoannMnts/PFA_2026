@@ -37,3 +37,8 @@ Position: $5Mrai6XWzjk8Y5izQ7HnJB:0
 
 # <FirstDialogue>k__BackingField
 Position: $4wxxHRwEVWRtfhHH4mi9m9:2
+
+# <Dependencies>k__BackingField
++ [Sirenix.OdinInspector.ListDrawerSettingsAttribute]
+	numberOfItemsPerPage = 1
+	numberOfItemsPerPageHasValue = True
