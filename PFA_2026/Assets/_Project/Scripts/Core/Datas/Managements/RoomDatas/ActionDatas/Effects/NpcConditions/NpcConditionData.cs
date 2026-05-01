@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Naussilus.Core.Managements.ActionDatas
 {
     [Serializable]
-    public struct NpcConditionData
+    public class NpcConditionData
     {
         [field: SerializeField]
         public NpcData Npc { get; private set; }
