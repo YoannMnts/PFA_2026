@@ -2,6 +2,7 @@
 using _Project.Scripts.Rooms;
 using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
+using Naussilus.Core;
 using Naussilus.Core.Managements;
 using Naussilus.Core.Managers;
 using UnityEngine;
@@ -47,10 +48,10 @@ namespace _Project.Scripts
         public void Cancel()
         {
             if (Current != null)
-                Current.SetResult(null);
+                Current.SetResult(new Room());
         }
 
-        public void ChooseRoom(RoomData roomData)
+        public void ChooseRoom(Room roomData)
         {
             if (Current == null)
                 return;

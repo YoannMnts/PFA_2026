@@ -1,9 +1,10 @@
 ﻿using System;
-using System.Threading.Tasks;
 using _Project.Scripts;
 using Helteix.Tools.Phases;
+using Naussilus.Core;
 using Naussilus.Core.Managers;
-using Naussilus.Core.VisualNovels.EventDatas;
+using Naussilus.Core.Managers.Npcs;
+using Naussilus.Core.Managers.Rooms;
 using Naussilus.Gameplay.VisualNovel._Project.Scripts;
 using UnityEngine;
 
@@ -19,6 +20,9 @@ namespace Naussilus.Gameplay.Launcher._Project.Scripts.Gameplay
 
         private void Start()
         {
+            NpcManager.Init();
+            EventManager.Init();
+            RoomManager.Init();
             PhaseLifetime();
         }
 
@@ -57,7 +61,7 @@ namespace Naussilus.Gameplay.Launcher._Project.Scripts.Gameplay
 
         private async Awaitable VisualNovel()
         {
-            EventData visualNovelEvent = EventManager.GetValidEvent();
+            Incident visualNovelEvent = EventManager.GetValidEvent();
             var visualNovelPhase = new VisualNovelPhase(visualNovelEvent);
             await visualNovelPhase.Run();
         }

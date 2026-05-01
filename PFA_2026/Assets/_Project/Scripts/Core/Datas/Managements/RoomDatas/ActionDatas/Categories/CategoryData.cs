@@ -18,8 +18,5 @@ namespace Naussilus.Core.Managements.ActionDatas
         
         [field: SerializeField]
         public NpcData[] ObligateNpc { get; private set; }
-        
-        public NpcData[] CurrentNpcs { get; private set; }
-        
     }
 }

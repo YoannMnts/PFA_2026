@@ -43,7 +43,7 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
             for (int i = 0; i < phase.CurrentAnswers.Length; i++)
             {
                 var decisionAnswer = Instantiate(buttonPrefab, root);
-                decisionAnswer.InitButton(i, phase.CurrentAnswers[i].ButtonText);
+                //decisionAnswer.InitButton(i, phase.CurrentAnswers[i].ButtonText);
             }
             canvasGroup.Show();
         }

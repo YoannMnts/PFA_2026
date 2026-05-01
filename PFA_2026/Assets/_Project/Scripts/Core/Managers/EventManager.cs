@@ -12,26 +12,38 @@ namespace Naussilus.Core.Managers
     public static class EventManager
     {
         private static readonly Dictionary<string, EventData> EventDatas;
+        private static readonly Dictionary<string, Incident> Incidents;
 
         static EventManager()
         {
             EventDatas = new ();
+            Incidents = new ();
             var entries = Resources.LoadAll<EventData>("ScriptableObjects/VisualNovel/Event");
             for (int i = 0; i < entries.Length; i++)
             {
                 EventData entry = entries[i];
                 EventDatas.Add(entry.GUID, entry);
             }
-        }
 
-        public static EventData GetValidEvent()
+            for (int i = 0; i < entries.Length; i++)
+            {
+                Incident entry = new Incident(entries[i]);
+                Incidents.Add(entries[i].GUID, entry);
+            }
+            Debug.Log($"[EventManager] Loaded {entries.Length} events.");
+        }
+        
+        public static void Init(){}
+
+
+        public static Incident GetValidEvent()
         {
-            using (ListPool<EventData>.Get(out var validEventDatas) )
+            using (ListPool<Incident>.Get(out var validEventDatas) )
             {
                 var isConditionValid = false;
-                foreach ((string key, EventData value) in EventDatas)
+                foreach ((string key, Incident value) in Incidents)
                 {
-                    ConditionalEffectData[] conditionalEffects = value.Dependencies;
+                    ConditionalEffect[] conditionalEffects = value.Dependencies;
                     for (int i = 0; i < conditionalEffects.Length; i++)
                     {
                         isConditionValid = conditionalEffects[i].ComputeOnlyConditions(value.Npcs[0]);
@@ -47,7 +59,7 @@ namespace Naussilus.Core.Managers
                 if (validEventDatas.Count == 0)
                 {
                     Debug.LogError("[Event Manager] No valid events found");
-                    return null;
+                    return new Incident();
                 }
                 
                 var randomIndex = Random.Range(0, validEventDatas.Count);
@@ -55,9 +67,9 @@ namespace Naussilus.Core.Managers
             }
         }
         
-        public static EventData TryGetEvent(string guid)
+        public static Incident TryGetEvent(string guid)
         {
-            EventDatas.TryGetValue(guid, out EventData value);
+            Incidents.TryGetValue(guid, out Incident value);
             return value;
         }
     }

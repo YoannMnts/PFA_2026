@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using Helteix.Tools.Phases;
+using Naussilus.Core;
 using Naussilus.Core.Managements;
 using Naussilus.Core.Managements.ActionDatas;
 using UnityEngine;
@@ -8,11 +9,11 @@ namespace _Project.Scripts.Rooms
 {
     public class SelectActionForRoom : PhaseCompletionSource<int>
     {
-        public RoomData CurrentRoom { get; private set; }
+        public Room CurrentRoom { get; private set; }
         
-        public ActionData[] Choices { get; private set; }
+        public Action[] Choices { get; private set; }
         
-        public SelectActionForRoom(RoomData room)
+        public SelectActionForRoom(Room room)
         {
             CurrentRoom = room;
         }

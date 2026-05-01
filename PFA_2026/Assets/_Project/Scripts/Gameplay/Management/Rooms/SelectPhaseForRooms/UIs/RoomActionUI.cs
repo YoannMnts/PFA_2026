@@ -1,4 +1,5 @@
 ﻿using Helteix.Tools.UI;
+using Naussilus.Core;
 using Naussilus.Core.Managements.ActionDatas;
 using TMPro;
 using UnityEngine;
@@ -6,7 +7,7 @@ using UnityEngine.Serialization;
 
 namespace _Project.Scripts.Rooms
 {
-    public class RoomActionUI : UIItem<ActionData>
+    public class RoomActionUI : UIItem<Action>
     {
         private SelectActionForRoomUI selectActionForRoomUI;
 
@@ -20,7 +21,7 @@ namespace _Project.Scripts.Rooms
             selectActionForRoomUI = GetComponentInParent<SelectActionForRoomUI>();
         }
 
-        protected override void SyncUI(ActionData current)
+        protected override void SyncUI(Action current)
         {
             titleText.text = current.Name;
             costText.text = current.Cost.ToString();

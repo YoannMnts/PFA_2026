@@ -18,7 +18,7 @@ namespace Naussilus.Core
             
             switch (data.Npc)
             {
-                case NpcValue npcValue:
+                case NpcValueData npcValue:
                     NpcManager.TryGetNpc(npcValue.NpcData.GUID, out Npc npc);
                     Npc = npc;
                     break;

@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using Helteix.Tools.Phases;
+using Naussilus.Core;
 using Naussilus.Core.Managements.ActionDatas;
 using UnityEngine;
 
@@ -7,11 +8,11 @@ namespace _Project.Scripts.Rooms
 {
     public class SelectNpcsForAction : PhaseCompletionSource<bool>
     {
-        public ActionData CurrentAction { get; private set; }
+        public Action CurrentAction { get; private set; }
         
-        public CategoryData[] Categories { get; private set; }
+        public Category[] Categories { get; private set; }
         
-        public SelectNpcsForAction(ActionData action)
+        public SelectNpcsForAction(Action action)
         {
             CurrentAction = action;
         }

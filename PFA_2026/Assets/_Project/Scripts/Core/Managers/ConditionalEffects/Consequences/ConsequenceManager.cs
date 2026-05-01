@@ -9,12 +9,12 @@ namespace Naussilus.Core.Managers
 {
     public static class ConsequenceManager
     {
-        public static void ComputeAllConsequence(this ConsequenceData[] currentConsequence, NpcData currentNpcData)
+        public static void ComputeAllConsequence(this Consequence[] currentConsequence, Npc currentNpcData)
         {
             for (var i = 0; i < currentConsequence.Length; i++)
             {
                 var consequence = currentConsequence[i];
-                NpcData[] subjects = consequence.ConsequenceSide.IsCurrentNpc
+                Npc[] subjects = consequence.ConsequenceSide.IsCurrentNpc
                     ? new[] { currentNpcData }
                     : NpcManager.GetSelectedNpcs(consequence.ConsequenceSide.Subject, currentNpcData);
 
@@ -26,12 +26,12 @@ namespace Naussilus.Core.Managers
             }
         }
         
-        public static void ComputeAllConsequence(this ConsequenceData[] currentConsequence, NpcData currentNpcData ,CategoryData[] currentCategories)
+        public static void ComputeAllConsequence(this Consequence[] currentConsequence, Npc currentNpcData ,Category[] currentCategories)
         {
             for (var i = 0; i < currentConsequence.Length; i++)
             {
                 var consequence = currentConsequence[i];
-                NpcData[] subjects = consequence.ConsequenceSide.IsCurrentNpc
+                Npc[] subjects = consequence.ConsequenceSide.IsCurrentNpc
                     ? new[] { currentNpcData }
                     : NpcManager.GetSelectedNpcs(consequence.ConsequenceSide.Subject, currentNpcData, currentCategories);
 
@@ -43,11 +43,10 @@ namespace Naussilus.Core.Managers
             }
         }
 
-        private static void ComputeConsequence(this ConsequenceData consequence, NpcData currentNpcData)
+        private static void ComputeConsequence(this Consequence consequence, Npc currentNpcData)
         {
-            NpcManager.TryGetNpc(currentNpcData.GUID, out Npc currentNpc);
-            IConsequenceEffectValueData stat = consequence.ConsequenceSide.Stat;
-            var types = currentNpc.GetValue(stat);
+            IConsequenceEffectValue stat = consequence.ConsequenceSide.Stat;
+            var types = currentNpcData.GetValue(stat);
             int rightSide = consequence.Amount;
 
             if (types is null || rightSide < 0)
@@ -59,11 +58,11 @@ namespace Naussilus.Core.Managers
             {
                 consequence.ModifyValue(types[i].Amount, rightSide, out var newAmount);
                 types[i].SetNewAmount(newAmount);
-                Debug.Log($"[ConsequenceManager] Compute : left: {types[i].Amount}, right: {rightSide} return : {newAmount} for npc {currentNpc.Name}");
+                Debug.Log($"[ConsequenceManager] Compute : left: {types[i].Amount}, right: {rightSide} return : {newAmount} for npc {currentNpcData.Name}");
             }
         }
 
-        private static void ModifyValue(this ConsequenceData consequence, int leftSide, int rightSide, out int newValue)
+        private static void ModifyValue(this Consequence consequence, int leftSide, int rightSide, out int newValue)
         {
             int newAmount = consequence.ArithmeticOperator switch
             {

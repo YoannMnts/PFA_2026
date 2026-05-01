@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using Helteix.Tools.Phases;
+using Naussilus.Core;
 using Naussilus.Core.Managements;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.Managers.Rooms;
@@ -7,9 +8,9 @@ using UnityEngine;
 
 namespace _Project.Scripts
 {
-    public class SelectRoomForShip : PhaseCompletionSource<RoomData>
+    public class SelectRoomForShip : PhaseCompletionSource<Room>
     {
-        public RoomData[] CurrentRooms { get; private set; }
+        public Room[] CurrentRooms { get; private set; }
 
         protected override Awaitable Initialize(CancellationToken token)
         {

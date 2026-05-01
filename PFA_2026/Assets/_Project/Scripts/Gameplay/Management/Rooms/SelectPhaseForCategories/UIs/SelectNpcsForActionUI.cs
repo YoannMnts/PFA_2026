@@ -1,9 +1,8 @@
 ﻿using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
-using Naussilus.Core.Managements.ActionDatas;
+using Naussilus.Core;
 using Naussilus.Core.Managers;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace _Project.Scripts.Rooms
 {
@@ -49,7 +48,7 @@ namespace _Project.Scripts.Rooms
                 current.SetResult(false);
         }
 
-        public void ChooseCategory(CategoryData category)
+        public void ChooseCategory(Category category)
         {
             if(current == null)
                 return;

@@ -1,11 +1,11 @@
 ﻿
 namespace Naussilus.Core
 {
-    public struct InValue : IConditionEffectValue, INpcStat
+    public struct IntValue : IConditionEffectValue, INpcStat
     {
         public int Amount { get; private set; }
 
-        public InValue(IntValueData data)
+        public IntValue(IntValueData data)
         {
             Amount = data.Amount;
         }

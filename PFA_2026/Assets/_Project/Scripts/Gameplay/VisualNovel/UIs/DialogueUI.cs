@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
 {
-    public class DialogueUI : MonoBehaviour, IPhaseListener<Dialogue>
+    public class DialogueUI : MonoBehaviour, IPhaseListener<DialoguePhase>
     {
         [SerializeField]
         private CanvasGroup canvasGroup;
@@ -28,13 +28,13 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
             this.Unregister();
         }
         
-        public void OnPhaseBegin(Dialogue phase)
+        public void OnPhaseBegin(DialoguePhase phase)
         {
             //textMesh.text = phase.CurrentDialogue.Lines[0].Text[0]; //NEED TO MODIFY WITH LOOP
             canvasGroup.Show();
         }
 
-        public void OnPhaseEnd(Dialogue phase)
+        public void OnPhaseEnd(DialoguePhase phase)
         {
             canvasGroup.Hide();
         }

@@ -1,6 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using Helteix.Tools.Phases;
+using Naussilus.Core;
 using Naussilus.Core.NpcDatas;
 using Naussilus.Core.VisualNovels.EventDatas;
 using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas;
@@ -10,19 +11,19 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
 {
     public class VisualNovelPhase : IPhase<bool>
     {
-        private readonly EventData currentEvent;
-        public NpcData NpcEventData => currentEvent.Npcs[0];
+        private readonly Incident currentEvent;
+        public Npc NpcEventData => currentEvent.Npcs[0];
 
-        public VisualNovelPhase(EventData eventData)
+        public VisualNovelPhase(Incident eventData)
         {
             currentEvent = eventData;
         }
         
         async Awaitable<bool> IPhase<bool>.Execute(CancellationToken token)
         {
-            DialogueData dialogueData = currentEvent.FirstDialogue;
+            Dialogue dialogueData = currentEvent.FirstDialogue;
             
-            Dialogue dialoguePhase = new Dialogue(NpcEventData ,dialogueData);
+            DialoguePhase dialoguePhase = new DialoguePhase(NpcEventData ,dialogueData);
             await dialoguePhase.Run();
             
             return true;

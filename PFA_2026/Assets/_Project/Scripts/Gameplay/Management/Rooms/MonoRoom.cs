@@ -1,18 +1,21 @@
 ﻿using Helteix.Tools.Phases;
+using Naussilus.Core;
 using Naussilus.Core.Managements;
+using Naussilus.Core.Managers.Rooms;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace _Project.Scripts.Rooms
 {
-    public class Room : MonoBehaviour, IPointerClickHandler
+    public class MonoRoom : MonoBehaviour, IPointerClickHandler
     {
         [field: SerializeField] 
         public RoomData RoomData { get; private set; }
         
         public void OnPointerClick(PointerEventData eventData)
         {
-            SelectActionForRoom selectActionForRoom = new SelectActionForRoom(RoomData);
+            var room = RoomManager.TryGetRoom(RoomData.GUID);
+            SelectActionForRoom selectActionForRoom = new SelectActionForRoom(room);
             selectActionForRoom.RunAndForget();
         }
     }

@@ -12,10 +12,10 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
 {
     public class Decision : IPhase<bool>
     {
-        private readonly NpcData currentNpcData;
+        private readonly Npc currentNpcData;
         
-        public AnswerData[] CurrentAnswers { get; private set; }
-        public Decision(NpcData npcData ,AnswerData[] answers)
+        public IAnswer[] CurrentAnswers { get; private set; }
+        public Decision(Npc npcData ,IAnswer[] answers)
         {
             CurrentAnswers = answers;
             currentNpcData = npcData;
@@ -29,17 +29,17 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
 
             switch (CurrentAnswers[answerIndex])
             {
-                case BasicAnswerData basicAnswerData:
+                case BasicAnswer basicAnswerData:
                 {
                     var nextDialogue = basicAnswerData.NextDialogue;
-                    Dialogue dialogue = new Dialogue(currentNpcData ,nextDialogue);
+                    DialoguePhase dialogue = new DialoguePhase(currentNpcData ,nextDialogue);
                     await dialogue.Run();
                     break;
                 }
                 
-                case FinalAnswerData finalAnswerData:
-                    NpcData data = currentNpcData;
-                    ConditionalEffectData[] effects = finalAnswerData.Effects;
+                case FinalAnswer finalAnswerData:
+                    Npc data = currentNpcData;
+                    ConditionalEffect[] effects = finalAnswerData.Effects;
                     foreach (var effect in effects)
                         effect.ComputeConditionalEffect(data);
                     break;
