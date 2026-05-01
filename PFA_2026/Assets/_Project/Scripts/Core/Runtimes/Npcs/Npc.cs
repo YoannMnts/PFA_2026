@@ -15,15 +15,15 @@ namespace Naussilus.Core
         public Npc(NpcData npcData)
         {
             Name = npcData.Name;
-            Behaviors = npcData.Behavior.Select(b => new Behavior(b)).ToArray();
-            MentalStates = npcData.MentalState.Select(m => new MentalState(m)).ToArray();
+            Behaviors = npcData.Behavior?.Select(b => new Behavior(b)).ToArray();
+            MentalStates = npcData.MentalState?.Select(m => new MentalState(m)).ToArray();
             Gender = npcData.Gender;
             CurrentThinking = npcData.CurrentThinking;
         }
 
         public void InitRelationships(NpcData npcData)
         {
-            Relationships = npcData.Relationships.Select(r => new NpcRelationship(r)).ToArray();
+            Relationships = npcData.Relationships?.Select(r => new NpcRelationship(r)).ToArray();
         }
         
         private int GetRelationshipWith(Npc npc)

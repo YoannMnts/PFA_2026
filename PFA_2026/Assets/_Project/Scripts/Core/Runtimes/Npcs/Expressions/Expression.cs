@@ -9,7 +9,7 @@ namespace Naussilus.Core
 
         public Expression(ExpressionData data)
         {
-            Expressions = data.Expressions.Select(e => new ExpressionValue(e)).ToArray();
+            Expressions = data.Expressions?.Select(e => new ExpressionValue(e)).ToArray();
         }
     }
 }

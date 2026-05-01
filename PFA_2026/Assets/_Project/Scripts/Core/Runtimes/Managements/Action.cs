@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using JetBrains.Annotations;
 using Naussilus.Core.Managements.ActionDatas;
 
 namespace Naussilus.Core
@@ -11,17 +12,17 @@ namespace Naussilus.Core
         
         public int Countdown { get; private set; }
         
-        public Category[] Categories { get; private set; }
+        [CanBeNull] public Category[] Categories { get; private set; }
         
-        public ActionEffect[] ActionEffects { get; private set; }
+        [CanBeNull] public ActionEffect[] ActionEffects { get; private set; }
 
         public Action(ActionData data)
         {
             Name = data.Name;
             Cost = data.Cost;
             Countdown = data.Countdown;
-            Categories = data.Categories.Select(c => new Category(c)).ToArray();
-            ActionEffects = data.ActionEffects.Select(a => new ActionEffect(a)).ToArray();
+            Categories = data.Categories?.Select(c => new Category(c)).ToArray();
+            ActionEffects = data.ActionEffects?.Select(a => new ActionEffect(a)).ToArray();
         }
     }
 }

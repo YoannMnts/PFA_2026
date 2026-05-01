@@ -18,7 +18,7 @@ namespace Naussilus.Core.Managers
         {
             EventDatas = new ();
             Incidents = new ();
-            var entries = Resources.LoadAll<EventData>("ScriptableObjects/VisualNovel/Event");
+            var entries = Resources.LoadAll<EventData>("ScriptableObjects/VisualNovel/Samples");
             for (int i = 0; i < entries.Length; i++)
             {
                 EventData entry = entries[i];
@@ -50,7 +50,7 @@ namespace Naussilus.Core.Managers
                         if (!isConditionValid) 
                             break;
                     }
-                    if (!isConditionValid)
+                    if (!isConditionValid && conditionalEffects.Length > 0)
                         continue;
                     
                     validEventDatas.Add(value);

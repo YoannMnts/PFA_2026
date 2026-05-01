@@ -16,9 +16,9 @@ namespace Naussilus.Core
         public ConditionalEffect(ConditionalEffectData data)
         {
             IsEnumeration = data.IsEnumeration;
-            CurrentNpcTarget = IsEnumeration ? data.CurrentNpcTarget.GetNpcSelector() : null;
-            Conditions = data.Conditions.Select(cond => new Condition(cond)).ToArray();
-            Consequences = data.Consequences.Select(cons => new Consequence(cons)).ToArray();
+            CurrentNpcTarget = IsEnumeration ? data.CurrentNpcTarget?.GetNpcSelector() : null;
+            Conditions = data.Conditions?.Select(cond => new Condition(cond)).ToArray();
+            Consequences = data.Consequences?.Select(cons => new Consequence(cons)).ToArray();
         }
     }
 }

@@ -12,8 +12,8 @@ namespace Naussilus.Core
 
         public Dialogue(DialogueData data)
         {
-            Lines = data.Lines.Select(l => new DialogueLine(l)).ToArray();
-            Answers = data.Answers.Select(a => a.GetAnswer()).ToArray();
+            Lines = data.Lines?.Select(l => new DialogueLine(l)).ToArray();
+            Answers = data.Answers?.Select(a => a?.GetAnswer()).ToArray();
         }
     }
 }

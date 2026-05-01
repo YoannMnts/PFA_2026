@@ -13,7 +13,7 @@ namespace Naussilus.Core
 
         public DialogueLine(DialogueLineData data)
         {
-            Npc = NpcManager.TryGetNpc(data.Npc.GUID);
+            Npc = NpcManager.TryGetNpc(data.Npc?.GUID);
             Expression = new Expression(data.Expression);
             Text = data.Text;
         }
