@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Naussilus.Core.Managements.ActionDatas
 {
     [Serializable]
-    public struct CategoryData
+    public class CategoryData
     {
         [field: SerializeField]
         public string Name { get; private set; }

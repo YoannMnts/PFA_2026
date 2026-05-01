@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueLines
 {
     [Serializable]
-    public struct DialogueLineData
+    public class DialogueLineData
     {
         [field : SerializeField]
         public NpcData Npc { get; private set; }
