@@ -14,7 +14,7 @@ namespace Naussilus.Core
         public string Name => Data.Name;
         
         public MentalStateData Data { get; private set; }
-        
+
         public void SetNewAmount(int amount) => Amount = amount;
     }
 }

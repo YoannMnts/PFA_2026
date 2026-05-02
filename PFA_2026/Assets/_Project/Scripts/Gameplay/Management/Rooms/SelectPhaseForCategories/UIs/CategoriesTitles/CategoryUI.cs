@@ -1,8 +1,9 @@
-﻿using Helteix.Tools.UI;
+﻿using System.Linq;
+using Helteix.Tools.UI;
 using Naussilus.Core;
-using Naussilus.Core.Managements.ActionDatas;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace _Project.Scripts.Rooms
 {
@@ -11,8 +12,7 @@ namespace _Project.Scripts.Rooms
         private SelectNpcsForActionUI selectNpcsForActionUI;
         
         [SerializeField] private TMP_Text categoryName;
-        [SerializeField] private Transform slotRoot;
-        [SerializeField] private CategorySlot slotPrefab;
+        [SerializeField] private CategorySlotUIList categorySlotUIList;
         
         private void Start()
         {
@@ -22,25 +22,22 @@ namespace _Project.Scripts.Rooms
         protected override void SyncUI(Category current)
         {
             categoryName.text = current.Name;
-            for (int i = 0; i < current.Quantity; i++)
-            {
-                var slot = Instantiate(slotPrefab, slotRoot);
-                slot.Button.onClick.AddListener(OnClicked);
-            }
+            var npcs = current.CurrentNpcs ?? new Npc[current.Quantity];
+            categorySlotUIList.Connect(npcs);
         }
 
         protected override void ClearUI()
         {
             categoryName.text = string.Empty;
-            foreach (Transform slot in slotRoot)
-            {
-                Destroy(slot.gameObject);
-            }
+            categorySlotUIList.Disconnect();
         }
 
-        private void OnClicked()
+        public void OnClicked(CategorySlotUI categorySlotUI)
         {
-            selectNpcsForActionUI.ChooseCategory(Current);
+            var categorySlotUIs = categorySlotUIList.UIItems.ToArray();
+            for (int i = 0; i < categorySlotUIs.Length; i++)
+                if (categorySlotUIs[i] == categorySlotUI)
+                    selectNpcsForActionUI.ChooseCategory(Current, i);
         }
     }
 }
