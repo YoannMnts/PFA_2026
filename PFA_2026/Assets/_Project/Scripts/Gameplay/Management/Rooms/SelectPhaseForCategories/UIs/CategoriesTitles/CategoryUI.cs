@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Helteix.Tools.UI;
 using Naussilus.Core;
 using TMPro;
@@ -19,30 +20,46 @@ namespace _Project.Scripts.Rooms
             selectNpcsForActionUI = GetComponentInParent<SelectNpcsForActionUI>();
         }
 
+        private void OnEnable()
+        {
+            Current.OnNpcAdded += MakeSlots;
+        }
+
+        private void OnDisable()
+        {
+            Current.OnNpcAdded -= MakeSlots;
+        }
+
         protected override void SyncUI(Category current)
         {
             categoryName.text = current.Name;
             Debug.Log($"Category name: {current.Name}, current npcs : {Current.CurrentNpcs.Length}");
 
-            CreateSlots(current);
-            
+            MakeSlots(current);
         }
-
-        private void CreateSlots(Category current)
-        {
-            for (int i = 0; i < current.CurrentNpcs.Length; i++)
-            {
-                var categorySlot = Instantiate(categorySlotPrefab, categorySlotRoot);
-                categorySlot.SyncUI(i);
-            }
-        }
+        
 
         protected override void ClearUI()
         {
             categoryName.text = string.Empty;
+            ClearSlots();
+        }
+
+        private void ClearSlots()
+        {
             foreach (Transform slot in categorySlotRoot)
             {
                 Destroy(slot.gameObject);
+            }
+        }
+
+        private void MakeSlots(Category current)
+        {
+            ClearSlots();
+            for (int i = 0; i < current.CurrentNpcs.Length; i++)
+            {
+                var categorySlot = Instantiate(categorySlotPrefab, categorySlotRoot);
+                categorySlot.SyncUI(i);
             }
         }
 
