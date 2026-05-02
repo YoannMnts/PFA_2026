@@ -1,4 +1,5 @@
 ﻿using Naussilus.Core.Managers.Npcs;
+using UnityEngine;
 
 namespace Naussilus.Core.Managers
 {
@@ -16,7 +17,7 @@ namespace Naussilus.Core.Managers
             
             for (int i = 0; i < CurrentNpcs.Length; i++)
             {
-                currentConditions.ComputeAllCondition(currentNpcData, currentCategories, out var validNpcs);
+                currentConditions.ComputeAllCondition(CurrentNpcs[i], currentCategories, out var validNpcs);
                 for (int j = 0; j < validNpcs.Count; j++)
                     currentConsequences.ComputeAllConsequence(validNpcs[i], currentCategories);
             }
@@ -32,7 +33,7 @@ namespace Naussilus.Core.Managers
             
             for (int i = 0; i < CurrentNpcs.Length; i++)
             {
-                currentConditions.ComputeAllCondition(currentNpcData, out var validNpcs);
+                currentConditions.ComputeAllCondition(CurrentNpcs[i], out var validNpcs);
                 for (int j = 0; j < validNpcs.Count; j++)
                     currentConsequences.ComputeAllConsequence(validNpcs[i]);
             }
@@ -44,13 +45,13 @@ namespace Naussilus.Core.Managers
             CurrentNpcs = conditionalEffect.IsEnumeration
                 ? NpcManager.GetSelectedNpcs(conditionalEffect.CurrentNpcTarget, currentNpcData)
                 : new[] { currentNpcData };
-            
+            Debug.Log($"[ConditionalEffectManager] Npcs selected : {CurrentNpcs.Length}");
             Condition[] currentConditions = conditionalEffect.Conditions;
             Consequence[] currentConsequences = conditionalEffect.Consequences;
 
             for (int i = 0; i < CurrentNpcs.Length; i++)
             {
-                var isValid = currentConditions.ComputeAllCondition(currentNpcData);
+                var isValid = currentConditions.ComputeAllCondition(CurrentNpcs[i]);
                 if (!isValid)
                     return false;
             }

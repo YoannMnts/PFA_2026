@@ -15,6 +15,7 @@ namespace Naussilus.Core
         public string Name => Data.Name;
         
         public BehaviorData Data { get; private set; }
+
         public void SetNewAmount(int amount) => Amount = amount;
     }
 }

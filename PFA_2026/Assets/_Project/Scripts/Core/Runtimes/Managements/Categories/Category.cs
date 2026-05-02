@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Naussilus.Core.Managements.ActionDatas;
 using Naussilus.Core.Managers.Npcs;
 
@@ -6,6 +7,8 @@ namespace Naussilus.Core
 {
     public struct Category
     {
+        public event Action<Npc> OnNpcAdded;
+        
         public string Name { get; private set; }
         
         public int Quantity { get; private set; }
@@ -22,7 +25,14 @@ namespace Naussilus.Core
             Quantity = data.Quantity;
             ProhibitedNpcs = data.ProhibitedNpc?.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
             ObligateNpcs = data.ObligateNpc?.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
-            CurrentNpcs = new Npc[]{};
+            CurrentNpcs = ObligateNpcs ?? new Npc[Quantity];
+            OnNpcAdded = null;
+        }
+
+        public void AddNpc(Npc npc, int index)
+        {
+            CurrentNpcs[index] = npc;
+            OnNpcAdded?.Invoke(npc);
         }
     }
 }

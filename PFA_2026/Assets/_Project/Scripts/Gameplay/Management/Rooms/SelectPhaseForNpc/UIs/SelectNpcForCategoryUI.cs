@@ -1,7 +1,6 @@
 ﻿using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
-using Naussilus.Core.NpcDatas;
 using UnityEngine;
 
 namespace _Project.Scripts.Rooms

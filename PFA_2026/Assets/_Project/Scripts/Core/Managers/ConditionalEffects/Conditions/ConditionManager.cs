@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Naussilus.Core.Conditions;
-using Naussilus.Core.Managements.ActionDatas;
+﻿using System.Collections.Generic;
 using Naussilus.Core.Managers.Npcs;
-using Naussilus.Core.NpcDatas;
 using Naussilus.Core.Operators;
 using UnityEngine;
-using UnityEngine.Pool;
 
 namespace Naussilus.Core.Managers
 {
@@ -58,11 +52,14 @@ namespace Naussilus.Core.Managers
                 Npc[] leftNpcs = condition.LeftSide.IsCurrentNpc 
                     ? new[] { currentNpcData } 
                     : NpcManager.GetSelectedNpcs(condition.LeftSide.Subject, currentNpcData);
+                Debug.Log($"[ConditionManager] Left Npcs selected : {leftNpcs.Length}");
 
                 Npc[] rightNpcs = condition.RightSide.IsCurrentNpc 
                     ? new[] { currentNpcData } 
                     : NpcManager.GetSelectedNpcs(condition.RightSide.Subject, currentNpcData);
+                Debug.Log($"[ConditionManager] Right Npcs selected : {rightNpcs.Length}, Current Npc : {currentNpcData.Name}");
 
+                
                 for (var j = 0; j < leftNpcs.Length; j++)
                 {
                     var currentLeftNpc = leftNpcs[j];
@@ -119,22 +116,22 @@ namespace Naussilus.Core.Managers
             ConditionSide leftSide = condition.LeftSide;
             ConditionSide rightSide = condition.RightSide;
             
-            var leftTypes = leftNpcData.GetValue(leftSide.Stat);
-            var rightTypes = rightNpcData.GetValue(rightSide.Stat);
+            var leftStats = leftNpcData.GetValue(leftSide.Stat);
+            var rightStats = rightNpcData.GetValue(rightSide.Stat);
 
-            for (int i = 0; i < leftTypes.Length; i++)
+            for (int i = 0; i < leftStats.Length; i++)
             {
-                var leftType = leftTypes[i];
-                for (int j = 0; j < rightTypes.Length; j++)
+                var leftType = leftStats[i];
+                for (int j = 0; j < rightStats.Length; j++)
                 {
-                    var rightType = rightTypes[j];
+                    var rightType = rightStats[j];
                     condition.IsValid(leftType, rightType, out var valid);
                     if (!valid)
                         continue;
                     if (leftSide.UseRelationshipNpcToReturn)
                     {
                         var relationType = (NpcRelationship)leftType; 
-                        consequenceUsedNpc = null; //consequenceUsedNpc.Add(relationType.Npc);
+                        consequenceUsedNpc?.Add(relationType.Npc);
                         continue;
                     }
                     consequenceUsedNpc?.Add(leftNpcData);
