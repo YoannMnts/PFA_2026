@@ -5,11 +5,11 @@ namespace _Project.Scripts.Rooms
 {
     public class SelectNpcsForAction : PhaseCompletionSource<bool>
     {
-        public Action CurrentAction { get; private set; }
+        public RoomAction CurrentAction { get; private set; }
 
         public Category[] Categories => CurrentAction.Categories;
         
-        public SelectNpcsForAction(Action action)
+        public SelectNpcsForAction(RoomAction action)
         {
             CurrentAction = action;
         }

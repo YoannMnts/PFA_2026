@@ -7,7 +7,7 @@ using UnityEngine.Serialization;
 
 namespace _Project.Scripts.Rooms
 {
-    public class RoomActionUI : UIItem<Action>
+    public class RoomActionUI : UIItem<RoomAction>
     {
         private SelectActionForRoomUI selectActionForRoomUI;
 
@@ -21,7 +21,7 @@ namespace _Project.Scripts.Rooms
             selectActionForRoomUI = GetComponentInParent<SelectActionForRoomUI>();
         }
 
-        protected override void SyncUI(Action current)
+        protected override void SyncUI(RoomAction current)
         {
             titleText.text = current.Name;
             costText.text = current.Cost.ToString();

@@ -56,7 +56,7 @@ namespace _Project.Scripts.Rooms
                 current.SetResult(-1);
         }
 
-        public void ChooseAction(Action actionData)
+        public void ChooseAction(RoomAction actionData)
         {
             if(current == null)
                 return;

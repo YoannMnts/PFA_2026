@@ -44,15 +44,15 @@ namespace _Project.Scripts.Rooms
         public void Cancel()
         {
             if (current != null)
-                current.SetResult(null);
+                current.SetResult(false);
         }
 
-        public void ChooseNpc(Npc npcData)
+        public void ChooseNpc(Npc npc)
         {
             if (current == null)
                 return;
-            
-            current.SetResult(npcData);
+            current.CurrentCategory.AddNpc(npc, current.CurrentSlotIndex);
+            current.SetResult(false);
         }
     }
 }

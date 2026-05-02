@@ -9,7 +9,7 @@ namespace _Project.Scripts.Rooms
     public class CategorySlotUI : UIItem<Npc>
     {
         [SerializeField]
-        private Image sprite;
+        private Image icon;
         
         private CategoryUI categoryUI;
         private Button button;
@@ -22,11 +22,12 @@ namespace _Project.Scripts.Rooms
 
         protected override void SyncUI(Npc current)
         {
-            if (current == null)
+            icon.sprite = current?.CategoryIcon;
+
+            if (categoryUI.Current.ObligateNpcs != null)
                 return;
             
             button.onClick.AddListener(OnClick);
-            categoryUI.Current.OnNpcAdded += SetSprite;
         }
 
         private void OnClick()
@@ -34,14 +35,9 @@ namespace _Project.Scripts.Rooms
             categoryUI.OnClicked(this);
         }
 
-        private void SetSprite(Npc npc)
-        {
-            //sprite.sprite = current?.Sprite;
-        }
-
         protected override void ClearUI()
         {
-            button.onClick.RemoveAllListeners();
+            button?.onClick.RemoveAllListeners();
         }
     }
 }

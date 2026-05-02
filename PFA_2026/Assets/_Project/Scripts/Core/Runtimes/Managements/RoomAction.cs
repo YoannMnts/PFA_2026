@@ -4,7 +4,7 @@ using Naussilus.Core.Managements.ActionDatas;
 
 namespace Naussilus.Core
 {
-    public struct Action
+    public struct RoomAction
     {
         public string Name { get; private set; }
         
@@ -16,7 +16,7 @@ namespace Naussilus.Core
         
         [CanBeNull] public ActionEffect[] ActionEffects { get; private set; }
 
-        public Action(ActionData data)
+        public RoomAction(ActionData data)
         {
             Name = data.Name;
             Cost = data.Cost;

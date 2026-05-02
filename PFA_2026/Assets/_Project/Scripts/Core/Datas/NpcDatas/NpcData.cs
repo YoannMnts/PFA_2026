@@ -23,6 +23,9 @@ namespace Naussilus.Core.NpcDatas
 
         [field: SerializeField] 
         public EGender Gender { get; private set; }
+        
+        [field: SerializeField]
+        public Sprite CategoryIcon { get; private set; } 
 
         [field: SerializeField, TextArea] 
         public string CurrentThinking { get; private set; }

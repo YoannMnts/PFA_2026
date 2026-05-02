@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Helteix.Tools.UI;
 using Naussilus.Core;
 using TMPro;
@@ -22,14 +23,21 @@ namespace _Project.Scripts.Rooms
         protected override void SyncUI(Category current)
         {
             categoryName.text = current.Name;
-            var npcs = current.CurrentNpcs ?? new Npc[current.Quantity];
-            categorySlotUIList.Connect(npcs);
+            
+            Debug.Log($"Category name: {current.Name}, current npcs : {Current.CurrentNpcs.Length}");
+            categorySlotUIList.Connect(Current.CurrentNpcs);
+            current.OnNpcAdded += RefreshUI;
         }
 
         protected override void ClearUI()
         {
             categoryName.text = string.Empty;
-            categorySlotUIList.Disconnect();
+            categorySlotUIList?.Disconnect();
+        }
+
+        private void RefreshUI(Category category)
+        {
+            categorySlotUIList.Connect(category.CurrentNpcs);
         }
 
         public void OnClicked(CategorySlotUI categorySlotUI)

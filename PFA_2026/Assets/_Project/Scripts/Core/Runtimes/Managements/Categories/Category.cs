@@ -7,7 +7,7 @@ namespace Naussilus.Core
 {
     public struct Category
     {
-        public event Action<Npc> OnNpcAdded;
+        public event Action<Category> OnNpcAdded;
         
         public string Name { get; private set; }
         
@@ -32,7 +32,7 @@ namespace Naussilus.Core
         public void AddNpc(Npc npc, int index)
         {
             CurrentNpcs[index] = npc;
-            OnNpcAdded?.Invoke(npc);
+            OnNpcAdded?.Invoke(this);
         }
     }
 }

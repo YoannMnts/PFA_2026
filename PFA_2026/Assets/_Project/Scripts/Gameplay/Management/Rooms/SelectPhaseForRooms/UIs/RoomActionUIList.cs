@@ -4,7 +4,7 @@ using Naussilus.Core.Managements.ActionDatas;
 
 namespace _Project.Scripts.Rooms
 {
-    public class RoomActionUIList : UIList<Action, RoomActionUI>
+    public class RoomActionUIList : UIList<RoomAction, RoomActionUI>
     {
         
     }

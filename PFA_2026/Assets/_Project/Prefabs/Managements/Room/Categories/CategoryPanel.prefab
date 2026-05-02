@@ -1238,6 +1238,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4986759727278005596, guid: 679a02886b0179a438783af8fc12cafc, type: 3}
+      propertyPath: categorySlotUIList
+      value: 
+      objectReference: {fileID: 4318878663081000708}
     - target: {fileID: 5670173269632875795, guid: 679a02886b0179a438783af8fc12cafc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1348,6 +1352,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8137622577907807057, guid: 679a02886b0179a438783af8fc12cafc, type: 3}
   m_PrefabInstance: {fileID: 4902035495573467189}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4318878663081000708 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9216680466448895793, guid: 679a02886b0179a438783af8fc12cafc, type: 3}
+  m_PrefabInstance: {fileID: 4902035495573467189}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6854e6ac44224f24afe458ae1b588b81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Naussilus.Gameplay.Management::_Project.Scripts.Rooms.CategorySlotUIList
 --- !u!114 &6534165850542249020 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2209440540335547401, guid: 679a02886b0179a438783af8fc12cafc, type: 3}
