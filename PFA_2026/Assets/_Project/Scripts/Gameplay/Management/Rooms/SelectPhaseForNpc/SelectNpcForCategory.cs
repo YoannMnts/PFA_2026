@@ -12,13 +12,12 @@ namespace _Project.Scripts.Rooms
         public Category CurrentCategory { get; private set; }
         public Npc[] ProhibitedNpc => CurrentCategory.ProhibitedNpcs;
         
-        public int CurrentSlotIndex { get; private set; }
-        
+        public int Index { get; private set; }
         public Npc[] Npcs { get; private set; }
-        public SelectNpcForCategory(Category category, int slotIndex)
+        public SelectNpcForCategory(Category category, int ind)
         {
             CurrentCategory = category;
-            CurrentSlotIndex = slotIndex;
+            Index = ind;
         }
 
         protected override Awaitable Initialize(CancellationToken token)

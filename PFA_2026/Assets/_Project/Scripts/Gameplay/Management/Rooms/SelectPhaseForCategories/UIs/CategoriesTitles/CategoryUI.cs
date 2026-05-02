@@ -1,10 +1,8 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using Helteix.Tools.UI;
 using Naussilus.Core;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace _Project.Scripts.Rooms
 {
@@ -13,7 +11,8 @@ namespace _Project.Scripts.Rooms
         private SelectNpcsForActionUI selectNpcsForActionUI;
         
         [SerializeField] private TMP_Text categoryName;
-        [SerializeField] private CategorySlotUIList categorySlotUIList;
+        [SerializeField] private CategorySlot categorySlotPrefab;
+        [SerializeField] private Transform categorySlotRoot;
         
         private void Start()
         {
@@ -23,29 +22,33 @@ namespace _Project.Scripts.Rooms
         protected override void SyncUI(Category current)
         {
             categoryName.text = current.Name;
-            
             Debug.Log($"Category name: {current.Name}, current npcs : {Current.CurrentNpcs.Length}");
-            categorySlotUIList.Connect(Current.CurrentNpcs);
-            current.OnNpcAdded += RefreshUI;
+
+            CreateSlots(current);
+            
+        }
+
+        private void CreateSlots(Category current)
+        {
+            for (int i = 0; i < current.CurrentNpcs.Length; i++)
+            {
+                var categorySlot = Instantiate(categorySlotPrefab, categorySlotRoot);
+                categorySlot.SyncUI(i);
+            }
         }
 
         protected override void ClearUI()
         {
             categoryName.text = string.Empty;
-            categorySlotUIList?.Disconnect();
+            foreach (Transform slot in categorySlotRoot)
+            {
+                Destroy(slot.gameObject);
+            }
         }
 
-        private void RefreshUI(Category category)
+        public void OnClicked(int index)
         {
-            categorySlotUIList.Connect(category.CurrentNpcs);
-        }
-
-        public void OnClicked(CategorySlotUI categorySlotUI)
-        {
-            var categorySlotUIs = categorySlotUIList.UIItems.ToArray();
-            for (int i = 0; i < categorySlotUIs.Length; i++)
-                if (categorySlotUIs[i] == categorySlotUI)
-                    selectNpcsForActionUI.ChooseCategory(Current, i);
+            selectNpcsForActionUI.ChooseCategory(Current, index);
         }
     }
 }

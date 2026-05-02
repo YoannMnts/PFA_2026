@@ -2,12 +2,14 @@
 using System.Linq;
 using Naussilus.Core.Managements.ActionDatas;
 using Naussilus.Core.Managers.Npcs;
+using Naussilus.Core.NpcDatas;
+using UnityEngine;
 
 namespace Naussilus.Core
 {
-    public struct Category
+    public class Category
     {
-        public event Action<Category> OnNpcAdded;
+        public event Action<int> OnNpcAdded;
         
         public string Name { get; private set; }
         
@@ -25,14 +27,15 @@ namespace Naussilus.Core
             Quantity = data.Quantity;
             ProhibitedNpcs = data.ProhibitedNpc?.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
             ObligateNpcs = data.ObligateNpc?.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
-            CurrentNpcs = ObligateNpcs ?? new Npc[Quantity];
+            CurrentNpcs = ObligateNpcs == null || ObligateNpcs.Length == 0 ? new Npc[Quantity] : ObligateNpcs;
             OnNpcAdded = null;
         }
 
         public void AddNpc(Npc npc, int index)
         {
-            CurrentNpcs[index] = npc;
-            OnNpcAdded?.Invoke(this);
+            var ind = Mathf.Clamp(index, 0, CurrentNpcs.Length);
+            CurrentNpcs[ind] = npc;
+            OnNpcAdded?.Invoke(index);
         }
     }
 }
