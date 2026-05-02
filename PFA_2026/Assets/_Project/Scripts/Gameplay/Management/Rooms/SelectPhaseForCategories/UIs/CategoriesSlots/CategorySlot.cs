@@ -20,14 +20,9 @@ namespace _Project.Scripts.Rooms
         {
             button = GetComponent<Button>();
             categoryUI = GetComponentInParent<CategoryUI>();
-            category = categoryUI.Current;
-            category.OnNpcAdded += RefreshUI;
+            category = categoryUI.Current; 
         }
-
-        private void OnDisable()
-        {
-            category.OnNpcAdded -= RefreshUI;
-        }
+        
 
         public void SyncUI(int current)
         {
@@ -44,15 +39,6 @@ namespace _Project.Scripts.Rooms
             iconImage.sprite = null;
             nameText.text = string.Empty;
             button?.onClick.RemoveAllListeners();
-        }
-
-        private void RefreshUI(int index)
-        {
-            Debug.Log($"RefreshUI called for index {index}, current index {currentIndex}");
-            if (currentIndex != index)
-                return;
-            
-            SyncUI(currentIndex);
         }
 
         public void OnClick()

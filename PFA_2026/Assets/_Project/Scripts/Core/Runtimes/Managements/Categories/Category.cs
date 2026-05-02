@@ -9,7 +9,7 @@ namespace Naussilus.Core
 {
     public class Category
     {
-        public event Action<int> OnNpcAdded;
+        public event Action<Category> OnNpcAdded;
         
         public string Name { get; private set; }
         
@@ -35,7 +35,7 @@ namespace Naussilus.Core
         {
             var ind = Mathf.Clamp(index, 0, CurrentNpcs.Length);
             CurrentNpcs[ind] = npc;
-            OnNpcAdded?.Invoke(index);
+            OnNpcAdded?.Invoke(this);
         }
     }
 }
