@@ -23,6 +23,8 @@ namespace Naussilus.Core
             CategoryIcon = npcData.CategoryIcon;
             CurrentThinking = npcData.CurrentThinking;
         }
+        protected Npc() { }
+
 
         public void InitRelationships(NpcData npcData)
         {

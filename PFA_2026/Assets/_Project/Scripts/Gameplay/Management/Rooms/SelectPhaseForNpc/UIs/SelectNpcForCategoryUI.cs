@@ -51,8 +51,8 @@ namespace _Project.Scripts.Rooms
         {
             if (current == null)
                 return;
-            current.CurrentCategory.AddNpc(npc, current.CurrentSlotIndex);
-            current.SetResult(false);
+            current.CurrentCategory.AddNpc(npc, current.Index);
+            current.SetResult(true);
         }
     }
 }

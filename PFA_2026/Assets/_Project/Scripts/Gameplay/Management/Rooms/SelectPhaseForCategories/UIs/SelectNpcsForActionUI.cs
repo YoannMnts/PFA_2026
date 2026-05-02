@@ -26,7 +26,6 @@ namespace _Project.Scripts.Rooms
             current = phase;
             group.Show();
             categoryUIList.Connect(phase.Categories);
-            
             base.OnPhaseBegin(phase);
         }
 
@@ -48,7 +47,7 @@ namespace _Project.Scripts.Rooms
                 current.SetResult(false);
         }
 
-        public void ChooseCategory(Category category, int slotIndex)
+        public void ChooseCategory(Category category, int ind)
         {
             if(current == null)
                 return;
@@ -56,11 +55,10 @@ namespace _Project.Scripts.Rooms
             var index = 0;
             for (int i = 0; i < current.Categories.Length; i++)
             {
-                if(current.Categories[i].Name == category.Name)
+                if(Equals(current.Categories[i], category))
                     index = i;
             }
-
-            var selectNpc = new SelectNpcForCategory(current.Categories[index], slotIndex);
+            var selectNpc = new SelectNpcForCategory(current.Categories[index], ind);
             selectNpc.RunAndForget();
         }
 
@@ -72,15 +70,15 @@ namespace _Project.Scripts.Rooms
                 for (int j = 0; j < category.CurrentNpcs.Length; j++)
                 {
                     var npc = category.CurrentNpcs[j];
-                    if (npc == null)
+                    if (npc is null)
                     {
                         Debug.LogError($"Trying to apply without assign all npcs in category {category.Name}");
                         return;
                     }
                 }
             }
-            if (current != null)
-                current.SetResult(false);
+
+            current?.SetResult(true);
         }
     }
 }
