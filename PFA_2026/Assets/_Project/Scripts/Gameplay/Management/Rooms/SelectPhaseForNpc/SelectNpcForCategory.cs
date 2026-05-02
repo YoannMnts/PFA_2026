@@ -7,15 +7,18 @@ using UnityEngine.Pool;
 
 namespace _Project.Scripts.Rooms
 {
-    public class SelectNpcForCategory : PhaseCompletionSource<Npc>
+    public class SelectNpcForCategory : PhaseCompletionSource<bool>
     {
         public Category CurrentCategory { get; private set; }
         public Npc[] ProhibitedNpc => CurrentCategory.ProhibitedNpcs;
         
+        public int CurrentSlotIndex { get; private set; }
+        
         public Npc[] Npcs { get; private set; }
-        public SelectNpcForCategory(Category category)
+        public SelectNpcForCategory(Category category, int slotIndex)
         {
             CurrentCategory = category;
+            CurrentSlotIndex = slotIndex;
         }
 
         protected override Awaitable Initialize(CancellationToken token)

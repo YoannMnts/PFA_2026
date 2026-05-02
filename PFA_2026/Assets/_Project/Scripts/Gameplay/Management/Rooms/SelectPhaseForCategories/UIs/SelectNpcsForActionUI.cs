@@ -48,7 +48,7 @@ namespace _Project.Scripts.Rooms
                 current.SetResult(false);
         }
 
-        public async void ChooseCategory(Category category, int npcIndex)
+        public void ChooseCategory(Category category, int slotIndex)
         {
             if(current == null)
                 return;
@@ -60,12 +60,8 @@ namespace _Project.Scripts.Rooms
                     index = i;
             }
 
-            var selectNpc = new SelectNpcForCategory(current.Categories[index]);
-            await selectNpc.Run();
-            var result = selectNpc.CurrentResult;
-            
-            current.Categories[index].AddNpc(result, npcIndex);
-            
+            var selectNpc = new SelectNpcForCategory(current.Categories[index], slotIndex);
+            selectNpc.RunAndForget();
         }
 
         public void Apply()

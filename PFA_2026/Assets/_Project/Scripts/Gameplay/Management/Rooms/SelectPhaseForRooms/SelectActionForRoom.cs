@@ -11,7 +11,7 @@ namespace _Project.Scripts.Rooms
     {
         public Room CurrentRoom { get; private set; }
         
-        public Action[] Choices { get; private set; }
+        public RoomAction[] Choices { get; private set; }
         
         public SelectActionForRoom(Room room)
         {
