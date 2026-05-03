@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 2_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 1cc169d0bce8ddc459694c57b1bc26f5, type: 2}
+    <Text>k__BackingField:
+    - "Elle soulignait mes d\xE9fauts, elle me disait que je ne me tenais pas assez
+      droite,"
+    - "que ma voix n'\xE9tait pas assez affirm\xE9e, que mon regard n'\xE9tait pas
+      assez droit, ce genre de chose\u2026"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 37cfb8b628a39d340ac3c3923c502c95, type: 2}
+  - {fileID: 11400000, guid: 770926ba120565242ac65fe931ba6822, type: 2}
+  <GUID>k__BackingField: a968d2f0-7d98-4887-8cb3-6d9bfdb408f7

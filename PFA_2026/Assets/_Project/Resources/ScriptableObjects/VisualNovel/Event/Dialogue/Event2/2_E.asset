@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 2_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: c68724178ba4187428d21b9cce342e9f, type: 2}
+    <Text>k__BackingField:
+    - "Ca n\u2019a pas march\xE9 du tout\u2026Je me sens encore plus moins \xE0 l\u2019aise
+      qu\u2019avant maintenant"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 09b0be6804594f14d8a36a829bca7f8f, type: 2}
+  - {fileID: 11400000, guid: 8e459a5edc739a34c94354b7402179b8, type: 2}
+  - {fileID: 11400000, guid: ace7100ae0e2bb94bb9dc66d72cb8456, type: 2}
+  <GUID>k__BackingField: ad1f84e0-8015-42ce-9575-07f8b0456d0e

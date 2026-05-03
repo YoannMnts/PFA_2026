@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6551f63f2e464eb39de211b4f9603e78, type: 3}
+  m_Name: 2_F3
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
+  <ButtonText>k__BackingField: Il fait passer au dessus de la blessure et tirer du
+    positif de ses conseils
+  <NpcText>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: c68724178ba4187428d21b9cce342e9f, type: 2}
+    <Text>k__BackingField:
+    - "C\u2019est pas facile\u2026"
+    - "J\u2019ai du mal \xE0 passer au dessus de mes \xE9motions, m\xEAme si je sais
+      qu\u2019elle ne pensait pas mal"
+  <Effects>k__BackingField:
+  - <IsEnumeration>k__BackingField: 0
+    <CurrentNpcTarget>k__BackingField:
+      rid: -2
+    <Conditions>k__BackingField: []
+    <Consequences>k__BackingField:
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <Stat>k__BackingField:
+          rid: 2120458351966683156
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 2
+      <Text>k__BackingField: 
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <Stat>k__BackingField:
+          rid: 2120458351966683157
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 1
+      <Amount>k__BackingField: 1
+      <Text>k__BackingField: 
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <Stat>k__BackingField:
+          rid: 2120458351966683158
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 1
+      <Amount>k__BackingField: 2
+      <Text>k__BackingField: 
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <Stat>k__BackingField:
+          rid: 2120458351966683159
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 1
+      <Text>k__BackingField: "Jennie a l\u2019air d\u2019\xEAtre plus confiante,
+        je pense qu\u2019elle \xE0 suivi les conseils de Pam, mais elles ont l\u2019air
+        de moins se parler, peut \xEAtre qu\u2019elle \xE0 peur d\u2019\xEAtre bless\xE9e
+        \xE0 nouveau"
+  <GUID>k__BackingField: 87b532ff-553a-45f6-9425-b6ee1f8fc7e7
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2120458351966683156
+      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: 0873e3af56f61554284c45b21149e18e, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2120458351966683157
+      type: {class: BehaviorValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: 8ff1af5c9eb450b49ae874d6cb091580, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2120458351966683158
+      type: {class: BehaviorValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: f2b55b5c9291b9b448a304246130c6d4, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2120458351966683159
+      type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Npc>k__BackingField:
+          rid: 2120458351966683160
+    - rid: 2120458351966683160
+      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}

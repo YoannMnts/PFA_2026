@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 3_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 0}
+    <Text>k__BackingField: []
+  <Answers>k__BackingField: []
+  <GUID>k__BackingField: f2d9721e-f8ae-4c8e-b9d8-00a515d68644
