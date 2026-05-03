@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 4_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: c68724178ba4187428d21b9cce342e9f, type: 2}
+    <Text>k__BackingField:
+    - "Si \xE7a va\u2026C\u2019est juste que\u2026"
+    - "Je ne suis pas s\xFBre d'\xEAtre comme les autres"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: a637164d69f4f8941a6ebdcae41052b4, type: 2}
+  - {fileID: 11400000, guid: 7d93b41519e6b5c48b881db914824592, type: 2}
+  - {fileID: 11400000, guid: a700432e3f72c3e499e68787a8b670c1, type: 2}
+  <GUID>k__BackingField: 2e943fa1-3843-4bd2-9637-5eeba33c0799

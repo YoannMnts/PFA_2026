@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 10_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 1cc169d0bce8ddc459694c57b1bc26f5, type: 2}
+    <Text>k__BackingField:
+    - "Et bien, si, mais on prend le risque de rencontrer des navires de la s\xE9curit\xE9
+      a\xE9rienne..."
+    - "J\u2019ai d\xE9j\xE0 pilot\xE9 \xE0 travers des temp\xEAtes, m\xEAme si c'\xE9tait
+      des navires diff\xE9rents"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: cbdc2c4cec2dffd4d9d0a6ca72e585f0, type: 2}
+  - {fileID: 11400000, guid: 0a30043e8097b014d8d4a6ca6f88e2a1, type: 2}
+  - {fileID: 11400000, guid: fa282ff7d048d3547bc632542e72ff0f, type: 2}
+  - {fileID: 11400000, guid: d5ea5d7581700b043830d5620df47c79, type: 2}
+  <GUID>k__BackingField: 35d0f113-3ca5-47e2-ac31-c9baa5e646bc

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 5_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 1cc169d0bce8ddc459694c57b1bc26f5, type: 2}
+    <Text>k__BackingField:
+    - "Je pense qu\u2019elle se fait des entailles sur les bras, si ce n'est plus\u2026"
+    - "Je m\u2019inqui\xE8te pour elle"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 2ef026d1f075b2e4b9b7afa219373288, type: 2}
+  - {fileID: 11400000, guid: f9fbbea585ab1d141ad3601090b5d26c, type: 2}
+  <GUID>k__BackingField: 5b423c0d-623e-4ad2-909f-bfa3269ba82f

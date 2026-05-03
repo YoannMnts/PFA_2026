@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6551f63f2e464eb39de211b4f9603e78, type: 3}
   m_Name: 0_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
-  <ButtonText>k__BackingField: Je ferais de mon mieux - E
+  <ButtonText>k__BackingField: 'Je ferais de mon mieux
+
+'
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 0}
     <Expression>k__BackingField: {fileID: 11400000, guid: eb209584d88ce37449f0c335ad8ba289, type: 2}

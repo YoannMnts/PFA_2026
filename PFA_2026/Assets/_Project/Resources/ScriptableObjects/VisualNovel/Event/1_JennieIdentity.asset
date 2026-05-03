@@ -23,70 +23,62 @@ MonoBehaviour:
       rid: -2
     <Conditions>k__BackingField:
     - <LeftSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 0
+        <IsCurrentNpc>k__BackingField: 1
         <Subject>k__BackingField:
-          rid: 2120458342273122305
+          rid: -2
         <Stat>k__BackingField:
-          rid: 2120458342273122306
+          rid: 2811533773414858821
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ComparisonOperator>k__BackingField: 2
+      <ComparisonOperator>k__BackingField: 4
       <RightSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
         <Subject>k__BackingField:
           rid: -2
         <Stat>k__BackingField:
-          rid: 2120458342273122307
+          rid: 2811533773414858822
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
     - <LeftSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 0
+        <IsCurrentNpc>k__BackingField: 1
         <Subject>k__BackingField:
-          rid: 2120458342273122308
+          rid: -2
         <Stat>k__BackingField:
-          rid: 2120458342273122309
+          rid: 2811533773414858823
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ComparisonOperator>k__BackingField: 2
+      <ComparisonOperator>k__BackingField: 4
       <RightSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
         <Subject>k__BackingField:
           rid: -2
         <Stat>k__BackingField:
-          rid: 2120458342273122310
+          rid: 2811533773414858824
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
     <Consequences>k__BackingField: []
   <FirstDialogue>k__BackingField: {fileID: 11400000, guid: 65931afdee835614bbc1b2197261b8ba, type: 2}
-  <GUID>k__BackingField: a3c13fb2-abfb-447e-a00a-8b7b14e742ed
+  <GUID>k__BackingField: 6540f4f9-143e-491e-934c-da5f33005828
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 2120458342273122305
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
-    - rid: 2120458342273122306
-      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+    - rid: 2811533773414858821
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Stat>k__BackingField: {fileID: 11400000, guid: 0873e3af56f61554284c45b21149e18e, type: 2}
         <Amount>k__BackingField: 0
-    - rid: 2120458342273122307
-      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
+    - rid: 2811533773414858822
+      type: {class: IntValueData, ns: Naussilus.Core, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 10
-    - rid: 2120458342273122308
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
-    - rid: 2120458342273122309
-      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+    - rid: 2811533773414858823
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Stat>k__BackingField: {fileID: 11400000, guid: da645db61372a354fb4e466633a3a304, type: 2}
         <Amount>k__BackingField: 0
-    - rid: 2120458342273122310
-      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
+    - rid: 2811533773414858824
+      type: {class: IntValueData, ns: Naussilus.Core, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 15

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 4_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 9e8b83d3e3aee8543a3f25c969319a9c, type: 2}
+    <Text>k__BackingField:
+    - Bonjour Capitaine.
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: c68724178ba4187428d21b9cce342e9f, type: 2}
+    <Text>k__BackingField:
+    - "En fait, je doute d\u2019avoir fait le bon choix en devenant de pirate\u2026"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 1cc169d0bce8ddc459694c57b1bc26f5, type: 2}
+    <Text>k__BackingField:
+    - "J\u2019ai pris un grand risque, et j\u2019ai peur de le regretter"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 0e4c3ea7198f4c446b364958553f6576, type: 2}
+  - {fileID: 11400000, guid: 6eeb4773ed0f982409d9451521c8e422, type: 2}
+  - {fileID: 11400000, guid: 3c4bd43eaf1117d48a015edb7b4079d7, type: 2}
+  <GUID>k__BackingField: d0014aa1-af36-4b30-ae05-1f37a872e9e7
