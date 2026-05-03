@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
+namespace Naussilus.Gameplay.VisualNovel
 {
     public class DecisionButton : PhaseButton<DecisionChoice>
     {

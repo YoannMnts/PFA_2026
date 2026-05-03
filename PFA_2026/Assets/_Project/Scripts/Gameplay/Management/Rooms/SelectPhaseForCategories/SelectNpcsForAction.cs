@@ -1,7 +1,7 @@
 ﻿using Helteix.Tools.Phases;
 using Naussilus.Core;
 
-namespace _Project.Scripts.Rooms
+namespace Rooms
 {
     public class SelectNpcsForAction : PhaseCompletionSource<bool>
     {

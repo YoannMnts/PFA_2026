@@ -1,11 +1,10 @@
 ﻿using Helteix.Tools.UI;
 using Naussilus.Core;
-using Naussilus.Core.NpcDatas;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace _Project.Scripts.Rooms
+namespace Rooms
 {
     public class SlotNpcUI : UIItem<Npc>
     {

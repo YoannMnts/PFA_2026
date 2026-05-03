@@ -4,7 +4,7 @@ using Naussilus.Core;
 using Naussilus.Core.Managers;
 using UnityEngine;
 
-namespace _Project.Scripts.Rooms
+namespace Rooms
 {
     public class SelectNpcsForActionUI : MonoPhaseListener<SelectNpcsForAction>
     {

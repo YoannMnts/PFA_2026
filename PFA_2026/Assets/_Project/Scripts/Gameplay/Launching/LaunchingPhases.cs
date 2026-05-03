@@ -1,14 +1,14 @@
 ﻿using System;
-using _Project.Scripts;
+using System.Threading.Tasks;
 using Helteix.Tools.Phases;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.Managers.Rooms;
-using Naussilus.Gameplay.VisualNovel._Project.Scripts;
+using Naussilus.Gameplay.VisualNovel;
 using UnityEngine;
 
-namespace Naussilus.Gameplay.Launcher._Project.Scripts.Gameplay
+namespace Naussilus.Gameplay.Launcher
 {
     public class LaunchingPhases : MonoBehaviour
     {
@@ -34,7 +34,9 @@ namespace Naussilus.Gameplay.Launcher._Project.Scripts.Gameplay
                 {
                     await SwitchDay(i);
                     await VisualNovel();
+                    await PlayerSwitch();
                     bool result = await Management();
+                    await PlayerSwitch();
                     if (!result)
                     {
                         GameOver();
@@ -51,6 +53,12 @@ namespace Naussilus.Gameplay.Launcher._Project.Scripts.Gameplay
         private void GameOver()
         {
             throw new NotImplementedException();
+        }
+
+        private static async Awaitable PlayerSwitch()
+        {
+            var playerSwitch = new PlayerSwitch();
+            await playerSwitch.Run();
         }
 
         private async Awaitable SwitchDay(int i)

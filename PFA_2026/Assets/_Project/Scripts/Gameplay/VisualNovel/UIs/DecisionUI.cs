@@ -2,7 +2,7 @@
 using Naussilus.Core.Managers;
 using UnityEngine;
 
-namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
+namespace Naussilus.Gameplay.VisualNovel
 {
     public class DecisionUI : MonoBehaviour, IPhaseListener<Decision>
     {

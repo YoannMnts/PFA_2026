@@ -1,4 +1,4 @@
-﻿namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
+﻿namespace Naussilus.Gameplay.VisualNovel
 {
     public class SummaryButton : PhaseButton<SummaryWait>
     {

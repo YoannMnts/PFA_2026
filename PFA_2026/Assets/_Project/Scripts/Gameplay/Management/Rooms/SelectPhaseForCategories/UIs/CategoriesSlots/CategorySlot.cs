@@ -1,10 +1,9 @@
-﻿using System;
-using Naussilus.Core;
+﻿using Naussilus.Core;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace _Project.Scripts.Rooms
+namespace Rooms
 {
     public class CategorySlot : MonoBehaviour
     {
