@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 14_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 31d3115b21e3c1e408c41459920e2c44, type: 2}
+    <Text>k__BackingField:
+    - "Hey Cap\u2019taine\u2026Vous avez peut-\xEAtre eu la nouvelle\u2026"
+    - "On \xE0 pris une photo de moi sans que je sache pendant que j\u2019\xE9tais
+      \xE0 la salle de bain, et la plupart de l\u2019\xE9quipage \xE0 fini par la
+      voir."
+    - "J\u2019ai du mal \xE0 m\u2019en remettre"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 126aa043dd7c01a4387410b2e84db6a0, type: 2}
+  - {fileID: 11400000, guid: 33edfd11bf0fed941a2a9507c027c5e3, type: 2}
+  - {fileID: 11400000, guid: 2d6306b7053fd94478990b029d04b038, type: 2}
+  <GUID>k__BackingField: 92728d12-7065-4bc1-ba88-cfb86079c115

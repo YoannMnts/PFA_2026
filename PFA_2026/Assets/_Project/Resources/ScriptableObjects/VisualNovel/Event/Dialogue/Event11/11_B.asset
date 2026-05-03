@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 11_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+    <Text>k__BackingField:
+    - "Tout le monde est insupportable aujourd\u2019hui !"
+    - 'Camil est lent, Liski est dans les pattes, Jennie fait des turbulences dans
+      tous les sens, j''en peux plus !
+
+'
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 6d03a8eae367eef4eb0482507a529330, type: 2}
+  - {fileID: 11400000, guid: 0d11c350171f22c44977d68a20e6944a, type: 2}
+  - {fileID: 11400000, guid: c3a12344913dc22428ec439a89bb76eb, type: 2}
+  <GUID>k__BackingField: e0b238ca-7df7-448b-ab26-03a0315e18a7

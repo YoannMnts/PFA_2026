@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
-  m_Name: 3_C_I
+  m_Name: 25_B_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 
-  <NextDialogue>k__BackingField: {fileID: 0}
-  <GUID>k__BackingField: 
+  <ButtonText>k__BackingField: Il faut lui laisser du temps
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6e60e1f3b257a034385d185f7adadb71, type: 2}
+  <GUID>k__BackingField: 13a8c318-6f5a-482e-b444-d82520951a9c

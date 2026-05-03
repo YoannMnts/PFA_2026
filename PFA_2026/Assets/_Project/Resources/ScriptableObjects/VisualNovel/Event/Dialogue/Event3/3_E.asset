@@ -14,7 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
   - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 0}
-    <Text>k__BackingField: []
-  <Answers>k__BackingField: []
-  <GUID>k__BackingField: f2d9721e-f8ae-4c8e-b9d8-00a515d68644
+    <Expression>k__BackingField: {fileID: 11400000, guid: c68724178ba4187428d21b9cce342e9f, type: 2}
+    <Text>k__BackingField:
+    - "Vous croyez ? Je n\u2019ai pas envie de me faire crier dessus\u2026"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+    <Text>k__BackingField:
+    - "Oh \xE7a va, je suis m\xEAme pas en train de crier !"
+    - "Moi aussi j\u2019ai le droit de dire ce qui me d\xE9range, et la c\u2019est
+      elle qui me d\xE9range\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 7bcb9fdb0d9df9e4080e3e1faf73fc18, type: 2}
+  - {fileID: 11400000, guid: 5d8e784d52ece8744bf6c60ddd45eb98, type: 2}
+  - {fileID: 11400000, guid: 5832bb28a769a5e47b1822961b7c0bc2, type: 2}
+  <GUID>k__BackingField: 4eb09403-94f3-4108-8ceb-a0cf9ae09684

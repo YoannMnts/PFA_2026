@@ -14,7 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
   - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 0}
-    <Text>k__BackingField: []
-  <Answers>k__BackingField: []
-  <GUID>k__BackingField: f2d9721e-f8ae-4c8e-b9d8-00a515d68644
+    <Expression>k__BackingField: {fileID: 11400000, guid: dcd063c74af125544a8449f130643bac, type: 2}
+    <Text>k__BackingField:
+    - "Oui je suis d\u2019accord avec vous !"
+    - "Oui je suis d\u2019accord avec vous !"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+    <Text>k__BackingField:
+    - "N\u2019importe quoi !"
+    - "De nous trois c\u2019est moi qui ait pass\xE9 le plus de temps sur un navire
+      pirate."
+    - "Et je peux vous dire que celui \xE7i est impeccable si on le compare aux autres
+      !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: d1814181cf954a646b7fd0cf1ab9e05a, type: 2}
+  - {fileID: 11400000, guid: 80108f560aec6d448aa75a817e983d0b, type: 2}
+  <GUID>k__BackingField: cb51f3ef-07ab-4eb4-85f0-a3002e632525

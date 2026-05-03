@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 3_A_B
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 
-  <NextDialogue>k__BackingField: {fileID: 0}
-  <GUID>k__BackingField: 
+  <ButtonText>k__BackingField: "Tu pourrais faire un effort T\xE9a"
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7ce98fffc0ffc384ca6bb662767283ea, type: 2}
+  <GUID>k__BackingField: c1244397-ae6c-4937-b1ab-9614fd54a14f

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 25_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f9c90a9bda4319e4680fbf0e1f897ea1, type: 2}
+    <Text>k__BackingField:
+    - "Vous croyez ? Je n\u2019ai rien dit de m\xE9chant pourtant."
+    - "C\u2019est vrai que je suis franche, mais je dis toujours la v\xE9rit\xE9
+      que les gens ont besoin d\u2019entendre\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 0283930b697949a4aafa01fb7adaa1c6, type: 2}
+  - {fileID: 11400000, guid: 264f3eb556115c34aa7ff0cb032b6020, type: 2}
+  <GUID>k__BackingField: d854e48a-48ac-40b3-bdc0-2057eb6b158d

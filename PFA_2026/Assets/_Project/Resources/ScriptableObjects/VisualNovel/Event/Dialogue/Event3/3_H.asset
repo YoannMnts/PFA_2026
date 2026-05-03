@@ -14,7 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
   - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 0}
-    <Text>k__BackingField: []
-  <Answers>k__BackingField: []
-  <GUID>k__BackingField: f2d9721e-f8ae-4c8e-b9d8-00a515d68644
+    <Expression>k__BackingField: {fileID: 11400000, guid: 1cc169d0bce8ddc459694c57b1bc26f5, type: 2}
+    <Text>k__BackingField:
+    - "Ah ! C\u2019est vrai que je suis un peu maniaque sur le bords pardon\u2026"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 7ad260f9e18927e47848490acfa4185d, type: 2}
+    <Text>k__BackingField:
+    - "Plus qu\u2019un peu m\xEAme !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 7bcb9fdb0d9df9e4080e3e1faf73fc18, type: 2}
+  - {fileID: 11400000, guid: 5d8e784d52ece8744bf6c60ddd45eb98, type: 2}
+  - {fileID: 11400000, guid: 5832bb28a769a5e47b1822961b7c0bc2, type: 2}
+  <GUID>k__BackingField: efaf2393-f633-48f4-93fb-33796e98d68f

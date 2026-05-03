@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 11_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+    <Text>k__BackingField:
+    - "Il n\u2019y a nul part ou se d\xE9tendre, ou que je sois il y a quelqu\u2019un
+      pour me casser les pieds"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 173e11137f5713d44959d28f9a071b8e, type: 2}
+  - {fileID: 11400000, guid: fe44955f8f50a4f4fa3f1882c3c7df0b, type: 2}
+  - {fileID: 11400000, guid: 15a76e9a47741ca4d9bf3bc5f6d95fea, type: 2}
+  <GUID>k__BackingField: fcb044bd-ec9d-4127-a2bd-812b3f17646f

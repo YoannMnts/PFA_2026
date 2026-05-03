@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 11_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+    <Text>k__BackingField:
+    - "J\u2019en ai marre !"
+    - "Tout le monde me soule aujourd\u2019hui, je vais devenir folle ! "
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 58bb309647e9bbf4981a7f7f060796fb, type: 2}
+  - {fileID: 11400000, guid: 2aa17e2c630495a4590335ee53ff051f, type: 2}
+  - {fileID: 11400000, guid: 1b2474105d9d1e447b82f86af46ff042, type: 2}
+  <GUID>k__BackingField: 3ce16720-0d08-452e-89d9-f2a59d6e70eb

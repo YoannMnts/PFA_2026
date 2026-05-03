@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 3_A_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 
-  <NextDialogue>k__BackingField: {fileID: 0}
-  <GUID>k__BackingField: 
+  <ButtonText>k__BackingField: "Tu as raison, un bateau devrait \xEAtre nickel en
+    permanence"
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 12b2d1b93b071de4aab5161b4e17dddb, type: 2}
+  <GUID>k__BackingField: c2209bc9-adc2-4cde-9684-7e3965f61656

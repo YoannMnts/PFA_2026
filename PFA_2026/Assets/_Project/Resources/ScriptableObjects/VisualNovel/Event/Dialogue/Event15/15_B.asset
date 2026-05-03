@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 15_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 7ad260f9e18927e47848490acfa4185d, type: 2}
+    <Text>k__BackingField:
+    - "Et bien j'\xE9tais tranquillement en train de r\xE9parer des machines au poste
+      de pilotage."
+    - "Et elle est venue pour commencer \xE0 dire que tel instrument \xE9tait mal
+      r\xE9gl\xE9, qu\u2019elle n\u2019aimait pas comment je r\xE9glais son si\xE8ge,
+      qu\u2019un levier \xE9tait trop resserr\xE9, et plein d\u2019autres choses."
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+    <Text>k__BackingField:
+    - "Elle \xE0 commenc\xE9 \xE0 s'\xE9nerver et \xE0 faire comme si elle aimait
+      rien de ce que je faisais depuis le d\xE9but !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 43100cfab79336348ab9e99543ceb2e8, type: 2}
+  - {fileID: 11400000, guid: f1191357afa38b545bd84293f046932e, type: 2}
+  - {fileID: 11400000, guid: 1ba8bac6d8ecb7940b29d45c84dcfa77, type: 2}
+  <GUID>k__BackingField: af1dd184-0d89-4e9f-a924-2a324d3a7d55

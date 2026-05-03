@@ -14,7 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
   - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 0}
-    <Text>k__BackingField: []
-  <Answers>k__BackingField: []
+    <Expression>k__BackingField: {fileID: 11400000, guid: 9e8b83d3e3aee8543a3f25c969319a9c, type: 2}
+    <Text>k__BackingField:
+    - "Bonjour Capitaine. En fait, \xE7a fait quelques jours que je tr\xE9buche en
+      permanence sur les affaires de T\xE9a."
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 1cc169d0bce8ddc459694c57b1bc26f5, type: 2}
+    <Text>k__BackingField:
+    - "Elle \xE0 tendance \xE0 laisser tra\xEEner ses outils de partout, et c\u2019est
+      un peu d\xE9rangeant\u2026"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+    <Text>k__BackingField:
+    - "Je suis juste tr\xE8s occup\xE9e, j\u2019ai pas le temps de ranger chaque
+      outil, pour le ressortir juste apr\xE8s !"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 7ad260f9e18927e47848490acfa4185d, type: 2}
+    <Text>k__BackingField:
+    - "Moi je m\u2019en sors, c\u2019est pas compliqu\xE9 d\u2019enjamber"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: a5f40f074107b8a408bcd5783380cf62, type: 2}
+  - {fileID: 11400000, guid: dfa1454ff2fef414399d0c961cf40e55, type: 2}
+  - {fileID: 11400000, guid: ef971e817eead9942b650b4a971ad87b, type: 2}
   <GUID>k__BackingField: f2d9721e-f8ae-4c8e-b9d8-00a515d68644

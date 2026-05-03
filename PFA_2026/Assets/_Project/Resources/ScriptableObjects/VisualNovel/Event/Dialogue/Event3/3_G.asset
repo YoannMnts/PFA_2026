@@ -14,7 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
   - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 0}
-    <Text>k__BackingField: []
-  <Answers>k__BackingField: []
-  <GUID>k__BackingField: f2d9721e-f8ae-4c8e-b9d8-00a515d68644
+    <Expression>k__BackingField: {fileID: 11400000, guid: 1cc169d0bce8ddc459694c57b1bc26f5, type: 2}
+    <Text>k__BackingField:
+    - "Peut \xEAtre oui\u2026"
+    - "Je suis encore nouvelle dans la piraterie, je n\u2019ai pas l\u2019habitude
+      que ce soit aussi\u2026D\xE9sordonn\xE9 on va dire"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 7ad260f9e18927e47848490acfa4185d, type: 2}
+    <Text>k__BackingField:
+    - "Eh bah il faut t\u2019y faire, c\u2019est comme \xE7a la vraie piraterie."
+    - "C\u2019est vrai que ca doit te changer de tes grands navires de commer\xE7ants
+      pleins de bonnes mani\xE8res"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 7bcb9fdb0d9df9e4080e3e1faf73fc18, type: 2}
+  - {fileID: 11400000, guid: 5d8e784d52ece8744bf6c60ddd45eb98, type: 2}
+  - {fileID: 11400000, guid: 5832bb28a769a5e47b1822961b7c0bc2, type: 2}
+  <GUID>k__BackingField: 48043b21-1c03-4ef1-8ba4-3462894695cb

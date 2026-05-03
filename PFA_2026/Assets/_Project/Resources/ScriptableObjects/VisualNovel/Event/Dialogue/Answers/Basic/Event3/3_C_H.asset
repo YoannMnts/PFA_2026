@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 3_C_H
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 
-  <NextDialogue>k__BackingField: {fileID: 0}
-  <GUID>k__BackingField: 
+  <ButtonText>k__BackingField: "C\u2019est vrai que tu es un peu maniaque Jennie"
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 242729a0cf523d741a114e5ae6fe0311, type: 2}
+  <GUID>k__BackingField: 876c078e-ca1b-4136-a1ce-9cd6cf3cf195

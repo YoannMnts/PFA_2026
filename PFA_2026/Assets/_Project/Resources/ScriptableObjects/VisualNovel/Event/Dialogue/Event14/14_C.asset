@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 14_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 31d3115b21e3c1e408c41459920e2c44, type: 2}
+    <Text>k__BackingField:
+    - "Hier soir, elle \xE9tait affich\xE9e dans la salle de d\xE9tente, mais personne
+      n\u2019a vu qui l\u2019a pos\xE9e."
+    - "C\u2019est Pam qui l\u2019a arrach\xE9e et brul\xE9e en la voyant, mais trop
+      tard malheureusement."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 56800f794a8aea245b88ca46f08f1a42, type: 2}
+  - {fileID: 11400000, guid: 19dda23dd3c1b4c40a9369b0f373d58a, type: 2}
+  - {fileID: 11400000, guid: 66408f129fe471c408d9e421bc1d655a, type: 2}
+  <GUID>k__BackingField: a33180dd-f607-4ea6-8397-0d0264fb857a

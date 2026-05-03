@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 25_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 5ef4500f111497443b1f23f4c3951502, type: 2}
+    <Text>k__BackingField:
+    - Bon matin.
+    - "J\u2019ai l\u2019impression que Jennie m\u2019ignore, je crois qu\u2019elle
+      ne se sent pas mal et qu\u2019elle \xE9vite la conversation."
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: d68f5268f191b02489412f9299a2bae5, type: 2}
+    <Text>k__BackingField:
+    - "Elle n\u2019est pas comme \xE7a d\u2019habitude, \xE7a m\u2019inqui\xE8te."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 8a174fbcc68a28b4599760e83f7ac781, type: 2}
+  - {fileID: 11400000, guid: a54cd148057465441b43964439c6802b, type: 2}
+  <GUID>k__BackingField: 70a4facb-2c8b-46b2-8fbf-27b9a8a7a4a5

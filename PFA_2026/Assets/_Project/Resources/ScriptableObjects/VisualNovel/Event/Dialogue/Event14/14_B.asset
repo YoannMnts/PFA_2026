@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 14_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 7ad260f9e18927e47848490acfa4185d, type: 2}
+    <Text>k__BackingField:
+    - "Aucune id\xE9e, je n\u2019ai vu personne, et personne ne s\u2019est d\xE9nonc\xE9\u2026"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+    <Text>k__BackingField:
+    - "Je ne sais m\xEAme pas qui soup\xE7onner, mais si j\u2019avais son nom je
+      lui referais le portrait !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: e0283726cf92cd54fbab78891ab51eeb, type: 2}
+  - {fileID: 11400000, guid: e056447f62feeaf4880fb7a0be6cbaac, type: 2}
+  - {fileID: 11400000, guid: ee41e9e1763f88842b230415de3d0736, type: 2}
+  <GUID>k__BackingField: d3a784c2-d681-4f92-858f-1480a41e87ee

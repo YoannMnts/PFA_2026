@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 3_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 
-  <NextDialogue>k__BackingField: {fileID: 0}
-  <GUID>k__BackingField: 
+  <ButtonText>k__BackingField: "Jennie tu as le droit de parler des sujets qui te
+    d\xE9rangent"
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 07e467ea669bcb642b46f128fcc0dbb9, type: 2}
+  <GUID>k__BackingField: 5c2dae5a-7489-4818-9461-53e1c12b4210

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 3_C_G
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 
-  <NextDialogue>k__BackingField: {fileID: 0}
-  <GUID>k__BackingField: 
+  <ButtonText>k__BackingField: "Ce bateau est petit, on est un peu oblig\xE9 de se
+    marcher dessus"
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 1a6c03259fbd69245a7d0f5b886edd78, type: 2}
+  <GUID>k__BackingField: cc13a3df-42a0-47b0-ba21-bb424d45615f

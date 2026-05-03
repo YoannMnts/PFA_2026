@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 25_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f9c90a9bda4319e4680fbf0e1f897ea1, type: 2}
+    <Text>k__BackingField:
+    - "Normalement, quand je remarque qu\u2019elle est pas en forme, je vais lui
+      parler pour qu\u2019elle puisse s\u2019exprimer."
+    - "Mais cette fois \xE7i, elle abr\xE8ge la conversation et m\u2019\xE9vite,
+      je ne sais pas ce qui \xE0 chang\xE9"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 82aff75fd74dc254288afe5ac24b1778, type: 2}
+  - {fileID: 11400000, guid: 3e6eece95d1daaf4baf42cd32df1494a, type: 2}
+  <GUID>k__BackingField: eedf062c-63e3-4c63-b120-443059ec94a5

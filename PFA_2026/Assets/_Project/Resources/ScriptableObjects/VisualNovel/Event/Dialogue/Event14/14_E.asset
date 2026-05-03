@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 14_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 31d3115b21e3c1e408c41459920e2c44, type: 2}
+    <Text>k__BackingField:
+    - "Bien s\xFBr qu\u2019elle me met mal \xE0 l\u2019aise !"
+    - "Non seulement c\u2019est une photo intime, mais en plus elle laisse voir\u2026"
+    - "Des cicatrices que je pr\xE9f\xE9rerais laisser cach\xE9es\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: d78b2400c3f3ee4459f56ae7562077da, type: 2}
+  - {fileID: 11400000, guid: 23f9e8ea44bd34e4fb0b858a63673e34, type: 2}
+  - {fileID: 11400000, guid: 1fceae632a9d3e54987319aae9ce603d, type: 2}
+  <GUID>k__BackingField: 70017e4c-37a0-4e3a-b51b-1511699c62ef

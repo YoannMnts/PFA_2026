@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 3_B_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 
-  <NextDialogue>k__BackingField: {fileID: 0}
-  <GUID>k__BackingField: 
+  <ButtonText>k__BackingField: "Il n\u2019y a vraiment aucune solution possible ?"
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8e66d1f8790710543818b6f546a032e3, type: 2}
+  <GUID>k__BackingField: f24f0cf8-76ab-4f26-b451-cfbf13c67809

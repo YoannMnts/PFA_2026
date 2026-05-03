@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 14_G
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 31d3115b21e3c1e408c41459920e2c44, type: 2}
+    <Text>k__BackingField:
+    - "Je ne sais pas, je suis parti en courant de la pi\xE8ce, j\u2019\xE9tais morte
+      de honte."
+    - "Sur cette photo, en plus d\u2019\xEAtre d\xE9nud\xE9e, c\u2019est une partie
+      de mon corps avec des cicatrices que\u2026"
+    - "Je pr\xE9f\xE8re laisser cach\xE9es, alors forc\xE9ment j\u2019ai peur qu\u2019on
+      me fasse des reflexions dessus\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: d78b2400c3f3ee4459f56ae7562077da, type: 2}
+  - {fileID: 11400000, guid: 23f9e8ea44bd34e4fb0b858a63673e34, type: 2}
+  - {fileID: 11400000, guid: 1fceae632a9d3e54987319aae9ce603d, type: 2}
+  <GUID>k__BackingField: cb6daca4-99ae-4c1f-96eb-95db055e02ea

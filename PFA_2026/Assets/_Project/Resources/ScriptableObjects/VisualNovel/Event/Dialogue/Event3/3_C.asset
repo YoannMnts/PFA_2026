@@ -14,7 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
   - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 0}
-    <Text>k__BackingField: []
-  <Answers>k__BackingField: []
-  <GUID>k__BackingField: f2d9721e-f8ae-4c8e-b9d8-00a515d68644
+    <Expression>k__BackingField: {fileID: 11400000, guid: 1cc169d0bce8ddc459694c57b1bc26f5, type: 2}
+    <Text>k__BackingField:
+    - "Et bien personnellement, j\u2019aime quand tout est bien rang\xE9, et\u2026"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 085407dd610890a478100f5f01c6f7ea, type: 2}
+    <Text>k__BackingField:
+    - "c\u2019est aga\xE7ant de devoir faire attention \xE0 chaque pas dans les couloirs
+      de ne pas marcher sur une cl\xE9 \xE0 molette ou un tuyau qui traine !"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 7ad260f9e18927e47848490acfa4185d, type: 2}
+    <Text>k__BackingField:
+    - "Tout le monde est pas aussi maniaque que toi, faut t\u2019y faire"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 7551a80d251a0f3468e71864261e4d9d, type: 2}
+  - {fileID: 11400000, guid: 0556cf36a4144244eb0980898cb79880, type: 2}
+  - {fileID: 11400000, guid: a82e40105c6f62840b0a384cb967ff0c, type: 2}
+  <GUID>k__BackingField: 41ec8a16-21ea-48fe-bd80-379a5086ecab

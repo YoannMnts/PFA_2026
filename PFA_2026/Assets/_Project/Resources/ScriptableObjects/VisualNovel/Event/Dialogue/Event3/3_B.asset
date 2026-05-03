@@ -14,7 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
   - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 0}
-    <Text>k__BackingField: []
-  <Answers>k__BackingField: []
-  <GUID>k__BackingField: f2d9721e-f8ae-4c8e-b9d8-00a515d68644
+    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+    <Text>k__BackingField:
+    - "Je fais d\xE9j\xE0 des efforts ! "
+    - "Mais \xE0 un moment on est sur un bateau pirate, tout peux pas \xEAtre nickel
+      en permanence !"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 7ad260f9e18927e47848490acfa4185d, type: 2}
+    <Text>k__BackingField:
+    - "Je ne vais pas perdre mon temps pour satisfaire des manies de la t\xEAte de
+      poulpe"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: c68724178ba4187428d21b9cce342e9f, type: 2}
+    <Text>k__BackingField:
+    - "Je savais qu\u2019elle se mettrait en col\xE8re si je venais en parler\u2026"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 97cb8ede593339e4b87800f87a95e7e5, type: 2}
+  - {fileID: 11400000, guid: c3a12344913dc22428ec439a89bb76eb, type: 2}
+  <GUID>k__BackingField: f72acb05-7609-4c81-b23f-2ca5b2fa0a6f
