@@ -1,9 +1,9 @@
-﻿using System.Threading;
+﻿using System.Collections.Generic;
+using System.Threading;
 using Helteix.Tools.Phases;
 using Naussilus.Core;
 using Naussilus.Core.Managers.Npcs;
 using UnityEngine;
-using UnityEngine.Pool;
 
 namespace Rooms
 {
@@ -13,7 +13,7 @@ namespace Rooms
         public Npc[] ProhibitedNpc => CurrentCategory.ProhibitedNpcs;
         
         public int Index { get; private set; }
-        public Npc[] Npcs { get; private set; }
+        public List<Npc> Npcs { get; private set; }
         public SelectNpcForCategory(Category category, int ind)
         {
             CurrentCategory = category;
@@ -22,16 +22,10 @@ namespace Rooms
 
         protected override Awaitable Initialize(CancellationToken token)
         {
-            using (ListPool<Npc>.Get(out var list))
-            {
-                NpcManager.GetAllNpcs(out var allNpcs);
-                list.AddRange(allNpcs);
-                for (int i = 0; i < ProhibitedNpc.Length; i++)
-                {
-                    list.Remove(ProhibitedNpc[i]);
-                }
-                Npcs = list.ToArray();
-            }
+            NpcManager.GetAllNpcs(out var allNpcs);
+            Npcs.AddRange(allNpcs);
+            for (int i = 0; i < ProhibitedNpc.Length; i++)
+                Npcs.Remove(ProhibitedNpc[i]);
             
             return base.Initialize(token);
         }

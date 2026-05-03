@@ -1,4 +1,5 @@
-﻿using Naussilus.Core;
+﻿using System.Linq;
+using Naussilus.Core;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,8 +28,15 @@ namespace Rooms
         {
             ClearUI();
             currentIndex = current;
-            iconImage.sprite = category.CurrentNpcs[current]?.CategoryIcon;
-            nameText.text = category.CurrentNpcs[current]?.Name;
+            Npc categoryCurrentNpc = category.CurrentNpcs[current];
+            iconImage.sprite = categoryCurrentNpc?.CategoryIcon;
+            nameText.text = categoryCurrentNpc?.Name;
+
+            if (category.ObligateNpcs.Contains(categoryCurrentNpc))
+            {
+                button.interactable = false;
+                return;
+            }
             
             button?.onClick.AddListener(OnClick);
         }

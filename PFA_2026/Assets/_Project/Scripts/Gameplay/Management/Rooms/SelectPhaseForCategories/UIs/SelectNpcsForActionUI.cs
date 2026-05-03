@@ -2,6 +2,7 @@
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
+using Naussilus.Core.Managers.Rooms;
 using UnityEngine;
 
 namespace Rooms

@@ -1,6 +1,7 @@
 ﻿using System;
 using Helteix.Tools.UI;
 using Naussilus.Core;
+using Naussilus.Core.Managers.Rooms;
 using TMPro;
 using UnityEngine;
 
@@ -24,8 +25,8 @@ namespace Rooms
             if (Current == null)
                 return;
             
-            Current.OnNpcAdded -= MakeSlots;
-            Current.OnNpcClear -= MakeSlots;
+            RoomCategoryManager.OnNpcAdded -= MakeSlots;
+            RoomCategoryManager.OnNpcRemove -= MakeSlots;
         }
 
         protected override void SyncUI(Category current)
@@ -34,8 +35,8 @@ namespace Rooms
             Debug.Log($"Category name: {current.Name}, current npcs : {Current.CurrentNpcs.Count}");
 
             MakeSlots(current);
-            Current.OnNpcAdded += MakeSlots;
-            Current.OnNpcClear += MakeSlots;
+            RoomCategoryManager.OnNpcAdded += MakeSlots;
+            RoomCategoryManager.OnNpcRemove += MakeSlots;
         }
         
 
@@ -53,13 +54,13 @@ namespace Rooms
             }
         }
 
-        private void MakeSlots(Category current)
+        private void MakeSlots(Category category)
         {
-            if (current == null)
+            if (category == null || category != Current)
                 return;
             
             ClearSlots();
-            for (int i = 0; i < current.CurrentNpcs.Count; i++)
+            for (int i = 0; i < category.CurrentNpcs.Count; i++)
             {
                 var categorySlot = Instantiate(categorySlotPrefab, categorySlotRoot);
                 categorySlot.SyncUI(i);
