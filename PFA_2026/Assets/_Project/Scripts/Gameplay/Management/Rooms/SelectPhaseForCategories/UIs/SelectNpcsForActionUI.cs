@@ -85,6 +85,7 @@ namespace Rooms
                     }
                 }
             }
+            current.CurrentAction.AddAllValidEffect();
 
             current?.SetResult(true);
         }

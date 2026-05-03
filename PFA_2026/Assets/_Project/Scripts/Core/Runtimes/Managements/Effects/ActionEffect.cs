@@ -21,7 +21,7 @@ namespace Naussilus.Core
 
         public ActionEffect(ActionEffectData data, Category[] categories)
         {
-            CategoryIndex = data.CategoryIndex;
+            CategoryIndex = data.CategoryIndex - 1;
             Npc = NpcManager.TryGetNpc(data.NpcData?.GUID);
             CurrentCategories = categories;
             Effects = data.Effects?.Select(e => new ConditionalEffect(e)).ToArray();

@@ -65,7 +65,7 @@ namespace Naussilus.Core.Managers
             return true;
         }
 
-        public static void AddValidEffect(this RoomAction roomAction)
+        public static void AddAllValidEffect(this RoomAction roomAction)
         {
             var actionEffects = roomAction.ActionEffects;
             var categories = roomAction.Categories;
