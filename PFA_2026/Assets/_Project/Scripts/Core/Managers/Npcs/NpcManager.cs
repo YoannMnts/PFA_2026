@@ -111,7 +111,7 @@ namespace Naussilus.Core.Managers.Npcs
                     
                     case CategoryIndex categoryIndex:
                         int ind = Mathf.Max(0, categoryIndex.Index - 1);
-                        Category targetCategory = currentCategories[ind]; 
+                        Category targetCategory = currentCategories[ind];
                         for (int j = 0; j < targetCategory.CurrentNpcs.Length; j++)
                         {
                             Npc categoryNpc = targetCategory.CurrentNpcs[j];
