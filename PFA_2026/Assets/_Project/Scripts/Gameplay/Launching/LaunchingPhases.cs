@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Threading.Tasks;
 using Helteix.Tools.Phases;
-using Naussilus.Core;
 using Naussilus.Core.Managers;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.Managers.Rooms;
 using Naussilus.Gameplay.VisualNovel;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Naussilus.Gameplay.Launcher
 {
@@ -33,11 +32,11 @@ namespace Naussilus.Gameplay.Launcher
                 for (int i = 0; i < maxDay; i++)
                 {
                     await SwitchDay(i);
-                    await VisualNovel();
+                    bool vnResult = await VisualNovel();
                     await PlayerSwitch();
-                    bool result = await Management();
+                    bool mResult = await Management();
                     await PlayerSwitch();
-                    if (!result)
+                    if (!mResult || !vnResult)
                     {
                         GameOver();
                         break;
@@ -52,10 +51,10 @@ namespace Naussilus.Gameplay.Launcher
 
         private void GameOver()
         {
-            throw new NotImplementedException();
+            SceneManager.LoadScene(0);
         }
 
-        private static async Awaitable PlayerSwitch()
+        private async Awaitable PlayerSwitch()
         {
             var playerSwitch = new PlayerSwitch();
             await playerSwitch.Run();
@@ -67,11 +66,13 @@ namespace Naussilus.Gameplay.Launcher
             await switchDay.Run();
         }
 
-        private async Awaitable VisualNovel()
+        private async Awaitable<bool> VisualNovel()
         {
-            Incident visualNovelEvent = EventManager.GetValidEvent();
+            var visualNovelEvent = EventManager.GetValidEvent();
             var visualNovelPhase = new VisualNovelPhase(visualNovelEvent);
-            await visualNovelPhase.Run();
+            PhaseResult<bool> result = await visualNovelPhase.Run();
+            
+            return result;
         }
 
         private async Awaitable<bool> Management()

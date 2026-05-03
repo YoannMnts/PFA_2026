@@ -13,7 +13,7 @@ namespace Rooms
         public Npc[] ProhibitedNpc => CurrentCategory.ProhibitedNpcs;
         
         public int Index { get; private set; }
-        public List<Npc> Npcs { get; private set; }
+        public List<Npc> Npcs { get; private set; } = new List<Npc>();
         public SelectNpcForCategory(Category category, int ind)
         {
             CurrentCategory = category;

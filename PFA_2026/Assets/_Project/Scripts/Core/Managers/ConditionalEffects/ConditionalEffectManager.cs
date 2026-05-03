@@ -11,7 +11,7 @@ namespace Naussilus.Core.Managers
         public static event Action OnAddEffect;
         public static event Action OnRemoveEffect;
         
-        private static List<ActionEffect> scheduledEffects = new List<ActionEffect>();
+        private static readonly List<ActionEffect> ScheduledEffects = new List<ActionEffect>();
         
         private static Npc[] currentNpcs;
 
@@ -27,8 +27,12 @@ namespace Naussilus.Core.Managers
             for (int i = 0; i < currentNpcs.Length; i++)
             {
                 currentConditions.ComputeAllCondition(currentNpcs[i], currentCategories, out var validNpcs);
+                Debug.Log($"[ConditionalEffectManager] Conditions has been computed.");
                 for (int j = 0; j < validNpcs.Count; j++)
+                {
                     currentConsequences.ComputeAllConsequence(validNpcs[i], currentCategories);
+                    Debug.Log($"[ConditionalEffectManager] Consequences has been computed.");
+                }
             }
         }
         public static void ComputeConditionalEffect(this ConditionalEffect conditionalEffect, Npc currentNpcData)
@@ -52,10 +56,8 @@ namespace Naussilus.Core.Managers
             currentNpcs = conditionalEffect.IsEnumeration
                 ? NpcManager.GetSelectedNpcs(conditionalEffect.CurrentNpcTarget, currentNpcData)
                 : new[] { currentNpcData };
-            Debug.Log($"[ConditionalEffectManager] Npcs selected : {currentNpcs.Length}");
             Condition[] currentConditions = conditionalEffect.Conditions;
-            Consequence[] currentConsequences = conditionalEffect.Consequences;
-
+            
             for (int i = 0; i < currentNpcs.Length; i++)
             {
                 var isValid = currentConditions.ComputeAllCondition(currentNpcs[i]);
@@ -85,27 +87,32 @@ namespace Naussilus.Core.Managers
         
         public static void AddScheduledEffect(this ActionEffect actionEffect)
         {
-            scheduledEffects.Add(actionEffect);
+            ScheduledEffects.Add(actionEffect);
             actionEffect.Npc?.SetNewPosition(actionEffect.Position);
+            Debug.Log($"[ConditionalEffectManager] Adding scheduled effect {actionEffect.Npc?.Name}");
             OnAddEffect?.Invoke();
         }
 
         public static void RemoveScheduledEffect(this ActionEffect actionEffect)
         {
-            scheduledEffects.Remove(actionEffect);
+            ScheduledEffects.Remove(actionEffect);
             actionEffect.Npc?.ReturnToLastPosition();
+            Debug.Log($"[ConditionalEffectManager] Removing scheduled effect {actionEffect.Npc?.Name}");
             OnRemoveEffect?.Invoke();
         }
 
         public static void ComputeScheduledEffects()
         {
-            for (int i = 0; i < scheduledEffects.Count; i++)
+            for (int i = 0; i < ScheduledEffects.Count; i++)
             {
-                var effects = scheduledEffects[i].Effects;
-                var npc = scheduledEffects[i].Npc;
-                var currentCategories = scheduledEffects[i].CurrentCategories;
+                ConditionalEffect[] effects = ScheduledEffects[i].Effects;
+                
                 if (effects == null)
                     continue;
+                
+                Npc npc = ScheduledEffects[i].Npc;
+                Category[] currentCategories = ScheduledEffects[i].CurrentCategories;
+                
                 for (int j = 0; j < effects.Length; j++)
                     effects[j].ComputeConditionalEffect(npc, currentCategories);
             }
