@@ -1,12 +1,11 @@
 ﻿using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
-using Naussilus.Core.Managements.ActionDatas;
 using Naussilus.Core.Managers;
 using TMPro;
 using UnityEngine;
 
-namespace _Project.Scripts.Rooms
+namespace Rooms
 {
     public class SelectActionForRoomUI : MonoPhaseListener<SelectActionForRoom>
     {

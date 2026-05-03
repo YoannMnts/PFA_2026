@@ -2,12 +2,9 @@
 using System.Threading.Tasks;
 using Helteix.Tools.Phases;
 using Naussilus.Core;
-using Naussilus.Core.NpcDatas;
-using Naussilus.Core.VisualNovels.EventDatas;
-using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas;
 using UnityEngine;
 
-namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
+namespace Naussilus.Gameplay.VisualNovel
 {
     public class VisualNovelPhase : IPhase<bool>
     {

@@ -3,7 +3,7 @@ using Naussilus.Core.Managers;
 using TMPro;
 using UnityEngine;
 
-namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
+namespace Naussilus.Gameplay.VisualNovel
 {
     public class DialogueUI : MonoBehaviour, IPhaseListener<DialoguePhase>
     {

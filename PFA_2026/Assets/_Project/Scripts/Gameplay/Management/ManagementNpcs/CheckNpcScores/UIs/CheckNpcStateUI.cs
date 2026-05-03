@@ -2,51 +2,48 @@
 using Naussilus.Core.Managers;
 using UnityEngine;
 
-namespace _Project.Scripts
+public class CheckNpcStateUI : MonoPhaseListener<CheckNpcState>
 {
-    public class CheckNpcStateUI : MonoPhaseListener<CheckNpcState>
+    private CheckNpcState current;
+
+    [SerializeField] private CanvasGroup group;
+    [SerializeField] private BehaviorUIList behaviorUIList;
+    [SerializeField] private MentalStateUIList mentalStateUIList;
+
+    private void Start()
     {
-        private CheckNpcState current;
+        group.Hide();
+    }
 
-        [SerializeField] private CanvasGroup group;
-        [SerializeField] private BehaviorUIList behaviorUIList;
-        [SerializeField] private MentalStateUIList mentalStateUIList;
-
-        private void Start()
-        {
-            group.Hide();
-        }
-
-        protected override void OnPhaseBegin(CheckNpcState phase)
-        {
-            if(current != null)
-                return;
+    protected override void OnPhaseBegin(CheckNpcState phase)
+    {
+        if(current != null)
+            return;
             
-            current = phase;
-            group.Show();
-            behaviorUIList.Connect(phase.NpcBehaviors);
-            mentalStateUIList.Connect(phase.NpcMentalStates);
+        current = phase;
+        group.Show();
+        behaviorUIList.Connect(phase.NpcBehaviors);
+        mentalStateUIList.Connect(phase.NpcMentalStates);
             
-            base.OnPhaseBegin(phase);
-        }
+        base.OnPhaseBegin(phase);
+    }
 
-        protected override void OnPhaseEnd(CheckNpcState phase)
-        {
-            if (current != phase) 
-                return;
+    protected override void OnPhaseEnd(CheckNpcState phase)
+    {
+        if (current != phase) 
+            return;
             
-            current = null;
-            behaviorUIList.Disconnect();
-            mentalStateUIList.Disconnect();
-            group.Hide();
+        current = null;
+        behaviorUIList.Disconnect();
+        mentalStateUIList.Disconnect();
+        group.Hide();
             
-            base.OnPhaseEnd(phase);
-        }
+        base.OnPhaseEnd(phase);
+    }
 
-        public void Cancel()
-        {
-            if (current != null)
-                current.SetResult(true);
-        }
+    public void Cancel()
+    {
+        if (current != null)
+            current.SetResult(true);
     }
 }

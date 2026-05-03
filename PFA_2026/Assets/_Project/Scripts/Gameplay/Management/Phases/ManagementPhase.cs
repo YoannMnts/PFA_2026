@@ -1,12 +1,6 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using Helteix.Tools.Phases;
-using UnityEngine;
+﻿using Helteix.Tools.Phases;
 
-namespace _Project.Scripts
+public class ManagementPhase : PhaseCompletionSource<bool>
 {
-    public class ManagementPhase : PhaseCompletionSource<bool>
-    {
-        
-    }
+    
 }

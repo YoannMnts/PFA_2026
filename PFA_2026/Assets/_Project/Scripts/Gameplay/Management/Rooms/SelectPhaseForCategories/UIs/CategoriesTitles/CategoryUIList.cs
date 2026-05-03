@@ -1,7 +1,7 @@
 ﻿using Helteix.Tools.UI;
 using Naussilus.Core;
 
-namespace _Project.Scripts.Rooms
+namespace Rooms
 {
     public class CategoryUIList : UIList<Category, CategoryUI>
     {

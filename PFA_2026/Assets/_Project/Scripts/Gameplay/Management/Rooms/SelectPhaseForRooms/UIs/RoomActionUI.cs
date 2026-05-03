@@ -1,11 +1,9 @@
 ﻿using Helteix.Tools.UI;
 using Naussilus.Core;
-using Naussilus.Core.Managements.ActionDatas;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace _Project.Scripts.Rooms
+namespace Rooms
 {
     public class RoomActionUI : UIItem<RoomAction>
     {

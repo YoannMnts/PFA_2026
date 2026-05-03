@@ -3,12 +3,9 @@ using System.Threading.Tasks;
 using Helteix.Tools.Phases;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
-using Naussilus.Core.NpcDatas;
-using Naussilus.Core.VisualNovels.EventDatas;
-using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers;
 using UnityEngine;
 
-namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
+namespace Naussilus.Gameplay.VisualNovel
 {
     public class Decision : IPhase<bool>
     {
@@ -42,6 +39,8 @@ namespace Naussilus.Gameplay.VisualNovel._Project.Scripts
                     ConditionalEffect[] effects = finalAnswerData.Effects;
                     foreach (var effect in effects)
                         effect.ComputeConditionalEffect(data);
+                    var summary = new Summary();
+                    await summary.Run();
                     break;
             }
             return true;

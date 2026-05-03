@@ -5,7 +5,7 @@ using Naussilus.Core.Managers.Npcs;
 using UnityEngine;
 using UnityEngine.Pool;
 
-namespace _Project.Scripts.Rooms
+namespace Rooms
 {
     public class SelectNpcForCategory : PhaseCompletionSource<bool>
     {

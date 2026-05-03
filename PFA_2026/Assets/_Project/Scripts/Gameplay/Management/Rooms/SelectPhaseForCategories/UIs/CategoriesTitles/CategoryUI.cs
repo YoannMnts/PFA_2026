@@ -1,11 +1,9 @@
-﻿using System;
-using System.Linq;
-using Helteix.Tools.UI;
+﻿using Helteix.Tools.UI;
 using Naussilus.Core;
 using TMPro;
 using UnityEngine;
 
-namespace _Project.Scripts.Rooms
+namespace Rooms
 {
     public class CategoryUI : UIItem<Category>
     {
