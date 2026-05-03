@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Naussilus.Core.Managers.Npcs;
 using UnityEngine;
 
@@ -11,7 +12,7 @@ namespace Naussilus.Core.Managers
         public static event Action OnRemoveEffect;
         
         private static List<ActionEffect> scheduledEffects = new List<ActionEffect>();
-
+        
         private static Npc[] currentNpcs;
 
         private static void ComputeConditionalEffect(this ConditionalEffect conditionalEffect, Npc currentNpcData, Category[] currentCategories)
@@ -64,15 +65,35 @@ namespace Naussilus.Core.Managers
             return true;
         }
 
+        public static void AddValidEffect(this RoomAction roomAction)
+        {
+            var actionEffects = roomAction.ActionEffects;
+            var categories = roomAction.Categories;
+            if (actionEffects == null || categories == null)
+                return;
+            
+            for (int i = 0; i < actionEffects.Length; i++)
+            {
+                var actionEffect = actionEffects[i];
+                var contains = categories[actionEffect.CategoryIndex].CurrentNpcs.Contains(actionEffect.Npc);
+                if (contains)
+                {
+                    actionEffect.AddScheduledEffect();
+                }
+            }
+        }
+        
         public static void AddScheduledEffect(this ActionEffect actionEffect)
         {
             scheduledEffects.Add(actionEffect);
+            actionEffect.Npc?.SetNewPosition(actionEffect.Position);
             OnAddEffect?.Invoke();
         }
 
         public static void RemoveScheduledEffect(this ActionEffect actionEffect)
         {
             scheduledEffects.Remove(actionEffect);
+            actionEffect.Npc?.ReturnToLastPosition();
             OnRemoveEffect?.Invoke();
         }
 

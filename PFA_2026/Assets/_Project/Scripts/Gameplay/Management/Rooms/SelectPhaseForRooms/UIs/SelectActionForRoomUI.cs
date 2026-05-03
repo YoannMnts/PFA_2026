@@ -63,7 +63,7 @@ namespace Rooms
             var index = 0;
             for (int i = 0; i < current.Choices.Length; i++)
             {
-                if(current.Choices[i].Name == actionData.Name)
+                if(current.Choices[i] == actionData)
                     index = i;
             }
 

@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Naussilus.Core.NpcDatas;
 using UnityEngine;
 
@@ -6,6 +7,9 @@ namespace Naussilus.Core
 {
     public class Npc : INpcSelector
     {
+        public event Action<Vector2> OnNewPosition;
+        public event Action OnReturnLastPosition;
+        
         public string Name { get; private set; }
         public Behavior[] Behaviors { get; private set; }
         public MentalState[] MentalStates { get; private set; }
@@ -13,6 +17,8 @@ namespace Naussilus.Core
         public NpcRelationship[] Relationships { get; private set; }
         public Sprite CategoryIcon { get; private set; }
         public string CurrentThinking { get; private set; }
+        
+        public Category CurrentCategory { get; private set; }
         
         public Npc(NpcData npcData)
         {
@@ -23,35 +29,25 @@ namespace Naussilus.Core
             CategoryIcon = npcData.CategoryIcon;
             CurrentThinking = npcData.CurrentThinking;
         }
-        protected Npc() { }
-
 
         public void InitRelationships(NpcData npcData)
         {
             Relationships = npcData.Relationships?.Select(r => new NpcRelationship(r)).ToArray();
         }
-        
-        private int GetRelationshipWith(Npc npc)
+
+        public void SetCategory(Category category)
         {
-            for (int i = 0; i < Relationships.Length; i++)
-            {
-                if (Relationships[i].Npc == npc)
-                {
-                    return Relationships[i].Amount;
-                }
-            }
-            return -1;
+            CurrentCategory = category;
+        }
+        
+        public void SetNewPosition(Vector2 position)
+        {
+            OnNewPosition?.Invoke(position);
         }
 
-        private void SetRelationshipWith(Npc npc, int amount)
+        public void ReturnToLastPosition()
         {
-            for (int i = 0; i < Relationships.Length; i++)
-            {
-                if (Relationships[i].Npc == npc)
-                {
-                    Relationships[i].SetNewAmount(amount);;
-                }
-            }
+            OnReturnLastPosition?.Invoke();
         }
     }
 }

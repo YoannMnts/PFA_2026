@@ -6,13 +6,16 @@ public class Timer : MonoPhaseListener<ManagementPhase>
 {
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private int timerDuration;
+    [SerializeField] private bool isTimerActive;
         
     private ManagementPhase currentPhase;
         
     protected override void OnPhaseBegin(ManagementPhase phase)
     {
         currentPhase = phase;
-        StartCountdown();
+        if (isTimerActive)
+            StartCountdown();
+            
             
         base.OnPhaseBegin(phase);
     }

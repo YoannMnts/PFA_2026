@@ -7,7 +7,7 @@ using UnityEngine;
 public class CheckNpcState : PhaseCompletionSource<bool>
 {
     public ManagementNpc CurrentManagementNpc { get; private set; }
-    public Npc CurrentNpc => NpcManager.TryGetNpc(CurrentManagementNpc.NpcData.GUID);
+    public Npc CurrentNpc => CurrentManagementNpc.Npc;
         
     public Behavior[] NpcBehaviors { get; private set; }
     public MentalState[] NpcMentalStates { get; private set; }

@@ -44,7 +44,15 @@ namespace Rooms
         public void Cancel()
         {
             if (current != null)
+            {
+                for (var i = 0; i < current.Categories.Length; i++)
+                {
+                    var category = current.Categories[i];
+                    category.ClearNpc();
+                }
+
                 current.SetResult(false);
+            }
         }
 
         public void ChooseCategory(Category category, int ind)
@@ -55,7 +63,7 @@ namespace Rooms
             var index = 0;
             for (int i = 0; i < current.Categories.Length; i++)
             {
-                if(Equals(current.Categories[i], category))
+                if(current.Categories[i] == category)
                     index = i;
             }
             var selectNpc = new SelectNpcForCategory(current.Categories[index], ind);
@@ -67,7 +75,7 @@ namespace Rooms
             for (int i = 0; i < current.Categories.Length; i++)
             {
                 var category = current.Categories[i];
-                for (int j = 0; j < category.CurrentNpcs.Length; j++)
+                for (int j = 0; j < category.CurrentNpcs.Count; j++)
                 {
                     var npc = category.CurrentNpcs[j];
                     if (npc is null)

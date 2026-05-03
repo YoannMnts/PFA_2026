@@ -15,7 +15,7 @@ namespace Naussilus.Core
         public Category[] CurrentCategories { get; private set; }
         [CanBeNull] public ConditionalEffect[] Effects { get; private set; }
         
-        public Vector3 Position { get; private set; }
+        public Vector2 Position { get; private set; }
         
         public Expression? ActionSprite { get; private set; }
 
