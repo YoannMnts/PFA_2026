@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4426d2e37cb0480e88589e1b21471988, type: 3}
-  m_Name: 1_JennieIdentity
+  m_Name: 3_JenniePirate
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.EventData
-  <Name>k__BackingField: "Jennie doute de son identit\xE9"
+  <Name>k__BackingField: "Jennie doute de sa carri\xE8re de pirate"
   <Npcs>k__BackingField:
   - {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
   <Priority>k__BackingField: 1
@@ -23,11 +23,11 @@ MonoBehaviour:
       rid: -2
     <Conditions>k__BackingField:
     - <LeftSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 0
+        <IsCurrentNpc>k__BackingField: 1
         <Subject>k__BackingField:
-          rid: 2120458342273122305
+          rid: -2
         <Stat>k__BackingField:
-          rid: 2120458342273122306
+          rid: 2120458353421844480
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ComparisonOperator>k__BackingField: 2
@@ -36,15 +36,15 @@ MonoBehaviour:
         <Subject>k__BackingField:
           rid: -2
         <Stat>k__BackingField:
-          rid: 2120458342273122307
+          rid: 2120458353421844481
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
     - <LeftSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 0
+        <IsCurrentNpc>k__BackingField: 1
         <Subject>k__BackingField:
-          rid: 2120458342273122308
+          rid: -2
         <Stat>k__BackingField:
-          rid: 2120458342273122309
+          rid: 2120458353421844482
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ComparisonOperator>k__BackingField: 2
@@ -53,40 +53,32 @@ MonoBehaviour:
         <Subject>k__BackingField:
           rid: -2
         <Stat>k__BackingField:
-          rid: 2120458342273122310
+          rid: 2120458353421844483
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
     <Consequences>k__BackingField: []
-  <FirstDialogue>k__BackingField: {fileID: 11400000, guid: 65931afdee835614bbc1b2197261b8ba, type: 2}
-  <GUID>k__BackingField: a3c13fb2-abfb-447e-a00a-8b7b14e742ed
+  <FirstDialogue>k__BackingField: {fileID: 11400000, guid: e214380c6494e4a4997a15c136820ca6, type: 2}
+  <GUID>k__BackingField: 7081da16-f1a5-4678-bfab-74a83b86d23c
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 2120458342273122305
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
-    - rid: 2120458342273122306
+    - rid: 2120458353421844480
       type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <Stat>k__BackingField: {fileID: 11400000, guid: 0873e3af56f61554284c45b21149e18e, type: 2}
+        <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
         <Amount>k__BackingField: 0
-    - rid: 2120458342273122307
+    - rid: 2120458353421844481
       type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
       data:
-        <Amount>k__BackingField: 10
-    - rid: 2120458342273122308
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
-    - rid: 2120458342273122309
+        <Amount>k__BackingField: 11
+    - rid: 2120458353421844482
       type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Stat>k__BackingField: {fileID: 11400000, guid: da645db61372a354fb4e466633a3a304, type: 2}
         <Amount>k__BackingField: 0
-    - rid: 2120458342273122310
+    - rid: 2120458353421844483
       type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
       data:
-        <Amount>k__BackingField: 15
+        <Amount>k__BackingField: 13

@@ -10,19 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6551f63f2e464eb39de211b4f9603e78, type: 3}
-  m_Name: 1_F3
+  m_Name: 2_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
-  <ButtonText>k__BackingField: 'Je dirais aux autres de ne plus te le rappeler '
+  <ButtonText>k__BackingField: "Tu es trop sensible, elle essayait juste de t\u2019aider"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 9e8b83d3e3aee8543a3f25c969319a9c, type: 2}
-    <Text>k__BackingField:
-    - "Merci, mais je doute que \xE7a soit la solution\u2026"
   - <Npc>k__BackingField: {fileID: 0}
     <Expression>k__BackingField: {fileID: 11400000, guid: c68724178ba4187428d21b9cce342e9f, type: 2}
     <Text>k__BackingField:
-    - "J\u2019aimerais qu\u2019on ne me le dise plus parce que ce qu\u2019ils ne
-      le pensent pas, pas parce que c\u2019est interdit"
+    - "- Ah\u2026Peut \xEAtre que je suis sensible oui\u2026"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 085407dd610890a478100f5f01c6f7ea, type: 2}
+    <Text>k__BackingField:
+    - Mais elle reste blessante !
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: c68724178ba4187428d21b9cce342e9f, type: 2}
+    <Text>k__BackingField:
+    - "Oubliez c\u2019est bon\u2026"
   <Effects>k__BackingField:
   - <IsEnumeration>k__BackingField: 0
     <CurrentNpcTarget>k__BackingField:
@@ -35,11 +38,11 @@ MonoBehaviour:
         <Subject>k__BackingField:
           rid: -2
         <Stat>k__BackingField:
-          rid: 2120458343661437141
+          rid: 2120458351966683150
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ArithmeticOperator>k__BackingField: 0
-      <Amount>k__BackingField: 1
+      <ArithmeticOperator>k__BackingField: 1
+      <Amount>k__BackingField: 4
       <Text>k__BackingField: 
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
@@ -47,86 +50,66 @@ MonoBehaviour:
         <Subject>k__BackingField:
           rid: -2
         <Stat>k__BackingField:
-          rid: 2120458343661437142
+          rid: 2120458351966683152
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 2
+      <Text>k__BackingField: 
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <Stat>k__BackingField:
+          rid: 2120458351966683153
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: "Cet entretien \xE0 fait du bien \xE0 Jennie, je vois
-        qu'elle ignore plus facilement les remarques \xE0 propos du poulpe, et qu'elle
-        est plus confiante dans le fait que ce soit une fille"
-  - <IsEnumeration>k__BackingField: 1
-    <CurrentNpcTarget>k__BackingField:
-      rid: 2120458342273122322
-    <Conditions>k__BackingField:
-    - <LeftSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: 2120458342273122320
-        <Stat>k__BackingField:
-          rid: 2120458342273122321
-        <UseEnumerationNpc>k__BackingField: 0
-        <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ComparisonOperator>k__BackingField: 2
-      <RightSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <Stat>k__BackingField:
-          rid: 2120458342273122324
-        <UseEnumerationNpc>k__BackingField: 0
-        <UseRelationshipNpcToReturn>k__BackingField: 0
-    <Consequences>k__BackingField:
+      <Text>k__BackingField: 
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
         <Subject>k__BackingField:
           rid: -2
         <Stat>k__BackingField:
-          rid: 2120458343661437144
+          rid: 2120458351966683155
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: 
-  <GUID>k__BackingField: 1147cde7-d79b-4988-8111-8c0be5b28a40
+      <Text>k__BackingField: "Depuis que j\u2019ai dit \xE7a \xE0 Jennie, l\u2019ai
+        l\u2019impression qu\u2019elle \xE0 tout simplement arr\xEAt\xE9 de parler\u2026J\u2019aurais
+        peut \xEAtre du plus l'\xE9couter"
+  <GUID>k__BackingField: ddf79f2c-adc7-4dab-922b-4c1195b13aa2
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 2120458342273122320
-      type: {class: AllNpc, ns: Naussilus.Core, asm: Naussilus.Core}
-      data: 
-    - rid: 2120458342273122321
+    - rid: 2120458351966683150
+      type: {class: BehaviorValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: f2b55b5c9291b9b448a304246130c6d4, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2120458351966683152
+      type: {class: BehaviorValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: 8ff1af5c9eb450b49ae874d6cb091580, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2120458351966683153
       type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 0
         <Npc>k__BackingField:
-          rid: 2120458342273122323
-    - rid: 2120458342273122322
-      type: {class: AllNpc, ns: Naussilus.Core, asm: Naussilus.Core}
-      data: 
-    - rid: 2120458342273122323
+          rid: 2120458351966683154
+    - rid: 2120458351966683154
       type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
-    - rid: 2120458342273122324
-      type: {class: IntValue, ns: Naussilus.Core, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 10
-    - rid: 2120458343661437141
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2120458351966683155
       type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
-        <Amount>k__BackingField: 0
-    - rid: 2120458343661437142
-      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Stat>k__BackingField: {fileID: 11400000, guid: da645db61372a354fb4e466633a3a304, type: 2}
-        <Amount>k__BackingField: 0
-    - rid: 2120458343661437144
-      type: {class: MentalStateValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Stat>k__BackingField: {fileID: 11400000, guid: efa87449a5f31f3428fd0d3f9c939891, type: 2}
         <Amount>k__BackingField: 0
