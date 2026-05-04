@@ -16,5 +16,6 @@ MonoBehaviour:
   <Description>k__BackingField: "C'est dans la cale du Naussilus que les porivions
     et le materiel son stock\xE9s, avec bien sur un compartiement secret pour la
     contrebande"
-  <Actions>k__BackingField: []
+  <Actions>k__BackingField:
+  - {fileID: 11400000, guid: 0dabf01c4e7cea3448f28c65f667b73c, type: 2}
   <GUID>k__BackingField: 13dcab58-9056-4daa-b579-b613572fb603
