@@ -13,7 +13,7 @@ namespace Naussilus.Core
         
         public int Amount { get; private set; }
         
-        public string Text { get; private set; }
+        public string[] Text { get; private set; }
 
         public Consequence(ConsequenceData data)
         {

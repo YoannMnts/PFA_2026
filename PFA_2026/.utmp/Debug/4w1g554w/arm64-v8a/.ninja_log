@@ -1,0 +1,12 @@
+# ninja log v5
+56	390	7995938905652758	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	f05a80ce506eebf2
+392	577	7995938907359613	C:/GitHub/PFA_2026/PFA_2026/Library/PramData/AndroidApplicationController/Cache/com.DefaultCompany.PFA_2026/gradle-project/unityLibrary/build/intermediates/cxx/Debug/4w1g554w/obj/arm64-v8a/libswappywrapper.so	372367dec7745d64
+21	1109	7995938912766987	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	9051dc831231d5e8
+0	1117	7995938912817322	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	1ffba26b244fed25
+35	1129	7995938912951568	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	9956e49481b601ae
+42	1139	7995938913033846	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	a76a6673753a8fb2
+7	1158	7995938913259058	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	454c8dcfd0d2dd37
+27	1212	7995938913819638	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	b0aa1957b2dd4d67
+14	1253	7995938914223217	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	31b212bf29606264
+49	1313	7995938914849874	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	5037c9ff0fb9056f
+1313	1391	7995938915618954	C:/GitHub/PFA_2026/PFA_2026/Library/PramData/AndroidApplicationController/Cache/com.DefaultCompany.PFA_2026/gradle-project/unityLibrary/build/intermediates/cxx/Debug/4w1g554w/obj/arm64-v8a/libgame.so	1065ed626f1919d0

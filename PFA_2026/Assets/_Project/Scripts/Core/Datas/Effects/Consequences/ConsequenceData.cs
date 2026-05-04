@@ -21,6 +21,6 @@ namespace Naussilus.Core.Consequences
         public int Amount { get; private set; }
         
         [field: SerializeField, TextArea]
-        public string Text { get; private set; }
+        public string[] Text { get; private set; }
     }
 }

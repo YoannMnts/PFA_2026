@@ -26,6 +26,10 @@ namespace Rooms
             Npcs.AddRange(allNpcs);
             for (int i = 0; i < ProhibitedNpc.Length; i++)
                 Npcs.Remove(ProhibitedNpc[i]);
+
+            for (int i = 0; i < Npcs.Count; i++)
+                if (Npcs[i].CategoryLocked)
+                    Npcs.RemoveAt(i);
             
             return base.Initialize(token);
         }

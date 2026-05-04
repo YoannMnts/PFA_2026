@@ -11,6 +11,8 @@ namespace Rooms
         
         public RoomAction[] Choices { get; private set; }
         
+        public RoomAction CurrentAction { get; private set; }
+        
         public SelectActionForRoom(Room room)
         {
             CurrentRoom = room;

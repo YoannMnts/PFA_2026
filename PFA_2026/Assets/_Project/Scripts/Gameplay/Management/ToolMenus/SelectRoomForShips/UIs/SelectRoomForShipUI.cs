@@ -44,7 +44,7 @@ public class SelectRoomForShipUI: MonoPhaseListener<SelectRoomForShip>
     public void Cancel()
     {
         if (Current != null)
-            Current.SetResult(new Room());
+            Current.SetResult(null);
     }
 
     public void ChooseRoom(Room roomData)

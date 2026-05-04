@@ -1,6 +1,8 @@
 ﻿using System;
 using Naussilus.Core.Managements.ActionDatas;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 namespace Naussilus.Core.Managements

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Naussilus.Core.Managers.Npcs;
+using Naussilus.Core.Managers.Rooms;
 using UnityEngine;
 
 namespace Naussilus.Core.Managers

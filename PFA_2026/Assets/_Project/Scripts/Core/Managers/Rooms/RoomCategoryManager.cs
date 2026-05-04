@@ -13,7 +13,10 @@ namespace Naussilus.Core.Managers.Rooms
         public static List<Npc> SetDefaultCurrentNpcs(this Category category)
         {
             var obligateNpcs = category.ObligateNpcs;
-            var currentNpc = obligateNpcs == null || obligateNpcs.Length == 0 ? new Npc[category.Quantity] : obligateNpcs;
+            for (int i = 0; i < obligateNpcs.Length; i++)
+                obligateNpcs[i]?.SetCategory(category, true);
+            
+            var currentNpc = obligateNpcs.Length == 0 ? new Npc[category.Quantity] : obligateNpcs;
             var list = new List<Npc>();
             list.AddRange(currentNpc);
             return list;
@@ -30,7 +33,7 @@ namespace Naussilus.Core.Managers.Rooms
             var ind = Mathf.Clamp(index, 0, category.CurrentNpcs.Count);
             Debug.Log(ind);
             category.CurrentNpcs[ind] = npc;
-            npc.SetCategory(category);
+            npc.SetCategory(category, false);
             OnNpcAdded?.Invoke(category);
         }
 
@@ -48,7 +51,7 @@ namespace Naussilus.Core.Managers.Rooms
         public static void ClearNpc(this Category category)
         {
             for (int i = 0; i < category.CurrentNpcs.Count; i++)
-                category.CurrentNpcs[i]?.SetCategory(null);
+                category.CurrentNpcs[i]?.SetCategory(null, false);
             
             category.CurrentNpcs.Clear();
             category.CurrentNpcs.AddRange(category.SetDefaultCurrentNpcs());

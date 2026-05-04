@@ -149,6 +149,7 @@ PlayerSettings:
   - {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   - {fileID: 11400000, guid: 36f2e77fe6a6a4e458511694178998fc, type: 2}
   - {fileID: 11400000, guid: d8c21a303c1323c46b0900e99e131a8f, type: 2}
+  - {fileID: 11400000, guid: 71d394dcbfa81184b9d1dcafcd035e13, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -394,6 +395,9 @@ PlayerSettings:
       m_SubKind: 
   m_BuildTargetBatching:
   - m_BuildTarget: Android
+    m_StaticBatching: 1
+    m_DynamicBatching: 0
+  - m_BuildTarget: Standalone
     m_StaticBatching: 1
     m_DynamicBatching: 0
   m_BuildTargetShaderSettings: []

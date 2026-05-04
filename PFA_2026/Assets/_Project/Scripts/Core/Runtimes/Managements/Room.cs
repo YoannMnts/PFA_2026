@@ -4,7 +4,7 @@ using Naussilus.Core.Managements;
 
 namespace Naussilus.Core
 {
-    public struct Room
+    public class Room
     {
         public string Name { get; private set; }
         

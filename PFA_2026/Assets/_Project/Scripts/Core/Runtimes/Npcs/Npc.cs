@@ -19,6 +19,7 @@ namespace Naussilus.Core
         public string CurrentThinking { get; private set; }
         
         public Category CurrentCategory { get; private set; }
+        public bool CategoryLocked { get; private set; }
         
         public Npc(NpcData npcData)
         {
@@ -35,8 +36,9 @@ namespace Naussilus.Core
             Relationships = npcData.Relationships?.Select(r => new NpcRelationship(r)).ToArray();
         }
 
-        public void SetCategory(Category category)
+        public void SetCategory(Category category, bool locked)
         {
+            CategoryLocked = locked;
             CurrentCategory = category;
         }
         

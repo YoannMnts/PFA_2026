@@ -1,0 +1,3 @@
+C:\GitHub\PFA_2026\PFA_2026\Library\PramData\AndroidApplicationController\Cache\com.DefaultCompany.PFA_2026\gradle-project\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\GitHub\PFA_2026\PFA_2026\Library\PramData\AndroidApplicationController\Cache\com.DefaultCompany.PFA_2026\gradle-project\unityLibrary\src\main\cpp\FramePacing\CMakeLists.txt
+C:\GitHub\PFA_2026\PFA_2026\Library\PramData\AndroidApplicationController\Cache\com.DefaultCompany.PFA_2026\gradle-project\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
