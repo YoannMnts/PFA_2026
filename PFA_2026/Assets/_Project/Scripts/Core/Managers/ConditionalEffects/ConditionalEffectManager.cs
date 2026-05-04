@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Naussilus.Core.Managements;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.Managers.Rooms;
 using UnityEngine;
@@ -66,6 +67,11 @@ namespace Naussilus.Core.Managers
                     return false;
             }
             return true;
+        }
+        
+        public static void AddEffect()
+        {
+            
         }
 
         public static void AddAllValidEffect(this RoomAction roomAction)

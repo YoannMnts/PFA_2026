@@ -72,7 +72,7 @@ namespace Rooms
             selectNpc.RunAndForget();
         }
 
-        public void Apply()
+        public async void Apply()
         {
             for (int i = 0; i < current.Categories.Length; i++)
             {
@@ -87,8 +87,15 @@ namespace Rooms
                     }
                 }
             }
-            current.CurrentAction.AddAllValidEffect();
 
+            var resume = new ResumePhaseForAction(current.CurrentAction);
+            await resume.Run();
+            var result = resume.CurrentResult;
+            Debug.Log($"resume result: {result}");
+
+            if (!result)
+                return;
+            
             current?.SetResult(true);
         }
     }
