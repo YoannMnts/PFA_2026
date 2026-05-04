@@ -55,7 +55,7 @@ namespace Naussilus.Core.Managers
             {
                 consequence.ModifyValue(stast[i].Amount, rightSide, out var newAmount);
                 stast[i].SetNewAmount(newAmount);
-                Debug.Log($"[ConsequenceManager] Compute : left: {stast[i].Amount}, right: {rightSide} return : {newAmount} for npc {currentNpcData.Name}");
+                Debug.Log($"[ConsequenceManager] Compute : left: {stast[i].Amount} {consequence.ArithmeticOperator} right: {rightSide} return : {newAmount} for npc {currentNpcData.Name}");
             }
         }
 

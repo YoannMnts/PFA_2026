@@ -85,7 +85,7 @@ namespace Naussilus.Gameplay
         public void TryInteract(Vector2 screenPos)
         {
             Vector2 worldPos = cam.ScreenToWorldPoint(screenPos);
-    
+
             RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);
             if (hit.transform.TryGetComponent(out MonoRoom monoRoom))
             {
