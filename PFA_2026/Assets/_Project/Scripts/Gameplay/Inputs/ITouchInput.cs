@@ -12,10 +12,11 @@ namespace Naussilus.Gameplay
 
         bool Update(PlayerInputManager playerInputManager);
         void Sleep(PlayerInputManager playerInputManager);
-
+        void Disable(PlayerInputManager playerInputManager){}
+        void Enable(PlayerInputManager playerInputManager){}
         int IComparable<ITouchInput>.CompareTo(ITouchInput other)
         {
-            return Priority.CompareTo(other.Priority);
+            return other.Priority.CompareTo(Priority);
         }
     }
 }

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Helteix.Singletons.SceneServices;
 using Sirenix.OdinInspector;
-using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace Naussilus.Gameplay
@@ -48,6 +47,7 @@ namespace Naussilus.Gameplay
 
         private void Update()
         {
+            touchInputs.Sort();
             bool inputDidUpdate = false;
             foreach (var input in touchInputs)
             {
@@ -59,6 +59,10 @@ namespace Naussilus.Gameplay
                 {
                     OnTouch?.Invoke(input);
                     inputDidUpdate = true;
+                }
+                else
+                {
+                    input.Sleep(this);
                 }
             }
         }
@@ -76,7 +80,7 @@ namespace Naussilus.Gameplay
                 {
                     RemoveTouchscreen(touchscreen);
                 }
-                Debug.Log($"OnDeviceChange: {change} -> {touchscreen.displayName}");
+                //Debug.Log($"OnDeviceChange: {change} -> {touchscreen.displayName}");
             }
         }
 
@@ -102,8 +106,7 @@ namespace Naussilus.Gameplay
                 touchInput.AddTouchscreen(touchscreen, this);
             }
             
-            touchInputs.Sort();
-            touchInputs.Reverse();
+            touchInput.Enable(this);
         }
 
         public bool RemoveTouchInput(ITouchInput touchInput)
@@ -114,6 +117,7 @@ namespace Naussilus.Gameplay
                 {
                     touchInput.RemoveTouchscreen(touchscreen, this);
                 }
+                touchInput.Disable(this);
                 return true;
             }
             return false;
