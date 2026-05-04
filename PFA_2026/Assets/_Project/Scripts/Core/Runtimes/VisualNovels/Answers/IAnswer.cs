@@ -2,6 +2,6 @@
 {
     public interface IAnswer
     {
-        
+        public string ButtonText { get;  }
     }
 }

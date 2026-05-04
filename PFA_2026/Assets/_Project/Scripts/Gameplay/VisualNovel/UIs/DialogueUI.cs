@@ -30,7 +30,15 @@ namespace Naussilus.Gameplay.VisualNovel
         
         public void OnPhaseBegin(DialoguePhase phase)
         {
-            //textMesh.text = phase.CurrentDialogue.Lines[0].Text[0]; //NEED TO MODIFY WITH LOOP
+            var allText = string.Empty;
+            for (int i = 0; i < phase.CurrentDialogue.Lines.Length; i++)
+            {
+                for (int j = 0; j < phase.CurrentDialogue.Lines[i].Text.Length; j++)
+                {
+                    allText += phase.CurrentDialogue.Lines[i].Text[j];
+                }
+            }
+            textMesh.text = allText; //NEED TO MODIFY WITH LOOP
             canvasGroup.Show();
         }
 

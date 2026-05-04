@@ -14,7 +14,7 @@ namespace Naussilus.Core.Managers.Rooms
         {
             var obligateNpcs = category.ObligateNpcs;
             for (int i = 0; i < obligateNpcs.Length; i++)
-                obligateNpcs[i]?.SetCategory(category, true);
+                obligateNpcs[i]?.SetCategory(category, false);
             
             var currentNpc = obligateNpcs.Length == 0 ? new Npc[category.Quantity] : obligateNpcs;
             var list = new List<Npc>();
