@@ -17,7 +17,7 @@ namespace Naussilus.Core.Managers.Rooms
             Rooms = new Dictionary<string, Room>();
             CurrentRoomActions = new Dictionary<Room, RoomAction>();
 
-            var entries = Resources.LoadAll<RoomData>("ScriptableObjects/Management/Samples");
+            var entries = Resources.LoadAll<RoomData>("ScriptableObjects/Management/Rooms");
             for (int i = 0; i < entries.Length; i++)
             {
                 RoomData entry = entries[i];

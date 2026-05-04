@@ -1,8 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
-using Naussilus.Core.Conditions;
-using Naussilus.Core.Managers.Npcs;
-using Naussilus.Core.NpcDatas;
 using Naussilus.Core.VisualNovels.EventDatas;
 using UnityEngine;
 using UnityEngine.Pool;
@@ -18,7 +14,7 @@ namespace Naussilus.Core.Managers
         {
             EventDatas = new ();
             Incidents = new ();
-            var entries = Resources.LoadAll<EventData>("ScriptableObjects/VisualNovel/Samples");
+            var entries = Resources.LoadAll<EventData>("ScriptableObjects/VisualNovel/Events");
             for (int i = 0; i < entries.Length; i++)
             {
                 EventData entry = entries[i];
