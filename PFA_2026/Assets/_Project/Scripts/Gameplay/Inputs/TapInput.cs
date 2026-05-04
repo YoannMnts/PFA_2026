@@ -10,6 +10,7 @@ namespace Naussilus.Gameplay
         private readonly InputAction inputAction;
         int ITouchInput.Priority => 5;
 
+        public event Action<Vector2> OnTap;
         
         public TapInput() : this(new InputAction("TapInput",  InputActionType.Button, "<Touchscreen>/press", "tap"))
         {
@@ -32,7 +33,12 @@ namespace Naussilus.Gameplay
 
         bool ITouchInput.Update(PlayerInputManager playerInputManager)
         {
-            return inputAction.WasPerformedThisDynamicUpdate();
+            if (!inputAction.WasPerformedThisDynamicUpdate()) 
+                return false;
+            
+            var pos = playerInputManager.CurrentTouchscreen.primaryTouch.position.ReadValue();
+            OnTap?.Invoke(pos);
+            return true;
         }
 
         void ITouchInput.Sleep(PlayerInputManager playerInputManager)

@@ -1,5 +1,6 @@
 ﻿using Helteix.Singletons.SceneServices;
 using Helteix.Tools.Phases;
+using Rooms;
 using UnityEngine;
 
 namespace Naussilus.Gameplay
@@ -33,11 +34,13 @@ namespace Naussilus.Gameplay
         private void OnEnable()
         {
             this.Register();
+            tapInput.OnTap += TryInteract;
         }
 
         private void OnDisable()
         {
             this.Unregister();
+            tapInput.OnTap -= TryInteract;
         }
 
         private void Update()
@@ -49,7 +52,14 @@ namespace Naussilus.Gameplay
                 maxZoom
             );
             
-            cam.transform.position *= slideInput.Delta * slideSpeed;
+            cam.transform.position = VectorAddition(cam.transform.position, (slideInput.Delta * slideSpeed));
+        }
+
+        private static Vector3 VectorAddition(Vector3 transformPosition, Vector2 slideInputDelta)
+        {
+            transformPosition.x -= slideInputDelta.x;
+            transformPosition.y -= slideInputDelta.y;
+            return transformPosition;
         }
 
         public void OnPhaseBegin(ManagementPhase phase)
@@ -69,6 +79,17 @@ namespace Naussilus.Gameplay
                 playerInputManager.RemoveTouchInput(pinchInput);
                 playerInputManager.RemoveTouchInput(slideInput);
                 playerInputManager.RemoveTouchInput(tapInput);
+            }
+        }
+
+        public void TryInteract(Vector2 screenPos)
+        {
+            Vector2 worldPos = cam.ScreenToWorldPoint(screenPos);
+    
+            RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);
+            if (hit.transform.TryGetComponent(out MonoRoom monoRoom))
+            {
+                monoRoom.OnClick();
             }
         }
     }

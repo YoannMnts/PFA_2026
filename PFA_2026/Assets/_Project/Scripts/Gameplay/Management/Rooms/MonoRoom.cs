@@ -7,14 +7,14 @@ using UnityEngine.EventSystems;
 
 namespace Rooms
 {
-    public class MonoRoom : MonoBehaviour, IPointerClickHandler
+    public class MonoRoom : MonoBehaviour
     {
         [field: SerializeField] 
         public RoomData RoomData { get; private set; }
 
         private Room Room => RoomManager.TryGetRoom(RoomData.GUID);
         
-        public void OnPointerClick(PointerEventData eventData)
+        public void OnClick()
         {
             SelectActionForRoom selectActionForRoom = new SelectActionForRoom(Room);
             selectActionForRoom.RunAndForget();
