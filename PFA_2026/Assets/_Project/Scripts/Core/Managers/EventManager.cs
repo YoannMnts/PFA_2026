@@ -59,6 +59,7 @@ namespace Naussilus.Core.Managers
                 }
                 
                 var randomIndex = Random.Range(0, validEventDatas.Count);
+                Debug.Log($"[Event Manager] Found {validEventDatas.Count} valid events and {randomIndex} has been take.");
                 return validEventDatas[randomIndex];
             }
         }

@@ -23,6 +23,7 @@ namespace Rooms
         protected override Awaitable Initialize(CancellationToken token)
         {
             NpcManager.GetAllNpcs(out var allNpcs);
+            Debug.Log(allNpcs.Length + " Npcs found.");
             Npcs.AddRange(allNpcs);
             for (int i = 0; i < ProhibitedNpc.Length; i++)
                 Npcs.Remove(ProhibitedNpc[i]);

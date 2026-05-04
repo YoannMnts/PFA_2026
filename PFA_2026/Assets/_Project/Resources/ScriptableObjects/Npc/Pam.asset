@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a51f94ebcc2449479fc3acad06fca3bc, type: 3}
   m_Name: Pam
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.NpcDatas.NpcData
-  <Name>k__BackingField: 
+  <Name>k__BackingField: Pam
   <Behavior>k__BackingField:
   - <Stat>k__BackingField: {fileID: 11400000, guid: 04ea502225da3b44ba583a05d6180394, type: 2}
     <Amount>k__BackingField: 6
@@ -40,56 +40,57 @@ MonoBehaviour:
   <Relationships>k__BackingField:
   - <Amount>k__BackingField: 10
     <Npc>k__BackingField:
-      rid: 2120458249729736739
+      rid: 3949848295130792046
   - <Amount>k__BackingField: 10
     <Npc>k__BackingField:
-      rid: 2120458249729736740
+      rid: 3949848295130792042
   - <Amount>k__BackingField: 10
     <Npc>k__BackingField:
-      rid: 2120458249729736741
+      rid: 3949848295130792043
   - <Amount>k__BackingField: 10
     <Npc>k__BackingField:
-      rid: 2120458249729736742
+      rid: 3949848295130792044
   - <Amount>k__BackingField: 10
     <Npc>k__BackingField:
-      rid: 2120458249729736743
+      rid: 3949848295130792045
   - <Amount>k__BackingField: 10
     <Npc>k__BackingField:
-      rid: 2120458249729736744
+      rid: 3949848295130792047
   - <Amount>k__BackingField: 10
     <Npc>k__BackingField:
-      rid: 2120458249729736745
+      rid: 3949848295130792048
   <Gender>k__BackingField: 1
+  <CategoryIcon>k__BackingField: {fileID: -363737857, guid: 407b3790283bd9d4c9bc017dc983f557, type: 3}
   <CurrentThinking>k__BackingField: 
   <GUID>k__BackingField: afd97fad-c712-4baf-af3c-a1756b4b4bb0
   references:
     version: 2
     RefIds:
-    - rid: 2120458249729736739
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+    - rid: 3949848295130792042
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
-    - rid: 2120458249729736740
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+    - rid: 3949848295130792043
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
-    - rid: 2120458249729736741
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+    - rid: 3949848295130792044
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
-    - rid: 2120458249729736742
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+    - rid: 3949848295130792045
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
-    - rid: 2120458249729736743
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+    - rid: 3949848295130792046
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
-    - rid: 2120458249729736744
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+    - rid: 3949848295130792047
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
-    - rid: 2120458249729736745
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+    - rid: 3949848295130792048
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}

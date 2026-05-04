@@ -15,6 +15,5 @@ MonoBehaviour:
   <Name>k__BackingField: Vigie
   <Description>k__BackingField: "La vue est d\xE9gag\xE9e depuis cette pi\xE8ce,
     permettant de surveiller l'horizon et de communiquer avec l'exterieur par radio"
-  <Actions>k__BackingField:
-  - {fileID: 11400000, guid: c685cbb8c23ce2e4b82cc524e2c3c0bd, type: 2}
+  <Actions>k__BackingField: []
   <GUID>k__BackingField: 89369184-c552-4c63-a634-ff26fce00a02
