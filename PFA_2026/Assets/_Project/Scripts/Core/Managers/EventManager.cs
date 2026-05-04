@@ -14,7 +14,7 @@ namespace Naussilus.Core.Managers
         {
             EventDatas = new ();
             Incidents = new ();
-            var entries = Resources.LoadAll<EventData>("ScriptableObjects/VisualNovel/Events");
+            var entries = Resources.LoadAll<EventData>("ScriptableObjects/VisualNovel/Event");
             for (int i = 0; i < entries.Length; i++)
             {
                 EventData entry = entries[i];
