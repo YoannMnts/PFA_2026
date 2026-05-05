@@ -186,6 +186,137 @@ MonoBehaviour:
         <Text>k__BackingField: []
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
+  - <CategoryIndex>k__BackingField: 1
+    <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Effects>k__BackingField:
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField: []
+      <Consequences>k__BackingField:
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2811533818871939302
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 1
+        <Text>k__BackingField: []
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2811533818871939303
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 1
+        <Text>k__BackingField: []
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField:
+      - <LeftSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2811533818871939304
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+        <ComparisonOperator>k__BackingField: 4
+        <RightSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2811533818871939305
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+      <Consequences>k__BackingField:
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2811533818871939306
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+        <ArithmeticOperator>k__BackingField: 1
+        <Amount>k__BackingField: 1
+        <Text>k__BackingField: []
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField:
+      - <LeftSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2811533818871939308
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+        <ComparisonOperator>k__BackingField: 4
+        <RightSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: 2811533818871939309
+          <Stat>k__BackingField:
+            rid: 2811533818871939310
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+      - <LeftSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 0
+          <Subject>k__BackingField:
+            rid: 2811533818871939312
+          <Stat>k__BackingField:
+            rid: 2811533818871939313
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+        <ComparisonOperator>k__BackingField: 3
+        <RightSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2811533818871939314
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+      <Consequences>k__BackingField:
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2811533818871939315
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 2
+        <Text>k__BackingField: []
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2811533818871939316
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 1
+        <Text>k__BackingField: []
+    <Position>k__BackingField: {x: 0, y: 0, z: 0}
+    <ActionSprite>k__BackingField: {fileID: 0}
   <GUID>k__BackingField: c092f0c7-0639-431d-9dd5-2771470e568a
   references:
     version: 2
@@ -291,6 +422,78 @@ MonoBehaviour:
         <Npc>k__BackingField:
           rid: 2811533799078494318
     - rid: 2811533799078494318
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2811533818871939302
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: efa87449a5f31f3428fd0d3f9c939891, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811533818871939303
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: d1fd9c2734ce3c2448f583fbbc1287f6, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811533818871939304
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: efa87449a5f31f3428fd0d3f9c939891, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811533818871939305
+      type: {class: IntValueData, ns: Naussilus.Core, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 5
+    - rid: 2811533818871939306
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811533818871939308
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811533818871939309
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2811533818871939310
+      type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Npc>k__BackingField:
+          rid: 2811533818871939311
+    - rid: 2811533818871939311
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    - rid: 2811533818871939312
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    - rid: 2811533818871939313
+      type: {class: BehaviorValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: be977a50b8a9d5b4ba2645d7a82c7315, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811533818871939314
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811533818871939315
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811533818871939316
+      type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Npc>k__BackingField:
+          rid: 2811533818871939317
+    - rid: 2811533818871939317
       type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}

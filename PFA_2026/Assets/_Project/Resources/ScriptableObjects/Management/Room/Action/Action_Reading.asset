@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7981673afb42479da49ee3efe9a052af, type: 3}
   m_Name: Action_Reading
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
-  <Name>k__BackingField: "S\u2019instruire "
+  <Name>k__BackingField: Lire un livre
   <Cost>k__BackingField: 4
   <Countdown>k__BackingField: 1
   <Categories>k__BackingField:
@@ -43,6 +43,28 @@ MonoBehaviour:
         <Text>k__BackingField: []
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
+  - <CategoryIndex>k__BackingField: 1
+    <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Effects>k__BackingField:
+    - <IsEnumeration>k__BackingField: 0
+      <CurrentNpcTarget>k__BackingField:
+        rid: -2
+      <Conditions>k__BackingField: []
+      <Consequences>k__BackingField:
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2811533818871939256
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 1
+        <Text>k__BackingField: []
+    <Position>k__BackingField: {x: 0, y: 0, z: 0}
+    <ActionSprite>k__BackingField: {fileID: 0}
   <GUID>k__BackingField: d7e43e9c-35f5-4fa5-a016-7216641bf4e6
   references:
     version: 2
@@ -50,6 +72,11 @@ MonoBehaviour:
     - rid: -2
       type: {class: , ns: , asm: }
     - rid: 2811533799078494232
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: efa87449a5f31f3428fd0d3f9c939891, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811533818871939256
       type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Stat>k__BackingField: {fileID: 11400000, guid: efa87449a5f31f3428fd0d3f9c939891, type: 2}
