@@ -7,11 +7,6 @@ namespace Naussilus.Gameplay.VisualNovel
 {
     public class Summary : IPhase<bool>
     {
-        public Summary()
-        {
-            
-        }
-        
         async Awaitable<bool> IPhase<bool>.Execute(CancellationToken token)
         {
             var summaryWaitPhase = new SummaryWait();

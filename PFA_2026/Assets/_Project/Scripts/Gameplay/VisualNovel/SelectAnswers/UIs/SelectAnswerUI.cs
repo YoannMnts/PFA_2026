@@ -1,0 +1,48 @@
+﻿using Helteix.Tools.Phases.Listeners;
+using Naussilus.Core;
+using Naussilus.Core.Managers;
+using UnityEngine;
+
+namespace Naussilus.Gameplay.VisualNovel
+{
+    public class SelectAnswerUI : MonoPhaseListener<SelectAnswer>
+    {
+        [SerializeField]
+        private CanvasGroup group;
+        [SerializeField]
+        private AnswerUIList answerUIList;
+
+        private SelectAnswer current;
+        private void Start()
+        {
+            group.Hide();
+        }
+
+        protected override void OnPhaseBegin(SelectAnswer phase)
+        {
+            if(current != null)
+                return;
+            
+            group.Show();
+            answerUIList.Connect(phase.Answers);
+            
+            base.OnPhaseBegin(phase);
+        }
+
+        protected override void OnPhaseEnd(SelectAnswer phase)
+        {
+            if(current != phase)
+                return;
+            
+            group.Hide();
+            answerUIList.Disconnect();
+            
+            base.OnPhaseEnd(phase);
+        }
+
+        public void OnAnswerChoose(IAnswer answer)
+        {
+            current.SetResult(answer);
+        }
+    }
+}

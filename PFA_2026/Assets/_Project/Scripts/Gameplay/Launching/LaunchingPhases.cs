@@ -62,7 +62,7 @@ namespace Naussilus.Gameplay.Launcher
 
         private async Awaitable SwitchDay(int i)
         {
-            var switchDay = new SwitchDay(switchDayWaitSeconds, i);
+            var switchDay = new SwitchDay(switchDayWaitSeconds, i + 1);
             await switchDay.Run();
         }
 

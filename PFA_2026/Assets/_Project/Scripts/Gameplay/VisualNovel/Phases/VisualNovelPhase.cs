@@ -20,8 +20,10 @@ namespace Naussilus.Gameplay.VisualNovel
         {
             Dialogue dialogueData = currentEvent.FirstDialogue;
             
-            DialoguePhase dialoguePhase = new DialoguePhase(NpcEventData ,dialogueData);
+            SelectAnswer dialoguePhase = new SelectAnswer(dialogueData);
             await dialoguePhase.Run();
+            var summary = new Summary();
+            await summary.Run();
             
             return true;
         }
