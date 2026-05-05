@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 031eedce71e6c2a4a9b6f9b842b669bc
+guid: 439227466d9cdfd47aba4b4831974ea6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5117046454944969240
-    second: TempUI_ButtonsandActionPoints_0
+      213: -1424159375520293427
+    second: TempBG_CloudCluster_Front_0
+  - first:
+      213: -6921581641754573810
+    second: TempBG_CloudCluster_Front_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TempUI_ButtonsandActionPoints_0
+      name: TempBG_CloudCluster_Front_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 311
-        height: 332
+        x: 1762
+        y: 216
+        width: 183
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ed45d94c599cf8b0800000000000000
-      internalID: -5117046454944969240
+      spriteID: dcd129ee79e5c3ce0800000000000000
+      internalID: -1424159375520293427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempBG_CloudCluster_Front_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 0
+        width: 1922
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e048a5f3b2a91ff90800000000000000
+      internalID: -6921581641754573810
       vertices: []
       indices: 
       edges: []
@@ -125,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TempUI_ButtonsandActionPoints_0: -5117046454944969240
+      TempBG_CloudCluster_Front_0: -1424159375520293427
+      TempBG_CloudCluster_Front_1: -6921581641754573810
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

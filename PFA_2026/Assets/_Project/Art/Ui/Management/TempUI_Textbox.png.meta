@@ -1,28 +1,31 @@
 fileFormatVersion: 2
-guid: 583e448af83c8bd469fc30de6d34da8c
+guid: 5c57699310fb17c44bc5f155b7c9135c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2285394996511888412
-    second: TempBG_Cloud2_0
+      213: 4091385929636027555
+    second: TempUI_Textbox_0
   - first:
-      213: 7609655202552462816
-    second: TempBG_Cloud2_1
+      213: 2430033870576424908
+    second: TempUI_Textbox_1
   - first:
-      213: 1103621415809111013
-    second: TempBG_Cloud2_2
+      213: -5411661090495389601
+    second: TempUI_Textbox_2
   - first:
-      213: 3647701911453272962
-    second: TempBG_Cloud2_3
+      213: -3287140596534309724
+    second: TempUI_Textbox_3
   - first:
-      213: -1414522726086126543
-    second: TempBG_Cloud2_4
+      213: -2043646539862863685
+    second: TempUI_Textbox_4
   - first:
-      213: -4985306453582181027
-    second: TempBG_Cloud2_5
+      213: 2470661571929801174
+    second: TempUI_Textbox_5
   - first:
-      213: -375184769982209355
-    second: TempBG_Cloud2_6
+      213: 9135670756472487171
+    second: TempUI_Textbox_6
+  - first:
+      213: -3579135622809810028
+    second: TempUI_Textbox_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -64,7 +67,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -90,7 +93,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -118,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TempBG_Cloud2_0
+      name: TempUI_Textbox_0
       rect:
         serializedVersion: 2
-        x: 161
-        y: 198
-        width: 15
-        height: 29
+        x: 240
+        y: 273
+        width: 253
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c14db8a04aa57bf10800000000000000
-      internalID: 2285394996511888412
+      spriteID: 3ac9cfe63d587c830800000000000000
+      internalID: 4091385929636027555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempBG_Cloud2_1
+      name: TempUI_Textbox_1
       rect:
         serializedVersion: 2
-        x: 182
-        y: 202
-        width: 9
-        height: 28
+        x: 260
+        y: 84
+        width: 1536
+        height: 343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0edb75bc61dea9960800000000000000
-      internalID: 7609655202552462816
+      spriteID: cc710ef2ee639b120800000000000000
+      internalID: 2430033870576424908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempBG_Cloud2_2
+      name: TempUI_Textbox_2
       rect:
         serializedVersion: 2
-        x: 187
-        y: 187
-        width: 29
-        height: 54
+        x: 480
+        y: 394
+        width: 414
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e3d0d794d9d05f00800000000000000
-      internalID: 1103621415809111013
+      spriteID: f50283019eae5e4b0800000000000000
+      internalID: -5411661090495389601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempBG_Cloud2_3
+      name: TempUI_Textbox_3
       rect:
         serializedVersion: 2
-        x: 209
-        y: 219
-        width: 29
-        height: 31
+        x: 892
+        y: 401
+        width: 120
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28b8fa6ef8d3f9230800000000000000
-      internalID: 3647701911453272962
+      spriteID: 4ac8ec02b0bb162d0800000000000000
+      internalID: -3287140596534309724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempBG_Cloud2_4
+      name: TempUI_Textbox_4
       rect:
         serializedVersion: 2
-        x: 217
-        y: 95
-        width: 703
-        height: 339
+        x: 1044
+        y: 401
+        width: 120
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1345be8331b9e5ce0800000000000000
-      internalID: -1414522726086126543
+      spriteID: bb09409bc4283a3e0800000000000000
+      internalID: -2043646539862863685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempBG_Cloud2_5
+      name: TempUI_Textbox_5
       rect:
         serializedVersion: 2
-        x: 175
-        y: 195
-        width: 8
-        height: 23
+        x: 1563
+        y: 274
+        width: 253
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +246,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5d85c99132a0dab0800000000000000
-      internalID: -4985306453582181027
+      spriteID: 6d1851b0c9d894220800000000000000
+      internalID: 2470661571929801174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempBG_Cloud2_6
+      name: TempUI_Textbox_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 71
-        width: 7
-        height: 27
+        x: 893
+        y: 67
+        width: 118
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,8 +268,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b2e21480731bcaf0800000000000000
-      internalID: -375184769982209355
+      spriteID: 30d7770762c68ce70800000000000000
+      internalID: 9135670756472487171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TempUI_Textbox_7
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 69
+        width: 121
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b89773d1b545ec0800000000000000
+      internalID: -3579135622809810028
       vertices: []
       indices: 
       edges: []
@@ -275,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -285,13 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TempBG_Cloud2_0: 2285394996511888412
-      TempBG_Cloud2_1: 7609655202552462816
-      TempBG_Cloud2_2: 1103621415809111013
-      TempBG_Cloud2_3: 3647701911453272962
-      TempBG_Cloud2_4: -1414522726086126543
-      TempBG_Cloud2_5: -4985306453582181027
-      TempBG_Cloud2_6: -375184769982209355
+      TempUI_Textbox_0: 4091385929636027555
+      TempUI_Textbox_1: 2430033870576424908
+      TempUI_Textbox_2: -5411661090495389601
+      TempUI_Textbox_3: -3287140596534309724
+      TempUI_Textbox_4: -2043646539862863685
+      TempUI_Textbox_5: 2470661571929801174
+      TempUI_Textbox_6: 9135670756472487171
+      TempUI_Textbox_7: -3579135622809810028
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
