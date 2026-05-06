@@ -1,7 +1,15 @@
-﻿namespace Naussilus.Gameplay.VisualNovel
+﻿using Helteix.Tools.Phases;
+using Naussilus.Core;
+
+namespace Naussilus.Gameplay.VisualNovel
 {
-    public class ReadDialogue
+    public class ReadDialogue : PhaseCompletionSource<bool>
     {
+        public DialogueLine[] DialogueLines { get; private set; }
         
+        public ReadDialogue(DialogueLine[] dialogue)
+        {
+            DialogueLines = dialogue;
+        }
     }
 }

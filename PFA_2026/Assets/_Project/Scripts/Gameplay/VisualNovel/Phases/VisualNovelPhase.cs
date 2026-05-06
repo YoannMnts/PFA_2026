@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Helteix.Tools.Phases;
 using Naussilus.Core;
+using Naussilus.Core.Managers;
 using UnityEngine;
 
 namespace Naussilus.Gameplay.VisualNovel
@@ -9,6 +10,7 @@ namespace Naussilus.Gameplay.VisualNovel
     public class VisualNovelPhase : IPhase<bool>
     {
         private readonly Incident currentEvent;
+        private Dialogue dialogue;
         public Npc NpcEventData => currentEvent.Npcs[0];
 
         public VisualNovelPhase(Incident eventData)
@@ -18,12 +20,36 @@ namespace Naussilus.Gameplay.VisualNovel
         
         async Awaitable<bool> IPhase<bool>.Execute(CancellationToken token)
         {
-            Dialogue dialogueData = currentEvent.FirstDialogue;
+            dialogue = currentEvent.FirstDialogue;
+
+            while (true)
+            {
+                ReadDialogue readDialogue = new ReadDialogue(dialogue.Lines);
+                await readDialogue.Run();
+
+                SelectAnswer selectAnswer = new SelectAnswer(dialogue.Answers);
+                await selectAnswer.Run();
+
+                if (selectAnswer.CurrentResult is not BasicAnswer basicAnswer)
+                    break;
+                
+                dialogue = basicAnswer.NextDialogue;
+            }
             
-            SelectAnswer dialoguePhase = new SelectAnswer(dialogueData);
-            await dialoguePhase.Run();
-            var summary = new Summary();
-            await summary.Run();
+            SelectAnswer selectDecision = new SelectAnswer(dialogue.Answers);
+            await selectDecision.Run();
+
+            if (selectDecision.CurrentResult is FinalAnswer finalAnswer)
+            {
+                ReadDialogue readDialogue = new ReadDialogue(finalAnswer.NpcText);
+                await readDialogue.Run();
+
+                for (int i = 0; i < finalAnswer.Effects.Length; i++)
+                    finalAnswer.Effects[i].ComputeConditionalEffect(NpcEventData);
+                
+                var summary = new Summary();
+                await summary.Run();
+            }
             
             return true;
         }

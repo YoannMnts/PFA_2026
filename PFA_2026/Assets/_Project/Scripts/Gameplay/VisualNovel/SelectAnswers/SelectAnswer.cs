@@ -5,13 +5,11 @@ namespace Naussilus.Gameplay.VisualNovel
 {
     public class SelectAnswer : PhaseCompletionSource<IAnswer>
     {
-        public Dialogue CurrentDialogue {get; private set;}
+        public IAnswer[] Answers {get; private set;}
         
-        public IAnswer[] Answers => CurrentDialogue.Answers;
-        
-        public SelectAnswer(Dialogue dialogue)
+        public SelectAnswer(IAnswer[] answer)
         {
-            CurrentDialogue = dialogue;
+            Answers = answer;
         }
     }
 }
