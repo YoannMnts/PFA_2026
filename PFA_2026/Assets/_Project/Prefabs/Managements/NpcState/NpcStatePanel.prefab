@@ -1134,6 +1134,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   group: {fileID: 2394863418738074727}
+  titleName: {fileID: 7820306860035913177}
   behaviorUIList: {fileID: 2676608189919857242}
   mentalStateUIList: {fileID: 2541234660563503043}
 --- !u!1 &6097692528039666050

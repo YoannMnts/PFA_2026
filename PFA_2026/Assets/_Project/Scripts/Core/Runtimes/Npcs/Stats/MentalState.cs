@@ -2,7 +2,7 @@
 
 namespace Naussilus.Core
 {
-    public struct MentalState : INpcStat, IConditionEffectValue, IConsequenceEffectValue
+    public class MentalState : INpcStat, IConditionEffectValue, IConsequenceEffectValue
     {
         public MentalState(MentalStateValueData data)
         {

@@ -2,7 +2,7 @@
 
 namespace Naussilus.Core
 {
-    public struct Behavior : INpcStat, IConditionEffectValue, IConsequenceEffectValue
+    public class Behavior : INpcStat, IConditionEffectValue, IConsequenceEffectValue
     {
         public Behavior(BehaviorValueData data)
         {

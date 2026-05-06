@@ -1,12 +1,15 @@
 ﻿using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managers;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class CheckNpcStateUI : MonoPhaseListener<CheckNpcState>
 {
     private CheckNpcState current;
 
     [SerializeField] private CanvasGroup group;
+    [SerializeField] private TMP_Text titleName;
     [SerializeField] private BehaviorUIList behaviorUIList;
     [SerializeField] private MentalStateUIList mentalStateUIList;
 
@@ -19,7 +22,8 @@ public class CheckNpcStateUI : MonoPhaseListener<CheckNpcState>
     {
         if(current != null)
             return;
-            
+
+        titleName.text = phase.CurrentNpc.Name;
         current = phase;
         group.Show();
         behaviorUIList.Connect(phase.NpcBehaviors);

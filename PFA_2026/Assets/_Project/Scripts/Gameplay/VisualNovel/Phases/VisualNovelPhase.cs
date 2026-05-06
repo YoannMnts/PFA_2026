@@ -22,34 +22,34 @@ namespace Naussilus.Gameplay.VisualNovel
         {
             dialogue = currentEvent.FirstDialogue;
 
+            PhaseResult<IAnswer> result;
             while (true)
             {
                 ReadDialogue readDialogue = new ReadDialogue(dialogue.Lines);
                 await readDialogue.Run();
+                Debug.Log($"finish ReadDialogue");
 
                 SelectAnswer selectAnswer = new SelectAnswer(dialogue.Answers);
-                await selectAnswer.Run();
-
-                if (selectAnswer.CurrentResult is not BasicAnswer basicAnswer)
+                result = await selectAnswer.Run();
+                
+                if (result.value is not BasicAnswer basicAnswer)
                     break;
                 
                 dialogue = basicAnswer.NextDialogue;
             }
             
-            SelectAnswer selectDecision = new SelectAnswer(dialogue.Answers);
-            await selectDecision.Run();
-
-            if (selectDecision.CurrentResult is FinalAnswer finalAnswer)
+            Debug.Log($"Decision choices : {dialogue.Answers.Length}");
+            if (result.value is FinalAnswer finalAnswer)
             {
                 ReadDialogue readDialogue = new ReadDialogue(finalAnswer.NpcText);
                 await readDialogue.Run();
 
                 for (int i = 0; i < finalAnswer.Effects.Length; i++)
                     finalAnswer.Effects[i].ComputeConditionalEffect(NpcEventData);
-                
-                var summary = new Summary();
-                await summary.Run();
             }
+            
+            var summary = new Summary();
+            await summary.Run();
             
             return true;
         }

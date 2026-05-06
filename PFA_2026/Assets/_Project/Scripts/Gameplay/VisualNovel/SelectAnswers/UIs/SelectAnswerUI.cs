@@ -23,6 +23,7 @@ namespace Naussilus.Gameplay.VisualNovel
             if(current != null)
                 return;
             
+            current = phase;
             group.Show();
             answerUIList.Connect(phase.Answers);
             
@@ -36,6 +37,7 @@ namespace Naussilus.Gameplay.VisualNovel
             
             group.Hide();
             answerUIList.Disconnect();
+            current = null;
             
             base.OnPhaseEnd(phase);
         }

@@ -43,19 +43,19 @@ namespace Naussilus.Core.Managers
         private static void ComputeConsequence(this Consequence consequence, Npc currentNpcData)
         {
             IConsequenceEffectValue stat = consequence.ConsequenceSide.Stat;
-            var stast = currentNpcData.GetValue(stat);
+            var stats = currentNpcData.GetValue(stat);
             int rightSide = consequence.Amount;
 
-            if (stast is null || rightSide < 0)
+            if (stats is null || rightSide < 0)
             {
                 Debug.LogError($"[ConsequenceManager] Negative value for consequence left side : left: type is null, right: {rightSide}");
                 return;
             }
-            for (int i = 0; i < stast.Length; i++)
+            for (int i = 0; i < stats.Length; i++)
             {
-                consequence.ModifyValue(stast[i].Amount, rightSide, out var newAmount);
-                stast[i].SetNewAmount(newAmount);
-                Debug.Log($"[ConsequenceManager] Compute : left: {stast[i].Amount} {consequence.ArithmeticOperator} right: {rightSide} return : {newAmount} for npc {currentNpcData.Name}");
+                consequence.ModifyValue(stats[i].Amount, rightSide, out var newAmount);
+                Debug.Log($"[ConsequenceManager] Compute {stats[i]} : left: {stats[i].Amount} {consequence.ArithmeticOperator} right: {rightSide} return : {newAmount} for npc {currentNpcData.Name}");
+                stats[i].SetNewAmount(newAmount);
             }
         }
 

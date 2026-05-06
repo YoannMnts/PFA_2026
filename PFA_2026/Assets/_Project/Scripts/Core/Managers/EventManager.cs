@@ -39,6 +39,7 @@ namespace Naussilus.Core.Managers
                 var isConditionValid = false;
                 foreach ((string key, Incident value) in Incidents)
                 {
+                    Debug.Log($"[EventManager] Found {key} : Incident: {value.Name}");
                     ConditionalEffect[] conditionalEffects = value.Dependencies;
                     for (int i = 0; i < conditionalEffects.Length; i++)
                     {

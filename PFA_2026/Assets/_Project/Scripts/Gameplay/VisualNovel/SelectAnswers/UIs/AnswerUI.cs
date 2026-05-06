@@ -19,20 +19,22 @@ namespace Naussilus.Gameplay.VisualNovel
 
         private void Start()
         {
-            selectAnswer = GetComponentInChildren<SelectAnswerUI>();
+            selectAnswer = GetComponentInParent<SelectAnswerUI>();
         }
         protected override void SyncUI(IAnswer current)
         {
             textMesh.text = current.ButtonText;
+            button.onClick.AddListener(OnButtonClicked);
         }
 
         protected override void ClearUI()
         {
             textMesh.text = string.Empty;
             selectAnswer = null;
+            button.onClick.RemoveAllListeners();
         }
-        
-        public void OnButtonClicked()
+
+        private void OnButtonClicked()
         {
             selectAnswer.OnAnswerChoose(Current);
         }

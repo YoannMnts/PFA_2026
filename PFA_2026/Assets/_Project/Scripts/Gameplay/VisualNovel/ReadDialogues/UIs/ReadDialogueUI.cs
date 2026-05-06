@@ -27,6 +27,8 @@ namespace Naussilus.Gameplay.VisualNovel
                     }
                 }
                 base.OnPhaseBegin(phase);
+                
+                phase.SetResult(true);
             }
             catch (Exception e)
             {

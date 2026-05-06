@@ -3,7 +3,7 @@ using Naussilus.Core.NpcDatas;
 
 namespace Naussilus.Core
 {
-    public struct NpcRelationship : INpcStat, IConditionEffectValue, IConsequenceEffectValue
+    public class NpcRelationship : INpcStat, IConditionEffectValue, IConsequenceEffectValue
     {
         public int Amount { get; private set; }
         
