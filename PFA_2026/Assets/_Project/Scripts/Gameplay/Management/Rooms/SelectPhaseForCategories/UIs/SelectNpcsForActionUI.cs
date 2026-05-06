@@ -89,9 +89,7 @@ namespace Rooms
             }
 
             var resume = new ResumePhaseForAction(current.CurrentAction);
-            await resume.Run();
-            var result = resume.CurrentResult;
-            Debug.Log($"resume result: {result}");
+            var result  = await resume.Run();
 
             if (!result)
                 return;

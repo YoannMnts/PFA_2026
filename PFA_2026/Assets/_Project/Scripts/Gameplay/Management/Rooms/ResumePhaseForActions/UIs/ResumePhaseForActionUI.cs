@@ -1,5 +1,4 @@
-﻿using System;
-using Helteix.Tools.Phases.Listeners;
+﻿using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managers;
 using UnityEngine;
 
