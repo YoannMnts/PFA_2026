@@ -57,7 +57,7 @@ namespace Rooms
             }
         }
 
-        public void ChooseCategory(Category category, int ind)
+        public async void ChooseCategory(Category category, int slotIndex)
         {
             if(current == null)
                 return;
@@ -68,8 +68,9 @@ namespace Rooms
                 if(current.Categories[i] == category)
                     index = i;
             }
-            var selectNpc = new SelectNpcForCategory(current.Categories[index], ind);
-            selectNpc.RunAndForget();
+            var selectNpc = new SelectNpcForCategory(current.Categories[index], slotIndex);
+            var npcResult = await selectNpc.Run();
+            current.Categories[index].CurrentNpcs[slotIndex] = npcResult.value;
         }
 
         public async void Apply()

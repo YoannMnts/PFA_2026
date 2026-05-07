@@ -24,7 +24,7 @@ namespace Rooms
 
         public void OnClick()
         {
-            SelectActionForRoom selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint);
+            var selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint);
             selectActionForRoom.RunAndForget();
         }
     }

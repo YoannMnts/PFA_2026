@@ -1,7 +1,6 @@
 ﻿using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
-using Naussilus.Core.Managers.Rooms;
 using UnityEngine;
 
 namespace Rooms
@@ -45,15 +44,14 @@ namespace Rooms
         public void Cancel()
         {
             if (current != null)
-                current.SetResult(false);
+                current.SetResult(null);
         }
 
         public void ChooseNpc(Npc npc)
         {
             if (current == null)
                 return;
-            current.CurrentCategory.AddNpc(npc, current.Index);
-            current.SetResult(true);
+            current.SetResult(npc);
         }
     }
 }

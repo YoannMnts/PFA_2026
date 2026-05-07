@@ -2,6 +2,7 @@
 using DefaultNamespace;
 using Helteix.Tools.Phases;
 using Naussilus.Core.Managers;
+using Naussilus.Core.Managers.Rooms;
 using UnityEngine;
 
 public class ManagementPhase : PhaseCompletionSource<bool>
@@ -16,7 +17,8 @@ public class ManagementPhase : PhaseCompletionSource<bool>
     
     protected override Awaitable Initialize(CancellationToken token)
     {
-        CurrentActionPoint = new ActionPoint(defaultAP);   
+        CurrentActionPoint = new ActionPoint(defaultAP);
+        RoomManager.SubtractAllCountdown();
         return base.Initialize(token);
     }
 

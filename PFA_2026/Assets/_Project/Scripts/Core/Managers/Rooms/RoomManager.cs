@@ -54,6 +54,16 @@ namespace Naussilus.Core.Managers.Rooms
         public static void SetCurrentAction(this Room room, RoomAction action)
         {
             CurrentRoomActions[room] = action;
+            room.AddOrRemoveCountdown(action.Countdown);
+        }
+
+        public static void SubtractAllCountdown()
+        {
+            foreach ((string key, Room room) in Rooms)
+            {
+                if(!room.AddOrRemoveCountdown(-1))
+                    room.RemoveCurrentAction();
+            }
         }
 
         public static void RemoveCurrentAction(this Room room)

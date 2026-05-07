@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Rooms
 {
-    public class SelectActionForRoom : PhaseCompletionSource<int>
+    public class SelectActionForRoom : PhaseCompletionSource<bool>
     {
         public Room CurrentRoom { get; private set; }
         

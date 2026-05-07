@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Rooms
 {
-    public class SelectNpcForCategory : PhaseCompletionSource<bool>
+    public class SelectNpcForCategory : PhaseCompletionSource<Npc>
     {
         public Category CurrentCategory { get; private set; }
         public Npc[] ProhibitedNpc => CurrentCategory.ProhibitedNpcs;
@@ -23,7 +23,7 @@ namespace Rooms
         protected override Awaitable Initialize(CancellationToken token)
         {
             NpcManager.GetAllNpcs(out var allNpcs);
-            Debug.Log(allNpcs.Length + " Npcs found.");
+            Debug.Log(allNpcs.Length + " Npcs found");
             Npcs.AddRange(allNpcs);
             for (int i = 0; i < ProhibitedNpc.Length; i++)
                 Npcs.Remove(ProhibitedNpc[i]);

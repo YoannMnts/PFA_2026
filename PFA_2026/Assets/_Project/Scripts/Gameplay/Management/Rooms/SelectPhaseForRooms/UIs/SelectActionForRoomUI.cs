@@ -3,6 +3,7 @@ using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
+using Naussilus.Core.Managers.Rooms;
 using TMPro;
 using UnityEngine;
 
@@ -14,6 +15,7 @@ namespace Rooms
         [SerializeField] private TMP_Text roomName;
         [SerializeField] private TMP_Text roomDescription;
         [SerializeField] private RoomActionUIList roomActionUIList;
+        [SerializeField] private CountdownRoomUI countdownRoomUI;
 
         public string Name => current.CurrentRoom.Name;
         public string Description => current.CurrentRoom.Description;
@@ -35,8 +37,12 @@ namespace Rooms
             roomName.text = Name;
             roomDescription.text = Description;
             currentActionPoint = phase.CurrentActionPoint;
-            roomActionUIList.Connect(phase.Choices);
+            if (current.CurrentRoom.TryGetCurrentAction(out var action))
+            {
+                countdownRoomUI.Connect(current.CurrentRoom.RoomCountdown, action);
+            }
             
+            roomActionUIList.Connect(phase.Choices);
             base.OnPhaseBegin(phase);
         }
 
@@ -55,10 +61,10 @@ namespace Rooms
         public void Cancel()
         {
             if (current != null)
-                current.SetResult(-1);
+                current.SetResult(false);
         }
 
-        public void ChooseAction(RoomAction actionData)
+        public async void ChooseAction(RoomAction actionData)
         {
             if(current == null)
                 return;
@@ -75,8 +81,15 @@ namespace Rooms
                 return;
             Debug.Log($"Action {actionData.Name} cost {actionData.Cost} AP {currentActionPoint.Value} return {currentActionPoint.AddOrRemove(actionCost)}");
             var selectNpcsForAction = new SelectNpcsForAction(current.Choices[index]);
-            selectNpcsForAction.RunAndForget();
-            current.SetResult(index);
+            var result = await selectNpcsForAction.Run();
+            if (!result)
+            {
+                current.CurrentRoom.TryGetCurrentAction(out var action);
+                current.CurrentRoom.AddOrRemoveCountdown(action.Cost);
+                return;
+            }
+            
+            current.SetResult(result.value);
         }
     }
 }
