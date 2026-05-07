@@ -1,10 +1,11 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.VisualNovels.EventDatas;
 
 namespace Naussilus.Core
 {
-    public struct Incident
+    public struct Incident : IComparable<Incident>
     {
         public string Name { get; private set; }
         
@@ -26,6 +27,11 @@ namespace Naussilus.Core
             DayCheck = data.DayCheck;
             Dependencies = data.Dependencies?.Select(d => new ConditionalEffect(d)).ToArray();
             FirstDialogue = new Dialogue(data.FirstDialogue);
+        }
+
+        public int CompareTo(Incident other)
+        {
+            return Priority.CompareTo(other.Priority);
         }
     }
 }

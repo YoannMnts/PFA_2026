@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Naussilus.Core.VisualNovels.EventDatas;
 using UnityEngine;
 using UnityEngine.Pool;
+using Random = UnityEngine.Random;
 
 namespace Naussilus.Core.Managers
 {
@@ -9,11 +11,13 @@ namespace Naussilus.Core.Managers
     {
         private static readonly Dictionary<string, EventData> EventDatas;
         private static readonly Dictionary<string, Incident> Incidents;
+        private static readonly List<Incident> CompletedIncidents;
 
         static EventManager()
         {
             EventDatas = new ();
             Incidents = new ();
+            CompletedIncidents = new ();
             var entries = Resources.LoadAll<EventData>("ScriptableObjects/VisualNovel/Event");
             for (int i = 0; i < entries.Length; i++)
             {
@@ -40,7 +44,7 @@ namespace Naussilus.Core.Managers
                 foreach ((string key, Incident value) in Incidents)
                 {
                     Debug.Log($"[EventManager] Found {key} : Incident: {value.Name}");
-                    ConditionalEffect[] conditionalEffects = value.Dependencies;
+                    ConditionalEffect[] conditionalEffects = value.Dependencies ?? Array.Empty<ConditionalEffect>();
                     for (int i = 0; i < conditionalEffects.Length; i++)
                     {
                         isConditionValid = conditionalEffects[i].ComputeOnlyConditions(value.Npcs[0]);
@@ -59,7 +63,17 @@ namespace Naussilus.Core.Managers
                     return new Incident();
                 }
                 
-                var randomIndex = Random.Range(0, validEventDatas.Count);
+                validEventDatas.Sort();
+                validEventDatas.Reverse();
+                int count = 0;
+                for (int i = 1; i < validEventDatas.Count; i++)
+                {
+                    if (validEventDatas[0].Priority > validEventDatas[i].Priority)
+                        continue;
+
+                    count++;
+                }
+                var randomIndex = Random.Range(0, count);
                 Debug.Log($"[Event Manager] Found {validEventDatas.Count} valid events and {randomIndex} has been take.");
                 return validEventDatas[randomIndex];
             }

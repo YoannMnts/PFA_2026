@@ -6,7 +6,6 @@ using Naussilus.Core.Managers.Rooms;
 using Naussilus.Gameplay.VisualNovel;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
 namespace Naussilus.Gameplay.Launcher
 {
