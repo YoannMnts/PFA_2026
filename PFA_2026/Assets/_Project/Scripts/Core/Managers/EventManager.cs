@@ -36,7 +36,7 @@ namespace Naussilus.Core.Managers
         public static void Init(){}
 
 
-        public static Incident GetValidEvent()
+        public static Incident[] GetValidEvents()
         {
             using (ListPool<Incident>.Get(out var validEventDatas) )
             {
@@ -60,22 +60,27 @@ namespace Naussilus.Core.Managers
                 if (validEventDatas.Count == 0)
                 {
                     Debug.LogError("[Event Manager] No valid events found");
-                    return new Incident();
+                    return null;
                 }
                 
                 validEventDatas.Sort();
                 validEventDatas.Reverse();
-                int count = 0;
                 for (int i = 1; i < validEventDatas.Count; i++)
                 {
-                    if (validEventDatas[0].Priority > validEventDatas[i].Priority)
+                    if (validEventDatas[0].Priority == validEventDatas[i].Priority)
                         continue;
 
-                    count++;
+                    validEventDatas.RemoveAt(i);
                 }
-                var randomIndex = Random.Range(0, count);
-                Debug.Log($"[Event Manager] Found {validEventDatas.Count} valid events and {randomIndex} has been take.");
-                return validEventDatas[randomIndex];
+                
+                Incident[] result = new Incident[3];
+                for (int i = 0; i < result.Length; i++)
+                {
+                    var randomIndex = Random.Range(0, validEventDatas.Count);
+                    result[i] = validEventDatas[randomIndex];
+                }
+                Debug.Log($"[Event Manager] Found {validEventDatas.Count} valid events and {result.Length} has been take.");
+                return result;
             }
         }
         

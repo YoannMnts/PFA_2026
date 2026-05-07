@@ -9,17 +9,23 @@ namespace Naussilus.Gameplay.VisualNovel
 {
     public class VisualNovelPhase : IPhase<bool>
     {
-        private readonly Incident currentEvent;
+        private readonly Incident[] currentEvents;
+        
+        private Incident currentEvent;
         private Dialogue dialogue;
         public Npc NpcEventData => currentEvent.Npcs[0];
 
-        public VisualNovelPhase(Incident eventData)
+        public VisualNovelPhase(Incident[] eventDatas)
         {
-            currentEvent = eventData;
+            currentEvents = eventDatas;
         }
         
         async Awaitable<bool> IPhase<bool>.Execute(CancellationToken token)
         {
+            var selectIncident = new SelectIncident(currentEvents);
+            var incidentResult = await selectIncident.Run();
+            
+            currentEvent = incidentResult.value;
             dialogue = currentEvent.FirstDialogue;
 
             PhaseResult<IAnswer> result;

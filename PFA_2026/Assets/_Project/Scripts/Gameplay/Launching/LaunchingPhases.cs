@@ -103,7 +103,7 @@ namespace Naussilus.Gameplay.Launcher
 
         private async Awaitable<bool> VisualNovel()
         {
-            var visualNovelEvent = EventManager.GetValidEvent();
+            var visualNovelEvent = EventManager.GetValidEvents();
             var visualNovelPhase = new VisualNovelPhase(visualNovelEvent);
             PhaseResult<bool> result = await visualNovelPhase.Run();
             
