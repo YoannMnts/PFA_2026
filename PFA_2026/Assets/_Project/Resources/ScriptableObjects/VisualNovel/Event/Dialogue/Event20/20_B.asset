@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 20_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 7ad260f9e18927e47848490acfa4185d, type: 2}
+    <Text>k__BackingField:
+    - "Il faut l\u2019arr\xEAter pendant quelques heures."
+    - "Mais il faudrait s\u2019arr\xEAter dans un port pour \xE7a, voler avec un
+      moteur en moins est tr\xE8s risqu\xE9 sur un navire de cette taille\r\n"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 9dde3e4621ca95b409e3702f2bdf2b11, type: 2}
+    <Text>k__BackingField:
+    - Je ne veux pas me crasher !
+    - "Comment c\u2019est possible de voler sans moteur ? \r\n"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: cea2a0905ac5adf42861b7ad8a5e344e, type: 2}
+    <Text>k__BackingField:
+    - "Ce navire a deux moteurs pour ce genre de situations, mais \xE7a reste une
+      solution d\u2019urgence, il vaut mieux s\u2019arr\xEAter\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 4a58e2d5db07e7147bf50dde25c677a2, type: 2}
+  - {fileID: 11400000, guid: 8c8f945a964f4644cb9e3a8ef6f8f3b0, type: 2}
+  - {fileID: 11400000, guid: f5a72fcb572d40040b49815d59c00bc3, type: 2}
+  <GUID>k__BackingField: 1b9bec89-7d60-4ef7-9367-731977aa76ae

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 13_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 7ad260f9e18927e47848490acfa4185d, type: 2}
+    <Text>k__BackingField:
+    - "Hey Cap\u2019taine. J\u2019ai l\u2019impression que Ynna nous cache quelque
+      chose\u2026"
+    - "Je pourrais pas dire quoi, mais elle \xE0 l\u2019air fausse, comme si elle
+      jouait un double jeu\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 25c8cc8393a2acc4b991ca80ea8ff9dd, type: 2}
+  - {fileID: 11400000, guid: 6012463c56f28ba48b318c6c94f5f38a, type: 2}
+  <GUID>k__BackingField: c97cfe8a-43a3-40b2-bfe0-6fe6c034920a

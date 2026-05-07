@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 22_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f9c90a9bda4319e4680fbf0e1f897ea1, type: 2}
+    <Text>k__BackingField:
+    - "Non, les effets du manque lui emp\xEAche de s\u2019en rendre compte, c\u2019est
+      pour \xE7a qu\u2019elle en arrive \xE0 la\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 160b246de6a17034b9239f470f12e679, type: 2}
+  - {fileID: 11400000, guid: e69e8d80788b2f946aae62bacc29c5f9, type: 2}
+  - {fileID: 11400000, guid: c6be680abc033b04fa659231ce35adb3, type: 2}
+  - {fileID: 11400000, guid: e46aae432ff98954b829495c642479ba, type: 2}
+  <GUID>k__BackingField: 6957a6fb-13d5-4ed0-9fa9-beef1b015843

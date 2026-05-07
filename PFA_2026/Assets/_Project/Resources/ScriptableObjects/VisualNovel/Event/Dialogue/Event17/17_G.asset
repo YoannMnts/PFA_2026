@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 17_G
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+    <Text>k__BackingField:
+    - "Bah \xE7a me parait \xE9vident, vous seriez pas en col\xE8re si \xE0 chaque
+      fois que je vous croisais je vous prenait de haut avec des regards en coin
+      ?"
+    - "Imaginez que je ricane en plus de \xE7a, vous seriez dans le m\xEAme \xE9tat
+      que moi"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 873f6f6f76ee71446b03807b708b75cf, type: 2}
+  - {fileID: 11400000, guid: c6b648e2a769b654695e2c481ad67111, type: 2}
+  - {fileID: 11400000, guid: 7e47a4ef86123b64fb14bf1de6e09829, type: 2}
+  <GUID>k__BackingField: 13a967d7-bc4d-4a4f-b5ed-11e0213010a5

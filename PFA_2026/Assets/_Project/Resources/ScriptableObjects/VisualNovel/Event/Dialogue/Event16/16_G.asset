@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 16_G
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+    <Text>k__BackingField:
+    - "Je sais ce que c\u2019est de se faire d\xE9passer par ses \xE9motions, et
+      si on me le reproche il y a pas de raison que \xE7a soit diff\xE9rent pour
+      elle !"
+    - Pourquoi vous vous en fichez de ce que je vous dis !
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 2b9f11b15460fad408c79156a720af8a, type: 2}
+  - {fileID: 11400000, guid: e5ae7fd9afbb94e429a7aab6481ee67f, type: 2}
+  - {fileID: 11400000, guid: 24d4af0c280282b4097070153a4e8dd8, type: 2}
+  <GUID>k__BackingField: 935cde0e-ecd7-4f9b-904c-c012dbba4e86

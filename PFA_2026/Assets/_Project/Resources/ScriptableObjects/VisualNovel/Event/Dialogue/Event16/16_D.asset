@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 16_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+    <Text>k__BackingField:
+    - "Mais c\u2019est terrible !"
+    - "Comment je suis cens\xE9e travailler sans mes outils moi ?"
+    - "Ce n\u2019est pas du tout le moment d\u2019\xEAtre calme ! "
+    - "On m\u2019a vol\xE9 mes outils !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: fac148bac542a504097cb6e841e5bb56, type: 2}
+  - {fileID: 11400000, guid: 809b8dbf11974fb4bb7e39caf506cc91, type: 2}
+  <GUID>k__BackingField: 6bd227e8-a65e-43e8-98d9-9a826fb65c0f

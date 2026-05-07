@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 22_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f9c90a9bda4319e4680fbf0e1f897ea1, type: 2}
+    <Text>k__BackingField:
+    - Principalement de violence.
+    - "Elle va je cite me \u201CCasser les dents\u201D, me \u201Cbalancer par dessus
+      bord\u201D et \u201Cm'assommer avec une cl\xE9 anglaise\u201D, ce genre de
+      choses"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 6d7dba540b836b842a5c06e4551fa209, type: 2}
+  - {fileID: 11400000, guid: be2f0c96461b8f6479d20c13850b73d2, type: 2}
+  <GUID>k__BackingField: 24de4bde-b60a-4967-b1c7-f0a1cea4627e

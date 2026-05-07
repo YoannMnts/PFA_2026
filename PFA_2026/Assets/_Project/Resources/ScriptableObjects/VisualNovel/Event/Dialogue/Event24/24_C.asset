@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 24_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 0fe42833bb6ed6c439818cde732755e2, type: 2}
+    <Text>k__BackingField:
+    - "D\xE8s que je me sens mal, je me retrouve toute seule et personne ne vient
+      me soutenir."
+    - "Moi je suis toujours l\xE0 pour les autres."
+    - "La seule personne qui \xE0 \xE9t\xE9 l\xE0 pour moi dans ma vie n'est pas
+      sur ce navire."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 922647670cd4e0342b2571690085c73e, type: 2}
+  - {fileID: 11400000, guid: fa3c29df1b925a24182ccc8f97a7fd6c, type: 2}
+  <GUID>k__BackingField: 6ab27754-f6ce-48d2-aae0-78fa8d17292f

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7981673afb42479da49ee3efe9a052af, type: 3}
   m_Name: Action_Provisions
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
-  <Name>k__BackingField: 'Voler des provisions '
+  <Name>k__BackingField: Chaparder des provisions
   <Cost>k__BackingField: 2
   <Countdown>k__BackingField: 4
   <Categories>k__BackingField:

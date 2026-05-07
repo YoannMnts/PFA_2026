@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 24_H
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 5ef4500f111497443b1f23f4c3951502, type: 2}
+    <Text>k__BackingField:
+    - "C\u2019est ma fianc\xE9e."
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: d68f5268f191b02489412f9299a2bae5, type: 2}
+    <Text>k__BackingField:
+    - "C\u2019est pour elle que je suis i\xE7i, elle est tr\xE8s malade, et j\u2019ai
+      besoin d\u2019argent pour payer ses soins."
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 5ef4500f111497443b1f23f4c3951502, type: 2}
+    <Text>k__BackingField:
+    - "Elle \xE9tait pirate avant, et c\u2019est elle qui m\u2019a donn\xE9 cette
+      id\xE9e !"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 0fe42833bb6ed6c439818cde732755e2, type: 2}
+    <Text>k__BackingField:
+    - "Penser \xE0 elle c\u2019est ce qui m\u2019aide \xE0 tenir dans mes moments
+      de solitude, m\xEAme si je ne peux pas l'appeler tr\xE8s souvent\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 991954de8a317b540b069279851ef156, type: 2}
+  - {fileID: 11400000, guid: e05f1f968698f0b438066bbebc767125, type: 2}
+  - {fileID: 11400000, guid: 4615471ad1487cc42acdcb7d378176a0, type: 2}
+  <GUID>k__BackingField: b138068f-ec5b-414a-90a3-bb16efc26f53

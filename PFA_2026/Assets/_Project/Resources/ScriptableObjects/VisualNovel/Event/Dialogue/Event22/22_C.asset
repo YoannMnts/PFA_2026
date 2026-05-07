@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 22_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f9c90a9bda4319e4680fbf0e1f897ea1, type: 2}
+    <Text>k__BackingField:
+    - "C\u2019est un antidouleur tr\xE8s puissant, et elle en \xE0 besoin car ses
+      cicatrices la d\xE9mangent."
+    - "Mais j\u2019ai limit\xE9 la dose \xE0 une par semaine, au-del\xE0 de \xE7a
+      c\u2019est une drogue."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 2867d67c01f79e540a6bb9d06dac9bdf, type: 2}
+  - {fileID: 11400000, guid: a83aa5f70145eda408bcaf4a3c6c41f1, type: 2}
+  <GUID>k__BackingField: f777f58f-9f5f-431c-93c6-70a8fbd63b54

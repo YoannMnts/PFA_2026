@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 20_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 9dde3e4621ca95b409e3702f2bdf2b11, type: 2}
+    <Text>k__BackingField:
+    - La catastrophe !
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: cea2a0905ac5adf42861b7ad8a5e344e, type: 2}
+    <Text>k__BackingField:
+    - "Si il se casse d\xE9finitivement, on ne pourra pas aller au bout de la travers\xE9e,
+      et il faudra le remplacer !"
+    - "Ca co\xFBte un bras un moteur !\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 4a58e2d5db07e7147bf50dde25c677a2, type: 2}
+  - {fileID: 11400000, guid: 8c8f945a964f4644cb9e3a8ef6f8f3b0, type: 2}
+  - {fileID: 11400000, guid: f5a72fcb572d40040b49815d59c00bc3, type: 2}
+  <GUID>k__BackingField: 89ff4d82-a3e6-419f-98c1-e5acba2eec05

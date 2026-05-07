@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 17_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+    <Text>k__BackingField:
+    - "J\u2019en peux plus ! A chaque fois que je croise Ynna elle me prend de haut
+      !"
+    - "Je vais finir par lui faire ravaler sa fiert\xE9 par la mani\xE8re forte !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 43ba9982e6bd0294cb2afe5ad6279ad6, type: 2}
+  - {fileID: 11400000, guid: 8979892c9e49914438f2d7aabe9986f2, type: 2}
+  - {fileID: 11400000, guid: 89fc8faa0c06b9c46bf0bde85306627e, type: 2}
+  <GUID>k__BackingField: 9b947e82-fc2d-46c8-9f05-ee9b32ff7ab2

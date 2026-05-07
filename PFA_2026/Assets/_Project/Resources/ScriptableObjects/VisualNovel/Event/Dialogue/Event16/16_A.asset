@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 16_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: a99f0ad4335f6b141a766b0be219dd9c, type: 2}
+    <Text>k__BackingField:
+    - "Hey Cap\u2019taine ! Vous auriez pas vu mes outils trainer ?"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 7ad260f9e18927e47848490acfa4185d, type: 2}
+    <Text>k__BackingField:
+    - "Je suis sur que quelqu\u2019un me les \xE0 voler, je les avais rang\xE9 correctement
+      et aujourd\u2019hui impossible de les trouver !"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+    <Text>k__BackingField:
+    - "Si je ne les aies pas tr\xE8s vite, \xE7a va commencer \xE0 me saouler "
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: aee0d3f1d571b8444aaf6f93924a8eb0, type: 2}
+  - {fileID: 11400000, guid: bfe9a62485914cb4ab18c538ab8036d7, type: 2}
+  - {fileID: 11400000, guid: 90cacd09118494b4f9abf06b7ef1c114, type: 2}
+  <GUID>k__BackingField: 0c6b63e9-383e-44e7-b1ef-321aee568cd8

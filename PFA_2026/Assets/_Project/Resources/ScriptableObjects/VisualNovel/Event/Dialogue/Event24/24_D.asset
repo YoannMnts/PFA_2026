@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 24_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 0fe42833bb6ed6c439818cde732755e2, type: 2}
+    <Text>k__BackingField:
+    - "Alors les familles, \xE7a te laisse toujours seule ?"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: d68f5268f191b02489412f9299a2bae5, type: 2}
+    <Text>k__BackingField:
+    - "Je ne peux pas leur en vouloir, mais je suis quand m\xEAme triste qu\u2019on
+      me laisse toujours seule"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: e1e95095404036e46957f9aecb3c7531, type: 2}
+  - {fileID: 11400000, guid: 42712259a36723c469eee3b227d95037, type: 2}
+  <GUID>k__BackingField: 1ae38701-8687-4ad7-aeb8-45a9c3d9fa34

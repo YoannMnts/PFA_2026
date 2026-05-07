@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 16_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 7ad260f9e18927e47848490acfa4185d, type: 2}
+    <Text>k__BackingField:
+    - "Non\u2026 Ca ne m\u2019\xE9tonnerais pas de Camil ou Marco, mais je peux pas
+      \xEAtre s\xFBre."
+    - "Honn\xEAtement, pour son bien le coupable \xE0 int\xE9r\xEAt \xE0 pas se d\xE9noncer."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 2b9f11b15460fad408c79156a720af8a, type: 2}
+  - {fileID: 11400000, guid: e5ae7fd9afbb94e429a7aab6481ee67f, type: 2}
+  - {fileID: 11400000, guid: 24d4af0c280282b4097070153a4e8dd8, type: 2}
+  <GUID>k__BackingField: 304ff495-9ffa-4238-b45b-d58bde02ca51
