@@ -17,6 +17,9 @@ namespace Naussilus.Gameplay.Launcher
         [SerializeField] 
         private int switchDayWaitSeconds;
 
+        [SerializeField]
+        private int defaultActionPoint;
+        
         private void Start()
         {
             NpcManager.Init();
@@ -77,7 +80,7 @@ namespace Naussilus.Gameplay.Launcher
 
         private async Awaitable<bool> Management()
         {
-            var managementPhase = new ManagementPhase();
+            var managementPhase = new ManagementPhase(defaultActionPoint);
             PhaseResult<bool> result = await managementPhase.Run();
             
             return result;

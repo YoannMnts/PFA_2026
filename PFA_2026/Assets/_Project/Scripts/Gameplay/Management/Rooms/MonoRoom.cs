@@ -1,4 +1,6 @@
-﻿using Helteix.Tools.Phases;
+﻿using DefaultNamespace;
+using Helteix.Tools.Phases;
+using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managements;
 using Naussilus.Core.Managers.Rooms;
@@ -6,13 +8,18 @@ using UnityEngine;
 
 namespace Rooms
 {
-    public class MonoRoom : MonoBehaviour
+    public class MonoRoom: MonoPhaseListener<ManagementPhase>
     {
         [field: SerializeField] 
         public RoomData RoomData { get; private set; }
 
         private Room Room => RoomManager.TryGetRoom(RoomData.GUID);
         
+        protected override void OnPhaseBegin(ManagementPhase phase)
+        {
+            base.OnPhaseBegin(phase);
+        }
+
         public void OnClick()
         {
             SelectActionForRoom selectActionForRoom = new SelectActionForRoom(Room);

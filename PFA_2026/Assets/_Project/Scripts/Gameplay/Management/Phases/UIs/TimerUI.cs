@@ -2,7 +2,7 @@
 using TMPro;
 using UnityEngine;
 
-public class Timer : MonoPhaseListener<ManagementPhase>
+public class TimerUI : MonoPhaseListener<ManagementPhase>
 {
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private int timerDuration;
