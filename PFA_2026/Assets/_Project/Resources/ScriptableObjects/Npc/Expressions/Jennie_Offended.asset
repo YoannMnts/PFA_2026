@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Jennie_Offended
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.NpcDatas.ExpressionData
   <Expressions>k__BackingField:
-  - <Sprite>k__BackingField: {fileID: 0}
+  - <Sprite>k__BackingField: {fileID: 21300000, guid: d1ea83ebc2bb4234eaf51e8dd995890a, type: 3}
     <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}

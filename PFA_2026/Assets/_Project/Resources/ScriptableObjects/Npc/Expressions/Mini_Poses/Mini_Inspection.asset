@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mini_Inspection
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.NpcDatas.ExpressionData
   <Expressions>k__BackingField:
-  - <Sprite>k__BackingField: {fileID: 0}
+  - <Sprite>k__BackingField: {fileID: 21300000, guid: 523e82ab24ca4f4468350b38b14694f3, type: 3}
     <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
   - <Sprite>k__BackingField: {fileID: 0}
     <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
