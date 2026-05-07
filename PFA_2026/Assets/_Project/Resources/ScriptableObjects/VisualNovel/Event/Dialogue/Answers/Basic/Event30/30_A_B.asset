@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 30_A_B
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Pourquoi est-ce qu'elle agit comme \xE7a ? "
-  <NextDialogue>k__BackingField: {fileID: 11400000, guid: b7f77c263cade7545af8eac02c69e7b4, type: 2}
-  <GUID>k__BackingField: a7ff8a11-435a-4eb8-a6ef-739fdb02964d
+  <ButtonText>k__BackingField: "Quels genres de probl\xE8mes ? "
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 737916efffbdd1c4c8b596e8a3a08970, type: 2}
+  <GUID>k__BackingField: 032b295c-c2ec-40fe-8a24-de7ae6ee4459

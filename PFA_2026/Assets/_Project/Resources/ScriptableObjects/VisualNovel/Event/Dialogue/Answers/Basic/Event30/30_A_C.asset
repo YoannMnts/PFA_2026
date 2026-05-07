@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 30_A_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 'Tu y vas un peu fort '
-  <NextDialogue>k__BackingField: {fileID: 11400000, guid: fe9ab874cea63314d82febc6734a05c9, type: 2}
-  <GUID>k__BackingField: 4d7bd32b-6e30-4a3a-915e-4b1378529277
+  <ButtonText>k__BackingField: "Qu\u2019est ce qu\u2019on peut y faire ?"
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 51369f154a2fd114b9a88d70bba4e605, type: 2}
+  <GUID>k__BackingField: 98ed4db8-8499-4d4c-a3bf-e41689736e42

@@ -21,7 +21,8 @@ MonoBehaviour:
     - "Si on fait rien, ils vont se multiplier, et \xE7a deviendra incontr\xF4lable,
       tout l\u2019\xE9quipage va tomber malade. \r\n"
   <Answers>k__BackingField:
-  - {fileID: 11400000, guid: 96d151bd3149e054081ea4a3f307611e, type: 2}
-  - {fileID: 11400000, guid: b030af8da51e6c64b9672b0724513195, type: 2}
+  - {fileID: 11400000, guid: 98668ecfacf72444e8e1efe9f60f6927, type: 2}
+  - {fileID: 11400000, guid: 63dfb7acbd9efd84a81857e92d96e13d, type: 2}
   - {fileID: 11400000, guid: 762d0c413ae21d74a9da501a5d37099e, type: 2}
+  - {fileID: 11400000, guid: 3dd7a2b1651713144bdc8beecd44470b, type: 2}
   <GUID>k__BackingField: b474e466-b210-46b4-9f48-3326e61a3932
