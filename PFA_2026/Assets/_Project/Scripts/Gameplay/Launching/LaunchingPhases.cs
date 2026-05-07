@@ -6,6 +6,7 @@ using Naussilus.Core.Managers.Rooms;
 using Naussilus.Gameplay.VisualNovel;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 namespace Naussilus.Gameplay.Launcher
 {
@@ -19,13 +20,45 @@ namespace Naussilus.Gameplay.Launcher
 
         [SerializeField]
         private int defaultActionPoint;
+
+        [Header("Debug")]
+        [SerializeField]
+        private bool onlyVisualNovel;
+        
+        [SerializeField] 
+        private bool onlyManagement;
         
         private void Start()
         {
             NpcManager.Init();
             EventManager.Init();
             RoomManager.Init();
+            VisualNovelDebug();
+            ManagementDebug();
+
             PhaseLifetime();
+        }
+
+        private async void ManagementDebug()
+        {
+            if (!onlyManagement) 
+                return;
+            
+            for (int i = 0; i < maxDay; i++)
+            {
+                await Management();
+            }
+        }
+
+        private async void VisualNovelDebug()
+        {
+            if (!onlyVisualNovel) 
+                return;
+            
+            for (int i = 0; i < maxDay; i++)
+            {
+                await VisualNovel();
+            }
         }
 
         private async void PhaseLifetime()

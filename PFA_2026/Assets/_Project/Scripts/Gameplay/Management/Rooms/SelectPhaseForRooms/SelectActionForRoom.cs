@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
+using DefaultNamespace;
 using Helteix.Tools.Phases;
 using Naussilus.Core;
 using UnityEngine;
@@ -14,9 +15,11 @@ namespace Rooms
         
         public RoomAction CurrentAction { get; private set; }
         
-        public SelectActionForRoom(Room room)
+        public ActionPoint CurrentActionPoint { get; private set; }
+        public SelectActionForRoom(Room room, ActionPoint actionPoint)
         {
             CurrentRoom = room;
+            CurrentActionPoint = actionPoint;
         }
 
         protected override Awaitable Initialize(CancellationToken token)

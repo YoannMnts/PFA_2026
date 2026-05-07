@@ -1,4 +1,5 @@
-﻿using Helteix.Tools.Phases;
+﻿using DefaultNamespace;
+using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
@@ -12,6 +13,7 @@ public class SelectRoomForShipUI: MonoPhaseListener<SelectRoomForShip>
 
     public SelectRoomForShip Current { get; private set; }
 
+    private ActionPoint currentActionPoint;
     private void Start()
     {
         group.Hide();
@@ -52,7 +54,7 @@ public class SelectRoomForShipUI: MonoPhaseListener<SelectRoomForShip>
         if (Current == null)
             return;
 
-        var selectActionForRoom = new SelectActionForRoom(roomData);
+        var selectActionForRoom = new SelectActionForRoom(roomData, currentActionPoint);
         selectActionForRoom.RunAndForget();
             
         Current.SetResult(roomData);

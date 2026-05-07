@@ -1,23 +1,31 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace DefaultNamespace
 {
     public class ActionPoint
     {
-        public int CurrentAP { get; private set; }
+        public event Action<int> OnAddOrRemove;
+        
+        public int Value { get; private set; }
 
         private readonly int defaultAP;
         
         public ActionPoint(int defaultValue)
         {
-            CurrentAP = defaultValue;
+            Value = defaultValue;
             defaultAP = defaultValue;
         }
 
-        public void ComputeAP(int newAP)
+        public bool AddOrRemove(int newAP)
         {
-            var oldAP = CurrentAP - newAP;
-            CurrentAP = Mathf.Clamp(oldAP, 0, defaultAP);
+            var computeAP = Value + newAP;
+            if (computeAP < 0)
+                return false;
+            Debug.Log($"AddOrRemove - {computeAP}");
+            Value = Mathf.Clamp(computeAP, 0, defaultAP);
+            OnAddOrRemove?.Invoke(Value);
+            return true;
         }
     }
 }

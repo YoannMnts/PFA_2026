@@ -1,4 +1,5 @@
-﻿using Helteix.Tools.Phases;
+﻿using DefaultNamespace;
+using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
@@ -18,6 +19,7 @@ namespace Rooms
         public string Description => current.CurrentRoom.Description;
 
         private SelectActionForRoom current;
+        private ActionPoint currentActionPoint;
         private void Start()
         {
             group.Hide();
@@ -32,6 +34,7 @@ namespace Rooms
             group.Show();
             roomName.text = Name;
             roomDescription.text = Description;
+            currentActionPoint = phase.CurrentActionPoint;
             roomActionUIList.Connect(phase.Choices);
             
             base.OnPhaseBegin(phase);
@@ -67,6 +70,10 @@ namespace Rooms
                     index = i;
             }
 
+            var actionCost = -current.Choices[index].Cost;
+            if (!currentActionPoint.AddOrRemove(actionCost))
+                return;
+            Debug.Log($"Action {actionData.Name} cost {actionData.Cost} AP {currentActionPoint.Value} return {currentActionPoint.AddOrRemove(actionCost)}");
             var selectNpcsForAction = new SelectNpcsForAction(current.Choices[index]);
             selectNpcsForAction.RunAndForget();
             current.SetResult(index);

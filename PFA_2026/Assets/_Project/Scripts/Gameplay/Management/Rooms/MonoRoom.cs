@@ -15,14 +15,16 @@ namespace Rooms
 
         private Room Room => RoomManager.TryGetRoom(RoomData.GUID);
         
+        public ActionPoint CurrentActionPoint { get; private set; }
         protected override void OnPhaseBegin(ManagementPhase phase)
         {
+            CurrentActionPoint = phase.CurrentActionPoint;
             base.OnPhaseBegin(phase);
         }
 
         public void OnClick()
         {
-            SelectActionForRoom selectActionForRoom = new SelectActionForRoom(Room);
+            SelectActionForRoom selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint);
             selectActionForRoom.RunAndForget();
         }
     }
