@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 26_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f9c90a9bda4319e4680fbf0e1f897ea1, type: 2}
+    <Text>k__BackingField:
+    - "Je ne crois pas vraiment en la d\xE9licatesse, parfois les gens ont besoin
+      d\u2019entendre des choses qui ne leur plaisent pas.Oui mais c\u2019est une
+      fausse solution, \xE7a va juste l\u2019isoler encore plus et elle aura encore
+      moins confiance."
+    - "C\u2019est exactement ce qu\u2019il ne faut pas faire."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: ebdf93451e7dcb043bcc302fe3e5983a, type: 2}
+  - {fileID: 11400000, guid: 11703cbeab2ea80428f446191438721d, type: 2}
+  - {fileID: 11400000, guid: dceab7ce3fc544646b43a74d298e17db, type: 2}
+  - {fileID: 11400000, guid: dceab7ce3fc544646b43a74d298e17db, type: 2}
+  <GUID>k__BackingField: 9849fd1b-01d5-4814-a5b6-b003b6fb8d96

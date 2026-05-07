@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 26_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 5ef4500f111497443b1f23f4c3951502, type: 2}
+    <Text>k__BackingField:
+    - Bon matin.
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 1cbcf6c9bf6578c42852a9cd423df8b8, type: 2}
+    <Text>k__BackingField:
+    - "Je trouve que Ynna est vraiment insupportable en ce moment, elle prend de
+      haut tout le monde et rabaisse les autres, \xE7a ne peut plus durer comme \xE7a.\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 2ec3079e15605234cbcd9f8f28f85446, type: 2}
+  - {fileID: 11400000, guid: a54cd148057465441b43964439c6802b, type: 2}
+  <GUID>k__BackingField: 9b699591-5fbf-4770-a0af-8cda68193620

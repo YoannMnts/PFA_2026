@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 26_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: d68f5268f191b02489412f9299a2bae5, type: 2}
+    <Text>k__BackingField:
+    - "Oui sans doute\u2026"
+    - "Ce n\u2019est pas mon point fort de redonner confiance aux gens, j\u2019ai
+      plut\xF4t tendance \xE0 faire l\u2019inverse sans faire expr\xE8s\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: ebdf93451e7dcb043bcc302fe3e5983a, type: 2}
+  - {fileID: 11400000, guid: 11703cbeab2ea80428f446191438721d, type: 2}
+  - {fileID: 11400000, guid: dceab7ce3fc544646b43a74d298e17db, type: 2}
+  <GUID>k__BackingField: 7c6bb66c-d299-4582-9784-5a0ea9fa5899

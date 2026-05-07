@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 26_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 1cbcf6c9bf6578c42852a9cd423df8b8, type: 2}
+    <Text>k__BackingField:
+    - "Non c\u2019est juste vrai. Je ne supporte pas qu\u2019on me prenne de haut
+      comme elle le fait\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 3999f9480e833494e989c558217674bf, type: 2}
+  - {fileID: 11400000, guid: aa895d7610c792149b462dfe8fe3b3cb, type: 2}
+  <GUID>k__BackingField: 52847ccb-04f0-4b29-bea7-59f93d6ca07c

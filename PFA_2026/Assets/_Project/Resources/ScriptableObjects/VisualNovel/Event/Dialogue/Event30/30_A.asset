@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 30_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 5ef4500f111497443b1f23f4c3951502, type: 2}
+    <Text>k__BackingField:
+    - Bon matin.
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f9c90a9bda4319e4680fbf0e1f897ea1, type: 2}
+    <Text>k__BackingField:
+    - "Ce matin, quand j\u2019\xE9tais dans la calle, j\u2019ai aper\xE7u des rats. "
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 1cbcf6c9bf6578c42852a9cd423df8b8, type: 2}
+    <Text>k__BackingField:
+    - "Un signe d\u2019une mauvaise hygi\xE8ne si vous voulez mon avis."
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f9c90a9bda4319e4680fbf0e1f897ea1, type: 2}
+    <Text>k__BackingField:
+    - "Mais bon, il faut s\u2019occuper de r\xE9gler \xE7a avant que \xE7a cause
+      des probl\xE8mes."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 2ec3079e15605234cbcd9f8f28f85446, type: 2}
+  - {fileID: 11400000, guid: a54cd148057465441b43964439c6802b, type: 2}
+  <GUID>k__BackingField: 27126da9-43b2-46b2-8c50-a926b64fcfbd

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 30_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 1cbcf6c9bf6578c42852a9cd423df8b8, type: 2}
+    <Text>k__BackingField:
+    - "Et bien les rats apportent des maladies et d\xE9vorent les provisions, vous
+      devriez savoir \xE7a en tant que Capitaine. "
+    - "Si on fait rien, ils vont se multiplier, et \xE7a deviendra incontr\xF4lable,
+      tout l\u2019\xE9quipage va tomber malade. \r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 96d151bd3149e054081ea4a3f307611e, type: 2}
+  - {fileID: 11400000, guid: b030af8da51e6c64b9672b0724513195, type: 2}
+  - {fileID: 11400000, guid: 762d0c413ae21d74a9da501a5d37099e, type: 2}
+  <GUID>k__BackingField: b474e466-b210-46b4-9f48-3326e61a3932
