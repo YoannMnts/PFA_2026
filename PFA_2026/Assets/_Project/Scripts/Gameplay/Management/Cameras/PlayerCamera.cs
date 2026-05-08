@@ -34,13 +34,15 @@ namespace Naussilus.Gameplay
         private void OnEnable()
         {
             this.Register();
-            tapInput.OnTap += TryInteract;
+            if(gameObject.TryGetService(out PlayerInputManager playerInputManager))
+                playerInputManager.OnTouch += TryInteract;
         }
 
         private void OnDisable()
         {
+            if(gameObject.TryGetService(out PlayerInputManager playerInputManager))
+                playerInputManager.OnTouch -= TryInteract;
             this.Unregister();
-            tapInput.OnTap -= TryInteract;
         }
 
         private void Update()
@@ -82,9 +84,12 @@ namespace Naussilus.Gameplay
             }
         }
 
-        public void TryInteract(Vector2 screenPos)
+        public void TryInteract(ITouchInput touchInput)
         {
-            Vector2 worldPos = cam.ScreenToWorldPoint(screenPos);
+            if (touchInput is not TapInput)
+                return;
+                
+            Vector2 worldPos = cam.ScreenToWorldPoint(tapInput.TapPosition);
 
             RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);
             if (hit.transform.TryGetComponent(out MonoRoom monoRoom))

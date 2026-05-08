@@ -75,7 +75,7 @@ namespace Rooms
                 if(current.Choices[i] == actionData)
                     index = i;
             }
-
+            
             var actionCost = -current.Choices[index].Cost;
             if (!currentActionPoint.AddOrRemove(actionCost))
                 return;

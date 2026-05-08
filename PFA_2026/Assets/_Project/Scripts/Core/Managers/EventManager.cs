@@ -65,22 +65,26 @@ namespace Naussilus.Core.Managers
                 
                 validEventDatas.Sort();
                 validEventDatas.Reverse();
-                for (int i = 1; i < validEventDatas.Count; i++)
-                {
-                    if (validEventDatas[0].Priority == validEventDatas[i].Priority)
-                        continue;
-
-                    validEventDatas.RemoveAt(i);
-                }
+                var maxPriority = validEventDatas[0].Priority;
+                var valueCount = validEventDatas.Count;
                 
-                Incident[] result = new Incident[3];
-                for (int i = 0; i < result.Length; i++)
+                using (ListPool<Incident>.Get(out var incidents))
                 {
-                    var randomIndex = Random.Range(0, validEventDatas.Count);
-                    result[i] = validEventDatas[randomIndex];
+                    for (int i = 0; i < valueCount; i++)
+                    {
+                        if (validEventDatas[i].Priority == maxPriority)
+                            incidents.Add(validEventDatas[i]);
+                    }
+                    
+                    Incident[] result = new Incident[3];
+                    for (int i = 0; i < result.Length; i++)
+                    {
+                        var randomIndex = Random.Range(0, incidents.Count);
+                        result[i] = incidents[randomIndex];
+                    }
+                    Debug.Log($"[Event Manager] Found {validEventDatas.Count} valid events and {result[0].Name}, {result[1].Name}, {result[2].Name} has been take.");
+                    return result;
                 }
-                Debug.Log($"[Event Manager] Found {validEventDatas.Count} valid events and {result.Length} has been take.");
-                return result;
             }
         }
         

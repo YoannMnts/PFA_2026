@@ -36,7 +36,7 @@ namespace Naussilus.Core.Managers.Npcs
                 npc.InitRelationships(value);
             }
             
-            Debug.Log($"[EventManager] Loaded {entries.Length} events.");
+            Debug.Log($"[NpcManager] Loaded {entries.Length} npc.");
         }
         
         public static void Init(){}
