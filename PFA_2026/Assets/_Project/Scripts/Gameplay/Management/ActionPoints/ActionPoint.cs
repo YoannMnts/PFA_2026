@@ -17,7 +17,7 @@ namespace DefaultNamespace
             defaultAP = defaultValue;
         }
 
-        public bool AddOrRemove(int newAP)
+        public bool TryAddOrRemove(int newAP)
         {
             var computeAP = Value + newAP;
             if (computeAP < 0)

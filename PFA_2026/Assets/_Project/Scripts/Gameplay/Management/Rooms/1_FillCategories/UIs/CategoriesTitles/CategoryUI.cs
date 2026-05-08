@@ -9,7 +9,7 @@ namespace Rooms
 {
     public class CategoryUI : UIItem<Category>
     {
-        private SelectNpcsForActionUI selectNpcsForActionUI;
+        private FillCategoriesUI fillCategoriesUI;
         
         [SerializeField] private TMP_Text categoryName;
         [SerializeField] private CategorySlot categorySlotPrefab;
@@ -17,7 +17,7 @@ namespace Rooms
         
         private void Start()
         {
-            selectNpcsForActionUI = GetComponentInParent<SelectNpcsForActionUI>();
+            fillCategoriesUI = GetComponentInParent<FillCategoriesUI>();
         }
 
         private void OnDisable()
@@ -69,7 +69,7 @@ namespace Rooms
 
         public void OnClicked(int index)
         {
-            selectNpcsForActionUI.ChooseCategory(Current, index);
+            fillCategoriesUI.ChooseCategory(Current, index);
         }
     }
 }

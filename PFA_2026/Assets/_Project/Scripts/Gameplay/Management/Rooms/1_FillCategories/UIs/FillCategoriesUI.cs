@@ -5,22 +5,25 @@ using Naussilus.Core.Managers;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.Managers.Rooms;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Rooms
 {
-    public class SelectNpcsForActionUI : MonoPhaseListener<SelectNpcsForAction>
+    public class FillCategoriesUI : MonoPhaseListener<FillCategory>
     {
-        private SelectNpcsForAction current;
+        private FillCategory current;
 
         [SerializeField] private CanvasGroup group;
         [SerializeField] private CategoryUIList categoryUIList;
+        [SerializeField] private Button closeButton;
+        [SerializeField] private Button applyButton;
 
         private void Start()
         {
             group.Hide();
         }
 
-        protected override void OnPhaseBegin(SelectNpcsForAction phase)
+        protected override void OnPhaseBegin(FillCategory phase)
         {
             if(current != null)
                 return;
@@ -28,10 +31,13 @@ namespace Rooms
             current = phase;
             group.Show();
             categoryUIList.Connect(phase.Categories);
+            closeButton.onClick.AddListener(Cancel);
+            applyButton.onClick.AddListener(Apply);
+            
             base.OnPhaseBegin(phase);
         }
 
-        protected override void OnPhaseEnd(SelectNpcsForAction phase)
+        protected override void OnPhaseEnd(FillCategory phase)
         {
             if (current != phase) 
                 return;
@@ -39,6 +45,8 @@ namespace Rooms
             current = null;
             categoryUIList.Disconnect();
             group.Hide();
+            closeButton.onClick.RemoveAllListeners();
+            applyButton.onClick.RemoveAllListeners();
             
             base.OnPhaseEnd(phase);
         }
@@ -65,12 +73,15 @@ namespace Rooms
             var index = 0;
             for (int i = 0; i < current.Categories.Length; i++)
             {
-                if(current.Categories[i] == category)
+                if (current.Categories[i] == category)
+                {
                     index = i;
+                    break;
+                }
             }
             var selectNpc = new SelectNpcForCategory(current.Categories[index], slotIndex);
             var npcResult = await selectNpc.Run();
-            current.Categories[index].CurrentNpcs[slotIndex] = npcResult.value;
+            current.Categories[index].AddNpc(npcResult.value, slotIndex);
         }
 
         public async void Apply()
@@ -89,8 +100,8 @@ namespace Rooms
                 }
             }
 
-            var resume = new ResumePhaseForAction(current.CurrentAction);
-            var result  = await resume.Run();
+            var consequenceSummary = new ActionConsequenceSummary(current.CurrentAction);
+            var result  = await consequenceSummary.Run();
 
             if (!result)
                 return;

@@ -3,13 +3,13 @@ using Naussilus.Core;
 
 namespace Rooms
 {
-    public class SelectNpcsForAction : PhaseCompletionSource<bool>
+    public class FillCategory : PhaseCompletionSource<bool>
     {
         public RoomAction CurrentAction { get; private set; }
 
         public Category[] Categories => CurrentAction.Categories;
         
-        public SelectNpcsForAction(RoomAction action)
+        public FillCategory(RoomAction action)
         {
             CurrentAction = action;
         }

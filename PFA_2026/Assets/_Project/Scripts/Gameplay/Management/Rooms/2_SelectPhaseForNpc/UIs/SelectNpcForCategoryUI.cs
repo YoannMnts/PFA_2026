@@ -43,15 +43,12 @@ namespace Rooms
 
         public void Cancel()
         {
-            if (current != null)
-                current.SetResult(null);
+            current?.SetResult(null);
         }
 
         public void ChooseNpc(Npc npc)
         {
-            if (current == null)
-                return;
-            current.SetResult(npc);
+            current?.SetResult(npc);
         }
     }
 }

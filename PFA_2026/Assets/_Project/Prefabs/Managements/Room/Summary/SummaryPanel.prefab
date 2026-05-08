@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6092319849703507837}
   - component: {fileID: 1984281750820380554}
   m_Layer: 5
-  m_Name: ResumePanel
+  m_Name: SummaryPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,6 +139,8 @@ MonoBehaviour:
       m_Calls: []
   group: {fileID: 6092319849703507837}
   consequenceTextUIList: {fileID: 5694795499720979563}
+  closeButton: {fileID: 2007618058022332310}
+  applyButton: {fileID: 7969811163426749912}
 --- !u!1 &1003824254906116728
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,19 +297,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6095432457282956490}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1984281750820380554}
-        m_TargetAssemblyTypeName: Rooms.ResumePhaseForActionUI, Naussilus.Gameplay.Management
-        m_MethodName: Abort
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &5148135891598763145
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,19 +555,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6771924485201967376}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1984281750820380554}
-        m_TargetAssemblyTypeName: Rooms.ResumePhaseForActionUI, Naussilus.Gameplay.Management
-        m_MethodName: Apply
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &7926852646083703169
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,7 +904,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 398868938039461138, guid: 2fc332d00d34dd54f9de49fb2773637f, type: 3}
       propertyPath: m_Size
-      value: 0.9999984
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1200873986607248300, guid: 2fc332d00d34dd54f9de49fb2773637f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1016,13 +994,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4902709866980507181, guid: 2fc332d00d34dd54f9de49fb2773637f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902709866980507181, guid: 2fc332d00d34dd54f9de49fb2773637f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902709866980507181, guid: 2fc332d00d34dd54f9de49fb2773637f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5434441259342678731, guid: 2fc332d00d34dd54f9de49fb2773637f, type: 3}
       propertyPath: m_Name
       value: ConsequenceList
       objectReference: {fileID: 0}
     - target: {fileID: 6355391748086607452, guid: 2fc332d00d34dd54f9de49fb2773637f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00006913444
+      value: 0.000019436944
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

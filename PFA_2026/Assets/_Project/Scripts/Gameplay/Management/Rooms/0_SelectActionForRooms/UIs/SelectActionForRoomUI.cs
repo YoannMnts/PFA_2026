@@ -15,7 +15,6 @@ namespace Rooms
         [SerializeField] private TMP_Text roomName;
         [SerializeField] private TMP_Text roomDescription;
         [SerializeField] private RoomActionUIList roomActionUIList;
-        [SerializeField] private CountdownRoomUI countdownRoomUI;
 
         public string Name => current.CurrentRoom.Name;
         public string Description => current.CurrentRoom.Description;
@@ -37,12 +36,8 @@ namespace Rooms
             roomName.text = Name;
             roomDescription.text = Description;
             currentActionPoint = phase.CurrentActionPoint;
-            if (current.CurrentRoom.TryGetCurrentAction(out var action))
-            {
-                countdownRoomUI.Connect(current.CurrentRoom.RoomCountdown, action);
-            }
-            
             roomActionUIList.Connect(phase.Choices);
+            
             base.OnPhaseBegin(phase);
         }
 
@@ -77,19 +72,20 @@ namespace Rooms
             }
             
             var actionCost = -current.Choices[index].Cost;
-            if (!currentActionPoint.AddOrRemove(actionCost))
+            if (!currentActionPoint.TryAddOrRemove(actionCost))
                 return;
-            Debug.Log($"Action {actionData.Name} cost {actionData.Cost} AP {currentActionPoint.Value} return {currentActionPoint.AddOrRemove(actionCost)}");
-            var selectNpcsForAction = new SelectNpcsForAction(current.Choices[index]);
-            var result = await selectNpcsForAction.Run();
+            
+            Debug.Log($"Action {actionData.Name} cost {actionData.Cost} AP {currentActionPoint.Value} return {currentActionPoint.TryAddOrRemove(actionCost)}");
+            var fillCategory = new FillCategory(current.Choices[index]);
+            var result = await fillCategory.Run();
             if (!result)
             {
                 current.CurrentRoom.TryGetCurrentAction(out var action);
-                current.CurrentRoom.AddOrRemoveCountdown(action.Cost);
+                currentActionPoint.TryAddOrRemove(action.Cost);
                 return;
             }
             
-            current.SetResult(result.value);
+            current.SetResult(true);
         }
     }
 }

@@ -1,23 +1,30 @@
 ﻿using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managers;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Rooms
 {
-    public class ResumePhaseForActionUI : MonoPhaseListener<ResumePhaseForAction>
+    public class ActionConsequenceSummaryUI : MonoPhaseListener<ActionConsequenceSummary>
     {
-        private ResumePhaseForAction current;
+        private ActionConsequenceSummary current;
 
-        [field: SerializeField] private CanvasGroup group;
+        [SerializeField] private CanvasGroup group;
 
-        [field: SerializeField] private ConsequenceTextUIList consequenceTextUIList;
+        [SerializeField] private ConsequenceTextUIList consequenceTextUIList;
+        
+        [SerializeField] private Button closeButton;
+        
+        [SerializeField] private Button applyButton;
+        
+        
 
         private void Start()
         {
             group.Hide();
         }
 
-        protected override void OnPhaseBegin(ResumePhaseForAction phase)
+        protected override void OnPhaseBegin(ActionConsequenceSummary phase)
         {
             if(current != null)
                 return;
@@ -25,17 +32,21 @@ namespace Rooms
             current = phase;
             group.Show();
             //consequenceTextUIList.Connect();
+            closeButton.onClick.AddListener(Abort);
+            applyButton.onClick.AddListener(Apply);
             
             base.OnPhaseBegin(phase);
         }
 
-        protected override void OnPhaseEnd(ResumePhaseForAction phase)
+        protected override void OnPhaseEnd(ActionConsequenceSummary phase)
         {
             if (current != phase) 
                 return;
             
             current = null;
             group.Hide();
+            closeButton.onClick.RemoveAllListeners();
+            applyButton.onClick.RemoveAllListeners();
             
             base.OnPhaseEnd(phase);
         }
