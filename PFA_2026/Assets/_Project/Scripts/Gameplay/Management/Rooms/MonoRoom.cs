@@ -1,4 +1,5 @@
-﻿using DefaultNamespace;
+﻿using System;
+using DefaultNamespace;
 using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
@@ -10,6 +11,8 @@ namespace Rooms
 {
     public class MonoRoom: MonoPhaseListener<ManagementPhase>
     {
+        public event Action OnMenuClose;
+        
         [field: SerializeField] 
         public RoomData RoomData { get; private set; }
 
@@ -26,6 +29,12 @@ namespace Rooms
         {
             var selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint);
             selectActionForRoom.RunAndForget();
+            selectActionForRoom.OnCloseMenu += MenuClose;
+        }
+
+        public void MenuClose()
+        {
+            OnMenuClose?.Invoke();
         }
     }
 }

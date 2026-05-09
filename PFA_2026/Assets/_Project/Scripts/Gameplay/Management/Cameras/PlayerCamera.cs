@@ -95,6 +95,19 @@ namespace Naussilus.Gameplay
             if (hit.transform.TryGetComponent(out MonoRoom monoRoom))
             {
                 monoRoom.OnClick();
+                monoRoom.OnMenuClose += StopInteract;
+                if (gameObject.TryGetService(out PlayerInputManager playerInputManager))
+                {
+                    playerInputManager.RemoveTouchInput(tapInput);
+                }
+            }
+        }
+
+        public void StopInteract()
+        {
+            if (gameObject.TryGetService(out PlayerInputManager playerInputManager))
+            {
+                playerInputManager.AddTouchInput(tapInput);
             }
         }
     }

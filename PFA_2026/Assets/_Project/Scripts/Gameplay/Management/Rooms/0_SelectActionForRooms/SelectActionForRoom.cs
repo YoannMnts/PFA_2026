@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using DefaultNamespace;
 using Helteix.Tools.Phases;
@@ -9,6 +10,8 @@ namespace Rooms
 {
     public class SelectActionForRoom : PhaseCompletionSource<bool>
     {
+        public event Action OnCloseMenu;
+        
         public Room CurrentRoom { get; private set; }
         
         public RoomAction[] Choices { get; private set; }
@@ -31,6 +34,7 @@ namespace Rooms
         protected override Awaitable Dispose(CancellationToken token)
         {
             Choices = null;
+            OnCloseMenu?.Invoke();
             return base.Dispose(token);
         }
     }

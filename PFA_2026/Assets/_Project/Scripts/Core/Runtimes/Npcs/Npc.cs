@@ -10,6 +10,8 @@ namespace Naussilus.Core
         public event Action<Vector2> OnNewPosition;
         public event Action OnReturnLastPosition;
         
+        public event Action<Npc> OnNpcSelected; 
+        
         public string Name { get; private set; }
         public Behavior[] Behaviors { get; private set; }
         public MentalState[] MentalStates { get; private set; }
@@ -50,6 +52,11 @@ namespace Naussilus.Core
         public void ReturnToLastPosition()
         {
             OnReturnLastPosition?.Invoke();
+        }
+
+        public void Selected()
+        {
+            OnNpcSelected?.Invoke(this);
         }
     }
 }

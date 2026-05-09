@@ -1,18 +1,22 @@
 ﻿using System.Threading;
 using DefaultNamespace;
 using Helteix.Tools.Phases;
+using Naussilus.Core;
 using Naussilus.Core.Managers;
+using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.Managers.Rooms;
 using UnityEngine;
 
 public class ManagementPhase : PhaseCompletionSource<bool>
 {
     public ActionPoint CurrentActionPoint { get; private set; }
-
+    public Npc[] CurrentNpcs { get; private set; }
+    
     private readonly int defaultAP;
     public ManagementPhase(int defaultAPValue)
     {
         defaultAP = defaultAPValue;
+        CurrentNpcs = NpcManager.GetAllNpcs();
     }
     
     protected override Awaitable Initialize(CancellationToken token)
