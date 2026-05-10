@@ -43,6 +43,12 @@ namespace Naussilus.Core.Managers
                 var isConditionValid = false;
                 foreach ((string key, Incident value) in Incidents)
                 {
+                    if (CompletedIncidents.Contains(value))
+                    {
+                        Debug.Log($"[EventManager] Event already completed: {value.Name}");
+                        continue;
+                    }
+                    
                     Debug.Log($"[EventManager] Found {key} : Incident: {value.Name}");
                     ConditionalEffect[] conditionalEffects = value.Dependencies ?? Array.Empty<ConditionalEffect>();
                     for (int i = 0; i < conditionalEffects.Length; i++)
@@ -86,6 +92,11 @@ namespace Naussilus.Core.Managers
                     return result;
                 }
             }
+        }
+
+        public static void AddToCompletedEvent(this Incident incident)
+        {
+            CompletedIncidents.Add(incident);
         }
         
         public static Incident TryGetEvent(string guid)

@@ -52,6 +52,7 @@ namespace Naussilus.Gameplay.VisualNovel
 
                 for (int i = 0; i < finalAnswer.Effects.Length; i++)
                     finalAnswer.Effects[i].ComputeConditionalEffect(NpcEventData);
+                currentEvent.AddToCompletedEvent();
             }
             
             var summary = new VisualNovelSummary();

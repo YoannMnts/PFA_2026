@@ -5,7 +5,7 @@ using Naussilus.Core.VisualNovels.EventDatas;
 
 namespace Naussilus.Core
 {
-    public struct Incident : IComparable<Incident>
+    public class Incident : IComparable<Incident>
     {
         public string Name { get; private set; }
         
