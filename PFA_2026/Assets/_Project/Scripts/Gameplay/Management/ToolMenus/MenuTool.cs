@@ -1,5 +1,4 @@
-﻿using DefaultNamespace;
-using Helteix.Tools.Phases;
+﻿using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 
 public class MenuTool : MonoPhaseListener<ManagementPhase>

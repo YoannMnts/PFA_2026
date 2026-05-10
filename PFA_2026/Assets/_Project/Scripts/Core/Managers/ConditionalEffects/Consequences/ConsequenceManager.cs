@@ -1,4 +1,5 @@
-﻿using Naussilus.Core.Managers.Npcs;
+﻿using System.Collections.Generic;
+using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.Operators;
 using UnityEngine;
 
@@ -6,6 +7,8 @@ namespace Naussilus.Core.Managers
 {
     public static class ConsequenceManager
     {
+        public static readonly List<Consequence> ValidConsequences = new List<Consequence>();
+        
         public static void ComputeAllConsequence(this Consequence[] currentConsequence, Npc currentNpcData)
         {
             for (var i = 0; i < currentConsequence.Length; i++)
@@ -57,6 +60,14 @@ namespace Naussilus.Core.Managers
                 Debug.Log($"[ConsequenceManager] Compute {stats[i]} : left: {stats[i].Amount} {consequence.ArithmeticOperator} right: {rightSide} return : {newAmount} for npc {currentNpcData.Name}");
                 stats[i].SetNewAmount(newAmount);
             }
+
+            for (int i = 0; i < consequence.Text.Length; i++)
+            {
+                var replace = consequence.Text[i].Replace("{CurrentNpc}", currentNpcData.Name);
+                consequence.Text[i] = replace;
+            }
+            
+            ValidConsequences.Add(consequence);
         }
 
         private static void ModifyValue(this Consequence consequence, int leftSide, int rightSide, out int newValue)

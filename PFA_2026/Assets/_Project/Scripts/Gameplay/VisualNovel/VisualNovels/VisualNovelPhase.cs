@@ -54,7 +54,7 @@ namespace Naussilus.Gameplay.VisualNovel
                     finalAnswer.Effects[i].ComputeConditionalEffect(NpcEventData);
             }
             
-            var summary = new Summary();
+            var summary = new VisualNovelSummary();
             await summary.Run();
             
             return true;

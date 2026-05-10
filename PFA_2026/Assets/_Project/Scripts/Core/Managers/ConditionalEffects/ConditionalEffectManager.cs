@@ -46,6 +46,7 @@ namespace Naussilus.Core.Managers
             Condition[] currentConditions = conditionalEffect.Conditions;
             Consequence[] currentConsequences = conditionalEffect.Consequences;
             
+            ConsequenceManager.ValidConsequences.Clear();
             for (int i = 0; i < currentNpcs.Length; i++)
             {
                 currentConditions.ComputeAllCondition(currentNpcs[i], out var validNpcs);

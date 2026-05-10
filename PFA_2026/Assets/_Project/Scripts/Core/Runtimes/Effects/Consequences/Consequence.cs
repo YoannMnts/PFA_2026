@@ -3,7 +3,7 @@ using Naussilus.Core.Operators;
 
 namespace Naussilus.Core
 {
-    public struct Consequence
+    public class Consequence
     {
         public bool IsGameLost { get; private set; }
         

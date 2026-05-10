@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using DefaultNamespace;
 using Helteix.Tools.Phases;
 using Naussilus.Core;
 using UnityEngine;

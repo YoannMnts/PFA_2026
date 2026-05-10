@@ -3,7 +3,7 @@ using Naussilus.Core.Managers;
 
 namespace Naussilus.Core
 {
-    public struct ConditionalEffect
+    public class ConditionalEffect
     {
         public bool IsEnumeration { get; private set; }
         

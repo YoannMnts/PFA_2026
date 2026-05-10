@@ -1,44 +1,40 @@
-﻿using System;
-using Helteix.Tools.Phases.Listeners;
+﻿using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managers;
 using UnityEngine;
 
-namespace DefaultNamespace
+public class NpcBarUI : MonoPhaseListener<ManagementPhase>
 {
-    public class NpcBarUI : MonoPhaseListener<ManagementPhase>
-    {
-        [SerializeField] private CanvasGroup group;
-        [SerializeField] private NpcSlotUIList npcSlotUIList;
+    [SerializeField] private CanvasGroup group;
+    [SerializeField] private NpcSlotUIList npcSlotUIList;
         
-        private ManagementPhase currentPhase;
+    private ManagementPhase currentPhase;
 
-        private void Start()
-        {
-            group.Hide();
-        }
+    private void Start()
+    {
+        group.Hide();
+    }
 
-        protected override void OnPhaseBegin(ManagementPhase phase)
-        {
-            if (currentPhase != null)
-                return;
+    protected override void OnPhaseBegin(ManagementPhase phase)
+    {
+        if (currentPhase != null)
+            return;
             
-            currentPhase = phase;
-            group.Show();
-            npcSlotUIList.Connect(phase.CurrentNpcs);
+        currentPhase = phase;
+        group.Show();
+        npcSlotUIList.Connect(phase.CurrentNpcs);
             
-            base.OnPhaseBegin(phase);
-        }
+        base.OnPhaseBegin(phase);
+    }
 
-        protected override void OnPhaseEnd(ManagementPhase phase)
-        {
-            if (currentPhase == null)
-                return;
+    protected override void OnPhaseEnd(ManagementPhase phase)
+    {
+        if (currentPhase == null)
+            return;
             
-            currentPhase = null;
-            group.Hide();
-            npcSlotUIList.Disconnect();
+        currentPhase = null;
+        group.Hide();
+        npcSlotUIList.Disconnect();
             
-            base.OnPhaseEnd(phase);
-        }
+        base.OnPhaseEnd(phase);
     }
 }

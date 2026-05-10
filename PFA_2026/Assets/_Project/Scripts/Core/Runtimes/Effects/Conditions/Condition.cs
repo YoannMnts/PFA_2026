@@ -3,7 +3,7 @@ using Naussilus.Core.Operators;
 
 namespace Naussilus.Core
 {
-    public struct Condition
+    public class Condition
     {
         public ConditionSide LeftSide { get; private set; }
 

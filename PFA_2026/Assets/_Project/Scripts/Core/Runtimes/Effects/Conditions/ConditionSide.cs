@@ -3,7 +3,7 @@ using Naussilus.Core.Managers;
 
 namespace Naussilus.Core
 {
-    public struct ConditionSide
+    public class ConditionSide
     {
         public bool IsCurrentNpc { get; private set; }
         

@@ -1,7 +1,4 @@
-﻿namespace DefaultNamespace
+﻿public class NpcBar
 {
-    public class NpcBar
-    {
         
-    }
 }

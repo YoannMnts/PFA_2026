@@ -1,9 +1,10 @@
 ﻿using Helteix.Singletons.SceneServices;
 using Helteix.Tools.Phases;
+using Naussilus.Gameplay;
 using Rooms;
 using UnityEngine;
 
-namespace Naussilus.Gameplay
+namespace Cameras
 {
     public class PlayerCamera : MonoBehaviour, IPhaseListener<ManagementPhase>
     {

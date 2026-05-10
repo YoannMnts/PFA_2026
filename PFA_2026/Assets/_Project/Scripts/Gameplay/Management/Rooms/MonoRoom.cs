@@ -1,5 +1,4 @@
 ﻿using System;
-using DefaultNamespace;
 using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
