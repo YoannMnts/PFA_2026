@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6551f63f2e464eb39de211b4f9603e78, type: 3}
+  m_Name: 32_F2
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
+  <ButtonText>k__BackingField: "Je vais demander \xE0 tout le monde de travailler
+    un peu plus\r\n"
+  <NpcText>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 64771f5cfd949e747aea2017bff554bb, type: 2}
+    <Text>k__BackingField:
+    - "Ca me parait juste comme \xE7a."
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: eb209584d88ce37449f0c335ad8ba289, type: 2}
+    <Text>k__BackingField:
+    - "Vous verrez, cette exp\xE9dition sera encore plus rentable gr\xE2ce \xE0 ce
+      petit effort !"
+    - "C'\xE9tait un plaisir de discuter entre pirates avec le sens des affaires."
+  <Effects>k__BackingField:
+  - <IsEnumeration>k__BackingField: 0
+    <CurrentNpcTarget>k__BackingField:
+      rid: -2
+    <Conditions>k__BackingField: []
+    <Consequences>k__BackingField:
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 0
+        <Subject>k__BackingField:
+          rid: 2811533910747381765
+        <Stat>k__BackingField:
+          rid: 2811533864860123144
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 1
+      <Amount>k__BackingField: 3
+      <Text>k__BackingField: []
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 0
+        <Subject>k__BackingField:
+          rid: 2811533910747381766
+        <Stat>k__BackingField:
+          rid: 2811533910747381767
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 1
+      <Amount>k__BackingField: 2
+      <Text>k__BackingField: []
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 0
+        <Subject>k__BackingField:
+          rid: 2811533910747381769
+        <Stat>k__BackingField:
+          rid: 2811533910747381770
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 1
+      <Amount>k__BackingField: 2
+      <Text>k__BackingField: []
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: 2811533864860123146
+        <Stat>k__BackingField:
+          rid: 2811533910747381771
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 3
+      <Text>k__BackingField:
+      - "L\u2019\xE9quipage redouble d\u2019efforts pour la travers\xE9e, et Ynna
+        est satisfaite. Mais le reste de l\u2019\xE9quipage se plaint de devoir autant
+        travailler, et en veut \xE0 Ynna pour \xE7a car ils trouvent \xE7a injuste.
+        C\u2019est vrai qu\u2019on leur demande peut-\xEAtre beaucoup."
+  <GUID>k__BackingField: 9daa51a8-bbd1-4698-ba3b-a49b2deb0841
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2811533864860123144
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: efa87449a5f31f3428fd0d3f9c939891, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811533864860123146
+      type: {class: AllNpcData, ns: Naussilus.Core, asm: Naussilus.Core}
+      data: 
+    - rid: 2811533910747381765
+      type: {class: AllNpcData, ns: Naussilus.Core, asm: Naussilus.Core}
+      data: 
+    - rid: 2811533910747381766
+      type: {class: AllNpcData, ns: Naussilus.Core, asm: Naussilus.Core}
+      data: 
+    - rid: 2811533910747381767
+      type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Npc>k__BackingField:
+          rid: 2811533910747381768
+    - rid: 2811533910747381768
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    - rid: 2811533910747381769
+      type: {class: AllNpcData, ns: Naussilus.Core, asm: Naussilus.Core}
+      data: 
+    - rid: 2811533910747381770
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811533910747381771
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
+        <Amount>k__BackingField: 0

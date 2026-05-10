@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 32_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 4050038313e43e9459fb75c1a3b3c474, type: 2}
+    <Text>k__BackingField:
+    - "Mais bien s\xFBr ! Je passe ma journ\xE9e au bureau, je n\u2019ai pas une
+      minute pour moi !"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 64771f5cfd949e747aea2017bff554bb, type: 2}
+    <Text>k__BackingField:
+    - "J\u2019attends donc que les autres en fassent de m\xEAme, naturellement."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: a95cadd064c5d734d8697a46ad1e4390, type: 2}
+  - {fileID: 11400000, guid: 86cfa6e7a12ea014bb48fbd88ebba982, type: 2}
+  <GUID>k__BackingField: a480ac51-0d9a-4f93-865e-7deac2c97f4d

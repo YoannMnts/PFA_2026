@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 32_F
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 64771f5cfd949e747aea2017bff554bb, type: 2}
+    <Text>k__BackingField:
+    - "Bien s\xFBr mais\u2026Un peu de travail en plus ne nuirait pas \xE0 leur bien
+      \xEAtre."
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 4050038313e43e9459fb75c1a3b3c474, type: 2}
+    <Text>k__BackingField:
+    - "Et dans ce cas, moi qui travaille beaucoup, vous vous en fichez de mon bien
+      \xEAtre ?"
+    - "Il faut choisir \xE0 un moment\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: f6849ca3d8789ab418b0bdc58b70196b, type: 2}
+  - {fileID: 11400000, guid: 9cf46f64e18b40f4997d1bc1a56cd04f, type: 2}
+  - {fileID: 11400000, guid: c640f806a3a023f42af129d120c4f398, type: 2}
+  - {fileID: 11400000, guid: 80bbbe82b1ac7864fa6bb4b2e65cf486, type: 2}
+  <GUID>k__BackingField: 1227917a-6946-4b0f-95da-2669647532fa

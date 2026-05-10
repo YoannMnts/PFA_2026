@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 32_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: eb209584d88ce37449f0c335ad8ba289, type: 2}
+    <Text>k__BackingField:
+    - "Capitaine, j\u2019appr\xE9cierais que vous mettiez un peu plus la pression
+      aux autres membres de l\u2019\xE9quipage."
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 64771f5cfd949e747aea2017bff554bb, type: 2}
+    <Text>k__BackingField:
+    - "Ce bateau ne va pas se maintenir tout seul, et j\u2019ai l\u2019impression
+      que tout le monde passe son temps \xE0 se d\xE9tendre et \xE0 jouer."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: a2411932999b592459f8b2f832cf38bc, type: 2}
+  - {fileID: 11400000, guid: 2b292fa6389132140a3c0e673b926bad, type: 2}
+  - {fileID: 11400000, guid: 920e17d3b43e72442867ce4a378ce744, type: 2}
+  <GUID>k__BackingField: 80c79b4d-ec89-4381-a66d-f65907146add

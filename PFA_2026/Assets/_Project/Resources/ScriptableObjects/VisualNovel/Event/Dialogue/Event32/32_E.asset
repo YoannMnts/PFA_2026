@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 32_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 938e81505153e274cb78204e58224f61, type: 2}
+    <Text>k__BackingField:
+    - "Vous feriez \xE7a pour moi ? Comme c\u2019est gentil !"
+    - "Vous savez entre les dossiers, les rapports, les stocks\u2026C\u2019est beaucoup
+      pour moi."
+    - "J\u2019en suis capable bien s\xFBr mais\u2026"
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: eb209584d88ce37449f0c335ad8ba289, type: 2}
+    <Text>k__BackingField:
+    - "Si je pouvais \xEAtre all\xE9g\xE9e ce serait merveilleux !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: f6849ca3d8789ab418b0bdc58b70196b, type: 2}
+  - {fileID: 11400000, guid: 9cf46f64e18b40f4997d1bc1a56cd04f, type: 2}
+  - {fileID: 11400000, guid: c640f806a3a023f42af129d120c4f398, type: 2}
+  - {fileID: 11400000, guid: 80bbbe82b1ac7864fa6bb4b2e65cf486, type: 2}
+  <GUID>k__BackingField: 1e6c0f79-a734-40b0-9639-ea674fa8c997

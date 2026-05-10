@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 33_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 938e81505153e274cb78204e58224f61, type: 2}
+    <Text>k__BackingField:
+    - "Par le pass\xE9, on a abus\xE9 de ma gentillesse, et je me suis laiss\xE9e
+      faire. "
+    - "Je travaillais dans une grande entreprise, Marina Corp, et \xE7a s\u2019est
+      tr\xE8s mal pass\xE9."
+    - " Alors, j\u2019ai pris la d\xE9cision de devenir plus confiante, de m\u2019affirmer
+      et m\xEAme d\u2019aller jusqu\u2019\xE0 manipuler les autres, afin de prendre
+      ma revanche."
+    - "Le probl\xE8me maintenant, c\u2019est que j\u2019ai peur de sortir de ce r\xF4le,
+      et que la m\xEAme chose arrive si je suis r\xE9ellement moi-m\xEAme."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 185de9ab45baa434687fd0a39a60cf60, type: 2}
+  - {fileID: 11400000, guid: 3dc7350354c3afc4a885673631b7d272, type: 2}
+  - {fileID: 11400000, guid: 3b722bc782026c5478c6ce95fc82cb92, type: 2}
+  <GUID>k__BackingField: 24acdc89-fc49-4a0c-9131-d26975be7f3a

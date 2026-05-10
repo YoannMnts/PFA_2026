@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 32_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 64771f5cfd949e747aea2017bff554bb, type: 2}
+    <Text>k__BackingField:
+    - On peut toujours faire mieux.
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: eb209584d88ce37449f0c335ad8ba289, type: 2}
+    <Text>k__BackingField:
+    - "Pensez-y, si tout le monde travaillait plus, les risques seraient r\xE9duits
+      et avec un peu de chance, on arriverait encore plus vite \xE0 destination!"
+    - "Imaginez la marge suppl\xE9mentaire qu\u2019on pourrait faire !\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 74e10b674b914524fa8118282d393108, type: 2}
+  - {fileID: 11400000, guid: 734987363ebadc744954dd663d72f97e, type: 2}
+  <GUID>k__BackingField: 79a73afc-2887-4b7e-a5ed-77ae34cb9e1c

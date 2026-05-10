@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6551f63f2e464eb39de211b4f9603e78, type: 3}
+  m_Name: 33_F3
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
+  <ButtonText>k__BackingField: "Je suis s\xFBr que l\u2019\xE9quipage adorerait qui
+    tu es vraiment, et je veillerais \xE0 ce qu\u2019ils n\u2019en abusent pas "
+  <NpcText>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: eb209584d88ce37449f0c335ad8ba289, type: 2}
+    <Text>k__BackingField:
+    - "Oh c\u2019est gentil\u2026Je me sens plus en confiance d\u2019\xEAtre qui
+      je suis vraiment."
+    - "La prochaine fois, je n'h\xE9siterais pas\u2026 ou en tout cas j'h\xE9siterais
+      moins."
+    - "Merci Capitaine, et surtout, ne parlez de cet entretien \xE0 personne  !\r\n"
+  <Effects>k__BackingField:
+  - <IsEnumeration>k__BackingField: 0
+    <CurrentNpcTarget>k__BackingField:
+      rid: -2
+    <Conditions>k__BackingField: []
+    <Consequences>k__BackingField:
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: 2811533773414858989
+        <Stat>k__BackingField:
+          rid: 2811533864860123149
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 4
+      <Text>k__BackingField: []
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 0
+        <Subject>k__BackingField:
+          rid: 2811533864860123150
+        <Stat>k__BackingField:
+          rid: 2811533864860123151
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 3
+      <Text>k__BackingField: []
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: 2811533773414859010
+        <Stat>k__BackingField:
+          rid: 2811533910747381772
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 4
+      <Text>k__BackingField: []
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: 2811533773414858994
+        <Stat>k__BackingField:
+          rid: 2811533910747381784
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 4
+      <Text>k__BackingField:
+      - "J\u2019ai l\u2019impression que Ynna se r\xE9v\xE8le peu \xE0 peu, et que
+        l\u2019\xE9quipage appr\xE9cie beaucoup de la voir comme \xE7a. Elle prend
+        confiance en elle, et je suis content de voir \xE7a, c\u2019est quelqu\u2019un
+        de tr\xE8s gentil."
+  <GUID>k__BackingField: 0fdcbdc4-5e58-4c4e-bb6a-fcd2a99a110d
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2811533773414858989
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    - rid: 2811533773414858994
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    - rid: 2811533773414859010
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    - rid: 2811533864860123149
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: da645db61372a354fb4e466633a3a304, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811533864860123150
+      type: {class: AllNpcData, ns: Naussilus.Core, asm: Naussilus.Core}
+      data: 
+    - rid: 2811533864860123151
+      type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Npc>k__BackingField:
+          rid: 2811533864860123152
+    - rid: 2811533864860123152
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    - rid: 2811533910747381772
+      type: {class: BehaviorValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: f2b55b5c9291b9b448a304246130c6d4, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811533910747381784
+      type: {class: BehaviorValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: be977a50b8a9d5b4ba2645d7a82c7315, type: 2}
+        <Amount>k__BackingField: 0
