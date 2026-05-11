@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Merci de m\u2019avoir pr\xE9venu, j\u2019irais lui
     parler"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 9e8b83d3e3aee8543a3f25c969319a9c, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - "Merci Capitaine ! J\u2019esp\xE8re que vous arriverez \xE0 l\u2019aider\u2026"
     - "Je pense qu\u2019elle \xE0 vraiment besoin qu\u2019on l\u2019\xE9coute"
@@ -37,7 +37,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 4
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -61,7 +61,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -73,10 +73,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: "J\u2019ai convoqu\xE9 Pam, et nous avons un peu parl\xE9.
-        Elle m\u2019a parl\xE9 de ce qui l'affecte, et j\u2019ai l\u2019impression
-        qu\u2019elle se sent mieux maintenant. Je ne crois pas qu\u2019elle ait recommenc\xE9
-        \xE0 se couper"
+      <Text>k__BackingField: []
   <GUID>k__BackingField: 41abda28-d71f-4fa0-a69a-a6f3bba11d1a
   references:
     version: 2

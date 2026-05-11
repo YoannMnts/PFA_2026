@@ -16,16 +16,16 @@ MonoBehaviour:
     je veillerais \xE0 ce que l\u2019on t'emb\xEAte pas \xE0 propos de \xE7a et que
     tout le monde reste discret"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 31d3115b21e3c1e408c41459920e2c44, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
     - "Merci Cap\u2019Taine."
     - "Ca va passer, c\u2019est juste qu\u2019\xEAtre expos\xE9e comme \xE7a, \xE7a
       m\u2019a rappel\xE9 pourquoi ces marques existaient. "
     - "J\u2019essaierais d\u2019\xEAtre peu \xE0 peu \xE0 l\u2019aise avec les autres
       \xE0 nouveau. "
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: a99f0ad4335f6b141a766b0be219dd9c, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
     - "Qui sait, peut-\xEAtre que le coupable se d\xE9noncera !"
   <Effects>k__BackingField:
@@ -45,7 +45,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -57,7 +57,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 1
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -69,9 +69,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: "T\xE9a \xE0 l\u2019air d\u2019\xEAtre redevenue \xE0
-        l\u2019aise avec les autres. Le responsable de cette photo n\u2019as pas
-        \xE9t\xE9 retrouv\xE9, mais je crois que \xE7a lui importe peu maintenant"
+      <Text>k__BackingField: []
   <GUID>k__BackingField: 6d8266fc-7980-456c-9b0a-827bdba5ced6
   references:
     version: 2

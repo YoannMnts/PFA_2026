@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: 25_A
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 5ef4500f111497443b1f23f4c3951502, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
     - Bon matin.
     - "J\u2019ai l\u2019impression que Jennie m\u2019ignore, je crois qu\u2019elle
       ne se sent pas mal et qu\u2019elle \xE9vite la conversation."
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: d68f5268f191b02489412f9299a2bae5, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
     - "Elle n\u2019est pas comme \xE7a d\u2019habitude, \xE7a m\u2019inqui\xE8te."
   <Answers>k__BackingField:

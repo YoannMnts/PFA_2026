@@ -15,12 +15,12 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Je n\u2019arrive pas \xE0 croire que tu nous ai menti
     pendant tout ce temps"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 938e81505153e274cb78204e58224f61, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - "Mais\u2026"
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: a9ea80d78fc7e7348894ef9614d9c816, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
     - "Non ! Vous dites n\u2019importe quoi ! Je suis offusqu\xE9e de ces accusations."
     - "Si vous ne me voulez pas sur ce navire, je devrais peut \xEAtre m\u2019en

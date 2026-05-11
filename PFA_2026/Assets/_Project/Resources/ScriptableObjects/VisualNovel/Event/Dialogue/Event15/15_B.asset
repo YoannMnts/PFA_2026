@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: 15_B
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 7ad260f9e18927e47848490acfa4185d, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
     - "Et bien j'\xE9tais tranquillement en train de r\xE9parer des machines au poste
       de pilotage."
     - "Et elle est venue pour commencer \xE0 dire que tel instrument \xE9tait mal
       r\xE9gl\xE9, qu\u2019elle n\u2019aimait pas comment je r\xE9glais son si\xE8ge,
       qu\u2019un levier \xE9tait trop resserr\xE9, et plein d\u2019autres choses."
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
     <Text>k__BackingField:
     - "Elle \xE0 commenc\xE9 \xE0 s'\xE9nerver et \xE0 faire comme si elle aimait
       rien de ce que je faisais depuis le d\xE9but !"

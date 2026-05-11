@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Tu devrais essayer de ne pas te renfermer et d\u2019aller
     vers les autres"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 0fe42833bb6ed6c439818cde732755e2, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
     <Text>k__BackingField:
     - "Vous ne comprenez pas\u2026"
     - "Je veux juste que quelqu\u2019un se pr\xE9occupe de moi quand je vais mal."

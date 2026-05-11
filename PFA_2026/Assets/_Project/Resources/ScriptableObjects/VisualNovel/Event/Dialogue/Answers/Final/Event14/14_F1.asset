@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Tu peux me parler de ces marques si tu veux, et \xE7a
     reste entre nous"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 31d3115b21e3c1e408c41459920e2c44, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
     - "Et bah\u2026Elles datent de mon enfance\u2026"
     - "Avant d\u2019\xEAtre i\xE7i, j'\xE9tais sur un navire pirate, bien plus grand
@@ -25,8 +25,8 @@ MonoBehaviour:
       gentil."
     - "cicatrices\u2026c\u2019\xE9tait sa mani\xE8re de m\u2019apprendre \xE0 pas
       faire de b\xEAtises je suppose."
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: cea2a0905ac5adf42861b7ad8a5e344e, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - "Aujourd\u2019hui, tout \xE7a est derri\xE8re moi, mais le fait que tout le
       monde les voie m\u2019a rappel\xE9 tout \xE7a."
@@ -49,7 +49,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 4
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -61,7 +61,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -73,10 +73,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: "Apr\xE8s que T\xE9a m\u2019ai confi\xE9 son pass\xE9,
-        elle avait l\u2019air de se sentir mieux. Je pense que cette discussion l\u2019a
-        lib\xE9r\xE9 d\u2019un poids, et qu\u2019elle voudra se confier davantage
-        \xE0 pr\xE9sent"
+      <Text>k__BackingField: []
   <GUID>k__BackingField: c33d7b68-e42b-4650-9e73-dff9327c5eee
   references:
     version: 2

@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Vous devriez tous la regarder de la m\xEAme mani\xE8re,
     elle comprendrais que ce n\u2019est pas sympa"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: a99f0ad4335f6b141a766b0be219dd9c, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
     - "Ha ! Quelle belle id\xE9e Cap\u2019taine !"
     - "Peut \xEAtre qu\u2019elle arr\xEAtera de se croire sup\xE9rieure quand elle

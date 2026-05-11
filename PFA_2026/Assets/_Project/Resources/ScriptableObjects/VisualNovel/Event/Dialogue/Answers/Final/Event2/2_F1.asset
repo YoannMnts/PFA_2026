@@ -15,12 +15,12 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "La prochaine fois que cela arrive, dis lui sur le
     moment que \xE7a te blesse, pour qu\u2019elle puisse se corriger"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 9e8b83d3e3aee8543a3f25c969319a9c, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - "D\u2019accord, j\u2019essaierais de faire \xE7a\u2026"
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: dcd063c74af125544a8449f130643bac, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
     - "D\u2019accord, j\u2019essaierais de faire \xE7a\u2026"
   <Effects>k__BackingField:
@@ -40,7 +40,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 4
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -52,7 +52,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 1
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -64,7 +64,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -76,10 +76,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: "Jennie a pu dire \xE0 Pam qu\u2019elle l\u2019avait
-        bless\xE9e, et elle s\u2019est donc excus\xE9e et \xE0 fait attention. Maintenant,
-        Jennie \xE0 l\u2019air plus confiante et elle s\u2019entends encore mieux
-        avec Pam"
+      <Text>k__BackingField: []
   <GUID>k__BackingField: dcfaaafd-c2bf-4ab8-bc6b-3935eeb221de
   references:
     version: 2

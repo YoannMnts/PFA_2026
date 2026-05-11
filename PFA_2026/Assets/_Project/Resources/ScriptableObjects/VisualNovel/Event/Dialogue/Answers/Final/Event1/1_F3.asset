@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: 'Je dirais aux autres de ne plus te le rappeler '
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: c68724178ba4187428d21b9cce342e9f, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - "Merci, mais je doute que \xE7a soit la solution\u2026"
     - "J\u2019aimerais qu\u2019on ne me le dise plus parce que ce qu\u2019ils ne
@@ -37,7 +37,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -61,7 +61,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
   - <IsEnumeration>k__BackingField: 1
     <CurrentNpcTarget>k__BackingField:
       rid: 2811533773414858831
@@ -95,7 +95,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 4
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -107,10 +107,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: "J\u2019ai interdit \xE0 l'\xE9quipage de faire des
-        remarques \xE0 Jennie, et j\u2019ai d\xFB corriger certaines personnes qui
-        continuaient quand m\xEAme. J\u2019ai l\u2019impression que Jennie se sent
-        mieux, mais que l\u2019\xE9quipage est sur ses gardes"
+      <Text>k__BackingField: []
   <GUID>k__BackingField: 8a9c3ff0-2c05-44f8-92c5-93b62bdf7d32
   references:
     version: 2

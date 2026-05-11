@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: 20_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: cea2a0905ac5adf42861b7ad8a5e344e, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - Je fais de mon mieux pour le maintenir !
     - "La seule solution c\u2019est de l\u2019arr\xEAter pendant quelques heures,
       mais c\u2019est tr\xE8s risqu\xE9 de voler comme \xE7a, il vaut mieux s\u2019arr\xEAter\r\n"
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 9dde3e4621ca95b409e3702f2bdf2b11, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
     - "Oui \xE9coutez la ! Il vaut mieux s\u2019arr\xEAter"
   <Answers>k__BackingField:

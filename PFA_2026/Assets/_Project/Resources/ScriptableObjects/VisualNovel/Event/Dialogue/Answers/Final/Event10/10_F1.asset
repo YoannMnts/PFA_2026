@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Il faut l'\xE9viter, c\u2019est trop dangereux de
     passer \xE0 travers"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: c68724178ba4187428d21b9cce342e9f, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
     - "Oh\u2026Je pensais que vous auriez confiance en mes capacit\xE9s\u2026"
     - "Mais d\u2019accord, contournons la temp\xEAte si vous pensez que c\u2019est
@@ -38,7 +38,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 5
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -50,7 +50,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -74,10 +74,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: "Nous avons contourn\xE9 la temp\xEAte, mais j\u2019ai
-        l\u2019impression que Jennie \xE0 mal pris que je ne lui fasse pas confiance.
-        L\u2019\xE9quipage est stress\xE9 de ce changement d'itin\xE9raire, et rejette
-        la faute sur Jennie"
+      <Text>k__BackingField: []
   <GUID>k__BackingField: a65e4c3f-79b9-402b-9aee-6e99e4fa3ff5
   references:
     version: 2

@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "C\u2019est normal de se construire une carapace,
     il faut en sortir peu \xE0 peu pour gagner confiance"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 938e81505153e274cb78204e58224f61, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - Vous croyez que je devrais ?
     - "Parfois j\u2019ai envie de me r\xE9v\xE9ler plus mais je n\u2019ose pas."

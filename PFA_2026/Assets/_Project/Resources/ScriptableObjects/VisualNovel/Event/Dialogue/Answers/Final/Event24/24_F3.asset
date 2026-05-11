@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Continues \xE0 te dire que tu reverra bient\xF4t
     ceux qui comptent pour toi, et j\u2019essaierais de t\u2019aider pendant la travers\xE9e"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 5ef4500f111497443b1f23f4c3951502, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
     - "Oui c\u2019est ce que j\u2019essaie de me dire."
     - Merci Capitaine, je savais que je pouvais compter sur vous.

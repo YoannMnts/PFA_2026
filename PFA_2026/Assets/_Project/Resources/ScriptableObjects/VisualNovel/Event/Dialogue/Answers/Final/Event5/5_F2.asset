@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Je compte sur toi pour veiller sur elle dans ce cas,
     tu as l\u2019air d\u2019\xEAtre proche d\u2019elle"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 1cc169d0bce8ddc459694c57b1bc26f5, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
     - "Bien s\xFBr mais\u2026Je ne sais pas si j\u2019en serais capable !"
     - "Je suis venu vous en parler parce que je pensais que vous saurez quoi lui
@@ -39,7 +39,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 1
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 1
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -63,7 +63,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -75,10 +75,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 6
-      <Text>k__BackingField: "J\u2019ai vu Jennie aller parler \xE0 Pam, et je crois
-        que \xE7a l\u2019a un peu aid\xE9, mais je crois que Jennie se met beaucoup
-        de pression \xE0 cause \xE7a maintenant, je n\u2019aurais pas d\xFB la laisser
-        g\xE9rer \xE7a seule"
+      <Text>k__BackingField: []
   <GUID>k__BackingField: ba087199-b559-47c7-af4c-8a1abb2792a3
   references:
     version: 2

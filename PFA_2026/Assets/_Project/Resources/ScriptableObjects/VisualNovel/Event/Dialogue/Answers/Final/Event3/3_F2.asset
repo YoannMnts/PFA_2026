@@ -15,18 +15,18 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Jennie, tu dois apprendre \xE0 faire de compromis
     avec les autres et \xE0 \xEAtre moins maniaque sur le rangement"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: c68724178ba4187428d21b9cce342e9f, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
     - "Ah d\u2019accord\u2026 J\u2019essaierais de m\u2019adapter alors\u2026"
     - "J'esp\xE9rais qu\u2019il pouvait au moins y avoir un compromis entre nos besoins\r\n"
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 7ad260f9e18927e47848490acfa4185d, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
     - "Je peux toujours essayer de faire un petit effort mais\u2026"
     - Je peux pas tout ranger parfaitement tout le temps
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 9e8b83d3e3aee8543a3f25c969319a9c, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - "C\u2019est\u2026C\u2019est d\xE9j\xE0 \xE7a merci"
   <Effects>k__BackingField:
@@ -46,7 +46,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -58,7 +58,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 1
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -70,9 +70,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 1
-      <Text>k__BackingField: "Jennie \xE0 pris sur elle pour ne plus se plaindre
-        de \xE7a, mais je crois qu\u2019elle garde juste \xE7a \xE0 l\u2019int\xE9rieur
-        et que \xE7a la d\xE9range quand m\xEAme"
+      <Text>k__BackingField: []
   <GUID>k__BackingField: 3acf1506-39f7-44d9-b02e-3c500c4e18f1
   references:
     version: 2

@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Ignore la pour l\u2019instant, et d\xE9fend toi si
     elle met ses menaces \xE0 ex\xE9cution "
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: f9c90a9bda4319e4680fbf0e1f897ea1, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - "Tr\xE8s bien, j\u2019esp\xE8re que \xE7a n\u2019ira pas jusque la et que les
       effets du manque seront moins forts d\u2019ici la \r\n"

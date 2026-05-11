@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "C\u2019est sa vie priv\xE9e, \xE7a ne nous regarde
     pas"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 1cc169d0bce8ddc459694c57b1bc26f5, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
     - " Vraiment ? Je pense quand m\xEAme que c\u2019est inqui\xE9tant\u2026"
     - "Sans s'immiscer dans sa vie priv\xE9e, on pourrait au moins \xEAtre \xE0 l\u2019\xE9coute\u2026\r\n"
@@ -37,10 +37,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 4
-      <Text>k__BackingField: "Pam \xE0 continu\xE9 \xE0 se couper, et elle \xE0 eu
-        un accident \xE0 cause de \xE7a. Nous avons d\xFB arr\xEAter la travers\xE9e
-        d\u2019urgence. La prochaine fois, j\u2019agirais avant qu\u2019il soit trop
-        tard"
+      <Text>k__BackingField: []
   <GUID>k__BackingField: a50af5d8-1d0b-4fae-88da-f2ab3bc3d94a
   references:
     version: 2

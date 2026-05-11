@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Tes outils finiront bien par \xEAtre retrouv\xE9s,
     prend ceux de rechange dans la r\xE9serve entre temps"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
     <Text>k__BackingField:
     - "Mais ce ne sont pas mes outils pr\xE9f\xE9r\xE9s !"
     - "Je vais les retrouver moi m\xEAme, d\u2019une mani\xE8re ou d\u2019une autre"

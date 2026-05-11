@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: Il fait passer au dessus de la blessure et tirer du
     positif de ses conseils
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: c68724178ba4187428d21b9cce342e9f, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
     - "C\u2019est pas facile\u2026"
     - "J\u2019ai du mal \xE0 passer au dessus de mes \xE9motions, m\xEAme si je sais
@@ -38,7 +38,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -50,7 +50,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 1
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -62,7 +62,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -74,10 +74,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: "Jennie a l\u2019air d\u2019\xEAtre plus confiante,
-        je pense qu\u2019elle \xE0 suivi les conseils de Pam, mais elles ont l\u2019air
-        de moins se parler, peut \xEAtre qu\u2019elle \xE0 peur d\u2019\xEAtre bless\xE9e
-        \xE0 nouveau"
+      <Text>k__BackingField: []
   <GUID>k__BackingField: 87b532ff-553a-45f6-9425-b6ee1f8fc7e7
   references:
     version: 2

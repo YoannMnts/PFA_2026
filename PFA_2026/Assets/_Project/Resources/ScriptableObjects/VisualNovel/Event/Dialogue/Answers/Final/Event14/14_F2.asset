@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Je vais convoquer l\u2019\xE9quipage et retrouver
     le coupable ne t\u2019en fait pas"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
     <Text>k__BackingField:
     - "Non ! Je vous interdit de faire \xE7a !"
     - "Je refuse que tout le monde soit r\xE9uni en train de parler d\u2019une photo
@@ -39,7 +39,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 4
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 1
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -63,7 +63,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 6
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -75,10 +75,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: "Malgr\xE9 son interdiction, j\u2019ai quand m\xEAme
-        men\xE9 l'enqu\xEAte, mais sans succ\xE8s. J\u2019ai juste r\xE9ussi \xE0
-        mettre T\xE9a en col\xE8re et encore plus mal \xE0 l\u2019aise. J\u2019aurais
-        d\xFB respecter sa volont\xE9."
+      <Text>k__BackingField: []
   <GUID>k__BackingField: 49c15d2d-2b66-4a48-93fe-a4728d5c1ce3
   references:
     version: 2

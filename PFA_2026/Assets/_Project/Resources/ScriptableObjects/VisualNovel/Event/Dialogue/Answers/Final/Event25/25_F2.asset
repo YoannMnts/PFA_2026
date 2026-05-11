@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "C\u2019est mauvais signe, je vais la convoquer pour
     en avoir le coeur net"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 5ef4500f111497443b1f23f4c3951502, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
     - "Oui d\u2019accord ! Je reste avec vous pour savoir ce qui se passe."
     - "Il ne faut pas qu\u2019elle reste seule dans son coin."
@@ -37,7 +37,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -61,7 +61,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 1
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -73,10 +73,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: "J\u2019ai demand\xE9 \xE0 Jennie de venir nous parler,
-        et m\xEAme si elle se sentait mieux apr\xE8s, elle n\u2019a pas appr\xE9ci\xE9
-        qu\u2019on la force comme \xE7a, on aurait peut \xEAtre d\xFB lui laisser
-        du temps"
+      <Text>k__BackingField: []
   <GUID>k__BackingField: 596f2205-fcc5-4538-bacd-4a06f69bf190
   references:
     version: 2

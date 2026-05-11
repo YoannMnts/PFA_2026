@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Tu devrais engager la conversation avec elle, si
     vous devenez amies, elle n\u2019agira plus comme \xE7a"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 7ad260f9e18927e47848490acfa4185d, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
     - "Ah oui ? Je peux essayer, mais elle \xE0 int\xE9r\xEAt \xE0 \xEAtre sympa
       avec moi, je ne vais pas la supplier d\u2019\xEAtre mon amie non plus"

@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Si tu penses travailler plus, alors tu sera pay\xE9e
     plus apr\xE8s la travers\xE9e "
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: eb209584d88ce37449f0c335ad8ba289, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
     - "Vraiment ? Dans ce cas, um\u2026"
     - "Oubliez ce que je vous ai dit ! Les choses sont tr\xE8s bien ainsi tout compte

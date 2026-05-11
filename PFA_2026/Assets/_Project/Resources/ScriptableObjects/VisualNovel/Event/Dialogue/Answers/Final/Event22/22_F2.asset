@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Tu pourrais essayer de donner \xE0 T\xE9a un faux
     m\xE9dicament et lui dire que c\u2019est un vrai ? "
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 5ef4500f111497443b1f23f4c3951502, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
     - "Oh c\u2019est une bonne id\xE9e !"
     - "On appelle \xE7a l\u2019effet placebo, et c\u2019est tr\xE8s efficace dans

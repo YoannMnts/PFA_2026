@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 25_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: f9c90a9bda4319e4680fbf0e1f897ea1, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - "Oui c\u2019est vrai qu\u2019elle est particuli\xE8rement sensible."
     - "Vous pensez que je l\u2019ai bless\xE9 sans m\u2019en rendre compte ? "
@@ -22,4 +22,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 12bad8ae2d00663478402c38d97859ce, type: 2}
   - {fileID: 11400000, guid: 1813695b0bcf7764584ec69c64edc55d, type: 2}
   - {fileID: 11400000, guid: c26a3c0a0fccac84fabb596d41195b84, type: 2}
-  <GUID>k__BackingField: 5e9a12cc-70ce-4861-a0c7-aacffe4d7c6b
+  <GUID>k__BackingField: 55bb0180-89dc-4cd4-8f1c-a64707e2c98d

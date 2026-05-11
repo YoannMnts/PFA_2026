@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Si tu doutes, c\u2019est peut \xEAtre un signe qu\u2019il
     faut t\u2019\xE9couter"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 1cc169d0bce8ddc459694c57b1bc26f5, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
     - " Ah\u2026Vous croyez ? Peut \xEAtre que j\u2019ai vraiment eu tort au final"
     - "Je me dis souvent que ce ne sont que des peurs insens\xE9es\u2026"
@@ -38,7 +38,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 5
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -50,7 +50,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -62,9 +62,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 4
-      <Text>k__BackingField: "J\u2019ai l\u2019impression qu\u2019en disant \xE0
-        Jennie de s\u2019\xE9couter, je n\u2019ai fait qu\u2019augmenter ses angoisses.
-        J\u2019aurais au moins d\xFB la rassurer "
+      <Text>k__BackingField: []
   <GUID>k__BackingField: 948b88fd-d79e-4385-ad1e-36ebf70c8132
   references:
     version: 2

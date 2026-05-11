@@ -15,13 +15,13 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Je pense que tu ne la connais pas bien. Tu devrais
     essayer de te rapprocher d\u2019elle pour voir sa sinc\xE9rit\xE9"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 7ad260f9e18927e47848490acfa4185d, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
     - "Ah ! Peut-\xEAtre que vous avez raison en fait. "
     - "Je l\u2019ai jug\xE9e sans la conna\xEEtre."
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: a99f0ad4335f6b141a766b0be219dd9c, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
     - "Je vais essayer de la conna\xEEtre vraiment, et je verrais bien ce qu\u2019il
       en est"

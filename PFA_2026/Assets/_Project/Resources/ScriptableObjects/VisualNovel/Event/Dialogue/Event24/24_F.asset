@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 24_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: d68f5268f191b02489412f9299a2bae5, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
     - "Oui, je sais que tout le monde \xE0 des r\xF4les diff\xE9rents, et \xE7a me
       va de m\u2019occuper des autres, mais j\u2019aimerais parfois que ce soit l\u2019inverse."

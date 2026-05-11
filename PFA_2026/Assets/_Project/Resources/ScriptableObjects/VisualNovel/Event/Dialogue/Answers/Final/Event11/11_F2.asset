@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Calme toi, ce n\u2019est pas si grave, il faut apprendre
     \xE0 vivre en communaut\xE9"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: f427a48e92e93a54aad5d79b5955b60c, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
     <Text>k__BackingField:
     - "Je sais vivre en communaut\xE9, je n\u2019ai jamais \xE9t\xE9 tranquille de
       toute ma vie, personne ne sait mieux que moi vous pouvez me croire !"
@@ -39,7 +39,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 4
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -51,7 +51,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -63,7 +63,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -75,9 +75,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 1
-      <Text>k__BackingField: "T\xE9a continue \xE0 se plaindre des autres, et d\xE9grade
-        ses relations avec tout le monde. Peut \xEAtre que j\u2019aurais du \xEAtre
-        plus attentif \xE0 ses probl\xE8mes au lieu de l\u2019ignorer"
+      <Text>k__BackingField: []
   <GUID>k__BackingField: eb443731-4c78-4c21-ad28-dd3e5f91a7fb
   references:
     version: 2

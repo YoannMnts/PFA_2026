@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Il faut que tu ailles lui demander de te r\xE9expliquer
     son probl\xE8me calmement"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 7ad260f9e18927e47848490acfa4185d, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
     - "Ce n\u2019est pas moi qui vais revenir vers elle, c\u2019est \xE0 elle d\u2019apprendre
       \xE0 communiquer ses probl\xE8mes."
@@ -38,7 +38,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
@@ -50,7 +50,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -74,10 +74,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: "Depuis cette dispute, je crois que Jennie et T\xE9a
-        ne se parlent plus, et Jennie \xE0 l\u2019air plus renferm\xE9e qu\u2019avant.
-        Peut \xEAtre qu\u2019il \xE9tait injuste de demander \xE0 T\xE9a de faire
-        le premier pas"
+      <Text>k__BackingField: []
   <GUID>k__BackingField: a757fe67-c93f-48a0-8f1f-9a0222e8ac4d
   references:
     version: 2

@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: Laisse la prendre son temps, et reste disponible pour
     quand elle aura besoin
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 5ef4500f111497443b1f23f4c3951502, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
     - "D\u2019accord, peut-\xEAtre que je la couvre trop et que je devrais la laisser
       \xEAtre plus ind\xE9pendante."
@@ -39,7 +39,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -63,7 +63,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: 
+      <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
@@ -75,10 +75,7 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: "Jennie n\u2019est pas retourn\xE9e parler \xE0 Pam,
-        je crois qu\u2019elle \xE0 vraiment \xE9t\xE9 bless\xE9e. Elle gagne en ind\xE9pendance,
-        mais en m\xEAme temps elle se referme, c\u2019est peut \xEAtre mauvais pour
-        elle."
+      <Text>k__BackingField: []
   <GUID>k__BackingField: a001c0a2-04e7-4fa5-9e4b-cc8305d861f5
   references:
     version: 2

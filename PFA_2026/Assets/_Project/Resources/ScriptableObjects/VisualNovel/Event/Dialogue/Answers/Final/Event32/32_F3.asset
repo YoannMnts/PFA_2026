@@ -15,8 +15,8 @@ MonoBehaviour:
   <ButtonText>k__BackingField: "Je ne peux pas en demander autant aux autres, tout
     le monde a une charge de travail correspondant \xE0 son r\xF4le"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: a9ea80d78fc7e7348894ef9614d9c816, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
     - "Ah ! Alors \xE7a c\u2019est injuste."
     - "Puisque c\u2019est comme \xE7a, j\u2019arr\xEAte de faire mes rapports au

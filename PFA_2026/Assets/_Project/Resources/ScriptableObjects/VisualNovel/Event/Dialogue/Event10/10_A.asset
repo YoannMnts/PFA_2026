@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 10_A
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 1cc169d0bce8ddc459694c57b1bc26f5, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
     - "Bonjour Capitaine, j\u2019ai de mauvaises nouvelles \xE0 vous annoncer."
     - "Herlock m\u2019a pr\xE9venu de la pr\xE9sence d\u2019une temp\xEAte \xE0 venir
