@@ -1,5 +1,4 @@
-﻿using System;
-using Cameras;
+﻿using Cameras;
 using Helteix.ChanneledProperties.Priorities;
 using Helteix.Singletons.SceneServices;
 using Naussilus.Gameplay.Player.Interactions;

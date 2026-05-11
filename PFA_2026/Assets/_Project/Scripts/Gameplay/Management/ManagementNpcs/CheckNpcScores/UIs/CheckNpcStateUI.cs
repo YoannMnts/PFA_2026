@@ -1,5 +1,8 @@
-﻿using Helteix.Tools.Phases.Listeners;
+﻿using Helteix.ChanneledProperties.Priorities;
+using Helteix.Singletons.SceneServices;
+using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managers;
+using Naussilus.Gameplay.Player;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -28,7 +31,10 @@ public class CheckNpcStateUI : MonoPhaseListener<CheckNpcState>
         group.Show();
         behaviorUIList.Connect(phase.NpcBehaviors);
         mentalStateUIList.Connect(phase.NpcMentalStates);
-            
+        
+        if (this.TryGetService(out PlayerController controller))
+            controller.PlayerInteractions.CanInteract.AddPriority(this, PriorityTags.Default, false);
+        
         base.OnPhaseBegin(phase);
     }
 
@@ -42,6 +48,9 @@ public class CheckNpcStateUI : MonoPhaseListener<CheckNpcState>
         mentalStateUIList.Disconnect();
         group.Hide();
             
+        if (this.TryGetService(out PlayerController controller))
+            controller.PlayerInteractions.CanInteract.RemovePriority(this);
+        
         base.OnPhaseEnd(phase);
     }
 

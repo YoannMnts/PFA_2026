@@ -12,6 +12,5 @@ namespace Naussilus.Core
             NextDialogue = new Dialogue(data.NextDialogue);
             ButtonText = data.ButtonText;
         }
-
     }
 }

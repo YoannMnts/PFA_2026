@@ -29,9 +29,6 @@ namespace Naussilus.Gameplay.Launcher
         
         private void Start()
         {
-            NpcManager.Init();
-            EventManager.Init();
-            RoomManager.Init();
             VisualNovelDebug();
             ManagementDebug();
 

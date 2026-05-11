@@ -4,13 +4,14 @@ using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managements;
 using Naussilus.Core.Managers.Rooms;
+using Naussilus.Gameplay.Player.Interactions;
 using UnityEngine;
 
 namespace Rooms
 {
-    public class MonoRoom: MonoPhaseListener<ManagementPhase>
+    public class MonoRoom: MonoPhaseListener<ManagementPhase>, IInteractable
     {
-        public event Action OnMenuClose;
+        public int Priority { get; private set; }
         
         [field: SerializeField] 
         public RoomData RoomData { get; private set; }
@@ -23,17 +24,15 @@ namespace Rooms
             CurrentActionPoint = phase.CurrentActionPoint;
             base.OnPhaseBegin(phase);
         }
-
-        public void OnClick()
+        public void Interact(PlayerInteractions playerInteractions)
         {
             var selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint);
-            selectActionForRoom.RunAndForget();
-            selectActionForRoom.OnCloseMenu += MenuClose;
+            selectActionForRoom.RunAndForget(); 
         }
 
-        public void MenuClose()
+        public bool IsInteractable()
         {
-            OnMenuClose?.Invoke();
+            return true;        
         }
     }
 }
