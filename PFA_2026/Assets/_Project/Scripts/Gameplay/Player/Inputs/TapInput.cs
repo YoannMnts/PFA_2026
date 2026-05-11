@@ -1,6 +1,8 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.Pool;
 
 namespace Naussilus.Gameplay
 {
@@ -20,36 +22,38 @@ namespace Naussilus.Gameplay
         {
             this.inputAction = inputAction;
         }
-        void ITouchInput.AddTouchscreen(Touchscreen touchscreen, PlayerInputManager playerInputManager)
+        void ITouchInput.AddTouchscreen(Touchscreen touchscreen, PlayerInputs playerInputs)
         {
             
         }
 
-        bool ITouchInput.RemoveTouchscreen(Touchscreen touchscreen, PlayerInputManager playerInputManager)
+        bool ITouchInput.RemoveTouchscreen(Touchscreen touchscreen, PlayerInputs playerInputs)
         {
             return true;
         }
 
-        bool ITouchInput.Update(PlayerInputManager playerInputManager)
+        bool ITouchInput.Update(PlayerInputs playerInputs)
         {
             if (!inputAction.WasPerformedThisDynamicUpdate()) 
                 return false;
             
-            TapPosition = playerInputManager.CurrentTouchscreen.primaryTouch.position.ReadValue();
-            return true;
+            TapPosition = playerInputs.CurrentTouchscreen.primaryTouch.position.ReadValue();
+            
+            
+            return !PlayerInputs.IsScreenPosOnUI(TapPosition);
         }
 
-        void ITouchInput.Sleep(PlayerInputManager playerInputManager)
+        void ITouchInput.Sleep(PlayerInputs playerInputs)
         {
             
         }
         
-        void ITouchInput.Enable(PlayerInputManager playerInputManager)
+        void ITouchInput.Enable(PlayerInputs playerInputs)
         {
             inputAction.Enable();
         }
 
-        void ITouchInput.Disable(PlayerInputManager playerInputManager)
+        void ITouchInput.Disable(PlayerInputs playerInputs)
         {
             inputAction.Disable();
         }

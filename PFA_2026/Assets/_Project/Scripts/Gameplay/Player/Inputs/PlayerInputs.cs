@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using Helteix.Singletons.SceneServices;
+using Naussilus.Gameplay.Player;
 using Sirenix.OdinInspector;
+using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.Pool;
 
 namespace Naussilus.Gameplay
 {
-    public class PlayerInputManager : SceneService<PlayerInputManager>
+    public class PlayerInputs : PlayerComponent
     {
         public event Action<ITouchInput> OnTouch; 
         
@@ -33,16 +37,14 @@ namespace Naussilus.Gameplay
             }
         }
 
-        protected override void Activate()
+        private void OnEnable()
         {
             InputSystem.onDeviceChange += OnDeviceChange;
-            base.Activate();
         }
 
-        protected override void Deactivate()
+        private void OnDisable()
         {
             InputSystem.onDeviceChange -= OnDeviceChange;
-            base.Deactivate();
         }
 
         private void Update()
@@ -121,6 +123,23 @@ namespace Naussilus.Gameplay
                 return true;
             }
             return false;
+        }
+
+        public static bool IsScreenPosOnUI(Vector2 screenPos)
+        {
+            EventSystem current = EventSystem.current;
+            using(ListPool<RaycastResult>.Get(out var results))
+            {
+                var pointerEventData = new PointerEventData(EventSystem.current)
+                {
+                    position = screenPos,
+                };
+                current.RaycastAll(pointerEventData, results);
+                if(results.Count > 0)
+                    return false;
+            }
+
+            return true;
         }
     }
 }

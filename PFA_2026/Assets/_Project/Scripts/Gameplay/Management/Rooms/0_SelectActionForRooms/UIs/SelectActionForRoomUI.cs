@@ -1,8 +1,11 @@
-﻿using Helteix.Tools.Phases;
+﻿using Helteix.ChanneledProperties.Priorities;
+using Helteix.Singletons.SceneServices;
+using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
 using Naussilus.Core.Managers.Rooms;
+using Naussilus.Gameplay.Player;
 using TMPro;
 using UnityEngine;
 
@@ -36,6 +39,9 @@ namespace Rooms
             roomDescription.text = Description;
             currentActionPoint = phase.CurrentActionPoint;
             roomActionUIList.Connect(phase.Choices);
+
+            if (this.TryGetService(out PlayerController controller))
+                controller.PlayerInteractions.CanInteract.AddPriority(this, PriorityTags.High, false);
             
             base.OnPhaseBegin(phase);
         }
@@ -49,6 +55,9 @@ namespace Rooms
             roomActionUIList.Disconnect();
             group.Hide();
             
+            if (this.TryGetService(out PlayerController controller))
+                controller.PlayerInteractions.CanInteract.RemovePriority(this);
+
             base.OnPhaseEnd(phase);
         }
 

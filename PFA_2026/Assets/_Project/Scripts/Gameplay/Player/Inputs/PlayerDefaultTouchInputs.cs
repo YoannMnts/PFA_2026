@@ -1,4 +1,5 @@
 ﻿using System;
+using Naussilus.Gameplay.Player;
 using UnityEngine;
 
 namespace Naussilus.Gameplay
@@ -8,16 +9,16 @@ namespace Naussilus.Gameplay
         [SerializeReference] private ITouchInput[] touchInputs;
         private void OnEnable()
         {
-            if (PlayerInputManager.TryGetFor(gameObject, out PlayerInputManager playerInputManager))
+            if (PlayerController.TryGetFor(gameObject, out PlayerController playerController))
                 for (int i = 0; i < touchInputs.Length; i++)
-                    playerInputManager.AddTouchInput(touchInputs[i]);
+                    playerController.PlayerInputs.AddTouchInput(touchInputs[i]);
         }
 
         private void OnDisable()
         {
-            if (PlayerInputManager.TryGetFor(gameObject, out PlayerInputManager playerInputManager))
+            if (PlayerController.TryGetFor(gameObject, out PlayerController playerController))
                 for (int i = 0; i < touchInputs.Length; i++)
-                    playerInputManager.RemoveTouchInput(touchInputs[i]);
+                    playerController.PlayerInputs.RemoveTouchInput(touchInputs[i]);
         }
     }
 }

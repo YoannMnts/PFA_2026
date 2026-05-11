@@ -15,20 +15,20 @@ namespace Naussilus.Gameplay
         public float PreviousDistance { get; private set; }
         int ITouchInput.Priority => 10;
 
-        void ITouchInput.AddTouchscreen(Touchscreen touchscreen, PlayerInputManager playerInputManager)
+        void ITouchInput.AddTouchscreen(Touchscreen touchscreen, PlayerInputs playerInputs)
         {
             
         }
 
-        bool ITouchInput.RemoveTouchscreen(Touchscreen touchscreen, PlayerInputManager playerInputManager)
+        bool ITouchInput.RemoveTouchscreen(Touchscreen touchscreen, PlayerInputs playerInputs)
         {
             return true;
         }
 
-        bool ITouchInput.Update(PlayerInputManager playerInputManager)
+        bool ITouchInput.Update(PlayerInputs playerInputs)
         {
 
-            foreach (var touchscreen in playerInputManager.Touchscreens)
+            foreach (var touchscreen in playerInputs.Touchscreens)
             {
                 if(Process(touchscreen))
                     return true;
@@ -37,7 +37,7 @@ namespace Naussilus.Gameplay
             return false;
         }
 
-        void ITouchInput.Sleep(PlayerInputManager playerInputManager)
+        void ITouchInput.Sleep(PlayerInputs playerInputs)
         {
             Delta = 0;
         }
@@ -54,14 +54,21 @@ namespace Naussilus.Gameplay
             var touch0 = touchscreen.touches[0];
             var touch1 = touchscreen.touches[1];
 
+
+            var touch0Pos = touch0.position.ReadValue();
+            var touch1Pos = touch1.position.ReadValue();
+            
+            if(PlayerInputs.IsScreenPosOnUI(touch0Pos) || PlayerInputs.IsScreenPosOnUI(touch1Pos))
+                return false;
+            
             float currentDistance = Vector2.Distance(
-                touch0.position.ReadValue(),
-                touch1.position.ReadValue()
+                touch0Pos,
+                touch1Pos
             );
 
             PreviousDistance = Vector2.Distance(
-                touch0.position.ReadValue() - touch0.delta.ReadValue(),
-                touch1.position.ReadValue() - touch1.delta.ReadValue()
+                touch0Pos - touch0.delta.ReadValue(),
+                touch1Pos - touch1.delta.ReadValue()
             );
 
             Delta = PreviousDistance - currentDistance;
