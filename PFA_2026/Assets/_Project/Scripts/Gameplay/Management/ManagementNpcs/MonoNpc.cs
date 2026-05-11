@@ -6,7 +6,7 @@ using Naussilus.Core.NpcDatas;
 using Naussilus.Gameplay.Player.Interactions;
 using UnityEngine;
 
-public class ManagementNpc : MonoPhaseListener<ManagementPhase>, IInteractable
+public class MonoNpc : MonoPhaseListener<ManagementPhase>, IInteractable
 {
     public int Priority { get; private set; }
     

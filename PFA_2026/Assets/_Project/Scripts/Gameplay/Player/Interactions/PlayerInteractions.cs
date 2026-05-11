@@ -63,8 +63,10 @@ namespace Naussilus.Gameplay.Player.Interactions
             else
                 Controller.PlayerInputs.RemoveTouchInput(tapInput);
         }
+        
         public void TryInteract(ITouchInput touchInput)
         {
+            Debug.Log($"AAAAAAAA");
             if (touchInput is not TapInput)
                 return;
 
@@ -72,8 +74,7 @@ namespace Naussilus.Gameplay.Player.Interactions
             Vector2 worldPos = cam.ScreenToWorldPoint(tapInput.TapPosition);
             
             //TODO mettre le vrai filter
-            ContactFilter2D filter =ContactFilter2D.noFilter;
-            
+            ContactFilter2D filter = ContactFilter2D.noFilter;
             int count = Physics2D.Raycast(worldPos, Vector2.zero,filter, Hits);
             IInteractable interactable = null;
             for (int i = 0; i < count; i++)

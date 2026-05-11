@@ -6,15 +6,15 @@ using UnityEngine;
 
 public class CheckNpcState : PhaseCompletionSource<bool>
 {
-    public ManagementNpc CurrentManagementNpc { get; private set; }
-    public Npc CurrentNpc => CurrentManagementNpc.Npc;
+    public MonoNpc CurrentMonoNpc { get; private set; }
+    public Npc CurrentNpc => CurrentMonoNpc.Npc;
         
     public Behavior[] NpcBehaviors { get; private set; }
     public MentalState[] NpcMentalStates { get; private set; }
         
-    public CheckNpcState(ManagementNpc managementNpc)
+    public CheckNpcState(MonoNpc monoNpc)
     {
-        CurrentManagementNpc = managementNpc;
+        CurrentMonoNpc = monoNpc;
     }
         
     protected override Awaitable Initialize(CancellationToken token)

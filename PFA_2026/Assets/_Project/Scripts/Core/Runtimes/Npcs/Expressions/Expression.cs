@@ -1,15 +1,17 @@
 ﻿using System.Linq;
+using JetBrains.Annotations;
 using Naussilus.Core.NpcDatas;
+using UnityEngine;
 
 namespace Naussilus.Core
 {
     public struct Expression
     {
-        public ExpressionValue[] Expressions { get; private set; }
+        [CanBeNull] public ExpressionValue[] Expressions { get; private set; }
 
         public Expression(ExpressionData data)
         {
-            Expressions = data.Expressions?.Select(e => new ExpressionValue(e)).ToArray();
+            Expressions = data?.Expressions?.Select(e => new ExpressionValue(e)).ToArray();
         }
     }
 }

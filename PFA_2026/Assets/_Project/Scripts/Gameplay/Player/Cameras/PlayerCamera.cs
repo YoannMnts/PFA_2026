@@ -2,10 +2,7 @@
 using Helteix.Tools.Phases;
 using Naussilus.Gameplay;
 using Naussilus.Gameplay.Player;
-using Rooms;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.Pool;
 
 namespace Cameras
 {

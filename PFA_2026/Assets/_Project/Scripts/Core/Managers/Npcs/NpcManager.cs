@@ -53,10 +53,15 @@ namespace Naussilus.Core.Managers.Npcs
             return data = value;
         }
         
-        public static Npc TryGetNpc(string guid, out Npc npc)
+        public static bool TryGetNpc(string guid, out Npc npc)
         {
-            Npcs.TryGetValue(guid, out Npc value);
-            return npc = value;
+            if (string.IsNullOrEmpty(guid))
+            {
+                npc = null;
+                return false;
+            }
+            
+            return Npcs.TryGetValue(guid, out npc);
         }
 
         public static Npc TryGetNpc(string guid)

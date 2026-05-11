@@ -7,7 +7,7 @@ namespace Naussilus.Core
     {
         public Npc Npc { get; private set; }
         
-        public Expression Expression { get; private set; }
+        public Expression? Expression { get; private set; }
         
         public string[] Text { get; private set; }
 
