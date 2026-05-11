@@ -44,7 +44,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 3
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie est tr\xE8s heureuse de cette f\xEAte et elle se sent beaucoup
+          plus int\xE9gr\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -68,7 +70,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Jennie renforce sa relation avec tout le monde
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -80,7 +83,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Jennie devient plus expressive
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 2
@@ -102,7 +106,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 3
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie profite de la f\xEAte et elle se sent plus int\xE9gr\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -148,7 +153,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 3
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a est tr\xE8s heureuse de cette f\xEAte et elle se sent beaucoup
+          plus int\xE9gr\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -172,7 +179,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a renforce sa relation avec tout le monde"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -184,7 +192,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a devient plus compatissante"
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 2
@@ -206,7 +215,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a profite de la f\xEAte et elle se sent plus int\xE9gr\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -281,7 +291,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a ne peut pas s'empecher de g\xE2cher la f\xEAte de {CurrentNpc}"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 0
@@ -315,7 +326,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Pam est tr\xE8s heureuse de cette f\xEAte et elle se sent beaucoup plus
+          int\xE9gr\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -339,7 +352,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Pam renforce sa relation avec tout le monde
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -351,7 +365,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Pam fait plus attention \xE0 son tact "
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 2
@@ -373,7 +388,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Pam profite de la f\xEAte et elle se sent plus int\xE9gr\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -419,7 +435,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Ynna est tr\xE8s heureuse de cette f\xEAte et elle se sent beaucoup plus
+          int\xE9gr\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -443,7 +461,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Ynna renforce sa relation avec tout le monde
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -455,7 +474,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Ynna devient plus compatissante
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 2
@@ -477,7 +497,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Ynna profite de la f\xEAte"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -489,7 +510,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Ynna se sent plus int\xE9gr\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -552,7 +574,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Ynna fait en sorte que l'\xE9quipage appr\xE9cie moins {CurrentNpc}"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1

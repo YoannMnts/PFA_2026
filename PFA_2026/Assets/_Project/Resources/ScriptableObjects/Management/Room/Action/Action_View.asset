@@ -40,7 +40,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 3
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie se d\xE9tend en observant l'horizon"
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2
@@ -74,7 +75,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie pleure des larmes d'emotions, ce qui la d\xE9tend"
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2
@@ -108,7 +110,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Jennie se sent seule
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2
@@ -159,7 +162,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Pam vient aupr\xE8s d'elle pour la r\xE9conforter, et Jennie se sent mieux
+          mais perd un peu confiance en elle apr\xE8s ce qu'elle lui dit"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -205,7 +210,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a se d\xE9tend devant le paysage"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -217,7 +223,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Cette pause fait du bien \xE0 T\xE9a"
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2
@@ -251,7 +258,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Le vent irrite T\xE9a, ce qui lui g\xE2che le moment"
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2
@@ -302,7 +310,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Pam vient aupr\xE8s d'elle, et T\xE9a est contente de lui parler"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -336,7 +345,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Pam se d\xE9tend en regardant le paysage"
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2
@@ -370,7 +380,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 3
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Pam r\xE9alise sa solitude, ce qui lui arrache quelques larmes"
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2
@@ -404,7 +415,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Pam \xE9crit un po\xE8me pour sa fianc\xE9e, ce qui la rend heureuse"
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
@@ -426,7 +438,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Ynna arrive \xE0 se d\xE9tendre un peu et elle est heureuse de voir ce
+          paysage"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -489,7 +503,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Pam vient aupr\xE8s de Ynna, et les deux discutent entre amies"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1

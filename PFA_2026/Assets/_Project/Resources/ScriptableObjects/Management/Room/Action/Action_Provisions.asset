@@ -59,7 +59,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 3
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie se sent coupable d'avoir vol\xE9"
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2
@@ -76,7 +77,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie est impressionn\xE9e d'elle m\xEAme "
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -100,7 +102,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie ne peut s'empecher d'avouer \xE0 Ynna, ce qui d\xE9grade ses relations
+          avec Jennie"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 0
@@ -134,7 +138,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a est fi\xE8re d'avoir r\xE9ussi son coup"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -180,7 +185,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Ynna la d\xE9masque, ce qui d\xE9grade ses relations avec T\xE9a"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 0
@@ -214,7 +220,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Pam est satisfaite de son vol
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -260,7 +267,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Pam prend le temps de raconter son m\xE9fait dans une lettre \xE0 sa fianc\xE9e"
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   <GUID>k__BackingField: e9ddae40-1cd8-44ea-b042-bcc24a23fec6

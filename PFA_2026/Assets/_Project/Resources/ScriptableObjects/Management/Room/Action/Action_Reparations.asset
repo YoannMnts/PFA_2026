@@ -46,7 +46,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie met de l'effort dans les r\xE9parations et sait comment comment
+          s'y prendre"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -58,7 +60,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie est ass\xE9ch\xE9e par la chaleur"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -70,7 +73,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie se sent plus int\xE9gr\xE9e en participant \xE0 cette activit\xE9
+          de groupe"
     - <IsEnumeration>k__BackingField: 1
       <CurrentNpcTarget>k__BackingField:
         rid: 2811533799078494236
@@ -87,7 +92,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Jennie de rapproche de {CurrentNpc}
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2
@@ -121,7 +127,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie en profite pour pour discuter m\xE9caniques avec T\xE9a, ce qui
+          renforce leur relation"
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2
@@ -138,7 +146,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a admire les connaissances de Jennie en r\xE9paration"
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
@@ -160,7 +169,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 3
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a est tendue de devoir ordonenr les autres"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -172,7 +182,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a prend confiance en elle gr\xE2ce \xE0 son r\xF4le d'organisatrice"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -184,7 +195,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a se rend plus int\xE9gr\xE9e"
     - <IsEnumeration>k__BackingField: 1
       <CurrentNpcTarget>k__BackingField:
         rid: 2811533818871939260
@@ -218,7 +230,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a renforce sa relation avec {CurrentNpc}"
     - <IsEnumeration>k__BackingField: 1
       <CurrentNpcTarget>k__BackingField:
         rid: 2811533818871939266
@@ -252,7 +265,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Le manque de tact de T\xE9a dans ses directives fait perdre confiance
+          \xE0 {CurrentNpc}"
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 2
@@ -274,7 +289,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Pam met de l'effort dans les r\xE9parations"
     - <IsEnumeration>k__BackingField: 1
       <CurrentNpcTarget>k__BackingField:
         rid: 2811533864860123344
@@ -308,7 +324,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Pam remarque que {CurrentNpc} ne se sent pas bien, et l'envoie donc se
+          reposer
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -354,7 +372,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Pam renforce sa Relation avec {CurrentNpc}
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 2
@@ -376,7 +395,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 3
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Ynna trouve cette t\xE2che tr\xE8s difficile, mais elle se sent plus int\xE9gr\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -400,7 +420,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Ynna perd confiance en elle car elle ne parvient pas \xE0 r\xE9ussir la
+          t\xE2che"
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2
@@ -434,7 +456,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Ynna est exc\xE9d\xE9e et s'\xE9n\xE8rce contre les autres, ce qui leur
+          d\xE9plait"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 0

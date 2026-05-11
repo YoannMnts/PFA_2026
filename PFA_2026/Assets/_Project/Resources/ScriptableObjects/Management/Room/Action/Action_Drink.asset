@@ -41,7 +41,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie appr\xE9cie ce moment de d\xE9tente, et elle se sent plus int\xE9gr\xE9"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -77,7 +78,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 3
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie d\xE9t\xE9riore sa sant\xE9"
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2
@@ -111,7 +113,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie am\xE9liore son expressivit\xE9 "
     - <IsEnumeration>k__BackingField: 1
       <CurrentNpcTarget>k__BackingField:
         rid: 2811533793072775318
@@ -128,7 +131,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Jennie renforce sa relation avec {CurrentNpc}
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
@@ -150,7 +154,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a appr\xE9cie ce moment de d\xE9tente, et elle se sent plus int\xE9gr\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -186,7 +191,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a d\xE9teriore sa sant\xE9"
     - <IsEnumeration>k__BackingField: 1
       <CurrentNpcTarget>k__BackingField:
         rid: 2811533818871939096
@@ -203,7 +209,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a renforce sa relation avec {CuurentNpc}"
     - <IsEnumeration>k__BackingField: 1
       <CurrentNpcTarget>k__BackingField:
         rid: 2811533818871939105
@@ -254,7 +261,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a perd le contr\xF4le et devient violente avec les autres "
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -288,7 +296,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Pam appr\xE9cie ce moment de d\xE9tente, et elle se sent plus int\xE9gr\xE9"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -329,7 +338,10 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - 'Pam renforce sa relation avec {CurrentNpc}
+
+'
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2
@@ -346,7 +358,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Pam veille \xE0 ce que les autres ne boivent pas en exc\xE8s"
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
@@ -368,7 +381,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Ynna profite de ce moment pour se d\xE9tendre, et elle se sent plus int\xE9gr\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -397,7 +411,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Ynna am\xE9liore sa relation avec {CurrentNpc}"
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2
@@ -431,7 +446,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Ynna c\xE8de \xE0 la tentation et boit plus que de raison, d\xE9teriorant
+          sa sant\xE9"
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   <GUID>k__BackingField: af635718-46dd-4e4b-9111-cf4364861dbf

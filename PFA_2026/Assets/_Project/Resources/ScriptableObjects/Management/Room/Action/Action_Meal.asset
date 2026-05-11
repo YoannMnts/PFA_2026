@@ -46,7 +46,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie se d\xE9tend durant le repas et est heureuse de partager ce moment"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -70,7 +71,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie se sent plus Int\xE9gr\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -82,7 +84,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie appr\xE9cie tout les membres de la tabl\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -94,7 +97,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie apppr\xE9cie le repas pr\xE9par\xE9 par Marco"
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2
@@ -123,24 +127,27 @@ MonoBehaviour:
           <Subject>k__BackingField:
             rid: -2
           <Stat>k__BackingField:
-            rid: -2
+            rid: 2811533938130419786
           <UseEnumerationNpc>k__BackingField: 0
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - 
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 0
           <Subject>k__BackingField:
-            rid: -2
+            rid: 2811533938130419787
           <Stat>k__BackingField:
             rid: 2120458347037589610
           <UseEnumerationNpc>k__BackingField: 0
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Jennie parvient \xE0 d\xE9passer sa timidit\xE9e et \xE0 discuter avec
+          les autres et se sent plus en confiance"
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 2
@@ -162,7 +169,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a est heureuse de vivre ce moment et se sent plus int\xE9gr\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -186,7 +194,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a se sent plus en confiance parmi ses camarades"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -198,7 +207,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a appar\xE9cie ses camarades"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -210,7 +220,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a appr\xE9cie le repas pr\xE9par\xE9 par Marco"
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 2
@@ -232,7 +243,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Pam est heureuse de ce repas et profite de ce moment pour se d\xE9tendre"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -312,7 +324,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Pam discute avec {CurrentNpc} pour ne pas l'isoler
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2
@@ -329,7 +342,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Pam conseille Marco pour un repas \xE9quilibr\xE9, ce qui fait du bien
+          \xE0 tout la tabl\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 0
@@ -387,7 +402,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Ynna est heureuse de partager un repas et profite de ce moment pour se
+          d\xE9tendre"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -450,7 +467,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Ynna fait en sorte que {CurrentNpc} l'appr\xE9cie"
     - <IsEnumeration>k__BackingField: 1
       <CurrentNpcTarget>k__BackingField:
         rid: 2811533891631841419
@@ -484,7 +502,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Ynna en profites pour d\xE9nigrer {CurrentNpc}, ce qui lui fait perdre
+          en confiance"
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   <GUID>k__BackingField: ca9b67a3-5e05-4aed-9d09-f80f32605903
@@ -521,11 +541,7 @@ MonoBehaviour:
       data:
         <Amount>k__BackingField: 0
         <Npc>k__BackingField:
-          rid: 2120458347037589611
-    - rid: 2120458347037589611
-      type: {class: NpcValue, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+          rid: 2811533938130419788
     - rid: 2811533793072775367
       type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
@@ -742,3 +758,16 @@ MonoBehaviour:
       data:
         <Stat>k__BackingField: {fileID: 11400000, guid: 0873e3af56f61554284c45b21149e18e, type: 2}
         <Amount>k__BackingField: 0
+    - rid: 2811533938130419786
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: 0873e3af56f61554284c45b21149e18e, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811533938130419787
+      type: {class: CategoryIndexData, ns: Naussilus.Core.Managements.ActionDatas, asm: Naussilus.Core}
+      data:
+        <Index>k__BackingField: 2
+    - rid: 2811533938130419788
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}

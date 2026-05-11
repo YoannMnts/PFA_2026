@@ -40,7 +40,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Jennie fournit des efforts pour faire la lessive
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 0
@@ -52,7 +53,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "L'\xE9quipage appr\xE9cie le travail de Jennie, alors elle se sent plus
+          int\xE9gr\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -76,7 +79,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Ynna est ravie d'avoir ses habits propres
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
@@ -98,7 +102,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "T\xE9a fournit des efforts pour faire la lessive"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 0
@@ -110,7 +115,9 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "L'\xE9quipage appr\xE9cie le travail de T\xE9a, alors elle se sent plus
+          int\xE9gr\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -134,7 +141,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Ynna est ravie d'avoir ses habits propres
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
@@ -156,7 +164,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Pam fournit des efforts pour faire la lessive
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 0
@@ -168,7 +177,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "Pam s'assure d'enlever toute tr\xE2ce de bact\xE9rie des v\xEAtements"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 0
@@ -180,7 +190,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - "L'\xE9quipage appr\xE9cie les efforts de Pam"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 0
@@ -192,7 +203,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Ynna est ravie d'avoir ses habits propres
     <Position>k__BackingField: {x: 0, y: 0, z: 0}
     <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
@@ -214,7 +226,8 @@ MonoBehaviour:
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
-        <Text>k__BackingField: []
+        <Text>k__BackingField:
+        - Ynna est ravie d'avoir ses habits propres
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 0
@@ -222,6 +235,19 @@ MonoBehaviour:
             rid: 2811533891631841406
           <Stat>k__BackingField:
             rid: 2811533891631841407
+          <UseEnumerationNpc>k__BackingField: 0
+          <UseRelationshipNpcToReturn>k__BackingField: 0
+        <ArithmeticOperator>k__BackingField: 0
+        <Amount>k__BackingField: 1
+        <Text>k__BackingField:
+        - "L'\xE9quipage appr\xE9cie le travail d'Ynna, alors elle se sent plus int\xE9gr\xE9e"
+      - <IsGameLost>k__BackingField: 0
+        <ConsequenceSide>k__BackingField:
+          <IsCurrentNpc>k__BackingField: 1
+          <Subject>k__BackingField:
+            rid: -2
+          <Stat>k__BackingField:
+            rid: 2811533938130419785
           <UseEnumerationNpc>k__BackingField: 0
           <UseRelationshipNpcToReturn>k__BackingField: 0
         <ArithmeticOperator>k__BackingField: 0
@@ -356,3 +382,8 @@ MonoBehaviour:
       type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    - rid: 2811533938130419785
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: da645db61372a354fb4e466633a3a304, type: 2}
+        <Amount>k__BackingField: 0
