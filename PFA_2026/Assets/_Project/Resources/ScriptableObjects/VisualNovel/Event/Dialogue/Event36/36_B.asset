@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 36_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - "Je cherchais une station de radio interressante, quand je suis tomb\xE9e sur
+      la fr\xE9quence d\u2019une \xE9mission joliement nomm\xE9 \u201CUne folle \xE0
+      bord\u201D."
+    - " J\u2019ai reconnu la voix d\u2019Herlock qui s\u2019amusait \xE0 inventer
+      des choses sur moi ! "
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Le monde entier peut entendre cette \xE9mission stupide, vous vous rendez
+      compte ?\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: a2314b3543c8f504db9405b7ecb8c454, type: 2}
+  - {fileID: 11400000, guid: 04ea9db54a97cd14abe03df18a49d6ca, type: 2}
+  - {fileID: 11400000, guid: faf866c82f2f1684f9017fe1a63afd9b, type: 2}
+  <GUID>k__BackingField: 52bd3f2f-45c5-49ca-801e-d27b72906322

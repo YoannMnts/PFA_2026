@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4426d2e37cb0480e88589e1b21471988, type: 3}
+  m_Name: 40_YnnaClient
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.EventData
+  <Name>k__BackingField: "Le client exige une livraison plus t\xF4t"
+  <Npcs>k__BackingField:
+  - {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+  <Priority>k__BackingField: 0
+  <DayCheck>k__BackingField: 0
+  <Dependencies>k__BackingField: []
+  <FirstDialogue>k__BackingField: {fileID: 11400000, guid: 514e4ff6a5fec8e4fbc3a3a7a75cd387, type: 2}
+  <GUID>k__BackingField: 8359c60f-4bf6-4f47-a9fb-9ec3ec1e21b8
+  references:
+    version: 2
+    RefIds: []

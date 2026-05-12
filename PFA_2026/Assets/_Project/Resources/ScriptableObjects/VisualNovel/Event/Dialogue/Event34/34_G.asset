@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 34_G
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Je sais faire parler les gens, et je trouve souvent des super solutions, mais
+      pour Pam je suis pas s\xFBr d\u2019en trouver, \xE7a vie \xE0 l\u2019air plut\xF4t
+      compliqu\xE9."
+    - "Ce serait la honte d\u2019aller vers elle sans avoir rien \xE0 proposer."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 3b6de95196daeba448676f5a52194ba2, type: 2}
+  - {fileID: 11400000, guid: 5c5e4803731c2d548ab0ec8379d31418, type: 2}
+  - {fileID: 11400000, guid: 14afe888edc0bc74eb10550aa119db31, type: 2}
+  <GUID>k__BackingField: d1e10edb-6bcf-4fcd-8449-0adbd2ba5ce0

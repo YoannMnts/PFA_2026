@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 35_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - "Oui c\u2019est s\xFBr !"
+    - "En fait, c\u2019est pas la premi\xE8re fois que \xE7a arrive, et ses acc\xE8s
+      de col\xE8re perturbent tout l\u2019\xE9quipage, elle \xE0 m\xEAme mis une
+      claque \xE0 quelqu\u2019un un jour ! "
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 2e8557f314f59fd4e8dab16984f011c4, type: 2}
+  - {fileID: 11400000, guid: 0ab2ee683cba086479709a0ec45c2f59, type: 2}
+  <GUID>k__BackingField: 3ecc0f72-d4a3-4138-9d34-6b0129323ea1

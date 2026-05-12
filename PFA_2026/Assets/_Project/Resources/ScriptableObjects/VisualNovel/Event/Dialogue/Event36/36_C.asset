@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 36_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Il s\u2019amuse \xE0 raconter ce qui se passe \xE0 bord, toutes les fois o\xF9
+      je suis \u201Chyst\xE9rique\u201D, mes tenues ridicules, mes mani\xE8res de
+      pimb\xEAches\u2026"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - "Tout est exag\xE9r\xE9 bien s\xFBr ! Je n\u2019ai rien \xE0 voir avec \xE7a."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: d90087d6993fdcd49b9f24825f6f666f, type: 2}
+  - {fileID: 11400000, guid: c231b07772f481c4095ca8415e0923c2, type: 2}
+  <GUID>k__BackingField: 101651d0-7b7a-459c-a9b1-c2a6628419ef

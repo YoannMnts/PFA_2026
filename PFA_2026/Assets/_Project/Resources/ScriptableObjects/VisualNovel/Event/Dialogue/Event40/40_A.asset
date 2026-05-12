@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 40_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Capitaine, j\u2019ai eu notre client \xE0 la radio !"
+    - "Il exige qu\u2019on livre notre marchandise plus t\xF4t que pr\xE9vu, il y
+      a eu un probl\xE8me avec le transporteur."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "J\u2019ai essay\xE9 de lui dire qu\u2019on ne pouvait pas, mais il n\u2019a
+      rien voulu entendre !"
+    - "Je n\u2019ai jamais vu quelqu\u2019un d\u2019aussi t\xEAtu."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 1d20f611322b683439ebb23d58d56012, type: 2}
+  - {fileID: 11400000, guid: 7da96e3996ff2154191cd984ee9d8cbd, type: 2}
+  - {fileID: 11400000, guid: 208547187cc9735438a0c9f0ebbbe242, type: 2}
+  <GUID>k__BackingField: ab12506e-627c-47c4-a1c3-fc6d7e96ed5a

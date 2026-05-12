@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
+  m_Name: 35_C_G
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
+  <ButtonText>k__BackingField: "Il faut l\u2019aider \xE0 se calmer "
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: dc8aa718c4734a746981c933d67913c0, type: 2}
+  <GUID>k__BackingField: 150485ea-f5e5-4316-906a-012be6644088

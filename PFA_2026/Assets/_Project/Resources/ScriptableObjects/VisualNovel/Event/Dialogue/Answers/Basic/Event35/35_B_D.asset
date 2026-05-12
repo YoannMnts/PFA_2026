@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
+  m_Name: 35_B_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
+  <ButtonText>k__BackingField: "Tu r\xE9agirais de la m\xEAme mani\xE8re si on te
+    disais comment \xE9crire tes rapports "
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3fd5f47b638a92a40a0a069a042e1a39, type: 2}
+  <GUID>k__BackingField: 9cd307bf-016e-4ab2-928d-e397af7ed492

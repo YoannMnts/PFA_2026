@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 36_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - "Mais bien s\xFBr ! Dans son \xE9mission, il m\u2019appelle Anny, pas besoin
+      d\u2019\xEAtre un g\xE9nie pour faire le lien avec moi."
+    - "Tous les idiots qui l\u2019\xE9coutent vont me reconna\xEEtre !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 9f72c1a214b8c374d8312c82b2c0ea6b, type: 2}
+  - {fileID: 11400000, guid: 8cae94a7e8702f74d96e1d1d4037ea29, type: 2}
+  - {fileID: 11400000, guid: 393ebd6cce5fbaa429db78f97780d511, type: 2}
+  <GUID>k__BackingField: 8bb0828f-a81b-41b5-b54b-49d94ccec025

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 35_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - "Capitaine, T\xE9a est insupportable aujourd\u2019hui !"
+    - "O\xF9 est-ce que vous l\u2019avez trouv\xE9e celle-l\xE0 ?"
+    - "En m\u2019approchant, je me suis rendue compte qu\u2019elle \xE9tait en train
+      de pleurer, alors naturellement je suis repartie silencieusement pour ne pas
+      la mettre mal \xE0 l\u2019aise."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 79b1d4bf5a73d074bbd3156991bec7dd, type: 2}
+  - {fileID: 11400000, guid: fd6f9c6eeaca40249ab8d1b0f6a38903, type: 2}
+  <GUID>k__BackingField: e10ce19b-84bf-4d9a-8527-6a6b9f49ec99

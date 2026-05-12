@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 35_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Oh ! Et bien sans doute, mais elle n\u2019a aucune id\xE9e de comment r\xE9diger
+      quoi que ce soit, alors que je m\u2019y connais un peu en m\xE9canique. "
+    - "Pourquoi vous partez du principe que je n\u2019y connais rien ? C\u2019est
+      un peu vexant."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 0f1c5f2fd8127da459b8fb4131c16b71, type: 2}
+  - {fileID: 11400000, guid: 321e762e0cdba2f478ba549ac67aa8eb, type: 2}
+  - {fileID: 11400000, guid: 511630848d0a2754a842a9d03a1bdffb, type: 2}
+  - {fileID: 11400000, guid: 7871572ca680cf84cb85dd869c967b2c, type: 2}
+  <GUID>k__BackingField: 08ef8965-7120-410f-9184-3b296c47ca5f

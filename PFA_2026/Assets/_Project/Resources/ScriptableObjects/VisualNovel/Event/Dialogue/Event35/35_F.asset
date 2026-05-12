@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 35_F
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "Je suis ravie que vous soyez d\u2019accord avec moi."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Je propose donc de prendre des mesures contre \xE7a : on atteindra le prochain
+      a\xE9roport demain, je propose donc simplement de la d\xE9poser."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 0f1c5f2fd8127da459b8fb4131c16b71, type: 2}
+  - {fileID: 11400000, guid: 321e762e0cdba2f478ba549ac67aa8eb, type: 2}
+  - {fileID: 11400000, guid: 511630848d0a2754a842a9d03a1bdffb, type: 2}
+  - {fileID: 11400000, guid: 7871572ca680cf84cb85dd869c967b2c, type: 2}
+  <GUID>k__BackingField: 5d7473f4-82e1-4f1b-92b8-701e14d2ccd5
