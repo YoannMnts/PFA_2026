@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 8_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Et bien\u2026Ca me g\xE8ne un peu d\u2019en parler\u2026"
+    - "C\u2019est \xE0 propos de mes courbes, de mon ventre\u2026"
+    - "Il parle aussi de \u201Ctentacules\u201D..."
+    - "Pour lui ce ne sont que des blagues mais \xE7a me met mal \xE0 l\u2019aise."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 810ad31eb35fc93489c09c1b39cfdc34, type: 2}
+  - {fileID: 11400000, guid: f4b95837013dacb4b87cd4099f0cad2d, type: 2}
+  <GUID>k__BackingField: f3410b95-eaa1-429e-931c-42b73fae41e2

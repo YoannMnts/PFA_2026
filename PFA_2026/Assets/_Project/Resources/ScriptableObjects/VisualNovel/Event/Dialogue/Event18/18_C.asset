@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 18_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - Oui mais il comprend rien !
+    - "Il continue \xE0 se croire dr\xF4le, je pense que la seule mani\xE8re qu\u2019il
+      comprenne c\u2019est de lui mettre une bonne gifle au visage."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 11e2fa40814681f4eadabac9743e4396, type: 2}
+  - {fileID: 11400000, guid: 413705be51019ef459db2a0c1dd31294, type: 2}
+  <GUID>k__BackingField: f3e3cbce-3a70-4371-a18a-2f81ff51c1f2

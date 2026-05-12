@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 23_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - Vous avez bien vu son comportement pourtant.
+    - "Et \xE7a n\u2019excuse pas tout, mais la douleur n\u2019arrange pas les choses. "
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "J\u2019esp\xE8re qu'en le soulageant, \xE7a aide le reste de l\u2019\xE9quipage
+      en m\xEAme temps.\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 438f1a98867f28b4b8a7271a6b796e2c, type: 2}
+  - {fileID: 11400000, guid: 408fcface6e12ef43acf460603ba2eb2, type: 2}
+  - {fileID: 11400000, guid: ec5da242adf847e4bb483caedc7e0370, type: 2}
+  <GUID>k__BackingField: fa88444c-a677-4642-ac4b-895508c49fc3

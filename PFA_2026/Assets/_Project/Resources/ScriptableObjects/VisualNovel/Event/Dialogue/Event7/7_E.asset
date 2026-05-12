@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 7_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Je n\u2019ose pas\u2026"
+    - "J\u2019ai peur qu\u2019il le prenne mal, ou qu\u2019il me fasse ses r\xE9flexions
+      habituelles\u2026"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 3d0ff43fa9d09e24095377518af0fb37, type: 2}
+  - {fileID: 11400000, guid: b18fa679dca3ba34c881b006caba2035, type: 2}
+  - {fileID: 11400000, guid: 90f10136505caf342a2482125fc5aee5, type: 2}
+  <GUID>k__BackingField: 7a53b090-c080-41bb-ab09-0311d66fee40

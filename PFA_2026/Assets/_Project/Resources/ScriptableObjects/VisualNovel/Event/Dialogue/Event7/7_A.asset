@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 7_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Bonjour Capitaine. En fait\u2026"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "La musique d\u2019Herlock me d\xE9range, elle est vraiment forte et \xE7a
+      me perturbe quand j\u2019essaie de me d\xE9tendre sur la proue du navire."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 6bf55ebf7494fe64ab92acb433374706, type: 2}
+  - {fileID: 11400000, guid: 396f570696c10a740a90fa8cbdc54a78, type: 2}
+  - {fileID: 11400000, guid: c012a387d650cfc48a1024d18a3e98f3, type: 2}
+  <GUID>k__BackingField: 6bdf78e4-3959-4a02-af35-2b51451683ce

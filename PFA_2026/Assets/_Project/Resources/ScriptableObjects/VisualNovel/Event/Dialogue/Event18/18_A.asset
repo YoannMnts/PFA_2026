@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 18_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "Hey Cap\u2019taine ! Est ce que vous pourriez dire \xE0 Herlock d\u2019arr\xEAter
+      de se moquer moi de moi ?"
+    - "Il a pas l\u2019air de comprendre et je vais commencer \xE0 perdre patience."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 8ca33e3a2110436428c448d358ab9c43, type: 2}
+  - {fileID: 11400000, guid: de3424055018f8e4c921ec4cc0450683, type: 2}
+  <GUID>k__BackingField: 6eb91903-0e61-47ea-9a01-07091c256c62

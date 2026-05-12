@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 18_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "J\u2019aimerais bien oui."
+    - "J\u2019essaie de pas le prendre personnellement, mais \xE7a commence \xE0
+      devenir blessant au bout d\u2019un moment."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 009263fd0b495c94d88a4273504df229, type: 2}
+  - {fileID: 11400000, guid: 30b81bce963053547b8143255b36db04, type: 2}
+  - {fileID: 11400000, guid: 7e47a4ef86123b64fb14bf1de6e09829, type: 2}
+  - {fileID: 11400000, guid: 207914285c5b1d74d8734c256c8146f0, type: 2}
+  <GUID>k__BackingField: 7697c733-ac81-43bb-ac76-e671760c7e90
