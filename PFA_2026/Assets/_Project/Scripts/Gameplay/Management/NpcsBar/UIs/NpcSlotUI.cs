@@ -1,8 +1,8 @@
-﻿using Helteix.Tools.UI;
+﻿using System;
+using Helteix.Tools.UI;
 using Naussilus.Core;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class NpcSlotUI : UIItem<Npc>
@@ -11,6 +11,13 @@ public class NpcSlotUI : UIItem<Npc>
     [SerializeField] private Button button;
     [SerializeField] private TMP_Text npcName;
         
+    private NpcBarUI npcBar;
+
+    private void Start()
+    {
+        npcBar = GetComponentInParent<NpcBarUI>();
+    }
+
     protected override void SyncUI(Npc current)
     {
         icon.sprite = current.CategoryIcon;
@@ -25,8 +32,8 @@ public class NpcSlotUI : UIItem<Npc>
         button.onClick.RemoveAllListeners();
     }
 
-    public void OnClick()
+    private void OnClick()
     {
-        Current.Selected();
+        npcBar.OnClick(Current);
     }
 }

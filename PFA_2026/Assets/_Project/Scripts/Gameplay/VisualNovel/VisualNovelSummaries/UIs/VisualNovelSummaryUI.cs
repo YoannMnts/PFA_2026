@@ -19,8 +19,15 @@ namespace Naussilus.Gameplay.VisualNovel
         {
             if (currentPhase != null)
                 return;
-            
+                
             currentPhase = phase;
+
+            if (phase.CurrentConsequences.Count <= 0)
+            {
+                currentPhase.SetResult(true);
+                return;
+            }
+            
             group.Show();
             consequenceSummaryUIList.Connect(phase.CurrentConsequences);
             

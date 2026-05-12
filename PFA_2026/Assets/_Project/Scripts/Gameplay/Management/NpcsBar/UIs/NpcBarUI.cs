@@ -1,4 +1,5 @@
 ﻿using Helteix.Tools.Phases.Listeners;
+using Naussilus.Core;
 using Naussilus.Core.Managers;
 using UnityEngine;
 
@@ -6,9 +7,9 @@ public class NpcBarUI : MonoPhaseListener<ManagementPhase>
 {
     [SerializeField] private CanvasGroup group;
     [SerializeField] private NpcSlotUIList npcSlotUIList;
-        
+    
     private ManagementPhase currentPhase;
-
+    
     private void Start()
     {
         group.Hide();
@@ -36,5 +37,10 @@ public class NpcBarUI : MonoPhaseListener<ManagementPhase>
         npcSlotUIList.Disconnect();
             
         base.OnPhaseEnd(phase);
+    }
+
+    public void OnClick(Npc npc)
+    {
+        currentPhase.NpcClicked(npc);
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using Helteix.ChanneledProperties.Priorities;
+﻿using Helteix.ChanneledProperties.Priorities;
 using Helteix.Singletons.SceneServices;
 using Helteix.Tools.Phases;
 using Naussilus.Gameplay;
@@ -34,23 +33,23 @@ namespace Cameras
         [SerializeField]
         private float slideSpeed = 0.01f;
         
-        public Priority<bool> CanPinchAndSlide { get; private set; }
+        public Priority<bool> CanMove { get; private set; }
 
         private void Awake()
         {
-            CanPinchAndSlide = new Priority<bool>(true);
+            CanMove = new Priority<bool>(true);
         }
 
         private void OnEnable()
         {
-            CanPinchAndSlide.OnValueChanged += CanPinchAndSlideChange;
+            CanMove.OnValueChanged += CanMoveChange;
             this.Register();
         }
 
 
         private void OnDisable()
         {
-            CanPinchAndSlide.OnValueChanged -= CanPinchAndSlideChange;
+            CanMove.OnValueChanged -= CanMoveChange;
             this.Unregister();
         }
 
@@ -66,9 +65,9 @@ namespace Cameras
             cam.transform.position = VectorAddition(cam.transform.position, (slideInput.Delta * slideSpeed));
         }
 
-        private void CanPinchAndSlideChange(bool canPinchAndSlide)
+        private void CanMoveChange(bool canMove)
         {
-            if (canPinchAndSlide)
+            if (canMove)
             {
                 Controller.PlayerInputs.AddTouchInput(pinchInput);
                 Controller.PlayerInputs.AddTouchInput(slideInput);

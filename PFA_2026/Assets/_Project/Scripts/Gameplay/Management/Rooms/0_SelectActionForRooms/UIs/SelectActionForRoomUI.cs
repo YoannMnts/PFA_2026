@@ -43,7 +43,7 @@ namespace Rooms
             if (this.TryGetService(out PlayerController controller))
             {
                 controller.PlayerInteractions.CanInteract.AddPriority(this, PriorityTags.High, false);
-                controller.PlayerCamera.CanPinchAndSlide.AddPriority(this, PriorityTags.High, false);
+                controller.PlayerCamera.CanMove.AddPriority(this, PriorityTags.High, false);
             }
             
             base.OnPhaseBegin(phase);
@@ -61,7 +61,7 @@ namespace Rooms
             if (this.TryGetService(out PlayerController controller))
             {
                 controller.PlayerInteractions.CanInteract.RemovePriority(this);
-                controller.PlayerCamera.CanPinchAndSlide.RemovePriority(this);
+                controller.PlayerCamera.CanMove.RemovePriority(this);
             }
 
             base.OnPhaseEnd(phase);

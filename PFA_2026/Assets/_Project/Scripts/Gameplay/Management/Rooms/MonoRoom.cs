@@ -10,7 +10,7 @@ namespace Rooms
 {
     public class MonoRoom: MonoPhaseListener<ManagementPhase>, IInteractable
     {
-        public int Priority { get; private set; }
+        public int Priority { get; private set; } = 0;
         
         [field: SerializeField] 
         public RoomData RoomData { get; private set; }
@@ -23,18 +23,17 @@ namespace Rooms
         
         public ManagementPhase CurrentPhase { get; private set; }
         
-        private SelectActionForRoom selectActionForRoom;
         protected override void OnPhaseBegin(ManagementPhase phase)
         {
             CurrentActionPoint = phase.CurrentActionPoint;
             CurrentPhase = phase;
+            
+            Debug.Log($"Management phase begin for npc {Room.Name}");
             base.OnPhaseBegin(phase);
         }
         
         protected override void OnPhaseEnd(ManagementPhase phase)
         {
-            selectActionForRoom?.SetResult(false);
-            selectActionForRoom = null;
             CurrentPhase = null;
             base.OnPhaseEnd(phase);
         }
@@ -44,7 +43,7 @@ namespace Rooms
             if (CurrentPhase == null)
                 return;
                 
-            selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint);
+            var selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint);
             selectActionForRoom.RunAndForget();
         }
 

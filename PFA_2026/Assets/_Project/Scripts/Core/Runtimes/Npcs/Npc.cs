@@ -7,11 +7,6 @@ namespace Naussilus.Core
 {
     public class Npc : INpcSelector
     {
-        public event Action<Vector2> OnNewPosition;
-        public event Action OnReturnLastPosition;
-        
-        public event Action<Npc> OnNpcSelected; 
-        
         public string Name { get; private set; }
         public Behavior[] Behaviors { get; private set; }
         public MentalState[] MentalStates { get; private set; }
@@ -42,21 +37,6 @@ namespace Naussilus.Core
         {
             CategoryLocked = locked;
             CurrentCategory = category;
-        }
-        
-        public void SetNewPosition(Vector2 position)
-        {
-            OnNewPosition?.Invoke(position);
-        }
-
-        public void ReturnToLastPosition()
-        {
-            OnReturnLastPosition?.Invoke();
-        }
-
-        public void Selected()
-        {
-            OnNpcSelected?.Invoke(this);
         }
     }
 }

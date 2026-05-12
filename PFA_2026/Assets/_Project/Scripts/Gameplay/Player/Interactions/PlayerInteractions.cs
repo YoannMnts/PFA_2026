@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Naussilus.Gameplay.Player.Interactions
 {
-    public class PlayerInteractions : PlayerComponent, IPhaseListener<ManagementPhase>, IPhaseListener<ReadDialogue>
+    public class PlayerInteractions : PlayerComponent, IPhaseListener<ManagementPhase>
     {
         private static readonly RaycastHit2D[] Hits = new RaycastHit2D[8];
 
@@ -28,8 +28,7 @@ namespace Naussilus.Gameplay.Player.Interactions
 
         private void OnEnable()
         {
-            this.Register<ManagementPhase>();
-            this.Register<ReadDialogue>();
+            this.Register();
             if (gameObject.TryGetService(out PlayerController playerController))
                 playerController.PlayerInputs.OnTouch += TryInteract;
         }
@@ -38,8 +37,7 @@ namespace Naussilus.Gameplay.Player.Interactions
         {
             if (gameObject.TryGetService(out PlayerController playerController))
                 playerController.PlayerInputs.OnTouch -= TryInteract;
-            this.Unregister<ManagementPhase>();
-            this.Unregister<ReadDialogue>();
+            this.Unregister();
         }
 
 
@@ -52,23 +50,6 @@ namespace Naussilus.Gameplay.Player.Interactions
         }
 
         public void OnPhaseEnd(ManagementPhase phase)
-        {
-            if (gameObject.TryGetService(out PlayerController playerController))
-            {
-                playerController.PlayerInputs.RemoveTouchInput(tapInput);
-            }
-        }
-
-        public void OnPhaseBegin(ReadDialogue phase)
-        {
-            if (gameObject.TryGetService(out PlayerController playerController))
-            {
-                playerController.PlayerInputs.AddTouchInput(tapInput);
-            }
-            
-        }
-
-        public void OnPhaseEnd(ReadDialogue phase)
         {
             if (gameObject.TryGetService(out PlayerController playerController))
             {

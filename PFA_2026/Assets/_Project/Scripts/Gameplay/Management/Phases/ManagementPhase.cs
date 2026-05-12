@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using Helteix.Tools.Phases;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
@@ -8,6 +9,8 @@ using UnityEngine;
 
 public class ManagementPhase : PhaseCompletionSource<bool>
 {
+    public event Action<Npc> OnNpcClicked;
+    
     public ActionPoint CurrentActionPoint { get; private set; }
     public Npc[] CurrentNpcs { get; private set; }
     
@@ -29,5 +32,11 @@ public class ManagementPhase : PhaseCompletionSource<bool>
     {
         ConditionalEffectManager.ComputeScheduledEffects();
         return base.Dispose(token);
+    }
+
+    public void NpcClicked(Npc npc)
+    {
+        Debug.Log($"NpcClicked: {npc.Name}");
+        OnNpcClicked?.Invoke(npc);
     }
 }

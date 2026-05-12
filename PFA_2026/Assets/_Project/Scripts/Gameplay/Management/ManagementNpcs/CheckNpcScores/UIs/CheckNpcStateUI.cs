@@ -23,9 +23,6 @@ public class CheckNpcStateUI : MonoPhaseListener<CheckNpcState>
 
     protected override void OnPhaseBegin(CheckNpcState phase)
     {
-        if(current != null)
-            return;
-
         titleName.text = phase.CurrentNpc.Name;
         current = phase;
         group.Show();
@@ -40,9 +37,6 @@ public class CheckNpcStateUI : MonoPhaseListener<CheckNpcState>
 
     protected override void OnPhaseEnd(CheckNpcState phase)
     {
-        if (current != phase) 
-            return;
-            
         current = null;
         behaviorUIList.Disconnect();
         mentalStateUIList.Disconnect();
@@ -57,6 +51,6 @@ public class CheckNpcStateUI : MonoPhaseListener<CheckNpcState>
     public void Cancel()
     {
         if (current != null)
-            current.SetResult(true);
+            current.SetResult(false);
     }
 }

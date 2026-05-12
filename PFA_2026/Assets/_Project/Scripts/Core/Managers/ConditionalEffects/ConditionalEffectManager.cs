@@ -96,7 +96,6 @@ namespace Naussilus.Core.Managers
         public static void AddScheduledEffect(this ActionEffect actionEffect)
         {
             ScheduledEffects.Add(actionEffect);
-            actionEffect.Npc?.SetNewPosition(actionEffect.Position);
             Debug.Log($"[ConditionalEffectManager] Adding scheduled effect {actionEffect.Npc?.Name}");
             OnAddEffect?.Invoke();
         }
@@ -104,7 +103,6 @@ namespace Naussilus.Core.Managers
         public static void RemoveScheduledEffect(this ActionEffect actionEffect)
         {
             ScheduledEffects.Remove(actionEffect);
-            actionEffect.Npc?.ReturnToLastPosition();
             Debug.Log($"[ConditionalEffectManager] Removing scheduled effect {actionEffect.Npc?.Name}");
             OnRemoveEffect?.Invoke();
         }

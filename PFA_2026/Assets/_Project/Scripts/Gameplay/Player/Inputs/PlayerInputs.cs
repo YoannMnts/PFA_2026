@@ -52,7 +52,7 @@ namespace Naussilus.Gameplay
             bool inputDidUpdate = false;
             foreach (var input in touchInputs)
             {
-                Debug.Log($"Updating {input.GetType().Name}");
+                //Debug.Log($"Updating {input.GetType().Name}");
                 if (inputDidUpdate)
                 {
                     input.Sleep(this);
