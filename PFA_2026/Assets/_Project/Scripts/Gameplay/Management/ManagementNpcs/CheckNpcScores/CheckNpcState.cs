@@ -2,6 +2,7 @@
 using Helteix.Tools.Phases;
 using Naussilus.Core;
 using Naussilus.Core.Managers.Npcs;
+using Naussilus.Gameplay.Management.ManagementNpcs;
 using UnityEngine;
 
 public class CheckNpcState : PhaseCompletionSource<bool>

@@ -6,50 +6,41 @@ using Naussilus.Core.NpcDatas;
 using Naussilus.Gameplay.Player.Interactions;
 using UnityEngine;
 
-public class MonoNpc : MonoPhaseListener<ManagementPhase>, IInteractable
+namespace Naussilus.Gameplay.Management.ManagementNpcs
 {
-    public int Priority { get; private set; }
+    public class MonoNpc : MonoPhaseListener<ManagementPhase>, IInteractable
+    {
+        public int Priority { get; private set; }
 
-    [SerializeField] private NpcData npcData;
+        [SerializeField] private NpcData npcData;
     
-    private Vector2 lastPosition;
+        private Vector2 lastPosition;
 
-    public Npc Npc => NpcManager.TryGetNpc(npcData?.GUID);
+        public Npc Npc => NpcManager.TryGetNpc(npcData?.GUID);
     
-    public void Interact(PlayerInteractions playerInteractions)
-    {
-        CheckNpcState checkNpcPhase = new CheckNpcState(this);
-        checkNpcPhase.RunAndForget();
-    }
+        private CheckNpcState checkNpcPhase;
+        
+        public void Interact(PlayerInteractions playerInteractions)
+        {
+            checkNpcPhase = new CheckNpcState(this);
+            checkNpcPhase.RunAndForget();
+        }
+        
+        protected override void OnPhaseBegin(ManagementPhase phase)
+        {
+            base.OnPhaseBegin(phase);
+        }
 
+        protected override void OnPhaseEnd(ManagementPhase phase)
+        {
+            checkNpcPhase?.SetResult(false);
+            checkNpcPhase = null;
+            base.OnPhaseEnd(phase);
+        }
 
-    protected override void OnPhaseBegin(ManagementPhase phase)
-    {
-        Npc.OnNewPosition += SetNewPosition;
-        Npc.OnReturnLastPosition += ReturnLastPosition;
-        base.OnPhaseBegin(phase);
-    }
-
-    protected override void OnPhaseEnd(ManagementPhase phase)
-    {
-        Npc.OnNewPosition -= SetNewPosition;
-        Npc.OnReturnLastPosition -= ReturnLastPosition;
-        base.OnPhaseEnd(phase);
-    }
-
-    private void SetNewPosition(Vector2 position)
-    {
-        lastPosition = gameObject.transform.position;
-        gameObject.transform.position = position;
-    }
-
-    private void ReturnLastPosition()
-    {
-        gameObject.transform.position = lastPosition;
-    }
-
-    public bool IsInteractable()
-    {
-        return false;
+        public bool IsInteractable()
+        {
+            return false;
+        }
     }
 }

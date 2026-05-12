@@ -41,7 +41,10 @@ namespace Rooms
             roomActionUIList.Connect(phase.Choices);
 
             if (this.TryGetService(out PlayerController controller))
-                controller.PlayerInteractions.CanInteract.AddPriority(this, PriorityTags.Highest, false);
+            {
+                controller.PlayerInteractions.CanInteract.AddPriority(this, PriorityTags.High, false);
+                controller.PlayerCamera.CanPinchAndSlide.AddPriority(this, PriorityTags.High, false);
+            }
             
             base.OnPhaseBegin(phase);
         }
@@ -54,9 +57,12 @@ namespace Rooms
             current = null;
             roomActionUIList.Disconnect();
             group.Hide();
-            
+
             if (this.TryGetService(out PlayerController controller))
+            {
                 controller.PlayerInteractions.CanInteract.RemovePriority(this);
+                controller.PlayerCamera.CanPinchAndSlide.RemovePriority(this);
+            }
 
             base.OnPhaseEnd(phase);
         }

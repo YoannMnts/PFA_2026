@@ -1112,6 +1112,10 @@ PrefabInstance:
       propertyPath: m_Size
       value: 0.99999154
       objectReference: {fileID: 0}
+    - target: {fileID: 5694795499720979563, guid: a86414e952cdddb49bedae4ee4a18494, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 2070346243556094187, guid: 03170d14284f7c340bf77094bbe79056, type: 3}
     - target: {fileID: 6058704861293820867, guid: a86414e952cdddb49bedae4ee4a18494, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

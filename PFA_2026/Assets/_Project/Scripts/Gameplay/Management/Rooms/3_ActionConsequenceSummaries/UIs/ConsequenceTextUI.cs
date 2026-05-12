@@ -11,12 +11,12 @@ namespace Rooms
         
         protected override void SyncUI(string[] current)
         {
-            textField.text = current[0];
+            //TODO textField.text = current[0];
         }
 
         protected override void ClearUI()
         {
-            textField.text = string.Empty;
+            //TODO textField.text = string.Empty;
         }
     }
 }

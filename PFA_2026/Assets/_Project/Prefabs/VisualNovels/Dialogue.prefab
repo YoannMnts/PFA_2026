@@ -146,7 +146,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3466225921657871317}
-  - component: {fileID: 8550509906501700359}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -175,26 +174,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1200, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8550509906501700359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526811774987660581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 703c9a7e0643459e9e191b2746dc2f73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Naussilus.Gameplay.VisualNovel::Naussilus.Gameplay.VisualNovel.ReadDialogueUI
-  <OnPhaseBeginUnityEvent>k__BackingField:
-    m_PersistentCalls:
-      m_Calls: []
-  <OnPhaseEndUnityEvent>k__BackingField:
-    m_PersistentCalls:
-      m_Calls: []
-  text: {fileID: 4100908038455168009}
-  image: {fileID: 0}
 --- !u!1 &1800033129715146343
 GameObject:
   m_ObjectHideFlags: 0

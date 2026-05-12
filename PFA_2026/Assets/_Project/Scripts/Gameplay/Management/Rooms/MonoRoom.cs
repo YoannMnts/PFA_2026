@@ -20,14 +20,31 @@ namespace Rooms
         private Room Room => RoomManager.TryGetRoom(RoomData.GUID);
         
         public ActionPoint CurrentActionPoint { get; private set; }
+        
+        public ManagementPhase CurrentPhase { get; private set; }
+        
+        private SelectActionForRoom selectActionForRoom;
         protected override void OnPhaseBegin(ManagementPhase phase)
         {
             CurrentActionPoint = phase.CurrentActionPoint;
+            CurrentPhase = phase;
             base.OnPhaseBegin(phase);
         }
+        
+        protected override void OnPhaseEnd(ManagementPhase phase)
+        {
+            selectActionForRoom?.SetResult(false);
+            selectActionForRoom = null;
+            CurrentPhase = null;
+            base.OnPhaseEnd(phase);
+        }
+        
         public void Interact(PlayerInteractions playerInteractions)
         {
-            var selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint);
+            if (CurrentPhase == null)
+                return;
+                
+            selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint);
             selectActionForRoom.RunAndForget();
         }
 

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 154721122740498533}
   - component: {fileID: 3971894861993146975}
   - component: {fileID: 1240273726739365241}
+  - component: {fileID: 1122311901215961524}
   m_Layer: 5
   m_Name: Dialogues
   m_TagString: Untagged
@@ -58,6 +59,26 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1122311901215961524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937963502719522638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703c9a7e0643459e9e191b2746dc2f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Naussilus.Gameplay.VisualNovel::Naussilus.Gameplay.VisualNovel.ReadDialogueUI
+  <OnPhaseBeginUnityEvent>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+  <OnPhaseEndUnityEvent>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+  text: {fileID: 8060724701735353155}
+  bgImage: {fileID: 8050782935284717603}
 --- !u!1 &6607686917109711432
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,3 +308,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!114 &8060724701735353155 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4100908038455168009, guid: ec8dcaf612925ac428c681548248bc81, type: 3}
+  m_PrefabInstance: {fileID: 6283691681460844362}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
