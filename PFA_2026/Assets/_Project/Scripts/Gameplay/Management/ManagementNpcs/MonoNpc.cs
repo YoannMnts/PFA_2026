@@ -9,19 +9,19 @@ using UnityEngine;
 public class MonoNpc : MonoPhaseListener<ManagementPhase>, IInteractable
 {
     public int Priority { get; private set; }
-    
+
     [SerializeField] private NpcData npcData;
     
     private Vector2 lastPosition;
-    
+
     public Npc Npc => NpcManager.TryGetNpc(npcData?.GUID);
     
     public void Interact(PlayerInteractions playerInteractions)
     {
         CheckNpcState checkNpcPhase = new CheckNpcState(this);
         checkNpcPhase.RunAndForget();
-        
     }
+
 
     protected override void OnPhaseBegin(ManagementPhase phase)
     {
@@ -50,6 +50,6 @@ public class MonoNpc : MonoPhaseListener<ManagementPhase>, IInteractable
 
     public bool IsInteractable()
     {
-        return true;
+        return false;
     }
 }

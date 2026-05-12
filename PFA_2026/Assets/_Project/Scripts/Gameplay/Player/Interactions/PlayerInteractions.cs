@@ -1,10 +1,7 @@
-﻿using System;
-using Helteix.ChanneledProperties.Priorities;
+﻿using Helteix.ChanneledProperties.Priorities;
 using Helteix.Singletons.SceneServices;
 using Helteix.Tools.Phases;
-using Rooms;
 using UnityEngine;
-using UnityEngine.LowLevelPhysics2D;
 
 namespace Naussilus.Gameplay.Player.Interactions
 {
@@ -22,6 +19,11 @@ namespace Naussilus.Gameplay.Player.Interactions
             CanInteract = new Priority<bool>(true);
 
             CanInteract.OnValueChanged += OnCanInteractChange;
+        }
+
+        private void OnDestroy()
+        {
+            CanInteract.OnValueChanged -= OnCanInteractChange;
         }
 
         private void OnEnable()
@@ -63,13 +65,12 @@ namespace Naussilus.Gameplay.Player.Interactions
             else
                 Controller.PlayerInputs.RemoveTouchInput(tapInput);
         }
-        
-        public void TryInteract(ITouchInput touchInput)
+
+        private void TryInteract(ITouchInput touchInput)
         {
-            Debug.Log($"AAAAAAAA");
             if (touchInput is not TapInput)
                 return;
-
+            
             Camera cam = Controller.PlayerCamera.Cam;
             Vector2 worldPos = cam.ScreenToWorldPoint(tapInput.TapPosition);
             
@@ -82,27 +83,23 @@ namespace Naussilus.Gameplay.Player.Interactions
                 var hit = Hits[i];
                 if (hit.transform.TryGetComponent(out IInteractable hitInteractable))
                 {
-                    if (interactable != null && interactable.Priority >= hitInteractable.Priority)
+                    if (interactable != null && interactable.Priority > hitInteractable.Priority)
                         continue;
                     
                     if(hitInteractable.IsInteractable())
                         interactable = hitInteractable;
                 }    
             }
-
-            if (interactable != null)
-                interactable.Interact(this);
             
+            interactable?.Interact(this);
         }
 
         public void StopInteract()
         { 
-/*
-            if (gameObject.TryGetService(out PlayerInputManager playerInputManager))
+            if (gameObject.TryGetService(out PlayerController playerInputManager))
             {
-                playerInputManager.AddTouchInput(tapInput);
+                playerInputManager.PlayerInputs.AddTouchInput(tapInput);
             }
-*/
         }
     }
 }

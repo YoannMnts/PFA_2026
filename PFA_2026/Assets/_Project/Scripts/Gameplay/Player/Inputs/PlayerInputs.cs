@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Helteix.Singletons.SceneServices;
 using Naussilus.Gameplay.Player;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -53,6 +52,7 @@ namespace Naussilus.Gameplay
             bool inputDidUpdate = false;
             foreach (var input in touchInputs)
             {
+                Debug.Log($"Updating {input.GetType().Name}");
                 if (inputDidUpdate)
                 {
                     input.Sleep(this);

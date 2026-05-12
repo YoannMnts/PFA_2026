@@ -1,5 +1,4 @@
-﻿using System;
-using Helteix.Tools.Phases;
+﻿using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managements;
@@ -16,6 +15,8 @@ namespace Rooms
         [field: SerializeField] 
         public RoomData RoomData { get; private set; }
 
+        [field: SerializeField]
+        public Transform[] NpcSlots { get; private set; }
         private Room Room => RoomManager.TryGetRoom(RoomData.GUID);
         
         public ActionPoint CurrentActionPoint { get; private set; }
@@ -27,7 +28,7 @@ namespace Rooms
         public void Interact(PlayerInteractions playerInteractions)
         {
             var selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint);
-            selectActionForRoom.RunAndForget(); 
+            selectActionForRoom.RunAndForget();
         }
 
         public bool IsInteractable()

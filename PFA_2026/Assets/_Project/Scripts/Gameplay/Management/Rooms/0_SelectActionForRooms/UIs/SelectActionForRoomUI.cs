@@ -41,7 +41,7 @@ namespace Rooms
             roomActionUIList.Connect(phase.Choices);
 
             if (this.TryGetService(out PlayerController controller))
-                controller.PlayerInteractions.CanInteract.AddPriority(this, PriorityTags.High, false);
+                controller.PlayerInteractions.CanInteract.AddPriority(this, PriorityTags.Highest, false);
             
             base.OnPhaseBegin(phase);
         }
