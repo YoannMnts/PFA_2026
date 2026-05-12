@@ -36,7 +36,6 @@ public class ManagementPhase : PhaseCompletionSource<bool>
 
     public void NpcClicked(Npc npc)
     {
-        Debug.Log($"NpcClicked: {npc.Name}");
         OnNpcClicked?.Invoke(npc);
     }
 }

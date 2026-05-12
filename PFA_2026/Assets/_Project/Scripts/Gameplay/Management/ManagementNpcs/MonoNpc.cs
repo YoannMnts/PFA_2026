@@ -39,7 +39,6 @@ namespace Naussilus.Gameplay.Management.ManagementNpcs
 
         private void TryCheckNpc(Npc npc)
         {
-            Debug.Log($"[MonoNpc] Checking npc {npc.Name}");
             if (npc != Npc)
                 return;
 
