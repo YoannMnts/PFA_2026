@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 41_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - "Ben j\u2019\xE9tais s\xFBr de gagner, j'avais toutes les cartes en main, et
+      au final elle \xE0 raffl\xE9 la mise."
+    - Il y a quelque chose qui cloche.
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Et franchement, entre nous, jamais une femme m\u2019battrais \xE0 la loyale."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Oh ! Tu oses m\u2019insulter comme \xE7a ?"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "J\u2019ai plut\xF4t l\u2019impression que cette d\xE9faite t\u2019a piqu\xE9
+      dans ton ego, Herlock."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: a2314b3543c8f504db9405b7ecb8c454, type: 2}
+  - {fileID: 11400000, guid: 04ea9db54a97cd14abe03df18a49d6ca, type: 2}
+  - {fileID: 11400000, guid: faf866c82f2f1684f9017fe1a63afd9b, type: 2}
+  <GUID>k__BackingField: a8ca6258-3d91-4b8f-b4c2-fcf3f8a9b8f2

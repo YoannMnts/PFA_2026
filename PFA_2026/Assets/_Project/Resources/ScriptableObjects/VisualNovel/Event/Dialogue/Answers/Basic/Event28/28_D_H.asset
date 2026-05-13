@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
-  m_Name: 26_B_D
+  m_Name: 28_D_H
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Alors il faut essayer de lui redonner confiance d\u2019une
-    autre mani\xE8re"
-  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0e721513c7e5b9140a6a68eefec195d2, type: 2}
-  <GUID>k__BackingField: 2bc4ffa9-6d85-43bf-b5dc-d1fdb692d7a9
+  <ButtonText>k__BackingField: "Je ne vois pas le probl\xE8me"
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: edbbdf1a2916ae8458531fee2e1aeda3, type: 2}
+  <GUID>k__BackingField: a39e1f2a-6c4f-4ff5-949d-b5839b92fce3

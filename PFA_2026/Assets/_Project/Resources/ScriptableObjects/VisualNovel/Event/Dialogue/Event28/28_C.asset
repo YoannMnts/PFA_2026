@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 28_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Oui exactement, et il faut qu\u2019il change \xE7a."
+    - "Il ne s\u2019en rend surement pas compte, mais c\u2019est possible de l\u2019aider
+      \xE0 s\u2019am\xE9liorer."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 8874453414b8f524eb415f89e0d0b3e6, type: 2}
+  - {fileID: 11400000, guid: 07a1945120876464082e80f405b5a0b7, type: 2}
+  <GUID>k__BackingField: 012a1c6a-563d-4a33-8993-e8cb569b6330

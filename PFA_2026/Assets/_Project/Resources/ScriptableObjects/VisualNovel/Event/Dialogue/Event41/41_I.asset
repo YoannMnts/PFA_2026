@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 41_I
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Ca c\u2019est s\xFBr, et j\u2019irais m\xEAme plus loin , il faut lui couper
+      l\u2019acc\xE8s au monde ext\xE9rieur, comme \xE7a on est s\xFBr qu\u2019il
+      ne recommencera pas."
+    - "Il ne pourra m\xEAme plus \xE9couter sa musique qui casse les oreilles \xE0
+      tout le monde."
+    - "Personne ne se moque de moi impun\xE9ment. "
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 9f72c1a214b8c374d8312c82b2c0ea6b, type: 2}
+  - {fileID: 11400000, guid: 8cae94a7e8702f74d96e1d1d4037ea29, type: 2}
+  - {fileID: 11400000, guid: 393ebd6cce5fbaa429db78f97780d511, type: 2}
+  <GUID>k__BackingField: ebe7c3eb-e4cc-412a-8fd9-283bb4258f55

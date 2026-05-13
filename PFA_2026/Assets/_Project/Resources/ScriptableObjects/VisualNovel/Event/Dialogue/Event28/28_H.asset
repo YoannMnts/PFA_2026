@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 28_H
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Alors vous n\u2019\xEAtes pas plus avanc\xE9s que lui, et vous \xEAtes tout
+      autant concern\xE9 par le probl\xE8me."
+    - "Vous avez vous aussi besoin de vous am\xE9liorer."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 87bf659f8c5a30c46b43bdd004e7fb37, type: 2}
+  - {fileID: 11400000, guid: 8f6ab9b9818d4474489945e953eddd5d, type: 2}
+  - {fileID: 11400000, guid: f8f64f3e0d90d3740a884435cf23c4f3, type: 2}
+  <GUID>k__BackingField: 3ddc5e91-45fa-49a7-ba65-a977e39b2980

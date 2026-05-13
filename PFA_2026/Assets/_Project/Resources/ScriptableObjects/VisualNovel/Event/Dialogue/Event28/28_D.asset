@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 28_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "J\u2019en ai plein !"
+    - "Quand il nous dit qu\u2019on est pas capable de faire ceci ou cela, m\xEAme
+      si c\u2019est notre m\xE9tier, quand il s\u2019imagine automatiquement qu\u2019il
+      est meilleur que nous, quand il nous traite de \u201Cculbuteuse de cumulus\u201D
+      ou de \u201Cgarce\u201D..."
+  - <Npc>k__BackingField: {fileID: 0}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Juste 5 minutes avec lui, c'est assez pour s\u2019en rendre compte."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 870d8cbae245cbd49b2ebfe6c176a8d8, type: 2}
+  - {fileID: 11400000, guid: 2b5edd68367e6e546bdec496894f4da3, type: 2}
+  <GUID>k__BackingField: 6b3dcde7-1ae4-4602-8473-a8083e25fe01

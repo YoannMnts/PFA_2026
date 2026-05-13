@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 41_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - "Bonjour Cap\u2019taine."
+    - "J\u2019veux juste vous tenir au courant de c\u2019qui est arriv\xE9 : l\u2019autre
+      soir, on jouait aux cartes avec Ynna, et cette tricheuse m\u2019a roul\xE9,
+      j'ai perdu toute ma mise"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - Cet homme vous ment ouvertement Capitaine.
+    - "J\u2019ai remport\xE9 cette partie honn\xEAtement, dans les r\xE8gles du jeu,
+      il n\u2019y \xE0 rien \xE0 rajouter."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: d7945c80e78269046a34768ac9ea7716, type: 2}
+  - {fileID: 11400000, guid: edae571d1e3ef8045a1e97b50c5154eb, type: 2}
+  - {fileID: 11400000, guid: 8370aee62821d4847852cfa6cb3a8eb5, type: 2}
+  <GUID>k__BackingField: c02e1a6f-517a-4501-81e8-77e01388378e

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 28_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "On dirait, mais c\u2019est pas le cas."
+    - "Quand c\u2019est \xE0 propos de moi, de Jennie, o\xF9 des autres filles, il
+      est beaucoup plus d\xE9nigrant et m\xE9chant."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Il nous traite aussi diff\xE9remment, il pense qu\u2019il est sup\xE9rieur
+      \xE0 nous."
+    - "C\u2019est vraiment pas la m\xEAme chose."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: c894ffd4cab176d4c81155208abfe1fe, type: 2}
+  - {fileID: 11400000, guid: 1455e70d3a8956341806e86db83a2c30, type: 2}
+  <GUID>k__BackingField: beaa9d77-6941-4f73-bbcd-8dd7ee0d795e
