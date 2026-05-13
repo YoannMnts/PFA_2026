@@ -23,6 +23,7 @@ namespace Rooms
         
         public ManagementPhase CurrentPhase { get; private set; }
         
+        private SelectActionForRoom selectActionForRoom;
         protected override void OnPhaseBegin(ManagementPhase phase)
         {
             CurrentActionPoint = phase.CurrentActionPoint;
@@ -42,8 +43,14 @@ namespace Rooms
         {
             if (CurrentPhase == null)
                 return;
-                
-            var selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint);
+
+            if (selectActionForRoom != null && selectActionForRoom.CurrentRoom == Room)
+            {
+                selectActionForRoom.Cancel();
+                selectActionForRoom = null;
+            }
+            
+            selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint);
             selectActionForRoom.RunAndForget();
         }
 

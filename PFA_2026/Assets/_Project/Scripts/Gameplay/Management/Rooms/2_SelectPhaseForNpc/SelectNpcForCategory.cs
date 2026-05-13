@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Rooms
 {
-    public class SelectNpcForCategory : PhaseCompletionSource<Npc>
+    public class SelectNpcForCategory : PhaseCompletionSource<Npc>, IPhaseListener<ManagementPhase>
     {
         public Category CurrentCategory { get; private set; }
         public Npc[] ProhibitedNpc => CurrentCategory.ProhibitedNpcs;
@@ -39,6 +39,27 @@ namespace Rooms
         {
             Npcs = null;
             return base.Dispose(token);
+        }
+
+        private void AddNpcToCategory(Npc npc)
+        {
+            for (int i = 0; i < Npcs.Count; i++)
+            {
+                if (Npcs[i] != null)
+                    return;
+                Npcs[i] = npc;
+            }
+        }
+
+        public void OnPhaseBegin(ManagementPhase phase)
+        {
+            Debug.Log($"AAAAAAAA");
+            phase.OnNpcClicked += AddNpcToCategory;
+        }
+
+        public void OnPhaseEnd(ManagementPhase phase)
+        {
+            phase.OnNpcClicked -= AddNpcToCategory;
         }
     }
 }

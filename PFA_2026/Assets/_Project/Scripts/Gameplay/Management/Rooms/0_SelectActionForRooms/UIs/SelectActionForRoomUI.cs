@@ -86,19 +86,20 @@ namespace Rooms
             }
             
             var actionCost = -current.Choices[index].Cost;
-            if (!currentActionPoint.TryAddOrRemove(actionCost))
-                return;
+            //if (!currentActionPoint.TryAddOrRemove(actionCost))
+            //    return;
             
             Debug.Log($"Action {actionData.Name} cost {actionData.Cost} AP {currentActionPoint.Value} return {currentActionPoint.TryAddOrRemove(actionCost)}");
             var fillCategory = new FillCategory(current.Choices[index]);
             var result = await fillCategory.Run();
+            /*
             if (!result)
             {
                 current.CurrentRoom.TryGetCurrentAction(out var action);
                 currentActionPoint.TryAddOrRemove(action.Cost);
                 return;
             }
-            
+            */
             current.SetResult(true);
         }
     }

@@ -23,7 +23,6 @@ namespace Rooms
             category = categoryUI.Current; 
         }
         
-
         public void SyncUI(int current)
         {
             ClearUI();
