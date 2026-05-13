@@ -1,15 +1,16 @@
-﻿using Helteix.Tools.Phases;
+﻿using System;
+using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
-using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.Managers.Rooms;
+using Naussilus.Gameplay.Management.Phases;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Rooms
 {
-    public class FillCategoriesUI : MonoPhaseListener<FillCategory>
+    public class FillCategoriesUI : MonoPhaseListener<FillCategory> ,INpcClickListener
     {
         private FillCategory current;
 
@@ -18,6 +19,7 @@ namespace Rooms
         [SerializeField] private Button closeButton;
         [SerializeField] private Button applyButton;
 
+        public int NpcClickPriority { get; private set; } = 5;
         private void Start()
         {
             group.Hide();
@@ -33,6 +35,7 @@ namespace Rooms
             categoryUIList.Connect(phase.Categories);
             closeButton.onClick.AddListener(Cancel);
             applyButton.onClick.AddListener(Apply);
+            ManagementPhase.AddNpcClickListener(this);
             
             base.OnPhaseBegin(phase);
         }
@@ -47,9 +50,16 @@ namespace Rooms
             group.Hide();
             closeButton.onClick.RemoveAllListeners();
             applyButton.onClick.RemoveAllListeners();
+            ManagementPhase.RemoveNpcClickListener(this);
             
             base.OnPhaseEnd(phase);
         }
+        
+        public void OnNpcClick(Npc npc)
+        {
+            AddNpcInCategory(npc);
+        }
+        
 
         public void Cancel()
         {
@@ -65,11 +75,24 @@ namespace Rooms
             }
         }
 
-        public async void ChooseCategory(Category category, int slotIndex)
+        private void AddNpcInCategory(Npc npc)
+        {
+            if (current == null)
+                return;
+
+            for (int i = 0; i < current.Categories.Length; i++)
+            {
+                if (current.Categories[i].TryAddNpc(npc))
+                    return;
+            }
+        }
+
+        public void RemoveNpcInCategory(Category category, int slotIndex)
         {
             if(current == null)
                 return;
 
+            //TODO rework : wtf i has doing
             var index = 0;
             for (int i = 0; i < current.Categories.Length; i++)
             {
@@ -79,34 +102,41 @@ namespace Rooms
                     break;
                 }
             }
-            var selectNpc = new SelectNpcForCategory(current.Categories[index], slotIndex);
-            var npcResult = await selectNpc.Run();
-            current.Categories[index].AddNpc(npcResult.value, slotIndex);
+            
+            var currentNpc = current.Categories[index].CurrentNpcs[slotIndex];
+            current.Categories[index].RemoveNpc(currentNpc);
         }
 
-        public async void Apply()
+        private async void Apply()
         {
-            for (int i = 0; i < current.Categories.Length; i++)
+            try
             {
-                var category = current.Categories[i];
-                for (int j = 0; j < category.CurrentNpcs.Count; j++)
+                for (int i = 0; i < current.Categories.Length; i++)
                 {
-                    var npc = category.CurrentNpcs[j];
-                    if (npc is null)
+                    var category = current.Categories[i];
+                    for (int j = 0; j < category.CurrentNpcs.Count; j++)
                     {
-                        Debug.LogError($"Trying to apply without assign all npcs in category {category.Name}");
-                        return;
+                        var npc = category.CurrentNpcs[j];
+                        if (npc is null)
+                        {
+                            Debug.LogError($"Trying to apply without assign all npcs in category {category.Name}");
+                            return;
+                        }
                     }
                 }
-            }
 
-            var consequenceSummary = new ActionConsequenceSummary(current.CurrentAction);
-            var result  = await consequenceSummary.Run();
+                var consequenceSummary = new ActionConsequenceSummary(current.CurrentAction);
+                var result  = await consequenceSummary.Run();
 
-            if (!result)
-                return;
+                if (!result)
+                    return;
             
-            current?.SetResult(true);
+                current?.SetResult(true);
+            }
+            catch (Exception e)
+            {
+                Debug.LogError(e);
+            }
         }
     }
 }

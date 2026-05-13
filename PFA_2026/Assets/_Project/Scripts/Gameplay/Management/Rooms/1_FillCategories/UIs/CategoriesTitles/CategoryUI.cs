@@ -69,7 +69,7 @@ namespace Rooms
 
         public void OnClicked(int index)
         {
-            fillCategoriesUI.ChooseCategory(Current, index);
+            fillCategoriesUI.RemoveNpcInCategory(Current, index);
         }
     }
 }

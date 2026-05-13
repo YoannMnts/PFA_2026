@@ -1,16 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading;
 using Helteix.Tools.Phases;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.Managers.Rooms;
+using Naussilus.Gameplay.Management.Phases;
 using UnityEngine;
 
 public class ManagementPhase : PhaseCompletionSource<bool>
 {
-    public event Action<Npc> OnNpcClicked;
-    
+    public static void AddNpcClickListener(INpcClickListener npcClickListener) => NpcClickListeners.Add(npcClickListener);
+    public static void RemoveNpcClickListener(INpcClickListener npcClickListener) => NpcClickListeners.Remove(npcClickListener);
+
+    private static readonly List<INpcClickListener> NpcClickListeners = new List<INpcClickListener>();
     public ActionPoint CurrentActionPoint { get; private set; }
     public Npc[] CurrentNpcs { get; private set; }
     
@@ -36,6 +40,15 @@ public class ManagementPhase : PhaseCompletionSource<bool>
 
     public void NpcClicked(Npc npc)
     {
-        OnNpcClicked?.Invoke(npc);
+        NpcClickListeners.Sort();
+        for (int i = 0; i < NpcClickListeners.Count; i++)
+        {
+            if (NpcClickListeners[0]?.NpcClickPriority > NpcClickListeners[i]?.NpcClickPriority)
+                continue;
+            
+            NpcClickListeners[i]?.OnNpcClick(npc);
+            Debug.Log($"Npc {npc.Name} clicked and Listener is {NpcClickListeners[i]}");
+        }
+        Debug.Log($"NpcLClickListeners: {NpcClickListeners.Count}");
     }
 }

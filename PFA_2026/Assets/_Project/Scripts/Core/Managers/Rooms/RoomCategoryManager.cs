@@ -22,7 +22,7 @@ namespace Naussilus.Core.Managers.Rooms
             return list;
         }
         
-        public static void AddNpc(this Category category, Npc npc, int index)
+        public static bool TryAddNpc(this Category category, Npc npc)
         {
             if (npc.CurrentCategory != category)
                 npc.CurrentCategory?.RemoveNpc(npc);
@@ -30,11 +30,17 @@ namespace Naussilus.Core.Managers.Rooms
             if (category.CurrentNpcs.Contains(npc))
                 category.RemoveNpc(npc);
             
-            var ind = Mathf.Clamp(index, 0, category.CurrentNpcs.Count);
-            Debug.Log(ind);
-            category.CurrentNpcs[ind] = npc;
-            npc.SetCategory(category, false);
-            OnNpcAdded?.Invoke(category);
+            for (int i = 0; i < category.CurrentNpcs.Count; i++)
+            {
+                if (category.CurrentNpcs[i] != null)
+                    continue;
+                
+                category.CurrentNpcs[i] = npc;
+                npc.SetCategory(category, false);
+                OnNpcAdded?.Invoke(category);
+                return true;
+            }
+            return false;
         }
 
         public static void RemoveNpc(this Category category, Npc npc)

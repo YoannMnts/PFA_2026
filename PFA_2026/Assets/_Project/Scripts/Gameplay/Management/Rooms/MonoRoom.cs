@@ -29,7 +29,6 @@ namespace Rooms
             CurrentActionPoint = phase.CurrentActionPoint;
             CurrentPhase = phase;
             
-            Debug.Log($"Management phase begin for npc {Room.Name}");
             base.OnPhaseBegin(phase);
         }
         
