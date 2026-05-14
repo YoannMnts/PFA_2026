@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using JetBrains.Annotations;
 using Naussilus.Core.Managements;
+using UnityEngine;
 
 namespace Naussilus.Core
 {
@@ -15,7 +16,7 @@ namespace Naussilus.Core
         public int RoomCountdown { get; private set; }
         
         public RoomAction CurrentAction { get; private set; }
-        public bool IsIncountdown { get; private set; }
+        public bool IsInCountdown { get; private set; }
         public Room(RoomData data)
         {
             Name = data.Name;
@@ -27,21 +28,26 @@ namespace Naussilus.Core
         public void SetActions(RoomAction actions)
         {
             CurrentAction = actions;
-            AddOrRemoveCountdown(actions.Countdown);
+            RoomCountdown = actions.Countdown;
+            IsInCountdown = true;
         }
 
         public bool AddOrRemoveCountdown(int value)
         {
-            RoomCountdown += value;
+            if (CurrentAction == null)
+                return false;
             
-            if (RoomCountdown > 0)
-            {
-                IsIncountdown = RoomCountdown > 0;
+            RoomCountdown += value;
+
+            Debug.Log($"AddOrRemoveCountdown: {RoomCountdown} on room {Name}");
+            if (RoomCountdown > 0) 
                 return true;
-            }
             
             CurrentAction = null;
+            RoomCountdown = 0;
+            IsInCountdown = false;
             return false;
+
         }
     }
 }

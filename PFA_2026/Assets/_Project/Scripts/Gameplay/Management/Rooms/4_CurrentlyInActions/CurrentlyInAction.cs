@@ -1,15 +1,17 @@
-﻿using Helteix.Tools.Phases;
+﻿using System;
+using Helteix.Tools.Phases;
 using Naussilus.Core;
 
 namespace Rooms
 {
     public class CurrentlyInAction : PhaseCompletionSource<bool>
     {
-        public RoomAction CurrentAction { get; private set; }
+        public Room Room {get; private set;}
+        public RoomAction CurrentAction => Room.CurrentAction;
 
-        public CurrentlyInAction(RoomAction action)
+        public CurrentlyInAction(Room room)
         {
-            CurrentAction = action;
+            Room = room;
         }
     }
 }

@@ -24,7 +24,7 @@ namespace Rooms
             currentlyInAction = phase;
             group.Show();
             actionName.text = phase.CurrentAction.Name;
-            actionCountdown.text = $"Jour restant : {phase.CurrentAction.Countdown}";
+            actionCountdown.text = $"Jour restant : {phase.Room.RoomCountdown}";
             cancelButton.onClick.AddListener(Cancel);
             
             base.OnPhaseBegin(phase);
@@ -35,8 +35,8 @@ namespace Rooms
             group.Hide();
             actionName.text = string.Empty;
             actionCountdown.text = string.Empty;
-            currentlyInAction = null;
             cancelButton.onClick.RemoveAllListeners();
+            currentlyInAction = null;
             
             base.OnPhaseEnd(phase);
         }
