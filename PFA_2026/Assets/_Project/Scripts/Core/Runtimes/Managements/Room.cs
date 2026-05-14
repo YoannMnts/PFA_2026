@@ -13,6 +13,9 @@ namespace Naussilus.Core
         [CanBeNull] public RoomAction[] Actions { get; private set; }
         
         public int RoomCountdown { get; private set; }
+        
+        public RoomAction CurrentAction { get; private set; }
+        public bool IsIncountdown { get; private set; }
         public Room(RoomData data)
         {
             Name = data.Name;
@@ -21,10 +24,24 @@ namespace Naussilus.Core
             RoomCountdown = 0;
         }
 
+        public void SetActions(RoomAction actions)
+        {
+            CurrentAction = actions;
+            AddOrRemoveCountdown(actions.Countdown);
+        }
+
         public bool AddOrRemoveCountdown(int value)
         {
             RoomCountdown += value;
-            return RoomCountdown >= 0;
+            
+            if (RoomCountdown > 0)
+            {
+                IsIncountdown = RoomCountdown > 0;
+                return true;
+            }
+            
+            CurrentAction = null;
+            return false;
         }
     }
 }

@@ -18,7 +18,7 @@ namespace Naussilus.Core
         
         public Npc[] ObligateNpcs { get; private set; }
         
-        public List<Npc> CurrentNpcs { get; private set; }
+        public Npc[] CurrentNpcs { get; private set; }
 
         public Category(CategoryData data)
         {
@@ -26,7 +26,12 @@ namespace Naussilus.Core
             Quantity = data.Quantity;
             ProhibitedNpcs = data.ProhibitedNpc?.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
             ObligateNpcs = data.ObligateNpc?.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
-            CurrentNpcs = this.SetDefaultCurrentNpcs();;
+            CurrentNpcs = this.SetDefaultCurrentNpcs();
+        }
+
+        public void ClearCurrentNpcs()
+        {
+            CurrentNpcs = null;
         }
     }
 }

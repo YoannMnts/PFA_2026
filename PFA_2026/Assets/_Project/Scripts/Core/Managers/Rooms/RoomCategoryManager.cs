@@ -10,16 +10,14 @@ namespace Naussilus.Core.Managers.Rooms
         public static event Action<Category> OnNpcAdded;
         public static event Action<Category> OnNpcRemove;
         
-        public static List<Npc> SetDefaultCurrentNpcs(this Category category)
+        public static Npc[] SetDefaultCurrentNpcs(this Category category)
         {
             var obligateNpcs = category.ObligateNpcs;
             for (int i = 0; i < obligateNpcs.Length; i++)
-                obligateNpcs[i]?.SetCategory(category, false);
+                obligateNpcs[i]?.SetCategory(category);
             
             var currentNpc = obligateNpcs.Length == 0 ? new Npc[category.Quantity] : obligateNpcs;
-            var list = new List<Npc>();
-            list.AddRange(currentNpc);
-            return list;
+            return currentNpc;
         }
         
         public static bool TryAddNpc(this Category category, Npc npc)
@@ -30,13 +28,12 @@ namespace Naussilus.Core.Managers.Rooms
             if (category.CurrentNpcs.Contains(npc))
                 category.RemoveNpc(npc);
             
-            for (int i = 0; i < category.CurrentNpcs.Count; i++)
+            for (int i = 0; i < category.CurrentNpcs.Length; i++)
             {
                 if (category.CurrentNpcs[i] != null)
                     continue;
                 
                 category.CurrentNpcs[i] = npc;
-                npc.SetCategory(category, false);
                 OnNpcAdded?.Invoke(category);
                 return true;
             }
@@ -45,7 +42,7 @@ namespace Naussilus.Core.Managers.Rooms
 
         public static void RemoveNpc(this Category category, Npc npc)
         {
-            for (int i = 0; i < category.CurrentNpcs.Count; i++)
+            for (int i = 0; i < category.CurrentNpcs.Length; i++)
             {
                 if (category.CurrentNpcs[i] != npc)
                     continue;
@@ -56,11 +53,11 @@ namespace Naussilus.Core.Managers.Rooms
         
         public static void ClearNpc(this Category category)
         {
-            for (int i = 0; i < category.CurrentNpcs.Count; i++)
-                category.CurrentNpcs[i]?.SetCategory(null, false);
+            for (int i = 0; i < category.CurrentNpcs.Length; i++)
+                category.CurrentNpcs[i]?.SetCategory(null);
             
-            category.CurrentNpcs.Clear();
-            category.CurrentNpcs.AddRange(category.SetDefaultCurrentNpcs());
+            category.ClearCurrentNpcs();
+            category.SetDefaultCurrentNpcs();
         }
     }
 }

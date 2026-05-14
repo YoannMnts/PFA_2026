@@ -33,7 +33,7 @@ namespace Naussilus.Gameplay
         public void OnPhaseBegin(SwitchDay phase)
         {
             currentSwitchDay = phase;
-            textArea.text = $"Jours {phase.CurrentDay}";
+            textArea.text = $"Jour {phase.CurrentDay}";
             Debug.Log(textArea.text);
             canvasGroup.Show();
         }

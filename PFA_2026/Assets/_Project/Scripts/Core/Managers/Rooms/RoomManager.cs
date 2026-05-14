@@ -9,13 +9,10 @@ namespace Naussilus.Core.Managers.Rooms
     {
         private static readonly Dictionary<string, RoomData> RoomDatas;
         private static readonly Dictionary<string, Room> Rooms;
-        private static readonly Dictionary<Room, RoomAction> CurrentRoomActions;
-        
         static RoomManager()
         {
             RoomDatas = new ();
             Rooms = new Dictionary<string, Room>();
-            CurrentRoomActions = new Dictionary<Room, RoomAction>();
 
             var entries = Resources.LoadAll<RoomData>("ScriptableObjects/Management/Room");
             for (int i = 0; i < entries.Length; i++)
@@ -28,7 +25,6 @@ namespace Naussilus.Core.Managers.Rooms
             {
                 Room entry = new Room(entries[i]);
                 Rooms.Add(entries[i].GUID, entry);
-                CurrentRoomActions.Add(entry, null);
             }
         }
         
@@ -45,30 +41,12 @@ namespace Naussilus.Core.Managers.Rooms
             return room;
         }
 
-        public static bool TryGetCurrentAction(this Room room, out RoomAction roomAction)
-        {
-            CurrentRoomActions.TryGetValue(room, out roomAction);
-            return roomAction != null;
-        }
-
-        public static void SetCurrentAction(this Room room, RoomAction action)
-        {
-            CurrentRoomActions[room] = action;
-            room.AddOrRemoveCountdown(action.Countdown);
-        }
-
         public static void SubtractAllCountdown()
         {
             foreach ((string key, Room room) in Rooms)
             {
-                if(!room.AddOrRemoveCountdown(-1))
-                    room.RemoveCurrentAction();
+                room.AddOrRemoveCountdown(-1);
             }
-        }
-
-        public static void RemoveCurrentAction(this Room room)
-        {
-            CurrentRoomActions.Remove(room);
         }
     }
 }

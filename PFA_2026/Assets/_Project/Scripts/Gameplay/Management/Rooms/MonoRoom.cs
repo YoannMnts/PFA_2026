@@ -24,6 +24,8 @@ namespace Rooms
         public ManagementPhase CurrentPhase { get; private set; }
         
         private SelectActionForRoom selectActionForRoom;
+        private CurrentlyInAction currentlyInAction;
+
         protected override void OnPhaseBegin(ManagementPhase phase)
         {
             CurrentActionPoint = phase.CurrentActionPoint;
@@ -58,6 +60,18 @@ namespace Rooms
             {
                 selectActionForRoom.Cancel();
                 selectActionForRoom = null;
+            }
+
+            if (Room.IsIncountdown)
+            {
+                if (currentlyInAction != null)
+                {
+                    currentlyInAction.Cancel();
+                    currentlyInAction = null;
+                }
+                currentlyInAction = new CurrentlyInAction(Room.CurrentAction);
+                currentlyInAction.RunAndForget();
+                return;
             }
             
             selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint, NpcSlots);

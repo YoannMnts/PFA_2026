@@ -1,10 +1,10 @@
-﻿using Helteix.ChanneledProperties.Priorities;
+﻿using System;
+using Helteix.ChanneledProperties.Priorities;
 using Helteix.Singletons.SceneServices;
 using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
-using Naussilus.Core.Managers.Rooms;
 using Naussilus.Gameplay.Player;
 using TMPro;
 using UnityEngine;
@@ -75,31 +75,39 @@ namespace Rooms
 
         public async void ChooseAction(RoomAction actionData)
         {
-            if(current == null)
-                return;
+            try
+            {
+                if(current == null)
+                    return;
 
-            var index = 0;
-            for (int i = 0; i < current.Choices.Length; i++)
-            {
-                if(current.Choices[i] == actionData)
-                    index = i;
-            }
+                var index = 0;
+                for (int i = 0; i < current.Choices.Length; i++)
+                {
+                    if(current.Choices[i] == actionData)
+                        index = i;
+                }
             
-            var actionCost = -current.Choices[index].Cost;
-            //if (!currentActionPoint.TryAddOrRemove(actionCost))
-            //    return;
+                var actionCost = -current.Choices[index].Cost;
+                if (!currentActionPoint.TryAddOrRemove(actionCost))
+                    return;
             
-            var fillCategory = new FillCategory(current.Choices[index], current.NpcSlots);
-            var result = await fillCategory.Run();
-            /*
-            if (!result)
-            {
-                current.CurrentRoom.TryGetCurrentAction(out var action);
-                currentActionPoint.TryAddOrRemove(action.Cost);
-                return;
+                var fillCategory = new FillCategory(current.Choices[index], current.NpcSlots);
+                var result = await fillCategory.Run();
+            
+                if (!result)
+                {
+                    var actionGain = current.Choices[index].Cost;
+                    currentActionPoint.TryAddOrRemove(actionGain);
+                    return;
+                }
+            
+                current.CurrentRoom.SetActions(current.Choices[index]);
+                current.SetResult(true);
             }
-            */
-            current.SetResult(true);
+            catch (Exception e)
+            {
+                Debug.LogException(e);
+            }
         }
     }
 }

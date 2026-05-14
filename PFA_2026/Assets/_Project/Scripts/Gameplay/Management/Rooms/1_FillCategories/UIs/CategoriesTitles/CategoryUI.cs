@@ -32,7 +32,7 @@ namespace Rooms
         protected override void SyncUI(Category current)
         {
             categoryName.text = current.Name;
-            Debug.Log($"Category name: {current.Name}, current npcs : {Current.CurrentNpcs.Count}");
+            Debug.Log($"Category name: {current.Name}, current npcs : {Current.CurrentNpcs.Length}");
 
             MakeSlots(current);
             RoomCategoryManager.OnNpcAdded += MakeSlots;
@@ -60,7 +60,7 @@ namespace Rooms
                 return;
             
             ClearSlots();
-            for (int i = 0; i < category.CurrentNpcs.Count; i++)
+            for (int i = 0; i < category.CurrentNpcs.Length; i++)
             {
                 var categorySlot = Instantiate(categorySlotPrefab, categorySlotRoot);
                 categorySlot.SyncUI(i);
