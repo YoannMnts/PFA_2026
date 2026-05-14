@@ -9,10 +9,13 @@ public class SelectRoomForShip : PhaseCompletionSource<Room>
     public Room[] CurrentRooms { get; private set; }
 
     public ActionPoint CurrentActionPoint { get; private set; }
+    
+    public ManagementPhase CurrentPhase { get; private set; }
 
-    public SelectRoomForShip(ActionPoint actionPoint)
+    public SelectRoomForShip(ActionPoint actionPoint, ManagementPhase phase)
     {
         CurrentActionPoint = actionPoint;
+        CurrentPhase = phase;
     }
     
     protected override Awaitable Initialize(CancellationToken token)

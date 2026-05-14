@@ -11,10 +11,8 @@ using UnityEngine;
 
 public class ManagementPhase : PhaseCompletionSource<bool>
 {
-    public static void AddNpcClickListener(INpcClickListener npcClickListener) => NpcClickListeners.Add(npcClickListener);
-    public static void RemoveNpcClickListener(INpcClickListener npcClickListener) => NpcClickListeners.Remove(npcClickListener);
-
-    private static readonly List<INpcClickListener> NpcClickListeners = new List<INpcClickListener>();
+    public event Action<Room> OnRoomSelected;
+    
     public ActionPoint CurrentActionPoint { get; private set; }
     public Npc[] CurrentNpcs { get; private set; }
     
@@ -38,17 +36,8 @@ public class ManagementPhase : PhaseCompletionSource<bool>
         return base.Dispose(token);
     }
 
-    public void NpcClicked(Npc npc)
+    public void SelectRoom(Room room)
     {
-        NpcClickListeners.Sort();
-        for (int i = 0; i < NpcClickListeners.Count; i++)
-        {
-            if (NpcClickListeners[0]?.NpcClickPriority > NpcClickListeners[i]?.NpcClickPriority)
-                continue;
-            
-            NpcClickListeners[i]?.OnNpcClick(npc);
-            Debug.Log($"Npc {npc.Name} clicked and Listener is {NpcClickListeners[i]}");
-        }
-        Debug.Log($"NpcLClickListeners: {NpcClickListeners.Count}");
+        OnRoomSelected?.Invoke(room);
     }
 }

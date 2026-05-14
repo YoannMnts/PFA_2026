@@ -5,7 +5,7 @@
     {
         int Priority { get; }
         
-        bool IsInteractable();
+        bool IsInteractable() => true;
 
         void Interact(PlayerInteractions playerInteractions);
 

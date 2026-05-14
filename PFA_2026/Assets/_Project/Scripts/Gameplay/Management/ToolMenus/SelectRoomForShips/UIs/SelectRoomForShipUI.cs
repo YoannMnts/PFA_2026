@@ -48,14 +48,13 @@ public class SelectRoomForShipUI: MonoPhaseListener<SelectRoomForShip>
             Current.SetResult(null);
     }
 
-    public void ChooseRoom(Room roomData)
+    public void ChooseRoom(Room room)
     {
         if (Current == null)
             return;
-
-        var selectActionForRoom = new SelectActionForRoom(roomData, currentActionPoint);
-        selectActionForRoom.RunAndForget();
+        
+        Current.CurrentPhase.SelectRoom(room);
             
-        Current.SetResult(roomData);
+        Current.SetResult(room);
     }
 }

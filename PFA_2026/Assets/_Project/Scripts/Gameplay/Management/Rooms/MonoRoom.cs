@@ -16,7 +16,7 @@ namespace Rooms
         public RoomData RoomData { get; private set; }
 
         [field: SerializeField]
-        public Transform[] NpcSlots { get; private set; }
+        public RoomNpcSlot[] NpcSlots { get; private set; }
         private Room Room => RoomManager.TryGetRoom(RoomData.GUID);
         
         public ActionPoint CurrentActionPoint { get; private set; }
@@ -28,6 +28,7 @@ namespace Rooms
         {
             CurrentActionPoint = phase.CurrentActionPoint;
             CurrentPhase = phase;
+            phase.OnRoomSelected += TrySelectRoom;
             
             base.OnPhaseBegin(phase);
         }
@@ -35,7 +36,17 @@ namespace Rooms
         protected override void OnPhaseEnd(ManagementPhase phase)
         {
             CurrentPhase = null;
+            phase.OnRoomSelected -= TrySelectRoom;
+            
             base.OnPhaseEnd(phase);
+        }
+
+        private void TrySelectRoom(Room room)
+        {
+            if (Room != room)
+                return;
+                
+            Interact(null);
         }
         
         public void Interact(PlayerInteractions playerInteractions)
@@ -49,7 +60,7 @@ namespace Rooms
                 selectActionForRoom = null;
             }
             
-            selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint);
+            selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint, NpcSlots);
             selectActionForRoom.RunAndForget();
         }
 

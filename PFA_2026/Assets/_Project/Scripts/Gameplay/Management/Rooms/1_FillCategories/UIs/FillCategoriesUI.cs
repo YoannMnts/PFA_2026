@@ -3,6 +3,7 @@ using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
+using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.Managers.Rooms;
 using Naussilus.Gameplay.Management.Phases;
 using UnityEngine;
@@ -35,7 +36,7 @@ namespace Rooms
             categoryUIList.Connect(phase.Categories);
             closeButton.onClick.AddListener(Cancel);
             applyButton.onClick.AddListener(Apply);
-            ManagementPhase.AddNpcClickListener(this);
+            this.AddNpcClickListener();
             
             base.OnPhaseBegin(phase);
         }
@@ -50,7 +51,7 @@ namespace Rooms
             group.Hide();
             closeButton.onClick.RemoveAllListeners();
             applyButton.onClick.RemoveAllListeners();
-            ManagementPhase.RemoveNpcClickListener(this);
+            this.RemoveNpcClickListener();
             
             base.OnPhaseEnd(phase);
         }
@@ -83,7 +84,14 @@ namespace Rooms
             for (int i = 0; i < current.Categories.Length; i++)
             {
                 if (current.Categories[i].TryAddNpc(npc))
+                {
+                    for (int j = 0; j < current.NpcSlots.Length; j++)
+                    {
+                        if (current.NpcSlots[j].TryAddNpc(npc))
+                            return;
+                    }
                     return;
+                }
             }
         }
 
@@ -102,8 +110,12 @@ namespace Rooms
                     break;
                 }
             }
-            
+
             var currentNpc = current.Categories[index].CurrentNpcs[slotIndex];
+            for (int i = 0; i < current.NpcSlots.Length; i++)
+            {
+                current.NpcSlots[i].TryRemoveNpc(currentNpc);
+            }
             current.Categories[index].RemoveNpc(currentNpc);
         }
 

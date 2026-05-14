@@ -1,6 +1,7 @@
 ﻿using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
+using Naussilus.Core.Managers.Npcs;
 using UnityEngine;
 
 public class NpcBarUI : MonoPhaseListener<ManagementPhase>
@@ -41,6 +42,6 @@ public class NpcBarUI : MonoPhaseListener<ManagementPhase>
 
     public void OnClick(Npc npc)
     {
-        currentPhase.NpcClicked(npc);
+        npc.NpcClicked();
     }
 }

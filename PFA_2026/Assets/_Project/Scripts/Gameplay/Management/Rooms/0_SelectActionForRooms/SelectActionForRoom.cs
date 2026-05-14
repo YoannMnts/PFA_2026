@@ -15,11 +15,14 @@ namespace Rooms
         
         public RoomAction CurrentAction { get; private set; }
         
+        public RoomNpcSlot[] NpcSlots { get; private set; }
+        
         public ActionPoint CurrentActionPoint { get; private set; }
-        public SelectActionForRoom(Room room, ActionPoint actionPoint)
+        public SelectActionForRoom(Room room, ActionPoint actionPoint, RoomNpcSlot[] npcSlots)
         {
             CurrentRoom = room;
             CurrentActionPoint = actionPoint;
+            NpcSlots = npcSlots;
         }
 
         protected override Awaitable Initialize(CancellationToken token)

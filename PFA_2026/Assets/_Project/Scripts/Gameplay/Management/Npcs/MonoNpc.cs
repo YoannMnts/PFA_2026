@@ -21,19 +21,25 @@ namespace Naussilus.Gameplay.Management.ManagementNpcs
         
         private ManagementPhase currentPhase;
         private CheckNpcState checkNpcPhase;
+        
+        private Vector3 lastPosition;
 
         protected override void OnPhaseBegin(ManagementPhase phase)
         {
             currentPhase = phase;
-            ManagementPhase.AddNpcClickListener(this);
+            this.AddNpcClickListener();
+            Npc.OnSetNewPosition += SetNewPosition;
+            Npc.OnReturnToLastPosition += ReturnToLastPosition;
             
             base.OnPhaseBegin(phase);
         }
 
         protected override void OnPhaseEnd(ManagementPhase phase)
         {
-            ManagementPhase.RemoveNpcClickListener(this);
+            this.RemoveNpcClickListener();
             currentPhase = null;
+            Npc.OnSetNewPosition -= SetNewPosition;
+            Npc.OnReturnToLastPosition -= ReturnToLastPosition;
             
             base.OnPhaseEnd(phase);
         }
@@ -69,9 +75,15 @@ namespace Naussilus.Gameplay.Management.ManagementNpcs
             Debug.Log($"Npc {Npc.Name} is interacting");
         }
 
-        public bool IsInteractable()
+        private void SetNewPosition(Transform newTransform)
         {
-            return true;
+            lastPosition = gameObject.transform.position;
+            gameObject.transform.position = newTransform.position;
+        }
+
+        private void ReturnToLastPosition()
+        {
+            gameObject.transform.position = lastPosition;
         }
     }
 }

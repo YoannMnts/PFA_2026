@@ -9,9 +9,11 @@ namespace Rooms
 
         public Category[] Categories => CurrentAction.Categories;
         
-        public FillCategory(RoomAction action)
+        public RoomNpcSlot[] NpcSlots { get; private set; }
+        public FillCategory(RoomAction action, RoomNpcSlot[] currentNpcSlots)
         {
             CurrentAction = action;
+            NpcSlots = currentNpcSlots;
         }
     }
 }
