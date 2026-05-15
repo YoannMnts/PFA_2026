@@ -5,6 +5,9 @@ using UnityEngine;
 
 namespace Naussilus.Gameplay
 {
+    [RequireComponent(typeof(PlayerInputs))]
+    [RequireComponent(typeof(PlayerInteractions))]
+    [RequireComponent(typeof(PlayerCamera))]
     public class PlayerController : SceneService<PlayerController>
     {
 
