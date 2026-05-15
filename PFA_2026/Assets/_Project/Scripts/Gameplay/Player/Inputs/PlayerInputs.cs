@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.Pool;
 
-namespace Naussilus.Gameplay.Player
+namespace Naussilus.Gameplay
 {
     public class PlayerInputs : PlayerComponent
     {

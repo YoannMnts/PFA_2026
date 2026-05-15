@@ -1,5 +1,8 @@
-﻿using Helteix.Tools.Phases;
+﻿using System.Threading;
+using Helteix.Tools.Phases;
 using Naussilus.Core;
+using Unity.Collections.LowLevel.Unsafe;
+using UnityEngine;
 
 namespace Naussilus.Gameplay
 {
@@ -7,10 +10,13 @@ namespace Naussilus.Gameplay
     {
         public Room Room {get; private set;}
         public RoomAction CurrentAction => Room.CurrentAction;
+        
+        public MonoCineCamera CurrentCineCamera  {get; private set;}
 
-        public CurrentlyInAction(Room room)
+        public CurrentlyInAction(Room room, MonoCineCamera cineCamera)
         {
             Room = room;
+            CurrentCineCamera = cineCamera;
         }
     }
 }

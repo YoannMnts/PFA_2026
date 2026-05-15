@@ -1,9 +1,8 @@
 ﻿using Helteix.Tools.Phases;
 using Naussilus.Core.Managers;
-using Naussilus.Gameplay.VisualNovel.VisualNovels;
 using UnityEngine;
 
-namespace Naussilus.Gameplay.VisualNovel.UIs
+namespace Naussilus.Gameplay
 {
     public class LaunchVisualNovelUI : MonoBehaviour, IPhaseListener<VisualNovelPhase>
     {

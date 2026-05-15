@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Naussilus.Gameplay.Player
+namespace Naussilus.Gameplay
 {
     public abstract class PlayerComponent : MonoBehaviour
     {

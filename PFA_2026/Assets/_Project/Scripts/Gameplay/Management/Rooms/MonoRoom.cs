@@ -3,7 +3,7 @@ using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managements;
 using Naussilus.Core.Managers.Rooms;
-using Naussilus.Gameplay.Player.Interactions;
+using Naussilus.Gameplay.Interactions;
 using UnityEngine;
 
 namespace Naussilus.Gameplay
@@ -14,6 +14,9 @@ namespace Naussilus.Gameplay
         
         [field: SerializeField] 
         public RoomData RoomData { get; private set; }
+        
+        [field: SerializeField]
+        public MonoCineCamera CineCamera { get; private set; }
 
         [field: SerializeField]
         public RoomNpcSlot[] NpcSlots { get; private set; }
@@ -63,12 +66,12 @@ namespace Naussilus.Gameplay
 
             if (Room.IsInCountdown)
             {
-                var currentlyInAction = new CurrentlyInAction(Room);
+                var currentlyInAction = new CurrentlyInAction(Room, CineCamera);
                 currentlyInAction.RunAndForget();
                 return;
             }
             
-            selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint, NpcSlots);
+            selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint, NpcSlots, CineCamera);
             selectActionForRoom.RunAndForget();
         }
 

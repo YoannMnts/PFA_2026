@@ -1,23 +1,25 @@
 ﻿using Helteix.ChanneledProperties.Priorities;
 using Helteix.Singletons.SceneServices;
 using Helteix.Tools.Phases;
-using Naussilus.Gameplay.VisualNovel;
+using Unity.Cinemachine;
 using UnityEngine;
 
-namespace Naussilus.Gameplay.Player.Interactions
+namespace Naussilus.Gameplay.Interactions
 {
     public class PlayerInteractions : PlayerComponent, IPhaseListener<ManagementPhase>
     {
         private static readonly RaycastHit2D[] Hits = new RaycastHit2D[8];
 
-        [SerializeField] private TapInput tapInput;
+        private Camera cam;
+        
 
+        [SerializeField] private TapInput tapInput;
         public Priority<bool> CanInteract { get; private set; }
 
         private void Awake()
         {
             CanInteract = new Priority<bool>(true);
-
+            cam = Camera.main;
             CanInteract.OnValueChanged += OnCanInteractChange;
         }
 
@@ -69,8 +71,7 @@ namespace Naussilus.Gameplay.Player.Interactions
         {
             if (touchInput is not TapInput)
                 return;
-
-            Camera cam = Controller.PlayerCamera.Cam;
+            
             Vector2 worldPos = cam.ScreenToWorldPoint(tapInput.TapPosition);
 
             //TODO mettre le vrai filter

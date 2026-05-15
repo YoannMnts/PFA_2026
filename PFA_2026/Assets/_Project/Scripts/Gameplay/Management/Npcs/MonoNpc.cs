@@ -3,7 +3,7 @@ using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
-using Naussilus.Gameplay.Player.Interactions;
+using Naussilus.Gameplay.Interactions;
 using UnityEngine;
 
 namespace Naussilus.Gameplay

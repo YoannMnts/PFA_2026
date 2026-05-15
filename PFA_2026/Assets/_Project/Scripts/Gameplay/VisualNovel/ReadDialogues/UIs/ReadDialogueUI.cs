@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Naussilus.Gameplay.VisualNovel.ReadDialogues.UIs
+namespace Naussilus.Gameplay
 {
     public class ReadDialogueUI : MonoPhaseListener<ReadDialogue>, IPointerClickHandler
     {

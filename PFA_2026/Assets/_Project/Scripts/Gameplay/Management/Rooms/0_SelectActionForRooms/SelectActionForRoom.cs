@@ -16,11 +16,15 @@ namespace Naussilus.Gameplay
         public RoomNpcSlot[] NpcSlots { get; private set; }
         
         public ActionPoint CurrentActionPoint { get; private set; }
-        public SelectActionForRoom(Room room, ActionPoint actionPoint, RoomNpcSlot[] npcSlots)
+        
+        public MonoCineCamera CurrentCineCamera { get; private set; }
+        
+        public SelectActionForRoom(Room room, ActionPoint actionPoint, RoomNpcSlot[] npcSlots, MonoCineCamera cineCamera)
         {
             CurrentRoom = room;
             CurrentActionPoint = actionPoint;
             NpcSlots = npcSlots;
+            CurrentCineCamera = cineCamera;
         }
 
         protected override Awaitable Initialize(CancellationToken token)

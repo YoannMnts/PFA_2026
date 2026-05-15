@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Naussilus.Gameplay.VisualNovel.SelectAnswers.UIs
+namespace Naussilus.Gameplay
 {
     public class AnswerUI : UIItem<IAnswer>
     {

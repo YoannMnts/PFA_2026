@@ -1,14 +1,10 @@
 ﻿using Helteix.ChanneledProperties.Priorities;
 using Helteix.Singletons.SceneServices;
-using Naussilus.Gameplay.Player.Cameras;
-using Naussilus.Gameplay.Player.Interactions;
+using Naussilus.Gameplay.Interactions;
 using UnityEngine;
 
-namespace Naussilus.Gameplay.Player
+namespace Naussilus.Gameplay
 {
-    [RequireComponent(typeof(PlayerInputs))]
-    [RequireComponent(typeof(PlayerInteractions))]
-    [RequireComponent(typeof(PlayerCamera))]
     public class PlayerController : SceneService<PlayerController>
     {
 

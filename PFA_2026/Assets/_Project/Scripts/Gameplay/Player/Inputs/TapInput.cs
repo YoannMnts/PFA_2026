@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Naussilus.Gameplay.Player
+namespace Naussilus.Gameplay
 {
     [Serializable]
     public class TapInput : ITouchInput

@@ -1,16 +1,18 @@
 ﻿using Helteix.ChanneledProperties.Priorities;
 using Helteix.Singletons.SceneServices;
 using Helteix.Tools.Phases;
+using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-namespace Naussilus.Gameplay.Player.Cameras
+namespace Naussilus.Gameplay
 {
     public class PlayerCamera : PlayerComponent, IPhaseListener<ManagementPhase>
     {
-        public Camera Cam => cam;
+        public CinemachineCamera PlayerCam => playerCam;
         
         [SerializeField]
-        private Camera cam;
+        private CinemachineCamera playerCam;
         
         [SerializeField]
         private PinchInput pinchInput;
@@ -54,13 +56,13 @@ namespace Naussilus.Gameplay.Player.Cameras
         private void Update()
         {
             //Debug.Log($"{slideInput.Delta}");
-            cam.orthographicSize = Mathf.Clamp(
-                cam.orthographicSize + pinchInput.Delta * zoomSpeed,
+            playerCam.Lens.OrthographicSize = Mathf.Clamp(
+                playerCam.Lens.OrthographicSize + pinchInput.Delta * zoomSpeed,
                 minZoom,
                 maxZoom
             );
             
-            cam.transform.position = VectorAddition(cam.transform.position, (slideInput.Delta * slideSpeed));
+            playerCam.transform.position = VectorAddition(playerCam.transform.position, (slideInput.Delta * slideSpeed));
         }
 
         private void CanMoveChange(bool canMove)

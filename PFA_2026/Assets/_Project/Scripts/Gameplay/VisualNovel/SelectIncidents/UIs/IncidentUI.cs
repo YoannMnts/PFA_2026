@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Naussilus.Gameplay.VisualNovel.SelectIncidents.UIs
+namespace Naussilus.Gameplay
 {
     public class IncidentUI : UIItem<Incident>
     {

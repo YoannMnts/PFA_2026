@@ -5,7 +5,6 @@ using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
-using Naussilus.Gameplay.Player;
 using TMPro;
 using UnityEngine;
 
@@ -46,6 +45,7 @@ namespace Naussilus.Gameplay
                 controller.PlayerCamera.CanMove.AddPriority(this, PriorityTags.High, false);
             }
             
+            phase.CurrentCineCamera.SwitchToThisCamera();
             base.OnPhaseBegin(phase);
         }
 
@@ -62,6 +62,7 @@ namespace Naussilus.Gameplay
             {
                 controller.PlayerInteractions.CanInteract.RemovePriority(this);
                 controller.PlayerCamera.CanMove.RemovePriority(this);
+                controller.PlayerCamera.PlayerCam.SwitchToThisCamera();
             }
 
             base.OnPhaseEnd(phase);

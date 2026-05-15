@@ -3,7 +3,7 @@ using Naussilus.Core;
 using Naussilus.Core.Managers;
 using UnityEngine;
 
-namespace Naussilus.Gameplay.VisualNovel.SelectAnswers.UIs
+namespace Naussilus.Gameplay
 {
     public class SelectAnswerUI : MonoPhaseListener<SelectAnswer>
     {

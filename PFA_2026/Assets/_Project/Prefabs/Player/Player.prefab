@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1932016910870411705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5878848699189870682}
+  - component: {fileID: 8532601478599535379}
+  - component: {fileID: 3666694516970084650}
+  - component: {fileID: 5661573749427549414}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5878848699189870682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932016910870411705}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 418.2271, y: 323.57568, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8532601478599535379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932016910870411705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53b790c556249dc87f21d0f93408f75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Naussilus.Gameplay::Naussilus.Gameplay.PlayerInputs
+--- !u!114 &3666694516970084650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932016910870411705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 049e7289e7b64008834bf9d644ed2888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Naussilus.Gameplay::Naussilus.Gameplay.Player.Interactions.PlayerInteractions
+--- !u!114 &5661573749427549414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932016910870411705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44287cb0a26c4141ab920435787f9e8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Naussilus.Gameplay::Naussilus.Gameplay.Player.PlayerController
+  <PlayerInputs>k__BackingField: {fileID: 8532601478599535379}
+  <PlayerCamera>k__BackingField: {fileID: 824771591945130206, guid: 5ba0742a54008a440b5905f510eb0622, type: 3}
+  <PlayerInteractions>k__BackingField: {fileID: 3666694516970084650}

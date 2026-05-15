@@ -4,7 +4,6 @@ using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managers;
 using Naussilus.Gameplay.Behaviors;
 using Naussilus.Gameplay.MentalStates;
-using Naussilus.Gameplay.Player;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

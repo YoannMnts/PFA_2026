@@ -1,7 +1,6 @@
 ﻿using System;
 using Helteix.Tools.Phases;
 using Naussilus.Core.Managers;
-using Naussilus.Gameplay.VisualNovel.VisualNovels;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

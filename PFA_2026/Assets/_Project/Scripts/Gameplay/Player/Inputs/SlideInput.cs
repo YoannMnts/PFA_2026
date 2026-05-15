@@ -3,7 +3,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Naussilus.Gameplay.Player
+namespace Naussilus.Gameplay
 {
     [Serializable]
     public class SlideInput : ITouchInput

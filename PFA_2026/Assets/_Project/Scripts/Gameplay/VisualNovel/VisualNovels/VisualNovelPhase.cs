@@ -3,13 +3,9 @@ using System.Threading.Tasks;
 using Helteix.Tools.Phases;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
-using Naussilus.Gameplay.VisualNovel.ReadDialogues;
-using Naussilus.Gameplay.VisualNovel.SelectAnswers;
-using Naussilus.Gameplay.VisualNovel.SelectIncidents;
-using Naussilus.Gameplay.VisualNovel.VisualNovelSummaries;
 using UnityEngine;
 
-namespace Naussilus.Gameplay.VisualNovel.VisualNovels
+namespace Naussilus.Gameplay
 {
     public class VisualNovelPhase : IPhase<bool>
     {

@@ -1,4 +1,4 @@
-﻿namespace Naussilus.Gameplay.Player.Interactions
+﻿namespace Naussilus.Gameplay.Interactions
 {
     //TODO Implementer
     public interface IInteractable

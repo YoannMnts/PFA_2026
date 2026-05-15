@@ -1,4 +1,5 @@
-﻿using Helteix.Tools.Phases.Listeners;
+﻿using Helteix.Singletons.SceneServices;
+using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managers;
 using TMPro;
 using UnityEngine;
@@ -26,6 +27,7 @@ namespace Naussilus.Gameplay
             actionName.text = phase.CurrentAction.Name;
             actionCountdown.text = $"Jour restant : {phase.Room.RoomCountdown}";
             cancelButton.onClick.AddListener(Cancel);
+            phase.CurrentCineCamera.SwitchToThisCamera();
             
             base.OnPhaseBegin(phase);
         }
@@ -37,6 +39,9 @@ namespace Naussilus.Gameplay
             actionCountdown.text = string.Empty;
             cancelButton.onClick.RemoveAllListeners();
             currentlyInAction = null;
+            
+            if(this.TryGetService(out PlayerController playerController))
+                playerController.PlayerCamera.PlayerCam.SwitchToThisCamera();
             
             base.OnPhaseEnd(phase);
         }

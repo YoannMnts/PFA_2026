@@ -1,7 +1,7 @@
 ﻿using Helteix.Tools.Phases;
 using Naussilus.Core;
 
-namespace Naussilus.Gameplay.VisualNovel.SelectAnswers
+namespace Naussilus.Gameplay
 {
     public class SelectAnswer : PhaseCompletionSource<IAnswer>
     {
