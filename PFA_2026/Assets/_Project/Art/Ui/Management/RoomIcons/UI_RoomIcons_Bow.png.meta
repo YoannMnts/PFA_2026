@@ -1,31 +1,28 @@
 fileFormatVersion: 2
-guid: 530b7cafbc996e548bd00fceb906239f
+guid: 8cffc395cc95fcb46b3e44e4cdcedbf3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4091385929636027555
-    second: TempUI_Textbox_0
+      213: -1478328037196276402
+    second: UI_RoomIcons_Bow_0
   - first:
-      213: 2430033870576424908
-    second: TempUI_Textbox_1
+      213: -3248982022985139514
+    second: UI_RoomIcons_Bow_1
   - first:
-      213: -5411661090495389601
-    second: TempUI_Textbox_2
+      213: 2696616930860594120
+    second: UI_RoomIcons_Bow_2
   - first:
-      213: -3287140596534309724
-    second: TempUI_Textbox_3
+      213: 5717655667219085321
+    second: UI_RoomIcons_Bow_3
   - first:
-      213: -2043646539862863685
-    second: TempUI_Textbox_4
+      213: -4864782662381571445
+    second: UI_RoomIcons_Bow_4
   - first:
-      213: 2470661571929801174
-    second: TempUI_Textbox_5
+      213: -6088219875815577707
+    second: UI_RoomIcons_Bow_5
   - first:
-      213: 9135670756472487171
-    second: TempUI_Textbox_6
-  - first:
-      213: -3579135622809810028
-    second: TempUI_Textbox_7
+      213: -6937337415509449672
+    second: UI_RoomIcons_Bow_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -93,7 +90,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -121,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TempUI_Textbox_0
+      name: UI_RoomIcons_Bow_0
       rect:
         serializedVersion: 2
-        x: 240
-        y: 273
-        width: 253
-        height: 154
+        x: 63
+        y: 152
+        width: 165
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ac9cfe63d587c830800000000000000
-      internalID: 4091385929636027555
+      spriteID: e4d5a619b7ceb7be0800000000000000
+      internalID: -1478328037196276402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempUI_Textbox_1
+      name: UI_RoomIcons_Bow_1
       rect:
         serializedVersion: 2
-        x: 260
-        y: 84
-        width: 1536
-        height: 343
+        x: 63
+        y: 124
+        width: 19
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc710ef2ee639b120800000000000000
-      internalID: 2430033870576424908
+      spriteID: 6ca375e501c49e2d0800000000000000
+      internalID: -3248982022985139514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempUI_Textbox_2
+      name: UI_RoomIcons_Bow_2
       rect:
         serializedVersion: 2
-        x: 480
-        y: 394
-        width: 414
-        height: 80
+        x: 81
+        y: 124
+        width: 26
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f50283019eae5e4b0800000000000000
-      internalID: -5411661090495389601
+      spriteID: 8c3ff33bfce4c6520800000000000000
+      internalID: 2696616930860594120
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempUI_Textbox_3
+      name: UI_RoomIcons_Bow_3
       rect:
         serializedVersion: 2
-        x: 892
-        y: 401
-        width: 120
-        height: 44
+        x: 106
+        y: 124
+        width: 50
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ac8ec02b0bb162d0800000000000000
-      internalID: -3287140596534309724
+      spriteID: 908b7903981395f40800000000000000
+      internalID: 5717655667219085321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempUI_Textbox_4
+      name: UI_RoomIcons_Bow_4
       rect:
         serializedVersion: 2
-        x: 1044
-        y: 401
-        width: 120
-        height: 44
+        x: 154
+        y: 124
+        width: 26
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb09409bc4283a3e0800000000000000
-      internalID: -2043646539862863685
+      spriteID: b82744b71f1dc7cb0800000000000000
+      internalID: -4864782662381571445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempUI_Textbox_5
+      name: UI_RoomIcons_Bow_5
       rect:
         serializedVersion: 2
-        x: 1563
-        y: 274
-        width: 253
-        height: 152
+        x: 179
+        y: 127
+        width: 16
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d1851b0c9d894220800000000000000
-      internalID: 2470661571929801174
+      spriteID: 5972a8b974c428ba0800000000000000
+      internalID: -6088219875815577707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempUI_Textbox_6
+      name: UI_RoomIcons_Bow_6
       rect:
         serializedVersion: 2
-        x: 893
-        y: 67
-        width: 118
-        height: 44
+        x: 63
+        y: 77
+        width: 99
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,30 +265,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30d7770762c68ce70800000000000000
-      internalID: 9135670756472487171
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TempUI_Textbox_7
-      rect:
-        serializedVersion: 2
-        x: 1043
-        y: 69
-        width: 121
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 49b89773d1b545ec0800000000000000
-      internalID: -3579135622809810028
+      spriteID: 834688d4060a9bf90800000000000000
+      internalID: -6937337415509449672
       vertices: []
       indices: 
       edges: []
@@ -310,14 +285,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TempUI_Textbox_0: 4091385929636027555
-      TempUI_Textbox_1: 2430033870576424908
-      TempUI_Textbox_2: -5411661090495389601
-      TempUI_Textbox_3: -3287140596534309724
-      TempUI_Textbox_4: -2043646539862863685
-      TempUI_Textbox_5: 2470661571929801174
-      TempUI_Textbox_6: 9135670756472487171
-      TempUI_Textbox_7: -3579135622809810028
+      UI_RoomIcons_Bow_0: -1478328037196276402
+      UI_RoomIcons_Bow_1: -3248982022985139514
+      UI_RoomIcons_Bow_2: 2696616930860594120
+      UI_RoomIcons_Bow_3: 5717655667219085321
+      UI_RoomIcons_Bow_4: -4864782662381571445
+      UI_RoomIcons_Bow_5: -6088219875815577707
+      UI_RoomIcons_Bow_6: -6937337415509449672
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

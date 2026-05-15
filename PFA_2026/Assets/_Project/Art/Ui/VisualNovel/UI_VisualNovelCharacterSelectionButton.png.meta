@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2d0cb99d509da844fb1bab1ef1712a66
+guid: 8d605252445cc2f448fb1a8db19131b4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8435469550848734716
-    second: UI_Activity_Button_0
+      213: -3042715812970109027
+    second: UI_VisualNovelCharacterSelectionButton_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_Activity_Button_0
+      name: UI_VisualNovelCharacterSelectionButton_0
       rect:
         serializedVersion: 2
-        x: 46
-        y: 45
-        width: 420
-        height: 422
+        x: 7
+        y: 2
+        width: 499
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cf576fb0ddec01570800000000000000
-      internalID: 8435469550848734716
+      spriteID: d97e37fc61a16c5d0800000000000000
+      internalID: -3042715812970109027
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UI_Activity_Button_0: 8435469550848734716
+      UI_VisualNovelCharacterSelectionButton_0: -3042715812970109027
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
