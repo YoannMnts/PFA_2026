@@ -1,8 +1,6 @@
 ﻿using System;
-using Naussilus.Core;
 
-
-namespace Naussilus.Gameplay.Management.Phases
+namespace Naussilus.Core.Managers.Npcs
 {
     public interface INpcClickListener : IComparable<INpcClickListener>
     {

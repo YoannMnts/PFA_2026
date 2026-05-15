@@ -6,7 +6,7 @@ using Naussilus.Core.Managers.Rooms;
 using Naussilus.Gameplay.Player.Interactions;
 using UnityEngine;
 
-namespace Rooms
+namespace Naussilus.Gameplay
 {
     public class MonoRoom: MonoPhaseListener<ManagementPhase>, IInteractable
     {

@@ -1,6 +1,6 @@
 ﻿using Helteix.Tools.UI;
 
-namespace Rooms
+namespace Naussilus.Gameplay
 {
     public class ConsequenceTextUIList : UIList<string[], ConsequenceTextUI>
     {

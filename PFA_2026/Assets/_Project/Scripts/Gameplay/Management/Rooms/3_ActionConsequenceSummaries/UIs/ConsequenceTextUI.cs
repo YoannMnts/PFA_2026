@@ -2,7 +2,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace Rooms
+namespace Naussilus.Gameplay
 {
     public class ConsequenceTextUI : UIItem<string[]>
     {

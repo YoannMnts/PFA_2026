@@ -2,33 +2,36 @@
 using Naussilus.Core.Managers;
 using UnityEngine;
 
-public class ManagementUI : MonoBehaviour, IPhaseListener<ManagementPhase>
+namespace Naussilus.Gameplay
 {
-    [SerializeField]
-    private CanvasGroup canvasGroup;
-
-    private void Awake()
+    public class ManagementUI : MonoBehaviour, IPhaseListener<ManagementPhase>
     {
-        canvasGroup.Hide();
-    }
+        [SerializeField]
+        private CanvasGroup canvasGroup;
 
-    private void OnEnable()
-    {
-        this.Register();
-    }
+        private void Awake()
+        {
+            canvasGroup.Hide();
+        }
 
-    private void OnDisable()
-    {
-        this.Unregister();
-    }
+        private void OnEnable()
+        {
+            this.Register();
+        }
 
-    public void OnPhaseBegin(ManagementPhase phase)
-    {
-        canvasGroup.Show();
-    }
+        private void OnDisable()
+        {
+            this.Unregister();
+        }
 
-    public void OnPhaseEnd(ManagementPhase phase)
-    {
-        canvasGroup.Hide();
+        public void OnPhaseBegin(ManagementPhase phase)
+        {
+            canvasGroup.Show();
+        }
+
+        public void OnPhaseEnd(ManagementPhase phase)
+        {
+            canvasGroup.Hide();
+        }
     }
 }

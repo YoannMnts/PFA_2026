@@ -1,9 +1,7 @@
-﻿using System.Threading;
-using Helteix.Tools.Phases;
+﻿using Helteix.Tools.Phases;
 using Naussilus.Core;
-using UnityEngine;
 
-namespace Rooms
+namespace Naussilus.Gameplay
 {
     public class ActionConsequenceSummary : PhaseCompletionSource<bool>
     {

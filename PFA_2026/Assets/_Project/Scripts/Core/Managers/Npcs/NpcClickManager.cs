@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Naussilus.Gameplay.Management.Phases;
 using UnityEngine;
 
 namespace Naussilus.Core.Managers.Npcs

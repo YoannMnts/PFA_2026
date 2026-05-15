@@ -1,14 +1,12 @@
-﻿using System;
-using Helteix.Tools.Phases;
+﻿using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
-using Naussilus.Gameplay.Management.Phases;
 using Naussilus.Gameplay.Player.Interactions;
 using UnityEngine;
 
-namespace Naussilus.Gameplay.Management.ManagementNpcs
+namespace Naussilus.Gameplay
 {
     public class MonoNpc : MonoPhaseListener<ManagementPhase>, IInteractable, INpcClickListener
     {

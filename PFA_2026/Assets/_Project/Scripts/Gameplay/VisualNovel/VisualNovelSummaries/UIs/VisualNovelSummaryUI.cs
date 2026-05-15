@@ -2,7 +2,7 @@
 using Naussilus.Core.Managers;
 using UnityEngine;
 
-namespace Naussilus.Gameplay.VisualNovel
+namespace Naussilus.Gameplay.VisualNovel.VisualNovelSummaries.UIs
 {
     public class VisualNovelSummaryUI : MonoPhaseListener<VisualNovelSummary>
     {

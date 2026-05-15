@@ -1,6 +1,6 @@
-﻿using Cameras;
-using Helteix.ChanneledProperties.Priorities;
+﻿using Helteix.ChanneledProperties.Priorities;
 using Helteix.Singletons.SceneServices;
+using Naussilus.Gameplay.Player.Cameras;
 using Naussilus.Gameplay.Player.Interactions;
 using UnityEngine;
 

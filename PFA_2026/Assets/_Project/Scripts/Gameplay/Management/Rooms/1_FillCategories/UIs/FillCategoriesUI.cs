@@ -5,11 +5,11 @@ using Naussilus.Core;
 using Naussilus.Core.Managers;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.Managers.Rooms;
-using Naussilus.Gameplay.Management.Phases;
+using Naussilus.Gameplay.CategoriesTitles;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Rooms
+namespace Naussilus.Gameplay
 {
     public class FillCategoriesUI : MonoPhaseListener<FillCategory> ,INpcClickListener
     {

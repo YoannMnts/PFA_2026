@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6851607486441518026}
   - component: {fileID: 3200868117392851887}
-  - component: {fileID: 8357520140453567624}
   - component: {fileID: -6076456844434278847}
+  - component: {fileID: 2406073394045087443}
   m_Layer: 5
-  m_Name: MentalStates
+  m_Name: UIList
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65,20 +65,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &8357520140453567624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5795074087919246482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
-  m_HorizontalFit: 0
-  m_VerticalFit: 1
 --- !u!114 &-6076456844434278847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,6 +78,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay.Management::_Project.Scripts.NpcMenus.CheckNpcStats.UIs.MentalStateUIList
   prefab: {fileID: -8822839028615145051, guid: 4214a54c144abd84586e19489dfcbfcd, type: 3}
+  dividerPrefab: {fileID: 0}
+  root: {fileID: 6851607486441518026}
+--- !u!114 &2406073394045087443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5795074087919246482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af061db2a864716b1bb8ecff110c146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Naussilus.Gameplay::Naussilus.Gameplay.Management.ManagementNpcs.CheckNpcScores.UIs.RelationshipUIList
+  prefab: {fileID: 3369753019935183460, guid: 4949d3a846b8a7b409d84af12edd659d, type: 3}
   dividerPrefab: {fileID: 0}
   root: {fileID: 6851607486441518026}
 --- !u!1001 &2223329494837595429

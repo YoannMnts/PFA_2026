@@ -1,12 +1,11 @@
 ﻿using System;
 using Helteix.Tools.Phases.Listeners;
-using Naussilus.Gameplay.Player.Interactions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Naussilus.Gameplay.VisualNovel
+namespace Naussilus.Gameplay.VisualNovel.ReadDialogues.UIs
 {
     public class ReadDialogueUI : MonoPhaseListener<ReadDialogue>, IPointerClickHandler
     {

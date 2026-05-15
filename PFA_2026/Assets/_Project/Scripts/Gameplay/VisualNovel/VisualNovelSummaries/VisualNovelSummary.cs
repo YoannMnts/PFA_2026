@@ -3,8 +3,7 @@ using Helteix.Tools.Phases;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
 
-
-namespace Naussilus.Gameplay.VisualNovel
+namespace Naussilus.Gameplay.VisualNovel.VisualNovelSummaries
 {
     public class VisualNovelSummary : PhaseCompletionSource<bool>
     {

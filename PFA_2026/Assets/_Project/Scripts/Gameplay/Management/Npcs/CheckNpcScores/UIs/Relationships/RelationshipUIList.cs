@@ -3,7 +3,7 @@ using Naussilus.Core;
 
 namespace Naussilus.Gameplay
 {
-    public class ShipRoomUIList : UIList<Room, ShipRoomUI>
+    public class RelationshipUIList : UIList<NpcRelationship, RelationshipUI>
     {
         
     }

@@ -4,44 +4,47 @@ using Naussilus.Core.Managers;
 using Naussilus.Core.Managers.Npcs;
 using UnityEngine;
 
-public class NpcBarUI : MonoPhaseListener<ManagementPhase>
+namespace Naussilus.Gameplay
 {
-    [SerializeField] private CanvasGroup group;
-    [SerializeField] private NpcSlotUIList npcSlotUIList;
+    public class NpcBarUI : MonoPhaseListener<ManagementPhase>
+    {
+        [SerializeField] private CanvasGroup group;
+        [SerializeField] private NpcSlotUIList npcSlotUIList;
     
-    private ManagementPhase currentPhase;
+        private ManagementPhase currentPhase;
     
-    private void Start()
-    {
-        group.Hide();
-    }
+        private void Start()
+        {
+            group.Hide();
+        }
 
-    protected override void OnPhaseBegin(ManagementPhase phase)
-    {
-        if (currentPhase != null)
-            return;
+        protected override void OnPhaseBegin(ManagementPhase phase)
+        {
+            if (currentPhase != null)
+                return;
             
-        currentPhase = phase;
-        group.Show();
-        npcSlotUIList.Connect(phase.CurrentNpcs);
+            currentPhase = phase;
+            group.Show();
+            npcSlotUIList.Connect(phase.CurrentNpcs);
             
-        base.OnPhaseBegin(phase);
-    }
+            base.OnPhaseBegin(phase);
+        }
 
-    protected override void OnPhaseEnd(ManagementPhase phase)
-    {
-        if (currentPhase == null)
-            return;
+        protected override void OnPhaseEnd(ManagementPhase phase)
+        {
+            if (currentPhase == null)
+                return;
             
-        currentPhase = null;
-        group.Hide();
-        npcSlotUIList.Disconnect();
+            currentPhase = null;
+            group.Hide();
+            npcSlotUIList.Disconnect();
             
-        base.OnPhaseEnd(phase);
-    }
+            base.OnPhaseEnd(phase);
+        }
 
-    public void OnClick(Npc npc)
-    {
-        npc.NpcClicked();
+        public void OnClick(Npc npc)
+        {
+            npc.NpcClicked();
+        }
     }
 }

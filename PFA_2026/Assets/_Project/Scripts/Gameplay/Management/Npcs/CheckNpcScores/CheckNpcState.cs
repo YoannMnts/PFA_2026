@@ -1,34 +1,38 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 using Helteix.Tools.Phases;
 using Naussilus.Core;
-using Naussilus.Gameplay.Management.ManagementNpcs;
 using UnityEngine;
 
-public class CheckNpcState : PhaseCompletionSource<bool>
+namespace Naussilus.Gameplay
 {
-    public MonoNpc CurrentMonoNpc { get; private set; }
-    public Npc CurrentNpc => CurrentMonoNpc.Npc;
-        
-    public Behavior[] NpcBehaviors { get; private set; }
-    public MentalState[] NpcMentalStates { get; private set; }
-        
-    public CheckNpcState(MonoNpc monoNpc)
+    public class CheckNpcState : PhaseCompletionSource<bool>
     {
-        CurrentMonoNpc = monoNpc;
-    }
+        public MonoNpc CurrentMonoNpc { get; private set; }
+        public Npc CurrentNpc => CurrentMonoNpc.Npc;
         
-    protected override Awaitable Initialize(CancellationToken token)
-    {
-        NpcBehaviors = CurrentNpc.Behaviors;
-        NpcMentalStates = CurrentNpc.MentalStates;
-        return base.Initialize(token);
-    }
+        public Behavior[] NpcBehaviors { get; private set; }
+        public MentalState[] NpcMentalStates { get; private set; }
+    
+        public NpcRelationship[] NpcRelationships { get; private set; }
+        
+        public CheckNpcState(MonoNpc monoNpc)
+        {
+            CurrentMonoNpc = monoNpc;
+        }
+        
+        protected override Awaitable Initialize(CancellationToken token)
+        {
+            NpcBehaviors = CurrentNpc.Behaviors;
+            NpcMentalStates = CurrentNpc.MentalStates;
+            NpcRelationships = CurrentNpc.Relationships;
+            return base.Initialize(token);
+        }
 
-    protected override Awaitable Dispose(CancellationToken token)
-    {
-        NpcBehaviors = null;
-        NpcMentalStates = null;
-        return base.Dispose(token);
+        protected override Awaitable Dispose(CancellationToken token)
+        {
+            NpcBehaviors = null;
+            NpcMentalStates = null;
+            return base.Dispose(token);
+        }
     }
 }

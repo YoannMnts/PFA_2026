@@ -1,10 +1,11 @@
 ﻿using System.Linq;
 using Naussilus.Core;
+using Naussilus.Gameplay.CategoriesTitles;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Rooms
+namespace Naussilus.Gameplay.CategoriesSlots
 {
     public class CategorySlot : MonoBehaviour
     {

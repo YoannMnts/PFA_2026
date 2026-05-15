@@ -1,13 +1,11 @@
 ﻿using System;
 using Helteix.Tools.Phases;
 using Naussilus.Core.Managers;
-using Naussilus.Core.Managers.Npcs;
-using Naussilus.Core.Managers.Rooms;
-using Naussilus.Gameplay.VisualNovel;
+using Naussilus.Gameplay.VisualNovel.VisualNovels;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Naussilus.Gameplay.Launcher
+namespace Naussilus.Gameplay
 {
     public class LaunchingPhases : MonoBehaviour
     {

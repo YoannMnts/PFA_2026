@@ -1,8 +1,6 @@
-﻿using System;
-using Naussilus.Gameplay.Player;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Naussilus.Gameplay
+namespace Naussilus.Gameplay.Player
 {
     public class PlayerDefaultTouchInputs : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine.InputSystem;
 
-namespace Naussilus.Gameplay
+namespace Naussilus.Gameplay.Player
 {
     public interface ITouchInput : IComparable<ITouchInput>
     {

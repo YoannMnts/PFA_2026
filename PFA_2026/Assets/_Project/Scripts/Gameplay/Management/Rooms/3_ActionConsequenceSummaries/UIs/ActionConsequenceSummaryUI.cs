@@ -3,7 +3,7 @@ using Naussilus.Core.Managers;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Rooms
+namespace Naussilus.Gameplay
 {
     public class ActionConsequenceSummaryUI : MonoPhaseListener<ActionConsequenceSummary>
     {

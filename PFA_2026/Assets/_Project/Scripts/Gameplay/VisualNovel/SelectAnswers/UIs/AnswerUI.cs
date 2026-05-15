@@ -1,11 +1,10 @@
-﻿using System;
-using Helteix.Tools.UI;
+﻿using Helteix.Tools.UI;
 using Naussilus.Core;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Naussilus.Gameplay.VisualNovel
+namespace Naussilus.Gameplay.VisualNovel.SelectAnswers.UIs
 {
     public class AnswerUI : UIItem<IAnswer>
     {

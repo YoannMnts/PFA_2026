@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Rooms
+namespace Naussilus.Gameplay
 {
     public class CurrentlyInActionUI : MonoPhaseListener<CurrentlyInAction>
     {

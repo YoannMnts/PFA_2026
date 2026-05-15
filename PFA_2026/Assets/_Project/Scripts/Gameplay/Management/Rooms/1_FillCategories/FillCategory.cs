@@ -1,7 +1,7 @@
 ﻿using Helteix.Tools.Phases;
 using Naussilus.Core;
 
-namespace Rooms
+namespace Naussilus.Gameplay
 {
     public class FillCategory : PhaseCompletionSource<bool>
     {

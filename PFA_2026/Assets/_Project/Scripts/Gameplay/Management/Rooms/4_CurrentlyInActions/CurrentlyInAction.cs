@@ -1,8 +1,7 @@
-﻿using System;
-using Helteix.Tools.Phases;
+﻿using Helteix.Tools.Phases;
 using Naussilus.Core;
 
-namespace Rooms
+namespace Naussilus.Gameplay
 {
     public class CurrentlyInAction : PhaseCompletionSource<bool>
     {

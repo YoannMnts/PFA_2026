@@ -1,60 +1,61 @@
-﻿using Helteix.Tools.Phases;
-using Helteix.Tools.Phases.Listeners;
+﻿using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
-using Rooms;
 using UnityEngine;
 
-public class SelectRoomForShipUI: MonoPhaseListener<SelectRoomForShip>
+namespace Naussilus.Gameplay
 {
-    [SerializeField] private CanvasGroup group;
-    [SerializeField] private ShipRoomUIList shipUIList;
-
-    public SelectRoomForShip Current { get; private set; }
-
-    private ActionPoint currentActionPoint;
-    private void Start()
+    public class SelectRoomForShipUI: MonoPhaseListener<SelectRoomForShip>
     {
-        group.Hide();
-    }
+        [SerializeField] private CanvasGroup group;
+        [SerializeField] private ShipRoomUIList shipUIList;
 
-    protected override void OnPhaseBegin(SelectRoomForShip phase)
-    {
-        if (Current != null)
-            return;
+        public SelectRoomForShip Current { get; private set; }
+
+        private ActionPoint currentActionPoint;
+        private void Start()
+        {
+            group.Hide();
+        }
+
+        protected override void OnPhaseBegin(SelectRoomForShip phase)
+        {
+            if (Current != null)
+                return;
             
-        Current = phase;
-        group.Show();
-        shipUIList.Connect(phase.CurrentRooms);
+            Current = phase;
+            group.Show();
+            shipUIList.Connect(phase.CurrentRooms);
             
-        base.OnPhaseBegin(phase);
-    }
+            base.OnPhaseBegin(phase);
+        }
 
-    protected override void OnPhaseEnd(SelectRoomForShip phase)
-    {
-        if (Current != phase)
-            return;
+        protected override void OnPhaseEnd(SelectRoomForShip phase)
+        {
+            if (Current != phase)
+                return;
             
-        Current = null;
-        shipUIList.Disconnect();
-        group.Hide();
+            Current = null;
+            shipUIList.Disconnect();
+            group.Hide();
             
-        base.OnPhaseEnd(phase);
-    }
+            base.OnPhaseEnd(phase);
+        }
 
-    public void Cancel()
-    {
-        if (Current != null)
-            Current.SetResult(null);
-    }
+        public void Cancel()
+        {
+            if (Current != null)
+                Current.SetResult(null);
+        }
 
-    public void ChooseRoom(Room room)
-    {
-        if (Current == null)
-            return;
+        public void ChooseRoom(Room room)
+        {
+            if (Current == null)
+                return;
         
-        Current.CurrentPhase.SelectRoom(room);
+            Current.CurrentPhase.SelectRoom(room);
             
-        Current.SetResult(room);
+            Current.SetResult(room);
+        }
     }
 }

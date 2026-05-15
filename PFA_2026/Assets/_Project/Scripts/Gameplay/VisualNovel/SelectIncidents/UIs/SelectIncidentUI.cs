@@ -1,10 +1,9 @@
-﻿using System;
-using Helteix.Tools.Phases.Listeners;
+﻿using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
 using UnityEngine;
 
-namespace Naussilus.Gameplay.VisualNovel
+namespace Naussilus.Gameplay.VisualNovel.SelectIncidents.UIs
 {
     public class SelectIncidentUI : MonoPhaseListener<SelectIncident>
     {

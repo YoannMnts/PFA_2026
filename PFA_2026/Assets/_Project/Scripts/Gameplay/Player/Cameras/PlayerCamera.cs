@@ -1,11 +1,9 @@
 ﻿using Helteix.ChanneledProperties.Priorities;
 using Helteix.Singletons.SceneServices;
 using Helteix.Tools.Phases;
-using Naussilus.Gameplay;
-using Naussilus.Gameplay.Player;
 using UnityEngine;
 
-namespace Cameras
+namespace Naussilus.Gameplay.Player.Cameras
 {
     public class PlayerCamera : PlayerComponent, IPhaseListener<ManagementPhase>
     {

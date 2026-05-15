@@ -1,7 +1,7 @@
 ﻿using Helteix.Tools.Phases;
 using Naussilus.Core;
 
-namespace Naussilus.Gameplay.VisualNovel
+namespace Naussilus.Gameplay.VisualNovel.ReadDialogues
 {
     public class ReadDialogue : PhaseCompletionSource<bool>
     {

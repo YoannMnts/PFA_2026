@@ -3,7 +3,7 @@ using JetBrains.Annotations;
 using Naussilus.Core;
 using UnityEngine;
 
-namespace Rooms
+namespace Naussilus.Gameplay
 {
     [Serializable]
     public class RoomNpcSlot

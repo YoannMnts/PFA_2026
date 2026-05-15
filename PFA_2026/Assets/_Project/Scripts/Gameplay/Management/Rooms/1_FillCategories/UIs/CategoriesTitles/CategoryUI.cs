@@ -1,11 +1,11 @@
-﻿using System;
-using Helteix.Tools.UI;
+﻿using Helteix.Tools.UI;
 using Naussilus.Core;
 using Naussilus.Core.Managers.Rooms;
+using Naussilus.Gameplay.CategoriesSlots;
 using TMPro;
 using UnityEngine;
 
-namespace Rooms
+namespace Naussilus.Gameplay.CategoriesTitles
 {
     public class CategoryUI : UIItem<Category>
     {

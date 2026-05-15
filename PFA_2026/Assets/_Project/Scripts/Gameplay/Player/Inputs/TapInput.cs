@@ -1,10 +1,8 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
-using UnityEngine.Pool;
 
-namespace Naussilus.Gameplay
+namespace Naussilus.Gameplay.Player
 {
     [Serializable]
     public class TapInput : ITouchInput

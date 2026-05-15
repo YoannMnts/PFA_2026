@@ -3,7 +3,7 @@ using Naussilus.Core;
 using TMPro;
 using UnityEngine;
 
-namespace Rooms
+namespace Naussilus.Gameplay
 {
     public class RoomActionUI : UIItem<RoomAction>
     {

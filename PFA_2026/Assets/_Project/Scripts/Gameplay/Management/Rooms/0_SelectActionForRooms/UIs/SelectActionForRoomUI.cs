@@ -9,7 +9,7 @@ using Naussilus.Gameplay.Player;
 using TMPro;
 using UnityEngine;
 
-namespace Rooms
+namespace Naussilus.Gameplay
 {
     public class SelectActionForRoomUI : MonoPhaseListener<SelectActionForRoom>
     {

@@ -4,7 +4,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Naussilus.Gameplay
+namespace Naussilus.Gameplay.Player
 { 
     [Serializable]
     public class PinchInput : ITouchInput

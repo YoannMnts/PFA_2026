@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using Naussilus.Gameplay.Player;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.Pool;
 
-namespace Naussilus.Gameplay
+namespace Naussilus.Gameplay.Player
 {
     public class PlayerInputs : PlayerComponent
     {

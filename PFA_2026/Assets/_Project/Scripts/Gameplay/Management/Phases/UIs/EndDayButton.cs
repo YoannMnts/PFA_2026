@@ -1,9 +1,10 @@
-﻿using Naussilus.Gameplay;
-
-public class EndDayButton : PhaseButton<ManagementPhase>
+﻿namespace Naussilus.Gameplay
 {
-    protected override void OnButtonClicked()
+    public class EndDayButton : PhaseButton<ManagementPhase>
     {
-        currentPhase.SetResult(true);
+        protected override void OnButtonClicked()
+        {
+            currentPhase.SetResult(true);
+        }
     }
 }
