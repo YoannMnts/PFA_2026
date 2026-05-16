@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3595595919635174814}
   - component: {fileID: 409033339932005382}
+  - component: {fileID: 8563667415552014701}
   m_Layer: 5
   m_Name: NpcSlotList
   m_TagString: Untagged
@@ -52,6 +53,32 @@ MonoBehaviour:
   prefab: {fileID: 7345712796000058156, guid: bc1f994812f722d408c980f9fd62b997, type: 3}
   dividerPrefab: {fileID: 0}
   root: {fileID: 3595595919635174814}
+--- !u!114 &8563667415552014701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6810087145473322602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.HorizontalLayoutGroup
+  m_Padding:
+    m_Left: 20
+    m_Right: 20
+    m_Top: 20
+    m_Bottom: 20
+  m_ChildAlignment: 5
+  m_Spacing: 20
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1001 &4426840072506895978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70,27 +97,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5813596700392446381, guid: bc1f994812f722d408c980f9fd62b997, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5813596700392446381, guid: bc1f994812f722d408c980f9fd62b997, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5813596700392446381, guid: bc1f994812f722d408c980f9fd62b997, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5813596700392446381, guid: bc1f994812f722d408c980f9fd62b997, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5813596700392446381, guid: bc1f994812f722d408c980f9fd62b997, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
-      objectReference: {fileID: 0}
-    - target: {fileID: 5813596700392446381, guid: bc1f994812f722d408c980f9fd62b997, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 30
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 5813596700392446381, guid: bc1f994812f722d408c980f9fd62b997, type: 3}
       propertyPath: m_LocalPosition.x
@@ -122,11 +145,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5813596700392446381, guid: bc1f994812f722d408c980f9fd62b997, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 1772
       objectReference: {fileID: 0}
     - target: {fileID: 5813596700392446381, guid: bc1f994812f722d408c980f9fd62b997, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -148
       objectReference: {fileID: 0}
     - target: {fileID: 5813596700392446381, guid: bc1f994812f722d408c980f9fd62b997, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
