@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 674d59775aa445344a4cd3af91691f26
+guid: 4047654be4f61354e83d449e7c78220f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8048838480319082410
-    second: TempUI_CharacterSelectVN_CharacterName_0
+      213: -7311774432982702900
+    second: UI_ActivityRecap_Button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TempUI_CharacterSelectVN_CharacterName_0
+      name: UI_ActivityRecap_Button_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 2
-        width: 499
-        height: 251
+        x: 17
+        y: 58
+        width: 471
+        height: 134
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6501616fb08cc4090800000000000000
-      internalID: -8048838480319082410
+      spriteID: cc4684484eb578a90800000000000000
+      internalID: -7311774432982702900
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TempUI_CharacterSelectVN_CharacterName_0: -8048838480319082410
+      UI_ActivityRecap_Button_0: -7311774432982702900
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

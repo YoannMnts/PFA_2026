@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5d719b83496791b4bb928acc30cb1e3b
+guid: 2b9a4ca2a580665479c50d59bd60dc3f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2025205230629499788
-    second: TempUI_CaptainBook_0
+      213: 7316304265704575622
+    second: UI_RoomIcons_DrivingRoom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TempUI_CaptainBook_0
+      name: UI_RoomIcons_DrivingRoom_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 52
+        y: 41
+        width: 153
+        height: 173
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 47cc01f929605e3e0800000000000000
-      internalID: -2025205230629499788
+      spriteID: 6821ff957fbb88560800000000000000
+      internalID: 7316304265704575622
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TempUI_CaptainBook_0: -2025205230629499788
+      UI_RoomIcons_DrivingRoom_0: 7316304265704575622
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
