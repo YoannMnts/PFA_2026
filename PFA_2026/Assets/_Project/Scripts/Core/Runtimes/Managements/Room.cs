@@ -13,6 +13,8 @@ namespace Naussilus.Core
         
         [CanBeNull] public RoomAction[] Actions { get; private set; }
         
+        [CanBeNull] public Sprite Icon { get; private set; }
+        
         public int RoomCountdown { get; private set; }
         
         public RoomAction CurrentAction { get; private set; }
@@ -22,6 +24,7 @@ namespace Naussilus.Core
             Name = data.Name;
             Description = data.Description;
             Actions = data.Actions?.Select(a => new RoomAction(a)).ToArray();
+            Icon = data.Icon;
             RoomCountdown = 0;
         }
 

@@ -24,7 +24,7 @@ namespace Naussilus.Gameplay
         {
             currentRoom = current;
             text.text = current.Name;
-            //sprite.sprite = current.Sprite;
+            sprite.sprite = current.Icon;
             button.onClick.AddListener(OnClicked);
         }
 

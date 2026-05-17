@@ -60,7 +60,7 @@ MonoBehaviour:
     <Npc>k__BackingField:
       rid: 3949848295130792055
   <Gender>k__BackingField: 1
-  <CategoryIcon>k__BackingField: {fileID: -363737857, guid: 407b3790283bd9d4c9bc017dc983f557, type: 3}
+  <CategoryIcon>k__BackingField: {fileID: 21300000, guid: 286010a5f392f2944a63bf9454f2809c, type: 3}
   <CurrentThinking>k__BackingField: 
   <GUID>k__BackingField: 1488f3ed-0ac3-4821-8e57-1232bd231ea8
   references:

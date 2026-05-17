@@ -19,6 +19,9 @@ namespace Naussilus.Core.Managements
         [field: SerializeField]
         public ActionData[] Actions { get; private set; }
         
+        [field: SerializeField]
+        public Sprite Icon { get; private set; }
+        
         [field: SerializeField, HideInInspector]
         public string GUID { get; private set; }
 

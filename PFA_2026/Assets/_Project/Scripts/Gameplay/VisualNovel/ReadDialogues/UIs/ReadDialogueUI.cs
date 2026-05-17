@@ -10,7 +10,10 @@ namespace Naussilus.Gameplay
     public class ReadDialogueUI : MonoPhaseListener<ReadDialogue>, IPointerClickHandler
     {
         [SerializeField] 
-        private TMP_Text text;
+        private TMP_Text dialogueText;
+        
+        [SerializeField] 
+        private TMP_Text characterName;
         
         [SerializeField]
         private Image bgImage;
@@ -25,7 +28,7 @@ namespace Naussilus.Gameplay
                 {
                     for (int j = 0; j < phase.DialogueLines[i].Text.Length; j++)
                     {
-                        text.text = phase.DialogueLines[i].Text[j];
+                        dialogueText.text = phase.DialogueLines[i].Text[j];
                         isDialogueRead = false;
                         while (!isDialogueRead)
                             await Awaitable.NextFrameAsync();
