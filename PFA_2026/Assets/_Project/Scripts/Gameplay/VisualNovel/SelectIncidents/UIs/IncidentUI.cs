@@ -28,7 +28,6 @@ namespace Naussilus.Gameplay
         {
             nameText.text = current.Npcs[0].Name;
             iconImage.sprite = current.Npcs[0].CategoryIcon;
-            
             selectButton.onClick.AddListener(OnClick);
         }
 

@@ -26,9 +26,11 @@ namespace Naussilus.Gameplay
             {
                 for (int i = 0; i < phase.DialogueLines.Length; i++)
                 {
-                    for (int j = 0; j < phase.DialogueLines[i].Text.Length; j++)
+                    var dialogueLine = phase.DialogueLines[i];
+                    characterName.text = dialogueLine.Npc.Name;
+                    for (int j = 0; j < dialogueLine.Text.Length; j++)
                     {
-                        dialogueText.text = phase.DialogueLines[i].Text[j];
+                        dialogueText.text = dialogueLine.Text[j];
                         isDialogueRead = false;
                         while (!isDialogueRead)
                             await Awaitable.NextFrameAsync();

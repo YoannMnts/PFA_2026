@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: 40, y: 20, z: 40, w: 20}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -395,5 +395,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay.Management::_Project.Scripts.ShipRoomUI
   button: {fileID: 3090905007275942948}
-  sprite: {fileID: 0}
+  sprite: {fileID: 329490581767407215}
   text: {fileID: 3914615547205494363}
