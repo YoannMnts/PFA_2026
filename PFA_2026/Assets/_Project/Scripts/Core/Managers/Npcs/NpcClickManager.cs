@@ -19,9 +19,7 @@ namespace Naussilus.Core.Managers.Npcs
                     continue;
             
                 NpcClickListeners[i]?.OnNpcClick(npc);
-                Debug.Log($"Npc {npc.Name} clicked and Listener is {NpcClickListeners[i]}");
             }
-            Debug.Log($"NpcLClickListeners: {NpcClickListeners.Count}");
         }
     }
 }

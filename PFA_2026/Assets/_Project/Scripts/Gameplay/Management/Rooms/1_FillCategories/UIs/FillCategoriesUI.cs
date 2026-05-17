@@ -7,6 +7,7 @@ using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.Managers.Rooms;
 using Naussilus.Gameplay.CategoriesTitles;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace Naussilus.Gameplay
@@ -64,16 +65,16 @@ namespace Naussilus.Gameplay
 
         public void Cancel()
         {
-            if (current != null)
+            if (current == null)
+                return;
+            
+            for (var i = 0; i < current.Categories.Length; i++)
             {
-                for (var i = 0; i < current.Categories.Length; i++)
-                {
-                    var category = current.Categories[i];
-                    category.ClearNpc();
-                }
-
-                current.SetResult(false);
+                var category = current.Categories[i];
+                category.ClearNpc();
             }
+            
+            current.Cancel();
         }
 
         private void AddNpcInCategory(Npc npc)
@@ -100,23 +101,21 @@ namespace Naussilus.Gameplay
             if(current == null)
                 return;
 
-            //TODO rework : wtf i has doing
-            var index = 0;
             for (int i = 0; i < current.Categories.Length; i++)
             {
                 if (current.Categories[i] == category)
                 {
-                    index = i;
+                    var currentNpc = current.Categories[i].CurrentNpcs[slotIndex];
+                    
+                    for (int j = 0; j < current.NpcSlots.Length; j++)
+                    {
+                        if(current.NpcSlots[j].TryRemoveNpc(currentNpc))
+                            break;
+                    }
+                    current.Categories[i].RemoveNpc(currentNpc);
                     break;
                 }
             }
-
-            var currentNpc = current.Categories[index].CurrentNpcs[slotIndex];
-            for (int i = 0; i < current.NpcSlots.Length; i++)
-            {
-                current.NpcSlots[i].TryRemoveNpc(currentNpc);
-            }
-            current.Categories[index].RemoveNpc(currentNpc);
         }
 
         private async void Apply()

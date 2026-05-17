@@ -25,8 +25,13 @@ namespace Naussilus.Core.Managers.Rooms
             if (npc.CurrentCategory != category)
                 npc.CurrentCategory?.RemoveNpc(npc);
             
-            if (category.CurrentNpcs.Contains(npc))
-                category.RemoveNpc(npc);
+            for (int i = 0; i < category.CurrentNpcs.Length; i++)
+            {
+                if (category.CurrentNpcs[i] != npc) 
+                    continue;
+                category.CurrentNpcs[i] = null;
+                return false;
+            }
             
             for (int i = 0; i < category.CurrentNpcs.Length; i++)
             {
@@ -57,7 +62,6 @@ namespace Naussilus.Core.Managers.Rooms
                 category.CurrentNpcs[i]?.SetCategory(null);
             
             category.ClearCurrentNpcs();
-            category.SetDefaultCurrentNpcs();
         }
     }
 }

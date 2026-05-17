@@ -21,14 +21,14 @@ namespace Naussilus.Gameplay
 
         protected override void SyncUI(Npc current)
         {
-            icon.sprite = current.CategoryIcon;
+            //icon.sprite = current.CategoryIcon;
             npcName.text = current.Name;
             button.onClick.AddListener(OnClick);
         }
 
         protected override void ClearUI()
         {
-            icon.sprite = null;
+            //icon.sprite = null;
             npcName.text = string.Empty;
             button.onClick.RemoveAllListeners();
         }

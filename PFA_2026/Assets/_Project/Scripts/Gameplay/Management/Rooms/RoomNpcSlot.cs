@@ -8,7 +8,6 @@ namespace Naussilus.Gameplay
     [Serializable]
     public class RoomNpcSlot
     {
-        [field: SerializeField]
         [CanBeNull] public Npc CurrentNpc { get; private set; }
         
         [field: SerializeField]
@@ -24,13 +23,14 @@ namespace Naussilus.Gameplay
             return true;
         }
 
-        public void TryRemoveNpc(Npc npc)
+        public bool TryRemoveNpc(Npc npc)
         {
             if (CurrentNpc != npc)
-                return;
+                return false;
             
             CurrentNpc?.ReturnToLastPosition();
             CurrentNpc = null;
+            return true;
         }
     }
 }
