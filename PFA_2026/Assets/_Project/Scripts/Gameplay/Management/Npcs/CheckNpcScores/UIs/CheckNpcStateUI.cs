@@ -6,6 +6,7 @@ using Naussilus.Gameplay.Behaviors;
 using Naussilus.Gameplay.MentalStates;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Naussilus.Gameplay
@@ -19,10 +20,9 @@ namespace Naussilus.Gameplay
         [SerializeField] private BehaviorUIList behaviorUIList;
         [SerializeField] private MentalStateUIList mentalStateUIList;
         [SerializeField] private RelationshipUIList relationshipUIList;
-        [SerializeField] private Button changeListButton;
+        [SerializeField] private Button relationshipButton;
+        [SerializeField] private Button statButton;
 
-        private bool isMentalStateActive;
-        private bool isRelationshipActive;
 
         private void Start()
         {
@@ -36,8 +36,8 @@ namespace Naussilus.Gameplay
             group.Show();
             //behaviorUIList.Connect(phase.NpcBehaviors);
             mentalStateUIList.Connect(phase.NpcMentalStates);
-            isMentalStateActive = true;
-            changeListButton.onClick.AddListener(ChangeUIList);
+            relationshipButton.onClick.AddListener(ChangeToRelationship);
+            statButton.onClick.AddListener(ChangeToStat);
         
         
             if (this.TryGetService(out PlayerController controller))
@@ -52,7 +52,8 @@ namespace Naussilus.Gameplay
             //behaviorUIList.Disconnect();
             mentalStateUIList.Disconnect();
             group.Hide();
-            changeListButton.onClick.RemoveAllListeners();
+            relationshipButton.onClick.RemoveAllListeners();
+            statButton.onClick.RemoveAllListeners();
             
             if (this.TryGetService(out PlayerController controller))
                 controller.PlayerInteractions.CanInteract.RemovePriority(this);
@@ -60,24 +61,16 @@ namespace Naussilus.Gameplay
             base.OnPhaseEnd(phase);
         }
 
-        private void ChangeUIList()
+        private void ChangeToStat()
         {
-            if (isMentalStateActive)
-            {
-                mentalStateUIList.Disconnect();
-                relationshipUIList.Connect(current.NpcRelationships);
-                isMentalStateActive = false;
-                isRelationshipActive = true;
-                return;
-            }
+            relationshipUIList.Disconnect();
+            mentalStateUIList.Connect(current.NpcMentalStates);
+        }
 
-            if (isRelationshipActive)
-            {
-                relationshipUIList.Disconnect();
-                mentalStateUIList.Connect(current.NpcMentalStates);
-                isRelationshipActive = false;
-                isMentalStateActive = true;
-            }
+        private void ChangeToRelationship()
+        {
+            mentalStateUIList.Disconnect();
+            relationshipUIList.Connect(current.NpcRelationships);
         }
 
         public void Cancel()
