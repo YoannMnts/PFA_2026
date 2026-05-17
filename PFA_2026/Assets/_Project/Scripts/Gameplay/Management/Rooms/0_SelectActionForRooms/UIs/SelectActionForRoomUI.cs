@@ -7,6 +7,8 @@ using Naussilus.Core;
 using Naussilus.Core.Managers;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 namespace Naussilus.Gameplay
 {
@@ -16,6 +18,7 @@ namespace Naussilus.Gameplay
         [SerializeField] private TMP_Text roomName;
         [SerializeField] private TMP_Text roomDescription;
         [SerializeField] private RoomActionUIList roomActionUIList;
+        [SerializeField] private Button cancelButton;
 
         public string Name => current.CurrentRoom.Name;
         public string Description => current.CurrentRoom.Description;
@@ -38,6 +41,7 @@ namespace Naussilus.Gameplay
             roomDescription.text = Description;
             currentActionPoint = phase.CurrentActionPoint;
             roomActionUIList.Connect(phase.Choices);
+            cancelButton.onClick.AddListener(Cancel);
 
             if (this.TryGetService(out PlayerController controller))
             {
@@ -68,10 +72,13 @@ namespace Naussilus.Gameplay
             base.OnPhaseEnd(phase);
         }
 
-        public void Cancel()
+        private void Cancel()
         {
-            if (current != null)
-                current.SetResult(false);
+            Debug.Log($"Cancelling {current}");
+            if (current == null) 
+                return;
+            
+            current.Cancel();
         }
 
         public async void ChooseAction(RoomAction actionData)
@@ -92,6 +99,8 @@ namespace Naussilus.Gameplay
                 if (!currentActionPoint.TryAddOrRemove(actionCost))
                     return;
             
+                roomActionUIList.Disconnect();
+                cancelButton.onClick.RemoveAllListeners();
                 var fillCategory = new FillCategory(current.Choices[index], current.NpcSlots);
                 var result = await fillCategory.Run();
             
@@ -99,6 +108,8 @@ namespace Naussilus.Gameplay
                 {
                     var actionGain = current.Choices[index].Cost;
                     currentActionPoint.TryAddOrRemove(actionGain);
+                    roomActionUIList.Connect(current.Choices);
+                    cancelButton.onClick.AddListener(Cancel);
                     return;
                 }
             

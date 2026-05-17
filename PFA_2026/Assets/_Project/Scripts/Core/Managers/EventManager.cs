@@ -10,17 +10,25 @@ namespace Naussilus.Core.Managers
     public static class EventManager
     {
         private static readonly Dictionary<string, EventData> EventDatas;
+        private static readonly Dictionary<EventData, Incident> Incidents;
         private static readonly List<Incident> CompletedIncidents;
 
         static EventManager()
         {
             EventDatas = new ();
             CompletedIncidents = new ();
+            Incidents = new ();
             var entries = Resources.LoadAll<EventData>("ScriptableObjects/VisualNovel/Event");
             for (int i = 0; i < entries.Length; i++)
             {
                 EventData entry = entries[i];
                 EventDatas.Add(entry.GUID, entry);
+            }
+
+            for (int i = 0; i < entries.Length; i++)
+            {
+                Incident incident = new Incident(entries[i]);
+                Incidents.Add(entries[i], incident);
             }
             
             Debug.Log($"[EventManager] Loaded {entries.Length} events.");
@@ -35,7 +43,7 @@ namespace Naussilus.Core.Managers
                 var isConditionValid = false;
                 foreach ((string key, EventData value) in EventDatas)
                 {
-                    var incident = new Incident(value);
+                    Incidents.TryGetValue(value, out Incident incident);
                     if (CompletedIncidents.Contains(incident))
                     {
                         Debug.Log($"[EventManager] Event already completed: {value.Name}");

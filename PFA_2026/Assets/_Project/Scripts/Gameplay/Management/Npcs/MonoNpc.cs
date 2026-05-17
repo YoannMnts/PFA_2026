@@ -75,12 +75,14 @@ namespace Naussilus.Gameplay
 
         private void SetNewPosition(Transform newTransform)
         {
+            Debug.Log($"Npc {Npc.Name} is setting new position to {newTransform.position}");
             lastPosition = gameObject.transform.position;
             gameObject.transform.position = newTransform.position;
         }
 
         private void ReturnToLastPosition()
         {
+            Debug.Log($"Npc {Npc.Name} is returning to the last position {lastPosition}");
             gameObject.transform.position = lastPosition;
         }
     }

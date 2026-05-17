@@ -32,6 +32,7 @@ namespace Naussilus.Core
         public void ClearCurrentNpcs()
         {
             CurrentNpcs = null;
+            CurrentNpcs = this.SetDefaultCurrentNpcs();
         }
     }
 }

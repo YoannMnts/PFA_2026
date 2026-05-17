@@ -29,7 +29,7 @@ namespace Naussilus.Gameplay.CategoriesSlots
             ClearUI();
             currentIndex = current;
             Npc categoryCurrentNpc = category.CurrentNpcs[current];
-            iconImage.sprite = categoryCurrentNpc?.CategoryIcon;
+            //iconImage.sprite = categoryCurrentNpc?.CategoryIcon;
             nameText.text = categoryCurrentNpc?.Name;
 
             if (category.ObligateNpcs.Contains(categoryCurrentNpc))
@@ -43,7 +43,7 @@ namespace Naussilus.Gameplay.CategoriesSlots
 
         public void ClearUI()
         {
-            iconImage.sprite = null;
+            //iconImage.sprite = null;
             nameText.text = string.Empty;
             button?.onClick.RemoveAllListeners();
         }

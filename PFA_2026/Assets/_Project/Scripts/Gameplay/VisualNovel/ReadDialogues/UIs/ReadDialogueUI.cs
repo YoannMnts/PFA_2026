@@ -16,7 +16,6 @@ namespace Naussilus.Gameplay
         private Image bgImage;
 
         private bool isDialogueRead;
-        public int Priority { get; private set; } = 10;
 
         protected override async void OnPhaseBegin(ReadDialogue phase)
         {
@@ -24,7 +23,7 @@ namespace Naussilus.Gameplay
             {
                 for (int i = 0; i < phase.DialogueLines.Length; i++)
                 {
-                    for (int j = i + 1; j < phase.DialogueLines[i].Text.Length; j++)
+                    for (int j = 0; j < phase.DialogueLines[i].Text.Length; j++)
                     {
                         text.text = phase.DialogueLines[i].Text[j];
                         isDialogueRead = false;
