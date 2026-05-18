@@ -18,7 +18,7 @@ MonoBehaviour:
     <Text>k__BackingField:
     - "Parfait alors ! Je compte sur vous pour maintenir la bonne entente g\xE9n\xE9rale
       dans l\u2019\xE9quipage."
-    - "Il ne faudra pas interrompre notre exp\xE9dition \xE0 cause de tensions\u2026"
+    - "Il ne faudrait pas interrompre notre exp\xE9dition \xE0 cause de tensions\u2026"
     - "Mais je suis s\xFBre que \xE7a n'arrivera pas !"
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 3256ca06d8de8c14b94a19168745f387, type: 2}
