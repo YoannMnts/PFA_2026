@@ -3,7 +3,6 @@ using Helteix.Singletons.SceneServices;
 using Helteix.Tools.Phases;
 using Unity.Cinemachine;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Naussilus.Gameplay
 {
@@ -15,11 +14,13 @@ namespace Naussilus.Gameplay
         private CinemachineCamera playerCam;
         
         [SerializeField]
+        private Camera cam;
+        
+        [SerializeField]
         private PinchInput pinchInput;
         
         [SerializeField]
         private SlideInput slideInput;
-        
 
         [SerializeField] 
         private float zoomSpeed = 0.01f;
@@ -55,14 +56,15 @@ namespace Naussilus.Gameplay
 
         private void Update()
         {
-            //Debug.Log($"{slideInput.Delta}");
             playerCam.Lens.OrthographicSize = Mathf.Clamp(
-                playerCam.Lens.OrthographicSize + pinchInput.Delta * zoomSpeed,
+                cam.orthographicSize + pinchInput.Delta * zoomSpeed,
                 minZoom,
                 maxZoom
             );
             
-            playerCam.transform.position = VectorAddition(playerCam.transform.position, (slideInput.Delta * slideSpeed));
+            Debug.Log($"{slideInput.Delta}");
+            playerCam.transform.position = VectorAddition(cam.transform.position, (slideInput.Delta * slideSpeed));
+            Debug.Log($"playerCam.transform.position: {playerCam.transform.position}");
         }
 
         private void CanMoveChange(bool canMove)

@@ -7,7 +7,6 @@ using Naussilus.Core;
 using Naussilus.Core.Managers;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace Naussilus.Gameplay
@@ -19,6 +18,7 @@ namespace Naussilus.Gameplay
         [SerializeField] private TMP_Text roomDescription;
         [SerializeField] private RoomActionUIList roomActionUIList;
         [SerializeField] private Button cancelButton;
+        [SerializeField] private Transform boatMenuTransform;
 
         public string Name => current.CurrentRoom.Name;
         public string Description => current.CurrentRoom.Description;
@@ -42,6 +42,7 @@ namespace Naussilus.Gameplay
             currentActionPoint = phase.CurrentActionPoint;
             roomActionUIList.Connect(phase.Choices);
             cancelButton.onClick.AddListener(Cancel);
+            boatMenuTransform.gameObject.SetActive(false);
 
             if (this.TryGetService(out PlayerController controller))
             {
@@ -61,6 +62,7 @@ namespace Naussilus.Gameplay
             current = null;
             roomActionUIList.Disconnect();
             group.Hide();
+            boatMenuTransform.gameObject.SetActive(true);
 
             if (this.TryGetService(out PlayerController controller))
             {

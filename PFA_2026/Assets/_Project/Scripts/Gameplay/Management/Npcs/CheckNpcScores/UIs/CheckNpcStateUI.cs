@@ -6,7 +6,6 @@ using Naussilus.Gameplay.Behaviors;
 using Naussilus.Gameplay.MentalStates;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Naussilus.Gameplay
