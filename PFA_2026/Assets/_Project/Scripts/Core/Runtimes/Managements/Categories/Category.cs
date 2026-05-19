@@ -19,6 +19,8 @@ namespace Naussilus.Core
         public Npc[] ObligateNpcs { get; private set; }
         
         public Npc[] CurrentNpcs { get; private set; }
+        
+        
 
         public Category(CategoryData data)
         {

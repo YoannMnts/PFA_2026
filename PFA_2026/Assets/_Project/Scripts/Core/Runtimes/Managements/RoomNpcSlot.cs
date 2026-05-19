@@ -5,13 +5,17 @@ using UnityEngine;
 
 namespace Naussilus.Gameplay
 {
-    [Serializable]
     public class RoomNpcSlot
     {
+        public RoomNpcSlot(Vector3 position, Npc npc = null)
+        {
+            CurrentSlot = position;
+            CurrentNpc = npc;
+        }
+        
         [CanBeNull] public Npc CurrentNpc { get; private set; }
         
-        [field: SerializeField]
-        public Transform CurrentSlot { get; private set; }
+        public Vector3 CurrentSlot { get; private set; }
 
         public bool TryAddNpc(Npc npc)
         {

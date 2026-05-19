@@ -18,5 +18,8 @@ namespace Naussilus.Core.Managements.ActionDatas
         
         [field: SerializeField]
         public NpcData[] ObligateNpc { get; private set; }
+        
+        [field: SerializeField]
+        public RoomSlotPosition[] SlotPositions { get; private set; }
     }
 }

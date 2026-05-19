@@ -78,11 +78,11 @@ namespace Naussilus.Gameplay
             //Debug.Log($"Npc {Npc.Name} is interacting");
         }
 
-        private void SetNewPosition(Transform newTransform)
+        private void SetNewPosition(Vector3 newPosition)
         {
             //Debug.Log($"Npc {Npc.Name} is setting new position to {newTransform.position}");
             lastPosition = gameObject.transform.position;
-            gameObject.transform.position = newTransform.position;
+            gameObject.transform.position = newPosition;
         }
 
         private void ReturnToLastPosition()
