@@ -27,6 +27,7 @@ namespace Naussilus.Gameplay
         public ManagementPhase CurrentPhase { get; private set; }
         
         private SelectActionForRoom selectActionForRoom;
+        
 
         protected override void OnPhaseBegin(ManagementPhase phase)
         {

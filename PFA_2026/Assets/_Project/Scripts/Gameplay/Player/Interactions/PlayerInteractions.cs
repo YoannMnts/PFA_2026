@@ -1,8 +1,11 @@
-﻿using Helteix.ChanneledProperties.Priorities;
+﻿using System.Collections.Generic;
+using Helteix.ChanneledProperties.Priorities;
 using Helteix.Singletons.SceneServices;
 using Helteix.Tools.Phases;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace Naussilus.Gameplay.Interactions
 {
@@ -14,6 +17,8 @@ namespace Naussilus.Gameplay.Interactions
         
 
         [SerializeField] private TapInput tapInput;
+        
+        [SerializeField] private LayerMask interactionMask;
         public Priority<bool> CanInteract { get; private set; }
 
         private void Awake()
@@ -88,6 +93,7 @@ namespace Naussilus.Gameplay.Interactions
 
                     if (hitInteractable.IsInteractable())
                         interactable = hitInteractable;
+                    Debug.Log($"[PlayerInteraction] Trying to interact with {hit.collider.gameObject.name}");
                 }
             }
 

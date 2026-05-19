@@ -74,7 +74,7 @@ namespace Naussilus.Gameplay
             base.OnPhaseEnd(phase);
         }
 
-        private void Cancel()
+        public void Cancel()
         {
             Debug.Log($"Cancelling {current}");
             if (current == null) 

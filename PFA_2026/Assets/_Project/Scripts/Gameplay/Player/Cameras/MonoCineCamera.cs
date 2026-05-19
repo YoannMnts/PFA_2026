@@ -3,23 +3,19 @@ using UnityEngine;
 
 namespace Naussilus.Gameplay
 {
-    public abstract class MonoCineCamera : MonoBehaviour
+    public abstract class MonoCineCamera : MonoBehaviour, ICineCameraListener
     {
-        [SerializeField] private CinemachineCamera cineCamera;
+        [field: SerializeField]
+        public CinemachineCamera CineCamera { get; private set; }
 
         protected virtual void OnEnable()
         {
-            cineCamera.Register();
+            this.Register();
         }
 
         protected virtual void OnDisable()
         {
-            cineCamera.Unregister();
-        }
-
-        public void SwitchToThisCamera()
-        {
-            cineCamera.SwitchToThisCamera();
+            this.Unregister();
         }
     }
 }

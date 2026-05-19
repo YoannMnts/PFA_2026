@@ -60,7 +60,8 @@ namespace Naussilus.Gameplay
 
         public void Abort()
         {
-            current.SetResult(false);
+            if (current != null)
+                current.SetResult(false);
             Debug.Log($"Abort");
         }
     }

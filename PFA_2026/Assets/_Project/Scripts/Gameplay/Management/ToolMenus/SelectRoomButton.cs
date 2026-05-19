@@ -1,13 +1,15 @@
 ﻿using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
+using Naussilus.Gameplay.Interactions;
 
 namespace Naussilus.Gameplay
 {
-    public class MenuTool : MonoPhaseListener<ManagementPhase>
+    public class SelectRoomButton : MonoPhaseListener<ManagementPhase>, IInteractable
     {
         private ActionPoint currentActionPoint;
     
         private ManagementPhase currentPhase;
+        public int Priority { get; private set; } = 10;
 
         protected override void OnPhaseBegin(ManagementPhase phase)
         {
@@ -26,18 +28,14 @@ namespace Naussilus.Gameplay
 
         public void OnShipClicked()
         {
+            //var selectRoomForShip = new SelectRoomForShip(currentActionPoint, currentPhase);
+            //selectRoomForShip.RunAndForget();
+        }
+
+        public void Interact(PlayerInteractions playerInteractions)
+        {
             var selectRoomForShip = new SelectRoomForShip(currentActionPoint, currentPhase);
             selectRoomForShip.RunAndForget();
-        }
-
-        public void OnLogClicked()
-        {
-            
-        }
-
-        public void OnOptionsClicked()
-        {
-            
         }
     }
 }

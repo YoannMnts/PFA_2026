@@ -3,20 +3,20 @@ using Unity.Cinemachine;
 
 namespace Naussilus.Gameplay
 {
-    public static class CameraManager
+    public static class CineCameraManager
     {
         private static List<CinemachineCamera> cameras = new List<CinemachineCamera>();
         
         public static CinemachineCamera ActiveCamera { get; private set; }
 
-        public static void Register(this CinemachineCamera newCamera)
+        public static void Register(this ICineCameraListener newCamera)
         {
-            cameras.Add(newCamera);
+            cameras.Add(newCamera.CineCamera);
         }
 
-        public static void Unregister(this CinemachineCamera newCamera)
+        public static void Unregister(this ICineCameraListener newCamera)
         {
-            cameras.Remove(newCamera);
+            cameras.Remove(newCamera.CineCamera);
         }
 
         public static bool IsActiveCamera(this CinemachineCamera newCamera)
@@ -24,13 +24,17 @@ namespace Naussilus.Gameplay
             return ActiveCamera == newCamera;
         }
 
-        public static void SwitchToThisCamera(this CinemachineCamera newCamera)
+        public static void SwitchToThisCamera(this ICineCameraListener listener)
         {
-            if (newCamera.IsActiveCamera())
+            CinemachineCamera cineCamera = listener.CineCamera;
+            if (!cameras.Contains(cineCamera))
+                return;
+                
+            if (cineCamera.IsActiveCamera())
                 return;
             
-            newCamera.Priority = 10;
-            ActiveCamera = newCamera;
+            cineCamera.Priority = 10;
+            ActiveCamera = cineCamera;
 
             for (int i = 0; i < cameras.Count; i++)
             {

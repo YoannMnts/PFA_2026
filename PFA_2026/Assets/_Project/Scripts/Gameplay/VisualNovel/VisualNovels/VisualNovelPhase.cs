@@ -33,7 +33,7 @@ namespace Naussilus.Gameplay
             {
                 ReadDialogue readDialogue = new ReadDialogue(dialogue.Lines);
                 await readDialogue.Run();
-                Debug.Log($"finish ReadDialogue");
+                //Debug.Log($"finish ReadDialogue");
 
                 SelectAnswer selectAnswer = new SelectAnswer(dialogue.Answers);
                 result = await selectAnswer.Run();
@@ -44,7 +44,7 @@ namespace Naussilus.Gameplay
                 dialogue = basicAnswer.NextDialogue;
             }
             
-            Debug.Log($"Decision choices : {dialogue.Answers.Length}");
+            //Debug.Log($"Decision choices : {dialogue.Answers.Length}");
             if (result.value is FinalAnswer finalAnswer)
             {
                 ReadDialogue readDialogue = new ReadDialogue(finalAnswer.NpcText);

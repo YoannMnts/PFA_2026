@@ -259,7 +259,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1286714057092906438}
   m_HandleRect: {fileID: 7877318485443269839}
   m_Direction: 3
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2618,10 +2618,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3698244418245164962, guid: 4949d3a846b8a7b409d84af12edd659d, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 538.56055
-      objectReference: {fileID: 0}
-    - target: {fileID: 3698244418245164962, guid: 4949d3a846b8a7b409d84af12edd659d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -2691,6 +2687,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2655169276600309980}
     m_Modifications:
+    - target: {fileID: -8822839028615145051, guid: 4214a54c144abd84586e19489dfcbfcd, type: 3}
+      propertyPath: fillBar
+      value: 
+      objectReference: {fileID: 4872610575721853507}
     - target: {fileID: 876775468357169744, guid: 4214a54c144abd84586e19489dfcbfcd, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2734,10 +2734,6 @@ PrefabInstance:
     - target: {fileID: 2619235430123514614, guid: 4214a54c144abd84586e19489dfcbfcd, type: 3}
       propertyPath: m_AnchorMin.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2619235430123514614, guid: 4214a54c144abd84586e19489dfcbfcd, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 538.56055
       objectReference: {fileID: 0}
     - target: {fileID: 2619235430123514614, guid: 4214a54c144abd84586e19489dfcbfcd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2820,6 +2816,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4214a54c144abd84586e19489dfcbfcd, type: 3}
+--- !u!114 &4872610575721853507 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1949550285000128510, guid: 4214a54c144abd84586e19489dfcbfcd, type: 3}
+  m_PrefabInstance: {fileID: 6381825140657210813}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!224 &8991903502819585867 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2619235430123514614, guid: 4214a54c144abd84586e19489dfcbfcd, type: 3}

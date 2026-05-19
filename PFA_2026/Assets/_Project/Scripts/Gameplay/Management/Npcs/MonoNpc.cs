@@ -4,6 +4,7 @@ using Naussilus.Core;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
 using Naussilus.Gameplay.Interactions;
+using Unity.Cinemachine;
 using UnityEngine;
 
 namespace Naussilus.Gameplay
@@ -15,12 +16,16 @@ namespace Naussilus.Gameplay
 
         [SerializeField] private NpcData npcData;
         
+        [SerializeField] private MonoCineCamera npcCamera;
+        
         public Npc Npc => NpcManager.TryGetNpc(npcData?.GUID);
+        public MonoCineCamera NpcCamera => npcCamera;
         
         private ManagementPhase currentPhase;
         private CheckNpcState checkNpcPhase;
         
         private Vector3 lastPosition;
+        
 
         protected override void OnPhaseBegin(ManagementPhase phase)
         {
@@ -70,19 +75,19 @@ namespace Naussilus.Gameplay
             
             checkNpcPhase = new CheckNpcState(this);
             checkNpcPhase.RunAndForget();
-            Debug.Log($"Npc {Npc.Name} is interacting");
+            //Debug.Log($"Npc {Npc.Name} is interacting");
         }
 
         private void SetNewPosition(Transform newTransform)
         {
-            Debug.Log($"Npc {Npc.Name} is setting new position to {newTransform.position}");
+            //Debug.Log($"Npc {Npc.Name} is setting new position to {newTransform.position}");
             lastPosition = gameObject.transform.position;
             gameObject.transform.position = newTransform.position;
         }
 
         private void ReturnToLastPosition()
         {
-            Debug.Log($"Npc {Npc.Name} is returning to the last position {lastPosition}");
+            //Debug.Log($"Npc {Npc.Name} is returning to the last position {lastPosition}");
             gameObject.transform.position = lastPosition;
         }
     }

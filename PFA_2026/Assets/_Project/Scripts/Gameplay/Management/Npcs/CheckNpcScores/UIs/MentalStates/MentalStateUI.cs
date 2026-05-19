@@ -2,6 +2,7 @@
 using Naussilus.Core;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Naussilus.Gameplay.MentalStates
 {
@@ -9,10 +10,14 @@ namespace Naussilus.Gameplay.MentalStates
     {
         [SerializeField]
         private TMP_Text mentalStateText;
+
+        [SerializeField] 
+        private Image fillBar;
         
         protected override void SyncUI(MentalState current)
         {
-            mentalStateText.text = current.Data.Name;
+            mentalStateText.text = current.Name;
+            fillBar.fillAmount = current.Amount / 20f;
         }
 
         protected override void ClearUI()

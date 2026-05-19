@@ -37,6 +37,7 @@ namespace Naussilus.Gameplay
             mentalStateUIList.Connect(phase.NpcMentalStates);
             relationshipButton.onClick.AddListener(ChangeToRelationship);
             statButton.onClick.AddListener(ChangeToStat);
+            phase.CurrentMonoNpc.NpcCamera.SwitchToThisCamera();
         
         
             if (this.TryGetService(out PlayerController controller))
@@ -53,9 +54,12 @@ namespace Naussilus.Gameplay
             group.Hide();
             relationshipButton.onClick.RemoveAllListeners();
             statButton.onClick.RemoveAllListeners();
-            
+
             if (this.TryGetService(out PlayerController controller))
+            {
                 controller.PlayerInteractions.CanInteract.RemovePriority(this);
+                controller.PlayerCamera.PlayerCam.SwitchToThisCamera();
+            }
         
             base.OnPhaseEnd(phase);
         }
