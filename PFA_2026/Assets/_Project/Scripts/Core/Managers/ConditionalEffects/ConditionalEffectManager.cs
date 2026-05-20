@@ -87,9 +87,9 @@ namespace Naussilus.Core.Managers
                 var actionEffect = actionEffects[i];
                 var category = categories[actionEffect.CategoryIndex];
                 
-                for (int j = 0; j < category.RoomNpcSlots.Length; j++)
+                for (int j = 0; j < category.CategoryNpcSlots.Length; j++)
                 {
-                    var contains = category.RoomNpcSlots[i].CurrentNpc == actionEffect.Npc;
+                    var contains = category.CategoryNpcSlots[i].CurrentNpc == actionEffect.Npc;
                     if (contains)
                     {
                         actionEffect.AddScheduledEffect();

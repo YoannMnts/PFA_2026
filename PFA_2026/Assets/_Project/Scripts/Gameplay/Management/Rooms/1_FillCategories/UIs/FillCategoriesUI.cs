@@ -110,9 +110,9 @@ namespace Naussilus.Gameplay
             for (int i = 0; i < current.Categories.Length; i++)
             {
                 var category = current.Categories[i];
-                for (int j = 0; j < category.RoomNpcSlots.Length; j++)
+                for (int j = 0; j < category.CategoryNpcSlots.Length; j++)
                 {
-                    var roomNpcSlot = category.RoomNpcSlots[j];
+                    var roomNpcSlot = category.CategoryNpcSlots[j];
                     if (roomNpcSlot.CurrentNpc is null)
                     {
                         Debug.LogError($"Trying to apply without assign all npcs in category {category.Name}");

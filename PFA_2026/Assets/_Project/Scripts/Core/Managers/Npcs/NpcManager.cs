@@ -120,9 +120,9 @@ namespace Naussilus.Core.Managers.Npcs
                     case CategoryIndex categoryIndex:
                         int ind = Mathf.Max(0, categoryIndex.Index - 1);
                         Category targetCategory = currentCategories[ind];
-                        for (int j = 0; j < targetCategory.RoomNpcSlots.Length; j++)
+                        for (int j = 0; j < targetCategory.CategoryNpcSlots.Length; j++)
                         {
-                            Npc categoryNpc = targetCategory.RoomNpcSlots[j].CurrentNpc;
+                            Npc categoryNpc = targetCategory.CategoryNpcSlots[j].CurrentNpc;
                             list.Add(categoryNpc);
                         }
                         result = list.ToArray();

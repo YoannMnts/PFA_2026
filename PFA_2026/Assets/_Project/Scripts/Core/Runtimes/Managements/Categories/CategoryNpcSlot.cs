@@ -1,15 +1,18 @@
-﻿using System;
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using Naussilus.Core;
+using Naussilus.Core.Managements;
 using UnityEngine;
 
 namespace Naussilus.Gameplay
 {
     public class CategoryNpcSlot
     {
-        public CategoryNpcSlot(Vector3 position, Npc npc = null)
+        public CategoryNpcSlot(RoomSlotPositionData position, Npc npc = null)
         {
-            SlotPosition = position;
+            if (position == null)
+                SlotPosition = Vector3.zero;
+            else
+                SlotPosition = position.Position;
             CurrentNpc = npc;
         }
         

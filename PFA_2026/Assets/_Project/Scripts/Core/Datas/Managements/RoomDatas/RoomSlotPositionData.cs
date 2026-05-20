@@ -2,7 +2,7 @@
 
 namespace Naussilus.Core.Managements
 {
-    [CreateAssetMenu(fileName = "RoomSlot", menuName = "Naussilus/Management/RoomData", order = 0)]
+    [CreateAssetMenu(fileName = "CategorySlot", menuName = "Naussilus/Management/CategorySlot", order = 0)]
     public class RoomSlotPositionData : ScriptableObject
     {
         [field: SerializeField]

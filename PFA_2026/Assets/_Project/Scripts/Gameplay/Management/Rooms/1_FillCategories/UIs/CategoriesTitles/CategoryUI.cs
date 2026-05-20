@@ -53,7 +53,7 @@ namespace Naussilus.Gameplay.CategoriesTitles
             
             ClearSlots();
             
-            var categorySlot = Current.RoomNpcSlots;
+            var categorySlot = Current.CategoryNpcSlots;
             Debug.Log($"Category: {category.Name} has {categorySlot.Length} Slots");
             categorySlotUIList.Connect(categorySlot);
         }

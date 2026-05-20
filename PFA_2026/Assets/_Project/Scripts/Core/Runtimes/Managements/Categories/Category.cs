@@ -21,7 +21,7 @@ namespace Naussilus.Core
         
         public Npc[] ObligateNpcs { get; private set; }
 
-        public CategoryNpcSlot[] RoomNpcSlots { get; private set; }
+        public CategoryNpcSlot[] CategoryNpcSlots { get; private set; }
         
 
         public Category(CategoryData data)
@@ -30,14 +30,14 @@ namespace Naussilus.Core
             Quantity = data.Quantity;
             ProhibitedNpcs = data.ProhibitedNpc?.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
             ObligateNpcs = data.ObligateNpc?.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
-            RoomNpcSlots = data.SlotPositions?.Select(s => new CategoryNpcSlot(s.Position)).ToArray();
+            CategoryNpcSlots = data.SlotPositions?.Select(s => new CategoryNpcSlot(s)).ToArray();
         }
 
         public void TryAddNpc(Npc npc)
         {
-            for (int i = 0; i < RoomNpcSlots.Length; i++)
+            for (int i = 0; i < CategoryNpcSlots.Length; i++)
             {
-                var roomNpcSlot = RoomNpcSlots[i];
+                var roomNpcSlot = CategoryNpcSlots[i];
                 if (!roomNpcSlot.TryAddNpc(npc)) 
                     continue;
                 OnCategoryChanged?.Invoke(this);
@@ -47,9 +47,9 @@ namespace Naussilus.Core
 
         public void TryRemoveNpc(Npc npc)
         {
-            for (int i = 0; i < RoomNpcSlots.Length; i++)
+            for (int i = 0; i < CategoryNpcSlots.Length; i++)
             {
-                var roomNpcSlot = RoomNpcSlots[i];
+                var roomNpcSlot = CategoryNpcSlots[i];
                 if (!roomNpcSlot.TryRemoveNpc(npc)) 
                     continue;
                 OnCategoryChanged?.Invoke(this);
@@ -59,9 +59,9 @@ namespace Naussilus.Core
         
         public void ClearAllSlots()
         {
-            for (int i = 0; i < RoomNpcSlots.Length; i++)
+            for (int i = 0; i < CategoryNpcSlots.Length; i++)
             {
-                RoomNpcSlots[i].ClearNpc();
+                CategoryNpcSlots[i].ClearNpc();
             }
         }
     }

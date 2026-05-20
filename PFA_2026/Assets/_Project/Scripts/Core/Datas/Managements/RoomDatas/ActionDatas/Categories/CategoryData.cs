@@ -24,9 +24,15 @@ namespace Naussilus.Core.Managements.ActionDatas
 
         public void MakeSlotPositions()
         {
+            if (SlotPositions != null && SlotPositions.Length == Quantity)
+                return;
+            
             var slots = new RoomSlotPositionData[Quantity];
-            for (int i = 0; i < SlotPositions.Length; i++)
+            for (int i = 0; i < SlotPositions?.Length; i++)
             {
+                if (i > slots.Length - 1)
+                    break;
+                
                 slots[i] = SlotPositions[i];
             }
             SlotPositions = slots;
