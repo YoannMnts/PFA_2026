@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 12_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "Oula non ! C\u2019est pas vraiment mon type\u2026"
+    - "Et pour l'instant j\u2019ai d\u2019autres objectifs dans la vie, et je pr\xE9f\xE8re
+      rester concentr\xE9e.\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 70c8837197b3cf448961b02e55795484, type: 2}
+  - {fileID: 11400000, guid: 304d74cdd832bc2459f40b613bc05c33, type: 2}
+  <GUID>k__BackingField: 1fa22e41-7db4-4028-b3a8-03eaa8370b23

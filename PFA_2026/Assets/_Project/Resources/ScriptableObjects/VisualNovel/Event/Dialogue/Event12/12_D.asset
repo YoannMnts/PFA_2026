@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 12_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Bah il \xE0 toujours un petit mot \xE0 dire, un petit service \xE0 rendre
+      tout \xE7a tout \xE7a\u2026"
+    - "\xE7a\u2026C\u2019est sympa, mais \xE0 force il est un peu dans mes pattes."
+    - "Et parfois il tente des \u201Cavances\u201D si on peut appeler \xE7a comme
+      \xE7a\u2026"
+    - "C\u2019est un peu ridicule honn\xEAtement"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: be7066f4105e09343bd1add62d4688e8, type: 2}
+  - {fileID: 11400000, guid: fdae800b95a473b4383e189be7a3cfe0, type: 2}
+  - {fileID: 11400000, guid: e25bb669a82394f4f8ee37e84540c5fd, type: 2}
+  <GUID>k__BackingField: cc4cea98-fc9a-4ad2-95f2-5baf078a7635

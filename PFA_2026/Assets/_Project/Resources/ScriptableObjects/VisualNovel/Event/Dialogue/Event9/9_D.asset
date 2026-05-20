@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 9_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Et bien\u2026J\u2019\xE9tais dans la salle de d\xE9tente, et Herlock \xE0
+      d\xE9cid\xE9 de me faire peur pour \u201Crire\u201D..."
+    - "Et alors, je ne comprends pas comment c\u2019est possible, mais un jet d\u2019encre
+      \xE0 jailli de ma t\xEAte ! "
+    - "Alors les autres se sont moqu\xE9s de moi\u2026Et maintenant, Camil r\xE9p\xE8te
+      ce qu\u2019il \xE0 entendu."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 174a3fab7983f034c867d41649e2c016, type: 2}
+  - {fileID: 11400000, guid: 720383859f501b24dad86d9910dd5792, type: 2}
+  <GUID>k__BackingField: 0cd4445b-1250-4ef2-8185-e39db63a29db

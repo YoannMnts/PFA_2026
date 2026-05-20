@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 9_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - Bonjour Capitaine.
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "En fait, depuis quelques jours, Camil se moque de moi \xE0 chaque fois qu\u2019on
+      se croise, et \xE7a commence \xE0 devenir aga\xE7ant."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 14a40b9c1492a7340b65d61cb79c26a4, type: 2}
+  - {fileID: 11400000, guid: 57dec0eb4240c0944b2264a7a32e2706, type: 2}
+  - {fileID: 11400000, guid: e8813049265b553419a146171e3c06d0, type: 2}
+  <GUID>k__BackingField: 72119768-0c08-4225-a058-a3a9987d7a8a

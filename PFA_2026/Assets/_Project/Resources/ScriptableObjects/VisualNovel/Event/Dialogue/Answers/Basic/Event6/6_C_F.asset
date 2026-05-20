@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
-  m_Name: 11_C_F
+  m_Name: 6_C_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "D\u2019accord je comprends, je t\u2019\xE9coute"
-  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 08d3b3ec9a01bb84485ce4cdd15a3e27, type: 2}
-  <GUID>k__BackingField: e82dd63f-b107-4d86-af88-0439d8dfe306
+  <ButtonText>k__BackingField: "Je ne pense pas qu\u2019on puisse te l\u2019enlever "
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 43dafa974a55f9d469da3194ea40c199, type: 2}
+  <GUID>k__BackingField: d56d393d-f730-4390-bdaa-3c020ae99929

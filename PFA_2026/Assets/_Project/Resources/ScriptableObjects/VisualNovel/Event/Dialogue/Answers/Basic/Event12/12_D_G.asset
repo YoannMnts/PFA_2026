@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
-  m_Name: 11_C_F
+  m_Name: 12_D_G
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "D\u2019accord je comprends, je t\u2019\xE9coute"
-  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 08d3b3ec9a01bb84485ce4cdd15a3e27, type: 2}
-  <GUID>k__BackingField: e82dd63f-b107-4d86-af88-0439d8dfe306
+  <ButtonText>k__BackingField: "Il ne faut pas te moquer c\u2019est sa mani\xE8re
+    \xE0 lui de faire "
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 922a3b971c1f1fc46b6f936151d31fe3, type: 2}
+  <GUID>k__BackingField: 5c08a9f4-5588-4391-b3d2-cc373e5d6ab3

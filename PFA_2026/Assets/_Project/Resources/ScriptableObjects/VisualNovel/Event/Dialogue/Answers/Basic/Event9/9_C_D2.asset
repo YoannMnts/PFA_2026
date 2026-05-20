@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
-  m_Name: 11_C_F
+  m_Name: 9_C_D2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "D\u2019accord je comprends, je t\u2019\xE9coute"
-  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 08d3b3ec9a01bb84485ce4cdd15a3e27, type: 2}
-  <GUID>k__BackingField: e82dd63f-b107-4d86-af88-0439d8dfe306
+  <ButtonText>k__BackingField: "Est ce qu\u2019il y a un \xE9v\xE8nement qui \xE0
+    d\xE9clench\xE9 \xE7a ? "
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0b311f75662c79447b53215d468df2fc, type: 2}
+  <GUID>k__BackingField: 1fbeabb4-ca74-4a4b-8d9e-fba92ebaa5fc
