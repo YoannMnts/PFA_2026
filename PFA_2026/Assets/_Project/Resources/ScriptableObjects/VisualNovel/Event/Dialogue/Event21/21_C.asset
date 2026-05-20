@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 21_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - " Oui bien s\xFBr c\u2019est ce que je vous dit."
+    - "Si \xE7a ne change pas, tout le monde va finir par tomber malade."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Oh ! Je pensais pas que ce serait si important\u2026"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Bien s\xFBr que c\u2019est important, tu devrais prendre ton r\xF4le plus
+      au s\xE9rieux !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 11d7d7ce7f681d2428220c533ce8ba46, type: 2}
+  - {fileID: 11400000, guid: 73098562bb84d504987a10f655d9edf1, type: 2}
+  - {fileID: 11400000, guid: e0c15d72b23ad49439553eb8ba9896a3, type: 2}
+  <GUID>k__BackingField: f2f9015c-227d-4e15-a34d-ab5768be5226

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 21_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - " Lorsqu\u2019il nettoie \xE0 l\u2019eau, il laisse de l\u2019humidit\xE9,
+      ce qui permet au champignons de se multiplier, et c\u2019est comme \xE7a que
+      les infections se propagent.\r\n"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Je suis encore un d\xE9butant\u2026Je suis d\xE9sol\xE9\u2026"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: fc743cfe7b957ca419e9648282fdb99e, type: 2}
+  - {fileID: 11400000, guid: 6c17f60bfd793df46a8f43e9ad440dd8, type: 2}
+  - {fileID: 11400000, guid: 30f30b3200f10d04b9a075439f0545b7, type: 2}
+  <GUID>k__BackingField: 3e3c8e09-a72c-442c-ae6a-f83bc711b791

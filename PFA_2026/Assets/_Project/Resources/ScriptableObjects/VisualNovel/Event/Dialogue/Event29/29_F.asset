@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 29_F
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Je suis ouverte ! J\u2019\xE9coute toujours les autres et je suis honn\xEAte."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - "C\u2019est juste que les gens me trouvent effrayante parfois, mais je ne sais
+      pas quoi y faire\u2026\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 309d7cc4b32b6bd4e9e6b07549204d40, type: 2}
+  - {fileID: 11400000, guid: 92b92c3fc2c503846ab170da8c9361e2, type: 2}
+  - {fileID: 11400000, guid: 3374263eb18971245bace82f0886d10e, type: 2}
+  <GUID>k__BackingField: 649fa769-d09c-4cfa-a252-72e37a52a8a4

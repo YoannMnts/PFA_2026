@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 19_F
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "J\u2019ose pas\u2026Je me dis que maintenant que c\u2019est arriv\xE9, \xE7a
+      serait bizarre de dire que j\u2019aurais pas d\xFB non ?"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "J\u2019aurais l\u2019air d\u2019une folle."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 1215c2d083fcc154c8ec401e62021fe1, type: 2}
+  - {fileID: 11400000, guid: c38ddaeb51ee77a46a1cca919405bb27, type: 2}
+  - {fileID: 11400000, guid: 65e66dd0c1357144882517c4fa0c3fae, type: 2}
+  <GUID>k__BackingField: 1c7dd56d-3b2e-4b11-9911-a908f81d9493

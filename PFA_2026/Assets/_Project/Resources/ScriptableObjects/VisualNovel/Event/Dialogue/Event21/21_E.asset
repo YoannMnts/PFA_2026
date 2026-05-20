@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 21_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Sans doute oui, mais je ne suis pas s\xFBre qu\u2019il comprenne, il est jeune
+      et inexp\xE9riment\xE9 ."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - 'Non, je peux apprendre ! '
+    - "Je veux \xE0 tout prix avoir ma place dans cet \xE9quipage."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 0745d25c91332b64c81ee6ce7ef69c4e, type: 2}
+  - {fileID: 11400000, guid: 343814dbc2cb4b2418fe3140c768be87, type: 2}
+  - {fileID: 11400000, guid: 92ed45fa3be1bae478eb65318a40b8d5, type: 2}
+  <GUID>k__BackingField: 5dbf6661-aab4-4b53-b1a1-9aa81af6f99c

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 29_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - Bon matin.
+    - "Je n\u2019ai pas eu l\u2019occasion de beaucoup parler avec Camil, et il m\u2019intrigue."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - "J\u2019aimerais bien le conna\xEEtre plus, mais je crois qu\u2019il a peur
+      de moi."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 11a03cd453153f342b4c91daa1c84948, type: 2}
+  - {fileID: 11400000, guid: 82511a0c527deab43b5c1a922dc4efa9, type: 2}
+  - {fileID: 11400000, guid: ad7162af18713d644a25cc5bb952b4d5, type: 2}
+  <GUID>k__BackingField: 600c1e2c-56dc-44b0-af50-bea319fce26e

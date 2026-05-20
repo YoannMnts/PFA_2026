@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 31_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "Je m\u2019y connais en affaires, faites moi confiance !"
+    - "Notre exp\xE9dition serait d\u2019autant plus b\xE9n\xE9fique !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 32addcc7a6653cf40b222581ce408932, type: 2}
+  - {fileID: 11400000, guid: 9c0cd214e72f1c445b961900b02faa01, type: 2}
+  - {fileID: 11400000, guid: 4b7f74fa444e50f48bec65017b3a7e72, type: 2}
+  <GUID>k__BackingField: 849355b3-e483-4eb7-aab9-e9c2bed7bed3

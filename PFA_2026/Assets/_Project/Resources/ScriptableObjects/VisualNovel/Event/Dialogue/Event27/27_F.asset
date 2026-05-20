@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 27_F
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Dans ce cas c\u2019est \xE0 vous de faire en sorte d\u2019imposer votre autorit\xE9,
+      vous \xEAtes capitaine apr\xE8s tout."
+    - "Il faut que tout le monde participe \xE0 la vie du navire."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 9837ec6f5ccc4ae4aaf691d30f5094e8, type: 2}
+  - {fileID: 11400000, guid: ee3a725a1875d3e41bcbdff48cb73724, type: 2}
+  <GUID>k__BackingField: d88ede86-fe28-4148-be77-d758ca8200de

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 19_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Bah j\u2019\xE9tais en train de r\xE9parer un truc dans la machinerie, et
+      il est venu parler avec moi."
+    - "J\u2019\xE9tais concentr\xE9 sur ce que je faisais, alors je l\u2019ai pas
+      surveill\xE9, et sans faire expr\xE8s il a ouvert une vanne et toute la pi\xE8ce
+      s\u2019est remplie de fum\xE9e."
+    - "Alors sur le coup, je lui ai un peu cri\xE9 dessus\u2026"
+    - "Mais c\u2019\xE9tait pas si grave en r\xE9alit\xE9."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 0750552f6ee80e14198fe33f97ea1f03, type: 2}
+  - {fileID: 11400000, guid: 9fbdbadfe99eaaa4aa9e213f07fea763, type: 2}
+  - {fileID: 11400000, guid: 383982e93d605c744b02bb7e0efdf6f0, type: 2}
+  <GUID>k__BackingField: 7d97eeea-646c-45cd-9132-9b28a26937f1

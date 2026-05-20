@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 19_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Oui bien s\xFBr, il est souvent aga\xE7ant, mais il voulait juste \xEAtre
+      gentil, c\u2019\xE9tait juste un accident."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - "C\u2019\xE9tait m\xEAme pas grave en plus, je suis trop b\xEAte de lui avoir
+      cri\xE9 dessus.\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 1215c2d083fcc154c8ec401e62021fe1, type: 2}
+  - {fileID: 11400000, guid: c38ddaeb51ee77a46a1cca919405bb27, type: 2}
+  - {fileID: 11400000, guid: 65e66dd0c1357144882517c4fa0c3fae, type: 2}
+  <GUID>k__BackingField: 7697c733-ac81-43bb-ac76-e671760c7e90
