@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 2579de3c05a2673499c9c76eed06bffd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3185690098828423069
+    second: CrewCarters_BedItem_0
+  - first:
+      213: 3344026193544839468
+    second: CrewCarters_BedItem_1
+  - first:
+      213: -7578287212674162724
+    second: CrewCarters_BedItem_2
+  - first:
+      213: -1990581554991115498
+    second: CrewCarters_BedItem_3
+  - first:
+      213: 6058710836936420593
+    second: CrewCarters_BedItem_4
+  - first:
+      213: -2740033977824817749
+    second: CrewCarters_BedItem_5
+  - first:
+      213: 3038683588427633606
+    second: CrewCarters_BedItem_6
+  - first:
+      213: 923159579022997648
+    second: CrewCarters_BedItem_7
+  - first:
+      213: -763691593822582740
+    second: CrewCarters_BedItem_8
+  - first:
+      213: -5018795829254534471
+    second: CrewCarters_BedItem_9
+  - first:
+      213: 4614542582126553548
+    second: CrewCarters_BedItem_10
+  - first:
+      213: 6921249108597373711
+    second: CrewCarters_BedItem_11
+  - first:
+      213: 3234378163018879592
+    second: CrewCarters_BedItem_12
+  - first:
+      213: 5916929760478876134
+    second: CrewCarters_BedItem_13
+  - first:
+      213: -5376511734193996355
+    second: CrewCarters_BedItem_14
+  - first:
+      213: -3382764763941516253
+    second: CrewCarters_BedItem_15
+  - first:
+      213: -5889525346579584258
+    second: CrewCarters_BedItem_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CrewCarters_BedItem_0
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 398
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3605adecbb72ac3d0800000000000000
+      internalID: -3185690098828423069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrewCarters_BedItem_1
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 386
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2187d90b1e586e20800000000000000
+      internalID: 3344026193544839468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrewCarters_BedItem_2
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 403
+        width: 92
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdfdbaa7ee384d690800000000000000
+      internalID: -7578287212674162724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrewCarters_BedItem_3
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 403
+        width: 47
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6135f4e4f980064e0800000000000000
+      internalID: -1990581554991115498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrewCarters_BedItem_4
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 393
+        width: 44
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fca760e76dd41450800000000000000
+      internalID: 6058710836936420593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrewCarters_BedItem_5
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 413
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bad404f4d9179f9d0800000000000000
+      internalID: -2740033977824817749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrewCarters_BedItem_6
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 413
+        width: 59
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3d901cf929b2a20800000000000000
+      internalID: 3038683588427633606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrewCarters_BedItem_7
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 373
+        width: 28
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0983aaafeb8bfcc00800000000000000
+      internalID: 923159579022997648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrewCarters_BedItem_8
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 387
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c28c048aa82d665f0800000000000000
+      internalID: -763691593822582740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrewCarters_BedItem_9
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 400
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba4215b8c7a95ab0800000000000000
+      internalID: -5018795829254534471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrewCarters_BedItem_10
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 376
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc9219097062a0040800000000000000
+      internalID: 4614542582126553548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrewCarters_BedItem_11
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 390
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b7fe7d4673d0060800000000000000
+      internalID: 6921249108597373711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrewCarters_BedItem_12
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 232
+        width: 68
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86255048dc1d2ec20800000000000000
+      internalID: 3234378163018879592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrewCarters_BedItem_13
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 232
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e1d74694482d1250800000000000000
+      internalID: 5916929760478876134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrewCarters_BedItem_14
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 221
+        width: 59
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbdb5a0501bc265b0800000000000000
+      internalID: -5376511734193996355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrewCarters_BedItem_15
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 230
+        width: 110
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32cce8eae510e01d0800000000000000
+      internalID: -3382764763941516253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrewCarters_BedItem_16
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 232
+        width: 39
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efae67db6e3344ea0800000000000000
+      internalID: -5889525346579584258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CrewCarters_BedItem_0: -3185690098828423069
+      CrewCarters_BedItem_1: 3344026193544839468
+      CrewCarters_BedItem_10: 4614542582126553548
+      CrewCarters_BedItem_11: 6921249108597373711
+      CrewCarters_BedItem_12: 3234378163018879592
+      CrewCarters_BedItem_13: 5916929760478876134
+      CrewCarters_BedItem_14: -5376511734193996355
+      CrewCarters_BedItem_15: -3382764763941516253
+      CrewCarters_BedItem_16: -5889525346579584258
+      CrewCarters_BedItem_2: -7578287212674162724
+      CrewCarters_BedItem_3: -1990581554991115498
+      CrewCarters_BedItem_4: 6058710836936420593
+      CrewCarters_BedItem_5: -2740033977824817749
+      CrewCarters_BedItem_6: 3038683588427633606
+      CrewCarters_BedItem_7: 923159579022997648
+      CrewCarters_BedItem_8: -763691593822582740
+      CrewCarters_BedItem_9: -5018795829254534471
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
