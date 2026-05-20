@@ -103,7 +103,7 @@ namespace Naussilus.Gameplay
             
                 roomActionUIList.Disconnect();
                 cancelButton.onClick.RemoveAllListeners();
-                var fillCategory = new FillCategory(current.Choices[index], current.NpcSlots);
+                var fillCategory = new FillCategory(current.Choices[index]);
                 var result = await fillCategory.Run();
             
                 if (!result)

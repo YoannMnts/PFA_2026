@@ -1,6 +1,5 @@
 ﻿using Helteix.Tools.UI;
 using Naussilus.Core;
-using Naussilus.Core.Managers.Rooms;
 using Naussilus.Gameplay.CategoriesSlots;
 using TMPro;
 using UnityEngine;
@@ -12,46 +11,39 @@ namespace Naussilus.Gameplay.CategoriesTitles
         private FillCategoriesUI fillCategoriesUI;
         
         [SerializeField] private TMP_Text categoryName;
-        [SerializeField] private CategorySlot categorySlotPrefab;
-        [SerializeField] private Transform categorySlotRoot;
+        [SerializeField] private CategorySlotUIList categorySlotUIList;
         
         private void Start()
         {
             fillCategoriesUI = GetComponentInParent<FillCategoriesUI>();
         }
 
-        private void OnDisable()
-        {
-            if (Current == null)
-                return;
-            
-            RoomCategoryManager.OnNpcAdded -= MakeSlots;
-            RoomCategoryManager.OnNpcRemove -= MakeSlots;
-        }
-
         protected override void SyncUI(Category current)
         {
+            if (current == null)
+                return;
+            
             categoryName.text = current.Name;
-            Debug.Log($"Category name: {current.Name}, current npcs : {Current.CurrentNpcs.Length}");
+            //Debug.Log($"Category name: {current.Name}, current npcs : {Current.CurrentNpcs.Length}");
 
             MakeSlots(current);
-            RoomCategoryManager.OnNpcAdded += MakeSlots;
-            RoomCategoryManager.OnNpcRemove += MakeSlots;
+            current.OnCategoryChanged += MakeSlots;
         }
         
 
         protected override void ClearUI()
         {
+            if (Current == null)
+                return;
+                
             categoryName.text = string.Empty;
             ClearSlots();
+            Current.OnCategoryChanged -= MakeSlots;
         }
 
         private void ClearSlots()
         {
-            foreach (Transform slot in categorySlotRoot)
-            {
-                Destroy(slot.gameObject);
-            }
+            categorySlotUIList.Disconnect();
         }
 
         private void MakeSlots(Category category)
@@ -60,16 +52,15 @@ namespace Naussilus.Gameplay.CategoriesTitles
                 return;
             
             ClearSlots();
-            for (int i = 0; i < category.CurrentNpcs.Length; i++)
-            {
-                var categorySlot = Instantiate(categorySlotPrefab, categorySlotRoot);
-                categorySlot.SyncUI(i);
-            }
+            
+            var categorySlot = Current.RoomNpcSlots;
+            Debug.Log($"Category: {category.Name} has {categorySlot.Length} Slots");
+            categorySlotUIList.Connect(categorySlot);
         }
 
-        public void OnClicked(int index)
+        public void OnClicked(Npc npc)
         {
-            fillCategoriesUI.RemoveNpcInCategory(Current, index);
+            fillCategoriesUI.RemoveNpcInCategory(npc);
         }
     }
 }

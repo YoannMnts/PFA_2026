@@ -5,29 +5,29 @@ using UnityEngine;
 
 namespace Naussilus.Gameplay
 {
-    public class RoomNpcSlot
+    public class CategoryNpcSlot
     {
-        public RoomNpcSlot(Vector3 position, Npc npc = null)
+        public CategoryNpcSlot(Vector3 position, Npc npc = null)
         {
-            CurrentSlot = position;
+            SlotPosition = position;
             CurrentNpc = npc;
         }
         
         [CanBeNull] public Npc CurrentNpc { get; private set; }
         
-        public Vector3 CurrentSlot { get; private set; }
+        public Vector3 SlotPosition { get; private set; }
 
-        public bool TryAddNpc(Npc npc)
+        protected internal bool TryAddNpc(Npc npc)
         {
             if (CurrentNpc != null)
                 return false;
             
             CurrentNpc = npc;
-            CurrentNpc?.SetNewPosition(CurrentSlot);
+            CurrentNpc?.SetNewPosition(SlotPosition);
             return true;
         }
 
-        public bool TryRemoveNpc(Npc npc)
+        protected internal bool TryRemoveNpc(Npc npc)
         {
             if (CurrentNpc != npc)
                 return false;
@@ -35,6 +35,11 @@ namespace Naussilus.Gameplay
             CurrentNpc?.ReturnToLastPosition();
             CurrentNpc = null;
             return true;
+        }
+
+        protected internal void ClearNpc()
+        {
+            CurrentNpc = null;
         }
     }
 }

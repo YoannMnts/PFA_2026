@@ -20,6 +20,16 @@ namespace Naussilus.Core.Managements.ActionDatas
         public NpcData[] ObligateNpc { get; private set; }
         
         [field: SerializeField]
-        public RoomSlotPosition[] SlotPositions { get; private set; }
+        public RoomSlotPositionData[] SlotPositions { get; private set; }
+
+        public void MakeSlotPositions()
+        {
+            var slots = new RoomSlotPositionData[Quantity];
+            for (int i = 0; i < SlotPositions.Length; i++)
+            {
+                slots[i] = SlotPositions[i];
+            }
+            SlotPositions = slots;
+        }
     }
 }

@@ -13,17 +13,14 @@ namespace Naussilus.Gameplay
         
         public RoomAction CurrentAction { get; private set; }
         
-        public RoomNpcSlot[] NpcSlots { get; private set; }
-        
         public ActionPoint CurrentActionPoint { get; private set; }
         
         public MonoCineCamera CurrentCineCamera { get; private set; }
         
-        public SelectActionForRoom(Room room, ActionPoint actionPoint, RoomNpcSlot[] npcSlots, MonoCineCamera cineCamera)
+        public SelectActionForRoom(Room room, ActionPoint actionPoint, MonoCineCamera cineCamera)
         {
             CurrentRoom = room;
             CurrentActionPoint = actionPoint;
-            NpcSlots = npcSlots;
             CurrentCineCamera = cineCamera;
         }
 

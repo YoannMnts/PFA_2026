@@ -9,11 +9,9 @@ namespace Naussilus.Gameplay
 
         public Category[] Categories => CurrentAction.Categories;
         
-        public RoomNpcSlot[] NpcSlots { get; private set; }
-        public FillCategory(RoomAction action, RoomNpcSlot[] currentNpcSlots)
+        public FillCategory(RoomAction action)
         {
             CurrentAction = action;
-            NpcSlots = currentNpcSlots;
         }
     }
 }

@@ -17,9 +17,7 @@ namespace Naussilus.Gameplay
         
         [field: SerializeField]
         public MonoCineCamera CineCamera { get; private set; }
-
-        [field: SerializeField]
-        public RoomNpcSlot[] NpcSlots { get; private set; }
+        
         private Room Room => RoomManager.TryGetRoom(RoomData.GUID);
         
         public ActionPoint CurrentActionPoint { get; private set; }
@@ -72,7 +70,7 @@ namespace Naussilus.Gameplay
                 return;
             }
             
-            selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint, NpcSlots, CineCamera);
+            selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint, CineCamera);
             selectActionForRoom.RunAndForget();
         }
 

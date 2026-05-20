@@ -1,6 +1,5 @@
 ﻿namespace Naussilus.Gameplay.Interactions
 {
-    //TODO Implementer
     public interface IInteractable
     {
         int Priority { get; }

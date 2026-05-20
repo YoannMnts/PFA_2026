@@ -7,7 +7,6 @@ using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.Managers.Rooms;
 using Naussilus.Gameplay.CategoriesTitles;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace Naussilus.Gameplay
@@ -15,7 +14,7 @@ namespace Naussilus.Gameplay
     public class FillCategoriesUI : MonoPhaseListener<FillCategory> ,INpcClickListener
     {
         private FillCategory current;
-
+        
         [SerializeField] private CanvasGroup group;
         [SerializeField] private CategoryUIList categoryUIList;
         [SerializeField] private Button closeButton;
@@ -71,7 +70,7 @@ namespace Naussilus.Gameplay
             for (var i = 0; i < current.Categories.Length; i++)
             {
                 var category = current.Categories[i];
-                category.ClearNpc();
+                category.ClearAllSlots();
             }
             
             current.Cancel();
@@ -81,60 +80,46 @@ namespace Naussilus.Gameplay
         {
             if (current == null)
                 return;
-
+            
             for (int i = 0; i < current.Categories.Length; i++)
             {
-                if (current.Categories[i].TryAddNpc(npc))
-                {
-                    for (int j = 0; j < current.NpcSlots.Length; j++)
-                    {
-                        if (current.NpcSlots[j].TryAddNpc(npc))
-                            return;
-                    }
-                    return;
-                }
+                var category = current.Categories[i];
+                category.TryAddNpc(npc);
             }
-        }
+        }   
 
-        public void RemoveNpcInCategory(Category category, int slotIndex)
+    public void RemoveNpcInCategory(Npc npc)
+    {
+        if(current == null)
+            return;
+
+        if (npc == null)
+            return;
+            
+        for (int i = 0; i < current.Categories.Length; i++)
         {
-            if(current == null)
-                return;
+            var category = current.Categories[i];
+            category.TryRemoveNpc(npc);
+        }
+    }
 
+    private async void Apply()
+    {
+        try
+        {
             for (int i = 0; i < current.Categories.Length; i++)
             {
-                if (current.Categories[i] == category)
+                var category = current.Categories[i];
+                for (int j = 0; j < category.RoomNpcSlots.Length; j++)
                 {
-                    var currentNpc = current.Categories[i].CurrentNpcs[slotIndex];
-                    
-                    for (int j = 0; j < current.NpcSlots.Length; j++)
+                    var roomNpcSlot = category.RoomNpcSlots[j];
+                    if (roomNpcSlot.CurrentNpc is null)
                     {
-                        if(current.NpcSlots[j].TryRemoveNpc(currentNpc))
-                            break;
+                        Debug.LogError($"Trying to apply without assign all npcs in category {category.Name}");
+                        return;
                     }
-                    current.Categories[i].RemoveNpc(currentNpc);
-                    break;
                 }
             }
-        }
-
-        private async void Apply()
-        {
-            try
-            {
-                for (int i = 0; i < current.Categories.Length; i++)
-                {
-                    var category = current.Categories[i];
-                    for (int j = 0; j < category.CurrentNpcs.Length; j++)
-                    {
-                        var npc = category.CurrentNpcs[j];
-                        if (npc is null)
-                        {
-                            Debug.LogError($"Trying to apply without assign all npcs in category {category.Name}");
-                            return;
-                        }
-                    }
-                }
 
                 var consequenceSummary = new ActionConsequenceSummary(current.CurrentAction);
                 var result  = await consequenceSummary.Run();

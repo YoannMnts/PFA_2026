@@ -426,6 +426,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3216922333688088756}
   - component: {fileID: 493750119132868746}
+  - component: {fileID: 3485545575378395628}
   m_Layer: 5
   m_Name: Slots
   m_TagString: Untagged
@@ -473,6 +474,21 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &3485545575378395628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4958673180662329391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d40d351503a740ab903b7cdcdd3a1d47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Naussilus.Gameplay::Naussilus.Gameplay.CategoriesSlots.CategorySlotUIList
+  prefab: {fileID: 2565524966245535816, guid: f06431d67f183304e80a49a0c03e9d40, type: 3}
+  dividerPrefab: {fileID: 0}
+  root: {fileID: 233405566249268122}
 --- !u!1 &8268172811638673031
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,5 +588,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay.Management::_Project.Scripts.Rooms.CategoryUI
   categoryName: {fileID: 7008699870211606159}
-  categorySlotPrefab: {fileID: 2565524966245535816, guid: f06431d67f183304e80a49a0c03e9d40, type: 3}
-  categorySlotRoot: {fileID: 233405566249268122}
+  categorySlotUIList: {fileID: 3485545575378395628}

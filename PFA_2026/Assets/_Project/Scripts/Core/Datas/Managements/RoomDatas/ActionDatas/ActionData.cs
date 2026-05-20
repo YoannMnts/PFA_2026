@@ -31,12 +31,6 @@ namespace Naussilus.Core.Managements.ActionDatas
 
         private void OnValidate()
         {
-            for (int i = 0; i < Categories.Length; i++)
-            {
-                if (Categories[i].SlotPositions.Length > Categories[i].Quantity)
-                    Debug.LogError($"Number of Categorie Slot : {Categories[i].SlotPositions.Length} is upper than npc Quantity : {Categories[i].Quantity}");
-            }
-            
             if (string.IsNullOrEmpty(GUID))
             {
                 GenerateNewGuid();
