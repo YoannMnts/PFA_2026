@@ -4,5 +4,9 @@ Naussilus.Core.Managements.ActionDatas.CategoryData, Naussilus.Core
 # <SlotPositions>k__BackingField
 + [Sirenix.OdinInspector.ListDrawerSettingsAttribute]
 	HideAddButton = True
-	HideRemoveButton = True
+	HideRemoveButton = False
 	ShowFoldout = False
+	isReadOnly = False
+	isReadOnlyHasValue = True
+	draggable = False
+	draggableHasValue = True

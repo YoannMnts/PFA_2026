@@ -1,4 +1,5 @@
 ﻿using System;
+using Sirenix.OdinInspector;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -48,6 +49,7 @@ namespace Naussilus.Core.Managements.ActionDatas
 #endif
         }
 
+        [Button(ButtonSizes.Medium)]
         private void MakeAllCategorySlot()
         {
             for (int i = 0; i < Categories.Length; i++)

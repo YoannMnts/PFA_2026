@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Buffers;
 using Naussilus.Core.NpcDatas;
 using UnityEngine;
 
@@ -22,7 +23,7 @@ namespace Naussilus.Core.Managements.ActionDatas
         [field: SerializeField]
         public RoomSlotPositionData[] SlotPositions { get; private set; }
 
-        public void MakeSlotPositions()
+        protected internal void MakeSlotPositions()
         {
             if (SlotPositions != null && SlotPositions.Length == Quantity)
                 return;

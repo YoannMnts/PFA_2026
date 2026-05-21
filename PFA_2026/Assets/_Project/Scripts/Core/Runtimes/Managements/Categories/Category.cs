@@ -15,8 +15,6 @@ namespace Naussilus.Core
         
         public string Name { get; private set; }
         
-        public int Quantity { get; private set; }
-        
         public Npc[] ProhibitedNpcs { get; private set; }
         
         public Npc[] ObligateNpcs { get; private set; }
@@ -27,7 +25,6 @@ namespace Naussilus.Core
         public Category(CategoryData data)
         {
             Name = data.Name;
-            Quantity = data.Quantity;
             ProhibitedNpcs = data.ProhibitedNpc?.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
             ObligateNpcs = data.ObligateNpc?.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
             CategoryNpcSlots = data.SlotPositions?.Select(s => new CategoryNpcSlot(s)).ToArray();
