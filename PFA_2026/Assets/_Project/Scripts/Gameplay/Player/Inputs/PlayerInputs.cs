@@ -51,7 +51,7 @@ namespace Naussilus.Gameplay
             bool inputDidUpdate = false;
             foreach (var input in touchInputs)
             {
-                //Debug.Log($"Updating {input.GetType().Name}");
+                Debug.Log($"Updating {input.GetType().Name}");
                 if (inputDidUpdate)
                 {
                     input.Sleep(this);
@@ -135,10 +135,10 @@ namespace Naussilus.Gameplay
                 };
                 current.RaycastAll(pointerEventData, results);
                 if(results.Count > 0)
-                    return false;
+                    return true;
             }
 
-            return true;
+            return false;
         }
     }
 }

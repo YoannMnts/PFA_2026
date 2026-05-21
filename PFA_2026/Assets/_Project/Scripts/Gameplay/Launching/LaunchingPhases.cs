@@ -16,42 +16,11 @@ namespace Naussilus.Gameplay
 
         [SerializeField]
         private int defaultActionPoint;
-
-        [Header("Debug")]
-        [SerializeField]
-        private bool onlyVisualNovel;
         
-        [SerializeField] 
-        private bool onlyManagement;
         
         private void Start()
         {
-            VisualNovelDebug();
-            ManagementDebug();
-
             PhaseLifetime();
-        }
-
-        private async void ManagementDebug()
-        {
-            if (!onlyManagement) 
-                return;
-            
-            for (int i = 0; i < maxDay; i++)
-            {
-                await Management();
-            }
-        }
-
-        private async void VisualNovelDebug()
-        {
-            if (!onlyVisualNovel) 
-                return;
-            
-            for (int i = 0; i < maxDay; i++)
-            {
-                await VisualNovel();
-            }
         }
 
         private async void PhaseLifetime()

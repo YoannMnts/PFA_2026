@@ -75,7 +75,7 @@ namespace Naussilus.Gameplay
             
             checkNpcPhase = new CheckNpcState(this);
             checkNpcPhase.RunAndForget();
-            //Debug.Log($"Npc {Npc.Name} is interacting");
+            Debug.Log($"Npc {Npc.Name} is interacting");
         }
 
         private void SetNewPosition(Vector3 newPosition)

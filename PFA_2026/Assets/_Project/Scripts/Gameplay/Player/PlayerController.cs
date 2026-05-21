@@ -13,6 +13,7 @@ namespace Naussilus.Gameplay
 
         [field: SerializeField]
         public PlayerInputs PlayerInputs { get; private set; }
+        
         [field: SerializeField]
         public PlayerCamera PlayerCamera { get; private set; }
         [field: SerializeField]

@@ -37,12 +37,12 @@ namespace Naussilus.Gameplay
 
         private void OnClick()
         {
-            //npcBar.OnClick(Current);
+            npcBar.OnClick(Current);
         }
 
         public void Interact(PlayerInteractions playerInteractions)
         {
-            npcBar.OnClick(Current);
+            //npcBar.OnClick(Current);
         }
     }
 }

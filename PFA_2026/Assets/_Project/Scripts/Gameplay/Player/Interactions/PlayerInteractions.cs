@@ -74,7 +74,11 @@ namespace Naussilus.Gameplay.Interactions
 
         private void TryInteract(ITouchInput touchInput)
         {
+            Debug.Log($"Is Trigger Interact? {touchInput}");
             if (touchInput is not TapInput)
+                return;
+
+            if (PlayerInputs.IsScreenPosOnUI(tapInput.TapPosition))
                 return;
             
             Vector2 worldPos = cam.ScreenToWorldPoint(tapInput.TapPosition);

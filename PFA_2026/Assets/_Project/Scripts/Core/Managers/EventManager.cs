@@ -12,29 +12,32 @@ namespace Naussilus.Core.Managers
         private static readonly Dictionary<string, EventData> EventDatas;
         private static readonly Dictionary<EventData, Incident> Incidents;
         private static readonly List<Incident> CompletedIncidents;
-
+        
         static EventManager()
         {
             EventDatas = new ();
             CompletedIncidents = new ();
             Incidents = new ();
             var entries = Resources.LoadAll<EventData>("ScriptableObjects/VisualNovel/Event");
+            EventDatas.Clear();
             for (int i = 0; i < entries.Length; i++)
             {
                 EventData entry = entries[i];
-                EventDatas.Add(entry.GUID, entry);
+                EventDatas.TryAdd(entry.GUID, entry);
             }
 
+            Incidents.Clear();
             for (int i = 0; i < entries.Length; i++)
             {
                 Incident incident = new Incident(entries[i]);
-                Incidents.Add(entries[i], incident);
+                Incidents.TryAdd(entries[i], incident);
             }
             
             Debug.Log($"[EventManager] Loaded {entries.Length} events.");
+            
         }
-        
-        public static void Init(){}
+
+        public static void Init() {}
         
         public static Incident[] GetValidEvents()
         {
@@ -50,7 +53,7 @@ namespace Naussilus.Core.Managers
                         continue;
                     }
                     
-                    Debug.Log($"[EventManager] Found {key} : Incident: {value.Name}");
+                    Debug.Log($"[EventManager] Found Incident: {value.Name}");
                     ConditionalEffect[] conditionalEffects = incident.Dependencies ?? Array.Empty<ConditionalEffect>();
                     for (int i = 0; i < conditionalEffects.Length; i++)
                     {

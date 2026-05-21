@@ -56,6 +56,8 @@ namespace Naussilus.Gameplay
         {
             if (CurrentPhase == null)
                 return;
+            
+            Debug.Log($"Interacting room {Room.Name}");
 
             if (selectActionForRoom != null && selectActionForRoom.CurrentRoom == Room)
             {
