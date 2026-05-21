@@ -32,20 +32,23 @@ namespace Naussilus.Core.Managements.ActionDatas
 
         private void OnValidate()
         {
-            if (string.IsNullOrEmpty(GUID))
-            {
-                GenerateNewGuid();
-            }
-            
 #if UNITY_EDITOR
-            string[] existings = AssetDatabase.FindAssets($"t:{nameof(ActionData)}");
-            for (int i = 0; i < existings.Length; i++)
+            EditorApplication.delayCall += () =>
             {
-                var path = AssetDatabase.GUIDToAssetPath(existings[i]);
-                var asset = AssetDatabase.LoadAssetAtPath<ActionData>(path);
-                if(asset != this && asset.GUID == GUID)
+                if (this == null) return;
+        
+                if (string.IsNullOrEmpty(GUID))
                     GenerateNewGuid();
-            }
+
+                string[] existings = AssetDatabase.FindAssets($"t:{nameof(ActionData)}");
+                for (int i = 0; i < existings.Length; i++)
+                {
+                    var path = AssetDatabase.GUIDToAssetPath(existings[i]);
+                    var asset = AssetDatabase.LoadAssetAtPath<ActionData>(path);
+                    if (asset != this && asset.GUID == GUID)
+                        GenerateNewGuid();
+                }
+            };
 #endif
         }
 

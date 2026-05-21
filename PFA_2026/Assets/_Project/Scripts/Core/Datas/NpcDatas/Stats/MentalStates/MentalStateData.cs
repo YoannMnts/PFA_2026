@@ -17,20 +17,23 @@ namespace Naussilus.Core.NpcDatas
 
         private void OnValidate()
         {
-            if (string.IsNullOrEmpty(GUID))
-            {
-                GenerateNewGuid();
-            }
-
 #if UNITY_EDITOR
-            string[] existings = AssetDatabase.FindAssets($"t:{nameof(NpcData)}");
-            for (int i = 0; i < existings.Length; i++)
+            EditorApplication.delayCall += () =>
             {
-                var path = AssetDatabase.GUIDToAssetPath(existings[i]);
-                var asset = AssetDatabase.LoadAssetAtPath<NpcData>(path);
-                if (asset != this && asset.GUID == GUID)
+                if (this == null) return;
+        
+                if (string.IsNullOrEmpty(GUID))
                     GenerateNewGuid();
-            }
+
+                string[] existings = AssetDatabase.FindAssets($"t:{nameof(MentalStateData)}");
+                for (int i = 0; i < existings.Length; i++)
+                {
+                    var path = AssetDatabase.GUIDToAssetPath(existings[i]);
+                    var asset = AssetDatabase.LoadAssetAtPath<MentalStateData>(path);
+                    if (asset != this && asset.GUID == GUID)
+                        GenerateNewGuid();
+                }
+            };
 #endif
         }
 
