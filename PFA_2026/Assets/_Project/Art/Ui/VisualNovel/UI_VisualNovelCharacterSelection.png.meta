@@ -116,10 +116,10 @@ TextureImporter:
       name: UI_VisualNovelCharacterSelection_0
       rect:
         serializedVersion: 2
-        x: 63
-        y: 483
-        width: 1922
-        height: 1082
+        x: 61
+        y: 421
+        width: 1924
+        height: 1215
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0c6060a78922a1d4faf5f5b93edbaac6
+guid: 245e0479214f33649b8575d1829845e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3782676194950036529
-    second: UI_RoomSelector 1_0
+      213: 3154529821767902015
+    second: UI_RoomIcons_Deck_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_RoomSelector 1_0
+      name: UI_RoomIcons_Deck_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 417
-        width: 652
-        height: 1210
+        x: 9
+        y: 55
+        width: 238
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13cb25435f3ce7430800000000000000
-      internalID: 3782676194950036529
+      spriteID: f332ad3d82427cb20800000000000000
+      internalID: 3154529821767902015
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UI_RoomSelector 1_0: 3782676194950036529
+      UI_RoomIcons_Deck_0: 3154529821767902015
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
