@@ -28,6 +28,7 @@ namespace Naussilus.Gameplay
         {
             for (int i = 0; i < InputSystem.devices.Count; i++)
             {
+                Debug.Log($"Device: {InputSystem.devices[i].name}");
                 if (InputSystem.devices[i] is Touchscreen touchscreen)
                 {
                     AddTouchscreen(touchscreen);

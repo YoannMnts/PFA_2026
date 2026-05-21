@@ -66,6 +66,7 @@ namespace Naussilus.Gameplay.Interactions
 
         private void OnCanInteractChange(bool canInteract)
         {
+            Debug.Log($"CanInteract: {canInteract}");
             if (canInteract)
                 Controller.PlayerInputs.AddTouchInput(tapInput);
             else
