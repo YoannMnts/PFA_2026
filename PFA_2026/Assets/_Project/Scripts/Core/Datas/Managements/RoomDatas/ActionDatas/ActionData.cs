@@ -31,10 +31,6 @@ namespace Naussilus.Core.Managements.ActionDatas
 
         private void OnValidate()
         {
-            for (int i = 0; i < Categories.Length; i++)
-            {
-                Categories[i].MakeSlotPositions();
-            }
             if (string.IsNullOrEmpty(GUID))
             {
                 GenerateNewGuid();
@@ -50,6 +46,14 @@ namespace Naussilus.Core.Managements.ActionDatas
                     GenerateNewGuid();
             }
 #endif
+        }
+
+        private void MakeAllCategorySlot()
+        {
+            for (int i = 0; i < Categories.Length; i++)
+            {
+                Categories[i].MakeSlotPositions();
+            }
         }
 
         private void GenerateNewGuid()
