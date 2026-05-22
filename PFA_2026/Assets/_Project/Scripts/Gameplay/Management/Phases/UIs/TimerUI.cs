@@ -1,4 +1,5 @@
-﻿using Helteix.Tools.Phases.Listeners;
+﻿using System;
+using Helteix.Tools.Phases.Listeners;
 using TMPro;
 using UnityEngine;
 
@@ -11,7 +12,6 @@ namespace Naussilus.Gameplay
         [SerializeField] private bool isTimerActive;
         
         private ManagementPhase currentPhase;
-        
         protected override void OnPhaseBegin(ManagementPhase phase)
         {
             currentPhase = phase;
@@ -27,24 +27,32 @@ namespace Naussilus.Gameplay
             currentPhase = null;
             timerText.text = string.Empty;
             timerDuration = 0;
-            
             base.OnPhaseEnd(phase);
         }
 
         private async void StartCountdown()
         {
-            int remaining = timerDuration;
-            for (int i = 0; i < timerDuration; i++)
+            try
             {
-                remaining--;
-                var minutes = remaining / 60;
-                var seconds = remaining % 60;
-                timerText.text = $"{minutes:00} : {seconds:00}";
-                await Awaitable.WaitForSecondsAsync(1);
+                int remaining = timerDuration;
+                for (int i = 0; i < timerDuration; i++)
+                {
+                    remaining--;
+                    var minutes = remaining / 60;
+                    var seconds = remaining % 60;
+                    timerText.text = $"{minutes:00} : {seconds:00}";
+                    await Awaitable.WaitForSecondsAsync(1);
+                }
+
+                if (remaining <= 0)
+                {
+                    currentPhase.SetResult(true);
+                }
             }
-            
-            if (remaining <= 0)
-                currentPhase.SetResult(true);
+            catch (Exception e)
+            {
+                Debug.LogException(e);
+            }
         }
     }
 }

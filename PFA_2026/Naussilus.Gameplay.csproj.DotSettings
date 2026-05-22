@@ -7,6 +7,8 @@
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005C_005Fproject_005Cscripts_005Cgameplay_005Cinputs/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005C_005Fproject_005Cscripts_005Cgameplay_005Cintermediates/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005C_005Fproject_005Cscripts_005Cgameplay_005Claunching/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005C_005Fproject_005Cscripts_005Cgameplay_005Claunching_005Cintrophases/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005C_005Fproject_005Cscripts_005Cgameplay_005Claunching_005Cintrophases_005Cuis/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005C_005Fproject_005Cscripts_005Cgameplay_005Cmainmenus/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005C_005Fproject_005Cscripts_005Cgameplay_005Cmanagement/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005C_005Fproject_005Cscripts_005Cgameplay_005Cmanagement_005Cactionpoints/@EntryIndexedValue">True</s:Boolean>
@@ -38,6 +40,7 @@
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005C_005Fproject_005Cscripts_005Cgameplay_005Cplayer/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005C_005Fproject_005Cscripts_005Cgameplay_005Cplayer_005Ccameras/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005C_005Fproject_005Cscripts_005Cgameplay_005Cplayer_005Cinputs/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005C_005Fproject_005Cscripts_005Cgameplay_005Csounddesigns/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005C_005Fproject_005Cscripts_005Cgameplay_005Cswitchday/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005C_005Fproject_005Cscripts_005Cgameplay_005Cvisualnovel/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005C_005Fproject_005Cscripts_005Cgameplay_005Cvisualnovel_005Creaddialogues/@EntryIndexedValue">True</s:Boolean>

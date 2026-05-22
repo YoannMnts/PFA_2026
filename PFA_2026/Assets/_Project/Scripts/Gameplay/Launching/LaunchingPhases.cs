@@ -27,13 +27,21 @@ namespace Naussilus.Gameplay
         {
             try
             {
+                //var intro = new IntroductionPhase();
+                //await intro.Run();
+                
                 for (int i = 0; i < maxDay; i++)
                 {
                     await SwitchDay(i);
+                    
                     bool vnResult = await VisualNovel();
+                    
                     await PlayerSwitch();
+                    
                     bool mResult = await Management();
+                    
                     await PlayerSwitch();
+                    
                     if (!mResult || !vnResult)
                     {
                         GameOver();
