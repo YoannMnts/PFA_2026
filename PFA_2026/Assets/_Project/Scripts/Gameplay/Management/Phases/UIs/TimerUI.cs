@@ -1,4 +1,5 @@
 ﻿using System;
+using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using TMPro;
 using UnityEngine;
@@ -12,13 +13,22 @@ namespace Naussilus.Gameplay
         [SerializeField] private bool isTimerActive;
         
         private ManagementPhase currentPhase;
+        private TimerPhase timer;
+
         protected override void OnPhaseBegin(ManagementPhase phase)
         {
             currentPhase = phase;
             if (isTimerActive)
-                StartCountdown();
-            
-            
+            {
+                timer?.Cancel();
+                
+                timer = new TimerPhase(timerDuration);
+                
+                timer.OnTimerRepeat += OnTimerRepeat;
+                timer.OnTimerEnd += OnTimerEnd;
+                
+                timer.RunAndForget();
+            }
             base.OnPhaseBegin(phase);
         }
 
@@ -27,32 +37,20 @@ namespace Naussilus.Gameplay
             currentPhase = null;
             timerText.text = string.Empty;
             timerDuration = 0;
+            timer.OnTimerRepeat -= OnTimerRepeat;
+            timer.OnTimerEnd -= OnTimerEnd;
+            timer.Cancel();
             base.OnPhaseEnd(phase);
         }
 
-        private async void StartCountdown()
+        private void OnTimerRepeat()
         {
-            try
-            {
-                int remaining = timerDuration;
-                for (int i = 0; i < timerDuration; i++)
-                {
-                    remaining--;
-                    var minutes = remaining / 60;
-                    var seconds = remaining % 60;
-                    timerText.text = $"{minutes:00} : {seconds:00}";
-                    await Awaitable.WaitForSecondsAsync(1);
-                }
+            timerText.text = $"{timer.Minutes:01}:{timer.Seconds:01}";
+        }
 
-                if (remaining <= 0)
-                {
-                    currentPhase.SetResult(true);
-                }
-            }
-            catch (Exception e)
-            {
-                Debug.LogException(e);
-            }
+        private void OnTimerEnd()
+        {
+            throw new NotImplementedException();
         }
     }
 }
