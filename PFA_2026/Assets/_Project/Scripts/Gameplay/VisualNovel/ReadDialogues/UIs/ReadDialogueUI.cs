@@ -16,7 +16,7 @@ namespace Naussilus.Gameplay
         private TMP_Text characterName;
         
         [SerializeField]
-        private Image bgImage;
+        private Image npcImage;
 
         private bool isDialogueRead;
 
@@ -28,6 +28,8 @@ namespace Naussilus.Gameplay
                 {
                     var dialogueLine = phase.DialogueLines[i];
                     characterName.text = dialogueLine.Npc.Name;
+                    dialogueLine.Expression.TryGetExpression(dialogueLine.Npc, out Sprite sprite);
+                    npcImage.sprite = sprite;
                     for (int j = 0; j < dialogueLine.Text.Length; j++)
                     {
                         dialogueText.text = dialogueLine.Text[j];

@@ -3,11 +3,11 @@ using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueLines;
 
 namespace Naussilus.Core
 {
-    public struct DialogueLine
+    public class DialogueLine
     {
         public Npc Npc { get; private set; }
         
-        public Expression? Expression { get; private set; }
+        public Expression Expression { get; private set; }
         
         public string[] Text { get; private set; }
 

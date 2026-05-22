@@ -15,11 +15,5 @@ namespace Naussilus.Core.Managements.ActionDatas
         
         [field : SerializeField]
         public ConditionalEffectData[] Effects { get; private set; }
-        
-        [field : SerializeField]
-        public Vector3 Position { get; private set; }
-        
-        [field : SerializeField]
-        public ExpressionData ActionSprite { get; private set; } 
     }
 }

@@ -40,6 +40,9 @@ namespace Naussilus.Gameplay
                         break;
                     }
                 }
+                
+                var ending = new EndingPhase(false);
+                ending.RunAndForget();
             }
             catch (Exception e)
             {
@@ -49,11 +52,13 @@ namespace Naussilus.Gameplay
 
         private void GameOver()
         {
-            SceneManager.LoadScene(0);
+            var ending = new EndingPhase(true);
+            ending.RunAndForget();        
         }
 
         private async Awaitable PlayerSwitch()
         {
+            EventManager.Init();
             var playerSwitch = new PlayerSwitch();
             await playerSwitch.Run();
         }

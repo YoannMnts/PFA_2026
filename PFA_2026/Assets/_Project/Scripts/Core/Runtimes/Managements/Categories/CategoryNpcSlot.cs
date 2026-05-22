@@ -13,12 +13,15 @@ namespace Naussilus.Gameplay
                 SlotPosition = Vector3.zero;
             else
                 SlotPosition = position.Position;
+            NpcExpression = new Expression(position.Expression); 
             CurrentNpc = npc;
         }
         
         [CanBeNull] public Npc CurrentNpc { get; private set; }
         
         public Vector3 SlotPosition { get; private set; }
+        
+        public Expression NpcExpression { get; private set; }
 
         protected internal bool TryAddNpc(Npc npc)
         {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Naussilus.Core
 {
-    public struct ExpressionValue
+    public class ExpressionValue
     {
         public Sprite Sprite { get; private set; }
         

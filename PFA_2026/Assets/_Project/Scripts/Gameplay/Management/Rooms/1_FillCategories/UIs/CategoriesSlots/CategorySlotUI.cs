@@ -32,7 +32,13 @@ namespace Naussilus.Gameplay.CategoriesSlots
         protected override void SyncUI(CategoryNpcSlot current)
         {
             var npc = current.CurrentNpc;
-            icon.sprite = npc?.CategoryIcon;
+            var expressions = current.NpcExpression.Expressions;
+            for (int i = 0; i < expressions?.Length; i++)
+            {
+                if (expressions[i].Npc == npc)
+                    icon.sprite = expressions[i].Sprite;
+            }
+
         }
 
         protected override void ClearUI()

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Naussilus.Core.NpcDatas;
+using UnityEngine;
 
 namespace Naussilus.Core.Managements
 {
@@ -7,5 +8,8 @@ namespace Naussilus.Core.Managements
     {
         [field: SerializeField]
         public Vector3 Position { get; private set; }
+        
+        [field: SerializeField]
+        public ExpressionData Expression { get; private set; }
     }
 }
