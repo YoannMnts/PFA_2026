@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 37_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "Capitaine, j\u2019aimerais vous parler au sujet de Liski."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Pensez vous qu\u2019il a vraiment sa place i\xE7i ?"
+    - "Ne trouvez-vous pas qu\u2019il est\u2026De trop ?"
+    - "Si \xE7a ne tenait qu\u2019\xE0 moi, il n'aurait m\xEAme jamais \xE9t\xE9
+      embauch\xE9."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: c58b87c31c851f94ab8aa9fc7fbe1b42, type: 2}
+  - {fileID: 11400000, guid: b0831319242d41a4aa4568d5fcd9d029, type: 2}
+  - {fileID: 11400000, guid: 5e3dab47eeba2204c998292e8f639f99, type: 2}
+  <GUID>k__BackingField: ee33ba65-da4d-4e80-acdc-50648c04efb9

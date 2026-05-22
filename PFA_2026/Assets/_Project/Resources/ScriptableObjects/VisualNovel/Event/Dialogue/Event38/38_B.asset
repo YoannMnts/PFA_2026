@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 38_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - Cette nuit, il a eu pour de l'orage dehors, et il est venu pleurnicher jusque
+      dans mon hamac !
+    - "Et le reste de la nuit, il hurlait \xE0 chaque \xE9clair, c\u2019\xE9tait
+      insupportable !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: ec9c93a3e7430074886f9b55f114eeae, type: 2}
+  - {fileID: 11400000, guid: 2c430c7c3c296ef4583c888aa351a71c, type: 2}
+  - {fileID: 11400000, guid: 469a77202d76bba4e98660ff6456543e, type: 2}
+  <GUID>k__BackingField: b30cede8-b503-425f-8e06-a8316737f626

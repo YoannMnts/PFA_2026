@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 42_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Faut \xEAtre aveugle pour pas l\u2019voir."
+    - "Les autres prennent pas d\u2019mes nouvelles, m\u2019\xE9vitent presque, et
+      m\u2019font souvent la t\xEAte."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: bd887e768b9e1cd40a9360af028cba60, type: 2}
+  - {fileID: 11400000, guid: de098e56695540e4da766cc0dd25a3bb, type: 2}
+  <GUID>k__BackingField: c23c6be4-1e75-46cc-9da2-77a8f833eede

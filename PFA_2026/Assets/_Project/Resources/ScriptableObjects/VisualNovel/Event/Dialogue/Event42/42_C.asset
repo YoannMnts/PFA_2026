@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 42_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Ben\u2026 j\u2019sais qu\u2019mes blagues passent pas toujours bien."
+    - "C\u2019est plus fort que moi, j\u2019me rend pas compte de c\u2019qui peut
+      toucher les autres."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 1a0afeea41b83a94bbf9c29b1670dc7f, type: 2}
+  - {fileID: 11400000, guid: 96021714d834f274dbf354489e4122a3, type: 2}
+  - {fileID: 11400000, guid: d3b73d3999cdf1e47971420c7d7e24f8, type: 2}
+  <GUID>k__BackingField: 61d6c8e6-aa3f-41d2-ae54-7745d6d2a879

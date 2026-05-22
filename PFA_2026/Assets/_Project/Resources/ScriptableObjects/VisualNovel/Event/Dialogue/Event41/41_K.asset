@@ -13,17 +13,19 @@ MonoBehaviour:
   m_Name: 41_K
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
-    - "Ca c\u2019est s\xFBr, et j\u2019irais m\xEAme plus loin , il faut lui couper
-      l\u2019acc\xE8s au monde ext\xE9rieur, comme \xE7a on est s\xFBr qu\u2019il
-      ne recommencera pas."
-    - "Il ne pourra m\xEAme plus \xE9couter sa musique qui casse les oreilles \xE0
-      tout le monde."
-    - "Personne ne se moque de moi impun\xE9ment. "
+    - "J\u2019voudrais qu\u2019justice soit rendue, qu\u2019j\u2019r\xE9cup\xE8re
+      ma mise, et qu\u2019cette fashionista de pacotille paie pour sa triche."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - Une fashionista de pacotille !?
+    - "Surveille ta langue mis\xE9rable estropi\xE9 !\r\n"
   <Answers>k__BackingField:
-  - {fileID: 11400000, guid: 9f72c1a214b8c374d8312c82b2c0ea6b, type: 2}
-  - {fileID: 11400000, guid: 8cae94a7e8702f74d96e1d1d4037ea29, type: 2}
-  - {fileID: 11400000, guid: 393ebd6cce5fbaa429db78f97780d511, type: 2}
+  - {fileID: 11400000, guid: eb09f2f69b66df7469f33ab4991ebb38, type: 2}
+  - {fileID: 11400000, guid: 490eb83d229236144b72d149437511d0, type: 2}
+  - {fileID: 11400000, guid: 4fd945a1f41460c4a88b711f37d8dde8, type: 2}
+  - {fileID: 11400000, guid: ac71a191e53940f449b57df62f39aa5d, type: 2}
   <GUID>k__BackingField: ebe7c3eb-e4cc-412a-8fd9-283bb4258f55

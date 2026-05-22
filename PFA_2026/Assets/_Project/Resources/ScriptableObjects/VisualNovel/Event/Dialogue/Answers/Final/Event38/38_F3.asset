@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6551f63f2e464eb39de211b4f9603e78, type: 3}
+  m_Name: 38_F3
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
+  <ButtonText>k__BackingField: "Ce matin, c\u2019est quartier libre pour tout l\u2019\xE9quipage,
+    reposez vous comme vous voulez"
+  <NpcText>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "Ah \xE7a c\u2019est gentil Capitaine !"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Sauf pour Liski j\u2019imagine, la moindre des choses serait qu\u2019il compense."
+    - "Enfin, je m\u2019en vais rattraper ma nuit, et dire que je me suis pr\xE9par\xE9
+      ce matin juste pour \xE7a\u2026"
+  <Effects>k__BackingField:
+  - <IsEnumeration>k__BackingField: 0
+    <CurrentNpcTarget>k__BackingField:
+      rid: -2
+    <Conditions>k__BackingField: []
+    <Consequences>k__BackingField:
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 0
+        <Subject>k__BackingField:
+          rid: 2811534205831348323
+        <Stat>k__BackingField:
+          rid: 2811534205831348324
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 1
+      <Amount>k__BackingField: 10
+      <Text>k__BackingField: []
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 0
+        <Subject>k__BackingField:
+          rid: 2811533953191379036
+        <Stat>k__BackingField:
+          rid: 2811534205831348325
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 1
+      <Amount>k__BackingField: 2
+      <Text>k__BackingField: []
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 0
+        <Subject>k__BackingField:
+          rid: 2811534205831348317
+        <Stat>k__BackingField:
+          rid: 2811534205831348318
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 1
+      <Text>k__BackingField:
+      - "Pendant que les autres se sont repos\xE9s, Liski \xE0 travaill\xE9 dur pour
+        se faire pardonner. Finalement, ils \xE9taient repos\xE9s et contents des
+        efforts de Liski, alors ils ne lui en veulent plus. Liski par contre, entre
+        sa nuit et ce matin, est compl\xE8tement \xE9puis\xE9."
+  <GUID>k__BackingField: 331c46fa-bb9f-4a1a-b508-e5a51a42fb54
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2811533953191379036
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    - rid: 2811534205831348317
+      type: {class: AllNpcData, ns: Naussilus.Core, asm: Naussilus.Core}
+      data: 
+    - rid: 2811534205831348318
+      type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 0
+        <Npc>k__BackingField:
+          rid: 2811534205831348319
+    - rid: 2811534205831348319
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    - rid: 2811534205831348323
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    - rid: 2811534205831348324
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: efa87449a5f31f3428fd0d3f9c939891, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811534205831348325
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: d1fd9c2734ce3c2448f583fbbc1287f6, type: 2}
+        <Amount>k__BackingField: 0

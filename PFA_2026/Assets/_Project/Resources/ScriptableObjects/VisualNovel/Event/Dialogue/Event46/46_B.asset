@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 46_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Des choses pass\xE9es."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "Vous savez, j\u2019ai pas toujours \xE9t\xE9 pirate, avant j\u2019travaillais
+      dans l\u2019arm\xE9e d\u2019lair."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Et une chose en entra\xEEnant une autre, j\u2019me suis r\u2019trouv\xE9 la. "
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: fe47433cb8c32da49b198e7dc2c829d3, type: 2}
+  - {fileID: 11400000, guid: 9a1a8a8ae587e194da0f1d19033aa55b, type: 2}
+  <GUID>k__BackingField: 117b3a3c-7c8b-4dd4-922c-4b46f4776a72

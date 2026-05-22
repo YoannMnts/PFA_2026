@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 44_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Bonjour Cap\u2019taine, vous pouvez p\u2019t\xEAtre encore voir la marque,
+      mais T\xE9a m'a mis une gifle !"
+    - " J\u2019m\u2019y attendais vraiment pas, c\u2019est parti d\u2019un coup et
+      paf !"
+    - "Faut qu\u2019vous fassiez quelque chose, elle est d\u2019venue compl\xE8tement
+      folle !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 02017c4349b560644bbd3296502b37a4, type: 2}
+  - {fileID: 11400000, guid: ddafdcd8a57f74a47b8cf7aa6a93b7fb, type: 2}
+  <GUID>k__BackingField: b051793e-ab38-4f3d-872b-243691540eca

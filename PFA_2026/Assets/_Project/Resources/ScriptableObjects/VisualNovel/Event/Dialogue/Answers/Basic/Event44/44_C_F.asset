@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
+  m_Name: 44_C_F
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
+  <ButtonText>k__BackingField: "Tu es s\xFBr que tu n'as rien fait pour l'\xE9nerver
+    ? "
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 5ab6a8242fbe2fd47a4243d41b2570e9, type: 2}
+  <GUID>k__BackingField: 50f63dca-526e-47df-b14c-69f8d8150b10

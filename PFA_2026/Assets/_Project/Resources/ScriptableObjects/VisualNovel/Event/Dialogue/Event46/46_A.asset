@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 46_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Bonjour Cap\u2019taine."
+    - "D\xE9sol\xE9 pour ma salle mine, j\u2019ai quasiment pas dormi d\u2019la nuit."
+    - "J\u2019\xE9tais plut\xF4t occup\xE9 \xE0 r\u2019penser \xE0\u2026"
+    - "Certaines choses, et j\u2019arrive pas vraiment \xE0 m\u2019distraire.\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 94c73dc15f86ed04ab5c80cb71171329, type: 2}
+  - {fileID: 11400000, guid: 543f285bc07f24042ae9e80abffe108c, type: 2}
+  <GUID>k__BackingField: a08c3e0f-4bbd-4bc8-b055-f4054fe92545

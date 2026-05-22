@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 38_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Et bien si j\u2019ai essay\xE9."
+    - "Je lui ai dit qu\u2019il devrait plus avoir peur de mes talons dans la figure
+      que de l\u2019orage. "
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: a2ede06ee818ee84e8d436cc857522a0, type: 2}
+  - {fileID: 11400000, guid: 4e84b98e5af668844ae125dbfec9af9e, type: 2}
+  - {fileID: 11400000, guid: 1dde4f557f0b0a74aa7f0fcf41a251b5, type: 2}
+  <GUID>k__BackingField: ac90b798-3268-4448-8438-b12cc10ab452

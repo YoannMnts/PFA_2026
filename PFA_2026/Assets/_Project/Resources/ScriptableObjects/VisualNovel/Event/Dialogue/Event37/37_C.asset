@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 37_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "Ha, c\u2019est le moins qu\u2019on puisse dire !"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Il est \xE0 peine bon \xE0 frotter le plancher, et encore"
+    - "Si vous voulez mon avis, c\u2019est un probl\xE8me pour l\u2019\xE9quipage."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 325f72a0e8bee7445b5e92bd9321baf1, type: 2}
+  - {fileID: 11400000, guid: fbf0719419d46ae40a682d157c7f8aa2, type: 2}
+  <GUID>k__BackingField: 4891095f-4dbb-44f8-8599-1e7961c257fa

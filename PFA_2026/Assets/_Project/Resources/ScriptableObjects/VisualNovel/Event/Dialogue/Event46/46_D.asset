@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 46_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Pour faire court, j\u2019\xE9tais vigie dans l\u2019arm\xE9e d\u2019l\u2019air."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "J\u2019avais un post bien plac\xE9, j\u2019\xE9tais m\xEAme mari\xE9."
+    - 'Elle s''appelait Angelica. '
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Autant dire qu\u2019j'avais tout pour moi, mais un jour, mon navire a eu un
+      sacr\xE9 accident, et j\u2019me suis r\u2019trouv\xE9 estropill\xE9."
+    - "J\u2019ai perdu mon travail, j\u2019suis devenu aigri et d\xE9sagr\xE9able
+      \xE0 cause de la blessure, et Angelica a fini par partir."
+    - "J\u2019me suis r\u2019trouv\xE9 tout seul et mis\xE9rable, et j\u2019ai compris
+      qu\u2019j\u2019devais changer."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "Et maintenant j\u2019me trouve i\xE7i, \xE0 d\xE9tourner de la poiscaille,
+      et ma foi c\u2019est pas plus mal.\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: df7cb1e1bd228514ca109a494a9ca6b7, type: 2}
+  - {fileID: 11400000, guid: b099b61f19b1f0243bc38bf081c13260, type: 2}
+  - {fileID: 11400000, guid: 355c5eb4a22657a49aa71e526446a96d, type: 2}
+  <GUID>k__BackingField: 8fc2bdb6-04dc-4ea8-bb67-a494f22c2500

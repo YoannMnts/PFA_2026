@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4426d2e37cb0480e88589e1b21471988, type: 3}
+  m_Name: 42_HerlockHated
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.EventData
+  <Name>k__BackingField: "Herlock ne se sent pas appr\xE9ci\xE9 de l\u2019\xE9quipage "
+  <Npcs>k__BackingField:
+  - {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+  <Priority>k__BackingField: 1
+  <DayCheck>k__BackingField: 0
+  <Dependencies>k__BackingField:
+  - <IsEnumeration>k__BackingField: 0
+    <CurrentNpcTarget>k__BackingField:
+      rid: -2
+    <Conditions>k__BackingField:
+    - <LeftSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: 2811533773414858969
+        <Stat>k__BackingField:
+          rid: 2811533982581653519
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ComparisonOperator>k__BackingField: 4
+      <RightSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <Stat>k__BackingField:
+          rid: 2811533773414858942
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+    - <LeftSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: 2811533773414858970
+        <Stat>k__BackingField:
+          rid: 2811534210194210816
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ComparisonOperator>k__BackingField: 4
+      <RightSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: -2
+        <Stat>k__BackingField:
+          rid: 2811533773414858958
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+    <Consequences>k__BackingField: []
+  <FirstDialogue>k__BackingField: {fileID: 11400000, guid: e75a6eda03845e84d8e127c4c1bfe648, type: 2}
+  <GUID>k__BackingField: ea105adb-503e-4484-bba2-a5899d6ed232
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2811533773414858942
+      type: {class: IntValueData, ns: Naussilus.Core, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 7
+    - rid: 2811533773414858958
+      type: {class: IntValueData, ns: Naussilus.Core, asm: Naussilus.Core}
+      data:
+        <Amount>k__BackingField: 8
+    - rid: 2811533773414858969
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    - rid: 2811533773414858970
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    - rid: 2811533982581653519
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811534210194210816
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: da645db61372a354fb4e466633a3a304, type: 2}
+        <Amount>k__BackingField: 0

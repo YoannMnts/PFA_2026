@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 42_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Bonjour Cap\u2019taine."
+    - "Ces derniers temps, j\u2019ai l\u2019impression qu\u2019y a pas grand monde
+      qui m\u2019appr\xE9cie sur c\u2019bateau."
+    - "J\u2019sais pas vraiment c\u2019que j\u2019peux y faire. "
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 1808e3f75357fdb4f8ee2e8c1efd3a5c, type: 2}
+  - {fileID: 11400000, guid: a230bb25bb0db204ba162223a8d6914b, type: 2}
+  - {fileID: 11400000, guid: 409485a2bf1d9754a9ac3a1fd9410aa6, type: 2}
+  <GUID>k__BackingField: 7348d01b-d920-4f86-ad45-87bf216d9f83

@@ -14,13 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
   <Lines>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Comment ? C\u2019est une plaisanterie ? "
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
-    - "Mais bien s\xFBr ! Dans son \xE9mission, il m\u2019appelle Anny, pas besoin
-      d\u2019\xEAtre un g\xE9nie pour faire le lien avec moi."
-    - "Tous les idiots qui l\u2019\xE9coutent vont me reconna\xEEtre !"
+    - "Merci d\u2019l\u2019admettre. Il y a moyen de r\xE9cup\xE9rer ce que j\u2019ai
+      perdu ?"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Et moi, y'aurait-il moyen de m\u2019\xE9couter ? "
   <Answers>k__BackingField:
-  - {fileID: 11400000, guid: 9f72c1a214b8c374d8312c82b2c0ea6b, type: 2}
-  - {fileID: 11400000, guid: 8cae94a7e8702f74d96e1d1d4037ea29, type: 2}
-  - {fileID: 11400000, guid: 393ebd6cce5fbaa429db78f97780d511, type: 2}
+  - {fileID: 11400000, guid: eb09f2f69b66df7469f33ab4991ebb38, type: 2}
+  - {fileID: 11400000, guid: 490eb83d229236144b72d149437511d0, type: 2}
+  - {fileID: 11400000, guid: 4fd945a1f41460c4a88b711f37d8dde8, type: 2}
+  - {fileID: 11400000, guid: ac71a191e53940f449b57df62f39aa5d, type: 2}
   <GUID>k__BackingField: 8bb0828f-a81b-41b5-b54b-49d94ccec025

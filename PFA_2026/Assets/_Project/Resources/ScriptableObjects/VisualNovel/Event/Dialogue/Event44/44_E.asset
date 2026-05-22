@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 44_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Ouais p\u2019t\u2019\xEAtre\u2026"
+    - "J\u2019pensais pas qu\u2019elle le prendrait mal comme \xE7a, mais c\u2019est
+      vrai qu\u2019suis p\u2019t\u2019\xEAtre all\xE9 un peu loin."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Enfin bon, \xE7a justifie pas une claque."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 1db9c4501afc76b44b5b180b65a1e297, type: 2}
+  - {fileID: 11400000, guid: 2e91b4c5deec7ea4793407d04330780f, type: 2}
+  - {fileID: 11400000, guid: 8a7bb83ce56ea784292c94ed35e06ade, type: 2}
+  <GUID>k__BackingField: 68ef50c4-578f-4812-a759-6f5c00c717bc

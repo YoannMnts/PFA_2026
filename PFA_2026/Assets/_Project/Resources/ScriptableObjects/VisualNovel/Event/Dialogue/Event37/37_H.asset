@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 37_H
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Moi ? Mais enfin moi je suis une v\xE9ritable pirate."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - Ce navire ne pourrait pas se passer de moi.
+    - "Lui en revanche\u2026En a-on vraiment besoin ? "
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 785c58c5b0bfc5b4185e7fff047293d2, type: 2}
+  - {fileID: 11400000, guid: 0e2953740e6dd894ba6c16754a1adce9, type: 2}
+  - {fileID: 11400000, guid: 3fd1cecf8e9586842bb995fad5755896, type: 2}
+  - {fileID: 11400000, guid: 4b796e890a5136e4b8e6182315999dfc, type: 2}
+  <GUID>k__BackingField: 5804e0b1-c084-4f24-bc34-ad2fc4e87f81

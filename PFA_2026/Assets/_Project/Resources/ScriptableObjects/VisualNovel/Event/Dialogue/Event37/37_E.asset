@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 37_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "Ecoutez, si vous voulez que votre \xE9quipage ait l\u2019air de quelque chose,
+      il faut laisser tomber Liski."
+    - "D\xE9posons le au prochain port, tout simplement."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Il n\u2019est pas pr\xEAt pour la piraterie, il ne fera que nous ralentir."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 785c58c5b0bfc5b4185e7fff047293d2, type: 2}
+  - {fileID: 11400000, guid: 0e2953740e6dd894ba6c16754a1adce9, type: 2}
+  - {fileID: 11400000, guid: 3fd1cecf8e9586842bb995fad5755896, type: 2}
+  - {fileID: 11400000, guid: 4b796e890a5136e4b8e6182315999dfc, type: 2}
+  <GUID>k__BackingField: 36dd9e68-9860-416b-84cb-8d110e2e3edf

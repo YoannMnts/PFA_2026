@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
+  m_Name: 42_D_H
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
+  <ButtonText>k__BackingField: "Parfois il est impossible de changer ce que l\u2019on
+    est "
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 10559417d675874479c885702fdb949a, type: 2}
+  <GUID>k__BackingField: a9ae62cb-55df-4d0c-8e48-514cc67b841a

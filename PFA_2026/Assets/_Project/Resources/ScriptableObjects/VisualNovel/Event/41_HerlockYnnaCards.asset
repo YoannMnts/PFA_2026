@@ -58,7 +58,7 @@ MonoBehaviour:
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
     <Consequences>k__BackingField: []
-  <FirstDialogue>k__BackingField: {fileID: 11400000, guid: e31cc5dea44102847a41c06710d103d1, type: 2}
+  <FirstDialogue>k__BackingField: {fileID: 11400000, guid: 127d0027403e842428341f09e66d3385, type: 2}
   <GUID>k__BackingField: 49b948fe-b15a-4861-b43d-bce2cce6d526
   references:
     version: 2

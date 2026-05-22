@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 42_F
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - Vraiment ?
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "C\u2019est pas facile de m\u2019changer, beaucoup ont d\xE9j\xE0 essay\xE9,
+      mais j\u2019pense \xEAtre pr\xEAt \xE0 prendre les conseils.\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 70ee6201bd039bc44810052b8402d94e, type: 2}
+  - {fileID: 11400000, guid: 15a7a6eb40222614398d3acfd5026bb4, type: 2}
+  - {fileID: 11400000, guid: 11549c4ad12c7f449bcecec4ed289d79, type: 2}
+  <GUID>k__BackingField: 5b916ab9-fc37-4bb3-a57c-bc3e6ea1761c

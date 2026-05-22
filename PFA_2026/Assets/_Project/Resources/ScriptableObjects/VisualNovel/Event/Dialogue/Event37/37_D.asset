@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 37_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Vraiment ? Je croyais vos capacit\xE9s de jugement plus fines."
+    - "ous ne voyez pas qu\u2019il est toujours \xE0 la tra\xEEne ?"
+    - "Toujours en train de d\xE9ranger les autres ? "
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: ca7a88610d07198498404e6625c6d604, type: 2}
+  - {fileID: 11400000, guid: 51ab5fdc8ac791444b2cf6ba30af3f32, type: 2}
+  - {fileID: 11400000, guid: c48c3c139eff5a74c84409972c39dcd0, type: 2}
+  <GUID>k__BackingField: ca3f38fe-5c78-4d1c-8edd-a3b15759521b

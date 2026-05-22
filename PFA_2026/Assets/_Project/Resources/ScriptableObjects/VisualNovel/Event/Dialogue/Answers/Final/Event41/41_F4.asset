@@ -10,21 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6551f63f2e464eb39de211b4f9603e78, type: 3}
-  m_Name: 36_F2
+  m_Name: 41_F4
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
-  <ButtonText>k__BackingField: "Son \xE9mission a l\u2019air amusante, personne ne
-    saura qu\u2019il parle de toi"
+  <ButtonText>k__BackingField: "Je ne peux pas te laisser tenir de tels propos  Herlock
+    : Passe un peu plus de temps avec Ynna et aide la dans ses t\xE2ches"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
-    - "Quoi ! Vous ne parlez pas s\xE9rieusement !"
+    - "Quoi ! J\u2019n\u2019en reviens pas, j\u2019vous rapporte les m\xE9faits d\u2019une
+      manipulatrice, et tout c\u2019que vous trouvez \xE0 faire c\u2019est d\u2019me
+      dire d\u2019aller brasser du vent avec elle ? "
   - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
     <Text>k__BackingField:
-    - "Quand bien m\xEAme on ne ferait pas le lien avec moi, ce genre d'\xE9missions
-      ne fait que cr\xE9er plus de cervelles d'hu\xEEtre comme lui !"
-    - "\xC7a ne va pas se passer comme \xE7a !"
+    - "Je ne suis pas ravie de devoir passer plus de temps avec toi non plus, mais
+      si \xE7a te permet d\u2019accepter la d\xE9faite alors soit."
   <Effects>k__BackingField:
   - <IsEnumeration>k__BackingField: 0
     <CurrentNpcTarget>k__BackingField:
@@ -33,109 +34,104 @@ MonoBehaviour:
     <Consequences>k__BackingField:
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 0
+        <Subject>k__BackingField:
+          rid: 2811534205831348339
+        <Stat>k__BackingField:
+          rid: 2811533976630722566
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 2
+      <Text>k__BackingField: []
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
         <Subject>k__BackingField:
-          rid: 2811533953191379028
+          rid: 2811533953191379036
         <Stat>k__BackingField:
-          rid: 2811533976630722560
+          rid: 2811534205831348340
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ArithmeticOperator>k__BackingField: 1
-      <Amount>k__BackingField: 4
-      <Text>k__BackingField: []
-    - <IsGameLost>k__BackingField: 0
-      <ConsequenceSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 0
-        <Subject>k__BackingField:
-          rid: 2811533953191379029
-        <Stat>k__BackingField:
-          rid: 2811533953191379051
-        <UseEnumerationNpc>k__BackingField: 0
-        <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ArithmeticOperator>k__BackingField: 1
-      <Amount>k__BackingField: 6
-      <Text>k__BackingField: []
-    - <IsGameLost>k__BackingField: 0
-      <ConsequenceSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 0
-        <Subject>k__BackingField:
-          rid: 2811533953191379031
-        <Stat>k__BackingField:
-          rid: 2811533976630722562
-        <UseEnumerationNpc>k__BackingField: 0
-        <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ArithmeticOperator>k__BackingField: 1
-      <Amount>k__BackingField: 4
-      <Text>k__BackingField: []
-    - <IsGameLost>k__BackingField: 0
-      <ConsequenceSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 0
-        <Subject>k__BackingField:
-          rid: 2811533976630722563
-        <Stat>k__BackingField:
-          rid: 2811533976630722564
-        <UseEnumerationNpc>k__BackingField: 0
-        <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ArithmeticOperator>k__BackingField: 1
+      <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
+      <Text>k__BackingField: []
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: 2811533773414859010
+        <Stat>k__BackingField:
+          rid: 2811534205831348343
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 2
+      <Text>k__BackingField: []
+    - <IsGameLost>k__BackingField: 0
+      <ConsequenceSide>k__BackingField:
+        <IsCurrentNpc>k__BackingField: 1
+        <Subject>k__BackingField:
+          rid: 2811533773414858994
+        <Stat>k__BackingField:
+          rid: 2811534205831348344
+        <UseEnumerationNpc>k__BackingField: 0
+        <UseRelationshipNpcToReturn>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 3
       <Text>k__BackingField:
-      - "Ynna \xE0 lanc\xE9 la radio d\u2019Herlock dans le vide \xE0 travers la
-        fen\xEAtre de la vigie, ce qui a cr\xE9\xE9 une grosse dispute avec Herlock.
-        L\u2019\xE9quipage n\u2019a pas appr\xE9ci\xE9 cette action non plus. J\u2019aurais
-        peut-\xEAtre d\xFB prendre la situation plus au s\xE9rieux."
-  <GUID>k__BackingField: 16251c52-d687-47d1-bd09-c84a0f873ff2
+      - "Apr\xE8s avoir forc\xE9 Herlock et Ynna \xE0 passer plus de temps ensemble,
+        ils ont l\u2019air de mieux s\u2019entendre. Ils ont rejou\xE9 plusieurs
+        parties, sans disputes cette fois, je crois que Herlock fait des progr\xE8s."
+  <GUID>k__BackingField: a08b8a21-629b-433b-811d-eb55570ee896
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 2811533953191379028
+    - rid: 2811533773414858994
       type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
-    - rid: 2811533953191379029
-      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
-    - rid: 2811533953191379031
+        <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    - rid: 2811533773414859010
       type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
-    - rid: 2811533953191379051
+    - rid: 2811533953191379036
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    - rid: 2811533976630722566
       type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 0
         <Npc>k__BackingField:
-          rid: 2811533953191379052
-    - rid: 2811533953191379052
+          rid: 2811533976630722567
+    - rid: 2811533976630722567
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    - rid: 2811534205831348339
       type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
-    - rid: 2811533976630722560
+    - rid: 2811534205831348340
       type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 0
         <Npc>k__BackingField:
-          rid: 2811533976630722561
-    - rid: 2811533976630722561
-      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
-    - rid: 2811533976630722562
-      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
-        <Amount>k__BackingField: 0
-    - rid: 2811533976630722563
-      type: {class: AllNpcData, ns: Naussilus.Core, asm: Naussilus.Core}
-      data: 
-    - rid: 2811533976630722564
-      type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 0
-        <Npc>k__BackingField:
-          rid: 2811533976630722565
-    - rid: 2811533976630722565
+          rid: 2811534205831348341
+    - rid: 2811534205831348341
       type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    - rid: 2811534205831348343
+      type: {class: BehaviorValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: be977a50b8a9d5b4ba2645d7a82c7315, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811534205831348344
+      type: {class: BehaviorValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: c171d234a990b1a40bc8ea3fce4c0236, type: 2}
+        <Amount>k__BackingField: 0

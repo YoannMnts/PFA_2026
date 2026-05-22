@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 45_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Bah si j\u2019peux pas voir j\u2019peux pas l\u2019aider !"
+    - "J\u2019lui ai dit et pourtant elle arr\xEAte pas d\u2019m\u2019appeler !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 41a7a0cfac85d46499a85d1ecb039424, type: 2}
+  - {fileID: 11400000, guid: 90c697d1cd6b7bd4f954cefbd5c99e84, type: 2}
+  - {fileID: 11400000, guid: 5e839bd0b58c4ac4cad6ea598ee23981, type: 2}
+  <GUID>k__BackingField: 13c9a13f-be34-4048-bfe5-96c8db43d6a6
