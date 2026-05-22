@@ -5,6 +5,7 @@ using Helteix.Tools.Phases;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Pool;
 using UnityEngine.UI;
 
 namespace Naussilus.Gameplay.Interactions
@@ -79,30 +80,30 @@ namespace Naussilus.Gameplay.Interactions
             if (touchInput is not TapInput)
                 return;
 
-            if (PlayerInputs.IsScreenPosOnUI(tapInput.TapPosition))
-                return;
-            
-            Vector2 worldPos = cam.ScreenToWorldPoint(tapInput.TapPosition);
-
-            //TODO mettre le vrai filter
-            ContactFilter2D filter = ContactFilter2D.noFilter;
-            int count = Physics2D.Raycast(worldPos, Vector2.zero, filter, Hits);
-            IInteractable interactable = null;
-            for (int i = 0; i < count; i++)
+            EventSystem eventSystem = EventSystem.current;
+            using (ListPool<RaycastResult>.Get(out var results))
             {
-                var hit = Hits[i];
-                if (hit.transform.TryGetComponent(out IInteractable hitInteractable))
+                var pointerEventData = new PointerEventData(eventSystem)
                 {
-                    if (interactable != null && interactable.Priority > hitInteractable.Priority)
-                        continue;
-
-                    if (hitInteractable.IsInteractable())
-                        interactable = hitInteractable;
-                    Debug.Log($"[PlayerInteraction] Trying to interact with {hit.collider.gameObject.name}");
+                    position = tapInput.TapPosition
+                };
+                eventSystem.RaycastAll(pointerEventData, results);
+        
+                foreach (var result in results)
+                {
+                    if (result.gameObject.TryGetComponent(out IInteractable uiInteractable))
+                    {
+                        if (uiInteractable.IsInteractable())
+                        {
+                            uiInteractable.Interact(this);
+                            return;
+                        }
+                    }
+            
+                    if (result.gameObject.GetComponent<RectTransform>() != null)
+                        return;
                 }
             }
-
-            interactable?.Interact(this);
         }
 
         public void StopInteract()

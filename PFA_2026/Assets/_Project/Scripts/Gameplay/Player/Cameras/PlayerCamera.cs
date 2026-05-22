@@ -42,14 +42,12 @@ namespace Naussilus.Gameplay
 
         private void OnEnable()
         {
-            CanMove.OnValueChanged += CanMoveChange;
             this.Register();
         }
 
 
         private void OnDisable()
         {
-            CanMove.OnValueChanged -= CanMoveChange;
             this.Unregister();
         }
 
@@ -68,6 +66,7 @@ namespace Naussilus.Gameplay
 
         private void CanMoveChange(bool canMove)
         {
+            Debug.Log($"CanMoveChange {canMove}");
             if (canMove)
             {
                 Controller.PlayerInputs.AddTouchInput(pinchInput);
@@ -91,9 +90,11 @@ namespace Naussilus.Gameplay
         {
             if (gameObject.TryGetService(out PlayerController playerController))
             {
+                Debug.Log($"[PlayerCamera] Player camera on {phase}");
                 playerController.PlayerInputs.AddTouchInput(pinchInput);
                 playerController.PlayerInputs.AddTouchInput(slideInput);
             }
+            CanMove.OnValueChanged += CanMoveChange;
         }
 
         public void OnPhaseEnd(ManagementPhase phase)
@@ -103,6 +104,7 @@ namespace Naussilus.Gameplay
                 playerController.PlayerInputs.RemoveTouchInput(pinchInput);
                 playerController.PlayerInputs.RemoveTouchInput(slideInput);
             }
+            CanMove.OnValueChanged -= CanMoveChange;
         }
 
     }

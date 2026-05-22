@@ -10,7 +10,6 @@ namespace Naussilus.Gameplay
     [RequireComponent(typeof(PlayerCamera))]
     public class PlayerController : SceneService<PlayerController>
     {
-
         [field: SerializeField]
         public PlayerInputs PlayerInputs { get; private set; }
         

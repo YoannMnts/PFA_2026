@@ -36,8 +36,7 @@ namespace Naussilus.Gameplay
                 return false;
             
             TapPosition = playerInputs.CurrentTouchscreen.primaryTouch.position.ReadValue();
-            
-            return !PlayerInputs.IsScreenPosOnUI(TapPosition);
+            return true;
         }
 
         void ITouchInput.Sleep(PlayerInputs playerInputs)

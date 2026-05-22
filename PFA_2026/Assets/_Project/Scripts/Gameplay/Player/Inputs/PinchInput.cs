@@ -58,8 +58,10 @@ namespace Naussilus.Gameplay
             var touch0Pos = touch0.position.ReadValue();
             var touch1Pos = touch1.position.ReadValue();
             
+            /*
             if(PlayerInputs.IsScreenPosOnUI(touch0Pos) || PlayerInputs.IsScreenPosOnUI(touch1Pos))
                 return false;
+            */
             
             float currentDistance = Vector2.Distance(
                 touch0Pos,

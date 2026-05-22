@@ -39,12 +39,12 @@ namespace Naussilus.Gameplay
         {
             if (!inputAction.IsInProgress()) 
                 return false;
-            Debug.Log($"AAAAAAA");
+
             if (inputAction.activeControl.device is not Touchscreen touchscreen || !playerInputs.Touchscreens.Contains(touchscreen))
                 return false;
                 
             Delta = inputAction.ReadValue<Vector2>();
-            Debug.Log($"Slide Input: {Delta}");
+            //Debug.Log($"Slide Input: {Delta}");
             return true;
         }
 

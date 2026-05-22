@@ -28,7 +28,6 @@ namespace Naussilus.Gameplay
         {
             for (int i = 0; i < InputSystem.devices.Count; i++)
             {
-                Debug.Log($"Device: {InputSystem.devices[i].name}");
                 if (InputSystem.devices[i] is Touchscreen touchscreen)
                 {
                     AddTouchscreen(touchscreen);
@@ -52,7 +51,7 @@ namespace Naussilus.Gameplay
             bool inputDidUpdate = false;
             foreach (var input in touchInputs)
             {
-                Debug.Log($"Updating {input.GetType().Name}");
+                //Debug.Log($"Updating {input.GetType().Name}");
                 if (inputDidUpdate)
                 {
                     input.Sleep(this);
@@ -81,8 +80,8 @@ namespace Naussilus.Gameplay
                 if (change == InputDeviceChange.Removed)
                 {
                     RemoveTouchscreen(touchscreen);
-                }
-                //Debug.Log($"OnDeviceChange: {change} -> {touchscreen.displayName}");
+                } 
+                //Debug.Log($"OnDeviceChange: {change} -> {touchscreen.name}");
             }
         }
 
@@ -125,6 +124,7 @@ namespace Naussilus.Gameplay
             return false;
         }
 
+        /*
         public static bool IsScreenPosOnUI(Vector2 screenPos)
         {
             EventSystem current = EventSystem.current;
@@ -135,11 +135,16 @@ namespace Naussilus.Gameplay
                     position = screenPos,
                 };
                 current.RaycastAll(pointerEventData, results);
+                foreach (var result in results)
+                {
+                    Debug.Log($"UI Hit : {result.gameObject.name}");
+                }
                 if(results.Count > 0)
                     return true;
             }
 
             return false;
         }
+        */
     }
 }

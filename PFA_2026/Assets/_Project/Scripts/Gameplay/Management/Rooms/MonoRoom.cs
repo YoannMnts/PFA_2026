@@ -54,10 +54,10 @@ namespace Naussilus.Gameplay
         
         public void Interact(PlayerInteractions playerInteractions)
         {
+            Debug.Log($"Interacting room {Room.Name}");
             if (CurrentPhase == null)
                 return;
             
-            Debug.Log($"Interacting room {Room.Name}");
 
             if (selectActionForRoom != null && selectActionForRoom.CurrentRoom == Room)
             {
