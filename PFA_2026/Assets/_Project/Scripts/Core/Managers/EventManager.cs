@@ -77,13 +77,8 @@ namespace Naussilus.Core.Managers
                 validEventDatas.Sort();
                 validEventDatas.Reverse();
                 
-                var minPriority = validEventDatas[0].Priority;
-                
-                for (int i = 0; i < validEventDatas.Count; i++)
-                {
-                    if (validEventDatas[i].Priority > minPriority)
-                        validEventDatas.Remove(validEventDatas[i]);
-                }
+                var maxPriority = validEventDatas[0].Priority;
+                validEventDatas.RemoveAll(incident => incident.Priority < maxPriority);
                 
                 var length = Mathf.Min(3, validEventDatas.Count);
                 var incidents = new Incident[length];
@@ -91,8 +86,27 @@ namespace Naussilus.Core.Managers
                 {
                     var randomIndex = Random.Range(0, validEventDatas.Count);
                     incidents[i] = validEventDatas[randomIndex];
-                    Debug.Log($"[Event Manager] Found {validEventDatas.Count} valid events and {incidents[i].Name} has been take.");
+
+                    if (length <= 1)
+                        break;    
+                    
+                    
+                    Npc npc = validEventDatas[randomIndex].Npcs[0];
+                    var counts = validEventDatas.Count;
+                    
+                    for (int j = 0; j < counts; j++)
+                    {
+                        if (validEventDatas[j].Npcs[0] == npc)
+                            validEventDatas.Remove(validEventDatas[j]);
+                    }
+                    
                 }
+
+                for (int i = 0; i < incidents.Length; i++)
+                {
+                    Debug.Log($"[Event Manager] Found {incidents.Length} valid events and {incidents[i].Name} has been take.");
+                }
+                
                 return incidents;
             }
         }
