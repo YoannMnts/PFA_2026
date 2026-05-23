@@ -1,12 +1,9 @@
-﻿using System.Collections.Generic;
-using Helteix.ChanneledProperties.Priorities;
+﻿using Helteix.ChanneledProperties.Priorities;
 using Helteix.Singletons.SceneServices;
 using Helteix.Tools.Phases;
-using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Pool;
-using UnityEngine.UI;
 
 namespace Naussilus.Gameplay.Interactions
 {
@@ -49,7 +46,7 @@ namespace Naussilus.Gameplay.Interactions
         }
 
 
-        public void OnPhaseBegin(ManagementPhase phase)
+        void IPhaseListener<ManagementPhase>.OnPhaseBegin(ManagementPhase phase)
         {
             if (gameObject.TryGetService(out PlayerController playerController))
             {
@@ -57,7 +54,7 @@ namespace Naussilus.Gameplay.Interactions
             }
         }
 
-        public void OnPhaseEnd(ManagementPhase phase)
+        void IPhaseListener<ManagementPhase>.OnPhaseEnd(ManagementPhase phase)
         {
             if (gameObject.TryGetService(out PlayerController playerController))
             {
@@ -76,7 +73,7 @@ namespace Naussilus.Gameplay.Interactions
 
         private void TryInteract(ITouchInput touchInput)
         {
-            Debug.Log($"Is Trigger Interact? {touchInput}");
+            //Debug.Log($"Is Trigger Interact? {touchInput}");
             if (touchInput is not TapInput)
                 return;
 
@@ -88,9 +85,10 @@ namespace Naussilus.Gameplay.Interactions
                     position = tapInput.TapPosition
                 };
                 eventSystem.RaycastAll(pointerEventData, results);
-        
-                foreach (var result in results)
+
+                for (var i = 0; i < results.Count; i++)
                 {
+                    var result = results[i];
                     if (result.gameObject.TryGetComponent(out IInteractable uiInteractable))
                     {
                         if (uiInteractable.IsInteractable())
@@ -99,18 +97,10 @@ namespace Naussilus.Gameplay.Interactions
                             return;
                         }
                     }
-            
-                    if (result.gameObject.GetComponent<RectTransform>() != null)
+
+                    if (result.gameObject.TryGetComponent<RectTransform>(out var rect))
                         return;
                 }
-            }
-        }
-
-        public void StopInteract()
-        {
-            if (gameObject.TryGetService(out PlayerController playerInputManager))
-            {
-                playerInputManager.PlayerInputs.AddTouchInput(tapInput);
             }
         }
     }

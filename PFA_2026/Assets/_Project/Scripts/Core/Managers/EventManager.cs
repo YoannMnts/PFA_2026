@@ -10,7 +10,7 @@ namespace Naussilus.Core.Managers
     public static class EventManager
     {
         private static readonly Dictionary<string, EventData> EventDatas;
-        private static readonly Dictionary<EventData, Incident> Incidents;
+        private static readonly Dictionary<string, Incident> Incidents;
         private static readonly List<Incident> CompletedIncidents;
         
         static EventManager()
@@ -25,13 +25,6 @@ namespace Naussilus.Core.Managers
                 EventData entry = entries[i];
                 EventDatas.TryAdd(entry.GUID, entry);
             }
-
-            Incidents.Clear();
-            for (int i = 0; i < entries.Length; i++)
-            {
-                Incident incident = new Incident(entries[i]);
-                Incidents.TryAdd(entries[i], incident);
-            }
             
             Debug.Log($"[EventManager] Loaded {entries.Length} events.");
             
@@ -44,27 +37,35 @@ namespace Naussilus.Core.Managers
             using (ListPool<Incident>.Get(out var validEventDatas) )
             {
                 var isConditionValid = false;
-                foreach ((string key, EventData value) in EventDatas)
+                foreach ((string guid, EventData data) in EventDatas)
                 {
-                    Incidents.TryGetValue(value, out Incident incident);
-                    if (CompletedIncidents.Contains(incident))
+                    Incident currentIncident;
+                    if(Incidents.TryGetValue(guid, out Incident incident))
+                        currentIncident = incident;
+                    else
                     {
-                        Debug.Log($"[EventManager] Event already completed: {value.Name}");
+                        currentIncident = new Incident(data);
+                        Incidents.Add(guid, currentIncident);
+                    }
+                    
+                    if (CompletedIncidents.Contains(currentIncident))
+                    {
+                        Debug.Log($"[EventManager] Event already completed: {currentIncident.Name}");
                         continue;
                     }
                     
-                    Debug.Log($"[EventManager] Found Incident: {value.Name}");
-                    ConditionalEffect[] conditionalEffects = incident.Dependencies ?? Array.Empty<ConditionalEffect>();
+                    Debug.Log($"[EventManager] Found Incident: {currentIncident.Name}");
+                    ConditionalEffect[] conditionalEffects = currentIncident.Dependencies ?? Array.Empty<ConditionalEffect>();
                     for (int i = 0; i < conditionalEffects.Length; i++)
                     {
-                        isConditionValid = conditionalEffects[i].ComputeOnlyConditions(incident.Npcs[0]);
+                        isConditionValid = conditionalEffects[i].ComputeOnlyConditions(currentIncident.Npcs[0]);
                         if (!isConditionValid) 
                             break;
                     }
                     if (!isConditionValid && conditionalEffects.Length > 0)
                         continue;
                     
-                    validEventDatas.Add(incident);
+                    validEventDatas.Add(currentIncident);
                 }
 
                 if (validEventDatas.Count == 0)
@@ -75,26 +76,38 @@ namespace Naussilus.Core.Managers
                 
                 validEventDatas.Sort();
                 validEventDatas.Reverse();
-                var maxPriority = validEventDatas[0].Priority;
-                var valueCount = validEventDatas.Count;
                 
-                using (ListPool<Incident>.Get(out var incidents))
+                var maxPriority = validEventDatas[0].Priority;
+                validEventDatas.RemoveAll(incident => incident.Priority < maxPriority);
+                
+                var length = Mathf.Min(3, validEventDatas.Count);
+                var incidents = new Incident[length];
+                for (int i = 0; i < length; i++)
                 {
-                    for (int i = 0; i < valueCount; i++)
+                    var randomIndex = Random.Range(0, validEventDatas.Count);
+                    incidents[i] = validEventDatas[randomIndex];
+
+                    if (length <= 1)
+                        break;    
+                    
+                    
+                    Npc npc = validEventDatas[randomIndex].Npcs[0];
+                    var counts = validEventDatas.Count;
+                    
+                    for (int j = 0; j < counts; j++)
                     {
-                        if (validEventDatas[i].Priority == maxPriority)
-                            incidents.Add(validEventDatas[i]);
+                        if (validEventDatas[j].Npcs[0] == npc)
+                            validEventDatas.Remove(validEventDatas[j]);
                     }
                     
-                    Incident[] result = new Incident[3];
-                    for (int i = 0; i < result.Length; i++)
-                    {
-                        var randomIndex = Random.Range(0, incidents.Count);
-                        result[i] = incidents[randomIndex];
-                    }
-                    Debug.Log($"[Event Manager] Found {validEventDatas.Count} valid events and {result[0].Name}, {result[1].Name}, {result[2].Name} has been take.");
-                    return result;
                 }
+
+                for (int i = 0; i < incidents.Length; i++)
+                {
+                    Debug.Log($"[Event Manager] Found {incidents.Length} valid events and {incidents[i].Name} has been take.");
+                }
+                
+                return incidents;
             }
         }
 

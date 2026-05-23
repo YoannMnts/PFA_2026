@@ -84,6 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9055578580546600698}
+  - component: {fileID: 3356821432198320077}
   - component: {fileID: 6748159586335360963}
   m_Layer: 5
   m_Name: Timer
@@ -113,6 +114,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -40, y: -40}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &3356821432198320077
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6742500684728186217}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &6748159586335360963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,7 +145,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   timerText: {fileID: 5274155338408110556}
-  timerDuration: 120
+  isTimerActive: 1
+  group: {fileID: 3356821432198320077}
 --- !u!1 &7735449480891117982
 GameObject:
   m_ObjectHideFlags: 0

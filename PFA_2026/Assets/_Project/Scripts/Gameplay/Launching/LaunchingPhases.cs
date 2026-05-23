@@ -3,6 +3,7 @@ using Helteix.Tools.Phases;
 using Naussilus.Core.Managers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 namespace Naussilus.Gameplay
 {
@@ -17,6 +18,9 @@ namespace Naussilus.Gameplay
         [SerializeField]
         private int defaultActionPoint;
         
+        [SerializeField]
+        private int timerDuration;
+        
         
         private void Start()
         {
@@ -27,13 +31,21 @@ namespace Naussilus.Gameplay
         {
             try
             {
+                //var intro = new IntroductionPhase();
+                //await intro.Run();
+                
                 for (int i = 0; i < maxDay; i++)
                 {
                     await SwitchDay(i);
+                    
                     bool vnResult = await VisualNovel();
+                    
                     await PlayerSwitch();
+                    
                     bool mResult = await Management();
+                    
                     await PlayerSwitch();
+                    
                     if (!mResult || !vnResult)
                     {
                         GameOver();
@@ -80,7 +92,7 @@ namespace Naussilus.Gameplay
 
         private async Awaitable<bool> Management()
         {
-            var managementPhase = new ManagementPhase(defaultActionPoint);
+            var managementPhase = new ManagementPhase(defaultActionPoint, timerDuration);
             PhaseResult<bool> result = await managementPhase.Run();
             
             return result;

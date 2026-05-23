@@ -1,50 +1,59 @@
-﻿using Helteix.Tools.Phases.Listeners;
+﻿using System;
+using Helteix.Tools.Phases;
+using Helteix.Tools.Phases.Listeners;
+using Naussilus.Core.Managers;
 using TMPro;
 using UnityEngine;
 
 namespace Naussilus.Gameplay
 {
-    public class TimerUI : MonoPhaseListener<ManagementPhase>
+    public class TimerUI : MonoPhaseListener<TimerPhase>
     {
         [SerializeField] private TMP_Text timerText;
-        [SerializeField] private int timerDuration;
         [SerializeField] private bool isTimerActive;
-        
-        private ManagementPhase currentPhase;
-        
-        protected override void OnPhaseBegin(ManagementPhase phase)
+        [SerializeField] private CanvasGroup group;
+
+        private TimerPhase currentTimer;
+
+        private void Start()
         {
-            currentPhase = phase;
-            if (isTimerActive)
-                StartCountdown();
+            group.Hide();
+        }
+
+        protected override void OnPhaseBegin(TimerPhase phase)
+        {
+            if (currentTimer != null)
+                currentTimer.Cancel();
             
+            
+            currentTimer = phase;
+            currentTimer.OnTimerRepeat += OnTimerRepeat;
+            group.Show();
             
             base.OnPhaseBegin(phase);
         }
 
-        protected override void OnPhaseEnd(ManagementPhase phase)
+        protected override void OnPhaseEnd(TimerPhase phase)
         {
-            currentPhase = null;
+            if (currentTimer == null)
+                return;
+            
             timerText.text = string.Empty;
-            timerDuration = 0;
+            group.Hide();
+            currentTimer.OnTimerRepeat -= OnTimerRepeat;
+            currentTimer = null;
             
             base.OnPhaseEnd(phase);
         }
 
-        private async void StartCountdown()
+        private void OnTimerRepeat()
         {
-            int remaining = timerDuration;
-            for (int i = 0; i < timerDuration; i++)
-            {
-                remaining--;
-                var minutes = remaining / 60;
-                var seconds = remaining % 60;
-                timerText.text = $"{minutes:00} : {seconds:00}";
-                await Awaitable.WaitForSecondsAsync(1);
-            }
-            
-            if (remaining <= 0)
-                currentPhase.SetResult(true);
+            timerText.text = $"{currentTimer.Minutes:01}:{currentTimer.Seconds:01}";
+        }
+
+        private void OnTimerEnd()
+        {
+            throw new NotImplementedException();
         }
     }
 }
