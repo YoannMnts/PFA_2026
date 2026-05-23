@@ -30,6 +30,9 @@ namespace Naussilus.Gameplay
             currentTimer.OnTimerRepeat += OnTimerRepeat;
             group.Show();
             
+            if (isTimerActive)
+                currentTimer.StartCountdown();
+            
             base.OnPhaseBegin(phase);
         }
 
@@ -48,12 +51,7 @@ namespace Naussilus.Gameplay
 
         private void OnTimerRepeat()
         {
-            timerText.text = $"{currentTimer.Minutes:01}:{currentTimer.Seconds:01}";
-        }
-
-        private void OnTimerEnd()
-        {
-            throw new NotImplementedException();
+            timerText.text = $"{currentTimer.Minutes:00}:{currentTimer.Seconds:00}";
         }
     }
 }

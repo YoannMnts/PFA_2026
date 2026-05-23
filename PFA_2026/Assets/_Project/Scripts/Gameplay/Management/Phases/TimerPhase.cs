@@ -20,15 +20,7 @@ namespace Naussilus.Gameplay
             Duration = duration;
             currentPhase = current; 
         }
-
-        protected override Awaitable Initialize(CancellationToken token)
-        {
-            Minutes = 0;
-            Seconds = 0;
-            Duration = 0;
-            StartCountdown();
-            return base.Initialize(token);
-        }
+        
 
         protected override Awaitable Dispose(CancellationToken token)
         {
@@ -38,7 +30,7 @@ namespace Naussilus.Gameplay
             return base.Dispose(token);
         }
 
-        private async void StartCountdown()
+        public async void StartCountdown()
         {
             try
             {

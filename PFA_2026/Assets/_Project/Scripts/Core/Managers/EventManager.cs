@@ -90,16 +90,8 @@ namespace Naussilus.Core.Managers
                     if (length <= 1)
                         break;    
                     
-                    
                     Npc npc = validEventDatas[randomIndex].Npcs[0];
-                    var counts = validEventDatas.Count;
-                    
-                    for (int j = 0; j < counts; j++)
-                    {
-                        if (validEventDatas[j].Npcs[0] == npc)
-                            validEventDatas.Remove(validEventDatas[j]);
-                    }
-                    
+                    validEventDatas.RemoveAll(incident => incident.Npcs[0] == npc);
                 }
 
                 for (int i = 0; i < incidents.Length; i++)
