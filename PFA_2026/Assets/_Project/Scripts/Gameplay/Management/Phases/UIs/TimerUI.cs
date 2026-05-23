@@ -1,51 +1,54 @@
 ﻿using System;
 using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
+using Naussilus.Core.Managers;
 using TMPro;
 using UnityEngine;
 
 namespace Naussilus.Gameplay
 {
-    public class TimerUI : MonoPhaseListener<ManagementPhase>
+    public class TimerUI : MonoPhaseListener<TimerPhase>
     {
         [SerializeField] private TMP_Text timerText;
-        [SerializeField] private int timerDuration;
         [SerializeField] private bool isTimerActive;
-        
-        private ManagementPhase currentPhase;
-        private TimerPhase timer;
+        [SerializeField] private CanvasGroup group;
 
-        protected override void OnPhaseBegin(ManagementPhase phase)
+        private TimerPhase currentTimer;
+
+        private void Start()
         {
-            currentPhase = phase;
-            if (isTimerActive)
-            {
-                timer?.Cancel();
-                
-                timer = new TimerPhase(timerDuration);
-                
-                timer.OnTimerRepeat += OnTimerRepeat;
-                timer.OnTimerEnd += OnTimerEnd;
-                
-                timer.RunAndForget();
-            }
+            group.Hide();
+        }
+
+        protected override void OnPhaseBegin(TimerPhase phase)
+        {
+            if (currentTimer != null)
+                currentTimer.Cancel();
+            
+            
+            currentTimer = phase;
+            currentTimer.OnTimerRepeat += OnTimerRepeat;
+            group.Show();
+            
             base.OnPhaseBegin(phase);
         }
 
-        protected override void OnPhaseEnd(ManagementPhase phase)
+        protected override void OnPhaseEnd(TimerPhase phase)
         {
-            currentPhase = null;
+            if (currentTimer == null)
+                return;
+            
             timerText.text = string.Empty;
-            timerDuration = 0;
-            timer.OnTimerRepeat -= OnTimerRepeat;
-            timer.OnTimerEnd -= OnTimerEnd;
-            timer.Cancel();
+            group.Hide();
+            currentTimer.OnTimerRepeat -= OnTimerRepeat;
+            currentTimer = null;
+            
             base.OnPhaseEnd(phase);
         }
 
         private void OnTimerRepeat()
         {
-            timerText.text = $"{timer.Minutes:01}:{timer.Seconds:01}";
+            timerText.text = $"{currentTimer.Minutes:01}:{currentTimer.Seconds:01}";
         }
 
         private void OnTimerEnd()

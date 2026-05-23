@@ -17,15 +17,19 @@ namespace Naussilus.Gameplay
         public Npc[] CurrentNpcs { get; private set; }
     
         private readonly int defaultAP;
-        public ManagementPhase(int defaultAPValue)
+        private readonly int timerDuration;
+        public ManagementPhase(int defaultAPValue, int timerDuration)
         {
             defaultAP = defaultAPValue;
             CurrentNpcs = NpcManager.GetAllNpcs();
+            this.timerDuration = timerDuration;
         }
     
         protected override Awaitable Initialize(CancellationToken token)
         {
             CurrentActionPoint = new ActionPoint(defaultAP);
+            var timer = new TimerPhase(this, timerDuration);
+            timer.RunAndForget();
             RoomManager.SubtractAllCountdown();
             return base.Initialize(token);
         }

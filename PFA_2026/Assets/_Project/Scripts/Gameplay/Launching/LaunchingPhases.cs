@@ -3,6 +3,7 @@ using Helteix.Tools.Phases;
 using Naussilus.Core.Managers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 namespace Naussilus.Gameplay
 {
@@ -16,6 +17,9 @@ namespace Naussilus.Gameplay
 
         [SerializeField]
         private int defaultActionPoint;
+        
+        [SerializeField]
+        private int timerDuration;
         
         
         private void Start()
@@ -88,7 +92,7 @@ namespace Naussilus.Gameplay
 
         private async Awaitable<bool> Management()
         {
-            var managementPhase = new ManagementPhase(defaultActionPoint);
+            var managementPhase = new ManagementPhase(defaultActionPoint, timerDuration);
             PhaseResult<bool> result = await managementPhase.Run();
             
             return result;

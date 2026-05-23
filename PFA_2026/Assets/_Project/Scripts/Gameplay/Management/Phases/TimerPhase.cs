@@ -6,23 +6,26 @@ using UnityEngine;
 namespace Naussilus.Gameplay
 {
     public class TimerPhase : PhaseCompletionSource<bool>
-    {
-        public event Action OnTimerEnd;
+    { 
         public event Action OnTimerRepeat;
         
         public int Duration { get; private set; }
         
         public int Minutes { get; private set; }
         public int Seconds { get; private set; }
-        public TimerPhase(int duration)
+
+        private ManagementPhase currentPhase;
+        public TimerPhase(ManagementPhase current ,int duration)
         {
             Duration = duration;
+            currentPhase = current; 
         }
 
         protected override Awaitable Initialize(CancellationToken token)
         {
             Minutes = 0;
             Seconds = 0;
+            Duration = 0;
             StartCountdown();
             return base.Initialize(token);
         }
@@ -32,7 +35,6 @@ namespace Naussilus.Gameplay
             Duration = 0;
             Minutes = 0;
             Seconds = 0;
-            OnTimerEnd?.Invoke();
             return base.Dispose(token);
         }
 
@@ -40,14 +42,16 @@ namespace Naussilus.Gameplay
         {
             try
             {
-                for (Duration = 0; 0 < Duration; Duration--)
+                int remaining;
+                for (remaining = Duration ; 0 < remaining; remaining--)
                 {
-                    Minutes = Duration / 60;
-                    Seconds = Duration % 60;
+                    Minutes = remaining / 60;
+                    Seconds = remaining % 60;
                     OnTimerRepeat?.Invoke();
                     await Awaitable.WaitForSecondsAsync(1);
                 }
                 SetResult(true);
+                currentPhase.SetResult(true);
             }
             catch (Exception e)
             {
