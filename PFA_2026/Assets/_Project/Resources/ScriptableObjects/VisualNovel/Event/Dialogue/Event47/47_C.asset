@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 47_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - " C\u2019est c\u2019que j\u2019essaie de faire, mais elle n\u2019veux rien
+      entendre, elle maintient qu\u2019elle va tr\xE8s bien et qu\u2019il faut pas
+      que j\u2019m\u2019inqui\xE8te."
+    - "C\u2019est pour \xE7a que j\u2019vous demande, p\u2019t\u2019\xEAtre qu\u2019elle
+      vous \xE9coutera.\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 998c63bfac0c0ee44893acc939d4ca00, type: 2}
+  - {fileID: 11400000, guid: de689fa49024def4496df11d7cb5295f, type: 2}
+  <GUID>k__BackingField: 0dfab37a-57e9-459d-993c-c61ec836e458

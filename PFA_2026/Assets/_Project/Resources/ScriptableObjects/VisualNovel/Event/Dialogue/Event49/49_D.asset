@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 49_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "Ouais c\u2019est ce que j\u2019essaie d\u2019faire aussi , j\u2019veille \xE0
+      c\u2019que les gens soient en forme."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Je voudrais pas qu\u2019un de ces p\u2019tits tombent malades."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: bc9c44858cbde2041815b14044d3bc53, type: 2}
+  - {fileID: 11400000, guid: 45b060bc67bfe0e479dc7e1abb4eabb3, type: 2}
+  - {fileID: 11400000, guid: 77f5b4e4d6c368846830d4abeba1bfcf, type: 2}
+  <GUID>k__BackingField: 4b875803-c42c-4349-adb8-fa1af6d8abf4

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 55_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Oui, enfin tout le monde m'int\xE9resse."
+    - "Herlock doit avoir plein de super choses \xE0 raconter non ? "
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 4ee1b4670c13c064fb1107f9096fe23a, type: 2}
+  - {fileID: 11400000, guid: 4b810b32d6df93b4db7165fcea13c6e6, type: 2}
+  - {fileID: 11400000, guid: 1c4b99998c5acd54b956540087d4d0cd, type: 2}
+  <GUID>k__BackingField: 1025b567-1c4c-40b3-9d0f-718cab99e7f4

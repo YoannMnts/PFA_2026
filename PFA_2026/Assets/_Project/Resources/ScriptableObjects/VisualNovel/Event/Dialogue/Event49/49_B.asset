@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 49_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "J\u2019me sens responsable pour ce p\u2019tit \xE9quipage, j\u2019ai fini
+      par m\u2019attacher \xE0 eux."
+    - "J\u2019ai envie d\u2019prendre soin d\u2019eux et qu\u2019la travers\xE9e
+      s\u2019passe bien pour tout le monde.\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 1a003daa8c332ce4d9f880cba107f1d1, type: 2}
+  - {fileID: 11400000, guid: 2a6bcdfa13c5c9741adb26cef5665c16, type: 2}
+  <GUID>k__BackingField: ce5e4876-0b4f-4ab2-82e3-f233d935d120

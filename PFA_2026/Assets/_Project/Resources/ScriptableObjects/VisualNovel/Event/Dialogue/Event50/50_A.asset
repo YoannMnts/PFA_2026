@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 50_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - "Bonjour Cap\u2019taine ! J\u2019ai intercept\xE9 une transmission radio d\u2019un
+      navire des autorit\xE9s, j\u2019crois bien qu\u2019ils s\u2019dirigent vers
+      nous !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 62583b9b05f1fb84cba5317199e49072, type: 2}
+  - {fileID: 11400000, guid: 1ece6b1e07b0c8447ac31245e0b586e2, type: 2}
+  - {fileID: 11400000, guid: 4e8a59baac5fd32429614d3e9b765e6c, type: 2}
+  <GUID>k__BackingField: 7f50d4d6-1ff4-446d-9823-717f94df1408

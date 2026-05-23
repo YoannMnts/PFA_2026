@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 51_G
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Je n\u2019ai rien dit de m\xE9chant.\r\n"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - " Ah oui ? \u201CT\xE9a t\u2019en met du temps\u201D, \u201CT\xE9a elles sont
+      bizarres tes cicatrices\u201D, \u201CT\xE9a c\u2019est le bazar par i\xE7i\u201D,
+      tout \xE7a c\u2019est pas m\xE9chant peut \xEAtre ?\r\n"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Pardon je ne pensais pas\u2026"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 83f31586891b23d4e909b9ed25fc0121, type: 2}
+  - {fileID: 11400000, guid: 9964ca9f41fa4e24dad67d9c9336b654, type: 2}
+  - {fileID: 11400000, guid: 39c8adb19b3daa54eb45ad490f0b9b41, type: 2}
+  <GUID>k__BackingField: dc10ed1a-9bce-4f99-bb4a-cde41be727cb

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 51_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - 'Oui je vais exploser !
+
+'
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "N\u2019importe quoi !"
+    - "Une armure comme \xE7a n\u2019explose pas comme \xE7a, et tu n\u2019en \xE0
+      m\xEAme pas besoin pour vivre, arr\xEAte de dramatiser."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 83f31586891b23d4e909b9ed25fc0121, type: 2}
+  - {fileID: 11400000, guid: 9964ca9f41fa4e24dad67d9c9336b654, type: 2}
+  - {fileID: 11400000, guid: 39c8adb19b3daa54eb45ad490f0b9b41, type: 2}
+  <GUID>k__BackingField: 08853c08-dfe0-40a9-b308-60eaa83e18c7

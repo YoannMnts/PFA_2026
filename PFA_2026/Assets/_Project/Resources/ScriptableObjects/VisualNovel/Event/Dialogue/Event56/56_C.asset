@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 56_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Parce que d\xE8s que je la croise, j\u2019ai toujours l\u2019impression que
+      je vais me faire gronder, son regard me met la pression et je panique."
+    - "Elle a l'air vraiment s\xE9v\xE8re."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 8e60ca19d7025d54e94c82aedf8a7cd1, type: 2}
+  - {fileID: 11400000, guid: b7504c0fea9396144a7d39be9a2c8ddf, type: 2}
+  <GUID>k__BackingField: 85a7554a-3020-4658-adeb-a653bc4465f9

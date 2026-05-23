@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 48_F
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - "Pour sur. Moi j\u2019men sors bien, le rumeurs qu\u2019il lance sont pas vraiment
+      \xE0  propos d\u2019moi."
+    - "Donc j\u2019sais que ca affecte les autres avant tout.\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: eb539bc44d838034cb9e3e961d4af299, type: 2}
+  - {fileID: 11400000, guid: a12b76bd27fe13b4b8932b2ac67dc718, type: 2}
+  - {fileID: 11400000, guid: 3147126c65b1d92418d5a5c996e2c500, type: 2}
+  <GUID>k__BackingField: ddc67e17-ad3a-44cb-a446-139c9896d946

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 55_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Ah bon ? Mais on va passer tout ce temps ensemble, et on ne peut m\xEAme pas
+      \xEAtre amis."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 62b24191e01af9c4885d7ba7cd9db055, type: 2}
+  - {fileID: 11400000, guid: d1dfd0ae1e26e1741b650010ba27e289, type: 2}
+  <GUID>k__BackingField: 81da12c6-cbbf-46cf-bcfe-3b42aa7d3a18

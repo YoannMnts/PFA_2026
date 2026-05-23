@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 48_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - "Ben, j\u2019avoue qu\u2019defois on rigole bien ensemble, mais il va trop
+      loin, il invente des choses sur les autres pour s\u2019moquer d\u2019eux."
+    - "C\u2019est pas vraiment un esprit d\u2019pirate, et c\u2019est pas sympa pour
+      les autres.\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: a1dea6510cfb3194ea4cf3fd102c283a, type: 2}
+  - {fileID: 11400000, guid: 07494ad903198264184af76e7a939cb9, type: 2}
+  <GUID>k__BackingField: 5cd42095-fa38-498a-b2e0-fa6467a40505

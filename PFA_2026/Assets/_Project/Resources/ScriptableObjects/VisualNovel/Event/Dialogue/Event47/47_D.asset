@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 47_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - "Vous \xEAtes s\xFBr ?"
+    - "Vous la voyez que quand elle vient vous voir, vous pouvez pas savoir, j\u2019suis
+      s\xFBr qu\u2019elle vous joue la com\xE9die pour pas qu\u2019vous vous inqui\xE9tez
+      non plus."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 65e1640e066610e4aac297375c99b86f, type: 2}
+  - {fileID: 11400000, guid: 89f019a76792d484b9b9ef4ce10d3ef8, type: 2}
+  - {fileID: 11400000, guid: f295978ccaa728547b53b38a0c0cefc7, type: 2}
+  <GUID>k__BackingField: a2921de9-0897-41f9-9fdd-82a92179f181
