@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 63_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "\xCAtre naturel ? Mais je suis un petit mousse empot\xE9, je ne suis pas s\xFBr
+      que ce soit ce qu\u2019elle veuille\u2026"
+    - "J\u2019ai peur de la repousser."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 02831b99d6e1cef4fabefa014fb25e89, type: 2}
+  - {fileID: 11400000, guid: 0c6380781a0ceda458646ec14f5cd0d1, type: 2}
+  - {fileID: 11400000, guid: 73b402abb298f3f46b441a2176e29328, type: 2}
+  - {fileID: 11400000, guid: 8e919f68706c4be4085a27e65a0ca758, type: 2}
+  <GUID>k__BackingField: 48e4ccb7-7e22-4e02-9f1f-05933ad743c8

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 67_F
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Et bien j\u2019ai du mal \xE0 avoir confiance en moi dans cet \xE9tat."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Je me sens faible et inutile, et je n\u2019arrive pas \xE0 voir le pirate
+      que j\u2019aimerais \xEAtre quand je me voie dans le miroir."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Et \xE7a, c\u2019est sans compter les r\xE9flexions et moqueries que je peux
+      recevoir."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: ef1ac70e8e347fb4e8375852b620ad7a, type: 2}
+  - {fileID: 11400000, guid: 7ae7be25dd56bc448ac08f494a97d2ae, type: 2}
+  - {fileID: 11400000, guid: 9d3d51fab767be4489bea93b94c8afbc, type: 2}
+  - {fileID: 11400000, guid: 1f6cffd0f9a9e0542bb805d3077bc496, type: 2}
+  <GUID>k__BackingField: 191afd21-176c-4abb-8681-f1f2bb0cdd6d

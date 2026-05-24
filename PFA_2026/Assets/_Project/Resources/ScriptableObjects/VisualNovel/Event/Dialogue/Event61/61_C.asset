@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 61_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - ' Vraiment ?'
+    - "Pourtant je suis petit, rondelet et j\u2019ai un peu peur de tout."
+    - "Vous, vous \xEAtes tous si braves et impressionnants."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 4002111e00c22c94dac746b94ee0cac5, type: 2}
+  - {fileID: 11400000, guid: 8146a191187e4b34c80b3f645adb5f76, type: 2}
+  <GUID>k__BackingField: e5fafe95-bbd9-42bf-ba47-207726d65302

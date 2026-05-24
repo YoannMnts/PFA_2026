@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 61_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - Vous croyez ?
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Pour moi, un vrai pirate est une personne forte, sans peurs, grande, capable
+      de commander tout un \xE9quipage et de naviguer \xE0 travers les cieux en \xE9vitant
+      les autorit\xE9s !"
+    - 'Un peu comme vous finalement. '
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: b94a0c851e6c1ac4ab7465a420cd51c9, type: 2}
+  - {fileID: 11400000, guid: 5ae72a823cca436498034ebfa782bd0b, type: 2}
+  - {fileID: 11400000, guid: 05c06970d02d97e45af6c844e67fd088, type: 2}
+  <GUID>k__BackingField: 363ecf28-d3bf-4dd3-9051-541c58d9c011

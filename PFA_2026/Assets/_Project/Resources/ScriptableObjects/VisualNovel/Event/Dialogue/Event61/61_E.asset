@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 61_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Et bien, j\u2019ai l\u2019impression que je ne suis pas vraiment comme vous\u2026 "
+    - "Et que je n\u2019ai pas ce qu\u2019il faut pour \xEAtre un vrai pirate, m\xEAme
+      si j\u2019en ai toujours r\xEAv\xE9. "
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: d1fb6034b509c6145aa9a0c512417b15, type: 2}
+  - {fileID: 11400000, guid: e44ec280f48a20147b7aa84b443ed1bb, type: 2}
+  - {fileID: 11400000, guid: 0efdda36e68f7304e864bd498f7705bb, type: 2}
+  - {fileID: 11400000, guid: 9c45e083f03a61041986545cf675f2b9, type: 2}
+  <GUID>k__BackingField: 5b3a7cfc-afb2-44d0-bd12-ef8ab1e2e551

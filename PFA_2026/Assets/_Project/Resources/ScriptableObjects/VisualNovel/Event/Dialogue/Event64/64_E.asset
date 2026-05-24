@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 64_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Ah oui c\u2019est vrai qu\u2019il \xE9tait dans l\u2019arm\xE9e avant !"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Mais quand m\xEAme, il doit savoir mieux que moi ce qui fait une belle tenue. "
+    - Lui au moins, il en impose avec son grand manteau.
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: fb579f5678b1ade40b7109b5efef7551, type: 2}
+  - {fileID: 11400000, guid: 85352afe86e6e6b419afe851232374aa, type: 2}
+  - {fileID: 11400000, guid: a7e9e6e1c5a769d4593927938aff54e7, type: 2}
+  <GUID>k__BackingField: 7079dae2-ce4c-4da7-8e57-63bda4e70588

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 67_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Parce que c\u2019est ce qu\u2019on m\u2019a dit\u2026"
+    - "Et je sais que j\u2019ai trop de gras, je fais tout ce que je peux mais impossible
+      de le perdre. "
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "J\u2019aimerais \xEAtre grand et muscl\xE9 mais je suis coinc\xE9 dans ce
+      corps petit et rondelet.\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 600c7c03772f932489a93afea2599b67, type: 2}
+  - {fileID: 11400000, guid: 65981f16d59ee454d962dd492a36065d, type: 2}
+  - {fileID: 11400000, guid: af89a7e86574dfb41ad4bc0c5b164b50, type: 2}
+  <GUID>k__BackingField: bb8cbf9d-d181-4cd0-8826-551b7ed26be5

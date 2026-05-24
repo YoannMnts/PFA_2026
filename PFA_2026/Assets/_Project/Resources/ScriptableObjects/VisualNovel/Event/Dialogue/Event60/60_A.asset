@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 60_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - Capitaine ! Mon bocal fuit depuis ce matin !
+    - Je vais me vider et mourir !
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 4a1bdb2b1aeabce42a8266ed2d30dfd2, type: 2}
+  - {fileID: 11400000, guid: 1f6abc3c812817e41be16c340e10d9a9, type: 2}
+  - {fileID: 11400000, guid: e8aecd3bb09e8544bb14a7293f2831ad, type: 2}
+  <GUID>k__BackingField: a20e328d-6e2e-4a2d-8a6b-5072011936e7

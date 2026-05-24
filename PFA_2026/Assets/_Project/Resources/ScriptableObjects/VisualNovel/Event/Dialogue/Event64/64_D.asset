@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 64_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Vous pensez ? Et bien\u2026Je ne sais plus quoi penser alors. "
+    - "Moi aussi je l\u2019aime bien, mais c\u2019est important d\u2019avoir une
+      bonne apparence."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: fb579f5678b1ade40b7109b5efef7551, type: 2}
+  - {fileID: 11400000, guid: 85352afe86e6e6b419afe851232374aa, type: 2}
+  - {fileID: 11400000, guid: a7e9e6e1c5a769d4593927938aff54e7, type: 2}
+  <GUID>k__BackingField: 68c517a7-62a3-44eb-b95e-1f8bc96b6d1f

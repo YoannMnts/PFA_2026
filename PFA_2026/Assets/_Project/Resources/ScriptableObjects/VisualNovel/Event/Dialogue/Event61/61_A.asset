@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 61_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - ' Ahoy mon capitaine !'
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - Enfin, bonjour je veux dire.
+    - "D\xE9sol\xE9 de vous d\xE9ranger, j'avais juste une petite question : vous
+      pensez que je suis un vrai pirate ? \r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: e1c10f284a0eafe49a7b1dd1b8b9ce95, type: 2}
+  - {fileID: 11400000, guid: 17737f5ded1739049b08688a76acd6eb, type: 2}
+  - {fileID: 11400000, guid: 3e4c4361438e3e446a158e918be3d1aa, type: 2}
+  - {fileID: 11400000, guid: fa3acd20c951d58498f125c58d649ba3, type: 2}
+  <GUID>k__BackingField: 9e70e8d6-faeb-4a65-8eb8-4a677ab263c0

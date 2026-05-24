@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 63_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Et bien je\u2026Je\u2026Je n\u2019ai jamais vraiment essay\xE9 en r\xE9alit\xE9,
+      c\u2019est pour \xE7a que j\u2019ai peur."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - "Elle a s\xFBrement d\xE9j\xE0 eu plein de beaux pr\xE9tendants pirates, je
+      dois l\u2019impressionner !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 989cea85975cfd546a468ed0feec3f19, type: 2}
+  - {fileID: 11400000, guid: c82703dba84e48e4c8acab65541b1299, type: 2}
+  <GUID>k__BackingField: 1af5332d-ce55-4fc4-952e-6c633f4a579a

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 66_F
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Je sais pas\u2026"
+    - "Comment je pourrais y arriver, je suis juste un petit gamin, je suis juste
+      bon \xE0 faire le m\xE9nage, et je suis incapable de m\u2019imposer face \xE0
+      des personnes comme Ynna.\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: f7e8b71505d3a2246909f336ec32b6a8, type: 2}
+  - {fileID: 11400000, guid: 8214fb0fad331034883d385a5cc4ff02, type: 2}
+  - {fileID: 11400000, guid: 73c96746de12a7243b349aaafa8e64b8, type: 2}
+  <GUID>k__BackingField: 8f9659c8-bc6f-44f6-bf9e-21feaaa2dddb

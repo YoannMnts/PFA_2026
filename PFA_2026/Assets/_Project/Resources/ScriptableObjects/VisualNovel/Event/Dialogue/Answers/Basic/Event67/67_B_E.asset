@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
+  m_Name: 67_B_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
+  <ButtonText>k__BackingField: "Ca ne t'apportera pas grand chose d\u2019\xEAtre
+    grand et muscl\xE9 "
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: a94fcf43fcaf8b348bc371a567ef04bd, type: 2}
+  <GUID>k__BackingField: 849e58a5-ad4c-4f03-8d97-ba4f4a9a3299
