@@ -1,6 +1,7 @@
 ﻿using System;
 using Helteix.Tools.UI;
 using Naussilus.Gameplay.CategoriesTitles;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,7 @@ namespace Naussilus.Gameplay.CategoriesSlots
     {
         [SerializeField] private Image icon;
         [SerializeField] private Button button;
+        [SerializeField] private TMP_Text text;
         
         private CategoryUI categoryUI;
 
@@ -32,18 +34,17 @@ namespace Naussilus.Gameplay.CategoriesSlots
         protected override void SyncUI(CategoryNpcSlot current)
         {
             var npc = current.CurrentNpc;
-            var expressions = current.NpcExpression.Expressions;
-            for (int i = 0; i < expressions?.Length; i++)
+            text.text = npc?.Name;
+            if (current.NpcExpression.TryGetExpression(npc, out var sprite))
             {
-                if (expressions[i].Npc == npc)
-                    icon.sprite = expressions[i].Sprite;
+                icon.sprite = sprite;
             }
-
         }
 
         protected override void ClearUI()
         {
             icon.sprite = null;
+            text.text = string.Empty;
         }
 
         private void OnClick()

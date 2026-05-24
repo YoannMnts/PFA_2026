@@ -27,7 +27,7 @@ namespace Naussilus.Gameplay
         protected override void SyncUI(Incident current)
         {
             nameText.text = current.Npcs[0].Name;
-            iconImage.sprite = current.Npcs[0].CategoryIcon;
+            iconImage.sprite = current.Npcs[0].DefaultIncidentSprite;
             selectButton.onClick.AddListener(OnClick);
         }
 

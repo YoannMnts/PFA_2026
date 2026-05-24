@@ -244,8 +244,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6112682194694779539}
   - {fileID: 1683541446467165191}
+  - {fileID: 6112682194694779539}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -349,3 +349,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Gameplay.Management::_Project.Scripts.Rooms.CategorySlot
   icon: {fileID: 3929645266503198718}
   button: {fileID: 3322426779240260050}
+  text: {fileID: 5613108427235279077}

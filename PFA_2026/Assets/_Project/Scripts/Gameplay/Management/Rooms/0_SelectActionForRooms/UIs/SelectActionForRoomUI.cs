@@ -80,7 +80,7 @@ namespace Naussilus.Gameplay
             if (current == null) 
                 return;
             
-            current.Cancel();
+            current.SetResult(false);
         }
 
         public async void ChooseAction(RoomAction actionData)

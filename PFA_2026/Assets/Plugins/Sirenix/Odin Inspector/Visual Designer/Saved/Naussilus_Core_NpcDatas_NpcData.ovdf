@@ -35,12 +35,12 @@ Position: $root:1
 	HorizontalLine = False
 
 # $AZLim4Pg3BTAv9o4zfkdkq
-Position: $root:4
+Position: $root:2
 + [Sirenix.OdinInspector.TitleGroupAttribute]
 	HorizontalLine = False
 
 # $ChYpYcSwErUe2bf7SFiX1V
-Position: $root:28
+Position: $root:26
 + [Sirenix.OdinInspector.TitleGroupAttribute]
 	HorizontalLine = False
 
@@ -102,3 +102,9 @@ Position: $AZLim4Pg3BTAv9o4zfkdkq:0
 	ShowFoldout = False
 	paging = False
 	pagingHasValue = True
+
+# <DefaultIncidentSprite>k__BackingField
+Position: $8kvRrmPfbmSLCWnHKKEWAC:2
+
+# <DefaultEventSprite>k__BackingField
+Position: $8kvRrmPfbmSLCWnHKKEWAC:2

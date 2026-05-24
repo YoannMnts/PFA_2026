@@ -250,6 +250,7 @@ MonoBehaviour:
       m_Calls: []
   npcData: {fileID: 0}
   npcCamera: {fileID: 3030189658258535135}
+  npcSprite: {fileID: 1697497522423981470}
 --- !u!114 &8077689307455467304
 MonoBehaviour:
   m_ObjectHideFlags: 0

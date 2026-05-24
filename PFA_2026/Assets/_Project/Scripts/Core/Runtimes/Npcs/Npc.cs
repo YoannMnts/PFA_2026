@@ -16,7 +16,7 @@ namespace Naussilus.Core
         public MentalState[] MentalStates { get; private set; }
         public EGender Gender { get; private set; }
         public NpcRelationship[] Relationships { get; private set; }
-        public Sprite CategoryIcon { get; private set; }
+        public Sprite DefaultIncidentSprite { get; private set; }
         public string CurrentThinking { get; private set; }
         
         public Npc(NpcData npcData)
@@ -25,7 +25,7 @@ namespace Naussilus.Core
             Behaviors = npcData.Behavior?.Select(b => new Behavior(b)).ToArray();
             MentalStates = npcData.MentalState?.Select(m => new MentalState(m)).ToArray();
             Gender = npcData.Gender;
-            CategoryIcon = npcData.CategoryIcon;
+            DefaultIncidentSprite = npcData.DefaultEventSprite;
             CurrentThinking = npcData.CurrentThinking;
         }
 

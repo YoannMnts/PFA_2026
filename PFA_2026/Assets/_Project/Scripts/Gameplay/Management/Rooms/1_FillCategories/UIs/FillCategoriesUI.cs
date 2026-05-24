@@ -4,7 +4,6 @@ using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
 using Naussilus.Core.Managers.Npcs;
-using Naussilus.Core.Managers.Rooms;
 using Naussilus.Gameplay.CategoriesTitles;
 using UnityEngine;
 using UnityEngine.UI;
@@ -73,7 +72,7 @@ namespace Naussilus.Gameplay
                 category.ClearAllSlots();
             }
             
-            current.Cancel();
+            current.SetResult(false);
         }
 
         private void AddNpcInCategory(Npc npc)

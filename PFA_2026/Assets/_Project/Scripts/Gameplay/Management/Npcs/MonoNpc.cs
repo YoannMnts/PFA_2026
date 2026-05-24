@@ -96,6 +96,10 @@ namespace Naussilus.Gameplay
         {
             //Debug.Log($"Npc {Npc.Name} is returning to the last position {lastPosition}");
             gameObject.transform.position = lastPosition;
+            npcSprite.sprite = null;
+            npcSprite.flipX = false;
+            npcSprite.sortingOrder = 0;
+            npcSprite.sortingLayerName = "Default";
         }
     }
 }
