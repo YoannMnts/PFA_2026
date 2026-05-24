@@ -17,7 +17,7 @@ namespace Naussilus.Core.Managements
         [field: SerializeField]
         public ExpressionData Expression { get; private set; }
 
-        [ValueDropdown("GetSortingLayers")] 
+        [ValueDropdown("GetSortingLayers")]
         [SerializeField]
         private string sortingLayerName;
 
@@ -25,7 +25,13 @@ namespace Naussilus.Core.Managements
         public int OrderInLayer { get; private set; }
         
         [field: SerializeField]
+        public bool RandomFlip { get; private set; }
+        
+        [field: SerializeField]
         public bool Flip { get; private set; }
+        
+        [field: SerializeField, TextArea]
+        public string Commentary { get; private set; }
         
         private IEnumerable<string> GetSortingLayers()
         {

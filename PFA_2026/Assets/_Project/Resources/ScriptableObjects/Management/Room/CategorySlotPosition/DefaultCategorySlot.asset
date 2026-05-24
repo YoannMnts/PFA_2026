@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: DefaultCategorySlot
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomSlotPositionData
   <Position>k__BackingField: {x: 0, y: 0, z: 0}
+  <Expression>k__BackingField: {fileID: 0}
+  sortingLayerName: 
+  <OrderInLayer>k__BackingField: 0
+  <RandomFlip>k__BackingField: 0
+  <Flip>k__BackingField: 0
+  <Commentary>k__BackingField: 

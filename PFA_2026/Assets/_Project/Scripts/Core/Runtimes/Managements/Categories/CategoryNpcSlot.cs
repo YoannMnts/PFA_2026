@@ -13,7 +13,7 @@ namespace Naussilus.Gameplay
             NpcExpression = new Expression(data.Expression); 
             SpriteSortingLayerName = data.SortingLayerName;
             OrderInLayer = data.OrderInLayer;
-            Flip = data.Flip;
+            Flip = data.RandomFlip ? Random.value > .5f : data.Flip;
             CurrentNpc = npc;
         }
         
