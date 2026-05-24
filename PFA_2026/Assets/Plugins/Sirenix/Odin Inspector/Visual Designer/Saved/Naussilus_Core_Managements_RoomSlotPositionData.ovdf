@@ -2,5 +2,26 @@ OVDF v1.1
 Naussilus.Core.Managements.RoomSlotPositionData, Naussilus.Core
 MetaGuid:ff7a7e182f2048cdb736837041d3449c
 
+# $XMfTrCnFvZXvX2avV3NWk8
+Position: $root:16
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+
+# $3Xo52DCDTV76t133RYXSQZ
+Position: $root
++ [Sirenix.OdinInspector.TitleGroupAttribute]
+	HorizontalLine = True
+
 # <Position>k__BackingField
-Position: $root:3
+Position: $3Xo52DCDTV76t133RYXSQZ:0
+
+# <Expression>k__BackingField
+Position: $XMfTrCnFvZXvX2avV3NWk8:0
+
+# sortingLayerName
+Position: $XMfTrCnFvZXvX2avV3NWk8:1
+
+# <OrderInLayer>k__BackingField
+Position: $XMfTrCnFvZXvX2avV3NWk8:2
+
+# <Flip>k__BackingField
+Position: $XMfTrCnFvZXvX2avV3NWk8:3

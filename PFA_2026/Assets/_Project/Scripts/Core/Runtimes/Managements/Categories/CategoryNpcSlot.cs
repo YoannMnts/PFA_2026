@@ -7,13 +7,13 @@ namespace Naussilus.Gameplay
 {
     public class CategoryNpcSlot
     {
-        public CategoryNpcSlot(RoomSlotPositionData position, Npc npc = null)
+        public CategoryNpcSlot(RoomSlotPositionData data, Npc npc = null)
         {
-            if (position == null)
-                SlotPosition = Vector3.zero;
-            else
-                SlotPosition = position.Position;
-            NpcExpression = new Expression(position.Expression); 
+            SlotPosition = data == null ? Vector3.zero : data.Position;
+            NpcExpression = new Expression(data.Expression); 
+            SpriteSortingLayerName = data.SortingLayerName;
+            OrderInLayer = data.OrderInLayer;
+            Flip = data.Flip;
             CurrentNpc = npc;
         }
         
@@ -22,6 +22,12 @@ namespace Naussilus.Gameplay
         public Vector3 SlotPosition { get; private set; }
         
         public Expression NpcExpression { get; private set; }
+        
+        public string SpriteSortingLayerName { get; private set; }
+        
+        public int OrderInLayer { get; private set; }
+        
+        public bool Flip { get; private set; }
 
         protected internal bool TryAddNpc(Npc npc)
         {
@@ -29,7 +35,7 @@ namespace Naussilus.Gameplay
                 return false;
             
             CurrentNpc = npc;
-            CurrentNpc?.SetNewPosition(SlotPosition);
+            CurrentNpc?.AddedInSlot(this);
             return true;
         }
 
@@ -38,7 +44,7 @@ namespace Naussilus.Gameplay
             if (CurrentNpc != npc)
                 return false;
             
-            CurrentNpc?.ReturnToLastPosition();
+            CurrentNpc?.RemoveSlot();
             CurrentNpc = null;
             return true;
         }

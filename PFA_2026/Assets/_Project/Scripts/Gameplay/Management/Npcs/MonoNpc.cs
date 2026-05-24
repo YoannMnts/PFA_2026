@@ -18,6 +18,8 @@ namespace Naussilus.Gameplay
         
         [SerializeField] private MonoCineCamera npcCamera;
         
+        [SerializeField] private SpriteRenderer npcSprite;
+        
         public Npc Npc => NpcManager.TryGetNpc(npcData?.GUID);
         public MonoCineCamera NpcCamera => npcCamera;
         
@@ -31,8 +33,8 @@ namespace Naussilus.Gameplay
         {
             currentPhase = phase;
             this.AddNpcClickListener();
-            Npc.OnSetNewPosition += SetNewPosition;
-            Npc.OnReturnToLastPosition += ReturnToLastPosition;
+            Npc.OnAddedInSlot += AddedInSlot;
+            Npc.OnRemoveSlot += RemoveSlot;
             
             base.OnPhaseBegin(phase);
         }
@@ -41,8 +43,8 @@ namespace Naussilus.Gameplay
         {
             this.RemoveNpcClickListener();
             currentPhase = null;
-            Npc.OnSetNewPosition -= SetNewPosition;
-            Npc.OnReturnToLastPosition -= ReturnToLastPosition;
+            Npc.OnAddedInSlot -= AddedInSlot;
+            Npc.OnRemoveSlot -= RemoveSlot;
             
             base.OnPhaseEnd(phase);
         }
@@ -78,14 +80,19 @@ namespace Naussilus.Gameplay
             Debug.Log($"Npc {Npc.Name} is interacting");
         }
 
-        private void SetNewPosition(Vector3 newPosition)
+        private void AddedInSlot(CategoryNpcSlot slot)
         {
             //Debug.Log($"Npc {Npc.Name} is setting new position to {newTransform.position}");
             lastPosition = gameObject.transform.position;
-            gameObject.transform.position = newPosition;
+            gameObject.transform.position = slot.SlotPosition;
+            slot.NpcExpression.TryGetExpression(Npc, out var sprite);
+            npcSprite.sprite = sprite;
+            npcSprite.flipX = slot.Flip;
+            npcSprite.sortingOrder = slot.OrderInLayer;
+            npcSprite.sortingLayerName = slot.SpriteSortingLayerName;
         }
 
-        private void ReturnToLastPosition()
+        private void RemoveSlot()
         {
             //Debug.Log($"Npc {Npc.Name} is returning to the last position {lastPosition}");
             gameObject.transform.position = lastPosition;

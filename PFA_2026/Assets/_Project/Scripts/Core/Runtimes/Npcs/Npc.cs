@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Linq;
 using Naussilus.Core.NpcDatas;
+using Naussilus.Gameplay;
 using UnityEngine;
 
 namespace Naussilus.Core
 {
     public class Npc : INpcSelector
     {
-        public event Action<Vector3> OnSetNewPosition;
-        public event Action OnReturnToLastPosition;
+        public event Action<CategoryNpcSlot> OnAddedInSlot;
+        public event Action OnRemoveSlot;
         
         public string Name { get; private set; }
         public Behavior[] Behaviors { get; private set; }
@@ -17,8 +18,6 @@ namespace Naussilus.Core
         public NpcRelationship[] Relationships { get; private set; }
         public Sprite CategoryIcon { get; private set; }
         public string CurrentThinking { get; private set; }
-        
-        public Category CurrentCategory { get; private set; }
         
         public Npc(NpcData npcData)
         {
@@ -35,19 +34,14 @@ namespace Naussilus.Core
             Relationships = npcData.Relationships?.Select(r => new NpcRelationship(r)).ToArray();
         }
 
-        public void SetCategory(Category category)
+        public void AddedInSlot(CategoryNpcSlot slot)
         {
-            CurrentCategory = category;
+            OnAddedInSlot?.Invoke(slot);
         }
 
-        public void SetNewPosition(Vector3 newPosition)
+        public void RemoveSlot()
         {
-            OnSetNewPosition?.Invoke(newPosition);
-        }
-
-        public void ReturnToLastPosition()
-        {
-            OnReturnToLastPosition?.Invoke();
+            OnRemoveSlot?.Invoke();
         }
     }
 }
