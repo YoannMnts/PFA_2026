@@ -21,6 +21,8 @@ MonoBehaviour:
     <ProhibitedNpc>k__BackingField:
     - {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <ObligateNpc>k__BackingField: []
+    <SlotPositions>k__BackingField:
+    - {fileID: 11400000, guid: 812f39e8a7652e74fb1a0b18daa17bea, type: 2}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
@@ -56,8 +58,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - "Cet appel lui fait aussi douter d'elle m\xEAme"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Effects>k__BackingField:
@@ -92,8 +92,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - "T\xE9a s'inqui\xE8te pour elle"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
     <Effects>k__BackingField:
@@ -115,8 +113,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 3
         <Text>k__BackingField:
         - "Pam est heureuse de parler \xE0 sa fianc\xE9e"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
     <Effects>k__BackingField:
@@ -151,8 +147,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - Ynna est nerveuse de leur mentir
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <Effects>k__BackingField:
@@ -208,8 +202,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 2
         <Text>k__BackingField:
         - Il essaie d'appeller son ex femme, mais elle ne repond pas
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
     <Effects>k__BackingField:
@@ -243,8 +235,6 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
     <Effects>k__BackingField:
@@ -266,8 +256,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 3
         <Text>k__BackingField:
         - Marco est heureux d'avoir des nouvelles de sa famille et de sa petite amie
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   <GUID>k__BackingField: 42905f73-614a-4891-87cb-244d49f7ab4d
   references:
     version: 2

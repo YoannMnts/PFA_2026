@@ -14,3 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomSlotPositionData
   <Position>k__BackingField: {x: -2.411, y: 0.248, z: 0}
   <Expression>k__BackingField: {fileID: 11400000, guid: b0e4df139fd1bfc449dbf1e00a3500c4, type: 2}
+  sortingLayerName: NpcForeground
+  <OrderInLayer>k__BackingField: 0
+  <RandomFlip>k__BackingField: 1
+  <Flip>k__BackingField: 0
+  <Commentary>k__BackingField: Meeting

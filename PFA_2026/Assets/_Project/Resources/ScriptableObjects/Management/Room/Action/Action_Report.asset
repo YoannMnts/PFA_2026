@@ -21,6 +21,8 @@ MonoBehaviour:
     <ProhibitedNpc>k__BackingField: []
     <ObligateNpc>k__BackingField:
     - {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <SlotPositions>k__BackingField:
+    - {fileID: 11400000, guid: 1712aa5520367d04481294fe06a33dc9, type: 2}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
@@ -126,8 +128,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 2
         <Text>k__BackingField:
         - Ynna dit du bien de {CurrentNpc} dans son rapport
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   <GUID>k__BackingField: 4ba1ebd1-8484-49bc-b749-e1eba20821af
   references:
     version: 2

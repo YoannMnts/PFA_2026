@@ -28,6 +28,15 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
     - {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     - {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <SlotPositions>k__BackingField:
+    - {fileID: 11400000, guid: 0a8dc2c0c01290348904aa33a8bfb264, type: 2}
+    - {fileID: 11400000, guid: 1712aa5520367d04481294fe06a33dc9, type: 2}
+    - {fileID: 11400000, guid: c493b25090d97d647b98a9e827014a68, type: 2}
+    - {fileID: 11400000, guid: 04e13259f87152a4b8f6c2566607f35d, type: 2}
+    - {fileID: 11400000, guid: 27acf62e415263a4c8ab846babd157ac, type: 2}
+    - {fileID: 11400000, guid: 2b9840aa663d55b4da4796e7897054f1, type: 2}
+    - {fileID: 11400000, guid: b787c8d8b064f7b4cb44f7282d3ffa9a, type: 2}
+    - {fileID: 11400000, guid: eae957e4512c6734bbb9eb9042b4db6f, type: 2}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
@@ -161,8 +170,6 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Effects>k__BackingField:
@@ -277,8 +284,6 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
     <Effects>k__BackingField:
@@ -387,8 +392,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - "Pam tente de calmer l'aggressivit\xE9 de tous"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
     <Effects>k__BackingField:
@@ -491,8 +494,6 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <Effects>k__BackingField:
@@ -613,8 +614,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - "Herlock lance des piques \xE0 [CurrentNpc], ce qui affecte sa confiance"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <Effects>k__BackingField:
@@ -705,8 +704,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - "Camil est triste que [CurrentNpc] ne l'appr\xE9cie pas "
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
     <Effects>k__BackingField:
@@ -828,8 +825,6 @@ MonoBehaviour:
         <Text>k__BackingField:
         - "Liski appr\xE9cie moins [CurrentNpc] car ses relations avec T\xE9a sont
           mauvaises"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
     <Effects>k__BackingField:
@@ -921,8 +916,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 2
         <Text>k__BackingField:
         - "Marco r\xE9v\xE8le des informations comprommetantes sur [CurrentNpc]"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   <GUID>k__BackingField: 6d733805-ded9-4afc-a0f6-c243148d765b
   references:
     version: 2
