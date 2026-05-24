@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 70_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
+    <Text>k__BackingField:
+    - Ahoy Capitaine !
+    - "J\u2019ai une terrible nouvelle ! "
+    - " Je viens de lire un livre, et si je ne me trompe pas, la zone dans laquelle
+      on navigue actuellement est habit\xE9e par un kraken volant !"
+    - "C\u2019est une catastrophe !\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 460cc045ed26f884ebca749e98f431f6, type: 2}
+  - {fileID: 11400000, guid: a1de2b19f504e59449f3916506b65f9e, type: 2}
+  - {fileID: 11400000, guid: dae531799daa9f34c8c92bd1a3e43624, type: 2}
+  <GUID>k__BackingField: 8995f321-67fe-4bff-9d3c-093e1fabb9d5

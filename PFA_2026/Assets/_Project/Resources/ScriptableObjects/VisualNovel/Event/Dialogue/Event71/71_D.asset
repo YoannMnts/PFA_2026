@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 71_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Bah je suis mal \xE0 l\u2019aise \xE0 chaque fois que je la vois, ses tentacules
+      me d\xE9go\xFBtent vraiment, et c\u2019est juste bizarre d\u2019apercevoir
+      son visage sous le poulpe."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 9c70fb6fac18e62488e323c1bb39b7cf, type: 2}
+  - {fileID: 11400000, guid: 8a12eb34511ac6c4c9c72ec1854e826b, type: 2}
+  <GUID>k__BackingField: 3de0e788-f3d1-45b1-b247-d74efc08d04f

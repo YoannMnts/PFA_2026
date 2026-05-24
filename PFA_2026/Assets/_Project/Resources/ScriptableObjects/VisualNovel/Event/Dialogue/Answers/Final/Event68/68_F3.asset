@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6551f63f2e464eb39de211b4f9603e78, type: 3}
-  m_Name: 67_F2
+  m_Name: 68_F3
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
-  <ButtonText>k__BackingField: "Peu importe comment est ton corps, c\u2019est ta
-    personne qui compte\r\n"
+  <ButtonText>k__BackingField: "Camil est juste maladroit, tu ne devrait pas l\u2019accuser"
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
-    - "Vous avez peut-\xEAtre raison."
-    - "Je ne suis pas tr\xE8s s\xFBr de ma personne non plus \xE0 vrai dire, mais
-      je peux peut-\xEAtre essayer de d\xE9passer mes complexes physiques."
+    - "Mais\u2026D\u2019accord Capitaine, si vous le dites\u2026"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Merci ! Je t\u2019avais dit que j\u2019\xE9tais innocent Liski."
   <Effects>k__BackingField:
   - <IsEnumeration>k__BackingField: 0
     <CurrentNpcTarget>k__BackingField:
@@ -31,97 +32,94 @@ MonoBehaviour:
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
         <Subject>k__BackingField:
-          rid: 2811534249184723024
+          rid: 2811534246771425318
         <Stat>k__BackingField:
-          rid: 2811534249184723112
+          rid: 2811534255048097814
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ArithmeticOperator>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 3
       <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 1
+        <IsCurrentNpc>k__BackingField: 0
         <Subject>k__BackingField:
-          rid: 2811534223414919222
+          rid: 2811534255048097816
         <Stat>k__BackingField:
-          rid: 2811534249184723122
+          rid: 2811534255048097817
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ArithmeticOperator>k__BackingField: 0
+      <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 2
       <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
         <Subject>k__BackingField:
-          rid: 2811534249184723087
+          rid: 2811534249184723116
         <Stat>k__BackingField:
-          rid: 2811534249184723123
+          rid: 2811534255048097818
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ArithmeticOperator>k__BackingField: 0
-      <Amount>k__BackingField: 1
+      <ArithmeticOperator>k__BackingField: 1
+      <Amount>k__BackingField: 2
       <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 0
+        <IsCurrentNpc>k__BackingField: 1
         <Subject>k__BackingField:
-          rid: 2811534249184723124
+          rid: -2
         <Stat>k__BackingField:
-          rid: 2811534249184723125
+          rid: 2811534255048097819
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ArithmeticOperator>k__BackingField: 0
-      <Amount>k__BackingField: 1
+      <ArithmeticOperator>k__BackingField: 1
+      <Amount>k__BackingField: 2
       <Text>k__BackingField:
-      - "Liski fait de son mieux pour se concentrer sur sa personnalit\xE9 plut\xF4t
-        que sur son corps, et m\xEAme si c\u2019est difficile, il y arrive plut\xF4t
-        bien. En plus de prendre confiance en lui, il concentre ses efforts sur ce
-        qui compte vraiment.\r\n"
-  <GUID>k__BackingField: 153c7bd4-9abd-4651-8438-2159c7103b83
+      - "Je crois que Camil n'\xE9tait pas aussi innocent que ce que je le pensais,
+        car il continue d\u2019emb\xEAter Liski, et de mani\xE8re encore plus \xE9vidente.
+        J\u2019aurais peut-\xEAtre d\xFB mieux analyser la situation avant de rejeter
+        la faute sur Liski."
+  <GUID>k__BackingField: c9b23fae-1165-4808-9ef0-d6784d1cee9c
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 2811534223414919222
+    - rid: 2811534246771425318
       type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
-    - rid: 2811534249184723024
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    - rid: 2811534249184723116
       type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
-    - rid: 2811534249184723087
-      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
-    - rid: 2811534249184723112
-      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Stat>k__BackingField: {fileID: 11400000, guid: 0873e3af56f61554284c45b21149e18e, type: 2}
-        <Amount>k__BackingField: 0
-    - rid: 2811534249184723122
-      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
-        <Amount>k__BackingField: 0
-    - rid: 2811534249184723123
-      type: {class: BehaviorValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Stat>k__BackingField: {fileID: 11400000, guid: c171d234a990b1a40bc8ea3fce4c0236, type: 2}
-        <Amount>k__BackingField: 0
-    - rid: 2811534249184723124
-      type: {class: AllNpcData, ns: Naussilus.Core, asm: Naussilus.Core}
-      data: 
-    - rid: 2811534249184723125
+        <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    - rid: 2811534255048097814
       type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 0
         <Npc>k__BackingField:
-          rid: 2811534249184723126
-    - rid: 2811534249184723126
+          rid: 2811534255048097815
+    - rid: 2811534255048097815
       type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
+    - rid: 2811534255048097816
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
+    - rid: 2811534255048097817
+      type: {class: BehaviorValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: be977a50b8a9d5b4ba2645d7a82c7315, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811534255048097818
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811534255048097819
+      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: efa87449a5f31f3428fd0d3f9c939891, type: 2}
+        <Amount>k__BackingField: 0
