@@ -81,40 +81,6 @@ MonoBehaviour:
         Elle dit qu\u2019elle ne peut pas faire autrement c\u2019est juste son attitude
         naturelle, je crois que ce n\u2019est pas juste de lui dire de changer. En
         tout cas, Camil a toujours aussi peur d\u2019elle."
-  - <IsEnumeration>k__BackingField: 1
-    <CurrentNpcTarget>k__BackingField:
-      rid: 2811534210194210819
-    <Conditions>k__BackingField:
-    - <LeftSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <Stat>k__BackingField:
-          rid: 2811534210194210821
-        <UseEnumerationNpc>k__BackingField: 0
-        <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ComparisonOperator>k__BackingField: 3
-      <RightSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <Stat>k__BackingField:
-          rid: 2811534210194210822
-        <UseEnumerationNpc>k__BackingField: 0
-        <UseRelationshipNpcToReturn>k__BackingField: 0
-    <Consequences>k__BackingField:
-    - <IsGameLost>k__BackingField: 0
-      <ConsequenceSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: -2
-        <Stat>k__BackingField:
-          rid: 2811534210194210823
-        <UseEnumerationNpc>k__BackingField: 0
-        <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ArithmeticOperator>k__BackingField: 0
-      <Amount>k__BackingField: 1
-      <Text>k__BackingField: []
   <GUID>k__BackingField: 0fa41161-752d-47fb-b973-741baf6b0226
   references:
     version: 2
@@ -125,29 +91,6 @@ MonoBehaviour:
       type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
-    - rid: 2811534210194210819
-      type: {class: GenderData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <EGender>k__BackingField: 1
-    - rid: 2811534210194210821
-      type: {class: BehaviorValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Stat>k__BackingField: {fileID: 11400000, guid: be977a50b8a9d5b4ba2645d7a82c7315, type: 2}
-        <Amount>k__BackingField: 0
-    - rid: 2811534210194210822
-      type: {class: IntValueData, ns: Naussilus.Core, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 10
-    - rid: 2811534210194210823
-      type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Amount>k__BackingField: 0
-        <Npc>k__BackingField:
-          rid: 2811534210194210824
-    - rid: 2811534210194210824
-      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     - rid: 2811534223414919204
       type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
