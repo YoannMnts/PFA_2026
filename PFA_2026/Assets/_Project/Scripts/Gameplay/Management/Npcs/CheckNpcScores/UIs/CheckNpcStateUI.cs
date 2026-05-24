@@ -12,6 +12,9 @@ namespace Naussilus.Gameplay
 {
     public class CheckNpcStateUI : MonoPhaseListener<CheckNpcState>
     {
+        private static readonly int SpeedMultiplier = Animator.StringToHash("SpeedMultiplier");
+        private static readonly int Switch = Animator.StringToHash("Switch");
+
         private CheckNpcState current;
 
         [SerializeField] private CanvasGroup group;
@@ -21,6 +24,8 @@ namespace Naussilus.Gameplay
         [SerializeField] private RelationshipUIList relationshipUIList;
         [SerializeField] private Button relationshipButton;
         [SerializeField] private Button statButton;
+        [SerializeField] private Animator statAnimator;
+        [SerializeField] private Animator relationshipAnimator;
 
 
         private void Start()
@@ -67,13 +72,21 @@ namespace Naussilus.Gameplay
         private void ChangeToStat()
         {
             relationshipUIList.Disconnect();
+            relationshipAnimator.SetFloat(SpeedMultiplier, -1);
+            relationshipAnimator.SetTrigger(Switch);
             mentalStateUIList.Connect(current.NpcMentalStates);
+            statAnimator.SetFloat(SpeedMultiplier, 1);
+            statAnimator.SetTrigger(Switch);
         }
 
         private void ChangeToRelationship()
         {
             mentalStateUIList.Disconnect();
+            statAnimator.SetFloat(SpeedMultiplier, -1);
+            statAnimator.SetTrigger(Switch);
             relationshipUIList.Connect(current.NpcRelationships);
+            relationshipAnimator.SetFloat(SpeedMultiplier, 1);
+            relationshipAnimator.SetTrigger(Switch);
         }
 
         public void Cancel()

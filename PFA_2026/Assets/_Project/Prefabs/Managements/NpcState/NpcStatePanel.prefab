@@ -259,7 +259,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1286714057092906438}
   m_HandleRect: {fileID: 7877318485443269839}
   m_Direction: 3
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1420,6 +1420,7 @@ GameObject:
   - component: {fileID: 4014481837501858333}
   - component: {fileID: 1976608536687904915}
   - component: {fileID: 7944573192580422514}
+  - component: {fileID: 2395292307830851292}
   m_Layer: 5
   m_Name: ChangeListButton
   m_TagString: Untagged
@@ -1434,7 +1435,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5039237257844806831}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1446,7 +1447,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -430, y: 0}
-  m_SizeDelta: {x: 128, y: 170}
+  m_SizeDelta: {x: 128, y: 110}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &1976608536687904915
 CanvasRenderer:
@@ -1500,6 +1501,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2395292307830851292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039237257844806831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RectMask2D
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
 --- !u!1 &6066429042072962675
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,6 +1526,7 @@ GameObject:
   - component: {fileID: 8028879529175088843}
   - component: {fileID: 5641968117401876344}
   - component: {fileID: 3660028509848386749}
+  - component: {fileID: 5146285546622736926}
   m_Layer: 5
   m_Name: RelationshipButton
   m_TagString: Untagged
@@ -1525,7 +1541,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6066429042072962675}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1533,11 +1549,11 @@ RectTransform:
   - {fileID: 5722719679670568766}
   - {fileID: 7640410607197917081}
   m_Father: {fileID: 5373727717991946682}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -278, y: 0}
-  m_SizeDelta: {x: 128, y: 170}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.054}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 333.1001, y: -14.200012}
+  m_SizeDelta: {x: 128, y: 110}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &5641968117401876344
 CanvasRenderer:
@@ -1591,6 +1607,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5146285546622736926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6066429042072962675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RectMask2D
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
 --- !u!1 &6097692528039666050
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,11 +1689,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8028879529175088843}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000030517578, y: 0.000030517578}
-  m_SizeDelta: {x: 0, y: 86}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000015258789, y: 49.500008}
+  m_SizeDelta: {x: 0, y: 256}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1935346392578804307
 CanvasRenderer:
   m_ObjectHideFlags: 0
