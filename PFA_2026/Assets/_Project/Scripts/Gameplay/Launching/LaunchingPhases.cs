@@ -31,6 +31,7 @@ namespace Naussilus.Gameplay
         {
             try
             {
+                //TODO faire l'intro
                 //var intro = new IntroductionPhase();
                 //await intro.Run();
                 
@@ -38,15 +39,15 @@ namespace Naussilus.Gameplay
                 {
                     await SwitchDay(i);
                     
-                    bool vnResult = await VisualNovel();
+                    bool visualNovelResult = await VisualNovel(i);
                     
                     await PlayerSwitch();
                     
-                    bool mResult = await Management();
+                    bool managementResult = await Management();
                     
                     await PlayerSwitch();
                     
-                    if (!mResult || !vnResult)
+                    if (!managementResult || !visualNovelResult)
                     {
                         GameOver();
                         break;
@@ -65,7 +66,7 @@ namespace Naussilus.Gameplay
         private void GameOver()
         {
             var ending = new EndingPhase(true);
-            ending.RunAndForget();        
+            ending.RunAndForget();
         }
 
         private async Awaitable PlayerSwitch()
@@ -81,9 +82,9 @@ namespace Naussilus.Gameplay
             await switchDay.Run();
         }
 
-        private async Awaitable<bool> VisualNovel()
+        private async Awaitable<bool> VisualNovel(int currentDay)
         {
-            var visualNovelEvent = EventManager.GetValidEvents();
+            var visualNovelEvent = EventManager.GetValidEvents(currentDay);
             var visualNovelPhase = new VisualNovelPhase(visualNovelEvent);
             PhaseResult<bool> result = await visualNovelPhase.Run();
             

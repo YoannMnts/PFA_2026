@@ -32,7 +32,7 @@ namespace Naussilus.Core.Managers
 
         public static void Init() {}
         
-        public static Incident[] GetValidEvents()
+        public static Incident[] GetValidEvents(int currentDay)
         {
             using (ListPool<Incident>.Get(out var validEventDatas) )
             {
@@ -63,6 +63,8 @@ namespace Naussilus.Core.Managers
                             break;
                     }
                     if (!isConditionValid && conditionalEffects.Length > 0)
+                        continue;
+                    if (currentDay < currentIncident.DayCheck)
                         continue;
                     
                     validEventDatas.Add(currentIncident);
