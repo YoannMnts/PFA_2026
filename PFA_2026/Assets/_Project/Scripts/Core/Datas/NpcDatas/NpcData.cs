@@ -1,4 +1,5 @@
 ﻿using System;
+using Naussilus.Core.Managements;
 using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
@@ -25,8 +26,14 @@ namespace Naussilus.Core.NpcDatas
         public EGender Gender { get; private set; }
         
         [field: SerializeField]
-        public Sprite DefaultEventSprite { get; private set; } 
+        public Sprite DefaultEventSprite { get; private set; }
+        
+        [field: SerializeField]
+        public Sprite DefaultIcon { get; private set; }
 
+        [field: SerializeField]
+        public RoomSlotPositionData[] DefaultPositions { get; private set; }
+        
         [field: SerializeField, TextArea] 
         public string CurrentThinking { get; private set; }
 

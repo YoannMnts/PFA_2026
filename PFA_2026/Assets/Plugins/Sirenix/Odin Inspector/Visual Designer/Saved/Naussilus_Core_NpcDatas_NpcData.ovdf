@@ -40,7 +40,7 @@ Position: $root:2
 	HorizontalLine = False
 
 # $ChYpYcSwErUe2bf7SFiX1V
-Position: $root:26
+Position: $root:24
 + [Sirenix.OdinInspector.TitleGroupAttribute]
 	HorizontalLine = False
 
@@ -107,4 +107,10 @@ Position: $AZLim4Pg3BTAv9o4zfkdkq:0
 Position: $8kvRrmPfbmSLCWnHKKEWAC:2
 
 # <DefaultEventSprite>k__BackingField
-Position: $8kvRrmPfbmSLCWnHKKEWAC:2
+Position: $8kvRrmPfbmSLCWnHKKEWAC:3
+
+# <DefaultIcon>k__BackingField
+Position: $8kvRrmPfbmSLCWnHKKEWAC:4
+
+# <DefaultPositions>k__BackingField
+Position: $8kvRrmPfbmSLCWnHKKEWAC:5
