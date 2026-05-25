@@ -60,7 +60,14 @@ MonoBehaviour:
     <Npc>k__BackingField:
       rid: 3949848295130792048
   <Gender>k__BackingField: 1
-  <CategoryIcon>k__BackingField: {fileID: 21300000, guid: 286010a5f392f2944a63bf9454f2809c, type: 3}
+  <DefaultEventSprite>k__BackingField: {fileID: 21300000, guid: 95e057f16211d7e4fbbce475166fa773, type: 3}
+  <DefaultIcon>k__BackingField: {fileID: 21300000, guid: 84aed4223da10014fb3ef4ba3e9001da, type: 3}
+  <DefaultPositions>k__BackingField:
+  - {fileID: 11400000, guid: 464bacfe8dfd9c048aea3e7a7e7aae93, type: 2}
+  - {fileID: 11400000, guid: b023782c9d223d04787e801a1880bf38, type: 2}
+  - {fileID: 11400000, guid: de82197146837d54194e0b4d5e278769, type: 2}
+  - {fileID: 11400000, guid: 81b7c9d26269f3745974e50721f2ef77, type: 2}
+  - {fileID: 0}
   <CurrentThinking>k__BackingField: 
   <GUID>k__BackingField: afd97fad-c712-4baf-af3c-a1756b4b4bb0
   references:
