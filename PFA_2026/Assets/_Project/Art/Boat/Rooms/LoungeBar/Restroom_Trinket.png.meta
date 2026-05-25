@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 08839d3b7ef08314e971df53e593129d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3846221719627527103
+    second: Restroom_Trinket_0
+  - first:
+      213: 7020735652879994733
+    second: Restroom_Trinket_1
+  - first:
+      213: 2726608792108558491
+    second: Restroom_Trinket_2
+  - first:
+      213: 5888014743845282556
+    second: Restroom_Trinket_3
+  - first:
+      213: -4119369861444853641
+    second: Restroom_Trinket_4
+  - first:
+      213: 142720363327952452
+    second: Restroom_Trinket_5
+  - first:
+      213: 6473223446547401876
+    second: Restroom_Trinket_6
+  - first:
+      213: 5122910949812174177
+    second: Restroom_Trinket_7
+  - first:
+      213: -2528851714246205788
+    second: Restroom_Trinket_8
+  - first:
+      213: 8728234807637966423
+    second: Restroom_Trinket_9
+  - first:
+      213: 2604574276200963480
+    second: Restroom_Trinket_10
+  - first:
+      213: 4023440878921379976
+    second: Restroom_Trinket_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Restroom_Trinket_0
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 189
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c853269b97f9ac0800000000000000
+      internalID: -3846221719627527103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restroom_Trinket_1
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 189
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f05dbf0e9ae6160800000000000000
+      internalID: 7020735652879994733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restroom_Trinket_2
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 189
+        width: 105
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b98661f004cd6d520800000000000000
+      internalID: 2726608792108558491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restroom_Trinket_3
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 149
+        width: 70
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf22927a63e66b150800000000000000
+      internalID: 5888014743845282556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restroom_Trinket_4
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 149
+        width: 103
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7702126bfee05d6c0800000000000000
+      internalID: -4119369861444853641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restroom_Trinket_5
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 148
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446906e0a6b0bf100800000000000000
+      internalID: 142720363327952452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restroom_Trinket_6
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 104
+        width: 52
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c00339d6285d950800000000000000
+      internalID: 6473223446547401876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restroom_Trinket_7
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 99
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d7383dd5c381740800000000000000
+      internalID: 5122910949812174177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restroom_Trinket_8
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 104
+        width: 86
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae97baa3c6b7ecd0800000000000000
+      internalID: -2528851714246205788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restroom_Trinket_9
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 104
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ef579305be02970800000000000000
+      internalID: 8728234807637966423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restroom_Trinket_10
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 104
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d141c218e452420800000000000000
+      internalID: 2604574276200963480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restroom_Trinket_11
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 67
+        width: 222
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 880f4ea892226d730800000000000000
+      internalID: 4023440878921379976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Restroom_Trinket_0: -3846221719627527103
+      Restroom_Trinket_1: 7020735652879994733
+      Restroom_Trinket_10: 2604574276200963480
+      Restroom_Trinket_11: 4023440878921379976
+      Restroom_Trinket_2: 2726608792108558491
+      Restroom_Trinket_3: 5888014743845282556
+      Restroom_Trinket_4: -4119369861444853641
+      Restroom_Trinket_5: 142720363327952452
+      Restroom_Trinket_6: 6473223446547401876
+      Restroom_Trinket_7: 5122910949812174177
+      Restroom_Trinket_8: -2528851714246205788
+      Restroom_Trinket_9: 8728234807637966423
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
