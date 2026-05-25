@@ -27,6 +27,9 @@ namespace Naussilus.Core.Managements.ActionDatas
         [field: SerializeField]
         public ActionEffectData[] ActionEffects { get; private set; }
         
+        [field: SerializeField]
+        public bool ClearDefaultSlot { get; private set; }
+        
         [field: SerializeField, HideInInspector]
         public string GUID { get; private set; }
 

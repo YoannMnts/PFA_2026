@@ -30,6 +30,9 @@ namespace Naussilus.Core.Managements
         [field: SerializeField]
         public bool Flip { get; private set; }
         
+        [field: SerializeField]
+        public RoomData Room { get; private set; }
+        
         [field: SerializeField, TextArea]
         public string Commentary { get; private set; }
         
