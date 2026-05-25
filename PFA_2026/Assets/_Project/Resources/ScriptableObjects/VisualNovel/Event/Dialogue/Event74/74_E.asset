@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 74_E
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Non c\u2019est faux, je viens de le dire !"
+    - "Faudrait \xEAtre idiot pour croire que je ferais une chose pareille !"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Alors pourquoi tu m\u2019as frapp\xE9 ? "
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Parce que t\u2019\xE9tais en train de convaincre tout le monde que j\u2019avais
+      fait je ne sais quoi avec Ynna ! "
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Captain, elle m\u2019a frapp\xE9 et je me suis juste d\xE9fendu !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 0cd9a207c6a25564c9f61c76cf079ae4, type: 2}
+  - {fileID: 11400000, guid: 04fa80f973bdcc940ba102017c45b325, type: 2}
+  - {fileID: 11400000, guid: 1f0ac796baea03847ac14b3589f0a8fd, type: 2}
+  - {fileID: 11400000, guid: bec9f1759eca9ad45ad0eec5fecdf480, type: 2}
+  <GUID>k__BackingField: 42fd1818-3c25-4f6f-8769-0a61999bc6da

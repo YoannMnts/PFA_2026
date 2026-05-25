@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 74_F
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "Et ensuite, comme il \xE9tait en train d\u2019inventer je ne sais quoi sur
+      moi, je lui ai fait fermer sa bouche en utilisant la mani\xE8re forte.\r\n"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "J\u2019ai essay\xE9 de me d\xE9fendre, mais elle est devenue compl\xE8tement
+      folle !"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "T\u2019aurais m\xEAme pas pu te d\xE9fendre."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 0cd9a207c6a25564c9f61c76cf079ae4, type: 2}
+  - {fileID: 11400000, guid: 04fa80f973bdcc940ba102017c45b325, type: 2}
+  - {fileID: 11400000, guid: 1f0ac796baea03847ac14b3589f0a8fd, type: 2}
+  - {fileID: 11400000, guid: bec9f1759eca9ad45ad0eec5fecdf480, type: 2}
+  <GUID>k__BackingField: 5fe8cf82-22bd-4200-944f-edcd21c1a913

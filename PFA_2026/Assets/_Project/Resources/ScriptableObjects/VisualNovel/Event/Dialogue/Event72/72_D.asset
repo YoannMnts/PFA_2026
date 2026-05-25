@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 72_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Bah\u2026Les autres n'ont qu'\xE0 faire un roulement !"
+    - "Chaque jour, c\u2019est une personne qui pr\xE9pare le repas !"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "Alors, bonne id\xE9e non ? "
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 3f006c3aa4f22884b82cd641c0ee3765, type: 2}
+  - {fileID: 11400000, guid: 66b057b319339fe4e989f2ef86c14a56, type: 2}
+  - {fileID: 11400000, guid: b3b3bdae3c0ec6e4581414258d3dd38c, type: 2}
+  <GUID>k__BackingField: 0aba8e07-3772-4dac-b4f8-de15c295018a

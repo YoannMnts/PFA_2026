@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 75_F
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Je voulais juste faire une blague, les autres autour ont bien rigol\xE9."
+    - Je voulais pas lui mettre la honte.
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 6fedca8f8cff7ea4cba1fb5dba35090f, type: 2}
+  - {fileID: 11400000, guid: 906606591cc28c74cb99d3e9ea9f2abd, type: 2}
+  - {fileID: 11400000, guid: 5328cb244cac1e8439d80395268599ed, type: 2}
+  <GUID>k__BackingField: e79ee071-c7d4-4403-90f9-f7ba568e7244

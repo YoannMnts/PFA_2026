@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 73_F
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Carr\xE9ment\u2026J\u2019avais tout ce que je voulais !"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - " Mes parents \xE9taient un peu stricts, mais j\u2019arrivais \xE0 leur \xE9chapper."
+    - "I\xE7i, je suis coinc\xE9\u2026"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Enfin c\u2019est pas pour dire que vous \xEAtes stricts ou quoi !\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 2cdf12644d76da24eb574dac0ce18a91, type: 2}
+  - {fileID: 11400000, guid: 266949f411cb6a44990f917b45c23605, type: 2}
+  - {fileID: 11400000, guid: efcdcfe8ddb7fd744b267bfb26ab13a4, type: 2}
+  <GUID>k__BackingField: e00e45d6-adee-4682-941b-6bfd8fcabbbd

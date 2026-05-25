@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 75_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Ah bon ? C\u2019est peut \xEAtre \xE0 cause de la fois ou j\u2019ai dit aux
+      autres qu\u2019il s\u2019\xE9tait fait dessus la premi\xE8re nuit."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Mais c\u2019est m\xEAme pas vrai, je pensais pas que \xE7a le vexerais."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "C\u2019est peut \xEAtre que c\u2019est vrai alors\u2026\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: a4382f0600b6411458811bb54d4f80bf, type: 2}
+  - {fileID: 11400000, guid: ea572c7050b71e34588d3c08afb39651, type: 2}
+  <GUID>k__BackingField: 3ae4e3be-d5d1-4c50-b970-4520b9c660ee

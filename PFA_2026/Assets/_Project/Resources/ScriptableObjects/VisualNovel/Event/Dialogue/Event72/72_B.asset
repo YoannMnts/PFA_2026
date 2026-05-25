@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 72_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Ouais ! Entre la cuisine, le rangement, la vaisselle\u2026"
+    - "J\u2019ai pas une minute pour moi, je vous jure !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: be12abd4c409f4c4082aa677442a32d5, type: 2}
+  - {fileID: 11400000, guid: 14909ae797267374fa205b6b1e5db249, type: 2}
+  <GUID>k__BackingField: e0e1ca25-e5bd-42be-b982-4cbaf152c4d6

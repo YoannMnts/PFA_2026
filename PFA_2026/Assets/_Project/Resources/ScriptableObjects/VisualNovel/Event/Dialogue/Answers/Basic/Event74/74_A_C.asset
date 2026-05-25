@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
+  m_Name: 74_A_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
+  <ButtonText>k__BackingField: "T\xE9a tu va vraiment trop loin ! "
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: ae3ce58b65fb2c048abacb1bd852e966, type: 2}
+  <GUID>k__BackingField: 5621a2c2-a20b-4194-b827-c920a3052fcb

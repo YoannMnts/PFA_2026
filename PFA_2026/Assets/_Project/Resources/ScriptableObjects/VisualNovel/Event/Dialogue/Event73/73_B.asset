@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 73_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Bah si c\u2019est sympa, y a des gens cools mais\u2026"
+    - "J\u2019ai un peu \xE9t\xE9 mis i\xE7i de force quoi."
+    - "Donc rien \xE0 voir avec vous, vous en faites pas, mais j\u2019ai h\xE2te
+      de retourner \xE0 ma petite vie tranquille."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 1a02a6da31d7768439e93a33684e373a, type: 2}
+  - {fileID: 11400000, guid: 77ca01f9ae3c4354a887fc0136cc5dc1, type: 2}
+  - {fileID: 11400000, guid: 3678e17599bddbb4fa8c9ab558e81b66, type: 2}
+  <GUID>k__BackingField: 36e83ae1-8015-4d2f-8a92-a2080910b26e
