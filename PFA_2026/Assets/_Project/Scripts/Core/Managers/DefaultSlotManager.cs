@@ -13,6 +13,9 @@ namespace Naussilus.Core.Managers
             for (int i = 0; i < slot?.DefaultNpcs?.Length; i++)
             {
                 var defaultNpc = slot.DefaultNpcs[i];
+                if (defaultNpc == null)
+                    continue;
+                
                 if (!defaultSlots.ContainsKey(defaultNpc))
                 {
                     defaultSlots.Add(defaultNpc, new List<CategoryNpcSlot>());
