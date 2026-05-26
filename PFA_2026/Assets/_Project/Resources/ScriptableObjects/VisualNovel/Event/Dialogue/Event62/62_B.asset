@@ -16,10 +16,6 @@ MonoBehaviour:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
-    - Vous croyez ?
-  - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
-    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
-    <Text>k__BackingField:
     - "Et bah elle me critique sur ce que je fais, me dit de me tenir plus droit,
       de faire ci et \xE7a, et elle le dit de mani\xE8re assez brutale."
   <Answers>k__BackingField:

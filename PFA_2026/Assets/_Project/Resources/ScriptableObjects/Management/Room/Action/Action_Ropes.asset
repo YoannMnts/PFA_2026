@@ -29,7 +29,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
     <ObligateNpc>k__BackingField: []
     <SlotPositions>k__BackingField:
-    - {fileID: 0}
+    - {fileID: 11400000, guid: baaed909675ef494a8ba170dd9a66007, type: 2}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}

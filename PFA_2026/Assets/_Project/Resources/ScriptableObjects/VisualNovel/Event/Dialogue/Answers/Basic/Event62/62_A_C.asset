@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 62_A_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 'Ca ne lui ressemble pas '
+  <ButtonText>k__BackingField: "\xC7a ne lui ressemble pas "
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 73ad82fca53e96f4891a5ccbcda70486, type: 2}
   <GUID>k__BackingField: e1847c13-683c-43d0-9c4e-f9f8c5e0cb29

@@ -26,8 +26,7 @@ MonoBehaviour:
   - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
     <Text>k__BackingField:
-    - "C\u2019est ce que j\u2019ai entendu\u2026\r\nMais c\u2019est compl\xE8tement
-      faux ! \r\n"
+    - "Mais c\u2019est compl\xE8tement faux ! \r\n"
   - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:

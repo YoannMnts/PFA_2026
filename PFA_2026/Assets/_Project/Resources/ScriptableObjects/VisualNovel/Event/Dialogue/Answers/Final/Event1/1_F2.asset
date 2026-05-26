@@ -77,7 +77,10 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "Cet entretien \xE0 fait du bien \xE0 Jennie, je vois qu'elle ignore plus
+        facilement les remarques \xE0 propos du poulpe, et qu'elle est plus confiante
+        dans le fait que ce soit une fille"
   <GUID>k__BackingField: 7d6605e9-a6e4-4fe0-8ecc-c4d12e3822fe
   references:
     version: 2

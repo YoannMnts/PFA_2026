@@ -18,6 +18,9 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - "Merci, mais je doute que \xE7a soit la solution\u2026"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
     - "J\u2019aimerais qu\u2019on ne me le dise plus parce que ce qu\u2019ils ne
       le pensent pas, pas parce que c\u2019est interdit"
   <Effects>k__BackingField:
