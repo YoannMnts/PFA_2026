@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 42_D_H
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Parfois il est impossible de changer ce que l\u2019on
-    est "
+    est."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 10559417d675874479c885702fdb949a, type: 2}
   <GUID>k__BackingField: a9ae62cb-55df-4d0c-8e48-514cc67b841a

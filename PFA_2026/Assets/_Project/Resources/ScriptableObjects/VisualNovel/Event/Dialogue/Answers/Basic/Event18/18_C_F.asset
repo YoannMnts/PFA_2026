@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 18_C_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Il ne pense pas mal, c\u2019est juste des blagues "
+  <ButtonText>k__BackingField: "Il ne pense pas mal, c\u2019est juste des blagues."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 376b75107c396b141a6f75236bd88f48, type: 2}
   <GUID>k__BackingField: 0bbc2bba-bf92-4734-aece-2924b95df882

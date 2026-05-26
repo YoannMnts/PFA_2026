@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 31_B_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "C\u2019est vrai mais on ne peut pas abandonner un
-    camarade"
+    camarade."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: e4350dea49fea8b4fa6ca50a072e828a, type: 2}
   <GUID>k__BackingField: 0d54b554-1567-44b0-8bbb-35439cd00adf

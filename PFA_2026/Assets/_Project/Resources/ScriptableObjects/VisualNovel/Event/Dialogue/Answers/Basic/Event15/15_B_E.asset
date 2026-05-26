@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 15_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Mais toi aussi tu t\u2019es \xE9nerv\xE9e"
+  <ButtonText>k__BackingField: "Mais toi aussi tu t\u2019es \xE9nerv\xE9e."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9d37b02a1556446449c0a1f1132c6680, type: 2}
   <GUID>k__BackingField: 272b1543-0d38-413d-bfed-3dee0255bc53

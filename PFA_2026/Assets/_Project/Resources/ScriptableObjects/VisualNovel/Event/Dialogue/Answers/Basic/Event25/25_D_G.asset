@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 25_D_G
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Elle sait aussi se d\xE9brouiller seule"
+  <ButtonText>k__BackingField: "Elle sait aussi se d\xE9brouiller seule."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9e3d73a9229f2564bb7b8598267e419a, type: 2}
   <GUID>k__BackingField: ba24642c-e889-4cfd-a72b-c2e920c88f10

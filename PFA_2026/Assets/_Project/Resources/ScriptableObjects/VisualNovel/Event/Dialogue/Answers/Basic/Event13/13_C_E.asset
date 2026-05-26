@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 13_C_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Tu peux avoir confiance en moi pour \xE9viter ce
-    genre de choses"
+    genre de choses."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: ada28b01128f4f74ba1e9b47c520a331, type: 2}
-  <GUID>k__BackingField: 496e56a0-7c78-42d2-a491-f1a8b5827fca
+  <GUID>k__BackingField: 5811963e-4126-405f-b391-816744a634d7

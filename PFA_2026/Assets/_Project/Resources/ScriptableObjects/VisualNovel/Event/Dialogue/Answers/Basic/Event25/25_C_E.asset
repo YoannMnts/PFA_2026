@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 25_C_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Parfois il faut \xEAtre d\xE9licat avec les gens"
+  <ButtonText>k__BackingField: "Parfois il faut \xEAtre d\xE9licat avec les gens."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: f1cbbf75b9562b040978c6901400e728, type: 2}
   <GUID>k__BackingField: 2c049975-2fc4-4368-8b37-7951131d733c

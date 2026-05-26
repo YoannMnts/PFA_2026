@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 43_D_I
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Non en effet, \xE7a ne doit pas \xEAtre \xE7a "
+  <ButtonText>k__BackingField: "Non en effet, \xE7a ne doit pas \xEAtre \xE7a."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: e3bc71bc2c391484ab5a72cc27125d96, type: 2}
   <GUID>k__BackingField: 48b1e3bc-3277-4943-9d9b-38de347b9b56

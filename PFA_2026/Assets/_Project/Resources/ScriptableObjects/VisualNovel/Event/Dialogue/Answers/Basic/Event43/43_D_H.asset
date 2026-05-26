@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 43_D_H
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 'Bien sur que si '
+  <ButtonText>k__BackingField: Bien sur que si.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 2e2b8c0c3b17b67419a8b744b58c4a1a, type: 2}
   <GUID>k__BackingField: 3a16c3a1-48c7-4868-9f02-f397aa36abb2

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 32_A_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 'Tout le monde fait de son mieux '
+  <ButtonText>k__BackingField: 'Tout le monde fait de son mieux. '
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7849c541ee92ae24298e8a764b8d1a6f, type: 2}
   <GUID>k__BackingField: 67f40a08-dfe9-4cd6-91da-9d1622187cb3

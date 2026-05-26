@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 14_B_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Il faudrait mener une enqu\xEAte"
+  <ButtonText>k__BackingField: "Il faudrait mener une enqu\xEAte."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 250854f3e4495db4db4a94b94695fc40, type: 2}
   <GUID>k__BackingField: 95b0a910-712a-46dc-b266-5d5e1ed07e35

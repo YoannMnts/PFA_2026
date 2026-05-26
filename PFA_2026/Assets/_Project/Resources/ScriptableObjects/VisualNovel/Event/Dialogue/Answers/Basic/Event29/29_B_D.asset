@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 29_B_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Je pense qu\u2019il serait content si tu allais lui
-    parler"
+    parler."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: a469b7c81e7a331409f59422708fd35b, type: 2}
   <GUID>k__BackingField: 7e78590d-dd32-4102-9154-8e8624c95bb3

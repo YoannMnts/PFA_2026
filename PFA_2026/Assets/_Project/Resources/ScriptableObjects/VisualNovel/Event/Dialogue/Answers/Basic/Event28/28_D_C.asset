@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 28_D_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Oui je trouve aussi que c\u2019est probl\xE9matique
-    en fait"
+    en fait."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 917bcbd6a2c069d47871b8ae42d053e0, type: 2}
   <GUID>k__BackingField: 5fd8a0ab-b83d-48c8-b90c-3641fb0c54b0

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 21_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Il faudrait expliquer \xE0 Liski comment faire mieux
-    alors"
+    alors."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 2936003910e31a0488670e5ab954bb35, type: 2}
   <GUID>k__BackingField: d94b87ca-a025-4fd0-815b-25356a879b42

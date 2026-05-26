@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 26_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "C\u2019est compr\xE9hensible"
+  <ButtonText>k__BackingField: "C\u2019est compr\xE9hensible."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7d5d74b4e4810fd49988fc08f4a0b511, type: 2}
   <GUID>k__BackingField: 9f94ec63-ed89-4f8c-9cc7-ae3cc81bb196

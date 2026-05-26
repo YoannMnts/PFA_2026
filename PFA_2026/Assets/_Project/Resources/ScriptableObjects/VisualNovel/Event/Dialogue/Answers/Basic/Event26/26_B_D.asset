@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 26_B_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Alors il faut essayer de lui redonner confiance d\u2019une
-    autre mani\xE8re"
+    autre mani\xE8re."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0e721513c7e5b9140a6a68eefec195d2, type: 2}
   <GUID>k__BackingField: 2bc4ffa9-6d85-43bf-b5dc-d1fdb692d7a9

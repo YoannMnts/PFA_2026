@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 43_C_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Tu peux toujours la forcer \xE0 avoir cette conversation "
+  <ButtonText>k__BackingField: "Tu peux toujours la forcer \xE0 avoir cette conversation."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: c48ecff8517b58f44ba91ee18833bec6, type: 2}
   <GUID>k__BackingField: 79461b37-7627-4dbe-a880-912b36a721c0

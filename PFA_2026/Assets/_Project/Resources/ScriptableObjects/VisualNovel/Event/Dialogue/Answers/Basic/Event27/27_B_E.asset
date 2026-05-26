@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 27_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Il faut le comprendre, on l\u2019a forc\xE9 \xE0
-    venir ici"
+    venir ici."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 4c0a63a08cc3d9042984e9718da1a991, type: 2}
   <GUID>k__BackingField: 0f0c7ec5-997f-4103-ae15-a322ca6ad6e2

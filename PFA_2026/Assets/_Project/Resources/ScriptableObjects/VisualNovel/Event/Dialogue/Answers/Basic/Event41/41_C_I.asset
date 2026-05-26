@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 41_C_I
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 'Si tu le dis Herlock '
+  <ButtonText>k__BackingField: 'Si tu le dis Herlock. '
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: c64361e9ad7fb1e498efba4c448f3abf, type: 2}
   <GUID>k__BackingField: 5786d818-04f8-4c99-bd76-42a5733223bf

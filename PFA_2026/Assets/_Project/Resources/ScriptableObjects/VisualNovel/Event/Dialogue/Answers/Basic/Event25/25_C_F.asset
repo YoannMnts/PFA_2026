@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 25_C_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Jennie est sensible, \xE7a a pu la blesser"
+  <ButtonText>k__BackingField: "Jennie est sensible, \xE7a a pu la blesser."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: f016854d2fd45234eb9529fe44d006f7, type: 2}
   <GUID>k__BackingField: bed84ba2-5c9c-4e01-84a1-d598da8174d0

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 1_C_I
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Il n\u2019y a aucune raison que tu ne sois pas humaine"
+  <ButtonText>k__BackingField: "Il n\u2019y a aucune raison que tu ne sois pas humaine."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 1cbb945199d4f3d488a3bb02fa57ac44, type: 2}
   <GUID>k__BackingField: 528bbd19-2c64-411f-8c77-ba3f9271aa91

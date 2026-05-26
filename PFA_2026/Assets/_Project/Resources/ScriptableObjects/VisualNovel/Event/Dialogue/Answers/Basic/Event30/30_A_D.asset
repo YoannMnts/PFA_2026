@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 30_A_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: Les rats ont le droit de vivre aussi
+  <ButtonText>k__BackingField: Les rats ont le droit de vivre aussi.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7f3c2b3ac3adb564aabf81beafbc653c, type: 2}
   <GUID>k__BackingField: a4a23f64-fab6-42c1-af68-7a32666b09ea

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 15_A_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: Ce genre de disputes est inacceptable sur mon navire
+  <ButtonText>k__BackingField: Ce genre de disputes est inacceptable sur mon navire.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 27a327288eb73bc41bb46434defe5611, type: 2}
   <GUID>k__BackingField: dca78a5c-6241-4dc5-a25e-f8b048860bc7

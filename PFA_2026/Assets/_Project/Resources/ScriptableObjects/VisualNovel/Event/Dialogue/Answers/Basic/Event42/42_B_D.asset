@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 42_B_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "C\u2019est seulement les justes cons\xE9quences de
-    ton comportement  "
+    ton comportement."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: af593b0195ce9ca42babd4afbb0093ac, type: 2}
   <GUID>k__BackingField: 60621935-759a-4ba7-a4f7-93dc9aea6fe6

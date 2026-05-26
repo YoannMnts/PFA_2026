@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 32_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Je pourrais all\xE9ger la charge de travail si tu
-    veux "
+    veux."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3096cdb3627de934987cf3c1dbeb55af, type: 2}
   <GUID>k__BackingField: bdd3d1a1-8f9e-497e-b322-ac1fbad0ed26

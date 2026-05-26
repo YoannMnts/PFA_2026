@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 35_A_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Je sais qu\u2019elle a son temp\xE9rament"
+  <ButtonText>k__BackingField: "Je sais qu\u2019elle a son temp\xE9rament."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3c1d18c290059d547b45312af1904398, type: 2}
-  <GUID>k__BackingField: d4b9dbca-4d97-46eb-97ee-0d74289439f4
+  <GUID>k__BackingField: 960aca97-835c-4e27-b03e-29e291d78837

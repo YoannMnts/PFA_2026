@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 28_A_B
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Je trouve qu\u2019il se moque de tout le monde sans
-    distinctions"
+    distinctions."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 2a50a778d24fef34c95012b87483816f, type: 2}
   <GUID>k__BackingField: 734107fa-fd8d-44ac-842c-a1e8093b7b5e

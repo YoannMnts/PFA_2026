@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 35_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Elle \xE9tait surement tendue "
+  <ButtonText>k__BackingField: "Elle \xE9tait surement tendue. "
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 957f5bd0554f297409a0632e00d83a6d, type: 2}
   <GUID>k__BackingField: 2bbb2a9a-eaa5-4ed9-8bd6-2b57151f82ec

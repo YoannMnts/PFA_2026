@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 38_B_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "C\u2019est vrai que ce n\u2019est pas le meilleur
-    \xE9l\xE9ment"
+    \xE9l\xE9ment."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 1efc826487de4374b9c9ac74af63824c, type: 2}
   <GUID>k__BackingField: d02359fb-1bee-47c3-9bea-78d44f95d8e2

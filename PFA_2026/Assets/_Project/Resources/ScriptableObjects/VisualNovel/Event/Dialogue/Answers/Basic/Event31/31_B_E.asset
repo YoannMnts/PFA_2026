@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 31_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "C\u2019est horrible comment peut tu dire une chose
-    pareille"
+    pareille."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: c531e0d43aa37d245b6ac744d4ccbb4f, type: 2}
   <GUID>k__BackingField: aa256062-9a58-4d13-918b-d0ef123c0a8b

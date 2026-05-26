@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 42_C_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Je peux t\u2019aider \xE0 t\u2019am\xE9liorer"
+  <ButtonText>k__BackingField: "Je peux t\u2019aider \xE0 t\u2019am\xE9liorer."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: f219119b33e349c438fe619eeb3eb678, type: 2}
   <GUID>k__BackingField: 452ee600-a57f-49c7-a750-492fab56aa0b

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 18_C_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Pas besoin d\u2019en arriver l\xE0, on va trouver
-    une solution"
+    une solution."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: a5f096237db0fac4b9e469facdf074bb, type: 2}
   <GUID>k__BackingField: d7d35384-634d-4304-b6a7-abcbf76c26d2

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 41_D_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Tu serais surpris des comp\xE9tences d\u2019Ynna
-    aux jeux"
+    aux jeux."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 60db299c45cfbf243acf3c317a29bea7, type: 2}
   <GUID>k__BackingField: d2abec70-f14d-4d11-864e-e4bfb6c3b01f

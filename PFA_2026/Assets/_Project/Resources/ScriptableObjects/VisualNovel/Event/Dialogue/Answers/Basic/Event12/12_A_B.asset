@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 12_A_B
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Dis lui clairement que ce n\u2019est pas r\xE9ciproque"
+  <ButtonText>k__BackingField: "Dis lui clairement que ce n\u2019est pas r\xE9ciproque."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 274972eaf3501094dbd5555c6d2e8133, type: 2}
   <GUID>k__BackingField: cae4c941-4214-4689-bd6c-93390db8342b

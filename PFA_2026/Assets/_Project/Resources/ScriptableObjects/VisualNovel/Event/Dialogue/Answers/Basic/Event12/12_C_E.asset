@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 12_C_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Dans ce cas, dis lui clairement que \xE7a ne t'int\xE9resse
-    pas "
+    pas."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 2d5f0eecb7166ab43bc74a3ab6831a70, type: 2}
   <GUID>k__BackingField: c798318a-b039-4842-b51c-f29be7efff00

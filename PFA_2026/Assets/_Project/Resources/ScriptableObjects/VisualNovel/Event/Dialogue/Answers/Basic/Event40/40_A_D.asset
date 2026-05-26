@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 40_A_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "C\u2019est pas possible \xE7a ne peut pas \xEAtre
-    lui "
+    lui."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 1af9babca5450db45a1bc17f23d70220, type: 2}
-  <GUID>k__BackingField: d7cfd803-1f41-4314-8c3f-3f19b008401c
+  <GUID>k__BackingField: d744c24b-c721-4a86-ad97-a0bea331f68c

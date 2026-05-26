@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 41_C_J
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: Je te crois Ynna
+  <ButtonText>k__BackingField: Je te crois Ynna.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: f4854307dcb26af43a98bd2f6f9af380, type: 2}
   <GUID>k__BackingField: e9f2ba1c-5ad0-44bf-b06e-4efe9ca7a3c6

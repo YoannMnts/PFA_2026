@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 31_B_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "C\u2019est un plan douteux"
+  <ButtonText>k__BackingField: "C\u2019est un plan douteux."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: c6f91231d84fbdd449a480eb2c1aa668, type: 2}
   <GUID>k__BackingField: 562b0803-7cbf-492e-a9b9-aa7da48ae440

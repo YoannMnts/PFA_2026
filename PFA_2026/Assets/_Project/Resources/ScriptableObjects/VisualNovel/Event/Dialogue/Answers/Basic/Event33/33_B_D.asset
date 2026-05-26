@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 33_B_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Tout le monde libre est libre d\u2019\xEAtre lui
-    m\xEAme sur le Naussilus"
+    m\xEAme sur le Naussilus."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9673940693c56af4a9cb5c030c425803, type: 2}
   <GUID>k__BackingField: c42a27cd-8a92-470d-b193-be9cf4ef89d5

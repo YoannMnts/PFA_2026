@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 920eb36d324119d4292a2521b1720803
+guid: 3a98cdd895255eb49ba40bbe57dea185
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8873253548970459082
-    second: Herlock_Joy_0
+      213: -7832922136357966163
+    second: Herlock_Idle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,12 +72,12 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 0
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Herlock_Joy_0
+      name: Herlock_Idle_0
       rect:
         serializedVersion: 2
-        x: 81
+        x: 78
         y: 0
-        width: 95
-        height: 184
+        width: 88
+        height: 183
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 63044a3e8eedbd480800000000000000
-      internalID: -8873253548970459082
+      spriteID: daee61d41dedb4390800000000000000
+      internalID: -7832922136357966163
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Herlock_Joy_0: -8873253548970459082
+      Herlock_Idle_0: -7832922136357966163
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

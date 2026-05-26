@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 17_B_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Ce n\u2019est peut \xEAtre pas vis\xE9 contre toi"
+  <ButtonText>k__BackingField: "Ce n\u2019est peut \xEAtre pas vis\xE9 contre toi."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 40b2f5cdcd1c7464a9825f40fd97681c, type: 2}
   <GUID>k__BackingField: b9377a19-8441-4523-98a1-200cf07b2330

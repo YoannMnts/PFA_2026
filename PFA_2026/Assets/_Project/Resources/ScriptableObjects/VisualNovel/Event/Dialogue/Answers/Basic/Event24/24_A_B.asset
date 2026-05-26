@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 24_A_B
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Je suis l\xE0 pour toi, tu peux me parler"
+  <ButtonText>k__BackingField: "Je suis l\xE0 pour toi, tu peux me parler."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: ca735c7f469a51a4a850fe14467ff880, type: 2}
   <GUID>k__BackingField: 23f0960a-2213-4e80-b66c-185027ab2855

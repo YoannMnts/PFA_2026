@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 15_C_G
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Tu es aussi fautive qu\u2019elle, elle essayait seulement
-    de communiquer avec toi"
+    de communiquer avec toi."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: dda6867e4e3ed72468becf0624f3be8a, type: 2}
   <GUID>k__BackingField: b503dc57-b64c-4941-af6d-40ac6c68a4a0

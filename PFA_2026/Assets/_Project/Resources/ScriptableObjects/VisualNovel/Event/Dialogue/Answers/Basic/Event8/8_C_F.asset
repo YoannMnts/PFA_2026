@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 8_C_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Les autres peuvent parfois te d\xE9fendre dans ces
-    situations"
+    situations."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 65c1c9637336109439c8a88727201a16, type: 2}
   <GUID>k__BackingField: 0b2d6288-85a7-4778-b0d3-59e599872285

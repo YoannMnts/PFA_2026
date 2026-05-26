@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 23_B_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Ne t\u2019en fais pas personne ne va te faire de
-    mal"
+    mal."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 72a1188f4c42f304f8bfba5126276075, type: 2}
   <GUID>k__BackingField: e35fa574-eddd-4aee-a8a2-6fb17a1b4654

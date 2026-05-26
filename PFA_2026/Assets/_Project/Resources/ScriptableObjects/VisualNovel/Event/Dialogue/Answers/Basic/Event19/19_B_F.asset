@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 19_B_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Tu peux toujours aller t\u2019excuser"
+  <ButtonText>k__BackingField: "Tu peux toujours aller t\u2019excuser."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8b35d7259818b52408562586a4750ccb, type: 2}
   <GUID>k__BackingField: 05525be4-54c4-4ccd-9a50-67abe1f51dd6

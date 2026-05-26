@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 1_A_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 'Tu es bien une humaine pourtant '
+  <ButtonText>k__BackingField: Tu es bien une humaine pourtant.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 4473ac8ca627dcb49916fc197b62b8c6, type: 2}
   <GUID>k__BackingField: 52b10046-d031-458f-a659-97961dbaae89

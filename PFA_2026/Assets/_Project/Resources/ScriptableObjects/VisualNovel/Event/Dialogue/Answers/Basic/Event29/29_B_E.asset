@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 29_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Peut \xEAtre qu\u2019il n\u2019a pas envie de parler"
+  <ButtonText>k__BackingField: "Peut \xEAtre qu\u2019il n\u2019a pas envie de parler."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: dfe56c3b52643854284b26cdb603eef1, type: 2}
   <GUID>k__BackingField: 971f3c4f-6302-4f1f-bfb8-ed26eed4c24e

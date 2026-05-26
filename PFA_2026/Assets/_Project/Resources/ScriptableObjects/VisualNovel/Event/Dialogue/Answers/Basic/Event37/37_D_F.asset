@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 37_D_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 'Tu es dure avec lui '
+  <ButtonText>k__BackingField: 'Tu es dure avec lui. '
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6c93180ea0b3702409475a3cda726aad, type: 2}
   <GUID>k__BackingField: 09733772-9252-4ff9-b817-bb2d87d26bb4

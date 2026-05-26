@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 37_D_G
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Tu ne devrais pas dire \xE7a d\u2019un camarade"
+  <ButtonText>k__BackingField: "Tu ne devrais pas dire \xE7a d\u2019un camarade."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 508252ee366902243b9146d2aaf510cb, type: 2}
   <GUID>k__BackingField: 9601bfee-fa67-4888-ad75-c868765cf385

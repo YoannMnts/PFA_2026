@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 32_D_G
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Tout le monde dans l\u2019\xE9quipage ne peut pas
-    suivre cette cadence"
+    suivre cette cadence."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: be384f4ba27a339458910fa9bdc9c706, type: 2}
   <GUID>k__BackingField: 89b40e65-d4cc-4d36-a425-81bf4c19d837

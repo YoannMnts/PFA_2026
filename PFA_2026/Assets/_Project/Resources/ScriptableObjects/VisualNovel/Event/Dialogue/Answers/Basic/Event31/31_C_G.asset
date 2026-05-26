@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 31_C_G
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Mais non bien sur que je n\u2019y ai pas vraiment
-    pens\xE9, c\u2019est horrible "
+    pens\xE9, c\u2019est horrible."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: feab299feefabf4448a59311b3359607, type: 2}
   <GUID>k__BackingField: 440138a3-a04c-47f0-8ad8-576040f98f0e

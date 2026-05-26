@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 35_B_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Tu r\xE9agirais de la m\xEAme mani\xE8re si on te
-    disais comment \xE9crire tes rapports "
+    disais comment \xE9crire tes rapports."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3fd5f47b638a92a40a0a069a042e1a39, type: 2}
   <GUID>k__BackingField: 9cd307bf-016e-4ab2-928d-e397af7ed492

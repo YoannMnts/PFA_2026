@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 24_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Merci du r\xF4le que tu as sur ce navire "
+  <ButtonText>k__BackingField: "Merci du r\xF4le que tu as sur ce navire."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: eed9688726a3db9449ed1f72ceb90ad9, type: 2}
   <GUID>k__BackingField: 467c8572-cd82-4584-b6a1-297b85ec38a9

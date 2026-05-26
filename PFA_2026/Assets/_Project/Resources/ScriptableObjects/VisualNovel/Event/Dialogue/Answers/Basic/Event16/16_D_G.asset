@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 16_D_G
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Tu ne risque pas de les retrouver si tu t\u2019excite
-    comme \xE7a "
+    comme \xE7a."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: d8200a139fb3455488b1a0be42be7466, type: 2}
   <GUID>k__BackingField: 3baf5197-250a-4f8a-853c-80664381a4f9

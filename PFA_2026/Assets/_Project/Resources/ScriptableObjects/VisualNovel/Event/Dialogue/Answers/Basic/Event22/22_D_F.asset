@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 22_D_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Je t'autorise \xE0 te d\xE9fendre si tu n\u2019a
-    pas le choix "
+    pas le choix."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9c93f42c5336e1c418aeece51924d137, type: 2}
   <GUID>k__BackingField: ed211bc8-ad8b-42d0-8427-7ea109af992e

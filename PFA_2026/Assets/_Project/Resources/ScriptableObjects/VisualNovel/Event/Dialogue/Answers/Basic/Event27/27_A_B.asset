@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 27_A_B
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Je crois que ses parents l\u2019ont amen\xE9 i\xE7i
-    de force"
+    de force."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: eda8008c5107d1646a9e3f9fb8dd92fe, type: 2}
   <GUID>k__BackingField: b103ef39-4eed-4a36-8e69-25a79d26fee2

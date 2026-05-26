@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 24_A_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Tu n\u2019es pas seule, on est tous une grande famille
-    sur ce navire"
+    sur ce navire."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0c1bdab1fd16c1e4e8ff5e38ee5db9e9, type: 2}
   <GUID>k__BackingField: a2a17c26-2f95-4ec8-90fd-0769ac988ceb

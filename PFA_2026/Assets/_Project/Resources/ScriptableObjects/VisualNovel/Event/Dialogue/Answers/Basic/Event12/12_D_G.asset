@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 12_D_G
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Il ne faut pas te moquer c\u2019est sa mani\xE8re
-    \xE0 lui de faire "
+    \xE0 lui de faire. "
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 922a3b971c1f1fc46b6f936151d31fe3, type: 2}
   <GUID>k__BackingField: 5c08a9f4-5588-4391-b3d2-cc373e5d6ab3

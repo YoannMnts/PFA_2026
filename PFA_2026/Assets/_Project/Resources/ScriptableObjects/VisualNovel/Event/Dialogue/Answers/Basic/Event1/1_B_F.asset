@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 1_B_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Bien sur, si tu veux \xEAtre une fille tu seras une
-    fille"
+    fille."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 691016cc2ba144040b3c1dfacf80205a, type: 2}
   <GUID>k__BackingField: cbd4a58a-97f5-4d29-a636-dcdab0644419

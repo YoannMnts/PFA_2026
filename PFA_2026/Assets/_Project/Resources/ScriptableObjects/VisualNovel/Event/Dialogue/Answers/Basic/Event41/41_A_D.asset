@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 41_A_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Je crois que Ynna \xE0 juste gagn\xE9 \xE0 la loyale"
+  <ButtonText>k__BackingField: "Je crois que Ynna \xE0 juste gagn\xE9 \xE0 la loyale."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 92e8ecf3afad62847832b9aabc4d97f8, type: 2}
   <GUID>k__BackingField: 91d84d7b-c605-4a9a-a471-ff278e1a7ab9

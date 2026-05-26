@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 41_B_H
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Ne t'\xE9nerve pas Ynna"
+  <ButtonText>k__BackingField: "Ne t'\xE9nerve pas Ynna."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 2eb8600be96c8cc43a783b9dbba1bc7c, type: 2}
   <GUID>k__BackingField: 2b4e093c-f985-4c1e-ba8c-5e2ed2f92436

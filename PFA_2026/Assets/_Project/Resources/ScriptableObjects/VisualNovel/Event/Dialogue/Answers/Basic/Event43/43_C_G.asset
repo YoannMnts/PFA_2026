@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 43_C_G
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Il faut lui laisser le temps de s\u2019exprimer "
+  <ButtonText>k__BackingField: "Il faut lui laisser le temps de s\u2019exprimer. "
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3ee49f2f75c98b644afdcaff67366bd3, type: 2}
   <GUID>k__BackingField: 3debfdc4-1cc0-40a7-9d10-33ee4fdd8a4c

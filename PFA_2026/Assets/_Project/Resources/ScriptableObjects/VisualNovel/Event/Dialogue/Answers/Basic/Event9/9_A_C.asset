@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 9_A_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Camil ? Ca m'\xE9tonne de lui "
+  <ButtonText>k__BackingField: "Camil ? Ca m'\xE9tonne de lui. "
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 487f6200af2091d4198dbc3cef744a6f, type: 2}
   <GUID>k__BackingField: 41b0d7cd-36de-4f7a-8397-b638fa813181

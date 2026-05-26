@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 28_C_G
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: Je crois que les cas comme lui sont sans espoir
+  <ButtonText>k__BackingField: Je crois que les cas comme lui sont sans espoir.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 98cf4731d61829d4cb20319010a68086, type: 2}
   <GUID>k__BackingField: ba559a6f-118a-4b2e-9477-9a1bb3a06012

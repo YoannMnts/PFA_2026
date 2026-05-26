@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 43_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Oui ca me parait clair qu\u2019il se passe quelque
-    chose"
+    chose."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: e1411deb167dd394dabd1d39818ca5af, type: 2}
   <GUID>k__BackingField: 0f2c00ea-fa54-4c10-b49c-828d5de104b8

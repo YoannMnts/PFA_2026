@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 28_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Peut \xEAtre qu\u2019il ne s\u2019en rend pas compte"
+  <ButtonText>k__BackingField: "Peut \xEAtre qu\u2019il ne s\u2019en rend pas compte."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8fbd8a20591c9a842a8e0c24bce502ea, type: 2}
   <GUID>k__BackingField: b930a3bf-95e8-44b3-bc04-1ed2d9208ac9

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 41_D_G
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Une femme \xE0 autant de chance de gagner que n\u2019importe
-    qui"
+    qui."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 398f0aa9c403f5247bfece7e62381de6, type: 2}
   <GUID>k__BackingField: 0568bf35-b42f-4e5f-9596-b4b6a825e066
