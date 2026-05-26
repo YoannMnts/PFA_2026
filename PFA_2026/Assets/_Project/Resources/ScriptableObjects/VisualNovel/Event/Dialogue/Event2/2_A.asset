@@ -22,7 +22,7 @@ MonoBehaviour:
     <Text>k__BackingField:
     - "En fait, j\u2019ai eu une discussion avec Pam, et ses mots m\u2019ont beaucoup
       bless\xE9e\u2026"
-    - "Je n\u2019arrive pas vraiment \xE0 passer \xE0 autre chose"
+    - "Je n\u2019arrive pas vraiment \xE0 passer \xE0 autre chose."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 3984c27c0ce466141b5e9b1d877deedd, type: 2}
   - {fileID: 11400000, guid: e7b37627c72314848b277bc784e548a7, type: 2}

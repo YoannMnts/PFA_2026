@@ -20,7 +20,7 @@ MonoBehaviour:
     <Text>k__BackingField:
     - "C\u2019est pas facile\u2026"
     - "J\u2019ai du mal \xE0 passer au dessus de mes \xE9motions, m\xEAme si je sais
-      qu\u2019elle ne pensait pas mal"
+      qu\u2019elle ne pensait pas mal."
   <Effects>k__BackingField:
   - <IsEnumeration>k__BackingField: 0
     <CurrentNpcTarget>k__BackingField:
@@ -74,7 +74,10 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "Jennie a l\u2019air d\u2019\xEAtre plus confiante, je pense qu\u2019elle
+        \xE0 suivi les conseils de Pam, mais elles ont l\u2019air de moins se parler,
+        peut \xEAtre qu\u2019elle \xE0 peur d\u2019\xEAtre bless\xE9e \xE0 nouveau."
   <GUID>k__BackingField: 87b532ff-553a-45f6-9425-b6ee1f8fc7e7
   references:
     version: 2

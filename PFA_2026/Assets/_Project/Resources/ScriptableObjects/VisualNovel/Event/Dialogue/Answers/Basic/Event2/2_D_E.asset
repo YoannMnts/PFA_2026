@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 2_D_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Je comprends que \xE7a ait \xE9t\xE9 blessant, m\xEAme
-    si \xE7a partait d\u2019une bonne intention "
+    si \xE7a partait d\u2019une bonne intention. "
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3afb5c8830c250a4cae528f05936e653, type: 2}
   <GUID>k__BackingField: 2f3a9e54-79bc-4f0b-8512-ee6b282dedbe

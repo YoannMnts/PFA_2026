@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 64_C_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Pour \xEAtre pirate, l\u2019affirmation est plus
-    importante que la tenue"
+    importante que la tenue."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9a598d57bccd304458900bf35db307bd, type: 2}
   <GUID>k__BackingField: 1b2aeae1-c812-4c5f-997a-7aa509ff1dc2

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 64_C_G
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Mais \xE7a reste ta tenue, tu ne devrais pas la changer
-    pour les autres "
+    pour les autres."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 4927bff4a0939d647b6820bf54645dd1, type: 2}
   <GUID>k__BackingField: c8bd9018-3752-4c13-84ed-6a5be0a8f7d7

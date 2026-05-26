@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 64_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Lui non plus ce n\u2019est pas un vrai pirate"
+  <ButtonText>k__BackingField: "Lui non plus ce n\u2019est pas un vrai pirate."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: d5d5223e2470ecb498cafa44354c817f, type: 2}
   <GUID>k__BackingField: 1a3f2bde-d806-495f-9803-f7e9d03cabde
