@@ -17,9 +17,13 @@ namespace Naussilus.Gameplay
             SpriteSortingLayerName = data.SortingLayerName;
             OrderInLayer = data.OrderInLayer;
             Flip = data.RandomFlip ? Random.value > .5f : data.Flip;
-            DefaultNpcs = data.IsDefaultSlotFor?.Select(npcData => NpcManager.TryGetNpc(npcData.GUID)).ToArray();
+            DefaultNpcs = data.IsDefaultSlotFor?.Select(npcData => NpcManager.TryGetNpc(npcData?.GUID)).ToArray();
             CurrentNpc = npc;
-            this.Register();
+
+            if (DefaultNpcs?.Length > 0)
+            {
+                this.Register();
+            }
         }
         
         [CanBeNull] public Npc CurrentNpc { get; private set; }
@@ -34,7 +38,7 @@ namespace Naussilus.Gameplay
         
         public bool Flip { get; private set; }
         
-        public Npc[] DefaultNpcs { get; private set; }
+        [CanBeNull] public Npc[] DefaultNpcs { get; private set; }
 
         protected internal bool TryAddNpc(Npc npc)
         {

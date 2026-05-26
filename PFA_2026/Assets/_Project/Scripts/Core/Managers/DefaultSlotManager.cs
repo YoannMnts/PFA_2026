@@ -10,7 +10,7 @@ namespace Naussilus.Core.Managers
 
         public static void Register(this CategoryNpcSlot slot)
         { 
-            for (int i = 0; i < slot.DefaultNpcs.Length; i++)
+            for (int i = 0; i < slot?.DefaultNpcs?.Length; i++)
             {
                 var defaultNpc = slot.DefaultNpcs[i];
                 if (!defaultSlots.ContainsKey(defaultNpc))
@@ -24,7 +24,7 @@ namespace Naussilus.Core.Managers
 
         public static void Unregister(this CategoryNpcSlot slot)
         {
-            for (int i = 0; i < slot.DefaultNpcs.Length; i++)
+            for (int i = 0; i < slot?.DefaultNpcs?.Length; i++)
             {
                 var defaultNpc = slot.DefaultNpcs[i];
                 if (!defaultSlots.ContainsKey(defaultNpc))
