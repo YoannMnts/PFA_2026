@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: RestRoomData
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
   <Name>k__BackingField: "Salle de d\xE9tente"
-  <Description>k__BackingField: "L'endroit id\xE9al pour que les membres de l'\xE9quipage
-    puissent s'occuper pendant leur temps libre"
+  <Description>k__BackingField: "L'endroit id\xE9al pour que l'\xE9quipage puissent
+    s'occuper pendant leur temps libre"
   <Actions>k__BackingField:
   - {fileID: 11400000, guid: 56ab99c42724be841af69cc548fa308a, type: 2}
   - {fileID: 11400000, guid: 87fb0e3f245f4de4596d26e7d1b1955d, type: 2}

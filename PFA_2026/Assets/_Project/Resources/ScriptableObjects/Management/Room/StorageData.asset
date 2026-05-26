@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: StorageData
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
   <Name>k__BackingField: Stockage
-  <Description>k__BackingField: "C'est dans la cale du Naussilus que les porivions
-    et le materiel son stock\xE9s, avec bien sur un compartiement secret pour la
-    contrebande"
+  <Description>k__BackingField: "C'est i\xE7i que les porivions et le materiel son
+    stock\xE9s, avec bien sur un compartiement secret pour la contrebande"
   <Actions>k__BackingField:
   - {fileID: 11400000, guid: 0dabf01c4e7cea3448f28c65f667b73c, type: 2}
   <Icon>k__BackingField: {fileID: 21300000, guid: cf7a257b12af2814693a60337d12d00b, type: 3}

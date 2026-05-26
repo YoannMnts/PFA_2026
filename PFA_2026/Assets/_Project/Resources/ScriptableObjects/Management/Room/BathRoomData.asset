@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: BathRoomData
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
   <Name>k__BackingField: Salle d'eau
-  <Description>k__BackingField: "Cette pi\xE8ce est tout \xE9quip\xE9e pour offrir
-    aux pirates l'hygi\xE8ne dont ils ont besoin, tantq u'elle est entretenur r\xE9guli\xE8rement"
+  <Description>k__BackingField: "Offre aux pirates l'hygi\xE8ne dont ils ont besoin,
+    tant qu'elle est entretenur r\xE9guli\xE8rement"
   <Actions>k__BackingField:
   - {fileID: 11400000, guid: 3fea2d9cc465c7c4b887506f7a1ca397, type: 2}
   - {fileID: 11400000, guid: 19477164b72d448499373bf376db27e4, type: 2}

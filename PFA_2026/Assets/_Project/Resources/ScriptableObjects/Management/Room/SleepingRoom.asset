@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: SleepingRoom
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
   <Name>k__BackingField: Salle de couchage
-  <Description>k__BackingField: "Cette salle permet aux membres de l'\xE9quipage
-    de prendre un peu de repos, m\xEAme si l'endroit peut vite \xEAtre \xE9troit"
+  <Description>k__BackingField: "Permet aux membres de l'\xE9quipage de prendre un
+    peu de repos"
   <Actions>k__BackingField:
   - {fileID: 11400000, guid: d74a0c177a701294b80d21a6bda2832e, type: 2}
   - {fileID: 11400000, guid: a4da70467a577fc44b333b638d215482, type: 2}
