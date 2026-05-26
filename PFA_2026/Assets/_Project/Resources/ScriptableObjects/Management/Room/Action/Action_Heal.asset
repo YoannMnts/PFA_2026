@@ -21,12 +21,16 @@ MonoBehaviour:
     <ProhibitedNpc>k__BackingField: []
     <ObligateNpc>k__BackingField:
     - {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
+    <SlotPositions>k__BackingField:
+    - {fileID: 11400000, guid: f2d3ea8fc0195e143ba23b2a9f0d975a, type: 2}
   - <Name>k__BackingField: Patient
     <Quantity>k__BackingField: 1
     <ProhibitedNpc>k__BackingField:
     - {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
     - {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <ObligateNpc>k__BackingField: []
+    <SlotPositions>k__BackingField:
+    - {fileID: 11400000, guid: 8b49ededb9c45a0439ca3ac4411782b2, type: 2}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
@@ -138,8 +142,6 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Effects>k__BackingField:
@@ -237,8 +239,6 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
     <Effects>k__BackingField:
@@ -290,8 +290,6 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
     <Effects>k__BackingField:
@@ -414,8 +412,6 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <Effects>k__BackingField:
@@ -512,8 +508,6 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
     <Effects>k__BackingField:
@@ -625,8 +619,6 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 0
     <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
     <Effects>k__BackingField:
@@ -724,8 +716,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: 7947233f-f4f0-4273-a86b-3db2b73ee96f
   references:
     version: 2

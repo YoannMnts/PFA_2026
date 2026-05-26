@@ -256,6 +256,7 @@ MonoBehaviour:
         <Amount>k__BackingField: 3
         <Text>k__BackingField:
         - Marco est heureux d'avoir des nouvelles de sa famille et de sa petite amie
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: 42905f73-614a-4891-87cb-244d49f7ab4d
   references:
     version: 2

@@ -20,6 +20,8 @@ MonoBehaviour:
     <Quantity>k__BackingField: 1
     <ProhibitedNpc>k__BackingField: []
     <ObligateNpc>k__BackingField: []
+    <SlotPositions>k__BackingField:
+    - {fileID: 11400000, guid: 09a5feb8aea8b38478d8341b72c7f38f, type: 2}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
@@ -54,8 +56,6 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Effects>k__BackingField:
@@ -124,8 +124,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - "T\xE9a \xE0 fait un cauchemard, ce qui l'angoisse"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
     <Effects>k__BackingField:
@@ -194,8 +192,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - "Mais Pam \xE0 fait un cauchemard, ce qui a pertub\xE9 son sommeil"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
     <Effects>k__BackingField:
@@ -229,8 +225,6 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <Effects>k__BackingField:
@@ -300,8 +294,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - "Les douleurs d'Herlock ont pertub\xE9 son sommeil"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <Effects>k__BackingField:
@@ -336,8 +328,6 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
     <Effects>k__BackingField:
@@ -407,8 +397,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - "Liski a r\xEAv\xE9 de T\xE9a"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
     <Effects>k__BackingField:
@@ -456,8 +444,7 @@ MonoBehaviour:
         <Text>k__BackingField:
         - "Marco a dormi trop longtemps et \xE0 donc oubli\xE9 de pr\xE9parer les
           rations, ce qui d\xE9plait \xE0 l'\xE9quipage"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: e89b01c7-5996-4ec4-b3e4-65886b913c9b
   references:
     version: 2

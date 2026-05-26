@@ -916,6 +916,7 @@ MonoBehaviour:
         <Amount>k__BackingField: 2
         <Text>k__BackingField:
         - "Marco r\xE9v\xE8le des informations comprommetantes sur [CurrentNpc]"
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: 6d733805-ded9-4afc-a0f6-c243148d765b
   references:
     version: 2

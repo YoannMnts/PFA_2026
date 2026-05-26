@@ -21,6 +21,10 @@ MonoBehaviour:
     <ProhibitedNpc>k__BackingField:
     - {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <ObligateNpc>k__BackingField: []
+    <SlotPositions>k__BackingField:
+    - {fileID: 11400000, guid: ed21bc9700bc421498fca18374f23373, type: 2}
+    - {fileID: 11400000, guid: 9a34fb8f3e55d5949acc48582646913d, type: 2}
+    - {fileID: 11400000, guid: 76c74d3f6a9a9de45b1229f057df30af, type: 2}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
@@ -133,8 +137,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - Jennie renforce sa relation avec {CurrentNpc}
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Effects>k__BackingField:
@@ -275,8 +277,6 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
     <Effects>k__BackingField:
@@ -360,8 +360,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - "Pam veille \xE0 ce que les autres ne boivent pas en exc\xE8s"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
     <Effects>k__BackingField:
@@ -449,8 +447,6 @@ MonoBehaviour:
         <Text>k__BackingField:
         - "Ynna c\xE8de \xE0 la tentation et boit plus que de raison, d\xE9teriorant
           sa sant\xE9"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <Effects>k__BackingField:
@@ -545,8 +541,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - '[CurrentNpc] a de l''empathie pour Herlock'
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
     <Effects>k__BackingField:
@@ -606,8 +600,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - Liski renforce sa relation avec les autres
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
     <Effects>k__BackingField:
@@ -717,8 +709,7 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - "Marco r\xE9pend dans rumeurs sur [CurrentNpc]"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
+  <ClearDefaultSlot>k__BackingField: 0
   <GUID>k__BackingField: af635718-46dd-4e4b-9111-cf4364861dbf
   references:
     version: 2

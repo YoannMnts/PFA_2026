@@ -22,6 +22,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
     - {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <ObligateNpc>k__BackingField: []
+    <SlotPositions>k__BackingField:
+    - {fileID: 11400000, guid: 7f1b7d159d213294c8d66a15b4511eed, type: 2}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
@@ -117,8 +119,6 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Effects>k__BackingField:
@@ -199,8 +199,6 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
     <Effects>k__BackingField:
@@ -269,8 +267,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - "Pam prend le temps de raconter son m\xE9fait dans une lettre \xE0 sa fianc\xE9e"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <Effects>k__BackingField:
@@ -306,8 +302,6 @@ MonoBehaviour:
         <Text>k__BackingField:
         - "Ynna remaque que des provisions ont \xE9t\xE9 vol\xE9es, mais ne trouve
           pas le coupable"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
     <Effects>k__BackingField:
@@ -423,8 +417,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 2
         <Text>k__BackingField:
         - "Ynna le d\xE9masque, ce qui d\xE9grade ses relations avec Liski"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
     <Effects>k__BackingField:
@@ -505,8 +497,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
         <Text>k__BackingField: []
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: e9ddae40-1cd8-44ea-b042-bcc24a23fec6
   references:
     version: 2

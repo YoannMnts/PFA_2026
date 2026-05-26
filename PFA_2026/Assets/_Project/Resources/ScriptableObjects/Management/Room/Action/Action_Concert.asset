@@ -21,14 +21,14 @@ MonoBehaviour:
     <ProhibitedNpc>k__BackingField: []
     <ObligateNpc>k__BackingField: []
     <SlotPositions>k__BackingField:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 11400000, guid: de3273e648cc30f4b923851ac92510f7, type: 2}
+    - {fileID: 11400000, guid: 452bc1ffc396bf14686b17847aefb48b, type: 2}
+    - {fileID: 11400000, guid: 43b1dcf02b0ad24489f2c840ef08161b, type: 2}
+    - {fileID: 11400000, guid: c1bfe001a30326145a55466a9efccfc9, type: 2}
+    - {fileID: 11400000, guid: a35dcdc54df3cbd459cbb5623d7bf4be, type: 2}
+    - {fileID: 11400000, guid: dcbf2a71e1767944ba8f79005d30d7ea, type: 2}
+    - {fileID: 11400000, guid: 8ffce96ce1321f744ae71f05965f8511, type: 2}
+    - {fileID: 11400000, guid: f65d0fc4f1c6ac44798bc72e42e33e7f, type: 2}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
@@ -717,6 +717,7 @@ MonoBehaviour:
         <Text>k__BackingField:
         - "Marco apporte sa voix au concert et tous sont impr\xE9ssion\xE9s par sa
           voix"
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: ce969d60-8260-411e-b7e2-1e792a73747e
   references:
     version: 2

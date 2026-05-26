@@ -18,6 +18,8 @@ MonoBehaviour:
   <OrderInLayer>k__BackingField: 1
   <RandomFlip>k__BackingField: 0
   <Flip>k__BackingField: 1
+  <IsDefaultSlotFor>k__BackingField:
+  - {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
   <Commentary>k__BackingField: 'SittingBar
 
 '

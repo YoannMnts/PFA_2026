@@ -1119,6 +1119,7 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - "Marco r\xE9pend des rumeurs sur [CurrentNpc]"
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: dbed07f2-bb83-4e46-a222-4a0062ccdc1d
   references:
     version: 2

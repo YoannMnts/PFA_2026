@@ -152,6 +152,7 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - Liski en profite pour nettoyer l'exterieur du bocal de Camil
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: df0d9903-bbfc-43f2-83d5-7c248b11ec77
   references:
     version: 2

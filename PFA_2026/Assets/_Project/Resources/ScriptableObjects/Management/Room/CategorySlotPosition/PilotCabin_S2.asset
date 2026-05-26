@@ -18,6 +18,8 @@ MonoBehaviour:
   <OrderInLayer>k__BackingField: 0
   <RandomFlip>k__BackingField: 0
   <Flip>k__BackingField: 0
+  <IsDefaultSlotFor>k__BackingField:
+  - {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
   <Commentary>k__BackingField: 'Piloting
 
 '

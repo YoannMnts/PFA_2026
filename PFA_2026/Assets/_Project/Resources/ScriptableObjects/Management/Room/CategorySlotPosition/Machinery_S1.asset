@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7a7e182f2048cdb736837041d3449c, type: 3}
   m_Name: Machinery_S1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomSlotPositionData
-  <Position>k__BackingField: {x: -4.097, y: -1.931, z: 0}
+  <Position>k__BackingField: {x: -4.107, y: -1.931, z: 0}
   <Expression>k__BackingField: {fileID: 11400000, guid: 15b062007050714468a8baa070a03cfa, type: 2}
   sortingLayerName: NpcMidground
   <OrderInLayer>k__BackingField: 0
   <RandomFlip>k__BackingField: 0
   <Flip>k__BackingField: 1
+  <IsDefaultSlotFor>k__BackingField:
+  - {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
   <Commentary>k__BackingField: Checking Machines

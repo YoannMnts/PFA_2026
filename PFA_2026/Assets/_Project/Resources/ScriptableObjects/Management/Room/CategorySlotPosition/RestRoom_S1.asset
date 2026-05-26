@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomSlotPositionData
   <Position>k__BackingField: {x: 1.257, y: -1.047, z: 0}
   <Expression>k__BackingField: {fileID: 11400000, guid: da3d7a2fb3a53834bbae0c5964ac676a, type: 2}
-  sortingLayerName: NpcMidground
+  sortingLayerName: NpcForeground
   <OrderInLayer>k__BackingField: 1
   <RandomFlip>k__BackingField: 0
   <Flip>k__BackingField: 0
+  <IsDefaultSlotFor>k__BackingField:
+  - {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
   <Commentary>k__BackingField: 'SittingBar
 
 '

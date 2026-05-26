@@ -128,6 +128,7 @@ MonoBehaviour:
         <Amount>k__BackingField: 2
         <Text>k__BackingField:
         - Ynna dit du bien de {CurrentNpc} dans son rapport
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: 4ba1ebd1-8484-49bc-b749-e1eba20821af
   references:
     version: 2

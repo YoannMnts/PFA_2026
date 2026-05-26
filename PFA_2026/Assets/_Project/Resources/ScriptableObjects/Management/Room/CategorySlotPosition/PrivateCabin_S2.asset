@@ -18,6 +18,8 @@ MonoBehaviour:
   <OrderInLayer>k__BackingField: 1
   <RandomFlip>k__BackingField: 1
   <Flip>k__BackingField: 0
+  <IsDefaultSlotFor>k__BackingField:
+  - {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
   <Commentary>k__BackingField: 'CleaningCabin
 
 '

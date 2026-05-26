@@ -21,7 +21,7 @@ MonoBehaviour:
     <ProhibitedNpc>k__BackingField: []
     <ObligateNpc>k__BackingField: []
     <SlotPositions>k__BackingField:
-    - {fileID: 11400000, guid: 47142476a2634094fbf92de9aee67a12, type: 2}
+    - {fileID: 11400000, guid: 851a3563b0b48c046b923176443d878b, type: 2}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
@@ -480,6 +480,7 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - 'Marco recolte des informations personnelles sur [CurrentNpc]'
+  <ClearDefaultSlot>k__BackingField: 0
   <GUID>k__BackingField: 455eaf03-deeb-4a79-8e37-3ed635110b49
   references:
     version: 2

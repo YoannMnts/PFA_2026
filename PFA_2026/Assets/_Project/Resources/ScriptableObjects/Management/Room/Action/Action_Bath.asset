@@ -242,6 +242,7 @@ MonoBehaviour:
         <Text>k__BackingField:
         - "Marco reste trop longtemps dans le bain, ce qui consomme beaucpup d'energie
           et d\xE9plait \xE0 Camil"
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: 6b162727-cf68-4f4e-b3a5-0af82835cd49
   references:
     version: 2

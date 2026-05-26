@@ -21,6 +21,8 @@ MonoBehaviour:
     <ProhibitedNpc>k__BackingField: []
     <ObligateNpc>k__BackingField:
     - {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    <SlotPositions>k__BackingField:
+    - {fileID: 11400000, guid: 0f77849b8146e3f46a2e950ec86ee414, type: 2}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
@@ -127,8 +129,7 @@ MonoBehaviour:
         <Text>k__BackingField:
         - "A cause du mauvais \xEAtat de Jennie, le navire subit des turbulences,
           ce qui effraie l'\xE9quipage"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
+  <ClearDefaultSlot>k__BackingField: 0
   <GUID>k__BackingField: 86a4a78b-cefd-4a99-8198-0f540c5944f2
   references:
     version: 2

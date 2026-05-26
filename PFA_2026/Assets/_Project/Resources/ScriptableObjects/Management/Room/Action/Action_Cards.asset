@@ -22,7 +22,7 @@ MonoBehaviour:
     <ObligateNpc>k__BackingField: []
     <SlotPositions>k__BackingField:
     - {fileID: 11400000, guid: b023782c9d223d04787e801a1880bf38, type: 2}
-    - {fileID: 11400000, guid: 5100d1c503ca93f4f96ae7bc525d8a21, type: 2}
+    - {fileID: 11400000, guid: 3ecdb8d872bcc0442ba577987620b7be, type: 2}
     - {fileID: 11400000, guid: 025f50698801cc947b59a76ba4217910, type: 2}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 1
@@ -644,6 +644,7 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - 'Marco renforce sa relation avec [CurrentNpc]'
+  <ClearDefaultSlot>k__BackingField: 0
   <GUID>k__BackingField: 52eb5daf-c0c9-4437-bd4a-47a6d0d0508b
   references:
     version: 2
