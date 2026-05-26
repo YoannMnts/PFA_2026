@@ -14,10 +14,10 @@ namespace Naussilus.Gameplay
             IsGameOver = isGameOver;
         }
 
-        protected override async Awaitable Initialize(CancellationToken token)
+        protected override Awaitable Initialize(CancellationToken token)
         {
-            await SceneManager.LoadSceneAsync(2);
-            base.Initialize(token);
+            SceneManager.LoadSceneAsync(2);
+            return base.Initialize(token);
         }
     }
 }
