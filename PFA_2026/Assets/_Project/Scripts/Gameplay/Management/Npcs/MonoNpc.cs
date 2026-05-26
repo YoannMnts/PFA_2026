@@ -1,6 +1,7 @@
 ﻿using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
+using Naussilus.Core.Managers;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
 using Naussilus.Gameplay.Interactions;
@@ -35,6 +36,11 @@ namespace Naussilus.Gameplay
             this.AddNpcClickListener();
             Npc.OnAddedInSlot += AddedInSlot;
             Npc.OnRemoveSlot += RemoveSlot;
+
+            if (Npc.CurrentCategory == null)
+            {
+                Npc.AddToRandomSlot();
+            }
             
             base.OnPhaseBegin(phase);
         }
@@ -82,9 +88,9 @@ namespace Naussilus.Gameplay
 
         private void AddedInSlot(CategoryNpcSlot slot)
         {
-            //Debug.Log($"Npc {Npc.Name} is setting new position to {newTransform.position}");
             lastPosition = gameObject.transform.position;
             gameObject.transform.position = slot.SlotPosition;
+            Debug.Log($"Npc {Npc.Name} is setting new position to {slot.SlotPosition}");
             slot.NpcExpression.TryGetExpression(Npc, out var sprite);
             npcSprite.sprite = sprite;
             npcSprite.flipX = slot.Flip;

@@ -31,7 +31,7 @@ namespace Naussilus.Core.Managements
         public bool Flip { get; private set; }
         
         [field: SerializeField]
-        public RoomData Room { get; private set; }
+        public NpcData[] IsDefaultSlotFor { get; private set; }
         
         [field: SerializeField, TextArea]
         public string Commentary { get; private set; }

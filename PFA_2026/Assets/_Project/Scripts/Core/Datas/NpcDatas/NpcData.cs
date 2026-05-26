@@ -30,9 +30,6 @@ namespace Naussilus.Core.NpcDatas
         
         [field: SerializeField]
         public Sprite DefaultIcon { get; private set; }
-
-        [field: SerializeField]
-        public RoomSlotPositionData[] DefaultPositions { get; private set; }
         
         [field: SerializeField, TextArea] 
         public string CurrentThinking { get; private set; }

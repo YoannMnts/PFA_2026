@@ -3,16 +3,16 @@ Naussilus.Core.Managements.RoomSlotPositionData, Naussilus.Core
 MetaGuid:ff7a7e182f2048cdb736837041d3449c
 
 # $XMfTrCnFvZXvX2avV3NWk8
-Position: $root:15
+Position: $root:14
 + [Sirenix.OdinInspector.TitleGroupAttribute]
 
 # $3Xo52DCDTV76t133RYXSQZ
-Position: $root:14
+Position: $root:13
 + [Sirenix.OdinInspector.TitleGroupAttribute]
 	HorizontalLine = True
 
 # $Q9HQBFeReV9pZ7aSDz7LGc
-Position: $root:23
+Position: $root:22
 + [Sirenix.OdinInspector.TitleGroupAttribute]
 
 # <Position>k__BackingField
@@ -37,3 +37,6 @@ Position: $Q9HQBFeReV9pZ7aSDz7LGc:0
 
 # <RandomFlip>k__BackingField
 Position: $XMfTrCnFvZXvX2avV3NWk8:3
+
+# <IsDefaultSlotFor>k__BackingField
+Position: $3Xo52DCDTV76t133RYXSQZ:1

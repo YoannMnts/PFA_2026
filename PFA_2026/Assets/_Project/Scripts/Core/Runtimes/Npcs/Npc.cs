@@ -17,6 +17,7 @@ namespace Naussilus.Core
         public EGender Gender { get; private set; }
         public NpcRelationship[] Relationships { get; private set; }
         public Sprite DefaultIncidentSprite { get; private set; }
+        public Category CurrentCategory { get; private set; }
         public string CurrentThinking { get; private set; }
         
         public Npc(NpcData npcData)

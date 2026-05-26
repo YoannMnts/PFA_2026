@@ -1,6 +1,9 @@
-﻿using JetBrains.Annotations;
+﻿using System.Linq;
+using JetBrains.Annotations;
 using Naussilus.Core;
 using Naussilus.Core.Managements;
+using Naussilus.Core.Managers;
+using Naussilus.Core.Managers.Npcs;
 using UnityEngine;
 
 namespace Naussilus.Gameplay
@@ -14,7 +17,9 @@ namespace Naussilus.Gameplay
             SpriteSortingLayerName = data.SortingLayerName;
             OrderInLayer = data.OrderInLayer;
             Flip = data.RandomFlip ? Random.value > .5f : data.Flip;
+            DefaultNpcs = data.IsDefaultSlotFor?.Select(npcData => NpcManager.TryGetNpc(npcData.GUID)).ToArray();
             CurrentNpc = npc;
+            this.Register();
         }
         
         [CanBeNull] public Npc CurrentNpc { get; private set; }
@@ -28,6 +33,8 @@ namespace Naussilus.Gameplay
         public int OrderInLayer { get; private set; }
         
         public bool Flip { get; private set; }
+        
+        public Npc[] DefaultNpcs { get; private set; }
 
         protected internal bool TryAddNpc(Npc npc)
         {

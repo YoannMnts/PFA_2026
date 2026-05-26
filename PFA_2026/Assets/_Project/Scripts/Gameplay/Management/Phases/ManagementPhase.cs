@@ -30,7 +30,7 @@ namespace Naussilus.Gameplay
             CurrentActionPoint = new ActionPoint(defaultAP);
             var timer = new TimerPhase(this, timerDuration);
             timer.RunAndForget();
-            RoomManager.SubtractAllCountdown();
+            RoomManager.SubtractAllCountdown(); 
             return base.Initialize(token);
         }
 
