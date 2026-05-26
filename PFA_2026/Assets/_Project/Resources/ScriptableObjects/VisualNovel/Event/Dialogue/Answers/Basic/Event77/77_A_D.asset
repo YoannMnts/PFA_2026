@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 77_A_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Cet \xE9quipage \xE0 \xE9t\xE9 d\xE9mantel\xE9 "
+  <ButtonText>k__BackingField: "Cet \xE9quipage \xE0 \xE9t\xE9 d\xE9mantel\xE9.\n"
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 58b6d5fea63e6cc4c9e31c6780e53a07, type: 2}
   <GUID>k__BackingField: 527f1edc-5e74-4053-b9a6-90b120ee3357

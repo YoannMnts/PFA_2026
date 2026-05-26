@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 74_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Marco, j\u2019esp\xE8re que \xE7a t\u2019apprendra
-    \xE0 ne pas lancer des rumeurs sans fondements"
+    \xE0 ne pas lancer des rumeurs sans fondements."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}

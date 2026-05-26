@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 77_D_I
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Ca ne s\u2019enl\xE8ve pas un tatouage"
+  <ButtonText>k__BackingField: "\xC7a ne s\u2019enl\xE8ve pas un tatouage."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: ef2c1a49d7b0e764d9011267e631087f, type: 2}
   <GUID>k__BackingField: 97145758-0d74-4aa7-94f6-76f7a0f19e0a
