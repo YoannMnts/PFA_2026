@@ -15,11 +15,11 @@ MonoBehaviour:
   <Expressions>k__BackingField:
   - <Sprite>k__BackingField: {fileID: 21300000, guid: a109d665be1d3d64c975856b9d2093c5, type: 3}
     <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
-  - <Sprite>k__BackingField: {fileID: 0}
+  - <Sprite>k__BackingField: {fileID: 21300000, guid: b9f47464d25b0da4ca158a434e33266b, type: 3}
     <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
-  - <Sprite>k__BackingField: {fileID: 0}
+  - <Sprite>k__BackingField: {fileID: 21300000, guid: 6969cf0fb777cb347837d14da7136e9d, type: 3}
     <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
-  - <Sprite>k__BackingField: {fileID: 0}
+  - <Sprite>k__BackingField: {fileID: 21300000, guid: d7a1eb5ae5ccffe4eb9733e2b954ebf9, type: 3}
     <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
   - <Sprite>k__BackingField: {fileID: 0}
     <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
