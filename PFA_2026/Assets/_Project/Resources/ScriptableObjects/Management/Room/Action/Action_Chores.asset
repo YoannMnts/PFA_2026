@@ -21,6 +21,8 @@ MonoBehaviour:
     <ProhibitedNpc>k__BackingField: []
     <ObligateNpc>k__BackingField:
     - {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <SlotPositions>k__BackingField:
+    - {fileID: 11400000, guid: c8f291e4bf970ef40b8a0757ce2edf13, type: 2}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
@@ -106,8 +108,6 @@ MonoBehaviour:
         <Text>k__BackingField:
         - "L'\xE9quipage est reconnaissant du travail de Marco et est heureux d'avoir
           de la vaiselle propre"
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   <GUID>k__BackingField: 65f25f00-7a7c-4cf1-932c-9f7eab3544ca
   references:
     version: 2

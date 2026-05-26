@@ -21,6 +21,8 @@ MonoBehaviour:
     <ProhibitedNpc>k__BackingField: []
     <ObligateNpc>k__BackingField:
     - {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
+    <SlotPositions>k__BackingField:
+    - {fileID: 11400000, guid: 6be52362a13d5bc499bd76874b6039bd, type: 2}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
@@ -150,8 +152,6 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - Liski en profite pour nettoyer l'exterieur du bocal de Camil
-    <Position>k__BackingField: {x: 0, y: 0, z: 0}
-    <ActionSprite>k__BackingField: {fileID: 0}
   <GUID>k__BackingField: df0d9903-bbfc-43f2-83d5-7c248b11ec77
   references:
     version: 2

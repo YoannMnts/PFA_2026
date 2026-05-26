@@ -63,7 +63,7 @@ MonoBehaviour:
   <DefaultEventSprite>k__BackingField: {fileID: 0}
   <DefaultIcon>k__BackingField: {fileID: 0}
   <DefaultPositions>k__BackingField:
-  - {fileID: 11400000, guid: c8f291e4bf970ef40b8a0757ce2edf13, type: 2}
+  - {fileID: 11400000, guid: 69ff668dffbf33b48a4490e280747764, type: 2}
   - {fileID: 11400000, guid: 4cb5d8847e3ce914892c19b11f7f83b3, type: 2}
   - {fileID: 11400000, guid: ed21bc9700bc421498fca18374f23373, type: 2}
   - {fileID: 11400000, guid: f3d3185b43908de428994a5c6ed1d697, type: 2}
