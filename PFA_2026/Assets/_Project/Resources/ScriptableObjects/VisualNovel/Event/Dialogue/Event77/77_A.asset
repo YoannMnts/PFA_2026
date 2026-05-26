@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 77_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "Hey Captain ! J\u2019ai une info pour vous. Vous savez d\u2019o\xF9 vient
+      T\xE9a ?"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
+    <Text>k__BackingField:
+    - "Apparemment elle vient du navire de la Blue Manta, des pirates sans piti\xE9
+      !"
+    - "Je crois que c\u2019est une infiltr\xE9e dans notre navire."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 1a7c6185a18355944941a1132bc6ec79, type: 2}
+  - {fileID: 11400000, guid: 214ffec1d4bb96e429d22ba9ecfe7985, type: 2}
+  - {fileID: 11400000, guid: 89564d6ab7579314498649120b717729, type: 2}
+  <GUID>k__BackingField: 5ae5bd92-f5fe-4f05-b358-a9c6bfbc652e

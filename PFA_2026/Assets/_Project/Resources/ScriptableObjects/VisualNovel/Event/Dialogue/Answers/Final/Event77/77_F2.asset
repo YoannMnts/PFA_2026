@@ -10,36 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6551f63f2e464eb39de211b4f9603e78, type: 3}
-  m_Name: 74_F2
+  m_Name: 77_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
-  <ButtonText>k__BackingField: "Marco, j\u2019esp\xE8re que \xE7a t\u2019apprendra
-    \xE0 ne pas lancer des rumeurs sans fondements"
+  <ButtonText>k__BackingField: "Apprends \xE0 mieux conna\xEEtre T\xE9a, tu verras
+    que tu ne crains rien\r\n"
   <NpcText>k__BackingField:
-  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
-    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
-    <Text>k__BackingField:
-    - "Ouais je le ferais plus\u2026"
   - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
-    - Vous voyez ? Au moins il a compris maintenant.
+    - "Me rapprocher de l\u2019ennemi pour mieux la cerner\u2026"
+    - "Bonne id\xE9e Captain !"
+    - Souhaitez-moi bonne chance.
   <Effects>k__BackingField:
   - <IsEnumeration>k__BackingField: 0
     <CurrentNpcTarget>k__BackingField:
-      rid: 2811534269029023749
+      rid: 2811534291633438729
     <Conditions>k__BackingField: []
     <Consequences>k__BackingField:
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 0
+        <IsCurrentNpc>k__BackingField: 1
         <Subject>k__BackingField:
           rid: 2811534255048097804
         <Stat>k__BackingField:
-          rid: 2811534269029023776
+          rid: 2811534291633438744
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
-      <Amount>k__BackingField: 3
+      <Amount>k__BackingField: 2
       <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
@@ -50,63 +48,51 @@ MonoBehaviour:
           rid: 2811534269029023777
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ArithmeticOperator>k__BackingField: 1
-      <Amount>k__BackingField: 4
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 2
       <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 0
         <Subject>k__BackingField:
-          rid: 2811534255048097808
+          rid: 2811534291633438745
         <Stat>k__BackingField:
-          rid: 2811534269029023779
-        <UseEnumerationNpc>k__BackingField: 1
+          rid: 2811534291633438746
+        <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ArithmeticOperator>k__BackingField: 1
-      <Amount>k__BackingField: 2
+      <ArithmeticOperator>k__BackingField: 0
+      <Amount>k__BackingField: 3
       <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
         <Subject>k__BackingField:
-          rid: 2811534258961121285
+          rid: -2
         <Stat>k__BackingField:
-          rid: 2811534269029023782
+          rid: 2811534291633438748
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 1
       <Text>k__BackingField:
-      - "Marco a en effet l\u2019air de laisser T\xE9a tranquille. Cependant, j\u2019ai
-        peur que \xE7a encourage T\xE9a \xE0 utiliser la violence \xE0 l\u2019avenir,
-        j\u2019aurais peut-\xEAtre d\xFB la r\xE9primander aussi."
-  <GUID>k__BackingField: cf59490e-5038-4a88-ac0c-c76b11e4fc6d
+      - "Pendant que Marco menait son enqu\xEAte, il s\u2019est rapproch\xE9 de T\xE9a
+        et a fini par comprendre qu\u2019il se trompait. Les deux ont l\u2019air
+        de plut\xF4t bien s\u2019entendre \xE0 pr\xE9sent, et Marco semble avoir
+        compris que tout le monde peut changer."
+  <GUID>k__BackingField: dce50276-f2ca-4826-a2ef-a1c2ebc8b099
   references:
     version: 2
     RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
     - rid: 2811534255048097804
       type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
-    - rid: 2811534255048097808
-      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
-    - rid: 2811534258961121285
-      type: {class: AllNpcData, ns: Naussilus.Core, asm: Naussilus.Core}
-      data: 
     - rid: 2811534258961121315
       type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
-    - rid: 2811534269029023749
-      type: {class: AllNpcData, ns: Naussilus.Core, asm: Naussilus.Core}
-      data: 
-    - rid: 2811534269029023776
-      type: {class: BehaviorValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Stat>k__BackingField: {fileID: 11400000, guid: 04ea502225da3b44ba583a05d6180394, type: 2}
-        <Amount>k__BackingField: 0
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     - rid: 2811534269029023777
       type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
@@ -117,18 +103,31 @@ MonoBehaviour:
       type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
-    - rid: 2811534269029023779
+    - rid: 2811534291633438729
+      type: {class: CategoryIndexData, ns: Naussilus.Core.Managements.ActionDatas, asm: Naussilus.Core}
+      data:
+        <Index>k__BackingField: 0
+    - rid: 2811534291633438744
+      type: {class: BehaviorValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <Stat>k__BackingField: {fileID: 11400000, guid: be977a50b8a9d5b4ba2645d7a82c7315, type: 2}
+        <Amount>k__BackingField: 0
+    - rid: 2811534291633438745
+      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+      data:
+        <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
+    - rid: 2811534291633438746
       type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 0
         <Npc>k__BackingField:
-          rid: 2811534269029023781
-    - rid: 2811534269029023781
+          rid: 2811534291633438747
+    - rid: 2811534291633438747
       type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
-    - rid: 2811534269029023782
+    - rid: 2811534291633438748
       type: {class: BehaviorValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <Stat>k__BackingField: {fileID: 11400000, guid: be977a50b8a9d5b4ba2645d7a82c7315, type: 2}
+        <Stat>k__BackingField: {fileID: 11400000, guid: c171d234a990b1a40bc8ea3fce4c0236, type: 2}
         <Amount>k__BackingField: 0

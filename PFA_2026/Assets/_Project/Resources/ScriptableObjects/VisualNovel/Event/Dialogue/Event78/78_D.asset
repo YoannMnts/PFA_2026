@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 78_D
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Bah c\u2019\xE9tait l\u2019autre soir et\u2026 "
+    - "Disons qu'avec Herlock on rigolait avec Jennie, mais elle avait pas l\u2019air
+      de trop rire avec nous."
+    - "Et c\u2019est l\xE0 que Pam nous \xE0 lanc\xE9 ce regard, et j\u2019avais
+      plus tr\xE8s envie de rire apr\xE8s."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: e3491cb65e985c1478878c3a8523ac02, type: 2}
+  - {fileID: 11400000, guid: 00ac38e021cba56458f80090e84cde80, type: 2}
+  - {fileID: 11400000, guid: 430c6d8e518ca2f4c92783268ec40a04, type: 2}
+  <GUID>k__BackingField: cd4e9e6e-70f9-4c9d-adc6-c08ff410f109

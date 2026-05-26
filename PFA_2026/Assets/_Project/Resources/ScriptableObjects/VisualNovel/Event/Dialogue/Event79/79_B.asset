@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 79_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Et bien je vais la menacer de le r\xE9v\xE9ler \xE0 tout le monde la prochaine
+      fois qu\u2019elle prend la t\xEAte \xE0 l\u2019\xE9quipage !"
+    - "Il y a plein d\u2019anecdotes dedans."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "Vous saviez qu\u2019elle avait d\xFB cirer les bottes de son ancien patron
+      ?"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 5d87af6615de46e42be8a8dd4032f761, type: 2}
+  - {fileID: 11400000, guid: c13c701e319a8764d9a2c7f8d953291f, type: 2}
+  <GUID>k__BackingField: b24e7ee8-6999-4648-a655-21458899d619

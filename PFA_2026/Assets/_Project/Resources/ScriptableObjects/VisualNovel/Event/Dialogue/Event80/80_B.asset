@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 80_B
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Bah\u2026Tout le monde sauf Camil en fait."
+    - "M\xEAme moi j\u2019ai go\xFBt\xE9 une part."
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "Je vous assure qu\u2019il \xE9tait d\xE9licieux.\r\n"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 47f861af3ecdb78448a03286b3a9b795, type: 2}
+  - {fileID: 11400000, guid: 7a88b73b63569db4abca72cb5640f42d, type: 2}
+  - {fileID: 11400000, guid: c9bc9d68f9502114281f77a0d08ffa16, type: 2}
+  <GUID>k__BackingField: 59cde681-096e-4e90-b352-1de55317359d

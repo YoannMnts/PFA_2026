@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 76_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Hey Captain ! J\u2019aurais besoin que vous demandiez \xE0 Camil d'arr\xEAter
+      de faire la t\xEAte\u2026"
+    - "Il ne m\u2019apporte plus les stocks de nourriture, et il ne me donne quasiment
+      plus de vapeur pour la cuisine\u2026"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Je m\u2019en sors pas !"
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: a39918dfc7e54c945b513a6290f37214, type: 2}
+  - {fileID: 11400000, guid: 33e213daa233d84438c70c6f7fbba9d0, type: 2}
+  <GUID>k__BackingField: f59205c9-33f4-43bb-a928-2c1cb07940c0

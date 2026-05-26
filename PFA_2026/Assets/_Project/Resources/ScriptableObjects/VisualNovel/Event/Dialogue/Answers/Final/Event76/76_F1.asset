@@ -10,33 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6551f63f2e464eb39de211b4f9603e78, type: 3}
-  m_Name: 73_F2
+  m_Name: 76_F1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
-  <ButtonText>k__BackingField: 'Tu ferais un bon pirate dans le futur
-
-'
+  <ButtonText>k__BackingField: "Tu dois apprendre \xE0 respecter les secrets des
+    autres"
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
-    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
-    - "Ah ouais ? Peut \xEAtre bien ouais ! "
+    - "Oui c\u2019est vrai\u2026Je n\u2019aurais pas d\xFB en dire autant."
   - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
-    - "Ce serait g\xE9nial d\u2019avoir mon propre navire ! "
+    - a ne se reproduira plus !
+    - "Je vais lui montrer que j\u2019ai retenu la le\xE7on."
   <Effects>k__BackingField:
   - <IsEnumeration>k__BackingField: 0
     <CurrentNpcTarget>k__BackingField:
-      rid: 2811534269029023749
+      rid: -2
     <Conditions>k__BackingField: []
     <Consequences>k__BackingField:
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 0
+        <IsCurrentNpc>k__BackingField: 1
         <Subject>k__BackingField:
-          rid: 2811534255048097804
+          rid: 2811534258961121302
         <Stat>k__BackingField:
-          rid: 2811534258961121313
+          rid: 2811534271989678085
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
@@ -46,9 +46,9 @@ MonoBehaviour:
       <ConsequenceSide>k__BackingField:
         <IsCurrentNpc>k__BackingField: 1
         <Subject>k__BackingField:
-          rid: 2811534258961121315
+          rid: 2811534223414919288
         <Stat>k__BackingField:
-          rid: 2811534269029023753
+          rid: 2811534291633438725
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
@@ -56,75 +56,52 @@ MonoBehaviour:
       <Text>k__BackingField: []
     - <IsGameLost>k__BackingField: 0
       <ConsequenceSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 1
+        <IsCurrentNpc>k__BackingField: 0
         <Subject>k__BackingField:
-          rid: 2811534255048097808
+          rid: 2811534291633438726
         <Stat>k__BackingField:
-          rid: 2811534269029023763
-        <UseEnumerationNpc>k__BackingField: 1
-        <UseRelationshipNpcToReturn>k__BackingField: 0
-      <ArithmeticOperator>k__BackingField: 0
-      <Amount>k__BackingField: 2
-      <Text>k__BackingField: []
-    - <IsGameLost>k__BackingField: 0
-      <ConsequenceSide>k__BackingField:
-        <IsCurrentNpc>k__BackingField: 1
-        <Subject>k__BackingField:
-          rid: 2811534258961121285
-        <Stat>k__BackingField:
-          rid: 2811534258961121286
+          rid: 2811534271989678087
         <UseEnumerationNpc>k__BackingField: 0
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
-      <Amount>k__BackingField: 2
+      <Amount>k__BackingField: 1
       <Text>k__BackingField:
-      - "Depuis notre discussion, Marco a l\u2019air emball\xE9 par l\u2019id\xE9e
-        d\u2019avoir son propre navire pirate. Au moins, il semble s\u2019investir
-        davantage dans la vie du navire."
-  <GUID>k__BackingField: 6b683057-2787-42a7-9044-46b67b085ee1
+      - "Marco essaie tant bien que mal de regagner la confiance de Camil, et je
+        crois que \xE7a fonctionne peu \xE0 peu. J\u2019ai l'impression que Marco
+        veut vraiment s\u2019am\xE9liorer."
+  <GUID>k__BackingField: 54981e1f-538b-4919-b38d-351a93a5d9ad
   references:
     version: 2
     RefIds:
-    - rid: 2811534255048097804
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2811534223414919288
       type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
-    - rid: 2811534255048097808
-      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
-    - rid: 2811534258961121285
+        <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
+    - rid: 2811534258961121302
       type: {class: AllNpcData, ns: Naussilus.Core, asm: Naussilus.Core}
       data: 
-    - rid: 2811534258961121286
-      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
+    - rid: 2811534271989678085
+      type: {class: BehaviorValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <Stat>k__BackingField: {fileID: 11400000, guid: 0873e3af56f61554284c45b21149e18e, type: 2}
+        <Stat>k__BackingField: {fileID: 11400000, guid: be977a50b8a9d5b4ba2645d7a82c7315, type: 2}
         <Amount>k__BackingField: 0
-    - rid: 2811534258961121313
+    - rid: 2811534271989678087
       type: {class: NpcRelationshipData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <Amount>k__BackingField: 0
         <Npc>k__BackingField:
-          rid: 2811534258961121314
-    - rid: 2811534258961121314
+          rid: 2811534271989678088
+    - rid: 2811534271989678088
       type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
         <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
-    - rid: 2811534258961121315
-      type: {class: NpcValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
-    - rid: 2811534269029023749
-      type: {class: AllNpcData, ns: Naussilus.Core, asm: Naussilus.Core}
-      data: 
-    - rid: 2811534269029023753
-      type: {class: MentalStateValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
-      data:
-        <Stat>k__BackingField: {fileID: 11400000, guid: 77f977e8fc1d7994295630a6c15353f6, type: 2}
-        <Amount>k__BackingField: 0
-    - rid: 2811534269029023763
+    - rid: 2811534291633438725
       type: {class: BehaviorValueData, ns: Naussilus.Core.NpcDatas, asm: Naussilus.Core}
       data:
-        <Stat>k__BackingField: {fileID: 11400000, guid: 35e2a6361d215984b9abdf5620d478ef, type: 2}
+        <Stat>k__BackingField: {fileID: 11400000, guid: c171d234a990b1a40bc8ea3fce4c0236, type: 2}
         <Amount>k__BackingField: 0
+    - rid: 2811534291633438726
+      type: {class: AllNpcData, ns: Naussilus.Core, asm: Naussilus.Core}
+      data: 

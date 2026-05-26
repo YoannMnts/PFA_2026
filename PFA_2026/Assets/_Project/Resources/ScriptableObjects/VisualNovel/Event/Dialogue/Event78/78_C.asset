@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 78_C
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
+    <Text>k__BackingField:
+    - "Ah ouais ? C\u2019est vrai que c\u2019est un bon m\xE9decin mais\u2026"
+    - Elle me fout les jetons !
+    - "Avec son regard gla\xE7ant la, \xE0 chaque fois qu\u2019elle me regarde j\u2019ai
+      l\u2019impression que c\u2019est la fin."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: ceafb6ce71079b94fa8522f99ba75b5d, type: 2}
+  - {fileID: 11400000, guid: 6f243ec99e4d0f14181cb72570459bcf, type: 2}
+  <GUID>k__BackingField: d3aeac6a-3bdf-44a0-a922-cae6b6c7c860

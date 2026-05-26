@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43728cd226c41bb8c185c61a35f60f4, type: 3}
+  m_Name: 80_A
+  m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.DialogueData
+  <Lines>k__BackingField:
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
+    <Text>k__BackingField:
+    - "Hey Captain\u2026J\u2019ai fait un gateau ce matin, il \xE9tait tr\xE8s beau
+      et tout le monde a ador\xE9 !"
+  - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
+    <Text>k__BackingField:
+    - "Seulement\u2026Il se peut que j\u2019ai utilis\xE9 des produits pas tr\xE8s
+      frais\u2026"
+    - "J\u2019ai peur que l\u2019\xE9quipage soit malade."
+  <Answers>k__BackingField:
+  - {fileID: 11400000, guid: 7366aaf81fc63b3478cd1d53dc09179d, type: 2}
+  - {fileID: 11400000, guid: 9b582d2ad3e0bc544a5382d32d62fc85, type: 2}
+  - {fileID: 11400000, guid: fe96f16a96561cb4a83023725d6f5ab0, type: 2}
+  <GUID>k__BackingField: 48c88ad0-88c6-48da-9cb5-cb4d77086852
