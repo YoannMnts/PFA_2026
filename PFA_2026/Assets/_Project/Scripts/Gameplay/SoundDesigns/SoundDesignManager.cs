@@ -24,7 +24,7 @@ namespace Naussilus.Gameplay
             }
         }
 
-        public void VisualNovelMusicManagment(bool launch)
+        public void VisualNovelMusic(bool launch)
         {
             if (musicsManager != null)
             {
@@ -39,7 +39,7 @@ namespace Naussilus.Gameplay
             }
         }
 
-        public void GameplayMusicManagment(bool launch)
+        public void ManagmentMusic(bool launch)
         {
             if (musicsManager != null)
             {
@@ -129,7 +129,8 @@ namespace Naussilus.Gameplay
 
         private GameObject CreateNewAudioSource()
         {
-            GameObject newAudioSource = Instantiate(gameObject, Vector3.zero, Quaternion.identity);
+            GameObject newAudioSource = new GameObject();
+            Instantiate(newAudioSource, Vector3.zero, Quaternion.identity);
             newAudioSource.name = "AudioSource" + (audioSources.Count+1).ToString();
             audioSources.Add(newAudioSource.GetComponent<AudioSource>());
             newAudioSource.transform.parent = transform;
