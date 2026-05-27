@@ -14,8 +14,6 @@ namespace Naussilus.Gameplay
 
         [SerializeField] private ActionConsequenceUIList actionConsequenceUIList;
         
-        [SerializeField] private Button closeButton;
-        
         [SerializeField] private Button applyButton;
         
         [SerializeField] private CanvasGroup npcBarGroup;
@@ -37,8 +35,8 @@ namespace Naussilus.Gameplay
             npcBarGroup.Hide();
             var validConsequence = ConsequenceManager.ValidConsequences;
             Debug.Log($"ValidConsequence: {validConsequence.Count}");
+                
             actionConsequenceUIList.Connect(validConsequence);
-            closeButton.onClick.AddListener(Abort);
             applyButton.onClick.AddListener(Apply);
             
             base.OnPhaseBegin(phase);
@@ -52,7 +50,6 @@ namespace Naussilus.Gameplay
             current = null;
             group.Hide();
             npcBarGroup.Show();
-            closeButton.onClick.RemoveAllListeners();
             applyButton.onClick.RemoveAllListeners();
             
             base.OnPhaseEnd(phase);

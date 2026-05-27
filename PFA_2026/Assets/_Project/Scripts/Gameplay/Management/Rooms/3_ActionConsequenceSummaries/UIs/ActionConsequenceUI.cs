@@ -13,7 +13,12 @@ namespace Naussilus.Gameplay
         protected override void SyncUI(Consequence current)
         {
             var allText = current.Text;
-            consequenceTextUIList.Connect(allText);
+            if (allText == null)
+                return;
+            if (allText.Length > 0)
+            {
+                consequenceTextUIList.Connect(allText);
+            }
         }
 
         protected override void ClearUI()
