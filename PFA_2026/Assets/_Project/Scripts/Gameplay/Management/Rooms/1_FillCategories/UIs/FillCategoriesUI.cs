@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
@@ -94,7 +95,7 @@ namespace Naussilus.Gameplay
 
         if (npc == null)
             return;
-            
+        
         for (int i = 0; i < current.Categories.Length; i++)
         {
             var category = current.Categories[i];

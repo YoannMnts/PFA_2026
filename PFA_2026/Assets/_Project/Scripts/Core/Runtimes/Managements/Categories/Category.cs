@@ -28,10 +28,26 @@ namespace Naussilus.Core
             ProhibitedNpcs = data.ProhibitedNpc?.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
             ObligateNpcs = data.ObligateNpc?.Select(npc => NpcManager.TryGetNpc(npc.GUID)).ToArray();
             CategoryNpcSlots = data.SlotPositions?.Select(s => new CategoryNpcSlot(s)).ToArray();
+            for (int i = 0; i < ObligateNpcs?.Length; i++)
+            {
+                CategoryNpcSlots?[i].TryAddNpc(ObligateNpcs[i]);
+            }
         }
 
         public void TryAddNpc(Npc npc)
         {
+            if (ProhibitedNpcs.Contains(npc))
+                return;
+
+            for (int i = 0; i < CategoryNpcSlots.Length; i++)
+            {
+                var categoryNpcSlot = CategoryNpcSlots[i];
+                if (categoryNpcSlot.CurrentNpc == npc)
+                {
+                    return;
+                }
+            }
+            
             for (int i = 0; i < CategoryNpcSlots.Length; i++)
             {
                 var roomNpcSlot = CategoryNpcSlots[i];
@@ -44,6 +60,11 @@ namespace Naussilus.Core
 
         public void TryRemoveNpc(Npc npc)
         {
+            if (ObligateNpcs.Contains(npc))
+            {
+                return;
+            }
+            
             for (int i = 0; i < CategoryNpcSlots.Length; i++)
             {
                 var roomNpcSlot = CategoryNpcSlots[i];

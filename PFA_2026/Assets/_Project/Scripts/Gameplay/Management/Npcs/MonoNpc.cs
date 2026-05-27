@@ -28,7 +28,6 @@ namespace Naussilus.Gameplay
         private CheckNpcState checkNpcPhase;
         
         private Vector3 lastPosition;
-        
 
         protected override void OnPhaseBegin(ManagementPhase phase)
         {
