@@ -16,6 +16,9 @@ namespace Naussilus.Gameplay
         private Camera cam;
         
         [SerializeField]
+        private Transform cameraTarget;
+        
+        [SerializeField]
         private PinchInput pinchInput;
         
         [SerializeField]
@@ -58,10 +61,13 @@ namespace Naussilus.Gameplay
                 minZoom,
                 maxZoom
             );
-            
-            //Debug.Log($"{slideInput.Delta}");
-            PlayerCam.CineCamera.transform.position = VectorAddition(cam.transform.position, (slideInput.Delta * slideSpeed));
-            //Debug.Log($"playerCam.transform.position: {playerCam.transform.position}");
+
+
+            Debug.Log($"Active cineCamera : {CineCameraManager.ActiveCamera} ");
+            var transformPosition = VectorAddition(cameraTarget.position, (slideInput.Delta * slideSpeed));
+            Debug.Log($"Vector addition: {transformPosition}");
+            cameraTarget.transform.position = transformPosition;
+            playerCam.CineCamera.InternalUpdateCameraState(Vector3.up, Time.deltaTime);
         }
 
         private void CanMoveChange(bool canMove)
@@ -83,11 +89,14 @@ namespace Naussilus.Gameplay
         {
             transformPosition.x -= slideInputDelta.x;
             transformPosition.y -= slideInputDelta.y;
+            transformPosition.z = 0;
             return transformPosition;
         }
 
         public void OnPhaseBegin(ManagementPhase phase)
         {
+            playerCam.SwitchToThisCamera();
+            
             if (gameObject.TryGetService(out PlayerController playerController))
             {
                 Debug.Log($"[PlayerCamera] Player camera on {phase}");
