@@ -8,6 +8,8 @@ namespace Naussilus.Core
     {
         public string Name { get; private set; }
         
+        public string Description { get; private set; }
+        
         public int Cost { get; private set; }
         
         public int Countdown { get; private set; }
@@ -19,6 +21,7 @@ namespace Naussilus.Core
         public RoomAction(ActionData data)
         {
             Name = data.Name;
+            Description = data.Description;
             Cost = data.Cost;
             Countdown = data.Countdown;
             Categories = data.Categories?.Select(c => new Category(c)).ToArray();
