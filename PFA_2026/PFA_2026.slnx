@@ -1,7 +1,8 @@
-﻿<Solution>
+<Solution>
   <Project Path="Naussilus.Core.csproj" />
   <Project Path="Naussilus.Gameplay.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="Sirenix.OdinInspector.Modules.UnityMathematics.csproj" />
   <Project Path="Assembly-CSharp-firstpass.csproj" />
   <Project Path="Sirenix.OdinInspector.Modules.UnityMathematics.csproj" />
   <Project Path="LTX.Installer.csproj" />
