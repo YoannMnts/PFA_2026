@@ -138,9 +138,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   group: {fileID: 6092319849703507837}
-  consequenceTextUIList: {fileID: 5694795499720979563}
+  actionConsequenceUIList: {fileID: 5694795499720979563}
   closeButton: {fileID: 2007618058022332310}
   applyButton: {fileID: 7969811163426749912}
+  npcBarGroup: {fileID: 0}
 --- !u!1 &1003824254906116728
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,6 +907,10 @@ PrefabInstance:
       propertyPath: m_Size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 844830830357281796, guid: 2fc332d00d34dd54f9de49fb2773637f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 2070346243556094187, guid: 03170d14284f7c340bf77094bbe79056, type: 3}
     - target: {fileID: 1200873986607248300, guid: 2fc332d00d34dd54f9de49fb2773637f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

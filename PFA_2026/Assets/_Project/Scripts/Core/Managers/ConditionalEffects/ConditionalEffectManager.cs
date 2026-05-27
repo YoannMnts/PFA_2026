@@ -10,11 +10,6 @@ namespace Naussilus.Core.Managers
 {
     public static class ConditionalEffectManager
     {
-        public static event Action OnAddEffect;
-        public static event Action OnRemoveEffect;
-        
-        private static readonly List<ActionEffect> ScheduledEffects = new List<ActionEffect>();
-        
         private static Npc[] currentNpcs;
 
         private static void ComputeConditionalEffect(this ConditionalEffect conditionalEffect, Npc currentNpcData, Category[] currentCategories)
@@ -69,13 +64,8 @@ namespace Naussilus.Core.Managers
             }
             return true;
         }
-        
-        public static void AddEffect()
-        {
-            
-        }
 
-        public static void AddAllValidEffect(this RoomAction roomAction)
+        public static void ComputeValidEffect(this RoomAction roomAction)
         {
             var actionEffects = roomAction.ActionEffects;
             var categories = roomAction.Categories;
@@ -89,43 +79,17 @@ namespace Naussilus.Core.Managers
                 
                 for (int j = 0; j < category.CategoryNpcSlots.Length; j++)
                 {
-                    var contains = category.CategoryNpcSlots[j].CurrentNpc == actionEffect.Npc;
+                    var currentNpc = category.CategoryNpcSlots[j].CurrentNpc;
+                    var contains = currentNpc == actionEffect.Npc;
                     if (contains)
                     {
-                        actionEffect.AddScheduledEffect();
+                        for (int k = 0; k < actionEffect.Effects?.Length; k++)
+                        {
+                            var effect = actionEffect.Effects[k];
+                            effect.ComputeConditionalEffect(currentNpc, categories);
+                        }
                     }
                 }
-            }
-        }
-        
-        public static void AddScheduledEffect(this ActionEffect actionEffect)
-        {
-            ScheduledEffects.Add(actionEffect);
-            Debug.Log($"[ConditionalEffectManager] Adding scheduled effect {actionEffect.Npc?.Name}");
-            OnAddEffect?.Invoke();
-        }
-
-        public static void RemoveScheduledEffect(this ActionEffect actionEffect)
-        {
-            ScheduledEffects.Remove(actionEffect);
-            Debug.Log($"[ConditionalEffectManager] Removing scheduled effect {actionEffect.Npc?.Name}");
-            OnRemoveEffect?.Invoke();
-        }
-
-        public static void ComputeScheduledEffects()
-        {
-            for (int i = 0; i < ScheduledEffects.Count; i++)
-            {
-                ConditionalEffect[] effects = ScheduledEffects[i].Effects;
-                
-                if (effects == null)
-                    continue;
-                
-                Npc npc = ScheduledEffects[i].Npc;
-                Category[] currentCategories = ScheduledEffects[i].CurrentCategories;
-                
-                for (int j = 0; j < effects.Length; j++)
-                    effects[j].ComputeConditionalEffect(npc, currentCategories);
             }
         }
     }

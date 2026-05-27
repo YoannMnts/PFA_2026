@@ -4,12 +4,14 @@ using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managers;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 namespace Naussilus.Gameplay
 {
     public class TimerUI : MonoPhaseListener<TimerPhase>
     {
-        [SerializeField] private TMP_Text timerText;
+        [SerializeField] private Image fillImage;
         [SerializeField] private bool isTimerActive;
         [SerializeField] private CanvasGroup group;
 
@@ -41,7 +43,7 @@ namespace Naussilus.Gameplay
             if (currentTimer == null)
                 return;
             
-            timerText.text = string.Empty;
+            fillImage.fillAmount = 1;
             group.Hide();
             currentTimer.OnTimerRepeat -= OnTimerRepeat;
             currentTimer = null;
@@ -51,7 +53,8 @@ namespace Naussilus.Gameplay
 
         private void OnTimerRepeat()
         {
-            timerText.text = $"{currentTimer.Minutes:00}:{currentTimer.Seconds:00}";
+            //Debug.Log($"Remaining time : {currentTimer.Remaining}, Duration : {currentTimer.Duration}");
+            fillImage.fillAmount = (float)currentTimer.Remaining / currentTimer.Duration;
         }
     }
 }

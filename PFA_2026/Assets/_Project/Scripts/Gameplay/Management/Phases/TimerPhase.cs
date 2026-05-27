@@ -11,10 +11,9 @@ namespace Naussilus.Gameplay
         
         public int Duration { get; private set; }
         
-        public int Minutes { get; private set; }
-        public int Seconds { get; private set; }
-
         private ManagementPhase currentPhase;
+        public int Remaining { get; private set; }
+
         public TimerPhase(ManagementPhase current ,int duration)
         {
             Duration = duration;
@@ -25,8 +24,6 @@ namespace Naussilus.Gameplay
         protected override Awaitable Dispose(CancellationToken token)
         {
             Duration = 0;
-            Minutes = 0;
-            Seconds = 0;
             return base.Dispose(token);
         }
 
@@ -34,11 +31,8 @@ namespace Naussilus.Gameplay
         {
             try
             {
-                int remaining;
-                for (remaining = Duration ; 0 < remaining; remaining--)
+                for (Remaining = Duration ; 0 < Remaining; Remaining--)
                 {
-                    Minutes = remaining / 60;
-                    Seconds = remaining % 60;
                     OnTimerRepeat?.Invoke();
                     await Awaitable.WaitForSecondsAsync(1);
                 }

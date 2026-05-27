@@ -4,19 +4,18 @@ using UnityEngine;
 
 namespace Naussilus.Gameplay
 {
-    public class ConsequenceTextUI : UIItem<string[]>
+    public class ConsequenceTextUI : UIItem<string>
     {
         [SerializeField]
-        private TMP_Text textField;
-        
-        protected override void SyncUI(string[] current)
+        private TMP_Text consequenceText;
+        protected override void SyncUI(string current)
         {
-            //TODO textField.text = current[0];
+            consequenceText.text = current;
         }
 
         protected override void ClearUI()
         {
-            //TODO textField.text = string.Empty;
+            consequenceText.text = string.Empty;
         }
     }
 }

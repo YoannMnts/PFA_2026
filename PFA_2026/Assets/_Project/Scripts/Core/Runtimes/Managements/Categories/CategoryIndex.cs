@@ -2,7 +2,7 @@
 
 namespace Naussilus.Core
 {
-    public struct CategoryIndex : INpcSelector
+    public class CategoryIndex : INpcSelector
     {
         public int Index { get; private set; }
 

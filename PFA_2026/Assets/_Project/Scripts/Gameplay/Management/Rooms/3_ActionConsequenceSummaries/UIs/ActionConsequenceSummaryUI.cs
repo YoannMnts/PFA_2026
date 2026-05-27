@@ -1,6 +1,7 @@
 ﻿using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managers;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Naussilus.Gameplay
@@ -11,11 +12,13 @@ namespace Naussilus.Gameplay
 
         [SerializeField] private CanvasGroup group;
 
-        [SerializeField] private ConsequenceTextUIList consequenceTextUIList;
+        [SerializeField] private ActionConsequenceUIList actionConsequenceUIList;
         
         [SerializeField] private Button closeButton;
         
         [SerializeField] private Button applyButton;
+        
+        [SerializeField] private CanvasGroup npcBarGroup;
         
         
 
@@ -31,7 +34,10 @@ namespace Naussilus.Gameplay
             
             current = phase;
             group.Show();
-            //consequenceTextUIList.Connect();
+            npcBarGroup.Hide();
+            var validConsequence = ConsequenceManager.ValidConsequences;
+            Debug.Log($"ValidConsequence: {validConsequence.Count}");
+            actionConsequenceUIList.Connect(validConsequence);
             closeButton.onClick.AddListener(Abort);
             applyButton.onClick.AddListener(Apply);
             
@@ -45,6 +51,7 @@ namespace Naussilus.Gameplay
             
             current = null;
             group.Hide();
+            npcBarGroup.Show();
             closeButton.onClick.RemoveAllListeners();
             applyButton.onClick.RemoveAllListeners();
             
@@ -53,7 +60,6 @@ namespace Naussilus.Gameplay
 
         public void Apply()
         {
-            current.CurrentRoomAction.AddAllValidEffect();
             current.SetResult(true);
             Debug.Log($"Apply");
         }

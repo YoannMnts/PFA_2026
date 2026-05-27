@@ -11,6 +11,7 @@ namespace Naussilus.Core.Managers
         
         public static void ComputeAllConsequence(this Consequence[] currentConsequence, Npc currentNpcData)
         {
+            ValidConsequences.Clear();
             for (var i = 0; i < currentConsequence.Length; i++)
             {
                 var consequence = currentConsequence[i];
@@ -28,6 +29,7 @@ namespace Naussilus.Core.Managers
         
         public static void ComputeAllConsequence(this Consequence[] currentConsequence, Npc currentNpcData ,Category[] currentCategories)
         {
+            ValidConsequences.Clear();
             for (var i = 0; i < currentConsequence.Length; i++)
             {
                 var consequence = currentConsequence[i];

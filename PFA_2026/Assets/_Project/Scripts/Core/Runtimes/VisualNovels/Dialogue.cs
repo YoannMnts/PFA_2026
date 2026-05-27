@@ -4,7 +4,7 @@ using Naussilus.Core.VisualNovels.EventDatas.DialogueDatas;
 
 namespace Naussilus.Core
 {
-    public struct Dialogue
+    public class Dialogue
     {
         public DialogueLine[] Lines { get; private set; }
         

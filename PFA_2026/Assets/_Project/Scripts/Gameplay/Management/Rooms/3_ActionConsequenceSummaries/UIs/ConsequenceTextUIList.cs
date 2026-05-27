@@ -2,7 +2,7 @@
 
 namespace Naussilus.Gameplay
 {
-    public class ConsequenceTextUIList : UIList<string[], ConsequenceTextUI>
+    public class ConsequenceTextUIList : UIList<string, ConsequenceTextUI>
     {
         
     }

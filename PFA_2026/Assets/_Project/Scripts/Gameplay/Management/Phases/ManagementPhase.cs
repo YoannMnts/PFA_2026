@@ -33,12 +33,7 @@ namespace Naussilus.Gameplay
             RoomManager.SubtractAllCountdown(); 
             return base.Initialize(token);
         }
-
-        protected override Awaitable Dispose(CancellationToken token)
-        {
-            ConditionalEffectManager.ComputeScheduledEffects();
-            return base.Dispose(token);
-        }
+        
 
         public void SelectRoom(Room room)
         {
