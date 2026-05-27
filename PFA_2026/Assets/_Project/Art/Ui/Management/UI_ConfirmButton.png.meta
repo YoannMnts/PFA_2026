@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0cef21a00fe3c854db665a18bf31c0c2
+guid: 983798974978f76438f3b9c1ce266f8d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1732511982794678310
-    second: UI_CharacterIcon_Herlock_0
+      213: 2737369397534768501
+    second: UI_ConfirmButton_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_CharacterIcon_Herlock_0
+      name: UI_ConfirmButton_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 1
+        x: 12
+        y: 13
         width: 104
-        height: 127
+        height: 102
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: adf5a68e781e4f7e0800000000000000
-      internalID: -1732511982794678310
+      spriteID: 57db51fb6f61df520800000000000000
+      internalID: 2737369397534768501
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UI_CharacterIcon_Herlock_0: -1732511982794678310
+      UI_ConfirmButton_0: 2737369397534768501
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

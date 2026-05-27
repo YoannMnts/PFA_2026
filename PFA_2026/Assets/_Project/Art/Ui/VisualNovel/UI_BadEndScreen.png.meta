@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0cef21a00fe3c854db665a18bf31c0c2
+guid: e834c72faf1df6346aa6170eca858507
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1732511982794678310
-    second: UI_CharacterIcon_Herlock_0
+      213: 8564501837977371080
+    second: UI_BadEndScreen_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 128
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_CharacterIcon_Herlock_0
+      name: UI_BadEndScreen_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 1
-        width: 104
-        height: 127
+        x: 61
+        y: 483
+        width: 1922
+        height: 1082
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: adf5a68e781e4f7e0800000000000000
-      internalID: -1732511982794678310
+      spriteID: 8c142d28b093bd670800000000000000
+      internalID: 8564501837977371080
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UI_CharacterIcon_Herlock_0: -1732511982794678310
+      UI_BadEndScreen_0: 8564501837977371080
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
