@@ -17,6 +17,8 @@ namespace Naussilus.Gameplay
         
         [SerializeField]
         private TMP_Text textArea;
+        [SerializeField]
+        private RectTransform boatImage;
         
         private SwitchDay currentSwitchDay;
 
@@ -58,7 +60,7 @@ namespace Naussilus.Gameplay
             
             base.OnPhaseEnd(phase);
         }
-
+        
         public void Interact(PlayerInteractions playerInteractions)
         {
             Debug.Log($"Interacting with {currentSwitchDay}");

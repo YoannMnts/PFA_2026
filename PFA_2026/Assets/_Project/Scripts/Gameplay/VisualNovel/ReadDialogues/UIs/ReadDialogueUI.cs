@@ -32,7 +32,7 @@ namespace Naussilus.Gameplay
                     npcImage.sprite = sprite;
                     for (int j = 0; j < dialogueLine.Text.Length; j++)
                     {
-                        dialogueText.text = dialogueLine.Text[j];
+                        await RevealText(dialogueLine.Text[j]);
                         isDialogueRead = false;
                         while (!isDialogueRead)
                             await Awaitable.NextFrameAsync();
@@ -45,6 +45,18 @@ namespace Naussilus.Gameplay
             catch (Exception e)
             {
                 Debug.LogError(e);
+            }
+        }
+        
+        public async Awaitable RevealText(string content)
+        {
+            dialogueText.text = content;
+            dialogueText.maxVisibleCharacters = 0;
+
+            for (int i = 0; i <= content.Length; i++)
+            {
+                dialogueText.maxVisibleCharacters = i;
+                await Awaitable.WaitForSecondsAsync(0.01f);
             }
         }
 

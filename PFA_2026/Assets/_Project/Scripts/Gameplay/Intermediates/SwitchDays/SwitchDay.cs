@@ -9,11 +9,14 @@ namespace Naussilus.Gameplay
     {
         private readonly int second;
         public int CurrentDay { get; private set; }
+        
+        public int MaxDay { get; private set; }
 
-        public SwitchDay(int timer, int day)
+        public SwitchDay(int timer, int day, int maxDay)
         {
             second = timer;
             CurrentDay = day;
+            MaxDay = maxDay;
         }
 
         protected override Awaitable Initialize(CancellationToken token)

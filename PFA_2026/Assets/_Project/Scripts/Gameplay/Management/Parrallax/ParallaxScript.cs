@@ -1,27 +1,43 @@
 using System;
 using System.Collections.Generic;
+using Helteix.Tools.Phases.Listeners;
 using UnityEngine;
 
 namespace Naussilus.Gameplay.Parrallax
 {
-    public class ParallaxScript : MonoBehaviour
+    public class ParallaxScript : MonoPhaseListener<ManagementPhase>
     {
         [SerializeField] private List<Sprite> parallaxSprites;
         [SerializeField] private float parallaxSpeed;
         [SerializeField] private float distanceSlowMultiplier;
         private List<GameObject> parallaxLayers;
         [SerializeField] float imageSize;
-
+        private bool backgroundMove = false;
         private void Awake()
         {
             parallaxLayers = new List<GameObject>();
             CreateParallax();
         }
 
+        protected override void OnPhaseBegin(ManagementPhase phase)
+        {
+            base.OnPhaseBegin(phase);
+            backgroundMove = true;
+        }
+
+        protected override void OnPhaseEnd(ManagementPhase phase)
+        {
+            base.OnPhaseEnd(phase);
+            backgroundMove = false;
+        }
+
         private void Update()
         {
-            CheckLoop();
-            MoveParallax();
+            if (backgroundMove)
+            {
+                CheckLoop();
+                MoveParallax();
+            }
         }
 
         private void CreateParallax()
