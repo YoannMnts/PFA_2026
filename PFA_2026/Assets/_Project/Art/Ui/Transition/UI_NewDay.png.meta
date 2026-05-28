@@ -1,10 +1,19 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:PFA_2026/Assets/_Project/Art/Ui/Transition/UI_ShipIcon.png.meta
+guid: 22728862cd4eac9408926175120f8a4c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3846062020094627412
+    second: UI_ShipIcon_0
+========
 guid: ddd2f5c95bdc6474690c6918139fe90b
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 923223140263225008
     second: UI_NewDay_0
+>>>>>>>> d515f5af (Final UI):PFA_2026/Assets/_Project/Art/Ui/Transition/UI_NewDay.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +81,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -96,17 +105,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<<< HEAD:PFA_2026/Assets/_Project/Art/Ui/Transition/UI_ShipIcon.png.meta
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+========
+>>>>>>>> d515f5af (Final UI):PFA_2026/Assets/_Project/Art/Ui/Transition/UI_NewDay.png.meta
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<<< HEAD:PFA_2026/Assets/_Project/Art/Ui/Transition/UI_ShipIcon.png.meta
+      name: UI_ShipIcon_0
+========
       name: UI_NewDay_0
+>>>>>>>> d515f5af (Final UI):PFA_2026/Assets/_Project/Art/Ui/Transition/UI_NewDay.png.meta
       rect:
         serializedVersion: 2
-        x: 0
-        y: 368
-        width: 2048
-        height: 1289
+        x: 40
+        y: 7
+        width: 156
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +144,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<<< HEAD:PFA_2026/Assets/_Project/Art/Ui/Transition/UI_ShipIcon.png.meta
+      spriteID: ca1732458fa00aac0800000000000000
+      internalID: -3846062020094627412
+========
       spriteID: 0b66fcbfd82ffcc00800000000000000
       internalID: 923223140263225008
+>>>>>>>> d515f5af (Final UI):PFA_2026/Assets/_Project/Art/Ui/Transition/UI_NewDay.png.meta
       vertices: []
       indices: 
       edges: []
@@ -135,7 +169,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<<< HEAD:PFA_2026/Assets/_Project/Art/Ui/Transition/UI_ShipIcon.png.meta
+      UI_ShipIcon_0: -3846062020094627412
+========
       UI_NewDay_0: 923223140263225008
+>>>>>>>> d515f5af (Final UI):PFA_2026/Assets/_Project/Art/Ui/Transition/UI_NewDay.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
