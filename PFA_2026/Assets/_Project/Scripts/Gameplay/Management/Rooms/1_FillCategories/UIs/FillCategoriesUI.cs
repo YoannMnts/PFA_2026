@@ -6,6 +6,7 @@ using Naussilus.Core;
 using Naussilus.Core.Managers;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Gameplay.CategoriesTitles;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,6 +20,8 @@ namespace Naussilus.Gameplay
         [SerializeField] private CategoryUIList categoryUIList;
         [SerializeField] private Button closeButton;
         [SerializeField] private Button applyButton;
+        [SerializeField] private TMP_Text actionNameText;
+        [SerializeField] private TMP_Text actionDescriptionText;
 
         public int NpcClickPriority { get; private set; } = 5;
 
@@ -38,6 +41,8 @@ namespace Naussilus.Gameplay
             closeButton.onClick.AddListener(Cancel);
             applyButton.onClick.AddListener(Apply);
             this.AddNpcClickListener();
+            actionNameText.text = phase.CurrentAction.Name;
+            actionDescriptionText.text = phase.CurrentAction.Description;
 
             base.OnPhaseBegin(phase);
         }
@@ -53,6 +58,7 @@ namespace Naussilus.Gameplay
             closeButton.onClick.RemoveAllListeners();
             applyButton.onClick.RemoveAllListeners();
             this.RemoveNpcClickListener();
+            actionNameText.text = string.Empty;
 
             base.OnPhaseEnd(phase);
         }
