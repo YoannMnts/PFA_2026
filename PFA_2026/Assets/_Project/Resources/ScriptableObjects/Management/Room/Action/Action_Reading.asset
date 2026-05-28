@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Action_Reading
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: Lire un livre
+  <Description>k__BackingField: "Une s\xE9ance de lecture permet de se reposer l'esprit."
   <Cost>k__BackingField: 4
   <Countdown>k__BackingField: 1
   <Categories>k__BackingField:

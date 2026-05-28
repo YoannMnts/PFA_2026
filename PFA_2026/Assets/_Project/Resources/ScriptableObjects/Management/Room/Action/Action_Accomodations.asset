@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Accomodations
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: Ranger les couchages
+  <Description>k__BackingField: "L'\xE9quipage appr\xE9cie qu'on remette de l'ordre
+    dans leurs affaires."
   <Cost>k__BackingField: 5
   <Countdown>k__BackingField: 7
   <Categories>k__BackingField:

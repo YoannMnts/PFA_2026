@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Scam
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: Arnaquer
+  <Description>k__BackingField: "Les pirates peuvent \xEAtre tent\xE9s d'arnaquer
+    les autres, mais attention \xE0 ne pas se faire prendre."
   <Cost>k__BackingField: 2
   <Countdown>k__BackingField: 3
   <Categories>k__BackingField:

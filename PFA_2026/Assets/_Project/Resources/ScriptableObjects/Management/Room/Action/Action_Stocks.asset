@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Action_Stocks
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: 'Compter les stocks '
+  <Description>k__BackingField: "L'inventaire de la cale toi \xEAtre tenu \xE0 jour."
   <Cost>k__BackingField: 6
   <Countdown>k__BackingField: 6
   <Categories>k__BackingField:

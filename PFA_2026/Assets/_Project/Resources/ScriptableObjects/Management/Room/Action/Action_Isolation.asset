@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Isolation
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: 'Isoler un membre '
+  <Description>k__BackingField: "Il est parfois n\xE9cessaire d'isoler quelqu'un
+    pour le bien des autres, mais celui \xE7i risque de ne pas bien le vivre."
   <Cost>k__BackingField: 6
   <Countdown>k__BackingField: 15
   <Categories>k__BackingField:

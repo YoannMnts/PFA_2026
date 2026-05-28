@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Call
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: "Appel \xE0 la famille "
+  <Description>k__BackingField: "Les membres de l'\xE9quipage sont co,ntent de parler
+    \xE0 leur proche, sauf si ils ont de mauvaises relations."
   <Cost>k__BackingField: 3
   <Countdown>k__BackingField: 4
   <Categories>k__BackingField:

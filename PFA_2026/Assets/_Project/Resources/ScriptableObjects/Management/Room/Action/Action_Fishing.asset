@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Fishing
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: "P\xEAcher des poissons volants "
+  <Description>k__BackingField: Avec un peu de chance, il y aura du poisson volant
+    frais pour le repas.
   <Cost>k__BackingField: 5
   <Countdown>k__BackingField: 1
   <Categories>k__BackingField:

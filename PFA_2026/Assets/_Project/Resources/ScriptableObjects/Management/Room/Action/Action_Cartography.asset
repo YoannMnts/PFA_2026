@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7981673afb42479da49ee3efe9a052af, type: 3}
   m_Name: Action_Cartography
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
-  <Name>k__BackingField: 'Cartographier les alentours ? '
+  <Name>k__BackingField: Cartographier les alentours
+  <Description>k__BackingField: "Une carte \xE0 jour est toujours plus s\xE9curis\xE9,
+    mais c'est une t\xE2che difficile."
   <Cost>k__BackingField: 4
   <Countdown>k__BackingField: 6
   <Categories>k__BackingField:

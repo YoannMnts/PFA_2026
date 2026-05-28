@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Report
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: Contacter le client
+  <Description>k__BackingField: "Le commanditaire de la cargaison appr\xE9ciera de
+    savoir comment se passe la travers\xE9e, en bien ou en mal."
   <Cost>k__BackingField: 4
   <Countdown>k__BackingField: 7
   <Categories>k__BackingField:

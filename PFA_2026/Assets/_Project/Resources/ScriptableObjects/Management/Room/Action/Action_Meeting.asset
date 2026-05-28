@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Meeting
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: "R\xE9union g\xE9n\xE9rale"
+  <Description>k__BackingField: "Il est parfois n\xE9cessaire de r\xE9unir tout l'\xE9quipage
+    pour mettre les choses au clair."
   <Cost>k__BackingField: 13
   <Countdown>k__BackingField: 10
   <Categories>k__BackingField:

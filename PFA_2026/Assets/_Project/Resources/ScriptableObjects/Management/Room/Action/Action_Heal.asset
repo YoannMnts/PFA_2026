@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Heal
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: "Soigner un membre de l\u2019\xE9quipage "
+  <Description>k__BackingField: "Un v\xE9ritable m\xE9decin pirate met tout en oeuvre
+    pour maintenir ses patients en bonne sant\xE9."
   <Cost>k__BackingField: 5
   <Countdown>k__BackingField: 4
   <Categories>k__BackingField:

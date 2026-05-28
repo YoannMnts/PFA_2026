@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Chores
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: "Faire les corv\xE9es"
+  <Description>k__BackingField: "M\xEAme si ce n'est pas agr\xE9able, il est important
+    de tenir la cuisine en ordre."
   <Cost>k__BackingField: 3
   <Countdown>k__BackingField: 1
   <Categories>k__BackingField:
@@ -108,6 +110,7 @@ MonoBehaviour:
         <Text>k__BackingField:
         - "L'\xE9quipage est reconnaissant du travail de Marco et est heureux d'avoir
           de la vaiselle propre"
+  <ClearDefaultSlot>k__BackingField: 0
   <GUID>k__BackingField: 65f25f00-7a7c-4cf1-932c-9f7eab3544ca
   references:
     version: 2

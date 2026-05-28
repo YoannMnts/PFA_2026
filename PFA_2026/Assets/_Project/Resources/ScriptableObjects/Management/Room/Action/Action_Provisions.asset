@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Provisions
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: Chaparder des provisions
+  <Description>k__BackingField: "M\xEAme si c'est interdit, certains ne diraient
+    pas non \xE0 une ration suppl\xE9mentaire."
   <Cost>k__BackingField: 2
   <Countdown>k__BackingField: 4
   <Categories>k__BackingField:

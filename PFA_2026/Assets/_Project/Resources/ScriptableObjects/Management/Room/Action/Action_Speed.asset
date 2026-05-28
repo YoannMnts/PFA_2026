@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Speed
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: "G\xE9rer l'allure du navire"
+  <Description>k__BackingField: "Il est important de maintenir la vitesse de croisi\xE8re
+    pour atteindre la destination dans les temps."
   <Cost>k__BackingField: 4
   <Countdown>k__BackingField: 2
   <Categories>k__BackingField:

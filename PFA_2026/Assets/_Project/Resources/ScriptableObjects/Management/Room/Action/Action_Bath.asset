@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Action_Bath
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: ' Prendre un bain moussant'
+  <Description>k__BackingField: "Un bon bain chaud peut \xEAtre tr\xE8s relaxant."
   <Cost>k__BackingField: 3
   <Countdown>k__BackingField: 6
   <Categories>k__BackingField:

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Party
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: "Organiser une f\xEAte"
+  <Description>k__BackingField: "Rien de telle qu'une f\xEAte en l'honneur de quelqu'un
+    pour lui remonter le moral."
   <Cost>k__BackingField: 15
   <Countdown>k__BackingField: 10
   <Categories>k__BackingField:

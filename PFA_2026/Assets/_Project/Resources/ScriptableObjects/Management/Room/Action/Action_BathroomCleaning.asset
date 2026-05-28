@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Action_BathroomCleaning
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: Nettoyer la salle d'eau
+  <Description>k__BackingField: Il est impotant de garder une salle de bain propre.
   <Cost>k__BackingField: 4
   <Countdown>k__BackingField: 5
   <Categories>k__BackingField:

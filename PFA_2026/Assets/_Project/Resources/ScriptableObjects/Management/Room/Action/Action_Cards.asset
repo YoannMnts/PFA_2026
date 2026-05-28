@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Cards
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: Jouer aux cartes
+  <Description>k__BackingField: "Une bonne partie de cartes peut \xEAtre amusant,
+    mais peut aussi eveiller des tensions."
   <Cost>k__BackingField: 7
   <Countdown>k__BackingField: 4
   <Categories>k__BackingField:

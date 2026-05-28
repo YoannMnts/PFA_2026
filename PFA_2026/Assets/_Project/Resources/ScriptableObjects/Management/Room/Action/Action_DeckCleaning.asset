@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_DeckCleaning
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: Nettoyer le pont
+  <Description>k__BackingField: "Un pont propre c'est toujours plus agr\xE9able,
+    mais cette t\xE2che n\xE9cessite de la coordination."
   <Cost>k__BackingField: 5
   <Countdown>k__BackingField: 4
   <Categories>k__BackingField:

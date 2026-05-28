@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Action_Concert
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: Organiser un concert
+  <Description>k__BackingField: "Tout bon pirate se doit d'\xEAtre bon musicien."
   <Cost>k__BackingField: 11
   <Countdown>k__BackingField: 15
   <Categories>k__BackingField:

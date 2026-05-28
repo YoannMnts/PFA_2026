@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Ropes
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: "V\xE9rifier les attaches"
+  <Description>k__BackingField: "L'\xE9quipage sera plus serein en sachant que le
+    ballon est bien attach\xE9."
   <Cost>k__BackingField: 5
   <Countdown>k__BackingField: 3
   <Categories>k__BackingField:

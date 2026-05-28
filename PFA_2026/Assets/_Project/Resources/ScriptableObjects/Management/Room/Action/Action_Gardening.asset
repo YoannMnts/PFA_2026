@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Gardening
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: S'occuper du potager
+  <Description>k__BackingField: "Faire pousser des l\xE9gumes frais peut aider l'\xE9quipage
+    \xE0 se relaxer."
   <Cost>k__BackingField: 3
   <Countdown>k__BackingField: 3
   <Categories>k__BackingField:

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Meal
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: Organiser un repas
+  <Description>k__BackingField: "L'\xE9quipage appr\xE9cie d'\xEAtre r\xE9uni autour
+    d'un bon repas, mais cela peut aussi faire ressortir certaines tensions."
   <Cost>k__BackingField: 10
   <Countdown>k__BackingField: 0
   <Categories>k__BackingField:

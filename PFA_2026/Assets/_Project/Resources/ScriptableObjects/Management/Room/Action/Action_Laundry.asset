@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Action_Laundry
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: Faire la lessive
+  <Description>k__BackingField: "L'\xE9quipage se sent mieux avec des tenues propres."
   <Cost>k__BackingField: 5
   <Countdown>k__BackingField: 5
   <Categories>k__BackingField:

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Story
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: Contage d'histoire
+  <Description>k__BackingField: "Les membres de l'\xE9qu^page adorent se r\xE9unir
+    pour entendre et raconter des histoires."
   <Cost>k__BackingField: 6
   <Countdown>k__BackingField: 10
   <Categories>k__BackingField:

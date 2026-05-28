@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Action_Drink
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: Partager un verre
+  <Description>k__BackingField: "L'\xE9quipage appr\xE9cie boire un peu, mais attention
+    aux exc\xE8s."
   <Cost>k__BackingField: 2
   <Countdown>k__BackingField: 3
   <Categories>k__BackingField:

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Action_Nap
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.ActionDatas.ActionData
   <Name>k__BackingField: Faire une sieste
+  <Description>k__BackingField: "Apr\xE8s une bonne sieste, on se sent toujours mieux."
   <Cost>k__BackingField: 4
   <Countdown>k__BackingField: 2
   <Categories>k__BackingField:
