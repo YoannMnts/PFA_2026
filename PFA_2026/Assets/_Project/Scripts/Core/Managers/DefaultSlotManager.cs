@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Naussilus.Gameplay;
 using UnityEngine;
 
@@ -6,75 +7,37 @@ namespace Naussilus.Core.Managers
 {
     public static class DefaultSlotManager
     {
-        private static Dictionary<Npc, List<CategoryNpcSlot>> defaultSlots = new Dictionary<Npc, List<CategoryNpcSlot>>();
-        private static Dictionary<CategoryNpcSlot, CategoryNpcSlot> currentDefaultSlot = new Dictionary<CategoryNpcSlot, CategoryNpcSlot>();
+        private static List<CategoryNpcSlot> defaultSlots = new List<CategoryNpcSlot>();
 
         public static void Register(this CategoryNpcSlot slot)
-        { 
-            for (int i = 0; i < slot?.DefaultNpcs?.Length; i++)
+        {
+            if (defaultSlots.Contains(slot))
             {
-                var defaultNpc = slot.DefaultNpcs[i];
-                if (defaultNpc == null)
-                    continue;
-                
-                if (!defaultSlots.ContainsKey(defaultNpc))
-                {
-                    defaultSlots.Add(defaultNpc, new List<CategoryNpcSlot>());
-                }
-
-                defaultSlots[defaultNpc].Add(slot);
+                return;
             }
+            defaultSlots.Add(slot);
+            
         }
 
         public static void Unregister(this CategoryNpcSlot slot)
         {
-            for (int i = 0; i < slot?.DefaultNpcs?.Length; i++)
-            {
-                var defaultNpc = slot.DefaultNpcs[i];
-                if (!defaultSlots.ContainsKey(defaultNpc))
-                {
-                    return;
-                }
-
-                defaultSlots[defaultNpc].Remove(slot);
-            }
+            defaultSlots.Remove(slot);
         }
 
         public static void AddToRandomSlot(this Npc npc)
         {
-            if (!defaultSlots.TryGetValue(npc, out var list)) 
-                return;
-            
             while (true)
             {
-                var randomNumber = Random.Range(0, list.Count);
-                CategoryNpcSlot npcSlot = list[randomNumber];
-                var clone = npcSlot.Clone();
-                if (!clone.TryAddNpc(npc, null)) 
+                var randomIndex = Random.Range(0, defaultSlots.Count);
+                var categoryNpcSlot = defaultSlots[randomIndex];
+                if(categoryNpcSlot.ValidNpcsToDefault == null)
                     continue;
-                currentDefaultSlot.Add(npcSlot, clone);
+                if (!categoryNpcSlot.ValidNpcsToDefault.Contains(npc))
+                    continue;
+                if (!categoryNpcSlot.TryAddDefaultNpc(npc))
+                    continue;
                 break;
             }
-        }
-
-        public static bool TryGetClone(this CategoryNpcSlot slot, out CategoryNpcSlot clone)
-        {
-            if(currentDefaultSlot.TryGetValue(slot, out clone))
-                return true;
-            clone = null;
-            return false;
-        }
-
-        public static bool TryRemoveClone(this CategoryNpcSlot slot)
-        {
-            if (currentDefaultSlot.TryGetValue(slot, out var clone))
-            {
-                clone.ClearNpc();
-                currentDefaultSlot.Remove(slot);
-                return true;
-            }
-            clone = null;
-            return false;
         }
     }
 }

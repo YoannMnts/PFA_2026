@@ -37,7 +37,7 @@ namespace Naussilus.Core
             Relationships = npcData.Relationships?.Select(r => new NpcRelationship(r)).ToArray();
         }
 
-        public void AddedInSlot(CategoryNpcSlot slot, Category category)
+        public void AddedInSlot(CategoryNpcSlot slot, Category category = null)
         {
             CurrentCategory = category;
             OnAddedInSlot?.Invoke(slot);

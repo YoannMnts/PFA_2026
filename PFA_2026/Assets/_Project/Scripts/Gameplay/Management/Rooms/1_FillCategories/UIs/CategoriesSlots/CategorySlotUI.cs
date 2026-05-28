@@ -13,7 +13,6 @@ namespace Naussilus.Gameplay.CategoriesSlots
     {
         [SerializeField] private Image icon;
         [SerializeField] private Button button;
-        [SerializeField] private TMP_Text text;
         
         private CategoryUI categoryUI;
 
@@ -35,17 +34,12 @@ namespace Naussilus.Gameplay.CategoriesSlots
         protected override void SyncUI(CategoryNpcSlot current)
         {
             var npc = current.CurrentNpc;
-            text.text = npc?.Name;
-            if (current.NpcExpression.TryGetExpression(npc, out var sprite))
-            {
-                icon.sprite = sprite;
-            }
+            icon.sprite = npc?.DefaultIcon;
         }
 
         protected override void ClearUI()
         {
             icon.sprite = null;
-            text.text = string.Empty;
         }
 
         private void OnClick()
