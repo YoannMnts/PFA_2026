@@ -9,6 +9,7 @@ namespace Naussilus.Gameplay.Buttons
     {
         public static ButtonFeedbacksManager instance;
         [SerializeField] private float baseButtonForce;
+        [SerializeField] private float baseButtonDuration;
         private List<GameObject> currentButtons;
 
         private void Awake()
@@ -26,7 +27,7 @@ namespace Naussilus.Gameplay.Buttons
             if (currentButtons.Contains(button)==false)
             {
                 currentButtons.Add(button);
-                button.transform.DOScale(baseButtonForce*button.transform.localScale*force, 0.3f).SetEase(Ease.InOutSine).SetLoops(2, LoopType.Yoyo).OnComplete(() => Remove(button));
+                button.transform.DOScale(baseButtonForce*button.transform.localScale*force, baseButtonDuration).SetEase(Ease.InOutSine).SetLoops(2, LoopType.Yoyo).OnComplete(() => Remove(button));
             }
         }
         

@@ -28,8 +28,9 @@ namespace Naussilus.Gameplay
         {
             if (musicsManager != null)
             {
-                if (launch == true)
+                if (launch)
                 {
+                    musicsManager.PauseMusic();
                     musicsManager.PlayMusic(libraryData.visualNovelMusic);
                 }
                 else
