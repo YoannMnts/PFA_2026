@@ -56,7 +56,7 @@ namespace Naussilus.Gameplay
             for (int i = 0; i <= content.Length; i++)
             {
                 dialogueText.maxVisibleCharacters = i;
-                await Awaitable.WaitForSecondsAsync(0.01f);
+                await Awaitable.WaitForSecondsAsync(0.02f);
             }
         }
 

@@ -1,5 +1,6 @@
 ﻿using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managers;
+using Naussilus.Gameplay.Buttons;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -37,6 +38,13 @@ namespace Naussilus.Gameplay
 
         private void OnContinueButtonClicked()
         {
+            ContinueButtonClicked();
+        }
+
+        private async void ContinueButtonClicked()
+        {
+            ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(continueButton.gameObject);
+            await Awaitable.WaitForSecondsAsync(0.7f);
             playerSwitch.SetResult(true);
         }
     }

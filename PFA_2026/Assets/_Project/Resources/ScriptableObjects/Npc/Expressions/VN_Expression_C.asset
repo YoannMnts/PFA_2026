@@ -23,9 +23,9 @@ MonoBehaviour:
     <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
   - <Sprite>k__BackingField: {fileID: 21300000, guid: 4ddafeeedf9b0bc4892bd003d4421c94, type: 3}
     <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
-  - <Sprite>k__BackingField: {fileID: 0}
+  - <Sprite>k__BackingField: {fileID: 21300000, guid: 8e78f14e983b089439399202fa641e99, type: 3}
     <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
-  - <Sprite>k__BackingField: {fileID: 0}
+  - <Sprite>k__BackingField: {fileID: 21300000, guid: 796ab178ecdac2247a5044a019960b93, type: 3}
     <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
   - <Sprite>k__BackingField: {fileID: 0}
     <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
