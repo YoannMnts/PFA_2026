@@ -350,3 +350,6 @@ MonoBehaviour:
   icon: {fileID: 1902815529993998709}
   button: {fileID: 7755946993939580066}
   npcName: {fileID: 8590434526242993339}
+  background: {fileID: 1902815529993998709}
+  defaultBackground: {fileID: 0}
+  lockedBackground: {fileID: 0}

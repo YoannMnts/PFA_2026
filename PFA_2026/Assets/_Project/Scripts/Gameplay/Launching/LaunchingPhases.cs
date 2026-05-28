@@ -31,9 +31,8 @@ namespace Naussilus.Gameplay
         {
             try
             {
-                //TODO faire l'intro
-                //var intro = new IntroductionPhase();
-                //await intro.Run();
+                var intro = new IntroductionPhase();
+                await intro.Run();
                 
                 for (int i = 0; i < maxDay; i++)
                 {
@@ -54,11 +53,9 @@ namespace Naussilus.Gameplay
                     }
                 }
                 
-                //TODO remettre l'ending
-                /*
                 var ending = new EndingPhase(false);
                 ending.RunAndForget();
-                */
+                
             }
             catch (Exception e)
             {
@@ -68,12 +65,8 @@ namespace Naussilus.Gameplay
 
         private void GameOver()
         {
-            //TODO remettre l'ending
-            /*
             var ending = new EndingPhase(true);
             ending.RunAndForget();
-            */
-            SceneManager.LoadScene(0);
         }
 
         private async Awaitable PlayerSwitch()

@@ -40,13 +40,13 @@ namespace Naussilus.Gameplay
         
         [CanBeNull] public Npc[] DefaultNpcs { get; private set; }
 
-        protected internal bool TryAddNpc(Npc npc)
+        protected internal bool TryAddNpc(Npc npc, Category category)
         {
             if (CurrentNpc != null)
                 return false;
-            
+                
             CurrentNpc = npc;
-            CurrentNpc?.AddedInSlot(this);
+            CurrentNpc?.AddedInSlot(this, category);
             return true;
         }
 

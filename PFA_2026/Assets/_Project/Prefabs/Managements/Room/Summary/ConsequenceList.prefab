@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbbba870d4bf47ad924a74f93bc9adbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay.Management::Rooms.ConsequenceTextUIList
-  prefab: {fileID: 0}
+  prefab: {fileID: 2070346243556094187, guid: 03170d14284f7c340bf77094bbe79056, type: 3}
   dividerPrefab: {fileID: 0}
   root: {fileID: 6355391748086607452}
 --- !u!1 &8649851415328588277

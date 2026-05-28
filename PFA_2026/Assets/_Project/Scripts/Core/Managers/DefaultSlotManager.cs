@@ -47,8 +47,8 @@ namespace Naussilus.Core.Managers
             while (true)
             {
                 var randomNumber = Random.Range(0, list.Count);
-                if (!list[randomNumber].TryAddNpc(npc)) 
-                    return;
+                if (!list[randomNumber].TryAddNpc(npc, null)) 
+                    continue;
                 break;
             }
         }

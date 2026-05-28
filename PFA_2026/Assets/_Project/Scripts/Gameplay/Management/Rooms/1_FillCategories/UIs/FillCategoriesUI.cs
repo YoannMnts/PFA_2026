@@ -45,6 +45,16 @@ namespace Naussilus.Gameplay
             actionNameText.text = phase.CurrentAction.Name;
             actionDescriptionText.text = phase.CurrentAction.Description;
 
+            for (int i = 0; i < current?.Categories.Length; i++)
+            {
+                var category = current.Categories[i];
+                for (int j = 0; j < category.ObligateNpcs.Length; j++)
+                {
+                    var obligateNpc = category.ObligateNpcs[j];
+                    AddNpcInCategory(obligateNpc);
+                }
+            }
+            
             base.OnPhaseBegin(phase);
         }
 
@@ -93,7 +103,8 @@ namespace Naussilus.Gameplay
             for (int i = 0; i < current.Categories.Length; i++)
             {
                 var category = current.Categories[i];
-                category.TryAddNpc(npc);
+                if (category.TryAddNpc(npc))
+                    return;
             }
         }
 
