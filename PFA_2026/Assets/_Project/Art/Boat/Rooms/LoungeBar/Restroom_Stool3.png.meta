@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 483efac6f892aec458c701fda9b5033f
+guid: fabc6d39169f2ed4c8025ceca2a9be71
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2068319775049403308
-    second: DiningRoom_BackStool_0
-  - first:
-      213: 9009863632164334549
-    second: DiningRoom_BackStool_1
-  - first:
-      213: -1384559495002333936
-    second: DiningRoom_BackStool_2
+      213: -4421863481645706817
+    second: Restroom_Stool3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -83,7 +77,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -102,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DiningRoom_BackStool_0
+      name: Restroom_Stool3_0
       rect:
         serializedVersion: 2
-        x: 263
-        y: 61
-        width: 57
-        height: 63
+        x: 256
+        y: 50
+        width: 69
+        height: 83
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cab4cb180e524bc10800000000000000
-      internalID: 2068319775049403308
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DiningRoom_BackStool_1
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 58
-        width: 57
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5dbadd5bc37790d70800000000000000
-      internalID: 9009863632164334549
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DiningRoom_BackStool_2
-      rect:
-        serializedVersion: 2
-        x: 568
-        y: 57
-        width: 57
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 01dddf9997e09cce0800000000000000
-      internalID: -1384559495002333936
+      spriteID: fb15c3b679262a2c0800000000000000
+      internalID: -4421863481645706817
       vertices: []
       indices: 
       edges: []
@@ -188,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -198,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DiningRoom_BackStool_0: 2068319775049403308
-      DiningRoom_BackStool_1: 9009863632164334549
-      DiningRoom_BackStool_2: -1384559495002333936
+      Restroom_Stool3_0: -4421863481645706817
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

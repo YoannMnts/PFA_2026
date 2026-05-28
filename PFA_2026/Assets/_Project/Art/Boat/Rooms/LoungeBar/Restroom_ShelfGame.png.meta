@@ -1,16 +1,28 @@
 fileFormatVersion: 2
-guid: 63348a34b8bf48d44bcdd7d1dd89bda0
+guid: 5a331b50691a5e648b03e89b75eb3ef5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2315826442612351893
-    second: SickBay_DeskObject_0
+      213: 183978396307754007
+    second: Restroom_ShelfGame_0
   - first:
-      213: -5745045174349219494
-    second: SickBay_DeskObject_1
+      213: 2236563145642514888
+    second: Restroom_ShelfGame_1
   - first:
-      213: 8362598085791286258
-    second: SickBay_DeskObject_2
+      213: -4624173770867440488
+    second: Restroom_ShelfGame_2
+  - first:
+      213: 4624968864617681302
+    second: Restroom_ShelfGame_3
+  - first:
+      213: 1606769065530249523
+    second: Restroom_ShelfGame_4
+  - first:
+      213: -7279488692196304044
+    second: Restroom_ShelfGame_5
+  - first:
+      213: -7028552605185054078
+    second: Restroom_ShelfGame_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SickBay_DeskObject_0
+      name: Restroom_ShelfGame_0
       rect:
         serializedVersion: 2
-        x: 78
-        y: 341
-        width: 48
-        height: 51
+        x: 356
+        y: 146
+        width: 35
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 593ad5931e7732020800000000000000
-      internalID: 2315826442612351893
+      spriteID: 71c054e606f9d8200800000000000000
+      internalID: 183978396307754007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SickBay_DeskObject_1
+      name: Restroom_ShelfGame_1
       rect:
         serializedVersion: 2
-        x: 142
-        y: 341
-        width: 56
-        height: 10
+        x: 392
+        y: 147
+        width: 9
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a59b75c3adf7540b0800000000000000
-      internalID: -5745045174349219494
+      spriteID: 8c990c5c45ed90f10800000000000000
+      internalID: 2236563145642514888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SickBay_DeskObject_2
+      name: Restroom_ShelfGame_2
       rect:
         serializedVersion: 2
-        x: 215
-        y: 342
-        width: 62
-        height: 35
+        x: 413
+        y: 147
+        width: 10
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +177,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f383fee6aaed0470800000000000000
-      internalID: 8362598085791286258
+      spriteID: 89484cf8472a3dfb0800000000000000
+      internalID: -4624173770867440488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restroom_ShelfGame_3
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 107
+        width: 55
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69157c0ada03f2040800000000000000
+      internalID: 4624968864617681302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restroom_ShelfGame_4
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 107
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 331540bb3f36c4610800000000000000
+      internalID: 1606769065530249523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restroom_ShelfGame_5
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 68
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b9a235a9f0afa90800000000000000
+      internalID: -7279488692196304044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restroom_ShelfGame_6
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 68
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a6ccaf4a0957e90800000000000000
+      internalID: -7028552605185054078
       vertices: []
       indices: 
       edges: []
@@ -185,9 +285,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SickBay_DeskObject_0: 2315826442612351893
-      SickBay_DeskObject_1: -5745045174349219494
-      SickBay_DeskObject_2: 8362598085791286258
+      Restroom_ShelfGame_0: 183978396307754007
+      Restroom_ShelfGame_1: 2236563145642514888
+      Restroom_ShelfGame_2: -4624173770867440488
+      Restroom_ShelfGame_3: 4624968864617681302
+      Restroom_ShelfGame_4: 1606769065530249523
+      Restroom_ShelfGame_5: -7279488692196304044
+      Restroom_ShelfGame_6: -7028552605185054078
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

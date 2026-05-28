@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d0df762c976fc004a9fb995d212f6320
+guid: 1dfc267e1e32e9c4ab0e1051d00d8f82
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 904760677267325160
-    second: SickBay_Closet_0
+      213: -4236682466578543806
+    second: Restroom_BackStool_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SickBay_Closet_0
+      name: Restroom_BackStool_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 267
-        width: 116
-        height: 203
+        x: 243
+        y: 57
+        width: 69
+        height: 83
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e0c247da0b5e8c00800000000000000
-      internalID: 904760677267325160
+      spriteID: 24bc5795eb74435c0800000000000000
+      internalID: -4236682466578543806
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SickBay_Closet_0: 904760677267325160
+      Restroom_BackStool_0: -4236682466578543806
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
