@@ -5,6 +5,7 @@ using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
 using Naussilus.Core.Managers.Npcs;
+using Naussilus.Gameplay.Buttons;
 using Naussilus.Gameplay.CategoriesTitles;
 using TMPro;
 using UnityEngine;
@@ -71,9 +72,10 @@ namespace Naussilus.Gameplay
 
         public void Cancel()
         {
+            ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(closeButton.gameObject);
             if (current == null)
                 return;
-
+            
             for (var i = 0; i < current.Categories.Length; i++)
             {
                 var category = current.Categories[i];
@@ -114,6 +116,7 @@ namespace Naussilus.Gameplay
         {
             try
             {
+                ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(applyButton.gameObject);
                 for (int i = 0; i < current.Categories.Length; i++)
                 {
                     var category = current.Categories[i];

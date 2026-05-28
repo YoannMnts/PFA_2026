@@ -45,3 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay::Naussilus.Gameplay.Buttons.ButtonFeedbacksManager
   baseButtonForce: 1.1
+  baseButtonDuration: 0.2

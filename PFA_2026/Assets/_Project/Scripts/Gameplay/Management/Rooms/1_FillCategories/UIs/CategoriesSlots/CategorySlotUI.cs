@@ -1,5 +1,6 @@
 ﻿using System;
 using Helteix.Tools.UI;
+using Naussilus.Gameplay.Buttons;
 using Naussilus.Gameplay.CategoriesTitles;
 using TMPro;
 using UnityEngine;
@@ -49,6 +50,7 @@ namespace Naussilus.Gameplay.CategoriesSlots
 
         private void OnClick()
         {
+            ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(button.gameObject);
             categoryUI.OnClicked(Current.CurrentNpc);
         }
     }

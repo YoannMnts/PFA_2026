@@ -44,7 +44,7 @@ namespace Naussilus.Gameplay
 
         public async Awaitable OnAnswerChoose(IAnswer answer)
         {
-            await Awaitable.WaitForSecondsAsync(0.7f);
+            await Awaitable.WaitForSecondsAsync(0.5f);
             current.SetResult(answer);
         }
     }

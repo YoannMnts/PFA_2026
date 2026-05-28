@@ -1,5 +1,6 @@
 ﻿using Helteix.Tools.UI;
 using Naussilus.Core;
+using Naussilus.Gameplay.Buttons;
 using Naussilus.Gameplay.Interactions;
 using TMPro;
 using UnityEngine;
@@ -37,6 +38,7 @@ namespace Naussilus.Gameplay
 
         private void OnClick()
         {
+            ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(button.gameObject);
             npcBar.OnClick(Current);
         }
 
