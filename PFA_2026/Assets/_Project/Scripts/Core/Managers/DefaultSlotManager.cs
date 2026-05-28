@@ -7,6 +7,7 @@ namespace Naussilus.Core.Managers
     public static class DefaultSlotManager
     {
         private static Dictionary<Npc, List<CategoryNpcSlot>> defaultSlots = new Dictionary<Npc, List<CategoryNpcSlot>>();
+        private static Dictionary<CategoryNpcSlot, CategoryNpcSlot> currentDefaultSlot = new Dictionary<CategoryNpcSlot, CategoryNpcSlot>();
 
         public static void Register(this CategoryNpcSlot slot)
         { 
@@ -47,10 +48,33 @@ namespace Naussilus.Core.Managers
             while (true)
             {
                 var randomNumber = Random.Range(0, list.Count);
-                if (!list[randomNumber].TryAddNpc(npc, null)) 
+                CategoryNpcSlot npcSlot = list[randomNumber];
+                var clone = npcSlot.Clone();
+                if (!clone.TryAddNpc(npc, null)) 
                     continue;
+                currentDefaultSlot.Add(npcSlot, clone);
                 break;
             }
+        }
+
+        public static bool TryGetClone(this CategoryNpcSlot slot, out CategoryNpcSlot clone)
+        {
+            if(currentDefaultSlot.TryGetValue(slot, out clone))
+                return true;
+            clone = null;
+            return false;
+        }
+
+        public static bool TryRemoveClone(this CategoryNpcSlot slot)
+        {
+            if (currentDefaultSlot.TryGetValue(slot, out var clone))
+            {
+                clone.ClearNpc();
+                currentDefaultSlot.Remove(slot);
+                return true;
+            }
+            clone = null;
+            return false;
         }
     }
 }

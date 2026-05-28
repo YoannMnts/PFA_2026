@@ -203,4 +203,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81a39c42a48a4ff5a7a7f80f2da38c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay::Rooms.ConsequenceTextUI
-  consequenceText: {fileID: 6353658761324882571, guid: a861a1701d4af9e40a47bdeaf5fc427c, type: 3}
+  consequenceTextUIList: {fileID: 8210936863789753481}

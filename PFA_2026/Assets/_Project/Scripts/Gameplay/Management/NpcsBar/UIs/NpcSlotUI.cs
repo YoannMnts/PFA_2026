@@ -12,7 +12,6 @@ namespace Naussilus.Gameplay
     {
         [SerializeField] private Image icon;
         [SerializeField] private Button button;
-        [SerializeField] private TMP_Text npcName;
 
         public int Priority { get; private set; } = 10;
         private NpcBarUI npcBar;
@@ -25,7 +24,6 @@ namespace Naussilus.Gameplay
         protected override void SyncUI(Npc current)
         {
             icon.sprite = current.DefaultIcon;
-            npcName.text = current.Name;
             button.onClick.AddListener(OnClick);
             button.interactable = current.CurrentCategory == null;
         }
@@ -33,7 +31,6 @@ namespace Naussilus.Gameplay
         protected override void ClearUI()
         {
             icon.sprite = null;
-            npcName.text = string.Empty;
             button.onClick.RemoveAllListeners();
             button.interactable = true;
         }

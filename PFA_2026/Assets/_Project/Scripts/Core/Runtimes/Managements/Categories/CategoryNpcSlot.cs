@@ -19,18 +19,24 @@ namespace Naussilus.Gameplay
             Flip = data.RandomFlip ? Random.value > .5f : data.Flip;
             DefaultNpcs = data.IsDefaultSlotFor?.Select(npcData => NpcManager.TryGetNpc(npcData?.GUID)).ToArray();
             CurrentNpc = npc;
-
+            Data = data;
+            
             if (DefaultNpcs?.Length > 0)
             {
                 this.Register();
             }
+        }
+
+        CategoryNpcSlot()
+        {
+            
         }
         
         [CanBeNull] public Npc CurrentNpc { get; private set; }
         
         public Vector3 SlotPosition { get; private set; }
         
-        public Expression NpcExpression { get; private set; }
+        [CanBeNull] public Expression NpcExpression { get; private set; }
         
         public string SpriteSortingLayerName { get; private set; }
         
@@ -39,6 +45,8 @@ namespace Naussilus.Gameplay
         public bool Flip { get; private set; }
         
         [CanBeNull] public Npc[] DefaultNpcs { get; private set; }
+        
+        public RoomSlotPositionData Data { get; private set; }
 
         protected internal bool TryAddNpc(Npc npc, Category category)
         {
@@ -62,7 +70,19 @@ namespace Naussilus.Gameplay
 
         protected internal void ClearNpc()
         {
+            CurrentNpc?.RemoveSlot();
             CurrentNpc = null;
         }
+
+        public CategoryNpcSlot Clone(Npc npc = null) =>
+            new()
+            {
+                SlotPosition = SlotPosition,
+                NpcExpression = NpcExpression, 
+                SpriteSortingLayerName = SpriteSortingLayerName,
+                OrderInLayer = OrderInLayer,
+                Flip = Flip,
+                CurrentNpc = npc
+            };
     }
 }

@@ -17,6 +17,8 @@ namespace Naussilus.Core
         [CanBeNull] public Category[] Categories { get; private set; }
         
         [CanBeNull] public ActionEffect[] ActionEffects { get; private set; }
+        
+        public bool ClearDefaultSlot { get; private set; }
 
         public RoomAction(ActionData data)
         {
@@ -26,6 +28,7 @@ namespace Naussilus.Core
             Countdown = data.Countdown;
             Categories = data.Categories?.Select(c => new Category(c)).ToArray();
             ActionEffects = data.ActionEffects?.Select(a => new ActionEffect(a, Categories)).ToArray();
+            ClearDefaultSlot = data.ClearDefaultSlot;
         }
     }
 }

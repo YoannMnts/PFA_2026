@@ -9,13 +9,16 @@ namespace Naussilus.Gameplay
     {
         [SerializeField]
         private ConsequenceTextUIList consequenceTextUIList;
-        
+
+        private bool hasText;
+
         protected override void SyncUI(Consequence current)
         {
             var allText = current.Text;
             if (allText == null)
                 return;
-            if (allText.Length > 0)
+            hasText = allText.Length > 0;
+            if (hasText)
             {
                 consequenceTextUIList.Connect(allText);
             }
@@ -23,6 +26,8 @@ namespace Naussilus.Gameplay
 
         protected override void ClearUI()
         {
+            if(!hasText)
+                return;
             consequenceTextUIList.Disconnect();
         }
     }

@@ -61,7 +61,7 @@ MonoBehaviour:
       rid: 3949848295130792034
   <Gender>k__BackingField: 2
   <DefaultEventSprite>k__BackingField: {fileID: 21300000, guid: 78a3049ca07829a46a980daf3dc7f5cb, type: 3}
-  <DefaultIcon>k__BackingField: {fileID: -6673817420231365987, guid: 9f09ae341f4ea8440ae95e35f839e2c6, type: 3}
+  <DefaultIcon>k__BackingField: {fileID: 21300000, guid: 9f09ae341f4ea8440ae95e35f839e2c6, type: 3}
   <CurrentThinking>k__BackingField: 
   <GUID>k__BackingField: 9b210b05-b219-47ba-b0ad-b4ce923a78ec
   references:

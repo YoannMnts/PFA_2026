@@ -14,7 +14,6 @@ namespace Naussilus.Gameplay
         
         [SerializeField] private Button button;
         [SerializeField] private Image sprite;
-        [SerializeField] private TMP_Text text;
 
         private void Start()
         {
@@ -24,14 +23,12 @@ namespace Naussilus.Gameplay
         protected override void SyncUI(Room current)
         {
             currentRoom = current;
-            text.text = current.Name;
             sprite.sprite = current.Icon;
             button.onClick.AddListener(OnClicked);
         }
 
         protected override void ClearUI()
         {
-            text.text = string.Empty;
             button.onClick.RemoveAllListeners();
         }
 

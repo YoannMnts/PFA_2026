@@ -48,6 +48,14 @@ namespace Naussilus.Gameplay
             for (int i = 0; i < current?.Categories.Length; i++)
             {
                 var category = current.Categories[i];
+                if (current.CurrentAction.ClearDefaultSlot)
+                {
+                    for (int j = 0; j < category.CategoryNpcSlots.Length; j++)
+                    {
+                        var categoryNpcSlot = category.CategoryNpcSlots[j];
+                        categoryNpcSlot.TryRemoveClone();
+                    }
+                }
                 for (int j = 0; j < category.ObligateNpcs.Length; j++)
                 {
                     var obligateNpc = category.ObligateNpcs[j];

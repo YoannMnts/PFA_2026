@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 namespace Naussilus.Core.Managers
 {
@@ -16,6 +17,13 @@ namespace Naussilus.Core.Managers
             canvasGroup.alpha = 0;
             canvasGroup.blocksRaycasts = false;
             canvasGroup.interactable = false;
+        }
+        
+        public static void ChangeAlpha(this Image image, float alpha)
+        {
+            var color = image.color;
+            color.a = alpha;
+            image.color = color;
         }
     }
 }
