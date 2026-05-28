@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 913aab72ec8965440adb422f702344dd
+guid: 06ad7e85276754d4695d0f2dd9d2cd21
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -431714425258277795
-    second: UI_NovelEndNotes_0
+      213: 4326845025103817606
+    second: UI_ActionWheelBackGround_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_NovelEndNotes_0
+      name: UI_ActionWheelBackGround_0
       rect:
         serializedVersion: 2
-        x: 63
-        y: 483
-        width: 1922
-        height: 1082
+        x: 147
+        y: 145
+        width: 218
+        height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d54811e740e320af0800000000000000
-      internalID: -431714425258277795
+      spriteID: 68baa7f20aa0c0c30800000000000000
+      internalID: 4326845025103817606
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UI_NovelEndNotes_0: -431714425258277795
+      UI_ActionWheelBackGround_0: 4326845025103817606
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
