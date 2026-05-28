@@ -43,8 +43,11 @@ namespace Naussilus.Gameplay
 
         private async void ContinueButtonClicked()
         {
-            ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(continueButton.gameObject, 0.95f);
-            await Awaitable.WaitForSecondsAsync(0.7f);
+            if (ButtonFeedbacksManager.instance != null)
+            {
+                ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(continueButton.gameObject, 0.95f);
+                await Awaitable.WaitForSecondsAsync(0.7f);
+            }
             playerSwitch.SetResult(true);
         }
     }

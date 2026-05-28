@@ -50,7 +50,10 @@ namespace Naussilus.Gameplay.CategoriesSlots
 
         private void OnClick()
         {
-            ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(button.gameObject);
+            if (ButtonFeedbacksManager.instance != null)
+            {
+                ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(button.gameObject);
+            }
             categoryUI.OnClicked(Current.CurrentNpc);
         }
     }

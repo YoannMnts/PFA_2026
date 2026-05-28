@@ -90,7 +90,10 @@ namespace Naussilus.Gameplay
 
         public void Cancel()
         {
-            ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(closeButton.gameObject);
+            if (ButtonFeedbacksManager.instance != null)
+            {
+                ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(closeButton.gameObject);
+            }
             if (current == null)
                 return;
             
@@ -135,7 +138,10 @@ namespace Naussilus.Gameplay
         {
             try
             {
-                ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(applyButton.gameObject);
+                if (ButtonFeedbacksManager.instance != null)
+                {
+                    ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(applyButton.gameObject);
+                }
                 for (int i = 0; i < current.Categories.Length; i++)
                 {
                     var category = current.Categories[i];

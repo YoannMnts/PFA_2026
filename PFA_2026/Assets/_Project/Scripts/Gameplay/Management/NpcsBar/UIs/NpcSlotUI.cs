@@ -37,7 +37,10 @@ namespace Naussilus.Gameplay
 
         private void OnClick()
         {
-            ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(button.gameObject);
+            if (ButtonFeedbacksManager.instance != null)
+            {
+                ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(button.gameObject);
+            }
             npcBar.OnClick(Current);
         }
 

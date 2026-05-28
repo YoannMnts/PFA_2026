@@ -34,7 +34,10 @@ namespace Naussilus.Gameplay
 
         public void OnClicked()
         {
-            ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(button.gameObject);
+            if (ButtonFeedbacksManager.instance != null)
+            {
+                ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(button.gameObject);
+            }
             selectRoomForShipUI.ChooseRoom(currentRoom);
         }
     }

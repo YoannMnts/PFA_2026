@@ -62,5 +62,8 @@ TagManager:
   - name: NpcForeground
     uniqueID: 3673974053
     locked: 0
+  - name: BoatForeground
+    uniqueID: 3856945873
+    locked: 0
   m_RenderingLayers:
   - Default
