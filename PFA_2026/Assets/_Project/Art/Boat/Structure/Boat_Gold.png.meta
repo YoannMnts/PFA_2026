@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: ee194719e635d2e4591868cfe40dd7ed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2065856845271851042
+    second: Boat_Gold_0
+  - first:
+      213: -6069047233614117290
+    second: Boat_Gold_1
+  - first:
+      213: 1605169402078744863
+    second: Boat_Gold_2
+  - first:
+      213: 1821064119973633825
+    second: Boat_Gold_3
+  - first:
+      213: -4154278797043028764
+    second: Boat_Gold_4
+  - first:
+      213: 6244396684049767984
+    second: Boat_Gold_5
+  - first:
+      213: 1363437839525953569
+    second: Boat_Gold_6
+  - first:
+      213: 2104416451104676930
+    second: Boat_Gold_7
+  - first:
+      213: 5307248733563957387
+    second: Boat_Gold_8
+  - first:
+      213: -3311501171439090837
+    second: Boat_Gold_9
+  - first:
+      213: -5098166985968956220
+    second: Boat_Gold_10
+  - first:
+      213: 3883657948317139768
+    second: Boat_Gold_11
+  - first:
+      213: -3246529298024042676
+    second: Boat_Gold_12
+  - first:
+      213: -8004610559341568566
+    second: Boat_Gold_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boat_Gold_0
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1224
+        width: 7724
+        height: 2787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf13c4052a9453e0800000000000000
+      internalID: -2065856845271851042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boat_Gold_1
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 3930
+        width: 857
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6560d5b32b966cba0800000000000000
+      internalID: -6069047233614117290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boat_Gold_2
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 4003
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11da3f0115b64610800000000000000
+      internalID: 1605169402078744863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boat_Gold_3
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 3993
+        width: 39
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12fdc303b28b54910800000000000000
+      internalID: 1821064119973633825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boat_Gold_4
+      rect:
+        serializedVersion: 2
+        x: 7766
+        y: 2328
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec2054c1790956c0800000000000000
+      internalID: -4154278797043028764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boat_Gold_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1428
+        width: 66
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03ed96d23bd88a650800000000000000
+      internalID: 6244396684049767984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boat_Gold_6
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 316
+        width: 1519
+        height: 1464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1204542cd77ebe210800000000000000
+      internalID: 1363437839525953569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boat_Gold_7
+      rect:
+        serializedVersion: 2
+        x: 6871
+        y: 1075
+        width: 972
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24c1593dc93643d10800000000000000
+      internalID: 2104416451104676930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boat_Gold_8
+      rect:
+        serializedVersion: 2
+        x: 3026
+        y: 550
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b80b8baaa9227a940800000000000000
+      internalID: 5307248733563957387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boat_Gold_9
+      rect:
+        serializedVersion: 2
+        x: 2455
+        y: 250
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b63451bca3f2b02d0800000000000000
+      internalID: -3311501171439090837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boat_Gold_10
+      rect:
+        serializedVersion: 2
+        x: 2488
+        y: 251
+        width: 73
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc42b3332caf39b0800000000000000
+      internalID: -5098166985968956220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boat_Gold_11
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 257
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 833c096d35685e530800000000000000
+      internalID: 3883657948317139768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boat_Gold_12
+      rect:
+        serializedVersion: 2
+        x: 2567
+        y: 256
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4fe066edc202f2d0800000000000000
+      internalID: -3246529298024042676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boat_Gold_13
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 39
+        width: 1435
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acdda154b19e9e090800000000000000
+      internalID: -8004610559341568566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Boat_Gold_0: -2065856845271851042
+      Boat_Gold_1: -6069047233614117290
+      Boat_Gold_10: -5098166985968956220
+      Boat_Gold_11: 3883657948317139768
+      Boat_Gold_12: -3246529298024042676
+      Boat_Gold_13: -8004610559341568566
+      Boat_Gold_2: 1605169402078744863
+      Boat_Gold_3: 1821064119973633825
+      Boat_Gold_4: -4154278797043028764
+      Boat_Gold_5: 6244396684049767984
+      Boat_Gold_6: 1363437839525953569
+      Boat_Gold_7: 2104416451104676930
+      Boat_Gold_8: 5307248733563957387
+      Boat_Gold_9: -3311501171439090837
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
