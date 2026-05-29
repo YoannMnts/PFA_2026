@@ -7,6 +7,7 @@ namespace Naussilus.Gameplay.Parrallax
     public class BoatOscillation : MonoPhaseListener<ManagementPhase>
     {
         [SerializeField] private GameObject ship;
+        [SerializeField] private Camera camera;
         [SerializeField] private AnimationCurve boatOscillationCurve;
         [SerializeField] private float oscillationSpeed;
         [SerializeField] private float oscillationInstensity;
@@ -33,7 +34,7 @@ namespace Naussilus.Gameplay.Parrallax
 
         private void Update()
         {
-            if (isOscillating)
+            if (isOscillating && camera.orthographicSize > 5f)
             {
                 Oscillate();
             }
