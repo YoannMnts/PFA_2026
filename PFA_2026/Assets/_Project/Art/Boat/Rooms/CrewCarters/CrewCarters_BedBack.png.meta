@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: df4cdcbfc390e7e4488cdff4845d5012
+guid: 1f0b8558fc8279a40a08a1ee1ed42e97
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6023297757913807269
-    second: Storage_Background_0
+      213: -1498600600046152421
+    second: CrewCarters_BedBack_0
   - first:
-      213: 6334145501749152989
-    second: Storage_Background_1
+      213: -1956429004412486796
+    second: CrewCarters_BedBack_1
   - first:
-      213: 5613119272381340034
-    second: Storage_Background_2
+      213: 2054879437855509334
+    second: CrewCarters_BedBack_2
   - first:
-      213: 8376446820300804235
-    second: Storage_Background_3
-  - first:
-      213: 4978290148921137502
-    second: Storage_Background_4
+      213: 7272268090826746194
+    second: CrewCarters_BedBack_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Storage_Background_0
+      name: CrewCarters_BedBack_0
       rect:
         serializedVersion: 2
-        x: 78
-        y: 365
-        width: 92
-        height: 17
+        x: 207
+        y: 311
+        width: 220
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5a9fbd4e56d079350800000000000000
-      internalID: 6023297757913807269
+      spriteID: b15df06b1b6e33be0800000000000000
+      internalID: -1498600600046152421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Storage_Background_1
+      name: CrewCarters_BedBack_1
       rect:
         serializedVersion: 2
-        x: 322
-        y: 58
-        width: 1581
-        height: 437
+        x: 618
+        y: 295
+        width: 225
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ddc856b26c767e750800000000000000
-      internalID: 6334145501749152989
+      spriteID: 47bf8b3af2e59d4e0800000000000000
+      internalID: -1956429004412486796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Storage_Background_2
+      name: CrewCarters_BedBack_2
       rect:
         serializedVersion: 2
-        x: 395
-        y: 368
-        width: 7
-        height: 14
+        x: 210
+        y: 143
+        width: 210
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28950381d3ec5ed40800000000000000
-      internalID: 5613119272381340034
+      spriteID: 65bc1a526f5648c10800000000000000
+      internalID: 2054879437855509334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Storage_Background_3
+      name: CrewCarters_BedBack_3
       rect:
         serializedVersion: 2
-        x: 2036
-        y: 366
-        width: 8
-        height: 27
+        x: 623
+        y: 144
+        width: 211
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,30 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b80daf3b00e1f3470800000000000000
-      internalID: 8376446820300804235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Storage_Background_4
-      rect:
-        serializedVersion: 2
-        x: 1912
-        y: 321
-        width: 12
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e59554ba380761540800000000000000
-      internalID: 4978290148921137502
+      spriteID: 259e2296c494ce460800000000000000
+      internalID: 7272268090826746194
       vertices: []
       indices: 
       edges: []
@@ -235,11 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Storage_Background_0: 6023297757913807269
-      Storage_Background_1: 6334145501749152989
-      Storage_Background_2: 5613119272381340034
-      Storage_Background_3: 8376446820300804235
-      Storage_Background_4: 4978290148921137502
+      CrewCarters_BedBack_0: -1498600600046152421
+      CrewCarters_BedBack_1: -1956429004412486796
+      CrewCarters_BedBack_2: 2054879437855509334
+      CrewCarters_BedBack_3: 7272268090826746194
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

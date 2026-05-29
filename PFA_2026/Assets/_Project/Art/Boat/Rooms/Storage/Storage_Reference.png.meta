@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: df4cdcbfc390e7e4488cdff4845d5012
+guid: a471414482e5d2f429e54ec1950a82b3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6023297757913807269
-    second: Storage_Background_0
+      213: -1568944327453993546
+    second: Cale render_0
   - first:
-      213: 6334145501749152989
-    second: Storage_Background_1
+      213: -7122973570059961010
+    second: Cale render_1
   - first:
-      213: 5613119272381340034
-    second: Storage_Background_2
+      213: 6264411293101955904
+    second: Cale render_2
   - first:
-      213: 8376446820300804235
-    second: Storage_Background_3
+      213: 2815067935096252598
+    second: Cale render_3
   - first:
-      213: 4978290148921137502
-    second: Storage_Background_4
+      213: 3686439250160115147
+    second: Cale render_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,7 +112,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Storage_Background_0
+      name: Cale render_0
       rect:
         serializedVersion: 2
         x: 78
@@ -127,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5a9fbd4e56d079350800000000000000
-      internalID: 6023297757913807269
+      spriteID: 6b59db1627df93ae0800000000000000
+      internalID: -1568944327453993546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Storage_Background_1
+      name: Cale render_1
       rect:
         serializedVersion: 2
         x: 322
-        y: 58
-        width: 1581
-        height: 437
+        y: 19
+        width: 1602
+        height: 492
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,14 +149,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ddc856b26c767e750800000000000000
-      internalID: 6334145501749152989
+      spriteID: e4d7414f64d162d90800000000000000
+      internalID: -7122973570059961010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Storage_Background_2
+      name: Cale render_2
       rect:
         serializedVersion: 2
         x: 395
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28950381d3ec5ed40800000000000000
-      internalID: 5613119272381340034
+      spriteID: 04b994c71e8afe650800000000000000
+      internalID: 6264411293101955904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Storage_Background_3
+      name: Cale render_3
       rect:
         serializedVersion: 2
         x: 2036
@@ -193,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b80daf3b00e1f3470800000000000000
-      internalID: 8376446820300804235
+      spriteID: 6b821024f51211720800000000000000
+      internalID: 2815067935096252598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Storage_Background_4
+      name: Cale render_4
       rect:
         serializedVersion: 2
-        x: 1912
-        y: 321
-        width: 12
-        height: 38
+        x: 1917
+        y: 325
+        width: 6
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e59554ba380761540800000000000000
-      internalID: 4978290148921137502
+      spriteID: bcdd9d767fcd82330800000000000000
+      internalID: 3686439250160115147
       vertices: []
       indices: 
       edges: []
@@ -235,11 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Storage_Background_0: 6023297757913807269
-      Storage_Background_1: 6334145501749152989
-      Storage_Background_2: 5613119272381340034
-      Storage_Background_3: 8376446820300804235
-      Storage_Background_4: 4978290148921137502
+      Cale render_0: -1568944327453993546
+      Cale render_1: -7122973570059961010
+      Cale render_2: 6264411293101955904
+      Cale render_3: 2815067935096252598
+      Cale render_4: 3686439250160115147
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
