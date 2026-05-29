@@ -28,7 +28,8 @@ namespace Naussilus.Gameplay
         private ManagementPhase currentPhase;
         private CheckNpcState checkNpcPhase;
         
-        private Vector3 lastPosition;
+        private CategoryNpcSlot currentSlot;
+        private CategoryNpcSlot lastSlot;
         private bool burstAnimationIsPlaying = false;
 
         protected override void OnPhaseBegin(ManagementPhase phase)
@@ -90,7 +91,8 @@ namespace Naussilus.Gameplay
 
         private void AddedInSlot(CategoryNpcSlot slot)
         {
-            lastPosition = gameObject.transform.position;
+            lastSlot = currentSlot;
+            currentSlot = slot;
             gameObject.transform.position = slot.SlotPosition;
             Debug.Log($"Npc {Npc.Name} is setting new position to {slot.SlotPosition}");
             slot.NpcExpression.TryGetExpression(Npc, out var sprite);
@@ -107,12 +109,15 @@ namespace Naussilus.Gameplay
 
         private void RemoveSlot()
         {
+            if (lastSlot == null)
+                return;
             //Debug.Log($"Npc {Npc.Name} is returning to the last position {lastPosition}");
-            gameObject.transform.position = lastPosition;
-            npcSprite.sprite = null;
-            npcSprite.flipX = false;
-            npcSprite.sortingOrder = 0;
-            npcSprite.sortingLayerName = "Default";
+            gameObject.transform.position = lastSlot.SlotPosition;
+            lastSlot.NpcExpression.TryGetExpression(Npc, out var sprite);
+            npcSprite.sprite = sprite;
+            npcSprite.flipX = lastSlot.Flip;
+            npcSprite.sortingOrder = lastSlot.OrderInLayer;
+            npcSprite.sortingLayerName = lastSlot.SpriteSortingLayerName;
         }
     }
 }
