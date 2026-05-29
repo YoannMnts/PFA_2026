@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using DG.Tweening;
+using Naussilus.Core.Sounds;
 using UnityEngine;
 
 namespace Naussilus.Gameplay.Buttons
@@ -26,6 +27,10 @@ namespace Naussilus.Gameplay.Buttons
             Debug.Log("ApplyButtonFeedbacks: " + button);
             if (currentButtons.Contains(button)==false)
             {
+                if (SoundDesignManager.instance != null)
+                {
+                    SoundDesignManager.instance.PlaySound(SoundsEnum.Clic1);
+                }
                 currentButtons.Add(button);
                 button.transform.DOScale(baseButtonForce*button.transform.localScale*force, baseButtonDuration).SetEase(Ease.InOutSine).SetLoops(2, LoopType.Yoyo).OnComplete(() => Remove(button));
             }

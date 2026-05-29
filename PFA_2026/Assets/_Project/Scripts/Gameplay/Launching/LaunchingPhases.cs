@@ -88,6 +88,7 @@ namespace Naussilus.Gameplay
             var visualNovelPhase = new VisualNovelPhase(visualNovelEvent);
             if (SoundDesignManager.instance != null)
             {
+                SoundDesignManager.instance.ManagmentMusic(false);
                 SoundDesignManager.instance.VisualNovelMusic(true);
             }
             PhaseResult<bool> result = await visualNovelPhase.Run();
@@ -100,6 +101,7 @@ namespace Naussilus.Gameplay
             var managementPhase = new ManagementPhase(defaultActionPoint, timerDuration);
             if (SoundDesignManager.instance != null)
             {
+                SoundDesignManager.instance.VisualNovelMusic(false);
                 SoundDesignManager.instance.ManagmentMusic(true);
             }
             PhaseResult<bool> result = await managementPhase.Run();

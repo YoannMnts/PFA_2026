@@ -1,5 +1,6 @@
 ﻿using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managers;
+using Naussilus.Core.Sounds;
 using Naussilus.Gameplay.Buttons;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,7 +24,10 @@ namespace Naussilus.Gameplay
             group.Show();
             playerSwitch = phase;
             continueButton.onClick.AddListener(OnContinueButtonClicked);
-            
+            if (SoundDesignManager.instance != null)
+            {
+                SoundDesignManager.instance.PlaySound(SoundsEnum.ChangePlayer);
+            }
             base.OnPhaseBegin(phase);
         }
 

@@ -12,6 +12,7 @@ namespace Naussilus.Gameplay
         [SerializeField] private SoundLibraryData libraryData;
         [SerializeField] private MusicsManager musicsManager;
         [SerializeField] private float defaultVolume;
+        [SerializeField] private GameObject sourceOriginal;
         
         private List<AudioSource> audioSources = new List<AudioSource>();
         private bool isSoundsMuted = false;
@@ -44,8 +45,9 @@ namespace Naussilus.Gameplay
         {
             if (musicsManager != null)
             {
-                if (launch == true)
+                if (launch)
                 {
+                    musicsManager.PauseMusic();
                     musicsManager.PlayMusic(libraryData.managmentMusic);
                 }
                 else
@@ -100,6 +102,11 @@ namespace Naussilus.Gameplay
             }
         }
 
+        public void Test()
+        {
+            PlaySound(SoundsEnum.Clic1);
+        }
+
         private AudioClip FindLCip(SoundsEnum sound)
         {
             foreach (SoundClipData soundClipData in libraryData.clipsList)
@@ -130,9 +137,8 @@ namespace Naussilus.Gameplay
 
         private GameObject CreateNewAudioSource()
         {
-            GameObject newAudioSource = new GameObject();
-            Instantiate(newAudioSource, Vector3.zero, Quaternion.identity);
-            newAudioSource.name = "AudioSource" + (audioSources.Count+1).ToString();
+            GameObject newAudioSource = Instantiate(sourceOriginal, Vector3.zero, Quaternion.identity);
+            newAudioSource.name = "AudioSource" + (audioSources.Count).ToString();
             audioSources.Add(newAudioSource.GetComponent<AudioSource>());
             newAudioSource.transform.parent = transform;
             if (isSoundsMuted == false)

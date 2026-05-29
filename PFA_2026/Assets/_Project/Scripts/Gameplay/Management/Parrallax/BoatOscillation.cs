@@ -34,7 +34,9 @@ namespace Naussilus.Gameplay.Parrallax
 
         private void Update()
         {
-            if (isOscillating && camera.orthographicSize > 5f)
+            Debug.Log(isOscillating);
+            Debug.Log(camera.orthographicSize);
+            if (isOscillating && camera.orthographicSize > 3f)
             {
                 Oscillate();
             }

@@ -1,5 +1,6 @@
 using System;
 using Helteix.Tools.Phases.Listeners;
+using Naussilus.Core.Sounds;
 using UnityEngine;
 
 namespace Naussilus.Gameplay
@@ -23,6 +24,10 @@ namespace Naussilus.Gameplay
         protected override async void OnPhaseBegin(SwitchDay phase)
         {
             base.OnPhaseBegin(phase);
+            if (SoundDesignManager.instance != null)
+            {
+                SoundDesignManager.instance.PlaySound(SoundsEnum.ChangeDay);
+            }
             float goalProgress = (float)phase.CurrentDay / phase.MaxDay;
             Debug.Log(goalProgress);
             float distance = goalProgress - currentProgress;
