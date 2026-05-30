@@ -8,7 +8,7 @@ namespace Naussilus.Gameplay
     public class PlayerCamera : PlayerComponent, IPhaseListener<ManagementPhase>
     {
         public MonoCineCamera PlayerCam => playerCam;
-        
+
         [SerializeField]
         private MonoCineCamera playerCam;
         
@@ -57,7 +57,7 @@ namespace Naussilus.Gameplay
         private void Update()
         {
             playerCam.CineCamera.Lens.OrthographicSize = Mathf.Clamp(
-                cam.orthographicSize + pinchInput.Delta * zoomSpeed,
+                playerCam.CineCamera.Lens.OrthographicSize + pinchInput.Delta * zoomSpeed,
                 minZoom,
                 maxZoom
             );
@@ -67,7 +67,6 @@ namespace Naussilus.Gameplay
             var transformPosition = VectorAddition(cam.gameObject.transform.position, (slideInput.Delta * slideSpeed));
             //Debug.Log($"Vector addition: {transformPosition}");
             cameraTarget.transform.position = transformPosition;
-            playerCam.CineCamera.InternalUpdateCameraState(Vector3.up, Time.deltaTime);
         }
 
         private void CanMoveChange(bool canMove)
