@@ -1,4 +1,5 @@
-﻿using Helteix.Tools.Phases.Listeners;
+﻿using System;
+using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managers;
 using Naussilus.Core.Sounds;
 using Naussilus.Gameplay.Buttons;
@@ -23,7 +24,7 @@ namespace Naussilus.Gameplay.PlayerSwitchs.UIs
         {
             group.Show();
             playerSwitch = phase;
-            continueButton.onClick.AddListener(OnContinueButtonClicked);
+            continueButton.onClick.AddListener(ContinueButtonClicked);
             if (SoundDesignManager.instance != null)
             {
                 SoundDesignManager.instance.PlaySound(SoundsEnum.ChangePlayer);
@@ -40,19 +41,21 @@ namespace Naussilus.Gameplay.PlayerSwitchs.UIs
             base.OnPhaseEnd(phase);
         }
 
-        private void OnContinueButtonClicked()
-        {
-            ContinueButtonClicked();
-        }
-
         private async void ContinueButtonClicked()
         {
-            if (ButtonFeedbacksManager.instance != null)
+            try
             {
-                ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(continueButton.gameObject, 0.95f);
-                await Awaitable.WaitForSecondsAsync(0.7f);
+                if (ButtonFeedbacksManager.instance != null)
+                {
+                    ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(continueButton.gameObject, 0.95f);
+                    await Awaitable.WaitForSecondsAsync(0.7f);
+                }
+                playerSwitch.SetResult(true);
             }
-            playerSwitch.SetResult(true);
+            catch (Exception e)
+            {
+                Debug.Log(e);
+            }
         }
     }
 }

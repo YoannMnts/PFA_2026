@@ -11,7 +11,7 @@ using UnityEngine;
 
 namespace Naussilus.Gameplay
 {
-    public class MonoNpc : MonoPhaseListener<ManagementPhase>, IInteractable, INpcClickListener
+    public class MonoNpc : MonoPhaseListener<ManagementPhase>, INpcClickListener
     {
         public int Priority { get; private set; } = 5;
         public int NpcClickPriority { get; private set; } = 1;
@@ -63,7 +63,6 @@ namespace Naussilus.Gameplay
             TryCheckNpc(npc);
         }
         
-
         private void TryCheckNpc(Npc npc)
         {
             if (npc != Npc)
@@ -76,17 +75,11 @@ namespace Naussilus.Gameplay
                 return;
             }
             
-            Interact(null);
-        }
-
-        public void Interact(PlayerInteractions playerInteractions)
-        {
             if (currentPhase == null)
                 return;
             
             checkNpcPhase = new CheckNpcState(this);
             checkNpcPhase.RunAndForget();
-            Debug.Log($"Npc {Npc.Name} is interacting");
         }
 
         private void AddedInSlot(CategoryNpcSlot slot)

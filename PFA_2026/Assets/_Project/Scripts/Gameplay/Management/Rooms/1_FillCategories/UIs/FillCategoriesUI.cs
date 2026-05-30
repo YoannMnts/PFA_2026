@@ -62,6 +62,7 @@ namespace Naussilus.Gameplay
                     AddNpcInCategory(obligateNpc);
                 }
             }
+            RefreshSelection();
             
             base.OnPhaseBegin(phase);
         }
@@ -115,8 +116,10 @@ namespace Naussilus.Gameplay
             for (int i = 0; i < current.Categories.Length; i++)
             {
                 var category = current.Categories[i];
-                if (category.TryAddNpc(npc))
-                    return;
+                if (!category.TryAddNpc(npc))
+                    continue;
+                RefreshSelection();
+                return;
             }
         }
 
@@ -132,6 +135,7 @@ namespace Naussilus.Gameplay
             {
                 var category = current.Categories[i];
                 category.TryRemoveNpc(npc);
+                RefreshSelection();
             }
         }
 
@@ -171,6 +175,18 @@ namespace Naussilus.Gameplay
             catch (Exception e)
             {
                 Debug.LogError(e);
+            }
+        }
+
+        private void RefreshSelection()
+        {
+            foreach (var categoryUI in categoryUIList.UIItems)
+            {
+                foreach (var slot in categoryUI.UIList.UIItems)
+                {
+                    if (!slot.TrySelectSlot())
+                        return;
+                }
             }
         }
     }

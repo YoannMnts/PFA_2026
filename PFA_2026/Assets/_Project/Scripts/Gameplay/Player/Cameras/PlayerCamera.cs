@@ -64,7 +64,7 @@ namespace Naussilus.Gameplay
 
 
             //Debug.Log($"Active cineCamera : {CineCameraManager.ActiveCamera} ");
-            var transformPosition = VectorAddition(cameraTarget.position, (slideInput.Delta * slideSpeed));
+            var transformPosition = VectorAddition(cam.gameObject.transform.position, (slideInput.Delta * slideSpeed));
             //Debug.Log($"Vector addition: {transformPosition}");
             cameraTarget.transform.position = transformPosition;
             playerCam.CineCamera.InternalUpdateCameraState(Vector3.up, Time.deltaTime);

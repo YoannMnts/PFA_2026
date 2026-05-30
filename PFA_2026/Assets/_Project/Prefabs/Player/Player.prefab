@@ -49,10 +49,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Gameplay::Naussilus.Gameplay.PlayerCamera
   playerCam: {fileID: 0}
   cam: {fileID: 0}
+  cameraTarget: {fileID: 0}
   zoomSpeed: 0.01
   minZoom: 2
   maxZoom: 5
-  slideSpeed: 0.01
+  slideSpeed: 0.1
 --- !u!114 &8532601478599535379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,6 +78,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 049e7289e7b64008834bf9d644ed2888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay::Naussilus.Gameplay.Player.Interactions.PlayerInteractions
+  interactionMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &5661573749427549414
 MonoBehaviour:
   m_ObjectHideFlags: 0

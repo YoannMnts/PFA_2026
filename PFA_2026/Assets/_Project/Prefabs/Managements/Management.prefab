@@ -2480,6 +2480,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8265729226768632149}
     m_Modifications:
+    - target: {fileID: 2565524966245535816, guid: f06431d67f183304e80a49a0c03e9d40, type: 3}
+      propertyPath: defaultIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 9600d8060f5b2f5468d8123bc532c072, type: 3}
+    - target: {fileID: 2565524966245535816, guid: f06431d67f183304e80a49a0c03e9d40, type: 3}
+      propertyPath: selectedIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b3f059b524029948a56c4f04197cf76, type: 3}
     - target: {fileID: 6209011971251795786, guid: f06431d67f183304e80a49a0c03e9d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5346,6 +5354,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: NpcBarPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 8004463516922464089, guid: 8058e8125aea9cc40be52118deae3d35, type: 3}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 4826520224531125100}
+    - target: {fileID: 8004463516922464089, guid: 8058e8125aea9cc40be52118deae3d35, type: 3}
+      propertyPath: lockedBackground
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d750fe7d8af41d45bcf5a04255c2de5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -5377,6 +5393,17 @@ CanvasGroup:
   m_CorrespondingSourceObject: {fileID: 6584616027501802491, guid: 8058e8125aea9cc40be52118deae3d35, type: 3}
   m_PrefabInstance: {fileID: 5942413672506343020}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4826520224531125100 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1192485584875072768, guid: 8058e8125aea9cc40be52118deae3d35, type: 3}
+  m_PrefabInstance: {fileID: 5942413672506343020}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!224 &6060229717226109421 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 463293595234666369, guid: 8058e8125aea9cc40be52118deae3d35, type: 3}

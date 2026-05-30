@@ -45,8 +45,8 @@ namespace Naussilus.Core
 
         public void RemoveSlot()
         {
-            OnRemoveSlot?.Invoke();
             CurrentCategory = null;
+            OnRemoveSlot?.Invoke();
         }
     }
 }

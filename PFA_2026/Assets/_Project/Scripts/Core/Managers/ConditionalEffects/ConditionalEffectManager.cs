@@ -27,7 +27,7 @@ namespace Naussilus.Core.Managers
                 Debug.Log($"[ConditionalEffectManager] Conditions has been computed.");
                 for (int j = 0; j < validNpcs.Count; j++)
                 {
-                    currentConsequences.ComputeAllConsequence(validNpcs[i], currentCategories);
+                    currentConsequences.ComputeAllConsequence(validNpcs[j], currentCategories);
                     Debug.Log($"[ConditionalEffectManager] Consequences has been computed.");
                 }
             }
@@ -46,7 +46,7 @@ namespace Naussilus.Core.Managers
             {
                 currentConditions.ComputeAllCondition(currentNpcs[i], out var validNpcs);
                 for (int j = 0; j < validNpcs.Count; j++)
-                    currentConsequences.ComputeAllConsequence(validNpcs[i]);
+                    currentConsequences.ComputeAllConsequence(validNpcs[j]);
             }
         }
         public static bool ComputeOnlyConditions(this ConditionalEffect conditionalEffect, Npc currentNpcData)

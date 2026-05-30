@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -50, y: -50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4563532312344646699
 CanvasRenderer:
@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -209,6 +209,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2539d3c27746fcb0ecafa66bd5b4b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay::NpcSlotUI
-  icon: {fileID: 1902815529993998709}
+  icon: {fileID: 996619356311688380}
+  background: {fileID: 1902815529993998709}
   button: {fileID: 7755946993939580066}
-  npcName: {fileID: 0}
+  defaultBackground: {fileID: 21300000, guid: 2d0cb99d509da844fb1bab1ef1712a66, type: 3}
+  lockedBackground: {fileID: 21300000, guid: 9d750fe7d8af41d45bcf5a04255c2de5, type: 3}

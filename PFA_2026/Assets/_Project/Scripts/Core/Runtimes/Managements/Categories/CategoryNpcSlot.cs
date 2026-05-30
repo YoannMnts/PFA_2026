@@ -38,9 +38,6 @@ namespace Naussilus.Gameplay
         public Npc[] ValidNpcsToDefault { get; private set; }
         [CanBeNull] public Npc DefaultSlotNpcs { get; private set; }
         
-        public Category CurrentCategory { get; private set; }
-        
-
         protected internal bool TryAddNpc(Npc npc, Category category)
         {
             if (CurrentNpc != null)

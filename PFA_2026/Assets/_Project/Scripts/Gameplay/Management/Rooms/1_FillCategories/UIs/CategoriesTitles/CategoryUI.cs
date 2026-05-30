@@ -1,6 +1,7 @@
 ﻿using Helteix.Tools.UI;
 using Naussilus.Core;
 using Naussilus.Gameplay.CategoriesSlots;
+using Sirenix.Utilities;
 using TMPro;
 using UnityEngine;
 
@@ -8,6 +9,8 @@ namespace Naussilus.Gameplay.CategoriesTitles
 {
     public class CategoryUI : UIItem<Category>
     {
+        public CategorySlotUIList UIList => categorySlotUIList;
+        
         private FillCategoriesUI fillCategoriesUI;
         
         [SerializeField] private TMP_Text categoryName;

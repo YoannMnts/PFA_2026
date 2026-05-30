@@ -2,6 +2,7 @@
 using System.Linq;
 using Naussilus.Gameplay;
 using UnityEngine;
+using UnityEngine.Pool;
 
 namespace Naussilus.Core.Managers
 {
@@ -26,18 +27,37 @@ namespace Naussilus.Core.Managers
 
         public static void AddToRandomSlot(this Npc npc)
         {
-            while (true)
+            using (ListPool<CategoryNpcSlot>.Get(out var list))
             {
-                var randomIndex = Random.Range(0, defaultSlots.Count);
-                var categoryNpcSlot = defaultSlots[randomIndex];
-                if(categoryNpcSlot.ValidNpcsToDefault == null)
+                for (int i = 0; i < defaultSlots.Count; i++)
+                {
+                    var slot = defaultSlots[i];
+                    if (slot.ValidNpcsToDefault.Contains(npc))
+                    {
+                        list.Add(slot);
+                    }
+                }
+                
+                npc.SetInRandomSlot(list);
+            }
+        }
+
+        private static void SetInRandomSlot(this Npc npc, List<CategoryNpcSlot> slots)
+        {
+            while (slots.Count > 0)
+            {
+                var randomNumber = Random.Range(0, slots.Count);
+                if (!slots[randomNumber].TryAddDefaultNpc(npc))
+                {
+                    slots.Remove(slots[randomNumber]);
                     continue;
-                if (!categoryNpcSlot.ValidNpcsToDefault.Contains(npc))
-                    continue;
-                if (!categoryNpcSlot.TryAddDefaultNpc(npc))
-                    continue;
+                }
+
                 break;
             }
+
+            if (slots.Count == 0)
+                Debug.LogWarning($"[DefaultSlotManager] No available slot for {npc.Name}");
         }
     }
 }

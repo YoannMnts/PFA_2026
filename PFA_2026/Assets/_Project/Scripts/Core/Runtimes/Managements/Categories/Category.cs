@@ -35,6 +35,9 @@ namespace Naussilus.Core
             if (ProhibitedNpcs.Contains(npc))
                 return false;
 
+            if (npc.CurrentCategory != null)
+                return false;
+                
             for (int i = 0; i < CategoryNpcSlots.Length; i++)
             {
                 var categoryNpcSlot = CategoryNpcSlots[i];

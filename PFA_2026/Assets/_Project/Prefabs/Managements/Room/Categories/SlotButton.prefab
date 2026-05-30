@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -50, y: -50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4595538130169993103
 CanvasRenderer:
@@ -209,6 +209,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68606c40d1b94d6a89ec46f33976de66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay.Management::_Project.Scripts.Rooms.CategorySlot
-  icon: {fileID: 3929645266503198718}
+  npcIcon: {fileID: 3929645266503198718}
+  background: {fileID: 8005605267215782685}
   button: {fileID: 3322426779240260050}
-  text: {fileID: 0}
+  defaultBGIcon: {fileID: 21300000, guid: 9600d8060f5b2f5468d8123bc532c072, type: 3}
+  selectedBGIcon: {fileID: 21300000, guid: 5b3f059b524029948a56c4f04197cf76, type: 3}
