@@ -12,6 +12,7 @@ namespace Naussilus.Gameplay
 
         [SerializeField]
         private TMP_Text titleText;
+        private TMP_Text actionPoint;
         
 
         private void Start()
@@ -22,11 +23,13 @@ namespace Naussilus.Gameplay
         protected override void SyncUI(RoomAction current)
         {
             titleText.text = current.Name;
+            actionPoint.text = current.Cost.ToString();
         }
 
         protected override void ClearUI()
         {
             titleText.text = string.Empty;
+            actionPoint.text = string.Empty;
         }
 
         public void OnClicked()
