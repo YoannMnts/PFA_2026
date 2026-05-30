@@ -13,6 +13,7 @@ namespace Naussilus.Gameplay.Parrallax
         private List<GameObject> parallaxLayers;
         [SerializeField] float imageSize;
         private bool backgroundMove = false;
+
         private void Awake()
         {
             parallaxLayers = new List<GameObject>();
@@ -46,14 +47,14 @@ namespace Naussilus.Gameplay.Parrallax
             {
                 GameObject parallaxParent = new GameObject();
                 parallaxParent.transform.SetParent(transform);
-                parallaxParent.name= "ParallaxLayer" + i;
+                parallaxParent.name = "ParallaxLayer" + i;
                 parallaxLayers.Add(parallaxParent);
                 for (int j = 0; j < 3; j++)
                 {
                     GameObject parallaxImage = new GameObject();
                     parallaxImage.transform.parent = parallaxParent.transform;
-                    parallaxImage.transform.localPosition = new Vector3(imageSize*j, 0f, 0f);
-                    parallaxImage.name= "Parallax" + i + "_" + j;
+                    parallaxImage.transform.localPosition = new Vector3(imageSize * j, 0f, 0f);
+                    parallaxImage.name = "Parallax" + i + "_" + j;
                     parallaxImage.AddComponent<SpriteRenderer>();
                     SpriteRenderer spriteRenderer = parallaxImage.GetComponent<SpriteRenderer>();
                     spriteRenderer.sprite = parallaxSprites[i];
@@ -72,10 +73,10 @@ namespace Naussilus.Gameplay.Parrallax
                     Transform currentParallax = parallax.transform.GetChild(i);
                     if (currentParallax.position.x <= -imageSize)
                     {
-                        currentParallax.position = new Vector3(imageSize*2, 0, 0);
+                        currentParallax.position = new Vector3(imageSize * 2, 0, 0);
                     }
                 }
-                
+
             }
         }
 
@@ -89,8 +90,22 @@ namespace Naussilus.Gameplay.Parrallax
                 {
                     Transform currentParallax = currentLayer.GetChild(j);
                     Debug.Log(currentParallax);
-                    Vector3 newPosition = currentParallax.position - new Vector3((parallaxSpeed*(i+1)*((i+1)*distanceSlowMultiplier)) * Time.deltaTime, 0, 0);
+                    Vector3 newPosition = currentParallax.position -
+                                          new Vector3(
+                                              (parallaxSpeed * (i + 1) * ((i + 1) * distanceSlowMultiplier)) *
+                                              Time.deltaTime, 0, 0);
                     currentParallax.position = newPosition;
+                }
+            }
+        }
+
+        private void SetColor()
+        {
+            foreach (GameObject parallax in parallaxLayers)
+            {
+                for (int i = 0; i < parallax.transform.childCount; i++)
+                {
+                    SpriteRenderer currentParallax = parallax.transform.GetChild(i).GetComponent<SpriteRenderer>();
                 }
             }
         }
