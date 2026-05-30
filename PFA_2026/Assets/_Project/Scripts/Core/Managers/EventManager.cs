@@ -27,10 +27,12 @@ namespace Naussilus.Core.Managers
             }
             
             Debug.Log($"[EventManager] Loaded {entries.Length} events.");
-            
         }
 
-        public static void Init() {}
+        public static void Init()
+        {
+            CompletedIncidents.Clear();
+        }
         
         public static Incident[] GetValidEvents(int currentDay)
         {

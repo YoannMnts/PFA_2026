@@ -1,8 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using JetBrains.Annotations;
-using Naussilus.Core.Conditions;
-using Naussilus.Core.Managements.ActionDatas;
 using Naussilus.Core.NpcDatas;
 using UnityEngine;
 using UnityEngine.Pool;
@@ -12,11 +9,10 @@ namespace Naussilus.Core.Managers.Npcs
     public static class NpcManager
     {
         private static readonly Dictionary<string, NpcData> NpcDatas;
-        private static readonly Dictionary<string, Npc> Npcs;
+        private static Dictionary<string, Npc> npcs;
         static NpcManager()
         {
             NpcDatas = new ();
-            Npcs = new ();
             var entries = Resources.LoadAll<NpcData>("ScriptableObjects/Npc");
             for (int i = 0; i < entries.Length; i++)
             {
@@ -24,10 +20,17 @@ namespace Naussilus.Core.Managers.Npcs
                 NpcDatas.Add(entry.GUID, entry);
             }
             
+            Debug.Log($"[NpcManager] Loaded {entries.Length} npc.");
+        }
+
+        public static void Init()
+        {
+            npcs = new ();
+            npcs.Clear();
             foreach ((string key, NpcData value) in NpcDatas)
             {
                 var npc = new Npc(value);
-                Npcs.Add(value.GUID, npc);
+                npcs.Add(value.GUID, npc);
             }
 
             foreach ((string key, NpcData value) in NpcDatas)
@@ -35,11 +38,7 @@ namespace Naussilus.Core.Managers.Npcs
                 TryGetNpc(value.GUID, out Npc npc);
                 npc.InitRelationships(value);
             }
-            
-            Debug.Log($"[NpcManager] Loaded {entries.Length} npc.");
         }
-        
-        public static void Init(){}
         
         public static NpcData TryGetData(string guid)
         {
@@ -61,7 +60,7 @@ namespace Naussilus.Core.Managers.Npcs
                 return false;
             }
             
-            return Npcs.TryGetValue(guid, out npc);
+            return npcs.TryGetValue(guid, out npc);
         }
 
         public static Npc TryGetNpc(string guid)
@@ -69,18 +68,18 @@ namespace Naussilus.Core.Managers.Npcs
             if (guid == null)
                 return null;
             
-            var isValid = Npcs.TryGetValue(guid, out Npc value);
+            var isValid = npcs.TryGetValue(guid, out Npc value);
             return !isValid ? new Npc(null) : value;
         }
         
         public static Npc[] GetAllNpcs()
         {
-            return Npcs.Values.ToArray();
+            return npcs.Values.ToArray();
         }
         
         public static void GetAllNpcs(out Npc[] allNpcs)
         {
-            allNpcs = Npcs.Values.ToArray();
+            allNpcs = npcs.Values.ToArray();
         }
 
         public static Npc[] GetSelectedNpcs(INpcSelector npcSelector , Npc currentNpc ,Category[] currentCategories)

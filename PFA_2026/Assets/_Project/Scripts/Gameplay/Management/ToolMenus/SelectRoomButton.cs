@@ -9,6 +9,7 @@ namespace Naussilus.Gameplay
         private ActionPoint currentActionPoint;
     
         private ManagementPhase currentPhase;
+        private SelectRoomForShip selectRoomForShip;
         public int Priority { get; private set; } = 10;
 
         protected override void OnPhaseBegin(ManagementPhase phase)
@@ -22,7 +23,10 @@ namespace Naussilus.Gameplay
         {
             currentPhase = null;
             currentActionPoint = null;
-        
+
+            if (selectRoomForShip != null && selectRoomForShip.IsRunning())
+                selectRoomForShip.Cancel();
+            
             base.OnPhaseEnd(phase);
         }
 
@@ -34,7 +38,7 @@ namespace Naussilus.Gameplay
 
         public void Interact(PlayerInteractions playerInteractions)
         {
-            var selectRoomForShip = new SelectRoomForShip(currentActionPoint, currentPhase);
+            selectRoomForShip = new SelectRoomForShip(currentActionPoint, currentPhase);
             selectRoomForShip.RunAndForget();
         }
     }

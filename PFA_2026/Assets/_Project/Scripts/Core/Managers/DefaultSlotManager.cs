@@ -8,8 +8,14 @@ namespace Naussilus.Core.Managers
 {
     public static class DefaultSlotManager
     {
-        private static List<CategoryNpcSlot> defaultSlots = new List<CategoryNpcSlot>();
+        private static List<CategoryNpcSlot> defaultSlots;
 
+        public static void Init()
+        {
+            defaultSlots = new List<CategoryNpcSlot>();
+            defaultSlots.Clear();
+        }
+        
         public static void Register(this CategoryNpcSlot slot)
         {
             if (defaultSlots.Contains(slot))
@@ -18,11 +24,6 @@ namespace Naussilus.Core.Managers
             }
             defaultSlots.Add(slot);
             
-        }
-
-        public static void Unregister(this CategoryNpcSlot slot)
-        {
-            defaultSlots.Remove(slot);
         }
 
         public static void AddToRandomSlot(this Npc npc)

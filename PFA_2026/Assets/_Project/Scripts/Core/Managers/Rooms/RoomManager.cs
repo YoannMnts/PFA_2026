@@ -8,12 +8,10 @@ namespace Naussilus.Core.Managers.Rooms
     public static class RoomManager
     {
         private static readonly Dictionary<string, RoomData> RoomDatas;
-        private static readonly Dictionary<string, Room> Rooms;
+        private static Dictionary<string, Room> rooms;
         static RoomManager()
         {
             RoomDatas = new ();
-            Rooms = new Dictionary<string, Room>();
-
             var entries = Resources.LoadAll<RoomData>("ScriptableObjects/Management/Room");
             for (int i = 0; i < entries.Length; i++)
             {
@@ -21,29 +19,34 @@ namespace Naussilus.Core.Managers.Rooms
                 RoomDatas.Add(entry.GUID, entry);
             }
 
-            for (int i = 0; i < entries.Length; i++)
+            
+        }
+
+        public static void Init()
+        {
+            rooms = new Dictionary<string, Room>();
+            rooms.Clear();
+            foreach ((string GUID, RoomData data) in RoomDatas)
             {
-                Room entry = new Room(entries[i]);
-                Rooms.Add(entries[i].GUID, entry);
+                var room = new Room(data);
+                rooms.Add(GUID, room);
             }
         }
         
-        public static void Init(){}
-        
         public static Room[] GetAllRooms()
         {
-            return Rooms.Values.ToArray();
+            return rooms.Values.ToArray();
         }
 
         public static Room TryGetRoom(string guid)
         {
-            Rooms.TryGetValue(guid, out Room room);
+            rooms.TryGetValue(guid, out Room room);
             return room;
         }
 
         public static void SubtractAllCountdown()
         {
-            foreach ((string key, Room room) in Rooms)
+            foreach ((string key, Room room) in rooms)
             {
                 room.AddOrRemoveCountdown(-1);
             }

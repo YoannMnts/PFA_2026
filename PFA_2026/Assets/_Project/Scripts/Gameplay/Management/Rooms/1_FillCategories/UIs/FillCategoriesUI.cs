@@ -23,6 +23,7 @@ namespace Naussilus.Gameplay
         [SerializeField] private Button applyButton;
         [SerializeField] private TMP_Text actionNameText;
         [SerializeField] private TMP_Text actionDescriptionText;
+        private ActionConsequenceSummary consequenceSummary;
 
         public int NpcClickPriority { get; private set; } = 5;
 
@@ -80,6 +81,9 @@ namespace Naussilus.Gameplay
             this.RemoveNpcClickListener();
             actionNameText.text = string.Empty;
 
+            if(consequenceSummary != null && consequenceSummary.IsRunning())
+                consequenceSummary.Cancel();
+            
             base.OnPhaseEnd(phase);
         }
 
@@ -163,7 +167,7 @@ namespace Naussilus.Gameplay
                 }
                 
                 current.CurrentAction.ComputeValidEffect();
-                var consequenceSummary = new ActionConsequenceSummary(current.CurrentAction);
+                consequenceSummary = new ActionConsequenceSummary(current.CurrentAction);
                 var result = await consequenceSummary.Run();
 
                 if (!result)

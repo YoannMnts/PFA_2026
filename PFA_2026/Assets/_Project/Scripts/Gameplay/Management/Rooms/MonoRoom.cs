@@ -25,7 +25,8 @@ namespace Naussilus.Gameplay
         public ManagementPhase CurrentPhase { get; private set; }
         
         private SelectActionForRoom selectActionForRoom;
-        
+        private CurrentlyInAction currentlyInAction;
+
 
         protected override void OnPhaseBegin(ManagementPhase phase)
         {
@@ -40,6 +41,12 @@ namespace Naussilus.Gameplay
         {
             CurrentPhase = null;
             phase.OnRoomSelected -= TrySelectRoom;
+            
+            if (selectActionForRoom != null && selectActionForRoom.IsRunning())
+                selectActionForRoom.Cancel();
+            
+            if (currentlyInAction != null && currentlyInAction.IsRunning())
+                currentlyInAction.Cancel();
             
             base.OnPhaseEnd(phase);
         }
@@ -59,7 +66,7 @@ namespace Naussilus.Gameplay
                 return;
             
 
-            if (selectActionForRoom != null && selectActionForRoom.CurrentRoom == Room)
+            if (selectActionForRoom != null && selectActionForRoom.IsRunning() && selectActionForRoom.CurrentRoom == Room)
             {
                 selectActionForRoom.Cancel();
                 selectActionForRoom = null;
@@ -67,7 +74,7 @@ namespace Naussilus.Gameplay
 
             if (Room.IsInCountdown)
             {
-                var currentlyInAction = new CurrentlyInAction(Room, CineCamera);
+                currentlyInAction = new CurrentlyInAction(Room, CineCamera);
                 currentlyInAction.RunAndForget();
                 return;
             }

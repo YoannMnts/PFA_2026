@@ -52,6 +52,9 @@ namespace Naussilus.Gameplay
             Npc.OnAddedInSlot -= AddedInSlot;
             Npc.OnRemoveSlot -= RemoveSlot;
             
+            if(checkNpcPhase != null && checkNpcPhase.IsRunning())
+                checkNpcPhase.Cancel();
+            
             base.OnPhaseEnd(phase);
         }
 

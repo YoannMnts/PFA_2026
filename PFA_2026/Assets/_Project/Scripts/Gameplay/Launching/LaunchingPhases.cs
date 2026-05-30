@@ -1,6 +1,8 @@
 ﻿using System;
 using Helteix.Tools.Phases;
 using Naussilus.Core.Managers;
+using Naussilus.Core.Managers.Npcs;
+using Naussilus.Core.Managers.Rooms;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
@@ -24,10 +26,14 @@ namespace Naussilus.Gameplay
         
         private void Start()
         {
-            PhaseLifetime();
+            DefaultSlotManager.Init();
+            NpcManager.Init();
+            EventManager.Init();
+            RoomManager.Init();
+            PhaseLifecycle();
         }
 
-        private async void PhaseLifetime()
+        private async void PhaseLifecycle()
         {
             try
             {
@@ -71,7 +77,6 @@ namespace Naussilus.Gameplay
 
         private async Awaitable PlayerSwitch()
         {
-            EventManager.Init();
             var playerSwitch = new PlayerSwitch();
             await playerSwitch.Run();
         }

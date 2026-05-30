@@ -25,6 +25,8 @@ namespace Naussilus.Gameplay
 
         private SelectActionForRoom current;
         private ActionPoint currentActionPoint;
+        private FillCategory fillCategory;
+
         private void Start()
         {
             group.Hide();
@@ -71,6 +73,9 @@ namespace Naussilus.Gameplay
                 controller.PlayerCamera.PlayerCam.SwitchToThisCamera();
             }
 
+            if (fillCategory != null && fillCategory.IsRunning())
+                fillCategory.Cancel();    
+
             base.OnPhaseEnd(phase);
         }
 
@@ -103,7 +108,7 @@ namespace Naussilus.Gameplay
             
                 roomActionUIList.Disconnect();
                 cancelButton.onClick.RemoveAllListeners();
-                var fillCategory = new FillCategory(current.Choices[index]);
+                fillCategory = new FillCategory(current.Choices[index]);
                 var result = await fillCategory.Run();
             
                 if (!result)

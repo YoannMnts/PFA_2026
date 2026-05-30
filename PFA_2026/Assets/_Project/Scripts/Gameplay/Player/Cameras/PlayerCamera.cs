@@ -94,6 +94,7 @@ namespace Naussilus.Gameplay
 
         public void OnPhaseBegin(ManagementPhase phase)
         {
+            playerCam.CineCamera.Lens.OrthographicSize = maxZoom;
             playerCam.SwitchToThisCamera();
             
             if (gameObject.TryGetService(out PlayerController playerController))
