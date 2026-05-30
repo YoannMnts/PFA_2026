@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7a7e182f2048cdb736837041d3449c, type: 3}
   m_Name: DiningRoom_S8
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomSlotPositionData
-  <Position>k__BackingField: {x: -0.202, y: -1.044, z: 0}
+  <Position>k__BackingField: {x: -0.2, y: -1.032, z: 0}
   <Expression>k__BackingField: {fileID: 11400000, guid: 15b062007050714468a8baa070a03cfa, type: 2}
   sortingLayerName: NpcForeground
   <OrderInLayer>k__BackingField: 0
   <RandomFlip>k__BackingField: 0
-  <Flip>k__BackingField: 1
+  <Flip>k__BackingField: 0
   <IsDefaultSlotFor>k__BackingField:
   - {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
   <Commentary>k__BackingField: Chores

@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7a7e182f2048cdb736837041d3449c, type: 3}
   m_Name: Storage_S2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomSlotPositionData
-  <Position>k__BackingField: {x: 0.329, y: -2.382, z: 0}
+  <Position>k__BackingField: {x: 0.188, y: -2.292, z: 0}
   <Expression>k__BackingField: {fileID: 11400000, guid: 15b062007050714468a8baa070a03cfa, type: 2}
   sortingLayerName: NpcMidground
   <OrderInLayer>k__BackingField: 0
   <RandomFlip>k__BackingField: 0
   <Flip>k__BackingField: 1
-  <Commentary>k__BackingField: 
+  <IsDefaultSlotFor>k__BackingField: []
+  <Commentary>k__BackingField: 'Stealing
+
+'

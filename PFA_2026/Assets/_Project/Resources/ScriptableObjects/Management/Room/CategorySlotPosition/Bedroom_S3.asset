@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7a7e182f2048cdb736837041d3449c, type: 3}
   m_Name: Bedroom_S3
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomSlotPositionData
-  <Position>k__BackingField: {x: -3.756, y: -0.31, z: 0}
+  <Position>k__BackingField: {x: -3.785, y: -0.291, z: 0}
   <Expression>k__BackingField: {fileID: 11400000, guid: 619228f8cc32d4b46bcd641607a8c10d, type: 2}
-  sortingLayerName: NpcMidground
+  sortingLayerName: NpcBackground
   <OrderInLayer>k__BackingField: 0
   <RandomFlip>k__BackingField: 0
   <Flip>k__BackingField: 1

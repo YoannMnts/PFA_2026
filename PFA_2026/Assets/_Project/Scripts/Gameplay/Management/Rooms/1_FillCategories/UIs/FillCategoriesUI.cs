@@ -88,12 +88,13 @@ namespace Naussilus.Gameplay
         }
 
 
-        public void Cancel()
+        public async void Cancel()
         {
             if (ButtonFeedbacksManager.instance != null)
             {
                 ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(closeButton.gameObject);
             }
+            await Awaitable.WaitForSecondsAsync(0.2f);
             if (current == null)
                 return;
             
@@ -142,6 +143,7 @@ namespace Naussilus.Gameplay
                 {
                     ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(applyButton.gameObject);
                 }
+                await Awaitable.WaitForSecondsAsync(0.2f);
                 for (int i = 0; i < current.Categories.Length; i++)
                 {
                     var category = current.Categories[i];

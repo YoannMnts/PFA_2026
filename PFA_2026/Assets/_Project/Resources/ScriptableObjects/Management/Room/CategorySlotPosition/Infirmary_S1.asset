@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7a7e182f2048cdb736837041d3449c, type: 3}
   m_Name: Infirmary_S1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomSlotPositionData
-  <Position>k__BackingField: {x: 3.421, y: -0.486, z: 0}
+  <Position>k__BackingField: {x: 3.297, y: -0.731, z: 0}
   <Expression>k__BackingField: {fileID: 11400000, guid: da3d7a2fb3a53834bbae0c5964ac676a, type: 2}
   sortingLayerName: NpcMidground
   <OrderInLayer>k__BackingField: 0
-  <RandomFlip>k__BackingField: 0
-  <Flip>k__BackingField: 1
+  <RandomFlip>k__BackingField: 1
+  <Flip>k__BackingField: 0
   <IsDefaultSlotFor>k__BackingField:
   - {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
   <Commentary>k__BackingField: SittingDesk

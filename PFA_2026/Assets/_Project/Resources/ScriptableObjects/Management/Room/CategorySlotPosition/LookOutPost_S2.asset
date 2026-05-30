@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7a7e182f2048cdb736837041d3449c, type: 3}
   m_Name: LookOutPost_S2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomSlotPositionData
-  <Position>k__BackingField: {x: 5.127, y: -0.882, z: 0}
+  <Position>k__BackingField: {x: 5.034, y: -0.64, z: 0}
   <Expression>k__BackingField: {fileID: 11400000, guid: da3d7a2fb3a53834bbae0c5964ac676a, type: 2}
   sortingLayerName: NpcMidground
   <OrderInLayer>k__BackingField: 0

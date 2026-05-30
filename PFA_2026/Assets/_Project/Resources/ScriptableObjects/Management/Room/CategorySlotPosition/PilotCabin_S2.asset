@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7a7e182f2048cdb736837041d3449c, type: 3}
   m_Name: PilotCabin_S2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomSlotPositionData
-  <Position>k__BackingField: {x: -4.029, y: 1.526, z: 0}
+  <Position>k__BackingField: {x: -3.863, y: 1.856, z: 0}
   <Expression>k__BackingField: {fileID: 11400000, guid: da3d7a2fb3a53834bbae0c5964ac676a, type: 2}
   sortingLayerName: RoomMidground
   <OrderInLayer>k__BackingField: 0

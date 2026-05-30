@@ -5,7 +5,7 @@ using Naussilus.Gameplay.Buttons;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Naussilus.Gameplay
+namespace Naussilus.Gameplay.PlayerSwitchs.UIs
 {
     public class PlayerSwitchUI : MonoPhaseListener<PlayerSwitch>
     {
