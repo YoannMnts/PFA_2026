@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: e25ec8ca67d3f6548bfe7afabb90ca90
+guid: c3d1fa9c3c22afd4f928ea6f9e5b3e6c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1117040116369085570
-    second: Restroom_Painting_0
+      213: 7442295036115100719
+    second: Restroom_WallPainting_0
   - first:
-      213: -6452323579278149774
-    second: Restroom_Painting_1
-  - first:
-      213: 7686857793179091701
-    second: Restroom_Painting_2
-  - first:
-      213: 232492143331765087
-    second: Restroom_Painting_3
-  - first:
-      213: -3109137238946872496
-    second: Restroom_Painting_4
+      213: -2688293981444484591
+    second: Restroom_WallPainting_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -89,7 +80,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -108,46 +99,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Restroom_Painting_0
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 379
-        width: 198
-        height: 99
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2845a084116808f00800000000000000
-      internalID: 1117040116369085570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Restroom_Painting_1
+      name: Restroom_WallPainting_0
       rect:
         serializedVersion: 2
         x: 657
@@ -162,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 277bf39f3edb476a0800000000000000
-      internalID: -6452323579278149774
+      spriteID: f242b4587e7584760800000000000000
+      internalID: 7442295036115100719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Restroom_Painting_2
+      name: Restroom_WallPainting_1
       rect:
         serializedVersion: 2
         x: 794
@@ -184,52 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f20269af643daa60800000000000000
-      internalID: 7686857793179091701
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Restroom_Painting_3
-      rect:
-        serializedVersion: 2
-        x: 828
-        y: 306
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f5beb506f5af93300800000000000000
-      internalID: 232492143331765087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Restroom_Painting_4
-      rect:
-        serializedVersion: 2
-        x: 869
-        y: 308
-        width: 17
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 05302a277202ad4d0800000000000000
-      internalID: -3109137238946872496
+      spriteID: 1125e28fdd241bad0800000000000000
+      internalID: -2688293981444484591
       vertices: []
       indices: 
       edges: []
@@ -238,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -248,11 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Restroom_Painting_0: 1117040116369085570
-      Restroom_Painting_1: -6452323579278149774
-      Restroom_Painting_2: 7686857793179091701
-      Restroom_Painting_3: 232492143331765087
-      Restroom_Painting_4: -3109137238946872496
+      Restroom_WallPainting_0: 7442295036115100719
+      Restroom_WallPainting_1: -2688293981444484591
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
