@@ -19,7 +19,7 @@ MonoBehaviour:
     - "Hey Cap\u2019taine. J\u2019ai l\u2019impression que Ynna nous cache quelque
       chose\u2026"
     - "Je pourrais pas dire quoi, mais elle \xE0 l\u2019air fausse, comme si elle
-      jouait un double jeu\r\n"
+      jouait un double jeu."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 25c8cc8393a2acc4b991ca80ea8ff9dd, type: 2}
   - {fileID: 11400000, guid: 6012463c56f28ba48b318c6c94f5f38a, type: 2}

@@ -18,7 +18,7 @@ MonoBehaviour:
     <Text>k__BackingField:
     - "Oui sans doute\u2026"
     - "Ce n\u2019est pas mon point fort de redonner confiance aux gens, j\u2019ai
-      plut\xF4t tendance \xE0 faire l\u2019inverse sans faire expr\xE8s\r\n"
+      plut\xF4t tendance \xE0 faire l\u2019inverse sans faire expr\xE8s.\r\n"
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: ebdf93451e7dcb043bcc302fe3e5983a, type: 2}
   - {fileID: 11400000, guid: 11703cbeab2ea80428f446191438721d, type: 2}

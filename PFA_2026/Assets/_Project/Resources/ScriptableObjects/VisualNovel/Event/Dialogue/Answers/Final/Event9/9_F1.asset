@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 9_F1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "La prochaine fois que tu le croise, dis lui clairement
-    que \xE7a ne te fait plus rire et qu\u2019il doit arr\xEAter\r\n"
+    que \xE7a ne te fait plus rire et qu\u2019il doit arr\xEAter.\r\n"
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}

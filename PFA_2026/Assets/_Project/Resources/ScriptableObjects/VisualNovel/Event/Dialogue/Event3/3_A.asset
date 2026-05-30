@@ -31,7 +31,7 @@ MonoBehaviour:
   - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
-    - "Moi je m\u2019en sors, c\u2019est pas compliqu\xE9 d\u2019enjamber"
+    - "Moi je m\u2019en sors, c\u2019est pas compliqu\xE9 d\u2019enjamber."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: a5f40f074107b8a408bcd5783380cf62, type: 2}
   - {fileID: 11400000, guid: dfa1454ff2fef414399d0c961cf40e55, type: 2}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 67_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Peu importe comment est ton corps, c\u2019est ta
-    personne qui compte\r\n"
+    personne qui compte.\r\n"
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}

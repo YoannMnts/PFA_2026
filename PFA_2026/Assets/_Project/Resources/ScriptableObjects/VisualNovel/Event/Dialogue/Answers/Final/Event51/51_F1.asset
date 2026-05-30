@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 51_F1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Va tout de suite lui r\xE9parer T\xE9a, ind\xE9pendamment
-    de ce que tu penses tu ne dois pas mettre en danger les autres"
+    de ce que tu penses tu ne dois pas mettre en danger les autres."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}

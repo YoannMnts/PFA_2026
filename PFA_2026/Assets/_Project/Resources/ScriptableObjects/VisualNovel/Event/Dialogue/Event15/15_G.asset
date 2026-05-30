@@ -23,7 +23,7 @@ MonoBehaviour:
     - "Je sais ce que c\u2019est de se faire d\xE9passer par ses \xE9motions, et
       si on me le reproche il y a pas de raison que \xE7a soit diff\xE9rent pour
       elle !"
-    - "C\u2019est elle qui \xE0 install\xE9 le ton de la dispute"
+    - "C\u2019est elle qui \xE0 install\xE9 le ton de la dispute."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 93b0e8c9762799b4d90aaa0120f217c3, type: 2}
   - {fileID: 11400000, guid: 3d39c75d65cc41e44bdfc8d6f6369dc0, type: 2}

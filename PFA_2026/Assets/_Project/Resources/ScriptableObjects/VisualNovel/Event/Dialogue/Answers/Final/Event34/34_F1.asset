@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 34_F1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Le plus important c\u2019est d\u2019\xEAtre pr\xE9sente,
-    m\xEAme si tu n\u2019as rien \xE0 dire"
+    m\xEAme si tu n\u2019as rien \xE0 dire."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}

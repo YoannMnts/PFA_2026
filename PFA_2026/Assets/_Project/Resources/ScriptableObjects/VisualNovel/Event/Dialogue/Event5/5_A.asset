@@ -17,7 +17,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
     - "Bonjour Capitaine. En fait, je n\u2019ai pas de tr\xE8s bonnes nouvelles mais\u2026"
-    - Je pense que Pam se fait du mal
+    - Je pense que Pam se fait du mal.
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 40ffee6617735f840aeae651c514fab8, type: 2}
   - {fileID: 11400000, guid: 2db51e762d1d05d4a8309a84f5bd90c0, type: 2}

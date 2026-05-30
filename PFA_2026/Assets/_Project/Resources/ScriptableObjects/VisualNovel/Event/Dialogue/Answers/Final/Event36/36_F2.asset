@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 36_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Son \xE9mission a l\u2019air amusante, personne ne
-    saura qu\u2019il parle de toi"
+    saura qu\u2019il parle de toi."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
@@ -83,7 +83,7 @@ MonoBehaviour:
         fen\xEAtre de la vigie, ce qui a cr\xE9\xE9 une grosse dispute avec Herlock.
         L\u2019\xE9quipage n\u2019a pas appr\xE9ci\xE9 cette action non plus. J\u2019aurais
         peut-\xEAtre d\xFB prendre la situation plus au s\xE9rieux."
-  <GUID>k__BackingField: 16251c52-d687-47d1-bd09-c84a0f873ff2
+  <GUID>k__BackingField: e4efb4ab-daeb-48a1-9f52-fee1f128a1e6
   references:
     version: 2
     RefIds:

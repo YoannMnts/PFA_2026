@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 11_F3
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Tu peux venir pour te plaindre autant que tu veux,
-    je suis la pour t\u2019\xE9couter"
+    je suis la pour t\u2019\xE9couter."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}

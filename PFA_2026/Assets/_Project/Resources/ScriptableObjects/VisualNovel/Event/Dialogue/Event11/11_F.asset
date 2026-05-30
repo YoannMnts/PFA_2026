@@ -18,7 +18,7 @@ MonoBehaviour:
     <Text>k__BackingField:
     - "Je ne sais pas\u2026"
     - "J\u2019ai juste besoin de me plaindre je crois, je sais qu\u2019il n\u2019y
-      a pas vraiment de solution"
+      a pas vraiment de solution."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 173e11137f5713d44959d28f9a071b8e, type: 2}
   - {fileID: 11400000, guid: fe44955f8f50a4f4fa3f1882c3c7df0b, type: 2}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 51_F3
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Tu as eu tort de lui parler comme \xE7a Camil, maintenant
-    tu dois en assumer les cons\xE9quences\r\n"
+    tu dois en assumer les cons\xE9quences.\r\n"
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}

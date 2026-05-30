@@ -18,13 +18,13 @@ MonoBehaviour:
     <Text>k__BackingField:
     - "Peut \xEAtre oui\u2026"
     - "Je suis encore nouvelle dans la piraterie, je n\u2019ai pas l\u2019habitude
-      que ce soit aussi\u2026D\xE9sordonn\xE9 on va dire"
+      que ce soit aussi\u2026D\xE9sordonn\xE9 on va dire."
   - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
     - "Eh bah il faut t\u2019y faire, c\u2019est comme \xE7a la vraie piraterie."
     - "C\u2019est vrai que ca doit te changer de tes grands navires de commer\xE7ants
-      pleins de bonnes mani\xE8res"
+      pleins de bonnes mani\xE8res."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 7bcb9fdb0d9df9e4080e3e1faf73fc18, type: 2}
   - {fileID: 11400000, guid: 5d8e784d52ece8744bf6c60ddd45eb98, type: 2}

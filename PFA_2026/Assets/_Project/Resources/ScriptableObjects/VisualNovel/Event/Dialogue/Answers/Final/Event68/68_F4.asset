@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 68_F4
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Je suis s\xFBr.e que tu as fait expr\xE8s Camil,
-    tu sera puni"
+    tu sera puni."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}

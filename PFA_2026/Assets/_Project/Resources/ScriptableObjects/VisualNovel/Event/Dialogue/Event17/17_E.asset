@@ -18,7 +18,7 @@ MonoBehaviour:
     <Text>k__BackingField:
     - "Plus que aga\xE7ant oui, je ne comprends pas pourquoi elle agit comme \xE7a
       avec moi."
-    - "Et c\u2019est vraiment qu\u2019avec moi qu\u2019elle est comme \xE7a"
+    - "Et c\u2019est vraiment qu\u2019avec moi qu\u2019elle est comme \xE7a."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 873f6f6f76ee71446b03807b708b75cf, type: 2}
   - {fileID: 11400000, guid: c6b648e2a769b654695e2c481ad67111, type: 2}

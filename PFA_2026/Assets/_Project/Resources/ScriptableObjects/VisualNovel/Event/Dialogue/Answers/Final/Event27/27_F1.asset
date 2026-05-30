@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 27_F1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Je suis d\xE9sol\xE9, je ne peux rien faire pour
-    son cas, tu dois t\u2019y habituer"
+    son cas, tu dois t\u2019y habituer."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}

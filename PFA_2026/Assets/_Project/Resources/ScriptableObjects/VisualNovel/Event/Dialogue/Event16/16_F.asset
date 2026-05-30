@@ -17,7 +17,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
     - "Je me le demande aussi, c\u2019est idiot."
-    - "Sans doute pour faire une blague, ou juste pour m'emb\xEAter ."
+    - "Sans doute pour faire une blague, ou juste pour m'emb\xEAter."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 2b9f11b15460fad408c79156a720af8a, type: 2}
   - {fileID: 11400000, guid: e5ae7fd9afbb94e429a7aab6481ee67f, type: 2}

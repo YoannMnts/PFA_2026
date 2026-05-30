@@ -21,7 +21,7 @@ MonoBehaviour:
     - "Oh c\u2019est une bonne id\xE9e !"
     - "On appelle \xE7a l\u2019effet placebo, et c\u2019est tr\xE8s efficace dans
       la plupart des cas."
-    - "Je vais essayer de faire \xE7a, ca devrait lui faire du bien\r\n"
+    - "Je vais essayer de faire \xE7a, ca devrait lui faire du bien.\r\n"
   <Effects>k__BackingField:
   - <IsEnumeration>k__BackingField: 0
     <CurrentNpcTarget>k__BackingField:

@@ -17,7 +17,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
     - "Sans doute oui, mais je ne suis pas s\xFBre qu\u2019il comprenne, il est jeune
-      et inexp\xE9riment\xE9 ."
+      et inexp\xE9riment\xE9."
   - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:

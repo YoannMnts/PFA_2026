@@ -20,7 +20,7 @@ MonoBehaviour:
     - "On \xE0 pris une photo de moi sans que je sache pendant que j\u2019\xE9tais
       \xE0 la salle de bain, et la plupart de l\u2019\xE9quipage \xE0 fini par la
       voir."
-    - "J\u2019ai du mal \xE0 m\u2019en remettre"
+    - "J\u2019ai du mal \xE0 m\u2019en remettre."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 126aa043dd7c01a4387410b2e84db6a0, type: 2}
   - {fileID: 11400000, guid: 33edfd11bf0fed941a2a9507c027c5e3, type: 2}

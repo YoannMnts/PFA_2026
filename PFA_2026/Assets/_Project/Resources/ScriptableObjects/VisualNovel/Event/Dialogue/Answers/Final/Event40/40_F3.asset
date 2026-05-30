@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6551f63f2e464eb39de211b4f9603e78, type: 3}
   m_Name: 40_F3
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
-  <ButtonText>k__BackingField: 'Il faut augmenter la cadence des moteurs
+  <ButtonText>k__BackingField: 'Il faut augmenter la cadence des moteurs.
 
 '
   <NpcText>k__BackingField:

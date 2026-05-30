@@ -17,7 +17,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
     - "Si \xE7a va\u2026C\u2019est juste que\u2026"
-    - "Je ne suis pas s\xFBre d'\xEAtre comme les autres"
+    - "Je ne suis pas s\xFBre d'\xEAtre comme les autres."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: a637164d69f4f8941a6ebdcae41052b4, type: 2}
   - {fileID: 11400000, guid: 7d93b41519e6b5c48b881db914824592, type: 2}

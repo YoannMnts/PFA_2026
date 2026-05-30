@@ -17,7 +17,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
     - "Non je ne crois pas\u2026Je ne suis pas aussi\u2026"
-    - Aussi sereine et confiante que les autres
+    - Aussi sereine et confiante que les autres.
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: cc952eecd9c65724c8a88bdc68519179, type: 2}
   - {fileID: 11400000, guid: a9021616476bb9749bc25a53cc9be766, type: 2}

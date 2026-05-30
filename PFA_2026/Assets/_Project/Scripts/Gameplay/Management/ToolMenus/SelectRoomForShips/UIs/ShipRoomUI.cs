@@ -32,11 +32,12 @@ namespace Naussilus.Gameplay
             button.onClick.RemoveAllListeners();
         }
 
-        public void OnClicked()
+        public async void OnClicked()
         {
             if (ButtonFeedbacksManager.instance != null)
             {
                 ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(button.gameObject);
+                await Awaitable.WaitForSecondsAsync(0.2f);
             }
             selectRoomForShipUI.ChooseRoom(currentRoom);
         }

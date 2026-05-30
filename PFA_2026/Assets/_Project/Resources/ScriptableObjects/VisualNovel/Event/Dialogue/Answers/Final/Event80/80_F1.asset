@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 80_F1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Garde \xE7a pour toi, on verra bien si les gens tombent
-    malade mais \xE9vitons de cr\xE9er la panique"
+    malade mais \xE9vitons de cr\xE9er la panique."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}

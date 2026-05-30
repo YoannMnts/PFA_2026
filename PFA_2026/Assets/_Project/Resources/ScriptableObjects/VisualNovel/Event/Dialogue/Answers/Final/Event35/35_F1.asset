@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 35_F1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Ses col\xE8res sont justifi\xE9es, il faut juste
-    faire plus attention \xE0 ne pas les d\xE9clencher"
+    faire plus attention \xE0 ne pas les d\xE9clencher."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}

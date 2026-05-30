@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: 33_F1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "C\u2019est normal de se construire une carapace,
-    il faut en sortir peu \xE0 peu pour gagner confiance"
+    il faut en sortir peu \xE0 peu pour gagner confiance."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - Vous croyez que je devrais ?
     - "Parfois j\u2019ai envie de me r\xE9v\xE9ler plus mais je n\u2019ose pas."
-  - <Npc>k__BackingField: {fileID: 0}
-    <Expression>k__BackingField: {fileID: 11400000, guid: eb209584d88ce37449f0c335ad8ba289, type: 2}
+  - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
+    <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
     - "J\u2019essaierais d\u2019y aller petit \xE0 petit, merci Capitaine."
     - "Et surtout, ne parlez de cet entretien \xE0 personne  !"

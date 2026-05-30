@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 61_F3
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Etre un pirate c\u2019est avant tout une question
-    de mentalit\xE9, pas d\u2019apparence"
+    de mentalit\xE9, pas d\u2019apparence."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}

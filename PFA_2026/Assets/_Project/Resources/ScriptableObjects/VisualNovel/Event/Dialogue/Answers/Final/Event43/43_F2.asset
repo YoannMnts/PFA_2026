@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 43_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Si elle ne veut pas t\u2019en parler, ne t\u2019en
-    pr\xE9occupe pas, elle t\u2019en parlera quand elle sera pr\xEAte "
+    pr\xE9occupe pas, elle t\u2019en parlera quand elle sera pr\xEAte."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}

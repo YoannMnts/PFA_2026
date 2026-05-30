@@ -25,7 +25,7 @@ MonoBehaviour:
   - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
     <Text>k__BackingField:
-    - "Si je ne les aies pas tr\xE8s vite, \xE7a va commencer \xE0 me saouler "
+    - "Si je ne les aies pas tr\xE8s vite, \xE7a va commencer \xE0 me saouler."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: aee0d3f1d571b8444aaf6f93924a8eb0, type: 2}
   - {fileID: 11400000, guid: bfe9a62485914cb4ab18c538ab8036d7, type: 2}

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
@@ -68,11 +68,11 @@ namespace Naussilus.Gameplay
             base.OnPhaseBegin(phase);
         }
 
-        protected override void OnPhaseEnd(FillCategory phase)
+        protected override async void OnPhaseEnd(FillCategory phase)
         {
             if (current != phase)
                 return;
-
+            
             current = null;
             categoryUIList.Disconnect();
             group.Hide();
@@ -98,8 +98,8 @@ namespace Naussilus.Gameplay
             if (ButtonFeedbacksManager.instance != null)
             {
                 ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(closeButton.gameObject);
+                await Awaitable.WaitForSecondsAsync(0.2f);
             }
-            await Awaitable.WaitForSecondsAsync(0.2f);
             if (current == null)
                 return;
             
@@ -150,8 +150,8 @@ namespace Naussilus.Gameplay
                 if (ButtonFeedbacksManager.instance != null)
                 {
                     ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(applyButton.gameObject);
+                    await Awaitable.WaitForSecondsAsync(0.2f);
                 }
-                await Awaitable.WaitForSecondsAsync(0.2f);
                 for (int i = 0; i < current.Categories.Length; i++)
                 {
                     var category = current.Categories[i];

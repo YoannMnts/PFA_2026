@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 71_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Tes paroles sont inadmissibles, tu sera de corv\xE9e
-    pendant une semaine pour la peine"
+    pendant une semaine pour la peine."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}

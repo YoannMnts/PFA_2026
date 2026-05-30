@@ -12,7 +12,7 @@ namespace Naussilus.Gameplay.Parrallax
         [SerializeField] private float oscillationSpeed;
         [SerializeField] private float oscillationInstensity;
         private float currentCurveProgress;
-        private bool isOscillating = true;
+        private bool isOscillating = false;
         private Vector3 basePosition;
 
         private void Awake()

@@ -17,7 +17,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - "Non, les effets du manque lui emp\xEAche de s\u2019en rendre compte, c\u2019est
-      pour \xE7a qu\u2019elle en arrive \xE0 la\r\n"
+      pour \xE7a qu\u2019elle en arrive \xE0 l\xE0.\r\n"
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 160b246de6a17034b9239f470f12e679, type: 2}
   - {fileID: 11400000, guid: e69e8d80788b2f946aae62bacc29c5f9, type: 2}

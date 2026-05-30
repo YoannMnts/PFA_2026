@@ -17,7 +17,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
     - "Je me sens humaine aussi, mais j\u2019en doute de plus en plus a force qu\u2019on
-      me r\xE9p\xE8te que ce n\u2019est pas le cas"
+      me r\xE9p\xE8te que ce n\u2019est pas le cas."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 8a84ff0821cef234ea4edd25f8aca491, type: 2}
   - {fileID: 11400000, guid: 072f8d3f4c830384b9d1c03465b55698, type: 2}

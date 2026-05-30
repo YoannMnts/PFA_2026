@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 41_F3
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Herlock , tu te trompes sur Ynna et sur les femmes
-    en g\xE9n\xE9ral, tu ne devrais pas \xEAtre aussi ferm\xE9"
+    en g\xE9n\xE9ral, tu ne devrais pas \xEAtre aussi ferm\xE9."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}

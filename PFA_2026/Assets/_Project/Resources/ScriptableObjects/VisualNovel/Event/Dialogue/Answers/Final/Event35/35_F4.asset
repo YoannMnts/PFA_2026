@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Puisque tu avais l\u2019air d\u2019avoir envie de
     l\u2019aider, tu devrais passer quelques temps avec elle pour l\u2019assister
-    dans ses t\xE2ches\r\n"
+    dans ses t\xE2ches.\r\n"
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}

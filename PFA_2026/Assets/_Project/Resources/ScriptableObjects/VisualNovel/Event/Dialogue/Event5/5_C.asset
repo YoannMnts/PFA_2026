@@ -17,7 +17,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
     - "Je pense qu\u2019elle se fait des entailles sur les bras, si ce n'est plus\u2026"
-    - "Je m\u2019inqui\xE8te pour elle"
+    - "Je m\u2019inqui\xE8te pour elle."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 2ef026d1f075b2e4b9b7afa219373288, type: 2}
   - {fileID: 11400000, guid: f9fbbea585ab1d141ad3601090b5d26c, type: 2}

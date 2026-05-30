@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 69_F1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Essaie juste d\u2019aller l\u2019\xE9couter, \xE7a
-    l\u2019aidera d\xE9j\xE0"
+    l\u2019aidera d\xE9j\xE0."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}

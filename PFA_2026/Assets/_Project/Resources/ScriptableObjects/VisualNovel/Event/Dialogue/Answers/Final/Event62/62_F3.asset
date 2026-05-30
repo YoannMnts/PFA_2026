@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 62_F3
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "La prochaine fois que ca arrive r\xE9pond lui que
-    tu ne veux pas qu\u2019elle te parle comme \xE7a, elle comprendra"
+    tu ne veux pas qu\u2019elle te parle comme \xE7a, elle ."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}

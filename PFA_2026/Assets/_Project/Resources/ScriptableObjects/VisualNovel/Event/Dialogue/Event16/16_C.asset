@@ -17,7 +17,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
     <Text>k__BackingField:
     - "Bah il n'y a pas d\u2019autres solutions, je suis s\xFBre de les avoir rang\xE9s."
-    - "Et j\u2019ai entendu des bruits m\xE9talliques cette nuit, c\u2019est suspect"
+    - "Et j\u2019ai entendu des bruits m\xE9talliques cette nuit, c\u2019est suspect."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 8b720d3d4cfaeaf42a42de9ede3910a1, type: 2}
   - {fileID: 11400000, guid: 6f8ba5a6460e53a4db334c1e3b56dbf6, type: 2}

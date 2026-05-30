@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 5_F1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Merci de m\u2019avoir pr\xE9venu, j\u2019irais lui
-    parler"
+    parler."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - "Merci Capitaine ! J\u2019esp\xE8re que vous arriverez \xE0 l\u2019aider\u2026"
-    - "Je pense qu\u2019elle \xE0 vraiment besoin qu\u2019on l\u2019\xE9coute"
+    - "Je pense qu\u2019elle \xE0 vraiment besoin qu\u2019on l\u2019\xE9coute."
   <Effects>k__BackingField:
   - <IsEnumeration>k__BackingField: 0
     <CurrentNpcTarget>k__BackingField:

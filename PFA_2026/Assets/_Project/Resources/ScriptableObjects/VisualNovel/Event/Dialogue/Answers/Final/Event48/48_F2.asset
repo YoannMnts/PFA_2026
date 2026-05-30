@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 48_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "L\u2019\xE9quipage va finir par se retourner contre
-    lui, il apprendra \xE0 ce moment la\r\n"
+    lui, il apprendra \xE0 ce moment la.\r\n"
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}

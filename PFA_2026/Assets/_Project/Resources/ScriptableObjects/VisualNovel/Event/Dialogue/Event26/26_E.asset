@@ -16,10 +16,8 @@ MonoBehaviour:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
-    - "Je ne crois pas vraiment en la d\xE9licatesse, parfois les gens ont besoin
-      d\u2019entendre des choses qui ne leur plaisent pas.Oui mais c\u2019est une
-      fausse solution, \xE7a va juste l\u2019isoler encore plus et elle aura encore
-      moins confiance."
+    - "Oui mais c\u2019est une fausse solution, \xE7a va juste l\u2019isoler encore
+      plus et elle aura encore moins confiance."
     - "C\u2019est exactement ce qu\u2019il ne faut pas faire."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: ebdf93451e7dcb043bcc302fe3e5983a, type: 2}

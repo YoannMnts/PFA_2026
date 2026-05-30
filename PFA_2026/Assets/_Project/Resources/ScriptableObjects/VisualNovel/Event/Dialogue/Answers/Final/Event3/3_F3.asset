@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 3_F3
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "La prochaine fois que \xE7a arrive, Jennie t\u2019aidera
-    \xE0 ranger tes affaires"
+    \xE0 ranger tes affaires."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}

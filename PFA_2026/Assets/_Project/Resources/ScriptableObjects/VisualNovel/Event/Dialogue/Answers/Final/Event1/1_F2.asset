@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Tu es la seule personne qui \xE0 le pouvoir de dire
-    qui tu es "
+    qui tu es."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
@@ -23,7 +23,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - "C\u2019est dur de se rappeler de \xE7a quand tout le monde te dit l\u2019inverse,
-      mais \xE7a me fait plaisir d\u2019entendre \xE7a"
+      mais \xE7a me fait plaisir d\u2019entendre \xE7a."
   <Effects>k__BackingField:
   - <IsEnumeration>k__BackingField: 0
     <CurrentNpcTarget>k__BackingField:

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 38_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Essaie de passer un peu de temps avec lui aujourd'hui
-    pour pas qu\u2019il se sente exclus\r\n"
+    pour pas qu\u2019il se sente exclus.\r\n"
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}

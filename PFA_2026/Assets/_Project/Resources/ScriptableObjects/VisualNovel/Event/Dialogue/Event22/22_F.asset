@@ -17,7 +17,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - "Je ne comptais pas attendre votre autorisation, mais je pr\xE9f\xE8rerais
-      trouver une solution pacifiste"
+      trouver une solution pacifiste."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 160b246de6a17034b9239f470f12e679, type: 2}
   - {fileID: 11400000, guid: e69e8d80788b2f946aae62bacc29c5f9, type: 2}

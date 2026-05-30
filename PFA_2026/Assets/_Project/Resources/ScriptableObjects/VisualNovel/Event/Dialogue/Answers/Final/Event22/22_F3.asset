@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: 22_F3
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Dans ce cas donne lui son m\xE9dicament, elle \xE0
-    l\u2019air d\u2019en avoir besoin"
+    l\u2019air d\u2019en avoir besoin."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - "Soit, je vais lui donner, mais je crains que \xE7a ne d\xE9t\xE9riore encore
       sa sant\xE9."
-    - "Je l'examinerais r\xE9guli\xE8rement pour voir ce qu\u2019il en est"
+    - "Je l'examinerais r\xE9guli\xE8rement pour voir ce qu\u2019il en est."
   <Effects>k__BackingField:
   - <IsEnumeration>k__BackingField: 0
     <CurrentNpcTarget>k__BackingField:

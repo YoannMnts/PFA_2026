@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 49_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Continues \xE0 prendre soin des autres et \xE0 \xEAtre
-    attentif"
+    attentif."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
@@ -21,7 +21,7 @@ MonoBehaviour:
     - "Bien s\xFBr !"
     - "J\u2019me sens responsable de ce p\u2019tit \xE9quipage, comptez sur moi pour
       essayer d\u2019faire quelque chose si j\u2019remarque que quelqu\u2019un est
-      pas dans son assiette .\r\n"
+      pas dans son assiette.\r\n"
   <Effects>k__BackingField:
   - <IsEnumeration>k__BackingField: 0
     <CurrentNpcTarget>k__BackingField:

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 25_F3
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Je pense que tu l\u2019a bless\xE9e la derni\xE8re
-    fois que tu lui \xE0 parl\xE9, alors tu devrais aller la rassurer "
+    fois que tu lui \xE0 parl\xE9, alors tu devrais aller la rassurer."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
@@ -23,7 +23,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
     - "Je sais que certaines personnes peuvent \xEAtre bless\xE9es par mes mots,
-      et je dois m\u2019excuser pour \xE7a"
+      et je dois m\u2019excuser pour \xE7a."
   <Effects>k__BackingField:
   - <IsEnumeration>k__BackingField: 0
     <CurrentNpcTarget>k__BackingField:

@@ -18,7 +18,7 @@ MonoBehaviour:
     <Text>k__BackingField:
     - "Bah oui je me suis \xE9nerv\xE9e !"
     - "Si elle aime pas ma mani\xE8re de faire, elle a qu\u2019a venir me parler
-      sur le moment au lieu de tout balancer d\u2019un coup\r\n"
+      sur le moment au lieu de tout balancer d\u2019un coup.\r\n"
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 93b0e8c9762799b4d90aaa0120f217c3, type: 2}
   - {fileID: 11400000, guid: 3d39c75d65cc41e44bdfc8d6f6369dc0, type: 2}

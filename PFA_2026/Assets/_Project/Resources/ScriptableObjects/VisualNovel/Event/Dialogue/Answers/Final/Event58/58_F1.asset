@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 58_F1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Jennie est responsable de piloter le navire, les
-    autres ont le droit d\u2019\xEAtre insatisfaits"
+    autres ont le droit d\u2019\xEAtre insatisfaits."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}

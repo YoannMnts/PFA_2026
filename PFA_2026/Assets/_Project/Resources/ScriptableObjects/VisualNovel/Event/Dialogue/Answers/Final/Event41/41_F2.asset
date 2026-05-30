@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 41_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Je ne peux rien faire pour vous, je n\u2019ai pas
-    assez de preuves pour faire quoi que ce soit"
+    assez de preuves pour faire quoi que ce soit."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
@@ -72,7 +72,7 @@ MonoBehaviour:
       - "L\u2019affaire entre Herlock et Ynna \xE0 l\u2019air de s\u2019\xEAtre dissip\xE9e.
         Je crois que parfois, il vaut mieux laisser couler, de toute fa\xE7on je
         pense qu\u2019Ynna avait r\xE9ellement gagn\xE9 la partie."
-  <GUID>k__BackingField: 16251c52-d687-47d1-bd09-c84a0f873ff2
+  <GUID>k__BackingField: 30e465bb-4d12-4ea6-9a4f-392f4c6c2102
   references:
     version: 2
     RefIds:

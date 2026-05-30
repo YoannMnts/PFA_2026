@@ -21,7 +21,7 @@ MonoBehaviour:
     - "\xE7a\u2026C\u2019est sympa, mais \xE0 force il est un peu dans mes pattes."
     - "Et parfois il tente des \u201Cavances\u201D si on peut appeler \xE7a comme
       \xE7a\u2026"
-    - "C\u2019est un peu ridicule honn\xEAtement"
+    - "C\u2019est un peu ridicule honn\xEAtement."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: be7066f4105e09343bd1add62d4688e8, type: 2}
   - {fileID: 11400000, guid: fdae800b95a473b4383e189be7a3cfe0, type: 2}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 27_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Tr\xE8s bien, j\u2019irais lui parler pour qu\u2019il
-    s\u2019investisse davantage"
+    s\u2019investisse davantage."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}

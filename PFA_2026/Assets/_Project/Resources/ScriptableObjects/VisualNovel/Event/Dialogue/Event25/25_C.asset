@@ -18,7 +18,7 @@ MonoBehaviour:
     <Text>k__BackingField:
     - "Vous croyez ? Je n\u2019ai rien dit de m\xE9chant pourtant."
     - "C\u2019est vrai que je suis franche, mais je dis toujours la v\xE9rit\xE9
-      que les gens ont besoin d\u2019entendre\r\n"
+      que les gens ont besoin d\u2019entendre.\r\n"
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 0283930b697949a4aafa01fb7adaa1c6, type: 2}
   - {fileID: 11400000, guid: 264f3eb556115c34aa7ff0cb032b6020, type: 2}

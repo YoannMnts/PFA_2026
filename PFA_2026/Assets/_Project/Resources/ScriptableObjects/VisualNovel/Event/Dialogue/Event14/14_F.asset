@@ -20,7 +20,7 @@ MonoBehaviour:
     - "La photo n\u2019existe plus, et ceux qui l\u2019ont vu finiront par oublier
       ce qu\u2019ils ont vu, alors je pr\xE9f\xE8re laisser couler."
     - "Cette photo laisse voir des\u2026marques assez intimes, que je pr\xE9f\xE8re
-      faire oublier\r\n"
+      faire oublier.\r\n"
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: d78b2400c3f3ee4459f56ae7562077da, type: 2}
   - {fileID: 11400000, guid: 23f9e8ea44bd34e4fb0b858a63673e34, type: 2}

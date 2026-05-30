@@ -24,7 +24,7 @@ MonoBehaviour:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
-    - "J\u2019ai pris un grand risque, et j\u2019ai peur de le regretter"
+    - "J\u2019ai pris un grand risque, et j\u2019ai peur de le regretter."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 0e4c3ea7198f4c446b364958553f6576, type: 2}
   - {fileID: 11400000, guid: 6eeb4773ed0f982409d9451521c8e422, type: 2}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 40_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Jetons quelques caisses de nourriture et des pi\xE8ces
-    de rechange pour nous all\xE9ger"
+    de rechange pour nous all\xE9ger."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}

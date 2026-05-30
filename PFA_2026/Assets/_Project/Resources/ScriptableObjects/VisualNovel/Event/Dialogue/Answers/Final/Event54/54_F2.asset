@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 54_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "C\u2019est fini maintenant, j\u2019esp\xE8re que
-    \xE7a ne t\u2019arrivera plus\r\n"
+    \xE7a ne t\u2019arrivera plus.\r\n"
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}

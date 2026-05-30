@@ -17,7 +17,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
     - "Je\u2026Je ne sais pas, je ne peux pas m'emp\xEAcher de me dire qu\u2019ils
-      ont peut \xEAtre raison "
+      ont peut \xEAtre raison. "
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 2e38ac03eda242747b5c298f553ff8b0, type: 2}
   - {fileID: 11400000, guid: ae91eb5d2bd167346a40fee1e5dbe334, type: 2}

@@ -18,7 +18,7 @@ MonoBehaviour:
     <Text>k__BackingField:
     - "Bah j\u2019aimerais bien mais\u2026"
     - "Le pauvre \xE0 d\xE9j\xE0 pas confiance en lui, je ne veux pas lui mettre
-      la honte quoi"
+      la honte quoi."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 711a878dc04659441bcbd1d480843375, type: 2}
   - {fileID: 11400000, guid: 0caec53390eba8e48b9f62083359169b, type: 2}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 55_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "On n\u2019est pas oblig\xE9 d\u2019\xEAtre ami avec
-    tout le monde, d\u2019autres personnes t\u2019appr\xE9cient"
+    tout le monde, d\u2019autres personnes t\u2019appr\xE9cient."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}

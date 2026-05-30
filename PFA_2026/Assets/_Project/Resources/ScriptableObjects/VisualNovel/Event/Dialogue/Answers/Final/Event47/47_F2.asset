@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 47_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: 'Je vais la convaincre de travailler moins et de se
-    reposer
+    reposer.
 
 '
   <NpcText>k__BackingField:

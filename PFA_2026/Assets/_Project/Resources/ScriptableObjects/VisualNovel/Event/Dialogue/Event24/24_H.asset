@@ -31,7 +31,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
     <Text>k__BackingField:
     - "Penser \xE0 elle c\u2019est ce qui m\u2019aide \xE0 tenir dans mes moments
-      de solitude, m\xEAme si je ne peux pas l'appeler tr\xE8s souvent\r\n"
+      de solitude, m\xEAme si je ne peux pas l'appeler tr\xE8s souvent.\r\n"
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 991954de8a317b540b069279851ef156, type: 2}
   - {fileID: 11400000, guid: e05f1f968698f0b438066bbebc767125, type: 2}

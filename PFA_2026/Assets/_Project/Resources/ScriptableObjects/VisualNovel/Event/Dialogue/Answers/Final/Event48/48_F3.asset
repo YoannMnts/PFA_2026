@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 48_F3
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: 'Je te donne la permission de le corriger quand ces
-    situations arrivent
+    situations arrivent.
 
 '
   <NpcText>k__BackingField:

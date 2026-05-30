@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 2_F1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "La prochaine fois que cela arrive, dis lui sur le
-    moment que \xE7a te blesse, pour qu\u2019elle puisse se corriger"
+    moment que \xE7a te blesse, pour qu\u2019elle puisse se corriger."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}

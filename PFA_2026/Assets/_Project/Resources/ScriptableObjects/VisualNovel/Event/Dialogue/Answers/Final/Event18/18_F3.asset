@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 18_F3
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "La prochaine fois qu\u2019il fait \xE7a, fait lui
-    regretter ses paroles"
+    regretter ses paroles."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}

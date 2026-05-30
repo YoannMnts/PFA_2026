@@ -18,7 +18,7 @@ MonoBehaviour:
     <Text>k__BackingField:
     - "Il faut l\u2019arr\xEAter pendant quelques heures."
     - "Mais il faudrait s\u2019arr\xEAter dans un port pour \xE7a, voler avec un
-      moteur en moins est tr\xE8s risqu\xE9 sur un navire de cette taille\r\n"
+      moteur en moins est tr\xE8s risqu\xE9 sur un navire de cette taille.\r\n"
   - <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
@@ -28,7 +28,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - "Ce navire a deux moteurs pour ce genre de situations, mais \xE7a reste une
-      solution d\u2019urgence, il vaut mieux s\u2019arr\xEAter\r\n"
+      solution d\u2019urgence, il vaut mieux s\u2019arr\xEAter.\r\n"
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 4a58e2d5db07e7147bf50dde25c677a2, type: 2}
   - {fileID: 11400000, guid: 8c8f945a964f4644cb9e3a8ef6f8f3b0, type: 2}

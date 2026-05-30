@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 11_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Calme toi, ce n\u2019est pas si grave, il faut apprendre
-    \xE0 vivre en communaut\xE9"
+    \xE0 vivre en communaut\xE9."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
@@ -21,7 +21,7 @@ MonoBehaviour:
     - "Je sais vivre en communaut\xE9, je n\u2019ai jamais \xE9t\xE9 tranquille de
       toute ma vie, personne ne sait mieux que moi vous pouvez me croire !"
     - "C\u2019est juste que parfois les autres nous poussent \xE0 bout, c\u2019est
-      in\xE9vitable"
+      in\xE9vitable."
   <Effects>k__BackingField:
   - <IsEnumeration>k__BackingField: 0
     <CurrentNpcTarget>k__BackingField:

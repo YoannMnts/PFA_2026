@@ -17,7 +17,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: 3973df86522e4b743879172e3518e737, type: 2}
     <Text>k__BackingField:
     - "Il n\u2019y a nul part ou se d\xE9tendre, ou que je sois il y a quelqu\u2019un
-      pour me casser les pieds"
+      pour me casser les pieds."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 173e11137f5713d44959d28f9a071b8e, type: 2}
   - {fileID: 11400000, guid: fe44955f8f50a4f4fa3f1882c3c7df0b, type: 2}

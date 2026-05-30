@@ -18,7 +18,7 @@ MonoBehaviour:
     <Text>k__BackingField:
     - Bah vous ne voyez pas ce que je veux dire ?
     - "Elle \xE0 toujours l\u2019air d\u2019avoir quelque chose derri\xE8re la t\xEAte,
-      je ne ressent pas de sinc\xE9rit\xE9 chez elle3\r\n"
+      je ne ressent pas de sinc\xE9rit\xE9 chez elle.\r\n"
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: d669ff764ed7d5145bc7198a83669a06, type: 2}
   - {fileID: 11400000, guid: 69892a2f99825124cbaac25ee5a8d35b, type: 2}

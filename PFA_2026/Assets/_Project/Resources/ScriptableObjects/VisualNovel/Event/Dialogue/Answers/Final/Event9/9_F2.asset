@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 9_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Si il est si influen\xE7able, tu peux aller demander
-    \xE0 Herlock de lui faire comprendre que ce n\u2019est plus dr\xF4le"
+    \xE0 Herlock de lui faire comprendre que ce n\u2019est plus dr\xF4le."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}

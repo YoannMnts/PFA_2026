@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 5_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Je compte sur toi pour veiller sur elle dans ce cas,
-    tu as l\u2019air d\u2019\xEAtre proche d\u2019elle"
+    tu as l\u2019air d\u2019\xEAtre proche d\u2019elle."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}

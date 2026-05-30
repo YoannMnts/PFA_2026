@@ -19,7 +19,7 @@ MonoBehaviour:
     - "Et bien, si, mais on prend le risque de rencontrer des navires de la s\xE9curit\xE9
       a\xE9rienne..."
     - "J\u2019ai d\xE9j\xE0 pilot\xE9 \xE0 travers des temp\xEAtes, m\xEAme si c'\xE9tait
-      des navires diff\xE9rents"
+      des navires diff\xE9rents."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: cbdc2c4cec2dffd4d9d0a6ca72e585f0, type: 2}
   - {fileID: 11400000, guid: 0a30043e8097b014d8d4a6ca6f88e2a1, type: 2}

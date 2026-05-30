@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 44_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Je pense que vous avez tout les deux eu tort, mais
-    tu dois t\u2019excuser en premier"
+    tu dois t\u2019excuser en premier."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}

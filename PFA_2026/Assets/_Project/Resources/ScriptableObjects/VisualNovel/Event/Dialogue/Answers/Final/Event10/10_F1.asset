@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: 10_F1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Il faut l'\xE9viter, c\u2019est trop dangereux de
-    passer \xE0 travers"
+    passer \xE0 travers."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
     - "Oh\u2026Je pensais que vous auriez confiance en mes capacit\xE9s\u2026"
     - "Mais d\u2019accord, contournons la temp\xEAte si vous pensez que c\u2019est
-      mieux"
+      mieux."
   <Effects>k__BackingField:
   - <IsEnumeration>k__BackingField: 0
     <CurrentNpcTarget>k__BackingField:

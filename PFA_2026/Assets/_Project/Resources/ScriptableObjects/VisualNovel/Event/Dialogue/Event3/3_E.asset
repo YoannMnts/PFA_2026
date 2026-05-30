@@ -22,7 +22,7 @@ MonoBehaviour:
     <Text>k__BackingField:
     - "Oh \xE7a va, je suis m\xEAme pas en train de crier !"
     - "Moi aussi j\u2019ai le droit de dire ce qui me d\xE9range, et la c\u2019est
-      elle qui me d\xE9range\r\n"
+      elle qui me d\xE9range.\r\n"
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 7bcb9fdb0d9df9e4080e3e1faf73fc18, type: 2}
   - {fileID: 11400000, guid: 5d8e784d52ece8744bf6c60ddd45eb98, type: 2}

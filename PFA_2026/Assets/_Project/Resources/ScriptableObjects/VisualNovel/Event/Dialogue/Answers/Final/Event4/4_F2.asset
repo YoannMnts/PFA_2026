@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: 4_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Si tu doutes, c\u2019est peut \xEAtre un signe qu\u2019il
-    faut t\u2019\xE9couter"
+    faut t\u2019\xE9couter."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 368af27e801a8f643a3763179d93db07, type: 2}
     <Text>k__BackingField:
-    - " Ah\u2026Vous croyez ? Peut \xEAtre que j\u2019ai vraiment eu tort au final"
+    - " Ah\u2026Vous croyez ? Peut \xEAtre que j\u2019ai vraiment eu tort au final."
     - "Je me dis souvent que ce ne sont que des peurs insens\xE9es\u2026"
     - "Mais peut \xEAtre que tout est vrai !"
   <Effects>k__BackingField:

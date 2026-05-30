@@ -22,7 +22,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
     - "C\u2019est les effets du manque qui parlent, elle ne pense pas ce qu\u2019elle
-      dit"
+      dit."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: cc2ae2eaccdfa8f46967e85a52eb223d, type: 2}
   - {fileID: 11400000, guid: d018d4d68bd256946947063fdfc58992, type: 2}

@@ -18,7 +18,7 @@ MonoBehaviour:
     <Text>k__BackingField:
     - "Bien s\xFBr qu\u2019elle me met mal \xE0 l\u2019aise !"
     - "Non seulement c\u2019est une photo intime, mais en plus elle laisse voir\u2026"
-    - "Des cicatrices que je pr\xE9f\xE9rerais laisser cach\xE9es\r\n"
+    - "Des cicatrices que je pr\xE9f\xE9rerais laisser cach\xE9es.\r\n"
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: d78b2400c3f3ee4459f56ae7562077da, type: 2}
   - {fileID: 11400000, guid: 23f9e8ea44bd34e4fb0b858a63673e34, type: 2}

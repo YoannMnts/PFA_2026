@@ -21,7 +21,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
     - " J'essaierai de faire au mieux\u2026"
-    - "C\u2019est vrai que je n\u2019ai pas l\u2019habitude de ce genre de navires"
+    - "C\u2019est vrai que je n\u2019ai pas l\u2019habitude de ce genre de navires."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: cbdc2c4cec2dffd4d9d0a6ca72e585f0, type: 2}
   - {fileID: 11400000, guid: 0a30043e8097b014d8d4a6ca6f88e2a1, type: 2}

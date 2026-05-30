@@ -21,7 +21,7 @@ MonoBehaviour:
     - "Sur cette photo, en plus d\u2019\xEAtre d\xE9nud\xE9e, c\u2019est une partie
       de mon corps avec des cicatrices que\u2026"
     - "Je pr\xE9f\xE8re laisser cach\xE9es, alors forc\xE9ment j\u2019ai peur qu\u2019on
-      me fasse des reflexions dessus\r\n"
+      me fasse des reflexions dessus.\r\n"
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: d78b2400c3f3ee4459f56ae7562077da, type: 2}
   - {fileID: 11400000, guid: 23f9e8ea44bd34e4fb0b858a63673e34, type: 2}

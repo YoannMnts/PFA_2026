@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 77_F1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Garde \xE7a pour toi \xE0 partir de maintenant, si
-    elle finit par l\u2019apprendre \xE7a va mal se passer"
+    elle finit par l\u2019apprendre \xE7a va mal se passer."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}

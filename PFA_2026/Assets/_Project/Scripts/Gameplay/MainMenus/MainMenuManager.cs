@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using Naussilus.Gameplay.Buttons;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,37 +10,49 @@ namespace Naussilus.Gameplay
     {
         
         [SerializeField] GameObject CreditsMenu;
-        
-        public void Play(int playerNumber, GameObject buttonClicked)
+
+        private void Awake()
         {
-            StartCoroutine(Launch(1,buttonClicked));
+            CreditsMenu.SetActive(false);
+        }
+
+        public void Play(int playerNumber)
+        {
+            StartCoroutine(Launch(1));
         }
         
-        public void Credits(GameObject buttonClicked, bool openCredits)
+        public void Credits(bool openCredits)
         {
             if (openCredits)
             {
-                StartCoroutine(Launch(2,buttonClicked));
+                StartCoroutine(Launch(2));
             }
             else
             {
-                StartCoroutine(Launch(3,buttonClicked));
+                StartCoroutine(Launch(3));
             }
             
         }
-        public void Exit(GameObject buttonClicked)
+        public void Exit()
         {
-            StartCoroutine(Launch(4,buttonClicked));
+            StartCoroutine(Launch(4));
         }
 
-        
-        IEnumerator Launch(int sceneCode, GameObject buttonClicked)
+        public void Feedback(GameObject buttonClicked)
         {
             if (ButtonFeedbacksManager.instance != null)
             {
                 ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(buttonClicked);
             }
-            yield return new WaitForSeconds(0.3f);
+        }
+
+        
+        IEnumerator Launch(int sceneCode)
+        {
+            if (ButtonFeedbacksManager.instance != null)
+            {
+                yield return new WaitForSeconds(0.3f);            
+            }
             if (sceneCode == 1)
             {
                 SceneManager.LoadScene(1);

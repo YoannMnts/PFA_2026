@@ -17,7 +17,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
     - "Ca n\u2019a pas march\xE9 du tout\u2026Je me sens encore plus moins \xE0 l\u2019aise
-      qu\u2019avant maintenant"
+      qu\u2019avant maintenant."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 09b0be6804594f14d8a36a829bca7f8f, type: 2}
   - {fileID: 11400000, guid: 8e459a5edc739a34c94354b7402179b8, type: 2}

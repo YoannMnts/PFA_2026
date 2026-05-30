@@ -26,7 +26,7 @@ MonoBehaviour:
     <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}
     <Text>k__BackingField:
     - "Ouais \xE0 la limite\u2026"
-    - "Mais je vois toujours pas en quoi c\u2019est compliqu\xE9 de passer \xE0 c\xF4t\xE9"
+    - "Mais je vois toujours pas en quoi c\u2019est compliqu\xE9 de passer \xE0 c\xF4t\xE9."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 7bcb9fdb0d9df9e4080e3e1faf73fc18, type: 2}
   - {fileID: 11400000, guid: 5d8e784d52ece8744bf6c60ddd45eb98, type: 2}

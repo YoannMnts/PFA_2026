@@ -18,7 +18,7 @@ MonoBehaviour:
     <Text>k__BackingField:
     - "Quand elle m'auscultait l\u2019autre jour, j\u2019ai vu des marques sur son
       bras\u2026"
-    - "Elle \xE0 vite cach\xE9, mais j\u2019ai clairement vu"
+    - "Elle \xE0 vite cach\xE9, mais j\u2019ai clairement vu."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: f43f954be3ae177439623afbadd5d8a9, type: 2}
   - {fileID: 11400000, guid: ae209eda543750a42a055d060add9cd5, type: 2}

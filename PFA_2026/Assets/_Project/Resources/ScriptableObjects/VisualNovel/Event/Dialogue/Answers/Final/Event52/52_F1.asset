@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 52_F1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: "Je dirais aux autres de ne plus t'emb\xEAter avec
-    \xE7a, tu pourras lire tranquillement "
+    \xE7a, tu pourras lire tranquillement."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 15a032d1f64921b49a6cec6c0a26887d, type: 2}

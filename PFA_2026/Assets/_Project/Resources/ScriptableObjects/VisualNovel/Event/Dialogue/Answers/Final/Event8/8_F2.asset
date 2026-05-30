@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 8_F2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
   <ButtonText>k__BackingField: 'Je vais aller lui parler pour lui faire comprendre
-    que ce ne sont pas des choses qui se disent
+    que ce ne sont pas des choses qui se disent.
 
 '
   <NpcText>k__BackingField:
@@ -25,7 +25,7 @@ MonoBehaviour:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: 3d35d0e1530830e42b12a5e80d0329dc, type: 2}
     <Text>k__BackingField:
-    - Merci de me comprendre
+    - Merci de me comprendre.
   <Effects>k__BackingField:
   - <IsEnumeration>k__BackingField: 0
     <CurrentNpcTarget>k__BackingField:
