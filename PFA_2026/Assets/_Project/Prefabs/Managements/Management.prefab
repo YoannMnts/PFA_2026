@@ -4111,6 +4111,10 @@ PrefabInstance:
       propertyPath: costText
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8273219011305638655, guid: 06120468445b869458ec8371cf4c8b66, type: 3}
+      propertyPath: actionPoint
+      value: 
+      objectReference: {fileID: 1811862519423614988}
     - target: {fileID: 8319151206187736386, guid: 06120468445b869458ec8371cf4c8b66, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -4274,6 +4278,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65069cce0cbb4754922dd83a029d0a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay.Management::_Project.Scripts.SelectActionForRoomUI
+--- !u!114 &1811862519423614988 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3448761393914069607, guid: 06120468445b869458ec8371cf4c8b66, type: 3}
+  m_PrefabInstance: {fileID: 3961322054766199403}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!224 &2677315847147354935 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1431808197928122716, guid: 06120468445b869458ec8371cf4c8b66, type: 3}

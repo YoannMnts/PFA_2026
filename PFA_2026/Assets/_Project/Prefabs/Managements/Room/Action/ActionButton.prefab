@@ -468,6 +468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay.Management::_Project.Scripts.RoomActionUI
   titleText: {fileID: 5152408025711255698}
+  actionPoint: {fileID: 571621242399563409}
 --- !u!1 &8638028842593378427
 GameObject:
   m_ObjectHideFlags: 0

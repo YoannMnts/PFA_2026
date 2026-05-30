@@ -3,6 +3,7 @@ using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managers;
 using Naussilus.Core.Sounds;
 using Naussilus.Gameplay.Buttons;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,8 @@ namespace Naussilus.Gameplay.PlayerSwitchs.UIs
     {
         [SerializeField] private CanvasGroup group;
         [SerializeField] private Button continueButton;
+
+        [SerializeField] private TMP_Text firstText;
 
         private PlayerSwitch playerSwitch;
         

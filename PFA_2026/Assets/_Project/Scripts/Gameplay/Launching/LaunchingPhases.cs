@@ -3,6 +3,7 @@ using Helteix.Tools.Phases;
 using Naussilus.Core.Managers;
 using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.Managers.Rooms;
+using Naussilus.Gameplay.RoleSelections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
@@ -37,6 +38,9 @@ namespace Naussilus.Gameplay
         {
             try
             {
+                var roleSelection = new RoleSelection();
+                await roleSelection.Run();
+                
                 var intro = new IntroductionPhase();
                 await intro.Run();
                 

@@ -12,6 +12,7 @@ namespace Naussilus.Gameplay
 
         [SerializeField]
         private TMP_Text titleText;
+        [SerializeField]
         private TMP_Text actionPoint;
         
 
