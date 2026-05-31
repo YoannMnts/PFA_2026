@@ -915,10 +915,10 @@ MonoBehaviour:
       - m_Target: {fileID: 2822276769174740081}
         m_TargetAssemblyTypeName: Naussilus.Gameplay.CheckNpcStateUI, Naussilus.Gameplay
         m_MethodName: Cancel
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 2540333662092272175}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1799,10 +1799,10 @@ MonoBehaviour:
       - m_Target: {fileID: 1260759322931786494}
         m_TargetAssemblyTypeName: Naussilus.Gameplay.SelectActionForRoomUI, Naussilus.Gameplay
         m_MethodName: Cancel
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 4357525339864042806}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2407,10 +2407,10 @@ MonoBehaviour:
       - m_Target: {fileID: 7903871416639619358}
         m_TargetAssemblyTypeName: Naussilus.Gameplay.SelectRoomForShipUI, Naussilus.Gameplay
         m_MethodName: Cancel
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 6004450438673481954}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2608,44 +2608,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1196259496953823269}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5397363149928844659}
-        m_TargetAssemblyTypeName: Naussilus.Gameplay.ActionConsequenceSummaryUI,
-          Naussilus.Gameplay
-        m_MethodName: Abort
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 235639351643778161}
-        m_TargetAssemblyTypeName: Naussilus.Gameplay.FillCategoriesUI, Naussilus.Gameplay
-        m_MethodName: Cancel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Naussilus.Gameplay.SelectActionForRoomUI, Naussilus.Gameplay
-        m_MethodName: Cancel
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 7319169161993140794}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &7785267491292556334
 GameObject:
   m_ObjectHideFlags: 0
