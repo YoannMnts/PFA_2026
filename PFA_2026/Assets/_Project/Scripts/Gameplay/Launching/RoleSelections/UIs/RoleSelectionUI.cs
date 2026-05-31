@@ -2,6 +2,7 @@
 using Naussilus.Core.Managers;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace Naussilus.Gameplay.RoleSelections
 {
@@ -9,13 +10,14 @@ namespace Naussilus.Gameplay.RoleSelections
     {
         [SerializeField] private CanvasGroup selectionGroup;
         [SerializeField] private CanvasGroup firstPlayerGroup;
+        [SerializeField] private Button continueButton;
         
         private RoleSelection currentPhase;
 
         private void Start()
         {
-            selectionGroup.Hide();
-            firstPlayerGroup.Hide();
+            //selectionGroup.Hide();
+            //firstPlayerGroup.Hide();
         }
 
         protected override void OnPhaseBegin(RoleSelection phase)
@@ -23,6 +25,7 @@ namespace Naussilus.Gameplay.RoleSelections
             currentPhase = phase;
             selectionGroup.Show();
             firstPlayerGroup.Show();
+            continueButton.onClick.AddListener(OnClick);
             base.OnPhaseBegin(phase);
         }
 
@@ -31,6 +34,7 @@ namespace Naussilus.Gameplay.RoleSelections
             currentPhase = null;
             selectionGroup.Hide();
             firstPlayerGroup.Hide();
+            continueButton.onClick.RemoveAllListeners();
             base.OnPhaseEnd(phase);
         }
 
@@ -39,7 +43,7 @@ namespace Naussilus.Gameplay.RoleSelections
             selectionGroup.Hide();
         }
 
-        public void OnClick()
+        private void OnClick()
         {
             currentPhase.SetResult(true);
         }

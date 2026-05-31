@@ -654,6 +654,7 @@ MonoBehaviour:
       m_Calls: []
   selectionGroup: {fileID: 1935431138969787247}
   firstPlayerGroup: {fileID: 4686059936033410915}
+  continueButton: {fileID: 8965901172296226923}
 --- !u!1 &7054453705427913933
 GameObject:
   m_ObjectHideFlags: 0
