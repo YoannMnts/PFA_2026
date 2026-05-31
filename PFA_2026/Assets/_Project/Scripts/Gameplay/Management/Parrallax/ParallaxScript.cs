@@ -2,17 +2,19 @@ using System;
 using System.Collections.Generic;
 using Helteix.Tools.Phases.Listeners;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Naussilus.Gameplay.Parrallax
 {
     public class ParallaxScript : MonoPhaseListener<ManagementPhase>
     {
-        [SerializeField] private List<Sprite> parallaxSprites;
+        [SerializeField] private List<SkyModelData> skyDatas;
         [SerializeField] private float parallaxSpeed;
         [SerializeField] private float distanceSlowMultiplier;
         private List<GameObject> parallaxLayers;
         [SerializeField] float imageSize;
         private bool backgroundMove = false;
+        private SpriteRenderer sky;
 
         private void Awake()
         {
@@ -23,6 +25,7 @@ namespace Naussilus.Gameplay.Parrallax
         protected override void OnPhaseBegin(ManagementPhase phase)
         {
             base.OnPhaseBegin(phase);
+            UpdateParallax();
             backgroundMove = true;
         }
 
@@ -43,7 +46,15 @@ namespace Naussilus.Gameplay.Parrallax
 
         private void CreateParallax()
         {
-            for (int i = 0; i < parallaxSprites.Count; i++)
+            SkyModelData selectedSky = skyDatas[Random.Range(0, skyDatas.Count-1)];
+            GameObject backgroundSky = new GameObject();
+            backgroundSky.transform.SetParent(transform);
+            backgroundSky.name = "Sky";
+            backgroundSky.AddComponent<SpriteRenderer>();
+            sky = backgroundSky.GetComponent<SpriteRenderer>();
+            sky.sortingLayerName = "Background";
+            sky.sprite = selectedSky.background;
+            for (int i = 0; i < selectedSky.clouds.Length; i++)
             {
                 GameObject parallaxParent = new GameObject();
                 parallaxParent.transform.SetParent(transform);
@@ -57,10 +68,25 @@ namespace Naussilus.Gameplay.Parrallax
                     parallaxImage.name = "Parallax" + i + "_" + j;
                     parallaxImage.AddComponent<SpriteRenderer>();
                     SpriteRenderer spriteRenderer = parallaxImage.GetComponent<SpriteRenderer>();
-                    spriteRenderer.sprite = parallaxSprites[i];
+                    spriteRenderer.sprite = selectedSky.clouds[i];
                     spriteRenderer.sortingLayerName = "Background";
                     spriteRenderer.sortingOrder = i;
                 }
+            }
+        }
+
+        private void UpdateParallax()
+        {
+            SkyModelData selectedSky = skyDatas[Random.Range(0, skyDatas.Count-1)];
+            sky.sprite = selectedSky.background;
+            foreach (GameObject parallax in parallaxLayers)
+            {
+                for (int i = 0; i < parallax.transform.childCount; i++)
+                {
+                    Transform currentParallax = parallax.transform.GetChild(i);
+                    currentParallax.gameObject.GetComponent<SpriteRenderer>().sprite = selectedSky.clouds[i];
+                }
+
             }
         }
 
