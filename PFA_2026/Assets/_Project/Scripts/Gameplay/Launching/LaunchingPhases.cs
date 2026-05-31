@@ -41,9 +41,6 @@ namespace Naussilus.Gameplay
                 var roleSelection = new RoleSelection();
                 await roleSelection.Run();
                 
-                var intro = new IntroductionPhase();
-                await intro.Run();
-                
                 for (int i = 0; i < maxDay; i++)
                 {
                     await SwitchDay(i);
