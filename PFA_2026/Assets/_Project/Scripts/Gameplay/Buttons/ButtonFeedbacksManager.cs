@@ -24,15 +24,18 @@ namespace Naussilus.Gameplay.Buttons
 
         public void ApplyButtonFeedbacks(GameObject button, float force = 1f)
         {
-            Debug.Log("ApplyButtonFeedbacks: " + button);
             if (currentButtons.Contains(button)==false)
             {
                 if (SoundDesignManager.instance != null)
                 {
                     SoundDesignManager.instance.PlaySound(SoundsEnum.Clic1);
                 }
-                currentButtons.Add(button);
-                button.transform.DOScale(baseButtonForce*button.transform.localScale*force, baseButtonDuration).SetEase(Ease.InOutSine).SetLoops(2, LoopType.Yoyo).OnComplete(() => Remove(button));
+
+                if (button.gameObject.activeInHierarchy)
+                {
+                   currentButtons.Add(button);
+                    button.transform.DOScale(baseButtonForce*button.transform.localScale*force, baseButtonDuration).SetEase(Ease.InOutSine).SetLoops(2, LoopType.Yoyo).OnComplete(() => Remove(button)); 
+                }
             }
         }
         

@@ -1,6 +1,8 @@
 ﻿using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
+using Naussilus.Core.Sounds;
+using Naussilus.Gameplay.Buttons;
 using UnityEngine;
 
 namespace Naussilus.Gameplay
@@ -26,7 +28,10 @@ namespace Naussilus.Gameplay
             Current = phase;
             group.Show();
             shipUIList.Connect(phase.CurrentRooms);
-            
+            if (SoundDesignManager.instance != null)
+            {
+                SoundDesignManager.instance.PlaySound(SoundsEnum.OpenTab);
+            }
             base.OnPhaseBegin(phase);
         }
 
@@ -34,7 +39,7 @@ namespace Naussilus.Gameplay
         {
             if (Current != phase)
                 return;
-            
+
             Current = null;
             shipUIList.Disconnect();
             group.Hide();
@@ -42,10 +47,21 @@ namespace Naussilus.Gameplay
             base.OnPhaseEnd(phase);
         }
 
-        public void Cancel()
+        public async void Cancel(GameObject button)
         {
             if (Current != null)
+            {
+                if (ButtonFeedbacksManager.instance != null)
+                {
+                    ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(button);
+                    await Awaitable.WaitForSecondsAsync(0.3f);
+                }
                 Current.SetResult(null);
+                if (SoundDesignManager.instance != null)
+                {
+                    SoundDesignManager.instance.PlaySound(SoundsEnum.OpenTab);
+                }
+            }
         }
 
         public void ChooseRoom(Room room)

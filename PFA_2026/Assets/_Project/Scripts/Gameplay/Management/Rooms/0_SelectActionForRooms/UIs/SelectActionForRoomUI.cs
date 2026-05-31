@@ -5,6 +5,8 @@ using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
+using Naussilus.Core.Sounds;
+using Naussilus.Gameplay.Buttons;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -43,7 +45,7 @@ namespace Naussilus.Gameplay
             roomDescription.text = Description;
             currentActionPoint = phase.CurrentActionPoint;
             roomActionUIList.Connect(phase.Choices);
-            cancelButton.onClick.AddListener(Cancel);
+            cancelButton.onClick.AddListener(() => Cancel(cancelButton.gameObject));
             boatMenuTransform.gameObject.SetActive(false);
 
             if (this.TryGetService(out PlayerController controller))
@@ -79,13 +81,21 @@ namespace Naussilus.Gameplay
             base.OnPhaseEnd(phase);
         }
 
-        public void Cancel()
+        public async void Cancel(GameObject button)
         {
             Debug.Log($"Cancelling {current}");
             if (current == null) 
                 return;
-            
+            if (ButtonFeedbacksManager.instance != null)
+            {
+                ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(button);
+                await Awaitable.WaitForSecondsAsync(0.3f);
+            }
             current.SetResult(false);
+            if (SoundDesignManager.instance != null)
+            {
+                SoundDesignManager.instance.PlaySound(SoundsEnum.OpenTab2);
+            }
         }
 
         public async void ChooseAction(RoomAction actionData)
@@ -116,7 +126,7 @@ namespace Naussilus.Gameplay
                     var actionGain = current.Choices[index].Cost;
                     currentActionPoint.TryAddOrRemove(actionGain);
                     roomActionUIList.Connect(current.Choices);
-                    cancelButton.onClick.AddListener(Cancel);
+                    cancelButton.onClick.AddListener(() => Cancel(cancelButton.gameObject));
                     return;
                 }
             

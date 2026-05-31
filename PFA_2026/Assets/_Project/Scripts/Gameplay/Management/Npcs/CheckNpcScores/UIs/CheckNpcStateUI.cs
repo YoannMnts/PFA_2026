@@ -2,7 +2,9 @@
 using Helteix.Singletons.SceneServices;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managers;
+using Naussilus.Core.Sounds;
 using Naussilus.Gameplay.Behaviors;
+using Naussilus.Gameplay.Buttons;
 using Naussilus.Gameplay.MentalStates;
 using TMPro;
 using UnityEngine;
@@ -38,6 +40,10 @@ namespace Naussilus.Gameplay
             titleName.text = phase.CurrentNpc.Name;
             current = phase;
             group.Show();
+            if (SoundDesignManager.instance != null)
+            {
+                SoundDesignManager.instance.PlaySound(SoundsEnum.OpenTab);
+            }
             //behaviorUIList.Connect(phase.NpcBehaviors);
             mentalStateUIList.Connect(phase.NpcMentalStates);
             relationshipButton.onClick.AddListener(ChangeToRelationship);
@@ -89,10 +95,27 @@ namespace Naussilus.Gameplay
             relationshipAnimator.SetTrigger(Switch);
         }
 
-        public void Cancel()
+        public async void Cancel(GameObject button)
         {
             if (current != null)
+            {
+                if (ButtonFeedbacksManager.instance != null)
+                {
+                    ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(button);
+                    await Awaitable.WaitForSecondsAsync(0.3f);
+                                                                                                 
+                    
+                }
                 current.SetResult(false);
+                if (SoundDesignManager.instance != null)
+                {
+                    SoundDesignManager.instance.PlaySound(SoundsEnum.OpenTab);
+                }
+            }
+                
+
+            
+            
         }
     }
 }
