@@ -1,5 +1,6 @@
 ﻿using Helteix.Tools.UI;
 using Naussilus.Core;
+using Naussilus.Gameplay.Buttons;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -38,8 +39,12 @@ namespace Naussilus.Gameplay
             selectButton.onClick.RemoveAllListeners();
         }
 
-        private void OnClick()
+        private async void OnClick()
         {
+            if (ButtonFeedbacksManager.instance != null)
+            {
+                await ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(selectButton.gameObject);
+            }
             selectIncidentUI.OnIncidentSelected(Current);
         }
     }

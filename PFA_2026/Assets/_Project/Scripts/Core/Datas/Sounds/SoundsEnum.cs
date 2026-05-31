@@ -13,5 +13,6 @@ namespace Naussilus.Core.Sounds
         EnterRoom,
         TimerEnd,
         Writing,
+        Knock,
     }
 }

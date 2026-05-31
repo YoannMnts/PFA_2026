@@ -55,8 +55,7 @@ namespace Naussilus.Gameplay.CategoriesSlots
         {
             if (ButtonFeedbacksManager.instance != null)
             {
-                ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(button.gameObject);
-                await Awaitable.WaitForSecondsAsync(3f);
+                await ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(button.gameObject);
             }
             categoryUI.OnClicked(Current.CurrentNpc);
             npcIcon.sprite = defaultBGIcon;

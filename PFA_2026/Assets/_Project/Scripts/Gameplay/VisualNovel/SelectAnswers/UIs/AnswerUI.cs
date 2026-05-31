@@ -34,9 +34,9 @@ namespace Naussilus.Gameplay
             button.onClick.RemoveAllListeners();
         }
 
-        private void OnButtonClicked()
+        private async void OnButtonClicked()
         {
-            ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(this.gameObject);
+            await ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(this.gameObject);
             selectAnswer.OnAnswerChoose(Current);
         }
     }

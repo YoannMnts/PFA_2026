@@ -26,7 +26,7 @@ namespace Naussilus.Gameplay.Movement
         {
             NPCSprite.transform.position = new Vector3(0, 0, 0);
             NPCSprite.transform.DOScale(burstScale, burstSpeed).SetEase(Ease.InOutSine).SetLoops(2, LoopType.Yoyo);
-            ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(this.gameObject);
+            ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(this.gameObject);
         }
 
         public void TPOut()
@@ -36,7 +36,7 @@ namespace Naussilus.Gameplay.Movement
 
         public void ButtonFeedBackTest()
         {
-            ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(this.gameObject);
+            ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(this.gameObject);
         }
 
         public void Stop()

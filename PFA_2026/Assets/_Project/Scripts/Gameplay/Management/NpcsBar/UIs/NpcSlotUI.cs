@@ -62,7 +62,7 @@ namespace Naussilus.Gameplay
         {
             if (ButtonFeedbacksManager.instance != null)
             {
-                ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(button.gameObject);
+                ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(button.gameObject);
             }
             Debug.Log($"Npc {Current.Name} clicked and category {Current?.CurrentCategory?.Name}");
             npcBar.OnClick(Current);

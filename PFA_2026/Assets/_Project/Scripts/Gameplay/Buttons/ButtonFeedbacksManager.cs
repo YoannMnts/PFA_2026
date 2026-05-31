@@ -22,7 +22,7 @@ namespace Naussilus.Gameplay.Buttons
             currentButtons = new List<GameObject>();
         }
 
-        public void ApplyButtonFeedbacks(GameObject button, float force = 1f)
+        public async Awaitable ApplyButtonsFeedbacks(GameObject button, float force = 1f)
         {
             if (currentButtons.Contains(button)==false)
             {
@@ -36,6 +36,8 @@ namespace Naussilus.Gameplay.Buttons
                    currentButtons.Add(button);
                     button.transform.DOScale(button.transform.localScale * (baseButtonForce * force), baseButtonDuration).SetEase(Ease.InOutSine).SetLoops(2, LoopType.Yoyo).OnComplete(() => Remove(button)); 
                 }
+
+                await Awaitable.WaitForSecondsAsync(0.3f);
             }
         }
         

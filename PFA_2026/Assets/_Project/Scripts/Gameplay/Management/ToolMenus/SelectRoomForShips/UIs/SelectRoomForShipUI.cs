@@ -53,8 +53,7 @@ namespace Naussilus.Gameplay
             {
                 if (ButtonFeedbacksManager.instance != null)
                 {
-                    ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(button);
-                    await Awaitable.WaitForSecondsAsync(0.3f);
+                    await ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(button);
                 }
                 Current.SetResult(null);
                 if (SoundDesignManager.instance != null)

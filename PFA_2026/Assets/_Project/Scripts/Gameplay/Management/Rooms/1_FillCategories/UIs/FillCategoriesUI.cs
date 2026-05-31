@@ -97,8 +97,7 @@ namespace Naussilus.Gameplay
         {
             if (ButtonFeedbacksManager.instance != null)
             {
-                ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(closeButton.gameObject);
-                await Awaitable.WaitForSecondsAsync(0.2f);
+                await ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(closeButton.gameObject);
             }
             if (current == null)
                 return;
@@ -149,8 +148,7 @@ namespace Naussilus.Gameplay
             {
                 if (ButtonFeedbacksManager.instance != null)
                 {
-                    ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(applyButton.gameObject);
-                    await Awaitable.WaitForSecondsAsync(0.2f);
+                    await ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(applyButton.gameObject);
                 }
                 for (int i = 0; i < current.Categories.Length; i++)
                 {

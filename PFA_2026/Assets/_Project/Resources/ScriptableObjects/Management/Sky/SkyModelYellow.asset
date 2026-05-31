@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fb7e7abe99985346beaefd951ff3ffc, type: 3}
-  m_Name: SkyModelBlue
+  m_Name: SkyModelYellow
   m_EditorClassIdentifier: Naussilus.Gameplay::Naussilus.Gameplay.Parrallax.SkyModelData
-  background: {fileID: 3389888852245297605, guid: 4ddb3bd3c85790f42aa545b0d2abaad4, type: 3}
+  background: {fileID: 21300000, guid: 58f735ac1d92af545ab7409f40617586, type: 3}
   clouds:
-  - {fileID: 21300000, guid: 7268cc1a8be75754f98bbb5d847b4a15, type: 3}
-  - {fileID: 21300000, guid: 651a7a91327d71a49bc115f7bd1a3df2, type: 3}
-  - {fileID: 21300000, guid: c0e4c3c62cf563b43bd9e23c46c77e0c, type: 3}
+  - {fileID: 21300000, guid: b001d28123aef524dba0b4257e927eba, type: 3}
+  - {fileID: 21300000, guid: d4648bca05e52844aad946323794ab13, type: 3}
+  - {fileID: 21300000, guid: dbbee4b3fd051c64792d34a894be6b5a, type: 3}

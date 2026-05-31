@@ -37,7 +37,7 @@ namespace Naussilus.Gameplay
         {
             if (ButtonFeedbacksManager.instance != null)
             {
-                ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(this.gameObject);
+                ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(this.gameObject);
             }
             selectActionForRoomUI.ChooseAction(Current);
         }

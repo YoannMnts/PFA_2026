@@ -106,11 +106,6 @@ namespace Naussilus.Gameplay
         private async Awaitable<bool> Management()
         {
             var managementPhase = new ManagementPhase(defaultActionPoint, timerDuration);
-            if (SoundDesignManager.instance != null)
-            {
-                SoundDesignManager.instance.VisualNovelMusic(false);
-                SoundDesignManager.instance.ManagmentMusic(true);
-            }
             PhaseResult<bool> result = await managementPhase.Run();
             
             return result;

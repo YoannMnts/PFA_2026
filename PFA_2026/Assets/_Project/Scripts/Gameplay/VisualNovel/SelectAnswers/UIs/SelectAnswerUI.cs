@@ -42,9 +42,8 @@ namespace Naussilus.Gameplay
             base.OnPhaseEnd(phase);
         }
 
-        public async Awaitable OnAnswerChoose(IAnswer answer)
+        public void OnAnswerChoose(IAnswer answer)
         {
-            await Awaitable.WaitForSecondsAsync(0.5f);
             current.SetResult(answer);
         }
     }

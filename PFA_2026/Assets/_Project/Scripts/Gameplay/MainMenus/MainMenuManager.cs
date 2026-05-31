@@ -42,7 +42,7 @@ namespace Naussilus.Gameplay
         {
             if (ButtonFeedbacksManager.instance != null)
             {
-                ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(buttonClicked);
+                ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(buttonClicked);
             }
         }
 

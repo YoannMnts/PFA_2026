@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb7e7abe99985346beaefd951ff3ffc, type: 3}
+  m_Name: SkyModelRed
+  m_EditorClassIdentifier: Naussilus.Gameplay::Naussilus.Gameplay.Parrallax.SkyModelData
+  background: {fileID: 21300000, guid: 58f735ac1d92af545ab7409f40617586, type: 3}
+  clouds:
+  - {fileID: 21300000, guid: b001d28123aef524dba0b4257e927eba, type: 3}
+  - {fileID: 21300000, guid: d4648bca05e52844aad946323794ab13, type: 3}
+  - {fileID: 21300000, guid: dbbee4b3fd051c64792d34a894be6b5a, type: 3}

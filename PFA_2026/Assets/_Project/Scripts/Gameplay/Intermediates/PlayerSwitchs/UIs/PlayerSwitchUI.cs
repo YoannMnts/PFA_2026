@@ -50,8 +50,7 @@ namespace Naussilus.Gameplay.PlayerSwitchs.UIs
             {
                 if (ButtonFeedbacksManager.instance != null)
                 {
-                    ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(continueButton.gameObject, 0.95f);
-                    await Awaitable.WaitForSecondsAsync(0.7f);
+                    await ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(continueButton.gameObject, 0.95f);
                 }
                 playerSwitch.SetResult(true);
             }

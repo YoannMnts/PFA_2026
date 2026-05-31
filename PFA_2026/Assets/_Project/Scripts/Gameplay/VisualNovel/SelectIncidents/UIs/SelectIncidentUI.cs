@@ -1,6 +1,7 @@
 ﻿using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
+using Naussilus.Core.Sounds;
 using UnityEngine;
 
 namespace Naussilus.Gameplay
@@ -30,6 +31,11 @@ namespace Naussilus.Gameplay
             currentPhase = phase;
             group.Show();
             incidentSlotUIList.Connect(CurrentIncidents);
+            if (SoundDesignManager.instance != null)
+            {
+                SoundDesignManager.instance.VisualNovelMusic(true);
+                SoundDesignManager.instance.PlaySound(SoundsEnum.Knock);
+            }
             base.OnPhaseBegin(phase);
         }
 
