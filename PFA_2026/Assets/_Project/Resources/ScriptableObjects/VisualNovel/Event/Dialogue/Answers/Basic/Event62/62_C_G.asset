@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 62_C_G
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Ses intentions sont bonnes, mais elle devrait faire
-    plus attention \xE0 son ton "
+    plus attention \xE0 son ton. "
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 531c4ec7422aca4459244cf6e5d249cc, type: 2}
   <GUID>k__BackingField: bd5043b0-edf8-47c1-83e6-a45695864d52

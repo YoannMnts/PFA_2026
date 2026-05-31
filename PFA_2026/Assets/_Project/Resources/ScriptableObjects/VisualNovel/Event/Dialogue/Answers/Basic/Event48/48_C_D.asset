@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 48_C_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Oui j\u2019ai remarqu\xE9 ce probl\xE8me"
+  <ButtonText>k__BackingField: "Oui j\u2019ai remarqu\xE9 ce probl\xE8me."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: e0029aeb3fa20a04395c97c728ef14ce, type: 2}
   <GUID>k__BackingField: d60586a6-af98-4635-87b4-15a37c74b4ed

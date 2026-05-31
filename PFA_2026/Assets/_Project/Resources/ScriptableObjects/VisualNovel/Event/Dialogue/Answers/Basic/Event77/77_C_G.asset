@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 77_C_G
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Camil n\u2019est pas vraiment une r\xE9f\xE9rence"
+  <ButtonText>k__BackingField: "Camil n\u2019est pas vraiment une r\xE9f\xE9rence."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 65e557da6e853a34692d8d0d3a56601c, type: 2}
   <GUID>k__BackingField: 70c0749c-6b69-46e2-ba8d-78d9bc5dc906

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 63_A_B
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 'Tu la connais mieux que moi '
+  <ButtonText>k__BackingField: Tu la connais mieux que moi.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: e0f87d669f458d046969e0098ab55c91, type: 2}
   <GUID>k__BackingField: 08b2b008-f87f-46ac-9c65-41fc69240317

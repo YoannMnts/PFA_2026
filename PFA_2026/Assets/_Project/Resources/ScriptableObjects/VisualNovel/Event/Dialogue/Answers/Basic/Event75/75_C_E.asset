@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 75_C_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: Tu devrais aller lui parler pour savoir
+  <ButtonText>k__BackingField: Tu devrais aller lui parler pour savoir.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 70199f4ddbb854940ad9a1258101fc7f, type: 2}
   <GUID>k__BackingField: bad9e26d-557f-4a2f-9bc4-86b1f1064613

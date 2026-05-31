@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 56_A_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: Je comprends elle est un peu impressionnante
+  <ButtonText>k__BackingField: Je comprends elle est un peu impressionnante.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7ac1024c72465ce45a79aa8957f2b3ad, type: 2}
   <GUID>k__BackingField: b9970891-fefc-42a3-9679-b3021a685f40

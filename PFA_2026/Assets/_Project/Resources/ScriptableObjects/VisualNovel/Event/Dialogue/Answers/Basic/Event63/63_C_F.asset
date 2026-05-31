@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 63_C_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Tu peux essayer d\u2019organiser un rencard "
+  <ButtonText>k__BackingField: "Tu peux essayer d\u2019organiser un rencard."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 411507cd8f3a19a40b715868b89b2400, type: 2}
   <GUID>k__BackingField: af7b66d3-ca50-4a58-86d7-8991e3409858

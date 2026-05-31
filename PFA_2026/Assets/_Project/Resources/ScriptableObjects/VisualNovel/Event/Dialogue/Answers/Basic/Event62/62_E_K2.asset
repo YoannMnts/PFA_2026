@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 62_E_K2
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Tu n\u2019as pas \xE0 avoir peur, je suis la pour
-    toi"
+    toi."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 98143468b7ffa2a40800f21c8f625684, type: 2}
   <GUID>k__BackingField: b959ea68-5e98-43e1-9c8e-d3a2fb752343

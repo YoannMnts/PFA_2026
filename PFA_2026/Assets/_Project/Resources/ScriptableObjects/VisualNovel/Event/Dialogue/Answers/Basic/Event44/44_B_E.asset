@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 44_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Tu n\u2019aurais pas d\xFB te moquer d\u2019elle "
+  <ButtonText>k__BackingField: "Tu n\u2019aurais pas d\xFB te moquer d\u2019elle."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: f4722a28c9e6b7c46827a88ac2d44b81, type: 2}
   <GUID>k__BackingField: 2b43742c-564c-4de5-a5a8-494d4c8a76a7

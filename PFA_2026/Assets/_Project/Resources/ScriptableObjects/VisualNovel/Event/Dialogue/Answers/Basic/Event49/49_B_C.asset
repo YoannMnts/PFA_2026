@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 49_B_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Tu causes d\xE9j\xE0 beaucoup de probl\xE8mes"
+  <ButtonText>k__BackingField: "Tu causes d\xE9j\xE0 beaucoup de probl\xE8mes."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: acc6876c6e92e48479d2a4ed94595687, type: 2}
   <GUID>k__BackingField: 44f5de96-8990-4542-b113-85c2e4b539a5

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 46_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Pas glorieux comme changement de carri\xE8re"
+  <ButtonText>k__BackingField: "Pas glorieux comme changement de carri\xE8re."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0ab2260b344220944b046871ea36661b, type: 2}
   <GUID>k__BackingField: cffd2ac7-a81c-4987-a537-cfd048dd49f1

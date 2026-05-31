@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 52_C_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 'Tu pourrais essayer de lire autre chose '
+  <ButtonText>k__BackingField: Tu pourrais essayer de lire autre chose.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0dee8ef3bb5c0724884f41a9c2422a2a, type: 2}
   <GUID>k__BackingField: 9ea55c7a-6160-438d-9206-dee5c9ac35e1

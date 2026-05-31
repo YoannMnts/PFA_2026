@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 46_C_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Tu ne peux toujours t\u2019am\xE9liorer maintenant "
+  <ButtonText>k__BackingField: "Tu ne peux toujours t\u2019am\xE9liorer maintenant."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0ab2260b344220944b046871ea36661b, type: 2}
   <GUID>k__BackingField: 4dc4be0e-f579-4183-a92a-2b456ffd9297

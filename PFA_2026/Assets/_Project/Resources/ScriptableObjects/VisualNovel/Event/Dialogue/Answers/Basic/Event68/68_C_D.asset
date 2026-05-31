@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 68_C_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "C\u2019est vrai que c\u2019est un peu suspect Camil "
+  <ButtonText>k__BackingField: "C\u2019est vrai que c\u2019est un peu suspect Camil. "
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7fbcc5a735c9c6f409d16f332e859465, type: 2}
   <GUID>k__BackingField: 554c25e3-9b1d-4021-9fde-9f797333f1cf

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 68_A_B
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: Liski, explique moi ce qui se passe
+  <ButtonText>k__BackingField: Liski, explique moi ce qui se passe.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: b3b323aa90e452143ab35acc68313106, type: 2}
   <GUID>k__BackingField: 8f0273bb-3be3-49f3-afc8-86f23ebeaec5

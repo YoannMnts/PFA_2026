@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 71_D_G
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Tu n\u2019as pas le droit de parler d\u2019elle comme
-    \xE7a"
+    \xE7a."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: c356193bf5fa2ab478a4601cb6e518fc, type: 2}
   <GUID>k__BackingField: ca9882bd-a506-4905-a5c6-c4f83c8a4c87

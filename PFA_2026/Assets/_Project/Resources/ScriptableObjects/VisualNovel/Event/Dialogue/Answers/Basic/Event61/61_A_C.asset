@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 61_A_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Oui tout \xE0 fait "
+  <ButtonText>k__BackingField: "Oui tout \xE0 fait."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 72fe0294c1a043a478868fbb3cf5b5d4, type: 2}
   <GUID>k__BackingField: de69c0f5-9070-4dfd-b853-33d6f6b06f6a

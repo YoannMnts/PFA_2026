@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 57_C_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Tu n\u2019es pas b\xEAte tu sais"
+  <ButtonText>k__BackingField: "Tu n\u2019es pas b\xEAte tu sais."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: db8284212c4c4fe48862333f64de163b, type: 2}
   <GUID>k__BackingField: 0bedf3cc-d0d3-4432-9915-d53d9bd42271

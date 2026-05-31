@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 61_B_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Moi je crois qu\u2019un pirate c\u2019est juste quelqu'un
-    qui a le courage d'\xEAtre libre"
+    qui a le courage d'\xEAtre libre."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6545ebb6464ffc6418d44af55e481953, type: 2}
   <GUID>k__BackingField: 955a6094-fb1e-4dd4-a64a-ce745f1b15c1

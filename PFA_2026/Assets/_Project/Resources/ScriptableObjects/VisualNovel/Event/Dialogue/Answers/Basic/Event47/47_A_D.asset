@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 47_A_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Elle m\u2019a l\u2019air en pleine forme"
+  <ButtonText>k__BackingField: "Elle m\u2019a l\u2019air en pleine forme."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: d1e83a5c5a6aed546aae4ddc41634daf, type: 2}
   <GUID>k__BackingField: 827a7422-319f-458d-8c33-1a913f2d6a2f

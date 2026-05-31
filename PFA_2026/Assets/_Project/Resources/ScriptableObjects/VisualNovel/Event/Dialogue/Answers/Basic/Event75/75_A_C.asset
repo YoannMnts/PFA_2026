@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 75_A_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Je crois que tu l\u2019a vex\xE9"
+  <ButtonText>k__BackingField: "Je crois que tu l\u2019a vex\xE9."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: a20fb18debec89a4d88a311d772941dc, type: 2}
   <GUID>k__BackingField: 768fb49c-dc33-48c9-b22e-41e9dbaca1a0

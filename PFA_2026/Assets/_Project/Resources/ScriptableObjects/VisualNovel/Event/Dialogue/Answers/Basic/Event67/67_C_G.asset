@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 67_C_G
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: Tu as encore le temps de grandir
+  <ButtonText>k__BackingField: Tu as encore le temps de grandir.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7fe6de40f30391c44b70dcacc460231d, type: 2}
   <GUID>k__BackingField: 15607279-9271-47d2-84d7-13ca803a1dd9

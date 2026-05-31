@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 51_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Mais si tu ne le r\xE9pare pas \xE7a va le mettre
-    en danger "
+    en danger. "
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: ff829e7fab8dcea439c12e21901be797, type: 2}
   <GUID>k__BackingField: d36be236-9c26-4622-9241-544bcb97b49f

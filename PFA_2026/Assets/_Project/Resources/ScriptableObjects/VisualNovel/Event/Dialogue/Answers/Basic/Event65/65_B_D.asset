@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 65_B_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Tu lui a peut \xEAtre pos\xE9 beaucoup de questions"
+  <ButtonText>k__BackingField: "Tu lui a peut \xEAtre pos\xE9 beaucoup de questions."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 2bd0d1c20db1e8d4d8614ad0a4cae4e3, type: 2}
   <GUID>k__BackingField: 31d6c489-a3e5-4e05-a25a-2e7838976cad

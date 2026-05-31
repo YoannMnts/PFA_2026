@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 61_C_I
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Il n'y a pas de raisons de se comparer aux autres,
-    tout le monde est diff\xE9rent sur ce navire"
+    tout le monde est diff\xE9rent sur ce navire."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6d9e155b5b1fd43458c4293a83a8f5b8, type: 2}
   <GUID>k__BackingField: 783718f0-1d73-4080-b5dd-c01edbafe376

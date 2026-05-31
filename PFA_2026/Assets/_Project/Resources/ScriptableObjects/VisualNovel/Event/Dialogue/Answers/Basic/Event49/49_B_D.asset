@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 49_B_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "C\u2019est gentil de ta part, tu peux d\xE9j\xE0
-    veiller sur eux -"
+    veiller sur eux."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: c24095fed4eb5e640bc8371719f7006c, type: 2}
   <GUID>k__BackingField: 57e635cb-03a1-4643-93d0-85b3ecd90e5e

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 78_C_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Tu ne dois pas bien la conna\xEEtre alors "
+  <ButtonText>k__BackingField: "Tu ne dois pas bien la conna\xEEtre alors. "
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 058b6e14781dc4f419c3404557e1c030, type: 2}
   <GUID>k__BackingField: 22757e7e-3344-4dd3-9f98-a20785fb0b30

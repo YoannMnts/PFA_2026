@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 67_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Ca ne t'apportera pas grand chose d\u2019\xEAtre
-    grand et muscl\xE9 "
+    grand et muscl\xE9. "
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: a94fcf43fcaf8b348bc371a567ef04bd, type: 2}
   <GUID>k__BackingField: 849e58a5-ad4c-4f03-8d97-ba4f4a9a3299

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 51_A_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: Calme toi Camil, il doit y avoir une explication
+  <ButtonText>k__BackingField: Calme toi Camil, il doit y avoir une explication.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: db3de82fe0cdf5c4b8acf71c148bd0bf, type: 2}
   <GUID>k__BackingField: 9e663869-e9ae-4f6c-9cfb-ff2cb19d1943

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 45_B_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "C\u2019est ton r\xF4le de vigie pourtant"
+  <ButtonText>k__BackingField: "C\u2019est ton r\xF4le de vigie pourtant."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 61d57138ef0618d47b408c7fefc7554c, type: 2}
   <GUID>k__BackingField: 0837f309-68cf-4aea-9536-c0375ba38a7f

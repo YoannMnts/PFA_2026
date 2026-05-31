@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 56_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: Tu ne la connais juste pas assez
+  <ButtonText>k__BackingField: Tu ne la connais juste pas assez.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 43d9b510f9101a24aad107e9db410d90, type: 2}
   <GUID>k__BackingField: 86f1c068-6fb8-4644-9f03-3e63eca034e0

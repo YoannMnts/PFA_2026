@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 61_E_J
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 'Tu te sous estime beaucoup tu sais '
+  <ButtonText>k__BackingField: Tu te sous estime beaucoup tu sais.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0647fdbdb8e47b84abedbfde68e46bc7, type: 2}
   <GUID>k__BackingField: 2fd1e525-4f2d-4bd6-949f-b80e2c4e1a97

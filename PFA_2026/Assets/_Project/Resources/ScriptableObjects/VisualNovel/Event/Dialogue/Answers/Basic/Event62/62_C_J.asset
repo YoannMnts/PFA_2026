@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 62_C_J
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Pas vraiment, je suis Capitaine apr\xE8s tout"
+  <ButtonText>k__BackingField: "Pas vraiment, je suis Capitaine apr\xE8s tout."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6e5a1618aaf943f44b1848304e749598, type: 2}
   <GUID>k__BackingField: ef7bc6c9-fe05-43bf-9963-d21b7ef80518

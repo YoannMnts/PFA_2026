@@ -1,6 +1,7 @@
 ﻿using System;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Sounds;
+using Naussilus.Gameplay.Buttons;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -63,9 +64,9 @@ namespace Naussilus.Gameplay
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            if (SoundDesignManager.instance != null)
+            if (ButtonFeedbacksManager.instance != null)
             {
-                SoundDesignManager.instance.PlaySound(SoundsEnum.Clic1);
+                ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(this.gameObject, 0);
             }
             isDialogueRead = true;
         }

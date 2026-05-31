@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 50_A_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Il faut se pr\xE9parer au combat "
+  <ButtonText>k__BackingField: "Il faut se pr\xE9parer au combat."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0c77a21bace9be948b6c02995840cf2a, type: 2}
   <GUID>k__BackingField: 2a02ff80-8584-4d42-80cc-6f3f0f4f8fbd

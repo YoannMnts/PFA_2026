@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 56_D_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Tu exag\xE8res"
+  <ButtonText>k__BackingField: "Tu exag\xE8res."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: bf3aca861131f294c819c0c72ec27cfc, type: 2}
   <GUID>k__BackingField: 89d47eeb-1cb6-4edc-8214-a55a858fdb43

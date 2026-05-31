@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 47_A_B
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Elle est m\xE9decin, elle sait prendre soin d\u2019elle
-    m\xEAme"
+    m\xEAme."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 68e640cc34b23a646a704c1a3e0217dc, type: 2}
   <GUID>k__BackingField: ddb1f195-f00a-48bd-b199-d95022b2a63c

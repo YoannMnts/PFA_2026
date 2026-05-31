@@ -68,7 +68,7 @@ namespace Naussilus.Gameplay.Parrallax
                     parallaxImage.name = "Parallax" + i + "_" + j;
                     parallaxImage.AddComponent<SpriteRenderer>();
                     SpriteRenderer spriteRenderer = parallaxImage.GetComponent<SpriteRenderer>();
-                    spriteRenderer.sprite = selectedSky.clouds[i];
+                    spriteRenderer.sprite = selectedSky.clouds[j];
                     spriteRenderer.sortingLayerName = "Background";
                     spriteRenderer.sortingOrder = i;
                 }

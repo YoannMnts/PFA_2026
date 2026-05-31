@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 73_C_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Tu avais l\u2019air d\u2019avoir une belle vie l\xE0
-    bas "
+    bas. "
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 5d3611bd3af08d0448a5a8b5ef8d05bb, type: 2}
   <GUID>k__BackingField: 72dc363d-7fdd-4b90-aa62-8da2471ad048

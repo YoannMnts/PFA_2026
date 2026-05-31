@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 66_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "C\u2019est ridicule, c\u2019est un r\xEAve honorable"
+  <ButtonText>k__BackingField: "C\u2019est ridicule, c\u2019est un r\xEAve honorable."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9e53222f82218fb4b819a6631e7f114f, type: 2}
   <GUID>k__BackingField: 8ed0c056-9a20-4ea6-acac-65a897d1084d

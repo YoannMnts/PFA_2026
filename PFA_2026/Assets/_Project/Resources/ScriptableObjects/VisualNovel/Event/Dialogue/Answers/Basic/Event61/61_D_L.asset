@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 61_D_L
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Etre pirate c\u2019est aussi le respect, l\u2019ouverture,
-    la libert\xE9, la d\xE9votion "
+    la libert\xE9, la d\xE9votion."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: f370881447fe14f4b9d82ca19d85426a, type: 2}
   <GUID>k__BackingField: 3f3720f7-07f6-4a25-88b8-7c0b6ee46085

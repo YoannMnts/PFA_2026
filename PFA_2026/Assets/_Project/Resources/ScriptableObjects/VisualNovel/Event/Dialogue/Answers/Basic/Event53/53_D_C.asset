@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 53_D_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Ca devait \xEAtre un super papa "
+  <ButtonText>k__BackingField: "\xC7a devait \xEAtre un super papa."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6b5fc41d963e26c43b3fca54494ee2dc, type: 2}
   <GUID>k__BackingField: 615cc1d1-ff8a-4dbf-ac11-9d71481f85cf

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 52_A_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: Tu as le droit de lire ce que tu veux
+  <ButtonText>k__BackingField: Tu as le droit de lire ce que tu veux.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: a11c3cf17f8bf6d4e9dc1165bc40fd8f, type: 2}
   <GUID>k__BackingField: b7d99db6-1edb-4565-b2c3-de353ff6f5ec

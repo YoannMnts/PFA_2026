@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 52_D_H
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Tu as raison, chacun doit respecter les go\xFBts
-    des autres"
+    des autres."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: ee3598646d266e148b46986d7b3fe161, type: 2}
   <GUID>k__BackingField: 4f917e06-6eb0-4c6f-9a95-6fdf5d334e8a

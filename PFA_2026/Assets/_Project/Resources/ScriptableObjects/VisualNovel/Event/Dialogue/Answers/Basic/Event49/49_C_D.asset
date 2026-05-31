@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 49_C_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "C\u2019est gentil, mais essaie d\xE9j\xE0 de prendre
-    soin d\u2019eux"
+    soin d\u2019eux."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: c24095fed4eb5e640bc8371719f7006c, type: 2}
   <GUID>k__BackingField: b86e2c41-e164-4d82-a094-d41b3ef05a30

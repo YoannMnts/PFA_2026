@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 79_B_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Ce sont des informations priv\xE9es, tu n\u2019a
-    pas le droit de les r\xE9v\xE9ler"
+    pas le droit de les r\xE9v\xE9ler."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: e0d8631400369924fa5a70e3619c36cd, type: 2}
   <GUID>k__BackingField: e71a20e1-4c12-4938-a153-ff430d03a1eb

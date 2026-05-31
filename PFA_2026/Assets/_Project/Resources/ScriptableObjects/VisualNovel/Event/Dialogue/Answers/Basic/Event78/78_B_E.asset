@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 78_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "C\u2019est juste son regard naturel "
+  <ButtonText>k__BackingField: "C\u2019est juste son regard naturel."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 934276c88f61f1348b9157001ffcae7c, type: 2}
   <GUID>k__BackingField: aac508a7-aa0a-4c3f-af26-46ef1b5d99f5

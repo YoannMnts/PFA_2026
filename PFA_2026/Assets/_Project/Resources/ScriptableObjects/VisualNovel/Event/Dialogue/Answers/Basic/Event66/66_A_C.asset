@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 66_A_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Tu peux te r\xE9fugier i\xE7i quand tu veux"
+  <ButtonText>k__BackingField: "Tu peux te r\xE9fugier i\xE7i quand tu veux."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9579931ccf8d012468338c71092394d9, type: 2}
   <GUID>k__BackingField: a808abfa-c39e-4420-bb8b-20471128db81

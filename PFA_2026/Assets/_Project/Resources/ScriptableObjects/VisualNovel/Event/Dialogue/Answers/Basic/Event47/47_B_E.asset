@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 47_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Si elle se rel\xE2che, tout le bateau risque de tomber
-    malade "
+    malade."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 4b46b4c6d5e194c478f54fbc8e19070a, type: 2}
   <GUID>k__BackingField: 68235f4f-3a37-4d8a-bc93-22e432a7a5e7

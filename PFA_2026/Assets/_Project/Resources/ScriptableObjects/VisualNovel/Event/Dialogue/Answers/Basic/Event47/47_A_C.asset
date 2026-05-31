@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 47_A_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: Tu devrais aller la voir alors
+  <ButtonText>k__BackingField: Tu devrais aller la voir alors.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6bd41034cb59e9c4e8efb9c1b838bc9b, type: 2}
   <GUID>k__BackingField: ffa2b1c0-c488-4ede-9c95-ea539e33e18e

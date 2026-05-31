@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 46_A_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Ca a l\u2019air grave "
+  <ButtonText>k__BackingField: "\xC7a a l\u2019air grave."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: ab0e6e3bacd4f8044bcbaa76c26a18d6, type: 2}
   <GUID>k__BackingField: 3146297d-cb66-4356-b67b-7fd0b3e3869e

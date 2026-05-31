@@ -16,7 +16,7 @@ MonoBehaviour:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
-    - "C\u2019est gentil merci\u2026 Si seulement c'\xE9tait plus simple"
+    - "C\u2019est gentil merci\u2026 Si seulement c'\xE9tait plus simple."
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 2e38ac03eda242747b5c298f553ff8b0, type: 2}
   - {fileID: 11400000, guid: ae91eb5d2bd167346a40fee1e5dbe334, type: 2}

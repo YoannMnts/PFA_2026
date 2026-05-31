@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 58_B_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "C\u2019est son r\xF4le d\u2019\xE9viter les turbulences "
+  <ButtonText>k__BackingField: "C\u2019est son r\xF4le d\u2019\xE9viter les turbulences. "
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 5354abf15c90e1d4080767aea3d61049, type: 2}
   <GUID>k__BackingField: 3661fc20-faa3-40cb-b4b5-7e8609568242

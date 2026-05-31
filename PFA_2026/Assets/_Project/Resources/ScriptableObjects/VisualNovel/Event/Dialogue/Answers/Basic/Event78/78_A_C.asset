@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 78_A_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Elle est tr\xE8s gentille pourtant  "
+  <ButtonText>k__BackingField: "Elle est tr\xE8s gentille pourtant."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: bd0699aeae03ddc4b9ee6ce2939bc030, type: 2}
   <GUID>k__BackingField: 89ff2b4a-a6eb-46c8-996e-93917c9f2558

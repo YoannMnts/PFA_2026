@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 71_B_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Ca reste une membre de l\u2019\xE9quipage \xE0 part
-    enti\xE8re"
+    enti\xE8re."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 283993441477a6643a01c92a55d72575, type: 2}
   <GUID>k__BackingField: 9234c9c9-1c80-40b2-ac2f-3e1e782310e6

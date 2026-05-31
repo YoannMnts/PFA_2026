@@ -717,6 +717,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: TextList
       objectReference: {fileID: 0}
+    - target: {fileID: 5022528849125260736, guid: 3dac0a170cadbe1408a9dc29a6dca251, type: 3}
+      propertyPath: m_text
+      value: "En tant que Capitaine, vous devez \xEAtre \xE0 l'\xE9coute des membres
+        de l'\xE9quipage car vous avez une posture de conseiller sur le navire"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5022528849125260736, guid: 3dac0a170cadbe1408a9dc29a6dca251, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 72ca35c1519de2544a261a3a3a4d50a8, type: 2}
+    - target: {fileID: 5022528849125260736, guid: 3dac0a170cadbe1408a9dc29a6dca251, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1933467953180398312, guid: 72ca35c1519de2544a261a3a3a4d50a8, type: 2}
+    - target: {fileID: 5022528849125260736, guid: 3dac0a170cadbe1408a9dc29a6dca251, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274776871019759394, guid: 3dac0a170cadbe1408a9dc29a6dca251, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 72ca35c1519de2544a261a3a3a4d50a8, type: 2}
+    - target: {fileID: 7274776871019759394, guid: 3dac0a170cadbe1408a9dc29a6dca251, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1933467953180398312, guid: 72ca35c1519de2544a261a3a3a4d50a8, type: 2}
+    - target: {fileID: 7274776871019759394, guid: 3dac0a170cadbe1408a9dc29a6dca251, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7539621857117677964, guid: 3dac0a170cadbe1408a9dc29a6dca251, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -840,7 +869,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5843866746815865923, guid: eae99eed56bf83446b83196e5717c30d, type: 3}
       propertyPath: m_text
-      value: blablabla le role de l'emissaire
+      value: "En tant qu'Emissaire, votre mission est d'organiser la vie sur le navire
+        est de veiller sur les membres de l'\xE9quipage"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5843866746815865923, guid: eae99eed56bf83446b83196e5717c30d, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 72ca35c1519de2544a261a3a3a4d50a8, type: 2}
+    - target: {fileID: 5843866746815865923, guid: eae99eed56bf83446b83196e5717c30d, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1933467953180398312, guid: 72ca35c1519de2544a261a3a3a4d50a8, type: 2}
+    - target: {fileID: 5843866746815865923, guid: eae99eed56bf83446b83196e5717c30d, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7077143001382052455, guid: eae99eed56bf83446b83196e5717c30d, type: 3}
       propertyPath: m_Name
@@ -941,6 +983,18 @@ PrefabInstance:
     - target: {fileID: 8097258541048536737, guid: eae99eed56bf83446b83196e5717c30d, type: 3}
       propertyPath: m_text
       value: Emissaire
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097258541048536737, guid: eae99eed56bf83446b83196e5717c30d, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 72ca35c1519de2544a261a3a3a4d50a8, type: 2}
+    - target: {fileID: 8097258541048536737, guid: eae99eed56bf83446b83196e5717c30d, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1933467953180398312, guid: 72ca35c1519de2544a261a3a3a4d50a8, type: 2}
+    - target: {fileID: 8097258541048536737, guid: eae99eed56bf83446b83196e5717c30d, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

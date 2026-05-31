@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 61_A_B
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Je ne pense pas qu\u2019il y ait de vrai ou de faux
-    pirates"
+    pirates."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 62cabfc04c1ca3e44994072dd7214945, type: 2}
   <GUID>k__BackingField: f5175d92-55db-45d5-a4cd-3be67596275a

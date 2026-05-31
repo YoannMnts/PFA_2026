@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 61_A_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 'Pas vraiment non '
+  <ButtonText>k__BackingField: Pas vraiment non.
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 4e35158b9fb481d4b96fe4c22d23b08d, type: 2}
   <GUID>k__BackingField: e90c7c02-37a5-46c6-bf04-9565b180afaf

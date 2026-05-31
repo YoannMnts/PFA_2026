@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 63_D_H
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: "Il est possible qu\u2019elle ne t\u2019aime pas en
-    retour"
+    retour."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 138ce9a10540c9a48bbb784f852caba6, type: 2}
   <GUID>k__BackingField: 46d7ba04-94e4-4fd7-af7d-fdb228ea2fdd

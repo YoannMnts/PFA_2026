@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 54_A_C
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Mais tu n\u2019as rien sur ton bocal"
+  <ButtonText>k__BackingField: "Mais tu n\u2019as rien sur ton bocal."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 191e6ab572810664d9567c1fdb785042, type: 2}
   <GUID>k__BackingField: 3276a217-cb0e-479e-87de-68e39b00cec7

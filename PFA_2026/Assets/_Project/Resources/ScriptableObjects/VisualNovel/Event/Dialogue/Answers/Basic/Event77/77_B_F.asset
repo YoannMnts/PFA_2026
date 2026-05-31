@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 77_B_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Elle aide bien i\xE7i pourtant"
+  <ButtonText>k__BackingField: "Elle aide bien i\xE7i pourtant."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 5923dce1d4bbe214aa55ff2236790c4d, type: 2}
   <GUID>k__BackingField: 5b423c35-6ed8-4263-848a-7d9ea7924435

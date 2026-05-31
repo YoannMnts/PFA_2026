@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 60_A_B
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "On peut juste remplir ton bocal \xE0 nouveau"
+  <ButtonText>k__BackingField: "On peut juste remplir ton bocal \xE0 nouveau."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0d28eec9a123f87419e0889cfb816200, type: 2}
   <GUID>k__BackingField: 19a1946b-1c62-4407-aa8d-bdefead40e33

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 44_B_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "C\u2019\xE9tait peut \xEAtre m\xE9rit\xE9 "
+  <ButtonText>k__BackingField: "C\u2019\xE9tait peut \xEAtre m\xE9rit\xE9."
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: d7727a3276c973e48b53d6c5ae86a000, type: 2}
   <GUID>k__BackingField: 3c0c032a-9c6e-438d-9bee-426130b6b7d3

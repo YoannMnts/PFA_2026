@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 62_B_I
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Elle a peut \xEAtre raison "
+  <ButtonText>k__BackingField: "Elle a peut \xEAtre raison. "
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: bd140abba948eb94faef5e124d0ad109, type: 2}
   <GUID>k__BackingField: 7ed57a3b-d6ed-4b06-b134-3d00667e0170

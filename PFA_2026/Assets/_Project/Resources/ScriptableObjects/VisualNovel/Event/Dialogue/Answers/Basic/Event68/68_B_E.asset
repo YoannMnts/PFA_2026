@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 68_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "C\u2019est sans doute un accident "
+  <ButtonText>k__BackingField: "C\u2019est sans doute un accident. "
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 5748be52c4d30a24ab067fc3ee82a1c7, type: 2}
   <GUID>k__BackingField: 3f287191-b5d1-4d10-963c-13b66b5c246b

@@ -12,5 +12,6 @@ namespace Naussilus.Core.Sounds
         WrongFeedback,
         EnterRoom,
         TimerEnd,
+        Writing,
     }
 }
