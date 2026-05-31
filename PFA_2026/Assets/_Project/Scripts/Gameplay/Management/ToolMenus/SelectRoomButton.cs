@@ -1,6 +1,8 @@
 ﻿using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
+using Naussilus.Gameplay.Buttons;
 using Naussilus.Gameplay.Interactions;
+using UnityEngine;
 
 namespace Naussilus.Gameplay
 {
@@ -36,8 +38,13 @@ namespace Naussilus.Gameplay
             //selectRoomForShip.RunAndForget();
         }
 
-        public void Interact(PlayerInteractions playerInteractions)
+        public async void Interact(PlayerInteractions playerInteractions)
         {
+            if (ButtonFeedbacksManager.instance != null)
+            {
+                ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(this.gameObject);
+                await Awaitable.WaitForSecondsAsync(0.3f);
+            }
             selectRoomForShip = new SelectRoomForShip(currentActionPoint, currentPhase);
             selectRoomForShip.RunAndForget();
         }

@@ -7,8 +7,9 @@ namespace Naussilus.Gameplay
         [SerializeField] private AudioSource musicAudioSource;
         private AudioClip musicClip;
 
-        public void PlayMusic(AudioClip musicToPlay)
+        public void PlayMusic(AudioClip musicToPlay, float volume = 1.0f)
         {
+            musicAudioSource.volume = volume;
             musicAudioSource.clip = musicToPlay;
             musicAudioSource.Play();
         }

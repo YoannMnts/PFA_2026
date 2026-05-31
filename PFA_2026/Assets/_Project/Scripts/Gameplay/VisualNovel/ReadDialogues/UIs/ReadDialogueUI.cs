@@ -65,7 +65,7 @@ namespace Naussilus.Gameplay
         {
             if (SoundDesignManager.instance != null)
             {
-                SoundDesignManager.instance.PlaySound(SoundsEnum.Clic1);
+                SoundDesignManager.instance.PlaySound(SoundsEnum.Clic1,0.3f);
             }
             isDialogueRead = true;
         }

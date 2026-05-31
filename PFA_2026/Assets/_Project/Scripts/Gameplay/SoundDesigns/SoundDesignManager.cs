@@ -12,6 +12,8 @@ namespace Naussilus.Gameplay
         [SerializeField] private SoundLibraryData libraryData;
         [SerializeField] private MusicsManager musicsManager;
         [SerializeField] private float defaultVolume;
+        [SerializeField] private float managmentMusicVolume;
+        [SerializeField] private float visualNovelMusicVolume;
         [SerializeField] private GameObject sourceOriginal;
         
         private List<AudioSource> audioSources = new List<AudioSource>();
@@ -32,7 +34,7 @@ namespace Naussilus.Gameplay
                 if (launch)
                 {
                     musicsManager.PauseMusic();
-                    musicsManager.PlayMusic(libraryData.visualNovelMusic);
+                    musicsManager.PlayMusic(libraryData.visualNovelMusic, visualNovelMusicVolume);
                 }
                 else
                 {
@@ -48,7 +50,7 @@ namespace Naussilus.Gameplay
                 if (launch)
                 {
                     musicsManager.PauseMusic();
-                    musicsManager.PlayMusic(libraryData.managmentMusic);
+                    musicsManager.PlayMusic(libraryData.managmentMusic,managmentMusicVolume);
                 }
                 else
                 {
@@ -92,12 +94,14 @@ namespace Naussilus.Gameplay
             }
         }
         
-        public void PlaySound(SoundsEnum sound)
+        public void PlaySound(SoundsEnum sound, float volume = 1.0f)
         {
             AudioClip clipToPlay = FindLCip(sound);
             if (clipToPlay != null)
             {
-                FindSource().clip = clipToPlay;
+                AudioSource foundSource = FindSource();
+                foundSource.clip = clipToPlay;
+                foundSource.volume = volume;
                 FindSource().Play();
             }
         }
@@ -123,7 +127,7 @@ namespace Naussilus.Gameplay
         {
             if (audioSources.Count == 0)
             {
-                CreateNewAudioSource();
+                return CreateNewAudioSource().GetComponent<AudioSource>();
             }
             foreach (AudioSource audioSource in audioSources)
             {

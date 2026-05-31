@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e6c6eb1d4d2224e9e9180695ca5452, type: 3}
   m_Name: Writing
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Sounds.SoundClipData
-  <soundTag>k__BackingField: 7
-  <clip>k__BackingField: {fileID: 8300000, guid: 6693f49564588eb42a50d24afe977a87, type: 3}
+  <soundTag>k__BackingField: 10
+  <clip>k__BackingField: {fileID: 8300000, guid: 4dd400f8cdf2af244b5584bd5b53f18d, type: 3}

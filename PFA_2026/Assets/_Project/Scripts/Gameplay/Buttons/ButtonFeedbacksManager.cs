@@ -28,13 +28,13 @@ namespace Naussilus.Gameplay.Buttons
             {
                 if (SoundDesignManager.instance != null)
                 {
-                    SoundDesignManager.instance.PlaySound(SoundsEnum.Clic1);
+                    SoundDesignManager.instance.PlaySound(SoundsEnum.Clic1,0.3f);
                 }
 
                 if (button.gameObject.activeInHierarchy)
                 {
                    currentButtons.Add(button);
-                    button.transform.DOScale(baseButtonForce*button.transform.localScale*force, baseButtonDuration).SetEase(Ease.InOutSine).SetLoops(2, LoopType.Yoyo).OnComplete(() => Remove(button)); 
+                    button.transform.DOScale(button.transform.localScale * (baseButtonForce * force), baseButtonDuration).SetEase(Ease.InOutSine).SetLoops(2, LoopType.Yoyo).OnComplete(() => Remove(button)); 
                 }
             }
         }

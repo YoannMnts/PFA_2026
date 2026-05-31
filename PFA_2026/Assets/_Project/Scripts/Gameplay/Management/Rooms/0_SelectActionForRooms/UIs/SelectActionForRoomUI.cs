@@ -114,8 +114,13 @@ namespace Naussilus.Gameplay
             
                 var actionCost = -current.Choices[index].Cost;
                 if (!currentActionPoint.TryAddOrRemove(actionCost))
+                {
+                    if (SoundDesignManager.instance != null)
+                    {
+                        SoundDesignManager.instance.PlaySound(SoundsEnum.WrongFeedback);
+                    }
                     return;
-            
+                }
                 roomActionUIList.Disconnect();
                 cancelButton.onClick.RemoveAllListeners();
                 fillCategory = new FillCategory(current.Choices[index]);

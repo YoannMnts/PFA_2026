@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using Helteix.Tools.Phases;
+using Naussilus.Core.Sounds;
 using UnityEngine;
 
 namespace Naussilus.Gameplay
@@ -34,6 +35,13 @@ namespace Naussilus.Gameplay
                 for (Remaining = Duration ; 0 < Remaining; Remaining--)
                 {
                     OnTimerRepeat?.Invoke();
+                    if (Remaining < 6)
+                    {
+                        if (SoundDesignManager.instance != null)
+                        {
+                            SoundDesignManager.instance.PlaySound(SoundsEnum.TimerEnd);
+                        }
+                    }
                     await Awaitable.WaitForSecondsAsync(1);
                 }
                 SetResult(true);
