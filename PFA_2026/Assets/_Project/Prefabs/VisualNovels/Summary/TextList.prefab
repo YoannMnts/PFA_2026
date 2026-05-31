@@ -178,6 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6705498555386735909}
   - component: {fileID: 6564402006776513556}
+  - component: {fileID: 1173618072904731817}
   m_Layer: 5
   m_Name: TextList
   m_TagString: Untagged
@@ -220,6 +221,30 @@ MonoBehaviour:
   prefab: {fileID: 2531343606812742035, guid: d890f08b96f16d747a8c7803071f3398, type: 3}
   dividerPrefab: {fileID: 0}
   root: {fileID: 2410174384685403166}
+--- !u!114 &1173618072904731817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4060277721822473124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GridLayoutGroup
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 1
+  m_CellSize: {x: 800, y: 200}
+  m_Spacing: {x: 150, y: 20}
+  m_Constraint: 0
+  m_ConstraintCount: 2
 --- !u!1 &4419221213473166469
 GameObject:
   m_ObjectHideFlags: 0

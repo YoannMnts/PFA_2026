@@ -1,6 +1,10 @@
-﻿using Helteix.Tools.Phases.Listeners;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Helteix.Tools.Phases.Listeners;
+using Naussilus.Core;
 using Naussilus.Core.Managers;
 using UnityEngine;
+using UnityEngine.Pool;
 
 namespace Naussilus.Gameplay
 {
@@ -29,7 +33,17 @@ namespace Naussilus.Gameplay
             }
             
             group.Show();
-            consequenceSummaryUIList.Connect(phase.CurrentConsequences);
+            using (ListPool<Consequence>.Get(out var list))
+            {
+                for (int i = 0; i < phase.CurrentConsequences.Count; i++)
+                {
+                    var consequence = phase.CurrentConsequences[i];
+                    if (!consequence.Text.All(string.IsNullOrEmpty))
+                        list.Add(consequence);
+                    
+                    consequenceSummaryUIList.Connect(list);
+                }
+            }
             
             base.OnPhaseBegin(phase);
         }

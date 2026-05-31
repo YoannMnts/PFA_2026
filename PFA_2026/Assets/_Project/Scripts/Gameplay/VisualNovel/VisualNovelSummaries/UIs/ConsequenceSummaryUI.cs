@@ -1,26 +1,22 @@
 ﻿using Helteix.Tools.UI;
 using Naussilus.Core;
-using TMPro;
 using UnityEngine;
 
 namespace Naussilus.Gameplay
 {
     public class ConsequenceSummaryUI : UIItem<Consequence>
     {
-        [SerializeField] private TMP_Text consequenceSummaryText;
+        [SerializeField] private SummaryTextUIList consequenceSummaryText;
         
         protected override void SyncUI(Consequence current)
         {
-            for (int i = 0; i < current.Text.Length; i++)
-            {
-                consequenceSummaryText.text += current.Text[i];
-            }
-            Debug.Log($"consequenceSummaryText length : {current.Text.Length}");
+            var allText = current.Text;
+            consequenceSummaryText.Connect(allText);
         }
 
         protected override void ClearUI()
         {
-            consequenceSummaryText.text = string.Empty;
+            consequenceSummaryText.Disconnect();
         }
     }
 }

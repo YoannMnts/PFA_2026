@@ -1,6 +1,10 @@
-﻿using Helteix.Tools.Phases.Listeners;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Helteix.Tools.Phases.Listeners;
+using Naussilus.Core;
 using Naussilus.Core.Managers;
 using UnityEngine;
+using UnityEngine.Pool;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
@@ -34,9 +38,17 @@ namespace Naussilus.Gameplay
             group.Show();
             npcBarGroup.Hide();
             var validConsequence = ConsequenceManager.ValidConsequences;
-            Debug.Log($"ValidConsequence: {validConsequence.Count}");
-                
-            actionConsequenceUIList.Connect(validConsequence);
+            using (ListPool<Consequence>.Get(out var list))
+            {
+                for (int i = 0; i < validConsequence.Count; i++)
+                {
+                    var consequence = validConsequence[i];
+                    if (!consequence.Text.All(string.IsNullOrEmpty))
+                        list.Add(consequence);
+                    
+                    actionConsequenceUIList.Connect(list);
+                }
+            }    
             applyButton.onClick.AddListener(Apply);
             
             base.OnPhaseBegin(phase);
