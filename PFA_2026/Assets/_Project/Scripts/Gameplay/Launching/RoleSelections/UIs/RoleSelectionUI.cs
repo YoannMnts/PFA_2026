@@ -19,6 +19,7 @@ namespace Naussilus.Gameplay.RoleSelections
         [SerializeField] private Button continueButton;
         
         private RoleSelection currentPhase;
+        private bool introDone;
 
         protected override void OnEnable()
         {
@@ -63,6 +64,7 @@ namespace Naussilus.Gameplay.RoleSelections
                 SoundDesignManager.instance.PlaySound(SoundsEnum.Writing);
             }
             continueButton.onClick.AddListener(OnClick);
+            introDone = false;
             base.OnPhaseBegin(phase);
         }
         
@@ -89,6 +91,9 @@ namespace Naussilus.Gameplay.RoleSelections
         
         public async void OnPointerClick(PointerEventData eventData)
         {
+            if (introDone)
+                return;
+                
             try
             {
                 if (AllRead())
@@ -96,6 +101,7 @@ namespace Naussilus.Gameplay.RoleSelections
                     selectionGroup.Hide();
                     var intro = new IntroductionPhase();
                     await intro.Run();
+                    introDone = true;
                     firstPlayerGroup.Show();
                 }
                 else

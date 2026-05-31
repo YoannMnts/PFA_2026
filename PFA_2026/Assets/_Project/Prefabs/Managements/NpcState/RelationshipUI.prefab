@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 4352969523077469415}
   - component: {fileID: 3992272649127940206}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -516,6 +516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Gameplay::Naussilus.Gameplay.Management.ManagementNpcs.CheckNpcScores.UIs.RelationshipUI
   otherNameText: {fileID: 1118254814361187014}
   fillBar: {fileID: 2916884017051396870}
+  iconImage: {fileID: 3992272649127940206}
 --- !u!1 &5774728965239801012
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,6 +26,7 @@ namespace Naussilus.Gameplay
         
         private SelectActionForRoom selectActionForRoom;
         private CurrentlyInAction currentlyInAction;
+        private CaptainRoom captainRoomPhase;
 
 
         protected override void OnPhaseBegin(ManagementPhase phase)
@@ -47,6 +48,9 @@ namespace Naussilus.Gameplay
             
             if (currentlyInAction != null && currentlyInAction.IsRunning())
                 currentlyInAction.Cancel();
+            
+            if (captainRoomPhase != null && captainRoomPhase.IsRunning())
+                captainRoomPhase.Cancel();
             
             base.OnPhaseEnd(phase);
         }
@@ -78,7 +82,18 @@ namespace Naussilus.Gameplay
                 currentlyInAction.RunAndForget();
                 return;
             }
-            
+
+            if (Room.Name == "Cabine du capitaine")
+            {
+                if (captainRoomPhase != null && captainRoomPhase.IsRunning())
+                {
+                    captainRoomPhase.Cancel();
+                    captainRoomPhase = null;
+                }
+                captainRoomPhase = new CaptainRoom(CurrentPhase, CineCamera);
+                captainRoomPhase.RunAndForget();
+                return;
+            }
             selectActionForRoom = new SelectActionForRoom(Room, CurrentActionPoint, CineCamera);
             selectActionForRoom.RunAndForget();
         }

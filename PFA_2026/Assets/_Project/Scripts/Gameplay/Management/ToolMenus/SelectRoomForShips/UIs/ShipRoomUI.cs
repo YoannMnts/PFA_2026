@@ -1,7 +1,6 @@
 ﻿using Helteix.Tools.UI;
 using Naussilus.Core;
 using Naussilus.Gameplay.Buttons;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 

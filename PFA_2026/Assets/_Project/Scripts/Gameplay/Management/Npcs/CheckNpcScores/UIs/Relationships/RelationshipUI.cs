@@ -12,16 +12,20 @@ namespace Naussilus.Gameplay
 
         [SerializeField] private Image fillBar;
         
+        [SerializeField] private Image iconImage;
+        
         protected override void SyncUI(NpcRelationship current)
         {
             otherNameText.text = current.Npc.Name;
             fillBar.fillAmount = current.Amount / 20f;
+            iconImage.sprite = current.Npc.DefaultIcon;
         }
 
         protected override void ClearUI()
         {
             otherNameText.text = string.Empty;
             fillBar.fillAmount = 1f;
+            iconImage.sprite = null;
         }
     }
 }

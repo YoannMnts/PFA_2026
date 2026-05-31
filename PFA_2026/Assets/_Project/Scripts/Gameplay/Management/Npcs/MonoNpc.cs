@@ -65,11 +65,16 @@ namespace Naussilus.Gameplay
         private void TryCheckNpc(Npc npc)
         {
             if (npc != Npc)
+            {
+                if (checkNpcPhase != null && checkNpcPhase.IsRunning())
+                    checkNpcPhase.Cancel();
+                
                 return;
+            }
 
             if (checkNpcPhase != null)
             {
-                checkNpcPhase.Cancel();
+                checkNpcPhase?.Cancel();
                 checkNpcPhase = null;
                 return;
             }
@@ -85,8 +90,8 @@ namespace Naussilus.Gameplay
         {
             lastSlot = currentSlot;
             currentSlot = slot;
-            gameObject.transform.position = slot.SlotPosition;
-            Debug.Log($"Npc {Npc.Name} is setting new position to {slot.SlotPosition}");
+            gameObject.transform.localPosition = slot.SlotPosition;
+            //Debug.Log($"Npc {Npc.Name} is setting new position to SlotPosition world: {slot.SlotPosition}, localPosition: {gameObject.transform.localPosition}, parent position: {gameObject.transform.parent.position}");
             slot.NpcExpression.TryGetExpression(Npc, out var sprite);
             npcSprite.sprite = sprite;
             npcSprite.flipX = slot.Flip;
@@ -104,7 +109,7 @@ namespace Naussilus.Gameplay
             if (lastSlot == null)
                 return;
             //Debug.Log($"Npc {Npc.Name} is returning to the last position {lastPosition}");
-            gameObject.transform.position = lastSlot.SlotPosition;
+            gameObject.transform.localPosition = lastSlot.SlotPosition;
             lastSlot.NpcExpression.TryGetExpression(Npc, out var sprite);
             npcSprite.sprite = sprite;
             npcSprite.flipX = lastSlot.Flip;
