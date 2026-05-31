@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading;
 using Helteix.Tools.Phases;
 using Naussilus.Core.Sounds;
@@ -9,22 +9,25 @@ namespace Naussilus.Gameplay
     public class TimerPhase : PhaseCompletionSource<bool>
     { 
         public event Action OnTimerRepeat;
-        
+    
         public int Duration { get; private set; }
-        
+    
         private ManagementPhase currentPhase;
         public int Remaining { get; private set; }
+    
+        private CancellationTokenSource cts;
 
-        public TimerPhase(ManagementPhase current ,int duration)
+        public TimerPhase(ManagementPhase current, int duration)
         {
             Duration = duration;
-            currentPhase = current; 
+            currentPhase = current;
+            cts = new CancellationTokenSource();
         }
-        
 
         protected override Awaitable Dispose(CancellationToken token)
         {
-            Duration = 0;
+            cts.Cancel();
+            cts.Dispose();
             return base.Dispose(token);
         }
 
@@ -32,8 +35,11 @@ namespace Naussilus.Gameplay
         {
             try
             {
-                for (Remaining = Duration ; 0 < Remaining; Remaining--)
+                for (Remaining = Duration; 0 < Remaining; Remaining--)
                 {
+                    if (cts.Token.IsCancellationRequested) 
+                        return;
+                
                     OnTimerRepeat?.Invoke();
                     if (Remaining < 6)
                     {
@@ -42,10 +48,14 @@ namespace Naussilus.Gameplay
                             SoundDesignManager.instance.PlaySound(SoundsEnum.TimerEnd);
                         }
                     }
-                    await Awaitable.WaitForSecondsAsync(1);
+                    await Awaitable.WaitForSecondsAsync(1, cts.Token);
                 }
                 SetResult(true);
                 currentPhase.SetResult(true);
+            }
+            catch (OperationCanceledException)
+            {
+                Debug.Log($"Timed has cancelled");
             }
             catch (Exception e)
             {

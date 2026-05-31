@@ -31,6 +31,7 @@ namespace Naussilus.Gameplay
             NpcManager.Init();
             EventManager.Init();
             RoomManager.Init();
+            ConditionalEffectManager.ValidConsequences.Clear();
             PhaseLifecycle();
         }
 

@@ -10,6 +10,8 @@ namespace Naussilus.Core.Managers
 {
     public static class ConditionalEffectManager
     {
+        public static readonly List<Consequence> ValidConsequences = new List<Consequence>();
+
         private static Npc[] currentNpcs;
 
         private static void ComputeConditionalEffect(this ConditionalEffect conditionalEffect, Npc currentNpcData, Category[] currentCategories)
@@ -41,7 +43,7 @@ namespace Naussilus.Core.Managers
             Condition[] currentConditions = conditionalEffect.Conditions;
             Consequence[] currentConsequences = conditionalEffect.Consequences;
             
-            ConsequenceManager.ValidConsequences.Clear();
+            ValidConsequences.Clear();
             for (int i = 0; i < currentNpcs.Length; i++)
             {
                 currentConditions.ComputeAllCondition(currentNpcs[i], out var validNpcs);
@@ -67,6 +69,7 @@ namespace Naussilus.Core.Managers
 
         public static void ComputeValidEffect(this RoomAction roomAction)
         {
+            ValidConsequences.Clear();
             var actionEffects = roomAction.ActionEffects;
             var categories = roomAction.Categories;
             if (actionEffects == null || categories == null)

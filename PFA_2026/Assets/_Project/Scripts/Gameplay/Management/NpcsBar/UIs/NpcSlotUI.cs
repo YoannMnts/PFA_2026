@@ -18,6 +18,7 @@ namespace Naussilus.Gameplay
 
         public int Priority { get; private set; } = 10;
         private NpcBarUI npcBar;
+        private Npc currentNpc;
 
         private void Start()
         {
@@ -26,23 +27,25 @@ namespace Naussilus.Gameplay
 
         protected override void SyncUI(Npc current)
         {
+            currentNpc = current;
             icon.sprite = current.DefaultIcon;
             button.onClick.AddListener(OnClick);
             background.sprite = defaultBackground;
-            current.OnAddedInSlot += OnAddedInSlot;
-            current.OnRemoveSlot += OnRemoveSlot;
+            currentNpc.OnAddedInSlot += OnAddedInSlot;
+            currentNpc.OnRemoveSlot += OnRemoveSlot;
         }
 
 
         protected override void ClearUI()
         {
+            if (currentNpc == null)
+                return;
+                
             icon.sprite = null;
             button.onClick.RemoveAllListeners();
-            button.interactable = true;
-            if (Current == null) 
-                return;
-            Current.OnAddedInSlot -= OnAddedInSlot;
-            Current.OnRemoveSlot -= OnRemoveSlot;
+            currentNpc.OnAddedInSlot -= OnAddedInSlot;
+            currentNpc.OnRemoveSlot -= OnRemoveSlot;
+            currentNpc = null;
         }
 
         private void OnAddedInSlot(CategoryNpcSlot obj)
@@ -61,6 +64,7 @@ namespace Naussilus.Gameplay
             {
                 ButtonFeedbacksManager.instance.ApplyButtonFeedbacks(button.gameObject);
             }
+            Debug.Log($"Npc {Current.Name} clicked and category {Current?.CurrentCategory?.Name}");
             npcBar.OnClick(Current);
         }
 

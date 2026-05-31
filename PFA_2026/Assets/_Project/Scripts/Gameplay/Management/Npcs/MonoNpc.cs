@@ -39,7 +39,6 @@ namespace Naussilus.Gameplay
             this.AddNpcClickListener();
             Npc.OnAddedInSlot += AddedInSlot;
             Npc.OnRemoveSlot += RemoveSlot;
-            
             Npc.AddToRandomSlot();
             
             base.OnPhaseBegin(phase);

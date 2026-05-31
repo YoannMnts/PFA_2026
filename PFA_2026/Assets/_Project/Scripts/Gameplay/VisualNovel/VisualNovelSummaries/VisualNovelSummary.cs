@@ -7,6 +7,6 @@ namespace Naussilus.Gameplay
 {
     public class VisualNovelSummary : PhaseCompletionSource<bool>
     {
-        public List<Consequence> CurrentConsequences => ConsequenceManager.ValidConsequences;
+        public List<Consequence> CurrentConsequences => ConditionalEffectManager.ValidConsequences;
     }
 }

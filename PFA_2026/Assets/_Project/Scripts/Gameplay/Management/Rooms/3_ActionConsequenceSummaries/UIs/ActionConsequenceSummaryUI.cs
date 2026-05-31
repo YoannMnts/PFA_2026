@@ -37,7 +37,7 @@ namespace Naussilus.Gameplay
             current = phase;
             group.Show();
             npcBarGroup.Hide();
-            var validConsequence = ConsequenceManager.ValidConsequences;
+            var validConsequence = ConditionalEffectManager.ValidConsequences;
             using (ListPool<Consequence>.Get(out var list))
             {
                 for (int i = 0; i < validConsequence.Count; i++)

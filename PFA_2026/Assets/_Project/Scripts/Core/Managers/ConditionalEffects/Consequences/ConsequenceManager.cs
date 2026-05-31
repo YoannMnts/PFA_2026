@@ -7,11 +7,9 @@ namespace Naussilus.Core.Managers
 {
     public static class ConsequenceManager
     {
-        public static readonly List<Consequence> ValidConsequences = new List<Consequence>();
         
         public static void ComputeAllConsequence(this Consequence[] currentConsequence, Npc currentNpcData)
         {
-            ValidConsequences.Clear();
             for (var i = 0; i < currentConsequence.Length; i++)
             {
                 var consequence = currentConsequence[i];
@@ -29,7 +27,6 @@ namespace Naussilus.Core.Managers
         
         public static void ComputeAllConsequence(this Consequence[] currentConsequence, Npc currentNpcData ,Category[] currentCategories)
         {
-            ValidConsequences.Clear();
             for (var i = 0; i < currentConsequence.Length; i++)
             {
                 var consequence = currentConsequence[i];
@@ -65,11 +62,12 @@ namespace Naussilus.Core.Managers
 
             for (int i = 0; i < consequence.Text.Length; i++)
             {
-                var replace = consequence.Text[i].Replace("{CurrentNpc}", currentNpcData.Name);
+                var replace = consequence.Text[i].Replace("[CurrentNpc]", currentNpcData.Name);
+                replace = replace.Replace("{CurrentNpc}", currentNpcData.Name);
                 consequence.Text[i] = replace;
             }
             
-            ValidConsequences.Add(consequence);
+            ConditionalEffectManager.ValidConsequences.Add(consequence);
         }
 
         private static void ModifyValue(this Consequence consequence, int leftSide, int rightSide, out int newValue)

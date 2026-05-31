@@ -18,6 +18,9 @@ namespace Naussilus.Gameplay
     
         private readonly int defaultAP;
         private readonly int timerDuration;
+        
+        private TimerPhase timer;
+
         public ManagementPhase(int defaultAPValue, int timerDuration)
         {
             defaultAP = defaultAPValue;
@@ -28,12 +31,23 @@ namespace Naussilus.Gameplay
         protected override Awaitable Initialize(CancellationToken token)
         {
             CurrentActionPoint = new ActionPoint(defaultAP);
-            var timer = new TimerPhase(this, timerDuration);
+            if (timer != null && timer.IsRunning())
+                timer.Cancel();
+
+            timer = new TimerPhase(this, timerDuration);
             timer.RunAndForget();
             RoomManager.SubtractAllCountdown(); 
             return base.Initialize(token);
         }
-        
+
+        protected override Awaitable Dispose(CancellationToken token)
+        {
+            if (timer != null && timer.IsRunning())
+                timer.Cancel();
+            
+            return base.Dispose(token);
+        }
+
 
         public void SelectRoom(Room room)
         {

@@ -38,13 +38,13 @@ namespace Naussilus.Core.Managers
                         list.Add(slot);
                     }
                 }
-                
                 npc.SetInRandomSlot(list);
             }
         }
 
         private static void SetInRandomSlot(this Npc npc, List<CategoryNpcSlot> slots)
         {
+            
             while (slots.Count > 0)
             {
                 var randomNumber = Random.Range(0, slots.Count);
@@ -59,6 +59,7 @@ namespace Naussilus.Core.Managers
 
             if (slots.Count == 0)
                 Debug.LogWarning($"[DefaultSlotManager] No available slot for {npc.Name}");
+            
         }
     }
 }

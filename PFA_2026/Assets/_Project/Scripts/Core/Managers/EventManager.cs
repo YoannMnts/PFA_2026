@@ -56,7 +56,7 @@ namespace Naussilus.Core.Managers
                         continue;
                     }
                     
-                    Debug.Log($"[EventManager] Found Incident: {currentIncident.Name}");
+                    //Debug.Log($"[EventManager] Found Incident: {currentIncident.Name}");
                     ConditionalEffect[] conditionalEffects = currentIncident.Dependencies ?? Array.Empty<ConditionalEffect>();
                     for (int i = 0; i < conditionalEffects.Length; i++)
                     {
