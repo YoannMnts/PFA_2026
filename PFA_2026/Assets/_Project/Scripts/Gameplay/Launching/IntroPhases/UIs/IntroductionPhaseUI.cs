@@ -43,8 +43,15 @@ namespace Naussilus.Gameplay
             {
                 for (int i = 0; i <= explaination.text.Length; i++)
                 {
-                    explaination.maxVisibleCharacters = i;
-                    await Awaitable.WaitForSecondsAsync(0.02f);
+                    if (explaination.maxVisibleCharacters < explaination.text.Length)
+                    {
+                        explaination.maxVisibleCharacters = i;
+                        await Awaitable.WaitForSecondsAsync(0.02f);
+                    }
+                    else
+                    {
+                        return;
+                    }
                 }
             }
         }
@@ -72,6 +79,13 @@ namespace Naussilus.Gameplay
             if (AllRead())
             {
                 currentPhase.SetResult(true);
+            }
+            else
+            {
+                foreach (TextMeshProUGUI explaination in explainations)
+                {
+                    explaination.maxVisibleCharacters = explaination.text.Length;
+                }
             }
         }
     }

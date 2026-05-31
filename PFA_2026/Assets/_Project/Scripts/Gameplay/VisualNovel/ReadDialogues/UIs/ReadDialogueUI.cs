@@ -56,8 +56,15 @@ namespace Naussilus.Gameplay
 
             for (int i = 0; i <= content.Length; i++)
             {
-                dialogueText.maxVisibleCharacters = i;
-                await Awaitable.WaitForSecondsAsync(0.02f);
+                if (dialogueText.maxVisibleCharacters < dialogueText.text.Length)
+                {
+                    dialogueText.maxVisibleCharacters = i;
+                    await Awaitable.WaitForSecondsAsync(0.02f);
+                }
+                else
+                {
+                    return;
+                }
             }
         }
 
@@ -67,6 +74,7 @@ namespace Naussilus.Gameplay
             {
                 SoundDesignManager.instance.PlaySound(SoundsEnum.Clic1,0.3f);
             }
+            dialogueText.maxVisibleCharacters = dialogueText.text.Length;
             isDialogueRead = true;
         }
     }

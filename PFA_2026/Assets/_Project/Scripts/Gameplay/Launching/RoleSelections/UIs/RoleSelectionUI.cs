@@ -38,8 +38,15 @@ namespace Naussilus.Gameplay.RoleSelections
             {
                 for (int i = 0; i <= explaination.text.Length; i++)
                 {
-                    explaination.maxVisibleCharacters = i;
-                    await Awaitable.WaitForSecondsAsync(0.02f);
+                    if (explaination.maxVisibleCharacters < explaination.text.Length)
+                    {
+                        explaination.maxVisibleCharacters = i;
+                        await Awaitable.WaitForSecondsAsync(0.02f);
+                    }
+                    else
+                    {
+                        return;
+                    }
                 }
             }
         }
@@ -90,6 +97,13 @@ namespace Naussilus.Gameplay.RoleSelections
                     var intro = new IntroductionPhase();
                     await intro.Run();
                     firstPlayerGroup.Show();
+                }
+                else
+                {
+                    foreach (TextMeshProUGUI explaination in explainations)
+                    {
+                        explaination.maxVisibleCharacters = explaination.text.Length;
+                    }
                 }
                 
             }
