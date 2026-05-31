@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
   <Name>k__BackingField: "Salle \xE0 manger"
   <Description>k__BackingField: "C'est i\xE7i que l'\xE9quipage prend ses repas et
-    que le cuistot pr\xE9pare la nourriture"
+    que le cuistot pr\xE9pare la nourriture."
   <Actions>k__BackingField:
   - {fileID: 11400000, guid: a6cde8c9252d9384ab07dcd8a762cf2a, type: 2}
   - {fileID: 11400000, guid: 42d9256a63eb0ec44a44c16e226471c0, type: 2}

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fb7e7abe99985346beaefd951ff3ffc, type: 3}
   m_Name: SkyModelPink
   m_EditorClassIdentifier: Naussilus.Gameplay::Naussilus.Gameplay.Parrallax.SkyModelData
-  background: {fileID: 21300000, guid: 58f735ac1d92af545ab7409f40617586, type: 3}
+  background: {fileID: 21300000, guid: 3d53037381ea97e42b72bf1d31ac3862, type: 3}
   clouds:
-  - {fileID: 21300000, guid: b001d28123aef524dba0b4257e927eba, type: 3}
-  - {fileID: 21300000, guid: d4648bca05e52844aad946323794ab13, type: 3}
-  - {fileID: 21300000, guid: dbbee4b3fd051c64792d34a894be6b5a, type: 3}
+  - {fileID: 21300000, guid: 936694ec832ac684d86e90b607a8d2c9, type: 3}
+  - {fileID: 21300000, guid: 898df7c4b2120b64c9c39b7f4dd8d2ac, type: 3}
+  - {fileID: 21300000, guid: 54b7c14163556304d9ea79abb8b25e89, type: 3}

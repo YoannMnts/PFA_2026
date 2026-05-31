@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
   <Name>k__BackingField: Vigie
   <Description>k__BackingField: "La vue est d\xE9gag\xE9e depuis cette pi\xE8ce,
-    permettant de surveiller l'horizon et de communiquer avec l'exterieur par radio"
+    permettant de surveiller l'horizon et de communiquer avec l'exterieur par radio."
   <Actions>k__BackingField:
   - {fileID: 11400000, guid: ac41658ca01749b428dd89d99d2d8a0a, type: 2}
   <Icon>k__BackingField: {fileID: 21300000, guid: 93c7d898adfba574fb6b637a8d2bb855, type: 3}

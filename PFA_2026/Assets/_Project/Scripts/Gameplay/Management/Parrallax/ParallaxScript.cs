@@ -46,7 +46,7 @@ namespace Naussilus.Gameplay.Parrallax
 
         private void CreateParallax()
         {
-            SkyModelData selectedSky = skyDatas[Random.Range(0, skyDatas.Count-1)];
+            SkyModelData selectedSky = skyDatas[Random.Range(0, skyDatas.Count)];
             GameObject backgroundSky = new GameObject();
             backgroundSky.transform.SetParent(transform);
             backgroundSky.name = "Sky";
@@ -77,14 +77,14 @@ namespace Naussilus.Gameplay.Parrallax
 
         private void UpdateParallax()
         {
-            SkyModelData selectedSky = skyDatas[Random.Range(0, skyDatas.Count-1)];
+            SkyModelData selectedSky = skyDatas[Random.Range(0, skyDatas.Count)];
             sky.sprite = selectedSky.background;
             for (int i = 0; i < parallaxLayers.Count; i++)
             {
                 Transform parallax = parallaxLayers[i].transform;
                 for (int j = 0; j < parallax.transform.childCount; j++)
                 {
-                    Transform currentParallax = parallax.transform.GetChild(i);
+                    Transform currentParallax = parallax.transform.GetChild(j);
                     currentParallax.gameObject.GetComponent<SpriteRenderer>().sprite = selectedSky.clouds[i];
                 }
 

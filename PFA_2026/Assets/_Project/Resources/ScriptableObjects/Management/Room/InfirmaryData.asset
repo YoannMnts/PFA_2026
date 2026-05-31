@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
   <Name>k__BackingField: Infirmerie
   <Description>k__BackingField: "En cas de probl\xE8me m\xE9dical, les membres de
-    l'\xE9quipage pourront \xEAtre examin\xE9s i\xE7i"
+    l'\xE9quipage pourront \xEAtre examin\xE9s i\xE7i."
   <Actions>k__BackingField:
   - {fileID: 11400000, guid: 8c9669877697017479f3dea0caba0201, type: 2}
   <Icon>k__BackingField: {fileID: 21300000, guid: 575f9a30b588a2c4187b6fbe58fb75a9, type: 3}

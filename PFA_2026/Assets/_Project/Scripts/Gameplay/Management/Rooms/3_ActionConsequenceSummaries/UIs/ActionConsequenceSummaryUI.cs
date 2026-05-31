@@ -3,6 +3,7 @@ using System.Linq;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
+using Naussilus.Gameplay.Buttons;
 using UnityEngine;
 using UnityEngine.Pool;
 using UnityEngine.Serialization;
@@ -67,8 +68,13 @@ namespace Naussilus.Gameplay
             base.OnPhaseEnd(phase);
         }
 
-        public void Apply()
+        public async void Apply()
         {
+            if (ButtonFeedbacksManager.instance != null)
+            {
+                await ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(applyButton.gameObject);
+                await Awaitable.WaitForSecondsAsync(10f);
+            }
             current.SetResult(true);
             Debug.Log($"Apply");
         }

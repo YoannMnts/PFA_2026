@@ -214,7 +214,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 2
         <Text>k__BackingField:
-        - "T\xE9a renforce sa relation avec {CuurentNpc}"
+        - "T\xE9a renforce sa relation avec {CurentNpc}"
     - <IsEnumeration>k__BackingField: 1
       <CurrentNpcTarget>k__BackingField:
         rid: 2811533818871939105
@@ -341,7 +341,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
-        - 'Pam renforce sa relation avec {CurrentNpc}
+        - 'Pam renforce sa relation avec Marco
 
 '
     - <IsEnumeration>k__BackingField: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
   <Name>k__BackingField: Pont
   <Description>k__BackingField: "Le pont est le lieu id\xE9al pour r\xE9unir tout
-    l'\xE9quipage et profiter de l'air frais"
+    l'\xE9quipage et profiter de l'air frais."
   <Actions>k__BackingField:
   - {fileID: 11400000, guid: 187940acfe97ad6419c976ad29608383, type: 2}
   - {fileID: 11400000, guid: f0be2f29a33f9484ba719fad47353836, type: 2}

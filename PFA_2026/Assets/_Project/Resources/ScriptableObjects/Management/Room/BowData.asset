@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
   <Name>k__BackingField: Proue
   <Description>k__BackingField: "En venant sur la proue du navire, les pirates peuvent
-    se d\xE9tendre et profiter de la vue"
+    se d\xE9tendre et profiter de la vue."
   <Actions>k__BackingField:
   - {fileID: 11400000, guid: 81bc30cff07b0644aa7e54b6347b9036, type: 2}
   - {fileID: 11400000, guid: e2b351aed1b01674fba5965c03680322, type: 2}

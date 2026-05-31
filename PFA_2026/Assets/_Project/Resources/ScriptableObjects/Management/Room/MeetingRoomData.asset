@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomDatas.RoomData
   <Name>k__BackingField: "Salle de r\xE9union"
   <Description>k__BackingField: "Sert de bureau et de lieu de rassemblement pour
-    l'\xE9quipage"
+    l'\xE9quipage."
   <Actions>k__BackingField:
   - {fileID: 11400000, guid: a8d6d15cef8e33b4d8bb79b7fdb07025, type: 2}
   - {fileID: 11400000, guid: dfb1cfcbaec9de441b7a52073835447f, type: 2}

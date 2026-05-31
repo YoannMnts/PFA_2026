@@ -259,8 +259,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1286714057092906438}
   m_HandleRect: {fileID: 7877318485443269839}
   m_Direction: 3
-  m_Value: 0.5
-  m_Size: 0.46602288
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1036,8 +1036,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Nom de la pi\xE8ce"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 72ca35c1519de2544a261a3a3a4d50a8, type: 2}
+  m_sharedMaterial: {fileID: 1933467953180398312, guid: 72ca35c1519de2544a261a3a3a4d50a8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2853,6 +2853,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5793556346722839407, guid: 4214a54c144abd84586e19489dfcbfcd, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5834697505955744778, guid: 4214a54c144abd84586e19489dfcbfcd, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 72ca35c1519de2544a261a3a3a4d50a8, type: 2}
+    - target: {fileID: 5834697505955744778, guid: 4214a54c144abd84586e19489dfcbfcd, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1933467953180398312, guid: 72ca35c1519de2544a261a3a3a4d50a8, type: 2}
+    - target: {fileID: 5834697505955744778, guid: 4214a54c144abd84586e19489dfcbfcd, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
