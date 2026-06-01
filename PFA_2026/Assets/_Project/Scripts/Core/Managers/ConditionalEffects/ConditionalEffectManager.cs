@@ -11,8 +11,10 @@ namespace Naussilus.Core.Managers
     public static class ConditionalEffectManager
     {
         public static readonly List<Consequence> ValidConsequences = new List<Consequence>();
-        public static Consequence LostConsequence;
+        private static Consequence lostConsequence;
 
+        public static void AssignLostConsequence(Consequence consequence) => lostConsequence = consequence;
+        
         private static Npc[] currentNpcs;
 
         private static void ComputeConditionalEffect(this ConditionalEffect conditionalEffect, Npc currentNpcData, Category[] currentCategories)

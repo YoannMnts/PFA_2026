@@ -56,8 +56,11 @@ namespace Naussilus.Gameplay
                 for (int i = 0; i < finalAnswer.Effects.Length; i++)
                 {
                     finalAnswer.Effects[i].ComputeConditionalEffect(NpcEventData, out var isGameLost);
-                    if (isGameLost) ;
-                    //return false;
+                    if (isGameLost)
+                    {
+                        GameOver();
+                        return false;
+                    }
                 }
                 currentEvent.AddToCompletedEvent();
             }
@@ -76,6 +79,12 @@ namespace Naussilus.Gameplay
         async Awaitable IPhase<bool>.Dispose(CancellationToken token)
         {
             await Task.CompletedTask;
+        }
+        
+        private static void GameOver()
+        {
+            var ending = new EndingPhase(true);
+            ending.RunAndForget();
         }
     }
 }

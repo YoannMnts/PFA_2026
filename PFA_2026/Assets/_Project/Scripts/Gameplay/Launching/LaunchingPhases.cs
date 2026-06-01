@@ -53,12 +53,6 @@ namespace Naussilus.Gameplay
                     bool managementResult = await Management();
                     
                     await PlayerSwitch();
-                    
-                    if (!managementResult || !visualNovelResult)
-                    {
-                        //GameOver();
-                        //break;
-                    }
                 }
                 
                 var ending = new EndingPhase(false);
@@ -70,12 +64,7 @@ namespace Naussilus.Gameplay
                 Debug.LogException(e);
             }
         }
-
-        private void GameOver()
-        {
-            var ending = new EndingPhase(true);
-            ending.RunAndForget();
-        }
+        
 
         private async Awaitable PlayerSwitch()
         {
@@ -92,7 +81,7 @@ namespace Naussilus.Gameplay
         private async Awaitable<bool> VisualNovel(int currentDay)
         {
             var visualNovelEvent = EventManager.GetValidEvents(currentDay);
-            var visualNovelPhase = new VisualNovelPhase(visualNovelEvent);
+            var visualNovelPhase = new VisualNovelPhase(visualNovelEvent, currentDay);
             PhaseResult<bool> result = await visualNovelPhase.Run();
             
             return result;

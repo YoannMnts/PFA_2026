@@ -52,7 +52,7 @@ namespace Naussilus.Core.Managers
         {
             if (consequence.IsGameLost)
             {
-                //ConditionalEffectManager.LostConsequence(consequence);
+                ConditionalEffectManager.AssignLostConsequence(consequence);
             }
             IConsequenceEffectValue stat = consequence.ConsequenceSide.Stat;
             var stats = currentNpcData.GetValue(stat);
