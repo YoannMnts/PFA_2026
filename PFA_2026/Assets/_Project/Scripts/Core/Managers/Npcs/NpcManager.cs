@@ -170,7 +170,7 @@ namespace Naussilus.Core.Managers.Npcs
             }
         }
 
-        public static void GetSelectedNpcs(INpcSelector npcSelector, Npc currentNpc, out Npc[] npcs)
+        public static void GetSelectedNpcs(INpcSelector npcSelector, Npc currentNpc, out Npc[] returnNpcs)
         {
             using (ListPool<Npc>.Get(out var list))
             {
@@ -178,7 +178,7 @@ namespace Naussilus.Core.Managers.Npcs
                 switch (npcSelector)
                 {
                     case Npc npcValue:
-                        npcs = new[] { npcValue };
+                        returnNpcs = new[] { npcValue };
                         return;
 
                     case AllNpc:
@@ -192,7 +192,7 @@ namespace Naussilus.Core.Managers.Npcs
                         }
 
                         result = list.ToArray();
-                        npcs = result;
+                        returnNpcs = result;
                         return;
 
                     case Gender gender:
@@ -206,10 +206,10 @@ namespace Naussilus.Core.Managers.Npcs
                         }
 
                         result = list.ToArray();
-                        npcs = result;
+                        returnNpcs = result;
                         return;
                 }
-                npcs = result;
+                returnNpcs = result;
             }
         }
         
@@ -243,14 +243,14 @@ namespace Naussilus.Core.Managers.Npcs
                     break;
                 
                 case NpcRelationship value:
-                    GetSelectedNpcs(value.Npc, npc, out Npc[] npcs);
+                    GetSelectedNpcs(value.Npc, npc, out Npc[] selected);
                     using (ListPool<INpcStat>.Get(out var list))
                     {
                         for (int i = 0; i < npc.Relationships.Length; i++)
                         {
-                            for (int j = 0; j < npcs.Length; j++)
+                            for (int j = 0; j < selected.Length; j++)
                             {
-                                if (npc.Relationships[i].Npc != npcs[j])
+                                if (npc.Relationships[i].Npc != selected[j])
                                     continue;
                                 
                                 list.Add(npc.Relationships[i]);
@@ -295,14 +295,14 @@ namespace Naussilus.Core.Managers.Npcs
                     break;
                 
                 case NpcRelationship value:
-                    GetSelectedNpcs(value.Npc, npc, out Npc[] npcs);
+                    GetSelectedNpcs(value.Npc, npc, out Npc[] selected);
                     using (ListPool<INpcStat>.Get(out var list))
                     {
                         for (int i = 0; i < npc.Relationships.Length; i++)
                         {
-                            for (int j = 0; j < npcs.Length; j++)
+                            for (int j = 0; j < selected.Length; j++)
                             {
-                                if (npc.Relationships[i].Npc != npcs[j])
+                                if (npc.Relationships[i].Npc != selected[j])
                                     continue;
                                 
                                 list.Add(npc.Relationships[i]);
