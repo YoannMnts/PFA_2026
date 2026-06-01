@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5dd7f1b5391287447828a9101e31ace6
+guid: d7ff3cc48817feb4eb9ae7a9f3cc8829
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7130514999457946402
-    second: TempBG_Cloud1_0
+      213: -2119231327390190794
+    second: "\xE9cran titre2048_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TempBG_Cloud1_0
+      name: "\xE9cran titre2048_0"
       rect:
         serializedVersion: 2
-        x: 496
-        y: 246
-        width: 1176
-        height: 492
+        x: 57
+        y: 422
+        width: 1928
+        height: 1208
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed4e6b713625b0d90800000000000000
-      internalID: -7130514999457946402
+      spriteID: 633370ef55af692e0800000000000000
+      internalID: -2119231327390190794
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TempBG_Cloud1_0: -7130514999457946402
+      "\xE9cran titre2048_0": -2119231327390190794
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

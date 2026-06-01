@@ -19,6 +19,10 @@ namespace Naussilus.Gameplay
         protected override void OnPhaseBegin(EndingPhase phase)
         {
             background.sprite = phase.IsGameOver ? badEndingSprite : goodEndingSprite;
+            if (SoundDesignManager.instance != null)
+            {
+                SoundDesignManager.instance.ManagmentMusic(true);
+            }
             base.OnPhaseBegin(phase);
         }
 

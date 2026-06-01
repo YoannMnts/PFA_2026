@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7a7e182f2048cdb736837041d3449c, type: 3}
   m_Name: Bathroom_S1
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Managements.RoomSlotPositionData
-  <Position>k__BackingField: {x: -5.621, y: -0.227, z: 0}
+  <Position>k__BackingField: {x: -5.349, y: -0.221, z: 0}
   <Expression>k__BackingField: {fileID: 11400000, guid: 45d34816b9490bc44a9494abe824abce, type: 2}
   sortingLayerName: NpcBackground
   <OrderInLayer>k__BackingField: 0
