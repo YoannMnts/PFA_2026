@@ -5,6 +5,7 @@ using Naussilus.Core;
 using Naussilus.Core.Managers;
 using Naussilus.Core.Sounds;
 using Naussilus.Gameplay.Buttons;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -14,6 +15,7 @@ namespace Naussilus.Gameplay
     {
         [SerializeField] private CanvasGroup group;
         [SerializeField] private ConsequenceSummaryUIList consequenceSummaryUIList;
+        [SerializeField] private TMP_Text dayText;
 
         private VisualNovelSummary currentPhase;
         private void Start()
@@ -35,6 +37,7 @@ namespace Naussilus.Gameplay
             }
             
             group.Show();
+            dayText.text = $"Jour : {phase.CurrentDay}";
             if (SoundDesignManager.instance != null)
             {
                 SoundDesignManager.instance.PlaySound(SoundsEnum.Writing);
@@ -62,6 +65,7 @@ namespace Naussilus.Gameplay
             currentPhase = null;
             group.Hide();
             consequenceSummaryUIList.Disconnect();
+            dayText.text = string.Empty;
             
             base.OnPhaseEnd(phase);
         }

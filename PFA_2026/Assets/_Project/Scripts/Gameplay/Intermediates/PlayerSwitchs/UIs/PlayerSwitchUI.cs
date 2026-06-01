@@ -13,9 +13,7 @@ namespace Naussilus.Gameplay.PlayerSwitchs.UIs
     {
         [SerializeField] private CanvasGroup group;
         [SerializeField] private Button continueButton;
-
-        [SerializeField] private TMP_Text firstText;
-
+        
         private PlayerSwitch playerSwitch;
         
         private void Start()

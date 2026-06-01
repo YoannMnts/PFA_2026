@@ -89,6 +89,7 @@ namespace Naussilus.Gameplay.Interactions
                 for (var i = 0; i < results.Count; i++)
                 {
                     var result = results[i];
+                    Debug.Log($"Hit: {result.gameObject.name} at {result.screenPosition}");
                     if (result.gameObject.TryGetComponent(out IInteractable uiInteractable))
                     {
                         if (uiInteractable.IsInteractable())

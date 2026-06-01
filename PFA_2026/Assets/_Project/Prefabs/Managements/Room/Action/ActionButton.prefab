@@ -442,19 +442,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8082166348103863091}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6549034927881377289}
-        m_TargetAssemblyTypeName: _Project.Scripts.RoomActionUI, Naussilus.Gameplay.Management
-        m_MethodName: OnClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &6549034927881377289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -469,6 +457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Gameplay.Management::_Project.Scripts.RoomActionUI
   titleText: {fileID: 5152408025711255698}
   actionPoint: {fileID: 571621242399563409}
+  activityButton: {fileID: 8047409883698157974}
 --- !u!1 &8638028842593378427
 GameObject:
   m_ObjectHideFlags: 0

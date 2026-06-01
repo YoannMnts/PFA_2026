@@ -56,8 +56,8 @@ namespace Naussilus.Gameplay
                     
                     if (!managementResult || !visualNovelResult)
                     {
-                        GameOver();
-                        break;
+                        //GameOver();
+                        //break;
                     }
                 }
                 
@@ -92,7 +92,7 @@ namespace Naussilus.Gameplay
         private async Awaitable<bool> VisualNovel(int currentDay)
         {
             var visualNovelEvent = EventManager.GetValidEvents(currentDay);
-            var visualNovelPhase = new VisualNovelPhase(visualNovelEvent);
+            var visualNovelPhase = new VisualNovelPhase(visualNovelEvent, currentDay);
             if (SoundDesignManager.instance != null)
             {
                 SoundDesignManager.instance.ManagmentMusic(false);

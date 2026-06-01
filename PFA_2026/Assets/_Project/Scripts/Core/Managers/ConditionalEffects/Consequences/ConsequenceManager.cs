@@ -8,7 +8,7 @@ namespace Naussilus.Core.Managers
     public static class ConsequenceManager
     {
         
-        public static void ComputeAllConsequence(this Consequence[] currentConsequence, Npc currentNpcData)
+        public static bool ComputeAllConsequence(this Consequence[] currentConsequence, Npc currentNpcData)
         {
             for (var i = 0; i < currentConsequence.Length; i++)
             {
@@ -20,12 +20,15 @@ namespace Naussilus.Core.Managers
                 for (var j = 0; j < subjects.Length; j++)
                 {
                     var subject = subjects[j];
-                    consequence.ComputeConsequence(subject);
+                    var isGameLost = consequence.ComputeConsequence(subject);
+                    if (isGameLost)
+                        return false;
                 }
             }
+            return true;
         }
         
-        public static void ComputeAllConsequence(this Consequence[] currentConsequence, Npc currentNpcData ,Category[] currentCategories)
+        public static bool ComputeAllConsequence(this Consequence[] currentConsequence, Npc currentNpcData ,Category[] currentCategories)
         {
             for (var i = 0; i < currentConsequence.Length; i++)
             {
@@ -37,13 +40,20 @@ namespace Naussilus.Core.Managers
                 for (var j = 0; j < subjects.Length; j++)
                 {
                     var subject = subjects[j];
-                    consequence.ComputeConsequence(subject);
+                    var isGameLost = consequence.ComputeConsequence(subject);
+                    if (isGameLost)
+                        return false;
                 }
             }
+            return true;
         }
 
-        private static void ComputeConsequence(this Consequence consequence, Npc currentNpcData)
+        private static bool ComputeConsequence(this Consequence consequence, Npc currentNpcData)
         {
+            if (consequence.IsGameLost)
+            {
+                //ConditionalEffectManager.LostConsequence(consequence);
+            }
             IConsequenceEffectValue stat = consequence.ConsequenceSide.Stat;
             var stats = currentNpcData.GetValue(stat);
             int rightSide = consequence.Amount;
@@ -51,7 +61,7 @@ namespace Naussilus.Core.Managers
             if (stats is null || rightSide < 0)
             {
                 Debug.LogError($"[ConsequenceManager] Negative value for consequence left side : left: type is null, right: {rightSide}");
-                return;
+                return false;
             }
             for (int i = 0; i < stats.Length; i++)
             {
@@ -68,6 +78,7 @@ namespace Naussilus.Core.Managers
             }
             
             ConditionalEffectManager.ValidConsequences.Add(consequence);
+            return true;
         }
 
         private static void ModifyValue(this Consequence consequence, int leftSide, int rightSide, out int newValue)

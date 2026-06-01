@@ -50,5 +50,10 @@ namespace Naussilus.Gameplay
         {
             current.EndDay();
         }
+
+        public void Cancel()
+        {
+            current.SetResult(false);
+        }
     }
 }

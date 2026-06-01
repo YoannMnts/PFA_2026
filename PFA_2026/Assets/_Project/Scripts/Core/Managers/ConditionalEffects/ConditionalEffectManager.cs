@@ -11,6 +11,7 @@ namespace Naussilus.Core.Managers
     public static class ConditionalEffectManager
     {
         public static readonly List<Consequence> ValidConsequences = new List<Consequence>();
+        public static Consequence LostConsequence;
 
         private static Npc[] currentNpcs;
 
@@ -34,7 +35,7 @@ namespace Naussilus.Core.Managers
                 }
             }
         }
-        public static void ComputeConditionalEffect(this ConditionalEffect conditionalEffect, Npc currentNpcData)
+        public static void ComputeConditionalEffect(this ConditionalEffect conditionalEffect, Npc currentNpcData, out bool isGameLost)
         {
             currentNpcs = conditionalEffect.IsEnumeration
                 ? NpcManager.GetSelectedNpcs(conditionalEffect.CurrentNpcTarget, currentNpcData)
@@ -48,8 +49,13 @@ namespace Naussilus.Core.Managers
             {
                 currentConditions.ComputeAllCondition(currentNpcs[i], out var validNpcs);
                 for (int j = 0; j < validNpcs.Count; j++)
-                    currentConsequences.ComputeAllConsequence(validNpcs[j]);
+                {
+                    isGameLost = currentConsequences.ComputeAllConsequence(validNpcs[j]);
+                    if (isGameLost)
+                        return;
+                }
             }
+            isGameLost = false;
         }
         public static bool ComputeOnlyConditions(this ConditionalEffect conditionalEffect, Npc currentNpcData)
         {

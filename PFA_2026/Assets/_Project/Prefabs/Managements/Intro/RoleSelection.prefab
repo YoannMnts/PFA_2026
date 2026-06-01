@@ -729,6 +729,7 @@ MonoBehaviour:
       m_Calls: []
   selectionGroup: {fileID: 1935431138969787247}
   firstPlayerGroup: {fileID: 4686059936033410915}
+  explainations: []
   continueButton: {fileID: 8965901172296226923}
 --- !u!1 &7054453705427913933
 GameObject:
@@ -792,6 +793,26 @@ PrefabInstance:
     - target: {fileID: 1714015331924518034, guid: 3dac0a170cadbe1408a9dc29a6dca251, type: 3}
       propertyPath: m_Name
       value: TextList
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210378704123739508, guid: 3dac0a170cadbe1408a9dc29a6dca251, type: 3}
+      propertyPath: m_Spacing
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210378704123739508, guid: 3dac0a170cadbe1408a9dc29a6dca251, type: 3}
+      propertyPath: m_Padding.m_Top
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210378704123739508, guid: 3dac0a170cadbe1408a9dc29a6dca251, type: 3}
+      propertyPath: m_Padding.m_Left
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210378704123739508, guid: 3dac0a170cadbe1408a9dc29a6dca251, type: 3}
+      propertyPath: m_Padding.m_Right
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210378704123739508, guid: 3dac0a170cadbe1408a9dc29a6dca251, type: 3}
+      propertyPath: m_Padding.m_Bottom
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 5022528849125260736, guid: 3dac0a170cadbe1408a9dc29a6dca251, type: 3}
       propertyPath: m_text

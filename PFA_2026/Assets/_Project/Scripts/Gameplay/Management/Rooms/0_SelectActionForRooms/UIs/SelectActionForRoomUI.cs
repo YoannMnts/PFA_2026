@@ -25,6 +25,8 @@ namespace Naussilus.Gameplay
 
         public string Name => current.CurrentRoom.Name;
         public string Description => current.CurrentRoom.Description;
+        
+        public ActionPoint ActionPoint => currentActionPoint;
 
         private SelectActionForRoom current;
         private ActionPoint currentActionPoint;
@@ -42,6 +44,7 @@ namespace Naussilus.Gameplay
             
             current = phase;
             group.Show();
+            descriptionGroup.Show();
             roomName.text = Name;
             roomDescription.text = Description;
             currentActionPoint = phase.CurrentActionPoint;
@@ -67,6 +70,7 @@ namespace Naussilus.Gameplay
             current = null;
             roomActionUIList.Disconnect();
             group.Hide();
+            descriptionGroup.Hide();
             boatMenuTransform.gameObject.SetActive(true);
 
             if (this.TryGetService(out PlayerController controller))

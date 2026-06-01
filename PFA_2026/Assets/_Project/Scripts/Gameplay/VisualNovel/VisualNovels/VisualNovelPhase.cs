@@ -15,9 +15,12 @@ namespace Naussilus.Gameplay
         private Dialogue dialogue;
         public Npc NpcEventData => currentEvent.Npcs[0];
 
-        public VisualNovelPhase(Incident[] eventDatas)
+        private int day;
+        
+        public VisualNovelPhase(Incident[] eventDatas, int currentDay)
         {
             currentEvents = eventDatas;
+            day = currentDay;
         }
         
         async Awaitable<bool> IPhase<bool>.Execute(CancellationToken token)
@@ -51,11 +54,15 @@ namespace Naussilus.Gameplay
                 await readDialogue.Run();
 
                 for (int i = 0; i < finalAnswer.Effects.Length; i++)
-                    finalAnswer.Effects[i].ComputeConditionalEffect(NpcEventData);
+                {
+                    finalAnswer.Effects[i].ComputeConditionalEffect(NpcEventData, out var isGameLost);
+                    if (isGameLost) ;
+                    //return false;
+                }
                 currentEvent.AddToCompletedEvent();
             }
             
-            var summary = new VisualNovelSummary();
+            var summary = new VisualNovelSummary(day);
             await summary.Run();
             
             return true;

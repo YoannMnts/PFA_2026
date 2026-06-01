@@ -499,6 +499,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 1117762460832674529, guid: 4c617b3b945f8fa41919121da5625ff2, type: 3}
+      propertyPath: dayText
+      value: 
+      objectReference: {fileID: 8553317910404019526}
     - target: {fileID: 2196065526335081278, guid: 4c617b3b945f8fa41919121da5625ff2, type: 3}
       propertyPath: root
       value: 
@@ -646,6 +650,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3021284761494787895, guid: 4c617b3b945f8fa41919121da5625ff2, type: 3}
   m_PrefabInstance: {fileID: 2004198942982927749}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8553317910404019526 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7882184470112747715, guid: 4c617b3b945f8fa41919121da5625ff2, type: 3}
+  m_PrefabInstance: {fileID: 2004198942982927749}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &5132126859712607887
 PrefabInstance:
   m_ObjectHideFlags: 0
