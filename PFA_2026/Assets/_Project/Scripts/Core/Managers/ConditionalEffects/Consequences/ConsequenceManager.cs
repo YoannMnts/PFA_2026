@@ -40,7 +40,7 @@ namespace Naussilus.Core.Managers
                 for (var j = 0; j < subjects.Length; j++)
                 {
                     var subject = subjects[j];
-                    var isGameLost = consequence.ComputeConsequence(subject);
+                    var isGameLost = !consequence.ComputeConsequence(subject);
                     if (isGameLost)
                         return false;
                 }
