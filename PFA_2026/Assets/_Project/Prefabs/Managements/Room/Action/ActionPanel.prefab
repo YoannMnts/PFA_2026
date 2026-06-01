@@ -2892,6 +2892,26 @@ PrefabInstance:
       propertyPath: actionCountdown
       value: 
       objectReference: {fileID: 9170167920219209335}
+    - target: {fileID: 3272361948199721628, guid: 38e3148aaac9456448baa3ff9ecd0278, type: 3}
+      propertyPath: m_margin.z
+      value: -115.49609
+      objectReference: {fileID: 0}
+    - target: {fileID: 3272361948199721628, guid: 38e3148aaac9456448baa3ff9ecd0278, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 72ca35c1519de2544a261a3a3a4d50a8, type: 2}
+    - target: {fileID: 3272361948199721628, guid: 38e3148aaac9456448baa3ff9ecd0278, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1933467953180398312, guid: 72ca35c1519de2544a261a3a3a4d50a8, type: 2}
+    - target: {fileID: 3272361948199721628, guid: 38e3148aaac9456448baa3ff9ecd0278, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3272361948199721628, guid: 38e3148aaac9456448baa3ff9ecd0278, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3719276189364425713, guid: 38e3148aaac9456448baa3ff9ecd0278, type: 3}
       propertyPath: m_Name
       value: CurrentActionPanel
@@ -3028,7 +3048,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2501877538394134167, guid: 38e3148aaac9456448baa3ff9ecd0278, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8013590232145865279, guid: 38e3148aaac9456448baa3ff9ecd0278, type: 3}
     m_AddedGameObjects: []
@@ -3659,6 +3680,14 @@ PrefabInstance:
     - target: {fileID: 7567578866419122728, guid: ab2e8ae5e078e4a4fbf58c4e785f2f3a, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138690258035338661, guid: ab2e8ae5e078e4a4fbf58c4e785f2f3a, type: 3}
+      propertyPath: m_margin.z
+      value: -122.663635
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138690258035338661, guid: ab2e8ae5e078e4a4fbf58c4e785f2f3a, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8346924182279707703, guid: ab2e8ae5e078e4a4fbf58c4e785f2f3a, type: 3}
       propertyPath: m_fontSizeBase

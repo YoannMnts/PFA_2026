@@ -17,5 +17,6 @@ MonoBehaviour:
     stock\xE9s."
   <Actions>k__BackingField:
   - {fileID: 11400000, guid: 0dabf01c4e7cea3448f28c65f667b73c, type: 2}
+  - {fileID: 11400000, guid: 81e6fdc6bc6228b4b8ee069ed9e6f7c1, type: 2}
   <Icon>k__BackingField: {fileID: 21300000, guid: cf7a257b12af2814693a60337d12d00b, type: 3}
   <GUID>k__BackingField: 13dcab58-9056-4daa-b579-b613572fb603
