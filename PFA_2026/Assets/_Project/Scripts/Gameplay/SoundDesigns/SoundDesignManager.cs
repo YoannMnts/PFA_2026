@@ -14,6 +14,7 @@ namespace Naussilus.Gameplay
         [SerializeField] private float defaultVolume;
         [SerializeField] private float managmentMusicVolume;
         [SerializeField] private float visualNovelMusicVolume;
+        [SerializeField] private float menuMusicVolume;
         [SerializeField] private GameObject sourceOriginal;
         
         private List<AudioSource> audioSources = new List<AudioSource>();
@@ -27,6 +28,14 @@ namespace Naussilus.Gameplay
             }
         }
 
+        public void MenuMusic()
+        {
+            if (musicsManager != null)
+            {
+                    musicsManager.PauseMusic();
+                    musicsManager.PlayMusic(libraryData.menuMusic, menuMusicVolume);
+            }
+        }
         public void VisualNovelMusic(bool launch)
         {
             if (musicsManager != null)

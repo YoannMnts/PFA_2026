@@ -14,6 +14,10 @@ namespace Naussilus.Gameplay
         private void Awake()
         {
             CreditsMenu.SetActive(false);
+            if (SoundDesignManager.instance != null)
+            {
+                SoundDesignManager.instance.MenuMusic();
+            }
         }
 
         public void Play(int playerNumber)

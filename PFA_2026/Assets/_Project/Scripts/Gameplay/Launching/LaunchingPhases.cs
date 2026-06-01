@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Helteix.Tools.Phases;
 using Naussilus.Core.Managers;
 using Naussilus.Core.Managers.Npcs;
@@ -92,12 +92,7 @@ namespace Naussilus.Gameplay
         private async Awaitable<bool> VisualNovel(int currentDay)
         {
             var visualNovelEvent = EventManager.GetValidEvents(currentDay);
-            var visualNovelPhase = new VisualNovelPhase(visualNovelEvent, currentDay);
-            if (SoundDesignManager.instance != null)
-            {
-                SoundDesignManager.instance.ManagmentMusic(false);
-                SoundDesignManager.instance.VisualNovelMusic(true);
-            }
+            var visualNovelPhase = new VisualNovelPhase(visualNovelEvent);
             PhaseResult<bool> result = await visualNovelPhase.Run();
             
             return result;
@@ -107,7 +102,6 @@ namespace Naussilus.Gameplay
         {
             var managementPhase = new ManagementPhase(defaultActionPoint, timerDuration);
             PhaseResult<bool> result = await managementPhase.Run();
-            
             return result;
         }
     }

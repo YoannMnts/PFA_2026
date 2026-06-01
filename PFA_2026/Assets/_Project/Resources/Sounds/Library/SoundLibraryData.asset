@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.Sounds.SoundLibraryData
   <visualNovelMusic>k__BackingField: {fileID: 8300000, guid: 09895091d138d5842b22a6935b59009a, type: 3}
   <managmentMusic>k__BackingField: {fileID: 8300000, guid: 54d860974862f114eb1ad7be9bbc637d, type: 3}
+  <menuMusic>k__BackingField: {fileID: 8300000, guid: feb4a4d698ac8e44f912124a5905767f, type: 3}
   <clipsList>k__BackingField:
   - {fileID: 11400000, guid: de16ea7c87bcfef4eb2f01dcba5f431e, type: 2}
   - {fileID: 11400000, guid: d081d0cd8636b454b8ebeed87c78c06a, type: 2}

@@ -353,4 +353,7 @@ MonoBehaviour:
   libraryData: {fileID: 11400000, guid: f4476285c3f66884994fab1c1d131496, type: 2}
   musicsManager: {fileID: 7256503366056805402}
   defaultVolume: 1
+  managmentMusicVolume: 0.6
+  visualNovelMusicVolume: 0.3
+  menuMusicVolume: 0.6
   sourceOriginal: {fileID: 2045354266100104594}

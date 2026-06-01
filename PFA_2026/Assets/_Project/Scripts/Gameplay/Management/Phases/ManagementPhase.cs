@@ -37,6 +37,10 @@ namespace Naussilus.Gameplay
             timer = new TimerPhase(this, timerDuration);
             timer.RunAndForget();
             RoomManager.SubtractAllCountdown(); 
+            if (SoundDesignManager.instance != null)
+            {
+                SoundDesignManager.instance.ManagmentMusic(true);
+            }
             return base.Initialize(token);
         }
 
