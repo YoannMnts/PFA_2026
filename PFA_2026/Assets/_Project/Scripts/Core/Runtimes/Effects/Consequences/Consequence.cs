@@ -1,4 +1,5 @@
-﻿using Naussilus.Core.Consequences;
+﻿using System.Linq;
+using Naussilus.Core.Consequences;
 using Naussilus.Core.Operators;
 
 namespace Naussilus.Core
@@ -21,7 +22,7 @@ namespace Naussilus.Core
             ConsequenceSide = new ConsequenceSide(data.ConsequenceSide);
             ArithmeticOperator = data.ArithmeticOperator;
             Amount = data.Amount;
-            Text = data.Text;
+            Text = Text = data.Text?.ToArray();
         }
     }
 }

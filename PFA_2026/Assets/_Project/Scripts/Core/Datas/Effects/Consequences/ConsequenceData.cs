@@ -1,6 +1,5 @@
 ﻿using System;
 using Naussilus.Core.Operators;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Naussilus.Core.Consequences
