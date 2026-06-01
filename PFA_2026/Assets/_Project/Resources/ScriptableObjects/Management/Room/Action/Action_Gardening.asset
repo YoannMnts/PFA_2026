@@ -705,7 +705,7 @@ MonoBehaviour:
         <Text>k__BackingField:
         - "Marco est heureux d'avoir de nouveaux ingr\xE9dients qu'il \xE0 fait pousser
           lui m\xEAme "
-  <ClearDefaultSlot>k__BackingField: 0
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: 63c14d0b-6d8c-41d9-b2bc-073482dcddbc
   references:
     version: 2

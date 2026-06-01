@@ -131,7 +131,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
-        - 'Jennie renforce sa relation avec {CurrentNpc} '
+        - 'Jennie renforce sa relation avec Jennie '
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Effects>k__BackingField:
@@ -486,7 +486,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
-        - 'Camil renforce sa relation avec [CurrentNpc]'
+        - Camil renforce sa relation avec Camil
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 6d7f1579677957f4989c5da3f93a4c8d, type: 2}
     <Effects>k__BackingField:
@@ -645,8 +645,8 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
-        - 'Marco renforce sa relation avec [CurrentNpc]'
-  <ClearDefaultSlot>k__BackingField: 0
+        - Marco renforce sa relation avec Marco
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: 52eb5daf-c0c9-4437-bd4a-47a6d0d0508b
   references:
     version: 2

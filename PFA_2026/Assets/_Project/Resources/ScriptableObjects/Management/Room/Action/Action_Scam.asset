@@ -684,7 +684,7 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - "La relation de Marco avec [CurrentNpc] se d\xE9grade"
-  <ClearDefaultSlot>k__BackingField: 0
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: 98649632-01a1-4819-b746-a0482be0c57c
   references:
     version: 2

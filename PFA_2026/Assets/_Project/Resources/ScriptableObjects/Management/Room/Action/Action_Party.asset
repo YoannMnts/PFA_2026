@@ -298,7 +298,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
         <Text>k__BackingField:
-        - "T\xE9a ne peut pas s'empecher de g\xE2cher la f\xEAte de {CurrentNpc}"
+        - "T\xE9a ne peut pas s'empecher de g\xE2cher la f\xEAte de Camil"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 0
@@ -573,7 +573,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
-        - "Ynna fait en sorte que l'\xE9quipage appr\xE9cie moins {CurrentNpc}"
+        - "Ynna fait en sorte que l'\xE9quipage appr\xE9cie moins Camil"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
@@ -802,7 +802,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
-        - 'Liski renforce sa relation avec [CurrentNpc]'
+        - Liski renforce sa relation avec Liski
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 44ec2a6625f7a934dab5754819bfeb2e, type: 2}
     <Effects>k__BackingField:
@@ -925,7 +925,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
-        - 'Camil renforce sa relation avec [CurrentNpc]'
+        - Camil renforce sa relation avec Camil
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 4db0d9531338cfe4ea4e57a3339c89c1, type: 2}
     <Effects>k__BackingField:
@@ -1094,7 +1094,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
         <Text>k__BackingField:
-        - "Marco ne peut pas s'empecher de g\xE2cher la f\xEAte de [CurrentNpc]"
+        - "Marco ne peut pas s'empecher de g\xE2cher la f\xEAte de Camil"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 0

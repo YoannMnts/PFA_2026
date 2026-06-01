@@ -131,7 +131,7 @@ MonoBehaviour:
         <Text>k__BackingField:
         - "A cause du mauvais \xEAtat de Jennie, le navire subit des turbulences,
           ce qui effraie l'\xE9quipage"
-  <ClearDefaultSlot>k__BackingField: 0
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: 86a4a78b-cefd-4a99-8198-0f540c5944f2
   references:
     version: 2

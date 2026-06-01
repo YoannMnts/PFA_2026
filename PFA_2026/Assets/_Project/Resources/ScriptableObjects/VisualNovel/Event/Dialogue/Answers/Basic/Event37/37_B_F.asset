@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 37_B_F
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
   <ButtonText>k__BackingField: Il fait de son mieux.
-  <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6c93180ea0b3702409475a3cda726aad, type: 2}
+  <NextDialogue>k__BackingField: {fileID: 11400000, guid: c0a581701eba776458a5bd6768fe052b, type: 2}
   <GUID>k__BackingField: 224db8d5-d7bb-43cc-b4ab-1ebd193626d1

@@ -23,7 +23,7 @@ MonoBehaviour:
     <ProhibitedNpc>k__BackingField: []
     <ObligateNpc>k__BackingField: []
     <SlotPositions>k__BackingField:
-    - {fileID: 11400000, guid: 47142476a2634094fbf92de9aee67a12, type: 2}
+    - {fileID: 11400000, guid: 576c9c57b6a42344f8a2f55502de62f7, type: 2}
   - <Name>k__BackingField: Auditeurs
     <Quantity>k__BackingField: 4
     <ProhibitedNpc>k__BackingField: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: f3d3185b43908de428994a5c6ed1d697, type: 2}
     - {fileID: 11400000, guid: bb09dab66f788f04da7efde5699b13c1, type: 2}
     - {fileID: 11400000, guid: 09a5feb8aea8b38478d8341b72c7f38f, type: 2}
-    - {fileID: 11400000, guid: 576c9c57b6a42344f8a2f55502de62f7, type: 2}
+    - {fileID: 11400000, guid: 851a3563b0b48c046b923176443d878b, type: 2}
   <ActionEffects>k__BackingField:
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
@@ -309,7 +309,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
-        - "T\xE9a renforce sa relation avec {CurrentNpc}"
+        - "T\xE9a renforce sa relation avec T\xE9a"
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
     <Effects>k__BackingField:
@@ -674,7 +674,7 @@ MonoBehaviour:
         <Amount>k__BackingField: 2
         <Text>k__BackingField:
         - "Camil se d\xE9tend en \xE9coutant l'histoire et renforce sa relation avec
-          [CurrentNpc]"
+          Camil"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 0
@@ -911,7 +911,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
-        - 'Marco renforce sa relation avec [CurrentNpc]'
+        - Marco renforce sa relation avec Marco
   <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: 067a2c62-0bd3-416f-bfe6-f16dee5cdb5c
   references:

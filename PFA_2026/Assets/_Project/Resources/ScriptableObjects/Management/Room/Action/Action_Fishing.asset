@@ -439,7 +439,7 @@ MonoBehaviour:
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
         - Marco est content de ses prises
-  <ClearDefaultSlot>k__BackingField: 0
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: 28c05fda-1ff7-411b-87db-275604e9a50d
   references:
     version: 2

@@ -1057,7 +1057,7 @@ MonoBehaviour:
         <Amount>k__BackingField: 2
         <Text>k__BackingField:
         - Marco repend des rumeurs sur [CurrentNpc)
-  <ClearDefaultSlot>k__BackingField: 0
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: 213189b2-cbde-4d91-909a-9fd3c24ba420
   references:
     version: 2

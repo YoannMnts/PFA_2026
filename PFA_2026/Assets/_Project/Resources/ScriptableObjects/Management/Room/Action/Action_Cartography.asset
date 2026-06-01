@@ -685,7 +685,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
-        - Herlock remercie [CurrentNpc] de son aide aux yeux de tous
+        - Herlock remercie Camil de son aide aux yeux de tous
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2

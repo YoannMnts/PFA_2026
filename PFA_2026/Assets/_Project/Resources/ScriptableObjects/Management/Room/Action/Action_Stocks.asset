@@ -71,7 +71,7 @@ MonoBehaviour:
         <Amount>k__BackingField: 2
         <Text>k__BackingField:
         - "Ynna est rassur\xE9e de savoir que tout est au complet"
-  <ClearDefaultSlot>k__BackingField: 0
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: 215cdb45-7659-483a-a250-1ac15575b7c4
   references:
     version: 2

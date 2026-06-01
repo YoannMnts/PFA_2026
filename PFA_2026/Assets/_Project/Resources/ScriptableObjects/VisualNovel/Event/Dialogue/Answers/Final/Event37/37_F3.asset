@@ -19,7 +19,7 @@ MonoBehaviour:
     <Text>k__BackingField:
     - "Ah\u2026Vous pensez ?"
     - "Enfin je veux dire, pour moi la valeur est quelque chose qui se prouve et
-      ce gagne\u2026"
+      se gagne\u2026"
     - "Je ne savais pas que vous voyiez les choses de cette fa\xE7on."
     - "Je vais\u2026"
   - <Npc>k__BackingField: {fileID: 11400000, guid: c468415a02cbf74438a48816b0fe1fa6, type: 2}

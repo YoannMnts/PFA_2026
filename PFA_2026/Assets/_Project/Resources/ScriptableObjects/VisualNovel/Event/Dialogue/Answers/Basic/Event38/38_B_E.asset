@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 38_B_E
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: 'Et que proposes tu ? '
+  <ButtonText>k__BackingField: "\xC7a n'a pas d\xE9rang\xE9 les autres ?"
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: b9d8e33f761d949498a414dd8cbbb14c, type: 2}
   <GUID>k__BackingField: efa0c7cf-fefc-4751-a8f4-bab518cc71f3

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 38_B_D
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Je le trouve tr\xE8s bien."
+  <ButtonText>k__BackingField: "Tu ne l'as pas rassur\xE9 ?"
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: 91e6109f14f13a0489ad673c101050ca, type: 2}
   <GUID>k__BackingField: bdf199a5-8b80-4769-bf8e-d73cf94ef9c8

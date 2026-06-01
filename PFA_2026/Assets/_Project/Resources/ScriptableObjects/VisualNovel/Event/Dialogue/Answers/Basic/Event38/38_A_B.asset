@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc62d3728248e4bb9426163a14d8fc, type: 3}
   m_Name: 38_A_B
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.BasicAnswerData
-  <ButtonText>k__BackingField: "Pourquoi penses-tu \xE7a ?"
+  <ButtonText>k__BackingField: "Qu\u2019est ce qu\u2019il s\u2019est pass\xE9 ? "
   <NextDialogue>k__BackingField: {fileID: 11400000, guid: e1869f772379b6d4c8d6a721b7eb238e, type: 2}
   <GUID>k__BackingField: f5c2bfd3-7f5b-413f-b8ec-d67cac5510c6

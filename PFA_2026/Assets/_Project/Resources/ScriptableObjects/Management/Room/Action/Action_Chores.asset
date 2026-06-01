@@ -110,7 +110,7 @@ MonoBehaviour:
         <Text>k__BackingField:
         - "L'\xE9quipage est reconnaissant du travail de Marco et est heureux d'avoir
           de la vaiselle propre"
-  <ClearDefaultSlot>k__BackingField: 0
+  <ClearDefaultSlot>k__BackingField: 1
   <GUID>k__BackingField: 65f25f00-7a7c-4cf1-932c-9f7eab3544ca
   references:
     version: 2
