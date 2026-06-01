@@ -3,6 +3,7 @@ using System.Linq;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
+using Naussilus.Core.Sounds;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -33,6 +34,10 @@ namespace Naussilus.Gameplay
             }
             
             group.Show();
+            if (SoundDesignManager.instance != null)
+            {
+                SoundDesignManager.instance.PlaySound(SoundsEnum.Writing);
+            }
             using (ListPool<Consequence>.Get(out var list))
             {
                 for (int i = 0; i < phase.CurrentConsequences.Count; i++)
