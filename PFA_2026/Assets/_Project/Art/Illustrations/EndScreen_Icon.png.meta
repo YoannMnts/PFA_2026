@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d1de6d1c4ff614447bd2d4b841b619d9
+guid: 72a7b62619858c548b8e8d8cb8bbcf6c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4009588878629709269
-    second: UI_ActionWheel_0
+      213: -1981535464955915176
+    second: EndScreen_Icon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_ActionWheel_0
+      name: EndScreen_Icon_0
       rect:
         serializedVersion: 2
-        x: 264
-        y: 248
-        width: 506
-        height: 508
+        x: 63
+        y: 423
+        width: 1922
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d5a41667dbe4a730800000000000000
-      internalID: 4009588878629709269
+      spriteID: 854d6754efb2084e0800000000000000
+      internalID: -1981535464955915176
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UI_ActionWheel_0: 4009588878629709269
+      EndScreen_Icon_0: -1981535464955915176
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
