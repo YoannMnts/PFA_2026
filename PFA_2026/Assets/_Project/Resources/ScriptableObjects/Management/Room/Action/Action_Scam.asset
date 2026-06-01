@@ -125,7 +125,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
-        - '{CurrentNpc} se sent mal pour Jennie'
+        - '[CurrentNpc] se sent mal pour Jennie'
     - <IsEnumeration>k__BackingField: 1
       <CurrentNpcTarget>k__BackingField:
         rid: 2811533799078494265
@@ -143,7 +143,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
-        - "La relation de Jennie avec {CurrentNpc} se d\xE9grade"
+        - "La relation de Jennie avec [CurrentNpc] se d\xE9grade"
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Effects>k__BackingField:
@@ -215,7 +215,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
         <Text>k__BackingField:
-        - "T\xE9a n'appr\xE9cie pas cette plaisanterie et corrige {CurrentNpc} d'un
+        - "T\xE9a n'appr\xE9cie pas cette plaisanterie et corrige [CurrentNpc] d'un
           coup de poing"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
@@ -246,7 +246,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 1
         <Amount>k__BackingField: 2
         <Text>k__BackingField:
-        - "La relation de T\xE9a avec {CurrentNpc} se d\xE9grade"
+        - "La relation de T\xE9a avec [CurrentNpc] se d\xE9grade"
     - <IsEnumeration>k__BackingField: 0
       <CurrentNpcTarget>k__BackingField:
         rid: -2
@@ -327,7 +327,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
-        - "Pam d\xE9dommage {CurrentNpc} avec des friandises m\xE9dicinales"
+        - "Pam d\xE9dommage [CurrentNpc] avec des friandises m\xE9dicinales"
   - <CategoryIndex>k__BackingField: 2
     <NpcData>k__BackingField: {fileID: 11400000, guid: 668c08530be223b44883e3880f11ee48, type: 2}
     <Effects>k__BackingField:
@@ -400,7 +400,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
-        - "{CurrentNpc} ne sent rend m\xEAme pas compte de la supercherie"
+        - "[CurrentNpc] ne sent rend m\xEAme pas compte de la supercherie"
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: 292bca25009c3b846973697c392c826a, type: 2}
     <Effects>k__BackingField:

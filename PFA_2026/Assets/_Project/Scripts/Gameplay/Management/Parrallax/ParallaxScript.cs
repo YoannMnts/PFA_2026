@@ -100,7 +100,7 @@ namespace Naussilus.Gameplay.Parrallax
                 for (int i = 0; i < parallax.transform.childCount; i++)
                 {
                     Transform currentParallax = parallax.transform.GetChild(i);
-                    if (currentParallax.position.x <= -imageSize)
+                    if (currentParallax.localPosition.x <= -imageSize)
                     {
                         currentParallax.localPosition = new Vector3((imageSize * 2),0, 0);
                     }
@@ -113,9 +113,12 @@ namespace Naussilus.Gameplay.Parrallax
         {
             for (int i = 0; i < parallaxLayers.Count; i++)
             {
-                Transform currentLayer = parallaxLayers[i].transform;
-                Vector3 newPosition = currentLayer.localPosition - new Vector3((parallaxSpeed * (i + 1) * ((i + 1) * distanceSlowMultiplier)) * Time.deltaTime, 0, 0);
-                currentLayer.localPosition = newPosition;
+                for (int j = 0; j < parallaxLayers[i].transform.childCount; j++)
+                {
+                    Transform currentParallax = parallaxLayers[i].transform.GetChild(j);
+                    Vector3 newPosition = currentParallax.localPosition - new Vector3((parallaxSpeed * (i + 1) * ((i + 1) * distanceSlowMultiplier)) * Time.deltaTime, 0, 0);
+                    currentParallax.localPosition = newPosition;
+                }
             }
         }
     }

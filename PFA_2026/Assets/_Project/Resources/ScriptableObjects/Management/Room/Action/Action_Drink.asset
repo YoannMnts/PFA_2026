@@ -138,7 +138,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
-        - Jennie renforce sa relation avec {CurrentNpc}
+        - 'Jennie renforce sa relation avec [CurrentNpc]'
   - <CategoryIndex>k__BackingField: 1
     <NpcData>k__BackingField: {fileID: 11400000, guid: d57cec67bb2a1a945ada3b66d3cb9bf5, type: 2}
     <Effects>k__BackingField:
@@ -299,7 +299,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
-        - "Pam appr\xE9cie ce moment de d\xE9tente, et elle se sent plus int\xE9gr\xE9"
+        - "Pam appr\xE9cie ce moment de d\xE9tente, et elle se sent plus int\xE9gr\xE9e"
       - <IsGameLost>k__BackingField: 0
         <ConsequenceSide>k__BackingField:
           <IsCurrentNpc>k__BackingField: 1
