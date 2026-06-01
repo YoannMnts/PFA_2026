@@ -54,6 +54,10 @@ MonoBehaviour:
   minZoom: 2
   maxZoom: 5
   slideSpeed: 0.1
+  minX: -8.886054
+  minY: -4
+  maxX: 8.886054
+  maxY: 6
 --- !u!114 &8532601478599535379
 MonoBehaviour:
   m_ObjectHideFlags: 0

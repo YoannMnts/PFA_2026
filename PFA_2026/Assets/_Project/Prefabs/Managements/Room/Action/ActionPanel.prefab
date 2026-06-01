@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5311680587781044897}
+  - component: {fileID: 5439424026772346431}
   m_Layer: 5
   m_Name: Description
   m_TagString: Untagged
@@ -36,6 +37,18 @@ RectTransform:
   m_AnchoredPosition: {x: -517.0077, y: 27.441345}
   m_SizeDelta: {x: -1501.3622, y: -105.119995}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &5439424026772346431
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141902383843138609}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1556867008528896062
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,6 +393,7 @@ MonoBehaviour:
   roomName: {fileID: 7147723319936913522}
   roomDescription: {fileID: 3997225592340532568}
   roomActionUIList: {fileID: 1682162133994343025}
+  descriptionGroup: {fileID: 0}
   cancelButton: {fileID: 1786869948375409444}
   boatMenuTransform: {fileID: 0}
 --- !u!1 &2822121449675764126

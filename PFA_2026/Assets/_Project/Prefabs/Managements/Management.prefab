@@ -5307,6 +5307,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2848083141935952021, guid: 06120468445b869458ec8371cf4c8b66, type: 3}
+      propertyPath: descriptionGroup
+      value: 
+      objectReference: {fileID: 9044853400415442004}
+    - target: {fileID: 2848083141935952021, guid: 06120468445b869458ec8371cf4c8b66, type: 3}
       propertyPath: boatMenuTransform
       value: 
       objectReference: {fileID: 3090272413320232102}
@@ -6219,6 +6223,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518aa2b3cc094171a9fe252602ae2530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Naussilus.Gameplay::Rooms.CurrentlyInActionUI
+--- !u!225 &9044853400415442004 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 5439424026772346431, guid: 06120468445b869458ec8371cf4c8b66, type: 3}
+  m_PrefabInstance: {fileID: 3961322054766199403}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4885442753963123960
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -19,6 +19,7 @@ namespace Naussilus.Gameplay
         [SerializeField] private TMP_Text roomName;
         [SerializeField] private TMP_Text roomDescription;
         [SerializeField] private RoomActionUIList roomActionUIList;
+        [SerializeField] private CanvasGroup descriptionGroup;
         [SerializeField] private Button cancelButton;
         [SerializeField] private Transform boatMenuTransform;
 
@@ -121,6 +122,7 @@ namespace Naussilus.Gameplay
                     return;
                 }
                 roomActionUIList.Disconnect();
+                descriptionGroup.Hide();
                 cancelButton.onClick.RemoveAllListeners();
                 fillCategory = new FillCategory(current.Choices[index]);
                 var result = await fillCategory.Run();
@@ -130,6 +132,7 @@ namespace Naussilus.Gameplay
                     var actionGain = current.Choices[index].Cost;
                     currentActionPoint.TryAddOrRemove(actionGain);
                     roomActionUIList.Connect(current.Choices);
+                    descriptionGroup.Show();
                     cancelButton.onClick.AddListener(() => Cancel(cancelButton.gameObject));
                     return;
                 }

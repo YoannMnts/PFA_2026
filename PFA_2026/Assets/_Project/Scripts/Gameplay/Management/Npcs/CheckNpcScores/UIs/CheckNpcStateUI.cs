@@ -44,11 +44,11 @@ namespace Naussilus.Gameplay
             {
                 SoundDesignManager.instance.PlaySound(SoundsEnum.OpenTab);
             }
-            //behaviorUIList.Connect(phase.NpcBehaviors);
             mentalStateUIList.Connect(phase.NpcMentalStates);
             relationshipButton.onClick.AddListener(ChangeToRelationship);
             statButton.onClick.AddListener(ChangeToStat);
             phase.CurrentMonoNpc.NpcCamera.SwitchToThisCamera();
+            ChangeToStat();
         
         
             if (this.TryGetService(out PlayerController controller))
@@ -60,7 +60,6 @@ namespace Naussilus.Gameplay
         protected override void OnPhaseEnd(CheckNpcState phase)
         {
             current = null;
-            //behaviorUIList.Disconnect();
             mentalStateUIList.Disconnect();
             group.Hide();
             relationshipButton.onClick.RemoveAllListeners();

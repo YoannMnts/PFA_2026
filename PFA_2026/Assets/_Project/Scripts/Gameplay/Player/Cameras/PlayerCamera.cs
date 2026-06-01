@@ -35,6 +35,14 @@ namespace Naussilus.Gameplay
 
         [SerializeField]
         private float slideSpeed = 0.01f;
+
+        [SerializeField] private float minX;
+        
+        [SerializeField] private float minY;
+        
+        [SerializeField] private float maxX;
+        
+        [SerializeField] private float maxY;
         
         public Priority<bool> CanMove { get; private set; }
 
@@ -62,10 +70,18 @@ namespace Naussilus.Gameplay
                 maxZoom
             );
 
+            float ortho = playerCam.CineCamera.Lens.OrthographicSize;
+            float aspect = cam.aspect;
+    
+            float clampedMinX = minX + ortho * aspect;
+            float clampedMaxX = maxX - ortho * aspect;
+            float clampedMinY = minY + ortho;
+            float clampedMaxY = maxY - ortho;
 
-            //Debug.Log($"Active cineCamera : {CineCameraManager.ActiveCamera} ");
-            var transformPosition = VectorAddition(cam.gameObject.transform.position, (slideInput.Delta * slideSpeed));
-            //Debug.Log($"Vector addition: {transformPosition}");
+            var transformPosition = VectorAddition(cameraTarget.position, slideInput.Delta * slideSpeed);
+            transformPosition.x = Mathf.Clamp(transformPosition.x, clampedMinX, clampedMaxX);
+            transformPosition.y = Mathf.Clamp(transformPosition.y, clampedMinY, clampedMaxY);
+    
             cameraTarget.transform.position = transformPosition;
         }
 
