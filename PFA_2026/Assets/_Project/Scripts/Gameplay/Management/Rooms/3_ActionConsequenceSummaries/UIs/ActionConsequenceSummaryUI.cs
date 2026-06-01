@@ -73,7 +73,6 @@ namespace Naussilus.Gameplay
             if (ButtonFeedbacksManager.instance != null)
             {
                 await ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(applyButton.gameObject);
-                await Awaitable.WaitForSecondsAsync(10f);
             }
             current.SetResult(true);
             Debug.Log($"Apply");

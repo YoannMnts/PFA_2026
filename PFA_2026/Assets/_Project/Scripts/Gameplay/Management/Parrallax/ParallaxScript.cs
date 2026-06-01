@@ -52,6 +52,7 @@ namespace Naussilus.Gameplay.Parrallax
             backgroundSky.name = "Sky";
             backgroundSky.AddComponent<SpriteRenderer>();
             sky = backgroundSky.GetComponent<SpriteRenderer>();
+            sky.transform.localPosition = Vector3.zero;
             sky.sortingLayerName = "Background";
             sky.sprite = selectedSky.background;
             for (int i = 0; i < selectedSky.clouds.Length; i++)
@@ -59,18 +60,19 @@ namespace Naussilus.Gameplay.Parrallax
                 GameObject parallaxParent = new GameObject();
                 parallaxParent.transform.SetParent(transform);
                 parallaxParent.name = "ParallaxLayer" + i;
+                parallaxParent.transform.localPosition = Vector3.zero;
                 parallaxLayers.Add(parallaxParent);
                 for (int j = 0; j < 3; j++)
                 {
                     GameObject parallaxImage = new GameObject();
                     parallaxImage.transform.parent = parallaxParent.transform;
-                    parallaxImage.transform.localPosition = new Vector3(imageSize * j, 0f, 0f);
+                    parallaxImage.transform.localPosition = new Vector3(imageSize * j, 0, 0);
                     parallaxImage.name = "Parallax" + i + "_" + j;
                     parallaxImage.AddComponent<SpriteRenderer>();
                     SpriteRenderer spriteRenderer = parallaxImage.GetComponent<SpriteRenderer>();
                     spriteRenderer.sprite = selectedSky.clouds[i];
                     spriteRenderer.sortingLayerName = "Background";
-                    spriteRenderer.sortingOrder = i;
+                    spriteRenderer.sortingOrder = i+1;
                 }
             }
         }
@@ -100,7 +102,7 @@ namespace Naussilus.Gameplay.Parrallax
                     Transform currentParallax = parallax.transform.GetChild(i);
                     if (currentParallax.position.x <= -imageSize)
                     {
-                        currentParallax.position = new Vector3(imageSize * 2, 0, 0);
+                        currentParallax.localPosition = new Vector3((imageSize * 2),0, 0);
                     }
                 }
 
@@ -112,8 +114,8 @@ namespace Naussilus.Gameplay.Parrallax
             for (int i = 0; i < parallaxLayers.Count; i++)
             {
                 Transform currentLayer = parallaxLayers[i].transform;
-                Vector3 newPosition = currentLayer.position - new Vector3((parallaxSpeed * (i + 1) * ((i + 1) * distanceSlowMultiplier)) * Time.deltaTime, 0, 0);
-                currentLayer.position = newPosition;
+                Vector3 newPosition = currentLayer.localPosition - new Vector3((parallaxSpeed * (i + 1) * ((i + 1) * distanceSlowMultiplier)) * Time.deltaTime, 0, 0);
+                currentLayer.localPosition = newPosition;
             }
         }
     }

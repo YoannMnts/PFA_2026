@@ -4,6 +4,7 @@ using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core;
 using Naussilus.Core.Managers;
 using Naussilus.Core.Sounds;
+using Naussilus.Gameplay.Buttons;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -65,8 +66,12 @@ namespace Naussilus.Gameplay
             base.OnPhaseEnd(phase);
         }
 
-        public void OnButtonClicked()
+        public async void OnButtonClicked(GameObject button)
         {
+            if (ButtonFeedbacksManager.instance != null)
+            {
+                await ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(button);
+            }
             currentPhase.SetResult(true);
         }
     }
