@@ -52,6 +52,10 @@ MonoBehaviour:
       m_Calls: []
   skyDatas:
   - {fileID: 11400000, guid: 008172d4e374a4a4b80bb5e5734aa86c, type: 2}
+  - {fileID: 11400000, guid: 008172d4e374a4a4b80bb5e5734aa86c, type: 2}
+  - {fileID: 11400000, guid: 008172d4e374a4a4b80bb5e5734aa86c, type: 2}
+  - {fileID: 11400000, guid: 687044cddfe8ca840b8838829e4cd746, type: 2}
+  - {fileID: 11400000, guid: d02e3c2c7a3b9f04ea6ca6621dc819b9, type: 2}
   parallaxSpeed: 0.3
   distanceSlowMultiplier: 0.3
   imageSize: 19

@@ -650,7 +650,7 @@ MonoBehaviour:
         <ArithmeticOperator>k__BackingField: 0
         <Amount>k__BackingField: 1
         <Text>k__BackingField:
-        - 'Herlock renforce sa relation avec [CurrentNpc]'
+        - Herlock renforce sa relation avec Herlock
     - <IsEnumeration>k__BackingField: 1
       <CurrentNpcTarget>k__BackingField:
         rid: 2811534109902110905
