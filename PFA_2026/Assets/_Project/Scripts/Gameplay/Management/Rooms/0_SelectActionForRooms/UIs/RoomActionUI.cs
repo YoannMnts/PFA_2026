@@ -28,7 +28,8 @@ namespace Naussilus.Gameplay
             selectActionForRoomUI = GetComponentInParent<SelectActionForRoomUI>();
             titleText.text = current.Name;
             actionPoint.text = current.Cost.ToString();
-            activityButton.interactable = current.Cost <= selectActionForRoomUI.ActionPoint.Value;
+            Debug.Log($"Current cost {current.Cost <= selectActionForRoomUI.ActionPoint.Value}  or isInCountdown {current.IsInCountdown}");
+            activityButton.interactable = current.Cost <= selectActionForRoomUI.ActionPoint.Value && !current.IsInCountdown;
             activityButton.onClick.AddListener(OnClicked);
         }
 

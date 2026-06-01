@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using JetBrains.Annotations;
 using Naussilus.Core.Managements;
 using Naussilus.Gameplay;
@@ -16,42 +17,32 @@ namespace Naussilus.Core
         
         [CanBeNull] public Sprite Icon { get; private set; }
         
-        public int RoomCountdown { get; private set; }
         
-        public RoomAction CurrentAction { get; private set; }
-        public bool IsInCountdown { get; private set; }
+        public List<RoomAction> CurrentActions { get; private set; }
         public Room(RoomData data)
         {
             Name = data.Name;
             Description = data.Description;
             Actions = data.Actions?.Select(a => new RoomAction(a)).ToArray();
             Icon = data.Icon;
-            RoomCountdown = 0;
+            CurrentActions = new List<RoomAction>();
         }
 
         public void SetActions(RoomAction actions)
         {
-            CurrentAction = actions;
-            RoomCountdown = actions.Countdown;
-            IsInCountdown = true;
+            CurrentActions.Add(actions);
+            actions.AddOrRemoveCountdown(actions.MaxCountdown);
         }
 
-        public bool AddOrRemoveCountdown(int value)
+        public bool AddOrRemoveAllActionCountdown(int value)
         {
-            if (CurrentAction == null)
-                return false;
+            for (int i = 0; i < CurrentActions.Count; i++)
+            {
+                var action = CurrentActions[i];
+                action.AddOrRemoveCountdown(value);
+            }
             
-            RoomCountdown += value;
-
-            Debug.Log($"AddOrRemoveCountdown: {RoomCountdown} on room {Name}");
-            if (RoomCountdown > 0) 
-                return true;
-            
-            CurrentAction = null;
-            RoomCountdown = 0;
-            IsInCountdown = false;
-            return false;
-
+            return true;
         }
     }
 }

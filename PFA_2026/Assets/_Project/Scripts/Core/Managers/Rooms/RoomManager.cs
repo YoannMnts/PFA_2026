@@ -48,7 +48,7 @@ namespace Naussilus.Core.Managers.Rooms
         {
             foreach ((string key, Room room) in rooms)
             {
-                room.AddOrRemoveCountdown(-1);
+                room.AddOrRemoveAllActionCountdown(-1);
             }
         }
     }
