@@ -23,6 +23,12 @@ namespace Naussilus.Core.Managers
                 ? NpcManager.GetSelectedNpcs(conditionalEffect.CurrentNpcTarget, currentNpcData, currentCategories)
                 : new[] { currentNpcData };
             
+            for (int i = 0; i < currentNpcs.Length; i++)
+            {
+                var npc = currentNpcs[i];
+                Debug.Log($"CurrentNpcs count: {currentNpcs.Length}, Npc {npc.Name} ");
+            }
+            
             Condition[] currentConditions = conditionalEffect.Conditions;
             Consequence[] currentConsequences = conditionalEffect.Consequences;
             

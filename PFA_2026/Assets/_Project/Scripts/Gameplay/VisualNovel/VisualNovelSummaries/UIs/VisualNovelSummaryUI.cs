@@ -47,11 +47,11 @@ namespace Naussilus.Gameplay
                 for (int i = 0; i < phase.CurrentConsequences.Count; i++)
                 {
                     var consequence = phase.CurrentConsequences[i];
-                    if (!consequence.Text.All(string.IsNullOrEmpty))
-                        list.Add(consequence);
-                    
-                    consequenceSummaryUIList.Connect(list);
+                    //if (!consequence.Text.All(string.IsNullOrEmpty))
+                    //    list.Add(consequence);
+                    list.Add(consequence);
                 }
+                consequenceSummaryUIList.Connect(list);
             }
             
             base.OnPhaseBegin(phase);

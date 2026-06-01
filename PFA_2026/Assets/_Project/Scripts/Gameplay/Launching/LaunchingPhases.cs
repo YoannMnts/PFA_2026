@@ -80,8 +80,9 @@ namespace Naussilus.Gameplay
 
         private async Awaitable<bool> VisualNovel(int currentDay)
         {
-            var visualNovelEvent = EventManager.GetValidEvents(currentDay);
-            var visualNovelPhase = new VisualNovelPhase(visualNovelEvent, currentDay);
+            var reelCurrentDay = currentDay + 1;
+            var visualNovelEvent = EventManager.GetValidEvents(reelCurrentDay);
+            var visualNovelPhase = new VisualNovelPhase(visualNovelEvent, reelCurrentDay);
             PhaseResult<bool> result = await visualNovelPhase.Run();
             
             return result;

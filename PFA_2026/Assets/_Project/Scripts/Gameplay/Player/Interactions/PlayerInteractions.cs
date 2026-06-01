@@ -89,14 +89,14 @@ namespace Naussilus.Gameplay.Interactions
                 for (var i = 0; i < results.Count; i++)
                 {
                     var result = results[i];
-                    Debug.Log($"Hit: {result.gameObject.name} at {result.screenPosition}");
+                    //Debug.Log($"Hit: {result.gameObject.name} at {result.screenPosition}");
                     if (result.gameObject.TryGetComponent(out IInteractable uiInteractable))
                     {
-                        Debug.Log($"IInteractable: {uiInteractable}");
+                        //Debug.Log($"IInteractable: {uiInteractable}");
                         if (uiInteractable.IsInteractable())
                         {
                             uiInteractable.Interact(this);
-                            Debug.Log($"Interact: {uiInteractable}");
+                            //Debug.Log($"Interact: {uiInteractable}");
                             return;
                         }
                     }

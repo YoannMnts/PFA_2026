@@ -37,6 +37,9 @@ namespace Naussilus.Gameplay
 
         protected override void OnPhaseBegin(CheckNpcState phase)
         {
+            if (current != null)
+                current.Cancel();
+            
             titleName.text = phase.CurrentNpc.Name;
             current = phase;
             group.Show();
@@ -59,7 +62,9 @@ namespace Naussilus.Gameplay
 
         protected override void OnPhaseEnd(CheckNpcState phase)
         {
-            current = null;
+            if (current == null)
+                return;
+            
             mentalStateUIList.Disconnect();
             group.Hide();
             relationshipButton.onClick.RemoveAllListeners();
@@ -71,6 +76,7 @@ namespace Naussilus.Gameplay
                 controller.PlayerCamera.PlayerCam.SwitchToThisCamera();
             }
         
+            current = null;
             base.OnPhaseEnd(phase);
         }
 

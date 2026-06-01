@@ -1,5 +1,6 @@
 ﻿using Naussilus.Core.Managers.Npcs;
 using Naussilus.Core.NpcDatas;
+using UnityEngine;
 
 namespace Naussilus.Core
 {
@@ -28,6 +29,10 @@ namespace Naussilus.Core
             }
         }
         
-        public void SetNewAmount(int amount) => Amount = amount;
+        public void SetNewAmount(int amount)
+        {
+            Amount = amount;
+            Debug.Log($"AAAAAAAAAAAAAAAAAAA");
+        }
     }
 }
