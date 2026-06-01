@@ -1,6 +1,7 @@
 ﻿using Helteix.Tools.Phases;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managers;
+using Naussilus.Gameplay.Buttons;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -53,14 +54,27 @@ namespace Naussilus.Gameplay
                 current.SetResult(true);
         }
         
-        private void OnMuteButtonClicked()
+        private async void OnMuteButtonClicked()
         {
             isMuted = !isMuted;
-            SoundDesignManager.instance.CutMusic(isMuted);
+            if (SoundDesignManager.instance != null)
+            {
+                SoundDesignManager.instance.CutMusic(isMuted);
+            }
+
+            if (ButtonFeedbacksManager.instance != null)
+            {
+                await ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(muteButton.gameObject);
+            }
+            
         }
 
-        private void OnQuitButtonClicked()
+        private async void OnQuitButtonClicked()
         {
+            if (ButtonFeedbacksManager.instance != null)
+            {
+                await ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(quitButton.gameObject);
+            }
             Application.Quit();
         }
     }

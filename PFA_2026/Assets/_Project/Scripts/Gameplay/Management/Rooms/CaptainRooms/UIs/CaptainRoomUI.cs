@@ -2,6 +2,7 @@
 using Helteix.Singletons.SceneServices;
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managers;
+using Naussilus.Gameplay.Buttons;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -46,13 +47,21 @@ namespace Naussilus.Gameplay
             base.OnPhaseEnd(phase);
         }
 
-        private void OnButtonClicked()
+        private async void OnButtonClicked()
         {
+            if (ButtonFeedbacksManager.instance != null)
+            {
+                await ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(captainRoomButton.gameObject);
+            }
             current.EndDay();
         }
 
-        public void Cancel()
+        public async void Cancel(GameObject button)
         {
+            if (ButtonFeedbacksManager.instance != null)
+            {
+                await ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(button);
+            }
             current.SetResult(false);
         }
     }
