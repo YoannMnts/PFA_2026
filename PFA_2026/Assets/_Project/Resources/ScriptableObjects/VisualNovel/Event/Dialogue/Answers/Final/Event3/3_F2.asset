@@ -70,7 +70,10 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 1
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "Jennie a pris sur elle pour ne plus se plaindre de \xE7a, mais je crois
+        qu\u2019elle garde juste \xE7a \xE0 l\u2019int\xE9rieur et que \xE7a la d\xE9range
+        quand m\xEAme."
   <GUID>k__BackingField: 3acf1506-39f7-44d9-b02e-3c500c4e18f1
   references:
     version: 2

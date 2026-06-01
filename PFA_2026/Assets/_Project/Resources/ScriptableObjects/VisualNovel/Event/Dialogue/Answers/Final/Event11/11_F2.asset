@@ -75,7 +75,10 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 1
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "T\xE9a continue \xE0 se plaindre des autres, et d\xE9grade ses relations
+        avec tout le monde. Peut \xEAtre que j\u2019aurais du \xEAtre plus attentif
+        \xE0 ses probl\xE8mes au lieu de l\u2019ignorer."
   <GUID>k__BackingField: eb443731-4c78-4c21-ad28-dd3e5f91a7fb
   references:
     version: 2

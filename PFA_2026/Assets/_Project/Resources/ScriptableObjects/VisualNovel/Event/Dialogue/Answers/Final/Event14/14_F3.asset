@@ -69,7 +69,10 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "T\xE9a \xE0 l\u2019air d\u2019\xEAtre redevenue \xE0 l\u2019aise avec les
+        autres. Le responsable de cette photo n\u2019as pas \xE9t\xE9 retrouv\xE9,
+        mais je crois que \xE7a lui importe peu maintenant.\r\n"
   <GUID>k__BackingField: 6d8266fc-7980-456c-9b0a-827bdba5ced6
   references:
     version: 2

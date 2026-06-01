@@ -64,7 +64,11 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "J\u2019ai interdit \xE0 l'\xE9quipage de faire des remarques \xE0 Jennie,
+        et j\u2019ai d\xFB corriger certaines personnes qui continuaient quand m\xEAme.
+        J\u2019ai l\u2019impression que Jennie se sent mieux, mais que l\u2019\xE9quipage
+        est sur ses gardes."
   - <IsEnumeration>k__BackingField: 1
     <CurrentNpcTarget>k__BackingField:
       rid: 2811533773414858831

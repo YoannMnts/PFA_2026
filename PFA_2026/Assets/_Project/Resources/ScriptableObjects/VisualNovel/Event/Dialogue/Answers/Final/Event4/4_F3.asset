@@ -78,7 +78,9 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 4
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "Je n\u2019avais pas vu les choses comme \xE7a\u2026Ca \xE0 pas l\u2019air
+        \xE9vident mais\u2026Je vais essayer ! Merci !"
   <GUID>k__BackingField: 49cf6419-45df-4e89-b247-8694a167ea58
   references:
     version: 2

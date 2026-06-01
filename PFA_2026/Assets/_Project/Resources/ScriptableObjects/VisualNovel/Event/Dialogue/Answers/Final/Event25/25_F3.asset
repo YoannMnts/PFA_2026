@@ -77,7 +77,10 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "Pam est all\xE9e s'excuser aupr\xE8s de Jennie, et je crois que \xE7a \xE0
+        march\xE9. Jennie \xE0 l\u2019air \xE0 nouveau pr\xEAte \xE0 se confier \xE0
+        Pam, et ces excuses lui ont fait du bien."
   <GUID>k__BackingField: 1e7e30d1-2c08-4b6f-bdfa-81d9dfc3f18f
   references:
     version: 2

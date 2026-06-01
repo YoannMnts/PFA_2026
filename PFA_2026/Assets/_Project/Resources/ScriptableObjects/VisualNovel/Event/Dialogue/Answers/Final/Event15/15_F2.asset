@@ -74,7 +74,10 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "Depuis cette dispute, je crois que Jennie et T\xE9a ne se parlent plus,
+        et Jennie \xE0 l\u2019air plus renferm\xE9e qu\u2019avant. Peut \xEAtre qu\u2019il
+        \xE9tait injuste de demander \xE0 T\xE9a de faire le premier pas."
   <GUID>k__BackingField: a757fe67-c93f-48a0-8f1f-9a0222e8ac4d
   references:
     version: 2

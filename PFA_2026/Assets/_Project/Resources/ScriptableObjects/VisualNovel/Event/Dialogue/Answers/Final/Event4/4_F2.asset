@@ -62,7 +62,10 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 4
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "J\u2019ai l\u2019impression qu\u2019en disant \xE0 Jennie de s\u2019\xE9couter,
+        je n\u2019ai fait qu\u2019augmenter ses angoisses. J\u2019aurais au moins
+        d\xFB la rassurer."
   <GUID>k__BackingField: 948b88fd-d79e-4385-ad1e-36ebf70c8132
   references:
     version: 2

@@ -40,7 +40,11 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 0
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "Jennie \xE0 \xE9t\xE9 tellement bless\xE9e d'\xEAtre rejet\xE9e par son
+        capitaine qu'elle \xE0 d\xE9cider de quitter le navire, entra\xEEnant la
+        fin de la travers\xE9e. Elle voulait seulement \xEAtre consid\xE9r\xE9e par
+        une fille, mais tout le monde lui r\xE9p\xE9tais que c'\xE9tait un poulpe."
   <GUID>k__BackingField: b30f2f7b-102d-4e23-b6b3-672fe8f62f6f
   references:
     version: 2

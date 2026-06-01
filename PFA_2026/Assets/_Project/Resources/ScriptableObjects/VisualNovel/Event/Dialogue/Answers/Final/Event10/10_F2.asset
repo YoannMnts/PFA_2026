@@ -63,7 +63,11 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "Jennie a r\xE9ussi \xE0 piloter le Naussilus \xE0 travers la temp\xEAte,
+        mais celle \xE7i \xE9tait tr\xE8s violente, et certains membres de l\u2019\xE9quipage
+        ont \xE9t\xE9 effray\xE9s par les secousses. Camil et T\xE9a vont devoir
+        r\xE9parer les d\xE9g\xE2ts, et ils en veulent un peu \xE0 Jennie."
   - <IsEnumeration>k__BackingField: 1
     <CurrentNpcTarget>k__BackingField:
       rid: 2811533773414858903

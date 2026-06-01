@@ -79,7 +79,10 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "Depuis que j\u2019ai dit \xE7a \xE0 Jennie, l\u2019ai l\u2019impression
+        qu\u2019elle \xE0 tout simplement arr\xEAt\xE9 de parler\u2026J\u2019aurais
+        peut \xEAtre du plus l'\xE9couter."
   <GUID>k__BackingField: ddf79f2c-adc7-4dab-922b-4c1195b13aa2
   references:
     version: 2

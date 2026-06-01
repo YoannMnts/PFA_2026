@@ -73,7 +73,11 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "J\u2019ai convoqu\xE9 Pam, et nous avons un peu parl\xE9. Elle m\u2019a
+        parl\xE9 de ce qui l'affecte, et j\u2019ai l\u2019impression qu\u2019elle
+        se sent mieux maintenant. Je ne crois pas qu\u2019elle ait recommenc\xE9
+        \xE0 se couper."
   <GUID>k__BackingField: 41abda28-d71f-4fa0-a69a-a6f3bba11d1a
   references:
     version: 2

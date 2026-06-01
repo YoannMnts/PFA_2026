@@ -90,7 +90,9 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "Jennie et Tea ont l\u2019air de se rapprocher en rangeant ensemble, mais
+        \xE7a a l\u2019air de les agacer toutes les deux de devoir faire \xE7a."
   <GUID>k__BackingField: 293f1bad-f5a0-4de6-b48e-c0bc57bba80e
   references:
     version: 2

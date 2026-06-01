@@ -81,4 +81,4 @@ MonoBehaviour:
     - rid: 2811533773414858824
       type: {class: IntValueData, ns: Naussilus.Core, asm: Naussilus.Core}
       data:
-        <Amount>k__BackingField: 15
+        <Amount>k__BackingField: 9

@@ -75,7 +75,10 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 1
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "Les choses se sont calm\xE9es pendant un petit moment entre Jennie et T\xE9a,
+        mais elles se disputent encore r\xE9guli\xE8rement, il me semble qu\u2019elles
+        n\u2019arrivent pas \xE0 trouver de solution."
   <GUID>k__BackingField: 413ff3cc-ec3e-401a-9b44-ecbc6bd25540
   references:
     version: 2

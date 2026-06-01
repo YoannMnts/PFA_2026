@@ -78,7 +78,9 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "Cette discussion \xE0 redonner confiance \xE0 Jennie, et elle semble \xEAtre
+        plus \xE0 l\u2019aise sur le navire."
   <GUID>k__BackingField: 98624ffd-7d46-42b1-852f-772354fccdec
   references:
     version: 2

@@ -72,7 +72,10 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "Jennie a pu dire \xE0 Pam qu\u2019elle l\u2019avait bless\xE9e, et elle
+        s\u2019est donc excus\xE9e et \xE0 fait attention. Maintenant, Jennie \xE0
+        l\u2019air plus confiante et elle s\u2019entends encore mieux avec Pam."
   <GUID>k__BackingField: dcfaaafd-c2bf-4ab8-bc6b-3935eeb221de
   references:
     version: 2

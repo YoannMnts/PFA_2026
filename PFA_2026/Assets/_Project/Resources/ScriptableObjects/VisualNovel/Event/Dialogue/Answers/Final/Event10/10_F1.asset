@@ -74,7 +74,11 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "Nous avons contourn\xE9 la temp\xEAte, mais j\u2019ai l\u2019impression
+        que Jennie a mal pris que je ne lui fasse pas confiance. L\u2019\xE9quipage
+        est stress\xE9 par ce changement d'itin\xE9raire, et rejette la faute sur
+        Jennie."
   <GUID>k__BackingField: a65e4c3f-79b9-402b-9aee-6e99e4fa3ff5
   references:
     version: 2

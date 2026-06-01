@@ -73,7 +73,10 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "J\u2019ai demand\xE9 \xE0 Jennie de venir nous parler, et m\xEAme si elle
+        se sentait mieux apr\xE8s, elle n\u2019a pas appr\xE9ci\xE9 qu\u2019on la
+        force comme \xE7a, on aurait peut \xEAtre d\xFB lui laisser du temps."
   <GUID>k__BackingField: 596f2205-fcc5-4538-bacd-4a06f69bf190
   references:
     version: 2

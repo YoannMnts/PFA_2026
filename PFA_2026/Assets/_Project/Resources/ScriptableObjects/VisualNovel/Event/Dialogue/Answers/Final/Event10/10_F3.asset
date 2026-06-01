@@ -68,7 +68,12 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 1
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "Jennie \xE9tait stress\xE9e de porter cette responsabilit\xE9, et m\xEAme
+        si nous avons r\xE9ussi \xE0 passer la temp\xEAte, le navire \xE0 subi de
+        grosses secousses. T\xE9a et Camil vont devoir faire de nombreuses r\xE9parations,
+        et certains membres de l\u2019\xE9quipage ont \xE9t\xE9 bless\xE9s par les
+        secousses."
   - <IsEnumeration>k__BackingField: 1
     <CurrentNpcTarget>k__BackingField:
       rid: 2811533773414858913

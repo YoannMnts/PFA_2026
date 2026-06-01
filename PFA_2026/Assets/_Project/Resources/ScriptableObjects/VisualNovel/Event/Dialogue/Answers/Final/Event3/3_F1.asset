@@ -76,7 +76,9 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 2
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "Tea fait maintenant en sorte de ranger ses affaires, ce qui n\u2019a pas
+        l\u2019air de lui plaire. Jennie par contre, semble beaucoup plus d\xE9tendue."
   <GUID>k__BackingField: 2eba7810-e5b4-49b3-82d8-3ffd37fd2001
   references:
     version: 2

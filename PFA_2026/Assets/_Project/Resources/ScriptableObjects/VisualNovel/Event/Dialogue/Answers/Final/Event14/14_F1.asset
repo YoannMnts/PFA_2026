@@ -73,7 +73,10 @@ MonoBehaviour:
         <UseRelationshipNpcToReturn>k__BackingField: 0
       <ArithmeticOperator>k__BackingField: 0
       <Amount>k__BackingField: 3
-      <Text>k__BackingField: []
+      <Text>k__BackingField:
+      - "Apr\xE8s que T\xE9a m\u2019ai confi\xE9 son pass\xE9, elle avait l\u2019air
+        de se sentir mieux. Je pense que cette discussion l\u2019a lib\xE9r\xE9e
+        d\u2019un poids, et qu\u2019elle voudra se confier davantage \xE0 pr\xE9sent."
   <GUID>k__BackingField: c33d7b68-e42b-4650-9e73-dff9327c5eee
   references:
     version: 2
