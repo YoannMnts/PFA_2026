@@ -11,7 +11,7 @@ namespace Naussilus.Core.Managers
     public static class ConditionalEffectManager
     {
         public static readonly List<Consequence> ValidConsequences = new List<Consequence>();
-        private static Consequence lostConsequence;
+        public static Consequence lostConsequence;
 
         public static void AssignLostConsequence(Consequence consequence) => lostConsequence = consequence;
         
