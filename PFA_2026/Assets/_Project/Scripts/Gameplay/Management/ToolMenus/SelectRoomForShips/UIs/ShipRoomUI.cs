@@ -1,12 +1,13 @@
 ﻿using Helteix.Tools.UI;
 using Naussilus.Core;
 using Naussilus.Gameplay.Buttons;
+using Naussilus.Gameplay.Interactions;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Naussilus.Gameplay
 {
-    public class ShipRoomUI : UIItem<Room>
+    public class ShipRoomUI : UIItem<Room>, IInteractable
     {
         private SelectRoomForShipUI selectRoomForShipUI;
         private Room currentRoom;
@@ -38,6 +39,12 @@ namespace Naussilus.Gameplay
                 await ButtonFeedbacksManager.instance.ApplyButtonsFeedbacks(button.gameObject);
             }
             selectRoomForShipUI.ChooseRoom(currentRoom);
+        }
+
+        public int Priority { get; private set; } = 10;
+        public void Interact(PlayerInteractions playerInteractions)
+        {
+            
         }
     }
 }

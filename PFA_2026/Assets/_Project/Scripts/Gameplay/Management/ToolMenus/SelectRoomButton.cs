@@ -2,7 +2,6 @@
 using Helteix.Tools.Phases.Listeners;
 using Naussilus.Gameplay.Buttons;
 using Naussilus.Gameplay.Interactions;
-using UnityEngine;
 
 namespace Naussilus.Gameplay
 {

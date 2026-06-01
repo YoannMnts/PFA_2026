@@ -2,6 +2,7 @@ using System;
 using System.Threading;
 using Helteix.Tools.Phases;
 using Naussilus.Core.Sounds;
+using UnityEditor;
 using UnityEngine;
 
 namespace Naussilus.Gameplay
@@ -16,6 +17,7 @@ namespace Naussilus.Gameplay
         public int Remaining { get; private set; }
     
         private CancellationTokenSource cts;
+        private bool isTimerPause;
 
         public TimerPhase(ManagementPhase current, int duration)
         {
@@ -39,6 +41,11 @@ namespace Naussilus.Gameplay
                 {
                     if (cts.Token.IsCancellationRequested) 
                         return;
+                    if (isTimerPause)
+                    {
+                        Remaining++;
+                        await Awaitable.NextFrameAsync(cts.Token);
+                    }
                 
                     OnTimerRepeat?.Invoke();
                     if (Remaining < 6)

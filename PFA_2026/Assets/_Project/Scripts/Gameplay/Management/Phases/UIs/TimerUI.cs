@@ -1,10 +1,6 @@
-﻿using System;
-using Helteix.Tools.Phases;
-using Helteix.Tools.Phases.Listeners;
+﻿using Helteix.Tools.Phases.Listeners;
 using Naussilus.Core.Managers;
-using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Naussilus.Gameplay
