@@ -179,7 +179,7 @@ namespace Naussilus.Core.Managers.Npcs
                 {
                     case Npc npcValue:
                         npcs = new[] { npcValue };
-                        break;
+                        return;
 
                     case AllNpc:
                         var allNpcs = GetAllNpcs();
@@ -193,7 +193,7 @@ namespace Naussilus.Core.Managers.Npcs
 
                         result = list.ToArray();
                         npcs = result;
-                        break;
+                        return;
 
                     case Gender gender:
                         var npcDatas = GetAllNpcs();
@@ -207,7 +207,7 @@ namespace Naussilus.Core.Managers.Npcs
 
                         result = list.ToArray();
                         npcs = result;
-                        break;
+                        return;
                 }
                 npcs = result;
             }
@@ -259,7 +259,6 @@ namespace Naussilus.Core.Managers.Npcs
 
                         return list.ToArray();
                     }
-                    
             }
             return null;
         }

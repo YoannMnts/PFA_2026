@@ -45,6 +45,7 @@ namespace Naussilus.Core.Managers
         }
         public static void ComputeConditionalEffect(this ConditionalEffect conditionalEffect, Npc currentNpcData, out bool isGameLost)
         {
+            ValidConsequences.Clear();
             currentNpcs = conditionalEffect.IsEnumeration
                 ? NpcManager.GetSelectedNpcs(conditionalEffect.CurrentNpcTarget, currentNpcData)
                 : new[] { currentNpcData };
@@ -52,13 +53,14 @@ namespace Naussilus.Core.Managers
             Condition[] currentConditions = conditionalEffect.Conditions;
             Consequence[] currentConsequences = conditionalEffect.Consequences;
             
-            ValidConsequences.Clear();
             for (int i = 0; i < currentNpcs.Length; i++)
             {
                 currentConditions.ComputeAllCondition(currentNpcs[i], out var validNpcs);
+                Debug.Log($"[ConditionalEffectManager] Conditions has been computed.");
                 for (int j = 0; j < validNpcs.Count; j++)
                 {
-                    isGameLost = currentConsequences.ComputeAllConsequence(validNpcs[j]);
+                    isGameLost = !currentConsequences.ComputeAllConsequence(validNpcs[j]);
+                    Debug.Log($"[ConditionalEffectManager] Consequences has been computed.");
                     if (isGameLost)
                         return;
                 }

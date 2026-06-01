@@ -20,7 +20,7 @@ namespace Naussilus.Core.Managers
                 for (var j = 0; j < subjects.Length; j++)
                 {
                     var subject = subjects[j];
-                    var isGameLost = consequence.ComputeConsequence(subject);
+                    var isGameLost = !consequence.ComputeConsequence(subject);
                     if (isGameLost)
                         return false;
                 }
@@ -53,6 +53,7 @@ namespace Naussilus.Core.Managers
             if (consequence.IsGameLost)
             {
                 ConditionalEffectManager.AssignLostConsequence(consequence);
+                return false;
             }
             IConsequenceEffectValue stat = consequence.ConsequenceSide.Stat;
             var stats = currentNpcData.GetValue(stat);
@@ -61,7 +62,7 @@ namespace Naussilus.Core.Managers
             if (stats is null || rightSide < 0)
             {
                 Debug.LogError($"[ConsequenceManager] Negative value for consequence left side : left: type is null, right: {rightSide}");
-                return false;
+                return true;
             }
             for (int i = 0; i < stats.Length; i++)
             {

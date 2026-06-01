@@ -11,7 +11,7 @@ namespace Naussilus.Gameplay
         public SelectAnswer(IAnswer[] answer)
         {
             Answers = answer;
-            RandomizeAnswers(Answers);
+            //RandomizeAnswers(Answers);
         }
 
         private void RandomizeAnswers(IAnswer[] array)

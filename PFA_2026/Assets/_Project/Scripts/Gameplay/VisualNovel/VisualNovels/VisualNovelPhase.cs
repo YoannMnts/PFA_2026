@@ -50,6 +50,7 @@ namespace Naussilus.Gameplay
             //Debug.Log($"Decision choices : {dialogue.Answers.Length}");
             if (result.value is FinalAnswer finalAnswer)
             {
+                Debug.Log($"Final answer: {finalAnswer}");
                 ReadDialogue readDialogue = new ReadDialogue(finalAnswer.NpcText);
                 await readDialogue.Run();
 
