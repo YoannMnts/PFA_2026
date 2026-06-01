@@ -40,13 +40,14 @@ namespace Naussilus.Gameplay.UIs
 
         private void OnButtonClicked()
         {
-            current.SetResult(false);
+            //current.SetResult(false);
         }
 
-        public int Priority { get; private set; } = 10;
+        public int Priority { get; private set; } = 20;
         public void Interact(PlayerInteractions playerInteractions)
         {
-            
+            Debug.Log("aaaaaaaaaaaaaaaa");
+            current.SetResult(false);
         }
     }
 }

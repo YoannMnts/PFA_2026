@@ -8,7 +8,9 @@ using UnityEngine;
 namespace Naussilus.Gameplay
 {
     public class TimerPhase : PhaseCompletionSource<bool>
-    { 
+    {
+        private static bool isTimerPause;
+        public static void SetTimerPause(bool pause) => isTimerPause = pause;
         public event Action OnTimerRepeat;
     
         public int Duration { get; private set; }
@@ -17,7 +19,6 @@ namespace Naussilus.Gameplay
         public int Remaining { get; private set; }
     
         private CancellationTokenSource cts;
-        private bool isTimerPause;
 
         public TimerPhase(ManagementPhase current, int duration)
         {

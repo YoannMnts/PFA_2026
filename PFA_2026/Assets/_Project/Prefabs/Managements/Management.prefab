@@ -1229,7 +1229,6 @@ GameObject:
   m_Component:
   - component: {fileID: 294372256524174301}
   - component: {fileID: 7056548118521139115}
-  - component: {fileID: 4812128555350469251}
   m_Layer: 5
   m_Name: TutorialPanel
   m_TagString: Untagged
@@ -1271,26 +1270,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &4812128555350469251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5313037126591262083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76e1eb6240b34088bf1325fc75a25403, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Naussilus.Gameplay::Naussilus.Gameplay.UIs.TutorialPhaseUI
-  <OnPhaseBeginUnityEvent>k__BackingField:
-    m_PersistentCalls:
-      m_Calls: []
-  <OnPhaseEndUnityEvent>k__BackingField:
-    m_PersistentCalls:
-      m_Calls: []
-  group: {fileID: 7056548118521139115}
-  invisibleButton: {fileID: 5718929744646394787}
 --- !u!1 &5623348883259596510
 GameObject:
   m_ObjectHideFlags: 0
