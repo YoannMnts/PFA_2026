@@ -41,6 +41,13 @@ namespace Naussilus.Gameplay
             {
                 SoundDesignManager.instance.ManagmentMusic(true);
             }
+
+            for (int i = 0; i < CurrentNpcs.Length; i++)
+            {
+                var npc = CurrentNpcs[i];
+                npc.RemoveSlot();
+            }
+            
             return base.Initialize(token);
         }
 

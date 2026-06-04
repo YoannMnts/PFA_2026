@@ -21,7 +21,7 @@ MonoBehaviour:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
     <Text>k__BackingField:
-    - "\xC7a me g\xE8ne surtout\u2026\r\n"
+    - "\xC7a me g\xEAne surtout\u2026\r\n"
   <Answers>k__BackingField:
   - {fileID: 11400000, guid: 35dddf833f6ff184e96c2a837dc39a6b, type: 2}
   - {fileID: 11400000, guid: d07fd027f76529643828c0417f0a53bb, type: 2}

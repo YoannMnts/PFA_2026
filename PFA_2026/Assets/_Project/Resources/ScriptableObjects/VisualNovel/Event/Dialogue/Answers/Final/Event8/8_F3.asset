@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6551f63f2e464eb39de211b4f9603e78, type: 3}
   m_Name: 8_F3
   m_EditorClassIdentifier: Naussilus.Core::Naussilus.Core.VisualNovels.EventDatas.DialogueDatas.Answers.FinalAnswerData
-  <ButtonText>k__BackingField: "J\u2019irais lui dire de baisser le son, tu sera
-    plus tranquille comme \xE7a."
+  <ButtonText>k__BackingField: "Il ne pense pas mal, ce sont juste des blagues, il
+    faut que tu arr\xEAte de les \xE9couter."
   <NpcText>k__BackingField:
   - <Npc>k__BackingField: {fileID: 11400000, guid: 083d3e52eef7ee84985a8c9ab3c0d95f, type: 2}
     <Expression>k__BackingField: {fileID: 11400000, guid: f0358eca1d351f540a61dc689202b2b8, type: 2}
